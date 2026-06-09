@@ -1,0 +1,535 @@
+{
+  "ticker": "CBRS",
+  "name": "Cerebras Systems Inc.",
+  "listings": "NASDAQ",
+  "sector": "Technology. Semiconductors (AI accelerators)",
+  "date": "2026-06-09",
+  "engine": "yfinance-data, equity-bull-case, equity-bear-case, dcf_compute (DCF + EV/Sales cross-check)",
+  "recommendation": {
+    "action": "SELL",
+    "tone": "negative",
+    "current_price": 237.83,
+    "target_12m": 51,
+    "upside_pct": -78.7,
+    "rationale": "45% × $35 Base DCF + 20% × $15 Bear + 15% × $67 Bull + 20% × $109 EV/Sales cross-check = $51. Even a generous 28x FY26E sales lands near $110, less than half of spot.",
+    "next_earnings": "Est. Q2 FY26 in late July 2026 (no consensus published via available skills)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$237.83"
+    },
+    {
+      "label": "52-week range",
+      "value": "$196.73 to $386.34"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-38%"
+    },
+    {
+      "label": "1-year return",
+      "value": "-23.5%"
+    },
+    {
+      "label": "YTD return",
+      "value": "n/a (data gap)"
+    },
+    {
+      "label": "Market cap",
+      "value": "$52.2B"
+    },
+    {
+      "label": "Enterprise value",
+      "value": "~$51.8B"
+    },
+    {
+      "label": "Net debt",
+      "value": "-$0.44B (net cash)"
+    },
+    {
+      "label": "FY25 revenue",
+      "value": "$510.0M"
+    },
+    {
+      "label": "FY25 EBITDA / margin",
+      "value": "-$110.8M / -21.7%"
+    },
+    {
+      "label": "FY25 FCF",
+      "value": "Negative (operating CF near breakeven on prepayments)"
+    },
+    {
+      "label": "FY25 operating income",
+      "value": "-$145.3M (-28.5% margin)"
+    },
+    {
+      "label": "FY25 net income",
+      "value": "+$237.8M (non-operating items)"
+    },
+    {
+      "label": "FY25 gross margin",
+      "value": "39.0%"
+    },
+    {
+      "label": "Price / sales (TTM)",
+      "value": "102x"
+    },
+    {
+      "label": "Forward P/E (FY26E)",
+      "value": "~283x"
+    },
+    {
+      "label": "R&D (FY25)",
+      "value": "$243.3M (48% of revenue)"
+    },
+    {
+      "label": "Cash",
+      "value": "$701.7M"
+    },
+    {
+      "label": "Total debt",
+      "value": "$261.8M"
+    },
+    {
+      "label": "Shares outstanding",
+      "value": "~219.6M"
+    },
+    {
+      "label": "Public float",
+      "value": "~8.67M (~96% locked)"
+    },
+    {
+      "label": "Beta",
+      "value": "n/a (data gap)"
+    },
+    {
+      "label": "Analyst consensus",
+      "value": "Thin / none returned"
+    },
+    {
+      "label": "Mean / median PT",
+      "value": "n/a (data gap)"
+    },
+    {
+      "label": "Blended DCF target",
+      "value": "$51 (-78.7%)"
+    }
+  ],
+  "thesis": [
+    "Real technology, wrong price: Cerebras owns the only wafer-scale chip in production and the fastest published inference benchmarks, and revenue compounded from $24.6M (2022) to $510M (2025). None of that justifies 102x trailing sales.",
+    "A long-horizon FCFF DCF on a constructive ramp (revenue to ~$5.5B by 2035, FCF margin to 25%) values the equity near $35 base case; even a generous 28x FY26E sales cross-check lands near $110. Spot is $238.",
+    "The downside catalysts are concrete and dateable: an IPO lock-up unlock against a 8.67M-share float, ~85% single-customer (G42) revenue concentration, and US export-control exposure on Gulf compute."
+  ],
+  "bear_paragraph": "Strip the wafer-scale romance and Cerebras is a hardware company where one UAE customer was roughly five-sixths of revenue, priced at 102 times sales, with 96% of its shares still locked. Each of those facts is dangerous on its own; together they're a setup. Growth already decelerated from 269% to 76%, and the Condor Galaxy installations that drove the ramp are a finite buildout, not an annuity. The 2025 net income headline is an accounting artifact: operating margin was -29%, and the company still loses money making and selling its product. The catalysts that matter point down. The IPO lock-up expires against an 8.67M-share float, and post-IPO unlocks on hot AI names routinely cut prices 30-50% within weeks of real supply hitting the tape. Export-control scrutiny of advanced compute sold into the Gulf is tightening, and a single 8-K on G42 licensing could erase the revenue base. Meanwhile Nvidia, Groq, SambaNova and every hyperscaler's in-house chip are crowding the same inference dollars while per-token prices fall. A 70% drawdown needs nothing exotic: multiple compression from 102x toward a still-generous 30x, plus one growth disappointment or one unlock. The bear case doesn't require a recession. It requires the float to normalize.",
+  "peers": [
+    {
+      "ticker": "CBRS",
+      "pe_ntm": 283.0,
+      "ev_ebitda": -1000,
+      "rev_growth_ttm": 75.7,
+      "ytd": 0,
+      "y1": -23.5,
+      "highlight": true
+    },
+    {
+      "ticker": "NVDA",
+      "pe_ntm": 16.5,
+      "ev_ebitda": 0,
+      "rev_growth_ttm": 85.2,
+      "ytd": 0,
+      "y1": 0
+    },
+    {
+      "ticker": "AMD",
+      "pe_ntm": 37.5,
+      "ev_ebitda": 0,
+      "rev_growth_ttm": 37.8,
+      "ytd": 0,
+      "y1": 0
+    },
+    {
+      "ticker": "ARM",
+      "pe_ntm": 113.2,
+      "ev_ebitda": 0,
+      "rev_growth_ttm": 20.1,
+      "ytd": 0,
+      "y1": 0
+    },
+    {
+      "ticker": "ALAB",
+      "pe_ntm": 82.3,
+      "ev_ebitda": 0,
+      "rev_growth_ttm": 93.4,
+      "ytd": 0,
+      "y1": 0
+    }
+  ],
+  "peers_read": "On price-to-sales, Cerebras at 102x trailing is roughly 5x Nvidia (19.9x) and well above Astera Labs (59x) and Arm (75x), the richest names in the cohort. Nvidia grows faster (85% vs 76%), makes huge margins, and trades at 16.5x forward earnings; Cerebras loses money at the operating line. The peer table doesn't rescue the multiple. It frames how far Cerebras sits above even the most expensive profitable comps, and the closest high-multiple names (ARM, ALAB) are themselves debated as stretched.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "Inference cloud scaling on reasoning-model demand",
+      "body": "Cerebras Inference, launched August 2024, runs Llama and other open models at the top of independent speed benchmarks, often several times faster than GPU endpoints. The 2025 wave of reasoning models raised tokens generated per query by an order of magnitude. Cerebras monetizes speed: latency-sensitive buyers pay a premium per million tokens. As inference shifts from cost center to the dominant compute workload, a vendor with a genuine latency edge can capture share GPU clusters struggle to match on the same power budget."
+    },
+    {
+      "id": 2,
+      "title": "G42 anchor plus Condor Galaxy buildout",
+      "body": "G42, the UAE AI group, anchored Cerebras with multi-year purchase commitments and the Condor Galaxy supercomputer program. That gave revenue visibility most pre-IPO AI hardware firms never had, and it funded the ramp that pushed 2024 revenue to $290M and 2025 to $510M. The same relationship is the concentration risk, but it is also a backlog that underwrites the next two years of capacity."
+    },
+    {
+      "id": 3,
+      "title": "Customer diversification beyond the anchor",
+      "body": "Named deployments now span Mistral, AlphaSense, GlaxoSmithKline, AstraZeneca, Mayo Clinic, TotalEnergies and US national labs (Argonne, Lawrence Livermore, Sandia). Each new logo lowers the G42 dependence. The 2025 mix is less concentrated than the 2023 S-1 disclosure, and the pipeline of sovereign and enterprise buyers keeps widening."
+    },
+    {
+      "id": 4,
+      "title": "Wafer-scale moat: WSE-3 and WSE-4 roadmap",
+      "body": "The Wafer Scale Engine 3 is a single dinner-plate-sized chip, 4 trillion transistors, 900,000 cores, built to hold an entire large model on one piece of silicon. That removes the networking bottleneck that forces GPU clusters to split models across thousands of devices. Replicating it means solving wafer-scale yield, packaging and power that took Cerebras most of a decade. The WSE-4 roadmap extends the lead."
+    },
+    {
+      "id": 5,
+      "title": "Sovereign AI spend",
+      "body": "Gulf governments, and increasingly others, are buying domestic AI compute for strategic reasons rather than pure ROI. Cerebras is already inside that budget via G42 and Condor Galaxy. Sovereign deals are large, multi-year and relatively price-insensitive, and the turnkey supercomputer model fits a buyer that wants capability without building a GPU networking team."
+    },
+    {
+      "id": 6,
+      "title": "US national-lab and government contracts",
+      "body": "Argonne, Lawrence Livermore and Sandia run Cerebras systems for scientific computing and large-model training. Government buyers validate the technology, carry long procurement cycles that smooth revenue, and open the door to classified workloads where a US-designed wafer-scale part has a sourcing advantage."
+    },
+    {
+      "id": 7,
+      "title": "Gross margin at 39% and climbing on cloud mix",
+      "body": "Gross margin reached 39% in 2025, up from near zero in 2022, as the mix moved from one-off system sales toward recurring inference cloud. Cloud carries structurally higher margins. As that mix grows, gross margin has room toward the 50s, the swing factor that turns a loss-making income statement into a cash generator."
+    },
+    {
+      "id": 8,
+      "title": "Path to operating profit as revenue outgrows fixed R&D",
+      "body": "R&D was $243M in 2025 against $510M revenue, roughly 48%. That ratio falls fast when revenue doubles and R&D grows at half the pace. Operating loss was $145M; at $1B-plus revenue with a higher gross margin, the model crosses into operating profit. The fixed-cost base is already built."
+    },
+    {
+      "id": 9,
+      "title": "Balance sheet de-risked by the IPO",
+      "body": "Cash was $701.7M at year-end 2025 against $261.8M debt, net cash near $440M before IPO proceeds. That funds the ramp and WSE-4 without a near-term dilution gun to the head. A clean balance sheet is rare for an AI hardware company still burning cash."
+    },
+    {
+      "id": 10,
+      "title": "Scarcity value as the only public wafer-scale pure-play",
+      "body": "Investors who want direct exposure to non-GPU AI inference have almost nowhere else to go. Cerebras is the one listed wafer-scale name. That scarcity supports a premium multiple and makes the stock a natural partnership or acquisition target for a hyperscaler or chip incumbent."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "G42 is the business, in a geopolitical crossfire",
+      "body": "The 2024 S-1 showed G42, one UAE customer, at roughly 83-87% of revenue. A company where one Gulf buyer is five-sixths of the top line is a vendor-financed bet on one relationship. US export-control scrutiny of advanced compute sold into the Gulf is rising. If Washington restricts the flow, or G42 builds elsewhere, revenue doesn't dip, it collapses. Watch the 10-K concentration footnote and any 8-K on export licensing."
+    },
+    {
+      "id": 2,
+      "title": "102x trailing sales needs impossible numbers",
+      "body": "At $52B market cap on $510M revenue, the stock trades at 102x sales. To grow into even 15x sales in three years, revenue must reach ~$3.5B, a 7x off a base that just decelerated from 269% to 76%. Compression alone, from 102x to a still-rich 30x, is a 70% drawdown if revenue merely doubles. The math doesn't agree with the price."
+    },
+    {
+      "id": 3,
+      "title": "Lock-up unlock against an 8.67M-share float",
+      "body": "Float is ~8.67M shares against ~219.6M outstanding, so ~96% of equity is locked. A thin float manufactures the high price; when the lock-up expires, insiders and pre-IPO funds can sell into a market never tested for real supply. Post-IPO unlocks on hot AI names have repeatedly cut prices 30-50% within weeks. The unlock is the single most predictable catalyst, and it points down."
+    },
+    {
+      "id": 4,
+      "title": "The 2025 'profit' is an accounting mirage",
+      "body": "Net income was +$237.8M in 2025 while operating income was -$145.3M. The gap is non-operating: remeasurement, tax items, one-offs. The real engine still loses money at the operating line on $510M of revenue. Anyone underwriting 'Cerebras is profitable' off the net income line is reading a number that reverses."
+    },
+    {
+      "id": 5,
+      "title": "Growth is already decelerating fast",
+      "body": "Revenue grew 220% (2023), 269% (2024), then 76% (2025). The second derivative turned hard. Each step down compresses a 102x multiple violently. The Condor Galaxy buildout is largely a one-time installation cycle; once G42's clusters ship, the comp gets brutal and the hardware line can go flat."
+    },
+    {
+      "id": 6,
+      "title": "Single architecture, deep-pocketed competition",
+      "body": "Cerebras bets everything on wafer-scale. Nvidia's Blackwell and Rubin, inference specialists Groq and SambaNova, plus hyperscaler in-house silicon (Trainium, TPU, MTIA, Maia) all target the same inference dollars. Cerebras spent $243M on R&D in 2025; Nvidia spends that in days. A benchmark lead is not a moat when rivals own the developer ecosystem (CUDA)."
+    },
+    {
+      "id": 7,
+      "title": "Inference is becoming a price war",
+      "body": "Per-token inference pricing has fallen steeply as Groq, Together, Fireworks and the hyperscalers compete and open models commoditize serving. A 39% gross margin is thin for a 'software-like' story, and a price war pressures the exact line the bull case needs to expand. Speed leadership doesn't guarantee pricing power when buyers route to good-enough endpoints at half the cost."
+    },
+    {
+      "id": 8,
+      "title": "Negative book equity, cash burn the IPO only delays",
+      "body": "Stockholders equity was -$579M at year-end 2025 and free cash flow was deeply negative before working-capital swings. The IPO refilled the tank, but a company still losing money operationally while ramping WSE-4 will burn it. If capital markets cool, the next raise is dilutive at a far lower price."
+    },
+    {
+      "id": 9,
+      "title": "Customer prepayments flatter the cash flow",
+      "body": "G42-style upfront commitments inflate deferred revenue and operating cash flow in ramp years, making the cash statement look better than the unit economics. When the prepayment cycle laps, cash conversion deteriorates even if revenue holds. A classic place where concentrated-customer hardware names look healthier than they are right before a reset."
+    },
+    {
+      "id": 10,
+      "title": "No sell-side anchor; a round-trip-prone momentum stock",
+      "body": "yfinance returns no consensus target and no analyst count, so price discovery is set by a thin float and momentum, not fundamentals. The stock already ran $196 to $386 and back to $238 inside a year, a 49% peak-to-trough swing. Momentum vehicles unwind when the growth story stalls."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "12.5%",
+      "terminal_g": "2.0%",
+      "fcf_path": "Base path × 0.55",
+      "implied_px": 15.41
+    },
+    {
+      "scenario": "Base",
+      "wacc": "11.5%",
+      "terminal_g": "3.5%",
+      "fcf_path": "Rev +65/+50/+40/.../+9%, FCF margin to ~25%",
+      "implied_px": 34.69
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "10.5%",
+      "terminal_g": "4.5%",
+      "fcf_path": "Base path × 1.45",
+      "implied_px": 67.21
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "prob": 0.15,
+      "outcome_range": "$67 to 110+",
+      "description": "Inference demand reaccelerates revenue, margins beat the base path, and concentration resolves before the unlock. Even here the EV/Sales cross-check (~$110) sits below spot."
+    },
+    {
+      "label": "Base",
+      "prob": 0.45,
+      "outcome_range": "$35 to 55",
+      "description": "Strong execution on a constructive ramp to ~$5.5B revenue and mid-20s FCF margin by the early 2030s, but the stock is valued far ahead of it."
+    },
+    {
+      "label": "Bear",
+      "prob": 0.4,
+      "outcome_range": "$15 to 35",
+      "description": "Lock-up supply, growth deceleration, a token price war, or an export-control shock on G42 forces the 102x multiple to normalize. Combined weight includes the 20% cross-check anchor pulling toward intrinsic value."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "SELL / avoid. Valuation is the binding constraint, not the technology."
+    },
+    {
+      "action": "12m target",
+      "detail": "$51 blended (-78.7%); base DCF $35, generous EV/Sales cross-check $109."
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Trim aggressively into strength, especially ahead of the IPO lock-up expiry. Lock in gains; do not anchor to cost basis above $200."
+    },
+    {
+      "action": "New money",
+      "detail": "None at $238. Revisit only on a major de-rating toward $80 to 110 or a verified drop in G42 concentration."
+    },
+    {
+      "action": "Hedge",
+      "detail": "For holders who cannot sell, long puts dated past the lock-up unlock; size for a 30-50% gap."
+    },
+    {
+      "action": "Position sizing",
+      "detail": "If owned, cap at a small speculative weight (<1-2%) given single-customer and single-architecture risk."
+    }
+  ],
+  "catalysts_to_watch": [
+    "IPO lock-up expiration date and the supply that hits the 8.67M-share float",
+    "10-K customer-concentration footnote: G42 as a percent of FY25 revenue",
+    "Any 8-K or news on US export licensing for advanced compute into the UAE / Gulf",
+    "Quarterly revenue growth rate vs the 76% FY25 print (deceleration watch)",
+    "Hardware-vs-inference revenue split and gross-margin trajectory",
+    "Per-token inference pricing trends across Groq, Together, hyperscaler endpoints",
+    "Cash burn and any signal of a follow-on equity raise"
+  ],
+  "data_gaps": [
+    "No sell-side consensus, mean/median price target, or analyst count returned by yfinance.",
+    "FY25 segment split between hardware (systems/supercomputers) and inference cloud not in the available data; needs the 10-K segment note.",
+    "Exact FY25 G42 revenue concentration (was ~83-87% in the 2023 S-1); needs the latest 10-K footnote.",
+    "Beta not available from yfinance; WACC beta of 1.30 is an analyst estimate reflecting concentration and post-IPO volatility.",
+    "IPO lock-up expiry date not retrievable via available skills; flagged as the key catalyst.",
+    "Reported FY25 free cash flow figure is distorted by customer prepayments; treat operating-CF-near-breakeven with caution."
+  ],
+  "business_overview": {
+    "summary": "Cerebras Systems designs and sells wafer-scale AI computers built around the Wafer Scale Engine, the largest chip in production. It sells CS-3 systems and turnkey supercomputers, and runs Cerebras Inference, a cloud service that serves large language models at industry-leading speed.",
+    "business_model": "Revenue comes from two channels. Hardware (CS-3 systems and full Condor Galaxy supercomputer installations sold or leased to customers like G42 and national labs) and a growing cloud business where customers pay per million tokens or for dedicated capacity on Cerebras-operated infrastructure. The mix is shifting from lumpy system sales toward higher-margin recurring cloud.",
+    "segments": [
+      {
+        "name": "Systems & supercomputers (hardware)",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "CS-3 systems and Condor Galaxy clusters. Historically the majority of revenue, anchored by G42. Lower gross margin than cloud."
+      },
+      {
+        "name": "Cerebras Inference / cloud",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Per-token and dedicated-capacity cloud launched August 2024. Faster-growing, higher-margin, the strategic center of the bull case."
+      }
+    ],
+    "geographic_revenue": [
+      {
+        "region": "Middle East (UAE, via G42)",
+        "pct": 0
+      },
+      {
+        "region": "Americas",
+        "pct": 0
+      }
+    ],
+    "customers": [
+      {
+        "name": "G42",
+        "revenue_share_pct": null,
+        "importance": "Anchor customer, UAE AI group, Condor Galaxy program. Majority of 2023 revenue per S-1; the central concentration risk."
+      },
+      {
+        "name": "Mistral AI",
+        "revenue_share_pct": null,
+        "importance": "Inference partner for fast model serving"
+      },
+      {
+        "name": "US national labs (Argonne, Lawrence Livermore, Sandia)",
+        "revenue_share_pct": null,
+        "importance": "Scientific computing and large-model training; government validation"
+      },
+      {
+        "name": "Enterprise (AlphaSense, GSK, AstraZeneca, Mayo Clinic, TotalEnergies)",
+        "revenue_share_pct": null,
+        "importance": "Diversifying logos across pharma, finance, healthcare, energy"
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "AI accelerator spend is the largest capital cycle in tech, and the workload mix is tilting from training toward inference as deployed models proliferate. Inference rewards latency and tokens-per-second, the axis Cerebras optimizes for. A wafer-scale architecture sidesteps the inter-chip networking that caps GPU inference speed, but the dollars attract every well-funded chip vendor.",
+    "tam_usd_bn": 400,
+    "moat": "Wafer-scale engineering: single-chip yield, packaging, power and cooling that took nearly a decade to productize, plus software that maps large models onto one chip without manual sharding. The inference speed lead is measurable in benchmarks. The open question is whether speed converts to durable pricing power once rivals and falling token prices compete it away.",
+    "competitors": [
+      {
+        "name": "Nvidia",
+        "description": "Dominant GPU incumbent; CUDA ecosystem, Blackwell/Rubin roadmap, vastly larger R&D. The gravity well of the whole market."
+      },
+      {
+        "name": "Groq",
+        "description": "Inference-speed specialist (LPU); direct competitor on the fast-tokens pitch."
+      },
+      {
+        "name": "SambaNova",
+        "description": "Reconfigurable dataflow AI systems; competes for enterprise and government deployments."
+      },
+      {
+        "name": "Hyperscaler in-house silicon",
+        "description": "AWS Trainium/Inferentia, Google TPU, Meta MTIA, Microsoft Maia; aptive demand designing Cerebras out of their own stacks."
+      },
+      {
+        "name": "AMD",
+        "description": "Instinct MI-series accelerators; the credible number-two merchant GPU vendor."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY22",
+      "revenue_usd_b": 0.0246,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 11.7,
+      "ebitda_usd_m": -166.9,
+      "ebitda_margin_pct": -678.0,
+      "net_income_usd_m": -177.7,
+      "fcf_usd_m": null,
+      "eps": -0.81
+    },
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 0.0787,
+      "revenue_growth_yoy_pct": 219.8,
+      "gross_margin_pct": 33.5,
+      "ebitda_usd_m": -123.4,
+      "ebitda_margin_pct": -156.7,
+      "net_income_usd_m": -127.2,
+      "fcf_usd_m": null,
+      "eps": -0.58
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 0.2903,
+      "revenue_growth_yoy_pct": 268.7,
+      "gross_margin_pct": 42.3,
+      "ebitda_usd_m": -90.1,
+      "ebitda_margin_pct": -31.0,
+      "net_income_usd_m": -481.6,
+      "fcf_usd_m": null,
+      "eps": -2.19
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 0.51,
+      "revenue_growth_yoy_pct": 75.7,
+      "gross_margin_pct": 39.0,
+      "ebitda_usd_m": -110.8,
+      "ebitda_margin_pct": -21.7,
+      "net_income_usd_m": 237.8,
+      "fcf_usd_m": null,
+      "eps": 1.08
+    }
+  ],
+  "management": {
+    "ceo": "Andrew Feldman, co-founder & CEO since 2016",
+    "cfo": "Not retrieved via available skills",
+    "insider_ownership_pct": null,
+    "capital_allocation_history": "No dividend and no buyback; this is a cash-burning growth company. Capital has gone into R&D ($243M in FY25, 48% of revenue) and manufacturing scale for the WSE-3/CS-3 and the WSE-4 roadmap. The IPO raised primary capital to fund the ramp. With negative operating cash generation, the priority is reaching operating breakeven before the IPO proceeds are consumed, not returning capital.",
+    "recent_insider_activity": []
+  },
+  "key_risks": [
+    {
+      "category": "customer",
+      "title": "Single-customer dependence (G42)",
+      "description": "G42 at roughly 83-87% of 2023 revenue per the S-1. Any pause, renegotiation or substitution by this one UAE buyer takes the majority of revenue with it. Diversification is claimed but unverified in available data, and even a diversified mix would be small in absolute terms against the $52B valuation."
+    },
+    {
+      "category": "structural",
+      "title": "Lock-up overhang on a thin float",
+      "description": "About 96% of shares are locked against an 8.67M-share float. The high quoted price is partly a scarcity artifact. The IPO lock-up expiry is a predictable, dateable supply shock that has crushed comparable AI IPOs within weeks of real supply hitting the tape."
+    },
+    {
+      "category": "regulatory",
+      "title": "Export controls on Gulf compute",
+      "description": "US scrutiny of advanced AI compute sold into the UAE and broader Gulf is rising. Cerebras's largest revenue stream flows to a UAE customer. A licensing restriction or denial would directly cut the revenue base. The risk is binary and outside management's control."
+    },
+    {
+      "category": "cyclical",
+      "title": "Growth deceleration into a tough comp",
+      "description": "Revenue growth fell from 269% (2024) to 76% (2025). The Condor Galaxy buildout is a finite installation cycle. As it laps, the hardware line can stall, and a 102x sales multiple offers no cushion for a deceleration the numbers already show."
+    },
+    {
+      "category": "execution",
+      "title": "Single-architecture bet vs better-funded rivals",
+      "description": "Everything rides on wafer-scale. Nvidia (CUDA plus Blackwell/Rubin), Groq, SambaNova and hyperscaler in-house silicon chase the same inference dollars with far larger R&D. Cerebras's $243M R&D is a rounding error against Nvidia's. One architecture is one point of failure."
+    },
+    {
+      "category": "structural",
+      "title": "Cash burn and financing risk",
+      "description": "Negative book equity (-$579M) and operating losses mean IPO cash gets consumed during the WSE-4 ramp. If equity markets cool, the next raise is dilutive at a lower price, and customer prepayments that flatter today's cash flow reverse as the cycle laps."
+    },
+    {
+      "category": "macro",
+      "title": "AI capex sentiment reversal",
+      "description": "The valuation assumes the AI infrastructure cycle keeps expanding. A broad pullback in AI capex, or a rotation out of unprofitable AI names, would hit a no-earnings, high-multiple stock harder than the profitable incumbents."
+    }
+  ],
+  "social_sentiment": {
+    "reddit_mentions": null,
+    "x_mentions": null,
+    "bullish_pct": null,
+    "summary": "No sentiment skills returned data in this run. Qualitatively, CBRS trades as a retail-and-momentum-driven AI IPO with a thin float; the absence of sell-side coverage means price discovery leans on flow rather than fundamentals. Flagged in data_gaps."
+  }
+}
