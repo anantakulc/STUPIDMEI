@@ -1,0 +1,37 @@
+{
+  "ticker": "AXTI",
+  "audited_at": "2026-06-09T00:00:00Z",
+  "verdict": "PASS_WITH_NOTES",
+  "findings": [
+    {"claim": "Blended 12m target $12.73", "source_cited": "dcf_compute.py", "status": "VERIFIED", "notes": "Recomputed 0.30x3.66 + 0.40x9.19 + 0.15x21.89 + 0.15x31.16 = 12.73."},
+    {"claim": "Scenario probabilities + cross-check sum to 1.0", "source_cited": "AXTI_inputs.json", "status": "VERIFIED", "notes": "0.30 + 0.40 + 0.15 + 0.15 = 1.00."},
+    {"claim": "Upside -86.0%", "source_cited": "Calc", "status": "VERIFIED", "notes": "(12.73 - 90.78) / 90.78 = -86.0%."},
+    {"claim": "TTM revenue $95.9M, +39% YoY", "source_cited": "yfinance quarterly financials", "status": "VERIFIED", "notes": "26.9 + 23.0 + 28.0 + 18.0 = 95.9M. revenueGrowth field 0.391."},
+    {"claim": "Q1 2026 revenue +38.7% to $26.9M from $19.4M", "source_cited": "yfinance quarterly financials", "status": "VERIFIED", "notes": "26.9/19.4 - 1 = 38.66%, rounds to 38.7%."},
+    {"claim": "Q1 2026 gross margin 29.7% ($8.0M GP)", "source_cited": "yfinance quarterly", "status": "VERIFIED", "notes": "8.0/26.9 = 29.7%."},
+    {"claim": "Q1 2026 operating loss -$1.6M", "source_cited": "yfinance quarterly", "status": "VERIFIED", "notes": "Matches operating income row."},
+    {"claim": "FY22-FY25 revenue 141.1/75.8/99.4/88.3M", "source_cited": "yfinance annual financials", "status": "VERIFIED", "notes": "Matches. 2022-to-2023 = -46.3%; recomputed 75.8/141.1 - 1 = -46.3%."},
+    {"claim": "FY22 EBITDA $30.1M / 21.3% margin", "source_cited": "yfinance annual", "status": "VERIFIED", "notes": "30.1/141.1 = 21.3%."},
+    {"claim": "Inventory $81.7M, ~390 days", "source_cited": "yfinance balance sheet FY25", "status": "VERIFIED_WITH_NOTE", "notes": "Inventory 81.7M; COGS approx 77M (rev 88.3 - GP 11.2). 81.7/77 x 365 = 387 days, rounded to ~390."},
+    {"claim": "Net debt -$28.5M (net cash)", "source_cited": "yfinance info", "status": "VERIFIED", "notes": "totalDebt 78.627M - totalCash 107.144M = -28.5M. Note: FY25 balance sheet shows debt 64.8M / cash+STI 120.3M (-55.5M net cash); the more conservative info figure was used."},
+    {"claim": "EV/Sales 50.9x, P/S 61.9x, forward P/E 120.7x", "source_cited": "yfinance info", "status": "VERIFIED", "notes": "enterpriseToRevenue 50.86, priceToSalesTrailing12M 61.93, forwardPE 120.71."},
+    {"claim": "1-year return +4,861%", "source_cited": "yfinance 1y history", "status": "VERIFIED", "notes": "90.78/1.83 - 1 = 4860.7%, rounds to 4,861%. yfinance info '52WeekChange' field (+45.8%) is stale/incorrect; price history is authoritative."},
+    {"claim": "YTD return +442%", "source_cited": "yfinance history", "status": "VERIFIED", "notes": "90.78/16.76 - 1 = 441.6%."},
+    {"claim": "Drawdown from high -35.5%", "source_cited": "yfinance history", "status": "VERIFIED", "notes": "90.78/140.83 - 1 = -35.5%. 52-week range $1.83-$140.83 from 1y closes."},
+    {"claim": "Short interest 13.2% of float, 8.26M shares", "source_cited": "yfinance info", "status": "VERIFIED", "notes": "shortPercentOfFloat 0.1319, sharesShort 8,263,752."},
+    {"claim": "Insider ownership 7.2%", "source_cited": "yfinance info", "status": "VERIFIED", "notes": "heldPercentInsiders 0.07229."},
+    {"claim": "30d realized vol 141% annualized; ADTV ~$1.05B", "source_cited": "Calc from yfinance history", "status": "VERIFIED", "notes": "Recomputed from log returns and price x volume over trailing 30 sessions."},
+    {"claim": "Mean PT $96.50, Street upside +6.3%", "source_cited": "yfinance info", "status": "VERIFIED", "notes": "targetMeanPrice 96.5; 96.5/90.78 - 1 = 6.3%. Coverage thin (3 buy / 2 hold)."},
+    {"claim": "Forward EPS (FY26E) ~$0.75", "source_cited": "Derived from forward P/E", "status": "VERIFIED_WITH_NOTE", "notes": "90.78 / 120.71 = $0.752. This is an implied figure from the forward P/E, not a pulled consensus EPS. Flagged in data_gaps."},
+    {"claim": "CFO Gary L. Fischer", "source_cited": "Company disclosure (not re-pulled)", "status": "UNVERIFIED", "notes": "Not re-verified via the skill stack this session. Narrative already caveats this. CEO Morris S. Young is co-founder and long-standing; widely documented."},
+    {"claim": "Q2 FY26 earnings late July 2026", "source_cited": "None", "status": "UNVERIFIED", "notes": "Date and consensus not confirmed via skill stack; flagged in data_gaps and the recommendation block."},
+    {"claim": "Peer multiples (COHR/LITE/CRDO/ALAB/AAOI)", "source_cited": "yfinance info, same session", "status": "VERIFIED", "notes": "All peer figures pulled in the same session as the target on 2026-06-09. Peer set is reasonable for the optical/AI-interconnect cohort."},
+    {"claim": "China gallium/germanium export controls; Tongmei STAR Market history", "source_cited": "Public record / general knowledge", "status": "VERIFIED_WITH_NOTE", "notes": "Used as qualitative risk context, not as a quantified claim. Not sourced from the finance skill stack. Treat as analyst context."}
+  ],
+  "valuation_reproducibility": {
+    "ran_compute_script": true,
+    "matches_published": true,
+    "diff_notes": "Re-ran dcf_compute.py to /tmp; output matches published AXTI_valuation.json byte-for-byte excluding the computed_at timestamp."
+  },
+  "summary": "Solid. The valuation math is fully reproducible and the blended target, probability weights, and upside all recompute exactly. Every market-data and financial-statement figure (revenue, margins, EBITDA, balance sheet, returns, short interest, ownership, multiples, peer comps) ties to yfinance pulled this session. Soft spots are minor and already flagged in data_gaps: the forward EPS is an implied figure from the forward P/E rather than a pulled consensus, the CFO name and the Q2 FY26 earnings date were not re-verified via the skill stack, and the China export-control and Tongmei items are analyst context rather than skill-sourced data. The 52WeekChange info field from yfinance is stale (+45.8%) and was correctly overridden by the price history (+4,861%). No material errors; verdict PASS_WITH_NOTES."
+}

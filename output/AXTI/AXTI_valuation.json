@@ -1,0 +1,669 @@
+{
+  "schema_version": "1.0",
+  "ticker": "AXTI",
+  "currency": "USD",
+  "current_price": 90.78,
+  "shares_outstanding_b": 0.065423,
+  "net_debt_b": -0.0285,
+  "computed_at": "2026-06-09T10:42:43Z",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "AXT is loss-making on negative EBITDA, so a trailing multiple has no anchor. A long-horizon FCFF DCF that models the InP ramp and the path to cash generation is the honest way to value it; an EV/Sales cross-check anchors the rich near-term sales multiple. The central finding is how far intrinsic value sits below a 62x-trailing-sales price.",
+    "inputs": {
+      "wacc": {
+        "value": 0.12,
+        "components": {
+          "rf": 0.044,
+          "beta": 1.4,
+          "erp": 0.055,
+          "debt_weight": 0.0,
+          "cost_of_debt_after_tax": 0.05
+        },
+        "reasoning": "Ke = 4.4% Rf + 1.40 beta x 5.5% ERP = 12.1%. Raw yfinance beta is 1.81; sanitized to 1.40 to blend the high single-stock volatility with the semi sector. A China-domicile and export-control risk premium plus small-cap illiquidity push toward the top of the 9-12% photonics/semi band. Net cash means debt weight ~0, so WACC sits at Ke ~12.0%.",
+        "adjudication_notes": "12.0% is the top of the photonics/semi band; justified by China manufacturing exposure, cyclicality, and small-cap float.",
+        "components_reasoned": {
+          "rf": {
+            "value": 0.044,
+            "reasoning": "Risk-free rate, typically the local 10Y government bond yield. US ~4.4%, EM countries higher."
+          },
+          "beta": {
+            "value": 1.4,
+            "reasoning": "Equity beta vs local index. From yfinance unless sanitized to sector default."
+          },
+          "erp": {
+            "value": 0.055,
+            "reasoning": "Equity risk premium. DM ~5.5%, EM Indonesia ~6.5%, EM India ~6.5%."
+          },
+          "debt_weight": {
+            "value": 0.0,
+            "reasoning": "Debt portion of capital structure. Net debt / (net debt + market cap)."
+          },
+          "cost_of_debt_after_tax": {
+            "value": 0.05,
+            "reasoning": "Post-tax cost of debt. Yield on outstanding bonds x (1 - tax rate)."
+          }
+        }
+      },
+      "terminal_growth": {
+        "value": 0.035,
+        "reasoning": "InP optical content should outgrow GDP for years as datacenter bandwidth scales, but a commodity-tilted substrate line with three credible suppliers does not earn a rich terminal; 3.5% is GDP-plus and defensible for the franchise at scale."
+      },
+      "forecast_horizon_years": 10,
+      "terminal_value": {
+        "exit_ev_ebitda": 12.0
+      },
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": -0.003,
+          "revenue_b": 0.134,
+          "revenue_growth_pct": 40.0,
+          "ebit_margin": 0.0,
+          "tax_rate": 0.0,
+          "da_pct_of_revenue": 0.1,
+          "capex_pct_of_revenue": 0.1,
+          "wc_change_pct_of_revenue": 0.05,
+          "rationale": "FY26E +40% off the ~$96M TTM base on the InP datacenter ramp; FCF near zero as capex and a $80M+ inventory build absorb cash even as operating losses fade."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 0.005,
+          "revenue_b": 0.181,
+          "revenue_growth_pct": 35.0,
+          "ebit_margin": 0.04,
+          "tax_rate": 0.0,
+          "da_pct_of_revenue": 0.1,
+          "capex_pct_of_revenue": 0.09,
+          "wc_change_pct_of_revenue": 0.04,
+          "rationale": "FY27E +35%: first year of positive operating margin as revenue laps the fixed cost base; FCF turns slightly positive."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 0.016,
+          "revenue_b": 0.232,
+          "revenue_growth_pct": 28.0,
+          "ebit_margin": 0.08,
+          "tax_rate": 0.1,
+          "da_pct_of_revenue": 0.09,
+          "capex_pct_of_revenue": 0.08,
+          "wc_change_pct_of_revenue": 0.03,
+          "rationale": "FY28E +28%: operating leverage builds, ~7% FCF margin as utilization climbs and mix tilts to InP."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 0.028,
+          "revenue_b": 0.283,
+          "revenue_growth_pct": 22.0,
+          "ebit_margin": 0.11,
+          "tax_rate": 0.12,
+          "da_pct_of_revenue": 0.09,
+          "capex_pct_of_revenue": 0.08,
+          "wc_change_pct_of_revenue": 0.025,
+          "rationale": "FY29E +22%: ~10% FCF margin; the 2022 peak earnings power (mid-20s EBITDA margin) becomes the reference, not the ceiling."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 0.043,
+          "revenue_b": 0.334,
+          "revenue_growth_pct": 18.0,
+          "ebit_margin": 0.14,
+          "tax_rate": 0.15,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.07,
+          "wc_change_pct_of_revenue": 0.02,
+          "rationale": "FY30E +18%: ~13% FCF margin as capex intensity eases off the ramp."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 0.057,
+          "revenue_b": 0.381,
+          "revenue_growth_pct": 14.0,
+          "ebit_margin": 0.16,
+          "tax_rate": 0.18,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.07,
+          "wc_change_pct_of_revenue": 0.015,
+          "rationale": "FY31E +14%: ~15% FCF margin; franchise scaling, growth decelerating off a larger base."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 0.068,
+          "revenue_b": 0.423,
+          "revenue_growth_pct": 11.0,
+          "ebit_margin": 0.17,
+          "tax_rate": 0.2,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.06,
+          "wc_change_pct_of_revenue": 0.015,
+          "rationale": "FY32E +11%: ~16% FCF margin, maturing growth."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 0.078,
+          "revenue_b": 0.461,
+          "revenue_growth_pct": 9.0,
+          "ebit_margin": 0.18,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.07,
+          "capex_pct_of_revenue": 0.06,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "FY33E +9%: ~17% FCF margin, approaching steady state."
+        },
+        {
+          "year": 2034,
+          "fcf_b": 0.089,
+          "revenue_b": 0.493,
+          "revenue_growth_pct": 7.0,
+          "ebit_margin": 0.19,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.07,
+          "capex_pct_of_revenue": 0.05,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "FY34E +7%: ~18% FCF margin, near-terminal growth."
+        },
+        {
+          "year": 2035,
+          "fcf_b": 0.093,
+          "revenue_b": 0.518,
+          "revenue_growth_pct": 5.0,
+          "ebit_margin": 0.19,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.07,
+          "capex_pct_of_revenue": 0.05,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "FY35E +5%: terminal-approach year, ~18% FCF margin mature franchise."
+        }
+      ]
+    },
+    "outputs": {
+      "pv_explicit_fcf_b": 0.208,
+      "terminal_value_b": 1.132,
+      "pv_terminal_b": 0.365,
+      "implied_ev_b": 0.573,
+      "implied_equity_b": 0.601,
+      "implied_px": 9.19,
+      "calculation_trace": {
+        "wacc": {
+          "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
+          "steps": [
+            {
+              "label": "Cost of equity (Ke)",
+              "expression": "0.0440 + 1.400 x 0.0550",
+              "result": "0.1210 (12.10%)"
+            },
+            {
+              "label": "Equity weight x Ke",
+              "expression": "1.00 x 0.1210",
+              "result": "0.1210"
+            },
+            {
+              "label": "Debt weight x after-tax Kd",
+              "expression": "0.00 x 0.0500",
+              "result": "0.0000"
+            },
+            {
+              "label": "WACC",
+              "expression": "0.1210 + 0.0000",
+              "result": "0.1200 (12.00%)"
+            }
+          ]
+        },
+        "explicit_fcf": {
+          "formula": "PV explicit FCF = sum( FCF_t / (1+WACC)^t ) for t = 1..N",
+          "per_year": [
+            {
+              "year": 2026,
+              "fcf_b": -0.003,
+              "discount_factor": 0.8929,
+              "pv_b": -0.003
+            },
+            {
+              "year": 2027,
+              "fcf_b": 0.005,
+              "discount_factor": 0.7972,
+              "pv_b": 0.004
+            },
+            {
+              "year": 2028,
+              "fcf_b": 0.016,
+              "discount_factor": 0.7118,
+              "pv_b": 0.011
+            },
+            {
+              "year": 2029,
+              "fcf_b": 0.028,
+              "discount_factor": 0.6355,
+              "pv_b": 0.018
+            },
+            {
+              "year": 2030,
+              "fcf_b": 0.043,
+              "discount_factor": 0.5674,
+              "pv_b": 0.024
+            },
+            {
+              "year": 2031,
+              "fcf_b": 0.057,
+              "discount_factor": 0.5066,
+              "pv_b": 0.029
+            },
+            {
+              "year": 2032,
+              "fcf_b": 0.068,
+              "discount_factor": 0.4523,
+              "pv_b": 0.031
+            },
+            {
+              "year": 2033,
+              "fcf_b": 0.078,
+              "discount_factor": 0.4039,
+              "pv_b": 0.032
+            },
+            {
+              "year": 2034,
+              "fcf_b": 0.089,
+              "discount_factor": 0.3606,
+              "pv_b": 0.032
+            },
+            {
+              "year": 2035,
+              "fcf_b": 0.093,
+              "discount_factor": 0.322,
+              "pv_b": 0.03
+            }
+          ],
+          "result": "0.208B"
+        },
+        "terminal_value": {
+          "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
+          "steps": [
+            {
+              "label": "Last projected FCF",
+              "expression": "FCF_10",
+              "result": "0.093B"
+            },
+            {
+              "label": "Terminal FCF",
+              "expression": "0.093 x (1 + 0.0350)",
+              "result": "0.096B"
+            },
+            {
+              "label": "Terminal value",
+              "expression": "0.096 / (0.1200 - 0.0350)",
+              "result": "1.132B"
+            },
+            {
+              "label": "PV of terminal value",
+              "expression": "1.132 / (1+0.1200)^10",
+              "result": "0.365B"
+            }
+          ]
+        },
+        "bridge_to_implied_px": {
+          "formula": "Implied EV = PV explicit FCF + PV terminal;  Equity = EV - Net Debt;  Px = Equity / Shares",
+          "steps": [
+            {
+              "label": "Implied EV",
+              "expression": "0.208 + 0.365",
+              "result": "0.573B"
+            },
+            {
+              "label": "Less: net debt",
+              "expression": "0.573 - -0.029",
+              "result": "0.601B"
+            },
+            {
+              "label": "Implied price per share",
+              "expression": "0.601B / 0.065B shares",
+              "result": "$9.19"
+            }
+          ]
+        }
+      },
+      "fcff_build": [
+        {
+          "revenue_b": 0.134,
+          "ebit_margin": 0.0,
+          "ebit_b": 0.0,
+          "tax_rate": 0.0,
+          "nopat_b": 0.0,
+          "da_b": 0.013,
+          "da_pct": 0.1,
+          "capex_b": 0.013,
+          "capex_pct": 0.1,
+          "wc_change_b": 0.007,
+          "wc_pct": 0.05,
+          "fcff_derived_b": -0.007,
+          "has_full_build": true,
+          "year": 2026,
+          "fcf_b": -0.003
+        },
+        {
+          "revenue_b": 0.181,
+          "ebit_margin": 0.04,
+          "ebit_b": 0.007,
+          "tax_rate": 0.0,
+          "nopat_b": 0.007,
+          "da_b": 0.018,
+          "da_pct": 0.1,
+          "capex_b": 0.016,
+          "capex_pct": 0.09,
+          "wc_change_b": 0.007,
+          "wc_pct": 0.04,
+          "fcff_derived_b": 0.002,
+          "has_full_build": true,
+          "year": 2027,
+          "fcf_b": 0.005
+        },
+        {
+          "revenue_b": 0.232,
+          "ebit_margin": 0.08,
+          "ebit_b": 0.019,
+          "tax_rate": 0.1,
+          "nopat_b": 0.017,
+          "da_b": 0.021,
+          "da_pct": 0.09,
+          "capex_b": 0.019,
+          "capex_pct": 0.08,
+          "wc_change_b": 0.007,
+          "wc_pct": 0.03,
+          "fcff_derived_b": 0.012,
+          "has_full_build": true,
+          "year": 2028,
+          "fcf_b": 0.016
+        },
+        {
+          "revenue_b": 0.283,
+          "ebit_margin": 0.11,
+          "ebit_b": 0.031,
+          "tax_rate": 0.12,
+          "nopat_b": 0.027,
+          "da_b": 0.025,
+          "da_pct": 0.09,
+          "capex_b": 0.023,
+          "capex_pct": 0.08,
+          "wc_change_b": 0.007,
+          "wc_pct": 0.025,
+          "fcff_derived_b": 0.023,
+          "has_full_build": true,
+          "year": 2029,
+          "fcf_b": 0.028
+        },
+        {
+          "revenue_b": 0.334,
+          "ebit_margin": 0.14,
+          "ebit_b": 0.047,
+          "tax_rate": 0.15,
+          "nopat_b": 0.04,
+          "da_b": 0.027,
+          "da_pct": 0.08,
+          "capex_b": 0.023,
+          "capex_pct": 0.07,
+          "wc_change_b": 0.007,
+          "wc_pct": 0.02,
+          "fcff_derived_b": 0.036,
+          "has_full_build": true,
+          "year": 2030,
+          "fcf_b": 0.043
+        },
+        {
+          "revenue_b": 0.381,
+          "ebit_margin": 0.16,
+          "ebit_b": 0.061,
+          "tax_rate": 0.18,
+          "nopat_b": 0.05,
+          "da_b": 0.03,
+          "da_pct": 0.08,
+          "capex_b": 0.027,
+          "capex_pct": 0.07,
+          "wc_change_b": 0.006,
+          "wc_pct": 0.015,
+          "fcff_derived_b": 0.048,
+          "has_full_build": true,
+          "year": 2031,
+          "fcf_b": 0.057
+        },
+        {
+          "revenue_b": 0.423,
+          "ebit_margin": 0.17,
+          "ebit_b": 0.072,
+          "tax_rate": 0.2,
+          "nopat_b": 0.058,
+          "da_b": 0.034,
+          "da_pct": 0.08,
+          "capex_b": 0.025,
+          "capex_pct": 0.06,
+          "wc_change_b": 0.006,
+          "wc_pct": 0.015,
+          "fcff_derived_b": 0.06,
+          "has_full_build": true,
+          "year": 2032,
+          "fcf_b": 0.068
+        },
+        {
+          "revenue_b": 0.461,
+          "ebit_margin": 0.18,
+          "ebit_b": 0.083,
+          "tax_rate": 0.21,
+          "nopat_b": 0.066,
+          "da_b": 0.032,
+          "da_pct": 0.07,
+          "capex_b": 0.028,
+          "capex_pct": 0.06,
+          "wc_change_b": 0.005,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 0.066,
+          "has_full_build": true,
+          "year": 2033,
+          "fcf_b": 0.078
+        },
+        {
+          "revenue_b": 0.493,
+          "ebit_margin": 0.19,
+          "ebit_b": 0.094,
+          "tax_rate": 0.21,
+          "nopat_b": 0.074,
+          "da_b": 0.035,
+          "da_pct": 0.07,
+          "capex_b": 0.025,
+          "capex_pct": 0.05,
+          "wc_change_b": 0.005,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 0.079,
+          "has_full_build": true,
+          "year": 2034,
+          "fcf_b": 0.089
+        },
+        {
+          "revenue_b": 0.518,
+          "ebit_margin": 0.19,
+          "ebit_b": 0.098,
+          "tax_rate": 0.21,
+          "nopat_b": 0.078,
+          "da_b": 0.036,
+          "da_pct": 0.07,
+          "capex_b": 0.026,
+          "capex_pct": 0.05,
+          "wc_change_b": 0.005,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 0.083,
+          "has_full_build": true,
+          "year": 2035,
+          "fcf_b": 0.093
+        }
+      ],
+      "dual_terminal_value": {
+        "gordon_tv_b": 1.1324117647058825,
+        "gordon_pv_b": 0.36460628103573456,
+        "exit_multiple_tv_b": 1.6161600000000003,
+        "exit_multiple_pv_b": 0.5203602660484192,
+        "exit_multiple_x": 12.0,
+        "blended_tv_b": 1.3742858823529414,
+        "blended_pv_b": 0.4424832735420769,
+        "terminal_ebitda_b": 0.13468000000000002
+      },
+      "wacc_adjudication": {
+        "sector": "(no sector hint)",
+        "sector_band": [
+          0.08,
+          0.12
+        ],
+        "formula_wacc": 0.12,
+        "verdict": "within band (8.0%-12.0%)",
+        "ke": 0.121,
+        "notes": "12.0% is the top of the photonics/semi band; justified by China manufacturing exposure, cyclicality, and small-cap float."
+      }
+    },
+    "sensitivity": {
+      "rows_label": "WACC",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.11,
+        0.115,
+        0.12,
+        0.125,
+        0.13
+      ],
+      "col_values": [
+        0.025,
+        0.03,
+        0.035,
+        0.04,
+        0.045
+      ],
+      "implied_px_matrix": [
+        [
+          9.86,
+          10.27,
+          10.73,
+          11.26,
+          11.87
+        ],
+        [
+          9.17,
+          9.52,
+          9.91,
+          10.35,
+          10.86
+        ],
+        [
+          8.55,
+          8.85,
+          9.19,
+          9.57,
+          9.99
+        ],
+        [
+          8.01,
+          8.26,
+          8.55,
+          8.87,
+          9.24
+        ],
+        [
+          7.51,
+          7.74,
+          7.99,
+          8.26,
+          8.57
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "EV/Sales is the standard cross-check for loss-making hypergrowth. Peer set: optical and compound-semi names tied to AI interconnect. A generous 15x FY26E sales gives the bull theme its due and still lands far below the current $90.78, which is the central finding: the trailing 62x sales multiple has no fundamental support.",
+    "inputs": {
+      "multiple_type": "EV/Sales",
+      "peer_median_multiple": 15.0,
+      "fy_estimate": 0.134,
+      "peers_used": [
+        "COHR",
+        "LITE",
+        "CRDO",
+        "ALAB",
+        "AAOI"
+      ],
+      "reasoning": "15x applied to FY26E revenue of ~$0.134B. Generous for an optical-substrate cohort that mostly trades single-digit to low-double-digit EV/sales; chosen to be fair to the theme. Even so it implies ~$31, roughly a third of spot."
+    },
+    "outputs": {
+      "implied_ev_b": 2.01,
+      "implied_equity_b": 2.039,
+      "implied_px": 31.16
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.135,
+        "terminal_growth": 0.02,
+        "fcf_multiplier": 0.5
+      },
+      "implied_px": 3.66,
+      "probability": 0.3,
+      "probability_reasoning": "Heavy weight. The cycle rolling (revenue already halved 2022-to-2023), an inventory writedown off the $81.7M build, China export-license friction, and multiple compression are concrete, dateable downside drivers, not tail risks.",
+      "reasoning": "AI-optical double-ordering digests in 2026-2027, revenue contracts, margins relapse, and a China export shock strands shipments; the multiple compresses with no fundamental floor."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "implied_px": 9.19,
+      "probability": 0.4,
+      "probability_reasoning": "Central case. The InP ramp continues and AXT reaches sustained operating profit mid-horizon, but even this constructive path leaves the stock valued far ahead of intrinsic value.",
+      "reasoning": "Steady InP-led ramp with operating leverage delivering mid-to-high-teens FCF margin by the early 2030s, mirroring 2022 peak earnings power as a reference."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.105,
+        "terminal_growth": 0.045,
+        "fcf_multiplier": 1.7
+      },
+      "implied_px": 21.89,
+      "probability": 0.15,
+      "probability_reasoning": "Lower odds. Requires InP optical demand to push revenue toward $1B with margins above the 2022 peak, co-packaged optics extending the roadmap, and China supply friction never biting.",
+      "reasoning": "AXT becomes the default InP substrate for the multi-generation optical roadmap; revenue and FCF margins beat the base path materially."
+    }
+  ],
+  "blended_target": 12.73,
+  "blending_logic": "40% Base DCF + 30% Bear DCF + 15% Bull DCF + 15% EV/Sales cross-check.",
+  "blending_weights": {
+    "cross_check": 0.15
+  },
+  "weights_reasoning": "Base 40% reflects a constructive but realistic InP ramp. Bear gets a heavy 30% because the 2022-to-2023 revenue halving, the $81.7M inventory overhang, China export-control exposure, and 62x-sales multiple compression are concrete near-term catalysts, not tail events. Bull 15% for the demand-acceleration case. The EV/Sales cross-check carries 15% to anchor with a relative lens; even a generous 15x sales lands near $31, well below spot, which is the central finding of the work.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 3.66,
+      "weight": 0.3,
+      "contribution": 1.1,
+      "reasoning": "Heavy weight. The cycle rolling (revenue already halved 2022-to-2023), an inventory writedown off the $81.7M build, China export-license friction, and multiple compression are concrete, dateable downside drivers, not tail risks."
+    },
+    {
+      "component": "Base",
+      "implied_px": 9.19,
+      "weight": 0.4,
+      "contribution": 3.68,
+      "reasoning": "Central case. The InP ramp continues and AXT reaches sustained operating profit mid-horizon, but even this constructive path leaves the stock valued far ahead of intrinsic value."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 21.89,
+      "weight": 0.15,
+      "contribution": 3.28,
+      "reasoning": "Lower odds. Requires InP optical demand to push revenue toward $1B with margins above the 2022 peak, co-packaged optics extending the roadmap, and China supply friction never biting."
+    },
+    {
+      "component": "Multiple",
+      "implied_px": 31.16,
+      "weight": 0.15,
+      "contribution": 4.67,
+      "reasoning": "EV/Sales is the standard cross-check for loss-making hypergrowth. Peer set: optical and compound-semi names tied to AI interconnect. A generous 15x FY26E sales gives the bull theme its due and still lands far below the current $90.78, which is the central finding: the trailing 62x sales multiple has no fundamental support."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": -86.0
+}

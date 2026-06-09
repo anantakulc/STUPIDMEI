@@ -1,0 +1,68 @@
+{
+  "ticker": "AXTI",
+  "company_name": "AXT, Inc.",
+  "bull_thesis_sentence": "AXT owns the indium phosphide substrate that AI datacenter optics runs on, and a revenue ramp now compounding near 40% with gross margin back to 30% is dragging a long-loss-making materials company to the edge of real profit.",
+  "bull_thesis_bullets": [
+    "InP is the bottleneck material for 800G and 1.6T optical transceivers; AXT is one of three credible global suppliers, and hyperscaler optical demand is pulling its highest-margin product through a multi-year ramp.",
+    "Operating leverage is showing up in the print: gross margin went from -6% in Q1 2025 to 30% in Q1 2026, and the operating loss narrowed from -$10.3M to -$1.6M over the same four quarters.",
+    "Revenue compounding at ~39% off a $96M base into a market that thinks in billions; if InP scales the way optical capex implies, the 2022 cycle (revenue $141M, EBITDA $30M) is a floor for what margins do at volume, not a ceiling."
+  ],
+  "bull_catalysts": [
+    {"id": 1, "title": "InP revenue inflection on AI optical demand", "body": "Indium phosphide is the substrate under the lasers and photodetectors inside 800G and 1.6T optical transceivers, the exact components hyperscalers are buying to wire up GPU clusters. AXT's Q1 2026 revenue hit $26.9M, up 38.7% from $19.4M a year earlier, and the mix shift toward InP is the driver. This isn't a broad-based recovery across all three substrate lines; it's InP specifically being pulled by datacenter optics. As long as AI cluster buildouts keep scaling east-west bandwidth, InP demand has a structural tailwind that didn't exist in prior AXT cycles."},
+    {"id": 2, "title": "Gross margin recovery from negative to 30%", "body": "Gross profit went from -$1.2M in Q1 2025 to $8.0M in Q1 2026, a swing to 29.7% gross margin. The path was steady: -6%, then 8%, 22%, 21%, 30% across the last five quarters. Compound semiconductor substrates carry high fixed costs in crystal growth and wafering, so volume and mix do most of the margin work. The recovery says utilization is climbing and the higher-value InP wafers are crowding out lower-margin GaAs and germanium in the mix."},
+    {"id": 3, "title": "Approaching operating breakeven", "body": "The operating loss narrowed from -$10.3M in Q1 2025 to -$1.6M in Q1 2026. Four straight quarters of improvement. At the current revenue trajectory and the 30% gross margin already printed, the next leg of the ramp crosses into operating profit. AXT has carried a fixed R&D and SG&A base through years of underutilization; that base now scales into profit rather than dragging on it, which is exactly the operating-leverage setup that re-rates a materials name."},
+    {"id": 4, "title": "Only three credible InP suppliers globally", "body": "High-purity InP single-crystal growth is hard. AXT, Sumitomo, and JX are the names customers qualify, and qualification cycles for substrate suppliers run years because a wafer defect propagates into every downstream device. That qualification moat means AXT's design-ins are sticky once won, and the supply side can't flood overnight even as optical demand spikes. Three-supplier markets with multi-year qualification tend to hold pricing far better than commoditized wafer lines."},
+    {"id": 5, "title": "Vertical integration into 6N/7N gallium and raw materials", "body": "AXT owns upstream joint ventures producing purified gallium (6N+ and 7N+), boron trioxide, and related raw materials in China. That secures feedstock and adds a margin layer most substrate peers don't capture. With gallium itself a strategic material under export scrutiny, controlling purified supply is both a cost advantage and a supply-security selling point for customers who need to know their substrate maker won't get cut off at the raw-material level."},
+    {"id": 6, "title": "Balance sheet refilled for the ramp", "body": "Cash and short-term investments stood at $120.3M at end-2025, up from $22.8M a year earlier, against total debt of $64.8M. Stockholders' equity rose to $273.3M from $192.8M. AXT raised capital into the strength, so it can fund the capacity and inventory build the InP ramp needs without a distressed dilution later. Net cash position removes the financing-risk discount that usually hangs over a small-cap semis name mid-ramp."},
+    {"id": 7, "title": "2022 cycle proves the earnings power at volume", "body": "In 2022 AXT did $141.1M in revenue, $14.3M operating income, and $30.1M EBITDA. That was the prior peak, before the substrate downcycle. It establishes that this exact asset base, with this exact cost structure, throws off mid-20s EBITDA margins when the lines run full. The bull case isn't asking the market to believe in unproven economics; it's asking whether InP optical demand pushes utilization past that prior peak, which the order trajectory suggests it will."},
+    {"id": 8, "title": "Silicon photonics and co-packaged optics expand the InP TAM", "body": "The next architecture shift in datacenter optics, co-packaged optics and silicon photonics, still needs InP for the light source: lasers don't come from silicon. As optics move closer to the switch ASIC and the bandwidth per port climbs, the InP content per system rises rather than disappears. That extends the runway well past the current 800G/1.6T generation and gives AXT exposure to the multi-generation optical roadmap, not a single product cycle."},
+    {"id": 9, "title": "Analyst coverage constructive, target above spot", "body": "Of the analysts covering AXTI, 3 rate it buy and 2 hold, with a mean price target of $96.50 against a recent $90.78. Coverage is thin (small cap, 4-5 analysts), which means the name is under-followed relative to its newfound AI-optical relevance. Thin coverage on an inflecting story is a setup where each incremental upgrade or estimate revision moves the stock disproportionately."},
+    {"id": 10, "title": "Diversified end-market optionality beyond datacenter", "body": "Beyond datacenter optics, AXT's InP and GaAs feed 5G, lidar for autonomous vehicles and robotics, 3D sensing VCSELs, micro-LED displays, and satellite solar cells via germanium. Most of these are early-cycle volume markets. The datacenter InP ramp is the near-term driver, but lidar and micro-LED give second and third legs that aren't yet in consensus numbers, so the demand base isn't a single-customer or single-application bet."}
+  ],
+  "business_facts": {
+    "summary": "AXT designs and manufactures compound and single-element semiconductor substrates: indium phosphide (InP), gallium arsenide (GaAs), and germanium (Ge). These are the base wafers on which optical, RF, and optoelectronic devices are built. The company also runs upstream joint ventures in China that produce purified gallium and other raw materials used in its own substrates.",
+    "business_model": "Revenue comes from selling polished single-crystal substrate wafers to device makers who fabricate lasers, detectors, LEDs, RF chips, and solar cells on top of them. Pricing scales with wafer diameter, purity, and crystal quality; InP commands the highest price and margin. Upstream raw-material JVs add a feedstock margin layer and supply security.",
+    "segments": [
+      {"name": "Indium phosphide (InP) substrates", "revenue_share_pct": null, "growth_yoy_pct": null, "margin_pct": null, "description": "Highest-value line. Substrate for datacenter optical transceivers, silicon photonics, lasers, detectors, 5G. The AI-optical demand driver. Segment-level revenue not separately disclosed in summary data."},
+      {"name": "Gallium arsenide (GaAs) substrates", "revenue_share_pct": null, "growth_yoy_pct": null, "margin_pct": null, "description": "Semi-insulating and semi-conducting GaAs for RF, Wi-Fi, VCSELs, 3D sensing, micro-LED, power amplifiers."},
+      {"name": "Germanium substrates and raw materials", "revenue_share_pct": null, "growth_yoy_pct": null, "margin_pct": null, "description": "Germanium for satellite multi-junction solar and IR detectors; plus 6N/7N purified gallium, boron trioxide, gallium-magnesium alloy from upstream JVs."}
+    ],
+    "customers": [
+      {"name": null, "revenue_share_pct": null, "importance": "Customer names not disclosed in summary data; device makers in optical transceivers, RF, lidar, and display. 10-K-level concentration not available without filing access."}
+    ],
+    "geographic_revenue": [
+      {"region": "Asia (incl. China)", "pct": null},
+      {"region": "Americas / Europe", "pct": null}
+    ]
+  },
+  "industry_position_bull": {
+    "market_overview": "Datacenter optical interconnect is scaling with AI cluster buildouts. Each generation, 400G to 800G to 1.6T, raises the optical content per GPU and the laser/detector count per transceiver, all of which sit on InP. The substrate layer is a narrow, qualification-gated part of that supply chain with only a handful of credible suppliers.",
+    "tam_usd_bn": 5,
+    "moat": "Multi-year customer qualification cycles on substrate quality, scarce high-purity InP single-crystal growth capability (three credible global suppliers), and vertical integration into purified gallium feedstock. Substrate defects propagate into every device built on the wafer, so customers don't switch suppliers casually."
+  },
+  "peers_positive_read": "Optical and compound-semi peers trade on the same AI-interconnect demand AXT feeds, and many sit at far larger market caps for selling further down the value chain. AXT supplies the raw substrate that names like Coherent, Lumentum, and the transceiver makers depend on, yet trades at a fraction of their absolute size. On a relative basis the loss-making-growth optical cohort (Cerebras, Astera, Credo style names) carries rich EV/Sales multiples; AXT's own multiple is stretched on trailing numbers but compresses fast if the revenue ramp and margin recovery continue at the current pace.",
+  "bull_valuation_lens": {
+    "method_preference": "DCF",
+    "method_reasoning": "AXT is loss-making today but has a visible revenue ramp, a gross margin already recovered to 30%, and a fixed cost base that scales into profit. A long-horizon FCFF DCF that models the path to cash generation captures the earnings power better than a trailing multiple on negative EBITDA. An EV/Sales cross-check anchors the rich near-term sales multiple.",
+    "bull_dcf_assumptions": {
+      "wacc": 0.105,
+      "wacc_reasoning": "Ke driven by a beta near 1.8 (small-cap semis, high volatility, China exposure) on a 4.4% risk-free and 5.5% ERP, lightly offset by net-cash balance sheet. Bull case takes the lower end of the defensible WACC band given the de-risking from the cash raise.",
+      "terminal_growth": 0.045,
+      "terminal_growth_reasoning": "InP optical content should outgrow GDP for years as datacenter bandwidth scales and co-packaged optics extends the roadmap; 4.5% terminal is aggressive but defensible for a structurally advantaged materials franchise.",
+      "fcf_growth_path": "+40 / +35 / +28 / +22 / +18 / +14 / +11 / +9 / +7 / +5",
+      "fcf_growth_reasoning": "Front-loaded growth tracking the InP ramp and AI optical demand, decelerating toward GDP-plus as the base scales. Margin expansion (gross margin past 30% toward the mid-30s at volume, operating leverage on the fixed base) turns negative FCF positive within the first half of the horizon, mirroring the 2022 peak earnings power as a floor at full utilization."
+    }
+  },
+  "sources_used": [
+    "yfinance-data: price, fast_info, info (market cap, shares, margins, targets, recommendations)",
+    "yfinance-data: annual financials FY2022-FY2025 (revenue, gross profit, operating income, EBITDA)",
+    "yfinance-data: quarterly financials Q1 2025 - Q1 2026 (revenue, gross profit, operating income)",
+    "yfinance-data: balance sheet FY2024-FY2025 (cash, debt, equity)"
+  ],
+  "open_questions": [
+    "Segment-level revenue split (InP vs GaAs vs Ge) not available in summary data; need 10-K for exact InP mix.",
+    "Customer concentration not disclosed in summary data; need 10-K customer/geography breakout.",
+    "Magnitude of China raw-material JV contribution to consolidated margin not quantified without filing detail.",
+    "Capacity additions and capex plan for the InP ramp not detailed without transcript/filing access."
+  ]
+}

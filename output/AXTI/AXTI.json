@@ -1,0 +1,518 @@
+{
+  "ticker": "AXTI",
+  "name": "AXT, Inc.",
+  "listings": "NASDAQ",
+  "sector": "Technology. Semiconductor Materials (Compound Substrates)",
+  "date": "2026-06-09",
+  "engine": "yfinance-data (price, financials, balance sheet, ownership, peers); equity-bull-case; equity-bear-case; dcf_compute.py",
+  "recommendation": {
+    "action": "SELL",
+    "tone": "negative",
+    "current_price": 90.78,
+    "target_12m": 12.73,
+    "upside_pct": -86.0,
+    "rationale": "Probability-weighted: Bear 30% x $3.66 + Base 40% x $9.19 + Bull 15% x $21.89 + EV/Sales cross-check 15% x $31.16 = $12.73. Even a generous 15x FY26E sales lands near $31, a third of spot. The business is real and inflecting; the price is not.",
+    "next_earnings": "Q2 FY26 expected late July 2026 (date unconfirmed; consensus thin, 4-5 analysts)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$90.78"
+    },
+    {
+      "label": "52-week range",
+      "value": "$1.83 to $140.83"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-35.5%"
+    },
+    {
+      "label": "1-year return",
+      "value": "+4,861%"
+    },
+    {
+      "label": "YTD return",
+      "value": "+442%"
+    },
+    {
+      "label": "Market cap",
+      "value": "$5.9B"
+    },
+    {
+      "label": "Enterprise value",
+      "value": "$4.88B"
+    },
+    {
+      "label": "Net debt",
+      "value": "-$28.5M (net cash)"
+    },
+    {
+      "label": "FY25 revenue",
+      "value": "$88.3M (TTM $95.9M, +39% YoY)"
+    },
+    {
+      "label": "FY25 EBITDA / margin",
+      "value": "-$11.2M / -12.7%"
+    },
+    {
+      "label": "FY25 FCF",
+      "value": "-$18.8M"
+    },
+    {
+      "label": "Forward EPS (FY26E)",
+      "value": "~$0.75 (forward P/E implied)"
+    },
+    {
+      "label": "Forward P/E",
+      "value": "120.7x"
+    },
+    {
+      "label": "EV / EBITDA (TTM)",
+      "value": "n/m (negative EBITDA)"
+    },
+    {
+      "label": "EV / Sales (TTM)",
+      "value": "50.9x"
+    },
+    {
+      "label": "Price / Sales (TTM)",
+      "value": "61.9x"
+    },
+    {
+      "label": "Beta",
+      "value": "1.81"
+    },
+    {
+      "label": "ADTV (30d, $)",
+      "value": "~$1.05B"
+    },
+    {
+      "label": "30d realized vol",
+      "value": "141% annualized"
+    },
+    {
+      "label": "Short interest",
+      "value": "13.2% of float (8.26M sh)"
+    },
+    {
+      "label": "Insider ownership",
+      "value": "7.2%"
+    },
+    {
+      "label": "Analyst consensus",
+      "value": "3 Buy / 2 Hold"
+    },
+    {
+      "label": "Mean / median PT",
+      "value": "$96.50 / ~$96"
+    },
+    {
+      "label": "Implied PT upside (Street)",
+      "value": "+6.3%"
+    },
+    {
+      "label": "Our 12m target",
+      "value": "$12.73 (-86%)"
+    }
+  ],
+  "thesis": [
+    "InP is the substrate AI datacenter optics runs on, and AXT is one of three credible global suppliers; the demand pull is real and the Q1 2026 print proved it (+38.7% revenue, gross margin back to 30%, operating loss down to -$1.6M).",
+    "The earnings power exists: in 2022 this same asset base did $141M revenue and $30M EBITDA, so the operating leverage on the InP ramp is not hypothetical.",
+    "None of that justifies 62x trailing sales on $96M of revenue with negative EBITDA; intrinsic value sits near $9-13, and even a generous 15x sales lands at $31, so the stock is priced 3-7x above any defensible number."
+  ],
+  "bear_paragraph": "Strip the theme and AXT is a $96M-revenue substrate maker that lost money in three of the last four years, carries over a year of inventory, and builds almost all of it inside China under tightening gallium and germanium export controls. The market pays $5.9B for it: 62x trailing sales, 51x EV/sales, 121x forward earnings, 163x even the 2022 peak EBITDA. That price requires InP optical demand to compound at 40% for years at expanding margins with zero China supply disruption. Here's how it breaks. AI optical customers, having double-ordered into the GPU scramble, digest inventory in late 2026; AXT's revenue, which already fell 46% in the 2022-to-2023 cycle, decelerates or contracts. One miss against the implied ramp and the multiple, with no fundamental floor and only 4-5 analysts anchoring it, compresses toward the optical-substrate peer range. A 50-60% drawdown gets you to roughly 25x sales, still expensive. Layer in a single China export-license delay stranding shipments and the air pocket is faster. The bear case does lean on the cycle rolling and the multiple normalizing, neither guaranteed on a 12-month clock, but at 62x sales you are not paid to wait and find out.",
+  "peers": [
+    {
+      "ticker": "AXTI",
+      "pe_ntm": 120.7,
+      "ev_ebitda": -1182.6,
+      "rev_growth_ttm": 39.1,
+      "ytd": 441.6,
+      "y1": 4860.7,
+      "highlight": true
+    },
+    {
+      "ticker": "COHR",
+      "pe_ntm": 49.6,
+      "ev_ebitda": 60.9,
+      "rev_growth_ttm": 20.5,
+      "ytd": 106.8,
+      "y1": 395.0
+    },
+    {
+      "ticker": "LITE",
+      "pe_ntm": 49.5,
+      "ev_ebitda": 126.5,
+      "rev_growth_ttm": 90.1,
+      "ytd": 131.9,
+      "y1": 990.5
+    },
+    {
+      "ticker": "CRDO",
+      "pe_ntm": 25.6,
+      "ev_ebitda": 84.3,
+      "rev_growth_ttm": 157.0,
+      "ytd": 55.2,
+      "y1": 212.7
+    },
+    {
+      "ticker": "ALAB",
+      "pe_ntm": 82.3,
+      "ev_ebitda": 249.5,
+      "rev_growth_ttm": 93.4,
+      "ytd": 92.9,
+      "y1": 275.0
+    },
+    {
+      "ticker": "AAOI",
+      "pe_ntm": 41.2,
+      "ev_ebitda": -568.9,
+      "rev_growth_ttm": 51.4,
+      "ytd": 396.6,
+      "y1": 1065.6
+    }
+  ],
+  "peers_read": "AXT carries the highest sales multiple in the optical/AI-interconnect group while being the smallest by revenue and one of only two with negative EBITDA. Coherent and Lumentum sell finished lasers and transceivers (further up the value chain, real EBITDA) at 12x and 28x sales. Credo and Astera grow far faster (157% and 93%) and still trade below AXT on sales. The peer math says the substrate layer, the rawest part of the chain, is being awarded the richest multiple in the cohort. That inversion is the signal: this is theme flow, not relative value. The +4,861% one-year move versus 395-1,066% for the genuinely hot peers tells the same story.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "InP revenue inflection on AI optical demand",
+      "body": "Indium phosphide is the substrate under the lasers and photodetectors inside 800G and 1.6T optical transceivers, the exact components hyperscalers are buying to wire up GPU clusters. AXT's Q1 2026 revenue hit $26.9M, up 38.7% from $19.4M a year earlier, and the mix shift toward InP is the driver. This isn't a broad recovery across all three substrate lines; it's InP specifically pulled by datacenter optics. As long as AI cluster buildouts keep scaling east-west bandwidth, InP demand has a structural tailwind that didn't exist in prior AXT cycles."
+    },
+    {
+      "id": 2,
+      "title": "Gross margin recovery from negative to 30%",
+      "body": "Gross profit went from -$1.2M in Q1 2025 to $8.0M in Q1 2026, a swing to 29.7% gross margin. The path was steady: -6%, then 8%, 22%, 21%, 30% across the last five quarters. Compound semiconductor substrates carry high fixed costs in crystal growth and wafering, so volume and mix do most of the margin work. The recovery says utilization is climbing and the higher-value InP wafers are crowding out lower-margin GaAs and germanium."
+    },
+    {
+      "id": 3,
+      "title": "Approaching operating breakeven",
+      "body": "The operating loss narrowed from -$10.3M in Q1 2025 to -$1.6M in Q1 2026. Four straight quarters of improvement. At the current revenue trajectory and the 30% gross margin already printed, the next leg of the ramp crosses into operating profit. AXT has carried a fixed R&D and SG&A base through years of underutilization; that base now scales into profit rather than dragging on it, the operating-leverage setup that re-rates a materials name."
+    },
+    {
+      "id": 4,
+      "title": "Only three credible InP suppliers globally",
+      "body": "High-purity InP single-crystal growth is hard. AXT, Sumitomo, and JX are the names customers qualify, and qualification cycles run years because a wafer defect propagates into every downstream device. That qualification moat makes AXT's design-ins sticky once won, and the supply side can't flood overnight even as optical demand spikes. Three-supplier markets with multi-year qualification tend to hold pricing better than commoditized wafer lines."
+    },
+    {
+      "id": 5,
+      "title": "Vertical integration into 6N/7N gallium and raw materials",
+      "body": "AXT owns upstream joint ventures producing purified gallium (6N+ and 7N+), boron trioxide, and gallium-magnesium alloy in China. That secures feedstock and adds a margin layer most substrate peers don't capture. With gallium itself a strategic material under export scrutiny, controlling purified supply is both a cost advantage and a supply-security selling point for customers who need to know their substrate maker won't get cut off at the raw-material level."
+    },
+    {
+      "id": 6,
+      "title": "Balance sheet refilled for the ramp",
+      "body": "Cash and short-term investments stood at $120.3M at end-2025, up from $22.8M a year earlier, against total debt of $64.8M. Stockholders' equity rose to $273.3M from $192.8M. AXT raised capital into the strength, so it can fund the capacity and inventory the InP ramp needs without a distressed dilution later. Net cash removes the financing-risk discount that usually hangs over a small-cap semis name mid-ramp."
+    },
+    {
+      "id": 7,
+      "title": "2022 cycle proves the earnings power at volume",
+      "body": "In 2022 AXT did $141.1M in revenue, $14.3M operating income, and $30.1M EBITDA. That was the prior peak, before the substrate downcycle. It establishes that this exact asset base throws off mid-20s EBITDA margins when the lines run full. The bull case isn't asking the market to believe in unproven economics; it's asking whether InP optical demand pushes utilization past that prior peak, which the order trajectory suggests it will."
+    },
+    {
+      "id": 8,
+      "title": "Silicon photonics and co-packaged optics expand the InP TAM",
+      "body": "The next architecture shift in datacenter optics, co-packaged optics and silicon photonics, still needs InP for the light source: lasers don't come from silicon. As optics move closer to the switch ASIC and bandwidth per port climbs, InP content per system rises rather than disappears. That extends the runway past the current 800G/1.6T generation and gives AXT exposure to the multi-generation optical roadmap, not a single product cycle."
+    },
+    {
+      "id": 9,
+      "title": "Constructive analyst coverage, thin and under-followed",
+      "body": "Of the analysts covering AXTI, 3 rate it buy and 2 hold, with a mean target of $96.50 against a recent $90.78. Coverage is thin (4-5 analysts), so the name is under-followed relative to its newfound AI-optical relevance. On an inflecting story, each incremental upgrade or estimate revision can move the stock disproportionately."
+    },
+    {
+      "id": 10,
+      "title": "Diversified end-market optionality beyond datacenter",
+      "body": "Beyond datacenter optics, AXT's InP and GaAs feed 5G, lidar for autonomous vehicles and robotics, 3D-sensing VCSELs, micro-LED displays, and satellite solar via germanium. Most are early-cycle volume markets. The datacenter InP ramp is the near-term driver, but lidar and micro-LED give second and third legs that aren't yet in consensus numbers, so the demand base isn't a single-application bet."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "62x sales on $96M of revenue is the whole problem",
+      "body": "AXT trades at 62x trailing sales and 51x EV/sales with negative EBITDA and a 121x forward P/E. Market cap is $5.9B on $95.9M of trailing revenue. Even at the 2022 peak ($14.3M operating income, $30.1M EBITDA), the $4.9B enterprise value is 163x peak EBITDA. There is no path to these numbers on fundamentals inside a decade. The stock is a multiple, not a business, and multiples on small-cap thematic names compress 50-70% the moment growth disappoints by a single quarter."
+    },
+    {
+      "id": 2,
+      "title": "Manufacturing is inside China under export controls",
+      "body": "AXT's substrate production and raw-material joint ventures sit in China (the Tongmei subsidiary, Beijing, Dingxing, Kazuo). China imposed export licensing on gallium and germanium in 2023 and has tightened it since. AXT must obtain Chinese government licenses to ship substrates and purified gallium out of the country. Any license delay, quota, or retaliation in the US-China chip fight strands revenue regardless of demand. A US-listed company whose factories and feedstock all sit on the wrong side of an export-control war carries a discount this multiple ignores."
+    },
+    {
+      "id": 3,
+      "title": "The business is violently cyclical and just proved it",
+      "body": "Revenue went from $141.1M in 2022 to $75.8M in 2023, down 46% in one year, and operating income flipped from +$14.3M to -$19.0M. This is a commodity substrate line whose orders whip with customer inventory cycles. The current ramp off a $96M base is a recovery from a trough, not secular escape velocity. If optical customers double-order into the AI scramble and then digest, AXT's revenue can halve again. The chart already shows the fragility: $110 to $89 in four sessions in early June 2026."
+    },
+    {
+      "id": 4,
+      "title": "Inventory of $81.7M against $88M of annual revenue",
+      "body": "Year-end 2025 inventory was $81.7M on FY revenue of $88.3M and COGS near $77M, roughly 390 days of inventory: more than a full year of product on the books. Either demand visibility is poor and AXT is building ahead of orders that may not come, or substrate turns are structurally glacial. Both are bearish. Bloated inventory into a cyclical recovery is the classic setup for a writedown when the cycle rolls, and it ties up the cash the bull case says funds the ramp."
+    },
+    {
+      "id": 5,
+      "title": "A 50x move in a year on 141% realized vol",
+      "body": "AXTI went from $1.83 to $90.78 over twelve months, up about 4,861%, and is up 442% year-to-date in 2026. Thirty-day realized volatility is 141% annualized. This is a blow-off, not a re-rating. Stocks that go up 50x on a theme give large fractions back when the flow rotates, and the same illiquidity-meets-momentum that powered the run powers the air pocket down. The stock is already 35% off its high."
+    },
+    {
+      "id": 6,
+      "title": "Still loss-making after years; one profitable year recently",
+      "body": "AXT lost money in 2023 (-$17.9M net), 2024 (-$11.6M), and 2025 (-$21.3M). The only profitable year in the recent record is 2022. Q1 2026 still printed a -$1.6M operating loss. The bull leans on 'approaching breakeven,' but the company has approached and retreated before. A 30% gross margin on a high-fixed-cost crystal-growth business is thin, and one mix shift back toward GaAs/germanium pushes margins and the loss back out."
+    },
+    {
+      "id": 7,
+      "title": "Bigger, better-capitalized competitors",
+      "body": "InP and GaAs substrates are also made by Sumitomo Electric and JX Nippon Mining, both far larger, Japan-based (no China export overhang), and able to outspend AXT on capacity. If InP optical demand is as good as the multiple implies, these incumbents add capacity and compete on a wafer that, despite qualification barriers, is still a materials commodity over time. AXT's edge is being cheap and Chinese; one of those is now a liability."
+    },
+    {
+      "id": 8,
+      "title": "Insiders own 7%, short interest is 13% of float",
+      "body": "Insiders hold just 7.2% of shares, so management's skin in the game is thin while the stock sits near multi-year highs. Short interest is 13.2% of float (8.26M shares), so a meaningful cohort already bets against the valuation. Low insider ownership plus high short interest on a thematic small cap is not a coiled squeeze so much as a market that doubts the price and insiders who aren't backing it with their own buying."
+    },
+    {
+      "id": 9,
+      "title": "Dilution funded the run, and more can follow",
+      "body": "Share count and equity rose sharply into the rally (stockholders' equity to $273.3M from $192.8M, cash to $120.3M from $22.8M). AXT raised capital because the InP ramp is cash-hungry: capex plus the $81.7M inventory build. A company funding growth from the equity market at 62x sales has every incentive to keep issuing stock at these prices, and each raise caps the upside the bull case pays for."
+    },
+    {
+      "id": 10,
+      "title": "Tongmei China listing overhang",
+      "body": "AXT spent years trying to list its Tongmei operating subsidiary on Shanghai's STAR Market, a process that stalled. That signals two things: management's own preferred path to value was a China carve-out (which the geopolitical climate has effectively closed), and the China entity's governance and capital structure add complexity a US shareholder is exposed to without control. A blocked or distressed resolution of the China subsidiary structure is a tail the multiple gives no credit to."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "13.5%",
+      "terminal_g": "2.0%",
+      "fcf_path": "ramp x0.5, digestion",
+      "implied_px": 3.66
+    },
+    {
+      "scenario": "Base",
+      "wacc": "12.0%",
+      "terminal_g": "3.5%",
+      "fcf_path": "+40/+35/+28/+22/+18%...",
+      "implied_px": 9.19
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "10.5%",
+      "terminal_g": "4.5%",
+      "fcf_path": "ramp x1.7, toward $1B rev",
+      "implied_px": 21.89
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "prob": 0.15,
+      "outcome_range": "$22 to 31",
+      "description": "InP optical demand pushes revenue toward $1B with margins above the 2022 peak and co-packaged optics extends the roadmap. Even this lands at a third of spot."
+    },
+    {
+      "label": "Base",
+      "prob": 0.4,
+      "outcome_range": "$9 to 13",
+      "description": "Steady InP-led ramp with operating leverage delivering mid-to-high-teens FCF margin by the early 2030s. Constructive on the business, brutal on the stock."
+    },
+    {
+      "label": "Bear",
+      "prob": 0.45,
+      "outcome_range": "$2 to 6",
+      "description": "AI-optical double-ordering digests in 2026-2027, revenue contracts as it did in 2023, an inventory writedown hits, and the multiple compresses with no floor."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "SELL. 12m target $12.73, roughly 86% below spot."
+    },
+    {
+      "action": "12m target",
+      "detail": "$12.73 blended (Bear 30% x $3.66 + Base 40% x $9.19 + Bull 15% x $21.89 + EV/Sales 15% x $31.16)."
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Trim or exit into strength. The business is inflecting but the price discounts a decade of flawless execution. Take the gift if you rode it up."
+    },
+    {
+      "action": "New money",
+      "detail": "Avoid the long. There is no valuation entry point near spot. Revisit only if the multiple resets toward peer EV/sales or InP profitability is sustained."
+    },
+    {
+      "action": "Hedge",
+      "detail": "For holders who can't sell, collar or buy puts; 141% realized vol makes options expensive, so size accordingly. Short outright only with strict risk limits given squeeze potential at 13% short interest."
+    },
+    {
+      "action": "Position sizing",
+      "detail": "If shorting, small. 13.2% short float, 141% vol, and 50x momentum make this a high-volatility, squeeze-prone name. Express the view in size you can hold through a 30% rip."
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q2 FY26 print (late July 2026): sustained operating profit and InP revenue disclosed separately would test the bear; another loss or decel confirms it.",
+    "Inventory trend: any writedown or further build off the $81.7M base.",
+    "China gallium/germanium export-license actions or US-China escalation affecting AXT shipments.",
+    "Equity issuance or secondary offering at elevated prices (dilution signal).",
+    "Sumitomo / JX capacity announcements in InP substrates.",
+    "Tongmei subsidiary structure or listing developments.",
+    "Short interest and float changes; insider buying or selling at current levels."
+  ],
+  "data_gaps": [
+    "Segment-level revenue split (InP vs GaAs vs Ge) not available in summary data; need 10-K for exact InP mix.",
+    "Customer concentration and named top customers not disclosed in summary data.",
+    "Geographic revenue split not pulled from the skill stack.",
+    "Named insider transactions (dates, values) not pulled; only aggregate 7.2% insider ownership available.",
+    "Q2 FY26 earnings date and consensus estimates not confirmed via skill stack.",
+    "yfinance 'targetMeanPrice' ($96.50) reflects thin coverage (4-5 analysts) and may lag the move.",
+    "FY26E EPS shown as an implied estimate from forward P/E, not a pulled consensus figure."
+  ],
+  "business_overview": {
+    "summary": "AXT designs and manufactures compound and single-element semiconductor substrates: indium phosphide (InP), gallium arsenide (GaAs), and germanium. These are the base wafers on which optical, RF, and optoelectronic devices are built. The company also runs upstream joint ventures in China that produce purified gallium and related raw materials used in its own substrates.",
+    "business_model": "Revenue comes from selling polished single-crystal substrate wafers to device makers who fabricate lasers, detectors, LEDs, RF chips, and solar cells on top of them. Pricing scales with wafer diameter, purity, and crystal quality, and InP carries the highest price and margin. Upstream raw-material joint ventures add a feedstock margin layer and supply security.",
+    "segments": [
+      {
+        "name": "Indium phosphide (InP) substrates",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Highest-value line. Substrate for datacenter optical transceivers, silicon photonics, lasers, detectors, 5G. The AI-optical demand driver. Segment-level revenue not separately disclosed in summary data."
+      },
+      {
+        "name": "Gallium arsenide (GaAs) substrates",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Semi-insulating and semi-conducting GaAs for RF, Wi-Fi, VCSELs, 3D sensing, micro-LED, and power amplifiers."
+      },
+      {
+        "name": "Germanium substrates and raw materials",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Germanium for satellite multi-junction solar and IR detectors, plus 6N/7N purified gallium, boron trioxide, and gallium-magnesium alloy from upstream JVs."
+      }
+    ],
+    "geographic_revenue": [],
+    "customers": [
+      {
+        "name": "Not disclosed in summary data",
+        "revenue_share_pct": null,
+        "importance": "Device makers in optical transceivers, RF, lidar, and display; 10-K-level concentration not available without filing access."
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "Datacenter optical interconnect is scaling with AI cluster buildouts. Each generation (400G to 800G to 1.6T) raises optical content per GPU and the laser/detector count per transceiver, all of which sit on InP. The substrate layer is a narrow, qualification-gated part of that supply chain with only a handful of credible suppliers. It is also deeply cyclical: substrate orders whip with customer inventory cycles, as AXT's own 46% revenue drop in 2023 showed.",
+    "tam_usd_bn": 5,
+    "moat": "Multi-year customer qualification cycles on substrate quality, scarce high-purity InP single-crystal growth (three credible global suppliers), and vertical integration into purified gallium feedstock. Substrate defects propagate into every device built on the wafer, so customers don't switch casually. The moat is real but narrow, and it does not extend to pricing power against larger Japanese incumbents over a full cycle.",
+    "competitors": [
+      {
+        "name": "Sumitomo Electric",
+        "description": "Large Japanese diversified maker of InP and GaAs substrates; deeper pockets, no China export overhang."
+      },
+      {
+        "name": "JX Nippon Mining & Metals",
+        "description": "Japanese producer of compound semiconductor substrates including InP; well-capitalized incumbent."
+      },
+      {
+        "name": "Freiberger / Wafer Technology and other GaAs/InP specialists",
+        "description": "Regional substrate suppliers competing on specific diameters and applications."
+      },
+      {
+        "name": "Coherent / Lumentum (downstream)",
+        "description": "Buy substrate and sell finished lasers and transceivers; they capture the value AXT enables but earn real EBITDA doing it."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY22",
+      "revenue_usd_b": 0.1411,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 36.9,
+      "ebitda_usd_m": 30.1,
+      "ebitda_margin_pct": 21.3,
+      "net_income_usd_m": 15.8,
+      "fcf_usd_m": -37.2,
+      "eps": 0.38
+    },
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 0.0758,
+      "revenue_growth_yoy_pct": -46.3,
+      "gross_margin_pct": 17.5,
+      "ebitda_usd_m": -8.8,
+      "ebitda_margin_pct": -11.6,
+      "net_income_usd_m": -17.9,
+      "fcf_usd_m": -7.1,
+      "eps": -0.42
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 0.0994,
+      "revenue_growth_yoy_pct": 31.1,
+      "gross_margin_pct": 23.9,
+      "ebitda_usd_m": -0.3,
+      "ebitda_margin_pct": -0.3,
+      "net_income_usd_m": -11.6,
+      "fcf_usd_m": -17.9,
+      "eps": -0.27
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 0.0883,
+      "revenue_growth_yoy_pct": -11.2,
+      "gross_margin_pct": 12.7,
+      "ebitda_usd_m": -11.2,
+      "ebitda_margin_pct": -12.7,
+      "net_income_usd_m": -21.3,
+      "fcf_usd_m": -18.8,
+      "eps": -0.37
+    }
+  ],
+  "management": {
+    "ceo": "Dr. Morris S. Young, co-founder and CEO",
+    "cfo": "Gary L. Fischer, CFO (per company disclosure; not re-verified via skill stack)",
+    "insider_ownership_pct": 7.2,
+    "capital_allocation_history": "AXT pays no dividend and is not a buyback story. Capital has gone into substrate capacity, the InP ramp, and a large working-capital (inventory) build, funded recently by equity issuance that lifted cash to $120.3M and equity to $273.3M. The long-running effort to carve out and list the Tongmei China subsidiary on Shanghai's STAR Market is the defining capital-structure event, and it has stalled.",
+    "recent_insider_activity": []
+  },
+  "key_risks": [
+    {
+      "category": "regulatory",
+      "title": "China export controls on gallium/germanium",
+      "description": "AXT must obtain Chinese export licenses to ship substrates and purified gallium produced at its China facilities. Any tightening, quota, or retaliation in the US-China semiconductor conflict can strand revenue independent of end demand. Germanium and gallium are exactly the materials Beijing has weaponized since 2023."
+    },
+    {
+      "category": "cyclical",
+      "title": "Substrate demand whipsaw",
+      "description": "Revenue fell 46% from 2022 ($141.1M) to 2023 ($75.8M) as customers digested inventory. The current ramp is a trough recovery. AI-optical double-ordering raises the odds of a sharp digestion phase in 2026-2027 that the 40%-growth-implied multiple cannot survive."
+    },
+    {
+      "category": "structural",
+      "title": "Thin margins on a high-fixed-cost line",
+      "description": "Crystal growth and wafering carry heavy fixed cost, so margins swing hard with utilization and mix. Gross margin only just recovered to 30% and the company remained operating-loss in Q1 2026. A mix shift back to lower-value GaAs/germanium pushes margins and the bottom line back into the red."
+    },
+    {
+      "category": "customer",
+      "title": "Concentration and double-ordering",
+      "description": "Optical-transceiver and laser customers are few and qualification-gated. The same concentration that creates stickiness creates fragility: loss or order normalization from a top InP customer is a step-down in revenue, and double-ordering into the AI build inflates the apparent run-rate."
+    },
+    {
+      "category": "macro",
+      "title": "Multiple compression with no floor",
+      "description": "At 62x sales with negative EBITDA, the equity is priced for perfection. No earnings or dividend support, only 4-5 analysts, and a momentum holder base. A single disappointing quarter or AI-trade rotation can compress the multiple 50%+ with no valuation buyer to catch it. The stock is already 35% off its high on 141% realized vol."
+    },
+    {
+      "category": "execution",
+      "title": "Cash-hungry ramp and dilution",
+      "description": "The InP ramp requires capex plus an already-bloated $81.7M inventory build. AXT raised equity into strength; at 62x sales it has both the incentive and the means to keep issuing stock, diluting the upside the bull case pays for. The Tongmei China-subsidiary structure adds governance complexity."
+    }
+  ],
+  "social_sentiment": {
+    "reddit_mentions": null,
+    "x_mentions": null,
+    "bullish_pct": null,
+    "summary": "Sentiment not pulled from a dedicated social skill in this run. The tape speaks for itself: a +4,861% one-year move, 13.2% short interest, and 141% realized vol describe a crowded, contested momentum name where bulls (AI-optical theme) and shorts (valuation) are both heavily positioned."
+  }
+}
