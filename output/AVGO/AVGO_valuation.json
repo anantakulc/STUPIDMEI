@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0",
+  "ticker": "AVGO",
+  "currency": "USD",
+  "current_price": 396.6,
+  "shares_outstanding_b": 4.735,
+  "net_debt_b": 48.96,
+  "computed_at": "2026-06-09T10:35:42Z",
+  "primary_method": {
+    "name": "SOTP",
+    "category": "intrinsic",
+    "reasoning": "Broadcom is two businesses with different economics: an AI-led semiconductor franchise that deserves a growth DCF, and a VMware-anchored software annuity that the market pays an EV/EBITDA multiple for. A single blended multiple misprices both halves.",
+    "inputs": {
+      "segments": [
+        {
+          "name": "Semiconductor Solutions",
+          "method": "DCF",
+          "weight_pct": 65,
+          "reasoning": "Custom AI XPUs (Google TPU, Meta, ByteDance) plus AI networking (Tomahawk, Jericho) drive a steep but decaying FCF ramp off a fabless, asset-light base. Non-AI segments (broadband, wireless, storage) are a cyclical drag inside this number.",
+          "net_debt_allocation_b": 0.0,
+          "dcf_inputs": {
+            "wacc": {
+              "value": 0.0825,
+              "components": {
+                "rf": 0.043,
+                "beta": 1.3,
+                "erp": 0.045,
+                "debt_weight": 0.1,
+                "cost_of_debt_after_tax": 0.038
+              },
+              "reasoning": "8.25% blends a 4.3% risk-free, a 1.30 beta (below the 1.43 reported because the software annuity lowers cash-flow risk), a 4.5% equity risk premium, and a small after-tax debt weight on the investment-grade balance sheet."
+            },
+            "terminal_growth": {
+              "value": 0.0425,
+              "reasoning": "4.25% reflects durable AI-content growth above GDP as accelerator clusters keep scaling, decaying from the explicit ramp but staying above a mature-semis 3%."
+            },
+            "forecast_horizon_years": 7,
+            "fcf_projections": [
+              {
+                "year": 2026,
+                "fcf_b": 30.0,
+                "rationale": "Forward semiconductor FCF, scaled up from the $27B company TTM as the AI XPU and networking ramp lifts the segment's cash generation against light fabless capex."
+              },
+              {
+                "year": 2027,
+                "fcf_b": 39.0,
+                "rationale": "+30% as the second and third hyperscaler XPU programs ramp into volume and AI networking content per cluster rises."
+              },
+              {
+                "year": 2028,
+                "fcf_b": 49.0,
+                "rationale": "+26% with the lead custom-silicon customers compounding and new programs reaching scale."
+              },
+              {
+                "year": 2029,
+                "fcf_b": 59.0,
+                "rationale": "+20% as AI demand broadens but the law of large numbers starts to bite."
+              },
+              {
+                "year": 2030,
+                "fcf_b": 68.0,
+                "rationale": "+15% mid-cycle; AI growth moderates and non-AI segments contribute a modest recovery."
+              },
+              {
+                "year": 2031,
+                "fcf_b": 75.0,
+                "rationale": "+10% as the franchise matures toward a steadier compounding rate."
+              },
+              {
+                "year": 2032,
+                "fcf_b": 80.0,
+                "rationale": "+7% terminal-approach year; growth settles toward the long-run AI-content tailwind."
+              }
+            ]
+          }
+        },
+        {
+          "name": "Infrastructure Software (VMware)",
+          "method": "Multiple",
+          "weight_pct": 35,
+          "reasoning": "Recurring, subscription VMware revenue at 70s operating margin is valued on EV/EBITDA like an enterprise-software annuity, not a growth DCF.",
+          "net_debt_allocation_b": 0.0,
+          "multiple_inputs": {
+            "multiple_type": "EV/EBITDA",
+            "multiple_value": 17,
+            "fy_estimate": 19.0,
+            "reasoning": "17x forward EBITDA of ~$19B for the software segment. A premium to legacy enterprise software for the 70s-margin recurring base, a discount to high-growth SaaS because organic growth is low and churn risk is rising after the repricing."
+          }
+        }
+      ]
+    },
+    "outputs": {
+      "segments": [
+        {
+          "name": "Semiconductor Solutions",
+          "method": "DCF",
+          "weight_pct": 65,
+          "reasoning": "Custom AI XPUs (Google TPU, Meta, ByteDance) plus AI networking (Tomahawk, Jericho) drive a steep but decaying FCF ramp off a fabless, asset-light base. Non-AI segments (broadband, wireless, storage) are a cyclical drag inside this number.",
+          "inputs": {
+            "wacc": {
+              "value": 0.0825,
+              "components": {
+                "rf": 0.043,
+                "beta": 1.3,
+                "erp": 0.045,
+                "debt_weight": 0.1,
+                "cost_of_debt_after_tax": 0.038
+              },
+              "reasoning": "8.25% blends a 4.3% risk-free, a 1.30 beta (below the 1.43 reported because the software annuity lowers cash-flow risk), a 4.5% equity risk premium, and a small after-tax debt weight on the investment-grade balance sheet."
+            },
+            "terminal_growth": {
+              "value": 0.0425,
+              "reasoning": "4.25% reflects durable AI-content growth above GDP as accelerator clusters keep scaling, decaying from the explicit ramp but staying above a mature-semis 3%."
+            },
+            "forecast_horizon_years": 7,
+            "fcf_projections": [
+              {
+                "year": 2026,
+                "fcf_b": 30.0,
+                "rationale": "Forward semiconductor FCF, scaled up from the $27B company TTM as the AI XPU and networking ramp lifts the segment's cash generation against light fabless capex."
+              },
+              {
+                "year": 2027,
+                "fcf_b": 39.0,
+                "rationale": "+30% as the second and third hyperscaler XPU programs ramp into volume and AI networking content per cluster rises."
+              },
+              {
+                "year": 2028,
+                "fcf_b": 49.0,
+                "rationale": "+26% with the lead custom-silicon customers compounding and new programs reaching scale."
+              },
+              {
+                "year": 2029,
+                "fcf_b": 59.0,
+                "rationale": "+20% as AI demand broadens but the law of large numbers starts to bite."
+              },
+              {
+                "year": 2030,
+                "fcf_b": 68.0,
+                "rationale": "+15% mid-cycle; AI growth moderates and non-AI segments contribute a modest recovery."
+              },
+              {
+                "year": 2031,
+                "fcf_b": 75.0,
+                "rationale": "+10% as the franchise matures toward a steadier compounding rate."
+              },
+              {
+                "year": 2032,
+                "fcf_b": 80.0,
+                "rationale": "+7% terminal-approach year; growth settles toward the long-run AI-content tailwind."
+              }
+            ]
+          },
+          "outputs": {
+            "pv_explicit_fcf_b": 280.881,
+            "terminal_value_b": 2085.0,
+            "pv_terminal_b": 1197.046,
+            "implied_ev_b": 1477.927,
+            "implied_equity_b": 1477.927,
+            "implied_px": 312.13
+          }
+        },
+        {
+          "name": "Infrastructure Software (VMware)",
+          "method": "Multiple",
+          "weight_pct": 35,
+          "reasoning": "Recurring, subscription VMware revenue at 70s operating margin is valued on EV/EBITDA like an enterprise-software annuity, not a growth DCF.",
+          "inputs": {
+            "multiple_type": "EV/EBITDA",
+            "multiple_value": 17,
+            "fy_estimate": 19.0,
+            "reasoning": "17x forward EBITDA of ~$19B for the software segment. A premium to legacy enterprise software for the 70s-margin recurring base, a discount to high-growth SaaS because organic growth is low and churn risk is rising after the repricing."
+          },
+          "outputs": {
+            "implied_ev_b": 323.0,
+            "implied_equity_b": 323.0,
+            "implied_px": 68.22
+          }
+        }
+      ],
+      "aggregate": {
+        "sum_of_segment_ev_b": 1800.927,
+        "net_debt_b": 48.96,
+        "implied_equity_b": 1751.967,
+        "implied_px": 370.0
+      },
+      "implied_px": 370.0
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "Whole-company forward multiple cross-check against the AI-semiconductor peer set and the Street, anchoring to the market's willingness to pay for forward earnings power.",
+    "inputs": {
+      "multiple_type": "Forward P/E",
+      "multiple_value": 25.5,
+      "fy_estimate_eps": 19.35
+    },
+    "outputs": {
+      "implied_px": 493.43
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": [
+        {
+          "name": "Semiconductor Solutions",
+          "dcf_overrides": {
+            "wacc": 0.1,
+            "terminal_g": 0.03,
+            "fcf_multiplier": 0.82
+          }
+        },
+        {
+          "name": "Infrastructure Software (VMware)",
+          "multiple_overrides": {
+            "multiple_value": 14
+          }
+        }
+      ],
+      "implied_px": 195.86,
+      "reasoning": "AI capex pauses to absorb capacity, one custom-silicon program slips or in-sources, and VMware churn shows up; semi FCF is cut 30%, discounted harder, software re-rates to 13x."
+    },
+    {
+      "label": "Base",
+      "key_changes": [],
+      "implied_px": 370.0,
+      "reasoning": "The AI ramp decays gracefully as modeled, software annuity holds at 17x; the franchise compounds FCF into the high-$70Bs by 2032."
+    },
+    {
+      "label": "Bull",
+      "key_changes": [
+        {
+          "name": "Semiconductor Solutions",
+          "dcf_overrides": {
+            "wacc": 0.0775,
+            "terminal_g": 0.0475,
+            "fcf_multiplier": 1.22
+          }
+        },
+        {
+          "name": "Infrastructure Software (VMware)",
+          "multiple_overrides": {
+            "multiple_value": 19
+          }
+        }
+      ],
+      "implied_px": 566.55,
+      "reasoning": "Five-plus custom-silicon customers at scale, AI networking content compounds faster than modeled, VMware net retention holds above 100%; semi FCF runs 22% above base and re-rates."
+    }
+  ],
+  "blended_target": 370.0,
+  "blending_logic": "SOTP base = sum of segment EVs (Semi DCF + Software 17x EBITDA) less $49B net debt. Narrative 12m target probability-weights Bear/Base/Bull SOTP outcomes plus the forward-multiple cross-check.",
+  "upside_pct": -6.7
+}

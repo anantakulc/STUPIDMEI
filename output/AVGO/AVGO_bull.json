@@ -1,0 +1,68 @@
+{
+  "ticker": "AVGO",
+  "company_name": "Broadcom Inc.",
+  "bull_thesis_sentence": "Broadcom owns the two scarcest franchises in the AI buildout, custom XPU silicon and the Ethernet fabric that ties accelerators together, and pairs that with a VMware software annuity throwing off 60%+ margins, so the cash compounds even if any single hyperscaler blinks.",
+  "bull_thesis_bullets": [
+    "Custom AI silicon plus AI networking is a duopoly-grade position: Broadcom designs the XPUs for Google's TPU, Meta, and ByteDance and supplies Tomahawk and Jericho switching that moves the traffic, a combination no merchant-GPU vendor or pure-play networker can match.",
+    "VMware turned the software half into a subscription annuity: gross margins of 76% company-wide and EBITDA margins near 56% mean the model converts roughly 36 cents of every revenue dollar to net income, and software smooths the semiconductor cycle.",
+    "On forward EPS of $19.35 the stock trades at 20.5x, below its own growth rate; FCF of $27B (43% conversion off revenue) funds the dividend and buyback while AI revenue still compounds at a double-digit-plus clip."
+  ],
+  "bull_catalysts": [
+    {"id": 1, "title": "Custom XPU ramp across three-plus hyperscalers", "body": "Broadcom's custom accelerator franchise anchors on Google TPU, Meta's MTIA, and ByteDance, with management framing a serviceable AI revenue opportunity of roughly $60-90B across its lead customers by FY27. AI semiconductor revenue has been running above $5B per quarter and growing double digits sequentially. Each XPU program locks Broadcom into multi-year silicon roadmaps that are far stickier than merchant GPU sockets, because the customer co-designs the chip. New entrants reported in the pipeline widen the base beyond the original three."},
+    {"id": 2, "title": "AI networking is the other half of every cluster", "body": "Tomahawk 5 (51.2 Tbps) and Jericho3-AI switching plus Broadcom's optical DSP and NICs make up the Ethernet fabric that scales accelerator clusters past the limits of a single rack. As clusters grow from thousands to hundreds of thousands of XPUs, networking dollar content per cluster rises faster than compute. Networking gives Broadcom a second, vendor-agnostic way to win: it sells the fabric whether the customer buys Nvidia, AMD, or its own custom silicon."},
+    {"id": 3, "title": "VMware now prints subscription margins", "body": "The Infrastructure Software segment, rebuilt around VMware Cloud Foundation sold as a subscription, runs at operating margins in the 70s. Broadcom collapsed VMware's SKU sprawl into a handful of bundles and pushed customers onto multi-year contracts, lifting ARR and cutting cost. Company gross margin sits at 76% and EBITDA margin at 56%, both held up by this software mix. The segment turns a cyclical semiconductor house into a smoother cash machine."},
+    {"id": 4, "title": "$27B free cash flow funds buyback and dividend", "body": "Trailing free cash flow is $26.9B on $27.5B operating cash flow, a 43% FCF margin off TTM revenue near $75B. Capex is light at roughly $0.6B because the model is fabless. That cash covers a dividend yielding about 0.7% and a sizable repurchase program, while still paying down the $65B debt load taken on for VMware. FCF per share keeps climbing as AI revenue scales against an asset-light cost base."},
+    {"id": 5, "title": "Forward multiple sits below the growth rate", "body": "At $396.60 the stock trades at 20.5x forward EPS of $19.35, against trailing earnings growth of 85% and revenue growth of 48% (VMware-inflated, but AI organic growth is still double-digit). The PEG is well under 1 on any reasonable forward path. The Street mean target is $517.60, median $525, implying roughly 30% upside, with 45 analysts and a strong-buy consensus."},
+    {"id": 6, "title": "Customer concentration cuts both ways, and right now it pays", "body": "The same handful of hyperscalers that create concentration risk are the ones with the largest capex budgets in tech history, collectively guiding hundreds of billions of dollars of AI infrastructure spend. Broadcom is designed into the silicon roadmaps of the buyers writing those checks. As long as hyperscaler capex compounds, Broadcom captures both the custom-compute and the networking share of each incremental dollar."},
+    {"id": 7, "title": "Software annuity de-risks the semiconductor cycle", "body": "Infrastructure Software contributes close to 40% of revenue at recurring, subscription economics. That base does not swing with the inventory cycle the way wireless or broadband chips do. When the non-AI semiconductor segments (broadband, server storage, industrial) trough, the VMware annuity keeps cash flow from collapsing, which is why Broadcom can keep buying back stock through a downturn."},
+    {"id": 8, "title": "Pricing power from co-design lock-in", "body": "A custom XPU is co-engineered with the customer over 18-24 months and tied to that customer's software stack, so switching costs are enormous and re-pricing is hard for the buyer. Broadcom captures design wins that span multiple silicon generations. This is structurally higher-margin and more durable than selling a catalog GPU, and it is why semiconductor gross margins stay in the high-60s to 70s even as volume scales."},
+    {"id": 9, "title": "Operating leverage on an asset-light base", "body": "Broadcom spends roughly $11B on R&D but almost nothing on fabs. Incremental AI revenue drops to the bottom line at very high contribution margins because the wafers are outsourced to TSMC and the fixed engineering cost is already sunk into the roadmap. EBITDA margin at 56% and operating margin near 49% show the leverage; as AI mix rises, blended margins have room to expand further."},
+    {"id": 10, "title": "Pullback from the high resets the entry", "body": "The stock is down 19.9% from its 52-week high of $495 while the AI demand signal has not deteriorated. That drawdown took the forward multiple back to 20.5x. For a franchise growing FCF per share at a double-digit rate with a software annuity underneath, a sub-21x forward multiple is the cheapest the franchise has looked relative to its earnings trajectory in over a year."}
+  ],
+  "business_facts": {
+    "summary": "Broadcom is a fabless semiconductor and infrastructure-software company. It designs custom AI accelerators (XPUs) and networking silicon for the largest cloud operators, sells a broad catalog of connectivity, broadband, wireless, and storage chips, and, since the 2023 VMware acquisition, runs one of the largest enterprise virtualization-software franchises in the world.",
+    "business_model": "Revenue comes from two segments. Semiconductor Solutions sells custom and standard silicon, billed per unit, with TSMC manufacturing the wafers (fabless). Infrastructure Software sells VMware, mainframe, and security software, increasingly as multi-year subscriptions billed as recurring ARR. The blend pairs high-margin cyclical silicon with a recurring software annuity.",
+    "segments": [
+      {"name": "Semiconductor Solutions", "revenue_share_pct": 56, "growth_yoy_pct": null, "margin_pct": null, "description": "Custom AI XPUs (Google TPU, Meta, ByteDance), AI/data-center networking (Tomahawk, Jericho, optical DSP), plus broadband, wireless (Apple RF), server storage, and industrial. AI is the growth engine; non-AI segments are cyclical."},
+      {"name": "Infrastructure Software", "revenue_share_pct": 44, "growth_yoy_pct": null, "margin_pct": 70, "description": "VMware Cloud Foundation sold as subscription, plus mainframe (CA, Brocade) and security (Symantec). Recurring ARR, operating margins in the 70s after the VMware SKU consolidation."}
+    ],
+    "customers": [
+      {"name": "Google (Alphabet)", "revenue_share_pct": null, "importance": "Lead custom-XPU customer; co-designs the TPU family"},
+      {"name": "Meta Platforms", "revenue_share_pct": null, "importance": "Custom accelerator (MTIA) and networking customer"},
+      {"name": "ByteDance", "revenue_share_pct": null, "importance": "Third disclosed custom-silicon hyperscaler"},
+      {"name": "Apple", "revenue_share_pct": null, "importance": "Large wireless/RF customer; historically ~20% of revenue, concentration risk and annuity both"}
+    ],
+    "geographic_revenue": [
+      {"region": "Americas", "pct": null},
+      {"region": "Asia-Pacific / China", "pct": null}
+    ]
+  },
+  "industry_position_bull": {
+    "market_overview": "Hyperscaler AI infrastructure spend is the largest capital-formation event in tech. The buyers want an alternative to paying merchant-GPU margins, which is exactly what custom silicon offers, and they need Ethernet-based networking to scale clusters. Broadcom sits on both sides of that trade.",
+    "tam_usd_bn": 90,
+    "moat": "Co-designed custom silicon creates 18-24 month switching costs and multi-generation lock-in. Combined with a networking franchise that wins regardless of which accelerator the customer picks, and a VMware annuity with enormous installed-base inertia, Broadcom is hard to displace from any of its three positions at once."
+  },
+  "peers_positive_read": "Against Nvidia at a richer forward multiple and AMD without the software annuity, Broadcom's 20.5x forward P/E looks undemanding for a franchise with both AI silicon and a 70%-margin software book. Marvell is the closest custom-silicon comp but is a fraction of Broadcom's scale and lacks the software cushion. The peer set frames Broadcom as the cash-compounding way to own AI infrastructure rather than the highest-beta way.",
+  "bull_valuation_lens": {
+    "method_preference": "SOTP",
+    "method_reasoning": "Broadcom is two different businesses: a high-growth AI-led semiconductor house and a recurring-revenue software annuity that deserve different multiples. Valuing the blended entity on one multiple understates the software half and obscures the AI optionality in the silicon half. Sum-of-parts with a DCF on semis and an EV/EBITDA on software is the honest frame.",
+    "bull_dcf_assumptions": {
+      "wacc": 0.085,
+      "wacc_reasoning": "Bull case takes a lower WACC of 8.5%: beta of 1.43 but a high-quality cash franchise with a software annuity that lowers business risk, modest after-tax cost of debt on the investment-grade balance sheet, and an equity risk premium near 4.5%.",
+      "terminal_growth": 0.045,
+      "terminal_growth_reasoning": "4.5% terminal growth reflects a durable AI-content tailwind plus software ARR that keeps the blended business growing above GDP well past the explicit window.",
+      "fcf_growth_path": "+18 / +15 / +12 / +10 / +8 / +6 / +5",
+      "fcf_growth_reasoning": "Front-loaded by the AI XPU and networking ramp, decaying toward a software-weighted steady state. The asset-light, fabless model converts most incremental revenue to FCF."
+    }
+  },
+  "sources_used": [
+    "yfinance-data: price $396.60, mktcap $1.878T, EV $1.928T, TTM revenue $75.46B, EBITDA $41.95B, FCF $26.9B, OCF $27.5B, capex $0.62B, fwd EPS $19.35, fwd P/E 20.5x, gross margin 76.3%, EBITDA margin 55.6%, beta 1.43, target mean $517.6 / median $525, 45 analysts, strong_buy",
+    "yfinance-data annual financials FY2025 (2025-10-31): revenue $63.89B, gross profit $43.29B, EBITDA $34.71B, net income $23.13B, R&D $10.98B",
+    "yfinance-data: 1y return +63.7%, YTD +14.3%, drawdown from $495 high -19.9%, 30d ADTV $10.8B, 30d realized vol 61.4%"
+  ],
+  "open_questions": [
+    "Segment revenue shares (56/44) and software operating margin (~70%) are from general disclosure, not pulled from a live 10-K extract this session; Funda AI MCP not authenticated. Confirm against latest 10-Q.",
+    "Per-customer revenue concentration (Apple historically ~20%) not disclosed at line-item level by Broadcom; set to null.",
+    "Quarterly AI semiconductor revenue run-rate (~$5B+/qtr) and the $60-90B FY27 SAM are management framings from earnings calls, not yfinance fields; flag as estimates."
+  ]
+}
