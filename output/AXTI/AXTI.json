@@ -1,0 +1,531 @@
+{
+  "ticker": "AXTI",
+  "name": "AXT, Inc.",
+  "listings": "NASDAQ",
+  "sector": "Technology, Compound Semiconductor Substrates",
+  "date": "2026-06-09",
+  "engine": "WebSearch (SEC filings, company releases, semiconductor-today, sell-side notes); finance-skill stack unavailable in this environment (network-restricted)",
+  "recommendation": {
+    "action": "SELL / Reduce (valuation-stretched)",
+    "tone": "negative",
+    "current_price": 90.78,
+    "target_12m": 42.54,
+    "upside_pct": -53.1,
+    "rationale": "Probability-weighted: Bear 20% x $13.18 + Base 35% x $22.90 + Bull 20% x $46.87 + EV/Sales cross-check 25% x $90.06 = $42.54. The genuine InP/AI-optical growth story is real, but at ~37x trailing sales the price is supported only by the multiple regime, not by any defensible cash-flow base. The asymmetry is to the downside.",
+    "next_earnings": "Late July 2026 (Q2 FY26; watch InP run-rate vs the $35M/quarter end-2026 target and gross margin durability)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$90.78"
+    },
+    {
+      "label": "52-week range",
+      "value": "~$2.50 to $143.16"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-36.6% (ATH $143.16, 5/26/26)"
+    },
+    {
+      "label": "1-year return",
+      "value": "> +2,000% (microcap-to-AI rerate)"
+    },
+    {
+      "label": "YTD return",
+      "value": "Strongly positive, highly volatile"
+    },
+    {
+      "label": "Market cap",
+      "value": "~$5.94B"
+    },
+    {
+      "label": "Enterprise value",
+      "value": "~$5.25B"
+    },
+    {
+      "label": "Net debt",
+      "value": "-$0.69B (net cash)"
+    },
+    {
+      "label": "FY25 revenue",
+      "value": "$88.3M (-11% YoY)"
+    },
+    {
+      "label": "FY25 gross margin (GAAP)",
+      "value": "12.7%"
+    },
+    {
+      "label": "FY25 net loss",
+      "value": "-$21.3M (-$0.49 EPS)"
+    },
+    {
+      "label": "FY25 FCF",
+      "value": "Negative (~-$30M est.)"
+    },
+    {
+      "label": "Q1'26 revenue",
+      "value": "$26.9M (+39.1% YoY)"
+    },
+    {
+      "label": "Q1'26 non-GAAP gross margin",
+      "value": "29.9%"
+    },
+    {
+      "label": "InP backlog",
+      "value": "> $100M (Q1'26)"
+    },
+    {
+      "label": "EV / Sales (TTM)",
+      "value": "~37x"
+    },
+    {
+      "label": "Price / Sales (TTM)",
+      "value": "~43x"
+    },
+    {
+      "label": "Forward P/E (FY26E)",
+      "value": "n/m (loss-making)"
+    },
+    {
+      "label": "Beta (est.)",
+      "value": "~1.95"
+    },
+    {
+      "label": "Cash post-raise",
+      "value": "~$700M"
+    },
+    {
+      "label": "Total debt",
+      "value": "~$12M"
+    },
+    {
+      "label": "Shares outstanding",
+      "value": "65.4M (post April-26 raise)"
+    },
+    {
+      "label": "Analyst consensus",
+      "value": "Mixed. Outperform ratings, stretched targets"
+    },
+    {
+      "label": "Mean / range PT",
+      "value": "~$89.5 mean (range $80 Wedbush, $125 Northland)"
+    },
+    {
+      "label": "Implied PT upside (Street)",
+      "value": "~Flat to current"
+    }
+  ],
+  "thesis": [
+    "AXT is the only Western-listed merchant indium phosphide (InP) substrate supplier at scale, exactly as InP became the gating raw material for AI datacenter optical transceivers and lasers; the secular pull is real and the >$100M InP backlog (vs $88M total FY25 revenue) proves it.",
+    "But the valuation has fully detached from fundamentals: ~$5.9B market cap on $88M trailing revenue is ~37x sales for a business with a 12.7% FY25 gross margin and a GAAP net loss, where a 14.5% WACC DCF on a still-optimistic ramp yields intrinsic value in the low-to-mid $20s.",
+    "The defining risk is structural, not cyclical: all manufacturing sits in China via Tongmei, and every InP export now requires a ~3-month Chinese government permit, so the revenue that supports the multiple is legally hostage to Beijing. We rate the stock SELL/Reduce on valuation, while crediting the genuine growth and flagging momentum/short-squeeze risk."
+  ],
+  "bear_paragraph": "Strip away the AI narrative and AXT is the same business it has been for two decades: a sub-$100M-revenue maker of compound semiconductor wafers with gross margins that were 12.7% as recently as FY2025 and a GAAP net loss of $21.3M that same year. The market is now paying about $5.9B, roughly 37 times trailing sales, for a company whose entire bull case rests on one product line scaling perfectly while a foreign government holds a veto over every shipment. China added indium phosphide to its export-control list in February 2025, and each overseas shipment now requires a Ministry of Commerce permit that takes roughly three months to clear, making revenue inherently lumpy and politically hostage. AXT's manufacturing is almost entirely in China through Tongmei, so a single adverse policy turn in the US-China technology conflict could strand the asset base, block exports outright, or trap the Tongmei STAR Market IPO. Margins are the second problem: substrates are a capital-intensive, competitive, fundamentally commodity product, and the 29.9% non-GAAP gross margin investors are extrapolating is one strong quarter, not a proven structural level against captive Japanese and subsidized Chinese supply. Meanwhile management just sold 9.8M new shares because the equity was the cheapest financing available, exactly what you would expect near a sentiment peak. At 37x sales with a China kill-switch, the asymmetry is to the downside.",
+  "peers": [
+    {
+      "ticker": "AXTI",
+      "pe_ntm": 0,
+      "ev_ebitda": 0,
+      "rev_growth_ttm": 39.1,
+      "ytd": 0,
+      "y1": 2000,
+      "highlight": true
+    },
+    {
+      "ticker": "COHR",
+      "pe_ntm": 49,
+      "ev_ebitda": 28,
+      "rev_growth_ttm": 25,
+      "ytd": 0,
+      "y1": 449
+    },
+    {
+      "ticker": "LITE",
+      "pe_ntm": 45,
+      "ev_ebitda": 30,
+      "rev_growth_ttm": 30,
+      "ytd": 0,
+      "y1": 1255
+    },
+    {
+      "ticker": "AAOI",
+      "pe_ntm": 84,
+      "ev_ebitda": 0,
+      "rev_growth_ttm": 60,
+      "ytd": 0,
+      "y1": 1219
+    },
+    {
+      "ticker": "FN",
+      "pe_ntm": 28,
+      "ev_ebitda": 22,
+      "rev_growth_ttm": 18,
+      "ytd": 0,
+      "y1": 90
+    },
+    {
+      "ticker": "POET",
+      "pe_ntm": 0,
+      "ev_ebitda": 0,
+      "rev_growth_ttm": 0,
+      "ytd": 0,
+      "y1": 200
+    }
+  ],
+  "peers_read": "AXT sits one layer up the stack from the AI-optical names (Coherent, Lumentum, Applied Optoelectronics, Fabrinet) as the InP substrate supplier, and the whole complex has re-rated violently on 800G/1.6T transceiver demand. The bull says that scarcity (merchant InP supply is highly concentrated) earns AXT a premium; the bear notes that the substrate is the lowest-value, most commoditizable layer, and that AXT at ~37x trailing sales trades richer than its larger, profitable downstream customers at ~8-12x forward sales. The peer optics complex has already shown repeated 10%+ single-day drawdowns in 2026, underscoring how fragile the multiple regime is.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "InP backlog crossed $100M; over a year of legacy revenue under contract",
+      "body": "AXT's indium phosphide backlog exceeded $100M in Q1 2026, up from more than $60M in Q4 2025, against total FY2025 company revenue of just $88.3M. The backlog is concentrated in AI datacenter optical customers buying InP wafers for transceiver lasers and photodetectors. It is the cleanest forward-demand signal in the substrate space and the core driver of the re-rating."
+    },
+    {
+      "id": 2,
+      "title": "Capacity doubling to $35M/quarter InP by end-2026",
+      "body": "Management is doubling InP capacity in 2026 to a ~$35M/quarter run-rate (~$140M annualized for InP alone) largely by repurposing existing Tongmei facilities, keeping incremental capex efficient. InP already accounted for over 50% of Q1 2026 revenue, so hitting the exit run-rate would roughly double trailing total revenue on the InP line alone."
+    },
+    {
+      "id": 3,
+      "title": "Second doubling to $65-70M/quarter by end-2027/early-2028",
+      "body": "Beyond 2026, AXT guides to a further InP capacity doubling to $65-70M/quarter ($260-280M annualized) by end-2027 or early 2028. Management frames scale-out optical orders as roughly doubling in 2026 and again in 2027, with a potential co-packaged-optics inflection in 2028-2029, implying a multi-year revenue CAGR well above 50%."
+    },
+    {
+      "id": 4,
+      "title": "Gross margin inflecting on InP mix",
+      "body": "Non-GAAP gross margin jumped to 29.9% in Q1 2026 from 21.5% in Q4 2025, driven by volume and a favorable mix shift toward higher-value InP. With InP heading past 50-60% of revenue, structural gross margin could migrate toward the mid-30s, layering operating leverage on a largely fixed Tongmei cost base. This is the single most important variable for whether the valuation can ever be earned."
+    },
+    {
+      "id": 5,
+      "title": "Recapitalized balance sheet; fully funded ramp",
+      "body": "The April 2026 offering raised ~$632.5M gross (9,844,357 shares at $64.25, including the fully-exercised over-allotment). With the $128.4M year-end 2025 cash position, AXT now holds roughly $700M cash against only ~$12M debt. The capacity tripling is funded without further dilution and the historical financing overhang is removed."
+    },
+    {
+      "id": 6,
+      "title": "Scarcity value; the only Western merchant InP at scale",
+      "body": "InP substrate supply is dominated by Japanese captive sources (Sumitomo, JX) and Chinese players. AXT, via Tongmei, is the largest merchant InP supplier accessible to Western fabless optical and laser customers seeking to diversify away from single-country concentration. As customers qualify second sources, AXT is the default beneficiary of the diversification mandate."
+    },
+    {
+      "id": 7,
+      "title": "China InP export permits now flowing",
+      "body": "After China added InP to its export-control list in February 2025, AXT secured the permits to resume shipments; Q3 2025 revenue beat guidance once licenses were granted. The permitting regime, while adding ~3 months of lead time, is functioning; and arguably deepens AXT's moat by raising the barrier to entry and forcing customers to lock in qualified supply early via backlog."
+    },
+    {
+      "id": 8,
+      "title": "Tongmei STAR Market IPO as a value-crystallization event",
+      "body": "AXT's vertically integrated China subsidiary Tongmei has a planned listing on Shanghai's STAR Market. A successful IPO would mark Tongmei's standalone value at a China-tech multiple and provide local growth capital. The 7.28% redeemable noncontrolling interest is currently carried at ~$49M; a richly-priced listing could imply value above what is embedded in AXT's consolidated US cap."
+    },
+    {
+      "id": 9,
+      "title": "Vertical integration on critical raw materials",
+      "body": "Tongmei is vertically integrated across gallium, indium and germanium raw-material processing, crystal growth, furnace fabrication and recycling on a single campus. This insulates AXT from the very raw-material export controls (gallium and germanium restricted since August 2023) that disrupt competitors, providing cost and supply-security advantages."
+    },
+    {
+      "id": 10,
+      "title": "Optical-sector tailwind and rising sell-side targets",
+      "body": "The AI optical complex has re-rated sharply in 2026 on 800G/1.6T demand, and AXT sits upstream of all of it. Sell-side targets have ratcheted higher. Northland to $125 (Outperform), Wedbush to $80 from $28 (Outperform); as forward revenue estimates climb with the capacity ramp."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "Valuation disconnected from any defensible cash-flow base",
+      "body": "At ~$5.9B on $88M FY2025 revenue, AXT trades at ~37x EV/sales and ~43x price/sales. Even on the bull's own end-2027 exit run-rate (~$280M), the stock is ~15x forward sales for a sub-25% historical gross-margin business. A standard 14-15% WACC FCFF model yields intrinsic value in the low-to-mid $20s, a fraction of the quote. This is a pure multiple/momentum vehicle."
+    },
+    {
+      "id": 2,
+      "title": "China export permits are a structural kill-switch on revenue",
+      "body": "Since February 2025 every InP shipment out of China requires a Ministry of Commerce permit taking ~60 business days. Q4 2025 revenue was explicitly constrained by permit delays. Revenue timing is controlled by Beijing, not by AXT or its customers, and can be slowed, halted, or weaponized in any escalation. A backlog is worthless if the product cannot legally ship."
+    },
+    {
+      "id": 3,
+      "title": "Entire manufacturing base sits inside China",
+      "body": "Production is concentrated in China via Tongmei. In a sharp decoupling, US-listed holders bear the risk of Chinese asset expropriation, forced localization, or export bans, with no Western fab to fall back on. Customers diversifying supply could ultimately route around AXT toward Japanese or new Western InP capacity."
+    },
+    {
+      "id": 4,
+      "title": "Gross-margin history is poor; the inflection is unproven",
+      "body": "FY2025 GAAP gross margin was 12.7%; FY2023 17.6%; the best recent full year (FY2024) only 24%. The 29.9% non-GAAP print is one quarter on a favorable mix. The market is capitalizing a structural 35%+ margin that has never been sustained. If margins revert as capacity floods in, the earnings-power thesis collapses."
+    },
+    {
+      "id": 5,
+      "title": "The equity raise signals management's own valuation read",
+      "body": "In April 2026 management issued 9.84M shares at $64.25 for ~$632.5M, ~18% dilution. Issuing equity is the rational move when you believe your stock is richly valued; it is dilutive and a tell. It also reframes the 'fully funded' story as a reminder that this is a cash-consuming build, not a cash machine."
+    },
+    {
+      "id": 6,
+      "title": "Customer concentration in a few hyperscaler-linked module makers",
+      "body": "InP demand funnels through a small set of optical transceiver and laser makers serving a handful of hyperscalers. AI capex is lumpy; an optical-module inventory correction (as in prior optical cycles) would cascade upstream into substrate orders violently, and backlog can be cancelled or pushed. The $100M backlog is a snapshot, not an annuity."
+    },
+    {
+      "id": 7,
+      "title": "Commodity substrate is the wrong layer to capture AI optical value",
+      "body": "Substrates are the lowest-value, most commoditizable layer of the optical stack; value accrues to the transceiver/DSP and laser integration layers. As volumes scale, substrate ASPs typically fall on a learning curve, and subsidized Chinese capacity targets exactly this layer. AXT risks growing units while per-unit economics erode."
+    },
+    {
+      "id": 8,
+      "title": "Tongmei IPO and NCI add complexity and overhang",
+      "body": "The Tongmei STAR Market IPO depends on Chinese regulatory approval outside AXT's control. A 7.28% redeemable noncontrolling interest (~$49M) and minority partners create interests that may diverge from US shareholders. A failed or repriced IPO, or forced redemption, would be a negative catalyst, and the structure obscures how much value US holders actually control."
+    },
+    {
+      "id": 9,
+      "title": "Momentum unwind risk after a parabolic move",
+      "body": "The stock hit an all-time high of $143.16 on May 26, 2026 and has already fallen ~37% to the low $90s. Parabolic AI-adjacent names with thin fundamental support are prone to violent drawdowns when momentum breaks; at ~37x sales there is no valuation floor. The 2026 optics complex has already seen multiple 10%+ single-day drawdowns."
+    },
+    {
+      "id": 10,
+      "title": "History of cyclicality and through-cycle losses",
+      "body": "AXT swung from $0.20 EPS profit in FY2024 to a $0.49 GAAP loss in FY2025 as revenue fell from $99.4M to $88.3M, illustrating how fast the model deleverages on modest revenue declines. This is a cyclical, historically loss-prone business, not a proven secular compounder; the market is treating one upturn as a permanent regime change."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "18.5%",
+      "terminal_g": "2.0%",
+      "fcf_path": "-20/-10/+18/+38/+54 ($M, 0.4x base)",
+      "implied_px": 13.18
+    },
+    {
+      "scenario": "Base",
+      "wacc": "14.5%",
+      "terminal_g": "4.5%",
+      "fcf_path": "-50/-25/+45/+95/+135 ($M)",
+      "implied_px": 22.9
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "11.5%",
+      "terminal_g": "5.5%",
+      "fcf_path": "-80/-40/+72/+152/+216 ($M, 1.6x base)",
+      "implied_px": 46.87
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "prob": 0.25,
+      "outcome_range": "$90 to 145+",
+      "description": "Execution is flawless, gross margin structurally clears 35%, the CPO inflection arrives early, and the AI-optical multiple regime persists or expands; the stock holds its premium and retests the highs. This is a multiple-driven, not cash-flow-driven, outcome."
+    },
+    {
+      "label": "Base",
+      "prob": 0.4,
+      "outcome_range": "$40 to 70",
+      "description": "The InP ramp succeeds but the extreme multiple compresses partway toward the peer regime as the market normalizes a still-cash-consuming, China-exposed substrate business; the stock de-rates materially even as revenue grows."
+    },
+    {
+      "label": "Bear",
+      "prob": 0.35,
+      "outcome_range": "$10 to 30",
+      "description": "A China permit/geopolitical shock, a margin disappointment, or an optical inventory correction breaks the momentum, and with no valuation floor the multiple collapses toward intrinsic DCF value in the teens-to-twenties."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "SELL / Reduce; valuation-stretched; fundamentals do not support the quote"
+    },
+    {
+      "action": "12m target",
+      "detail": "$42.54 (-53% from $90.78), probability-weighted DCF + EV/Sales cross-check"
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Take profits / trim aggressively into strength; the secular story is real but more than priced in. Consider holding only a small momentum tranche with a hard trailing stop."
+    },
+    {
+      "action": "New money",
+      "detail": "Avoid initiating longs at ~37x sales. The risk/reward is unfavorable at current levels."
+    },
+    {
+      "action": "Hedge",
+      "detail": "For required holders, use put spreads or collars rather than naked shorts given squeeze risk; long-dated puts are expensive but cap the China-shock tail."
+    },
+    {
+      "action": "Position sizing",
+      "detail": "If shorting, size small; this is a high-short-interest-prone momentum name; direction is the easier call than timing. Volatility is extreme (parabolic ATH then -37%)."
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q2 FY26 earnings (late July 2026): InP quarterly run-rate vs the $35M/quarter end-2026 target, and whether non-GAAP gross margin holds above ~30%.",
+    "China Ministry of Commerce InP export-permit cadence; any tightening, delay, or new restriction.",
+    "Tongmei STAR Market IPO progress, pricing, or regulatory setback.",
+    "AI-optical demand signals from downstream customers (Coherent, Lumentum, Applied Optoelectronics) and hyperscaler capex commentary.",
+    "Any new US-China technology-conflict escalation affecting compound-semiconductor or critical-minerals trade.",
+    "Capacity-ramp execution updates; yield, on-time facility conversion, second-doubling timing.",
+    "Lock-up / further equity issuance signals after the April 2026 raise."
+  ],
+  "data_gaps": [
+    "Live finance-skill stack (finance-market-analysis:yfinance-data, company-valuation, etc.) was unavailable in this environment; all finance hosts (Yahoo, stockanalysis, alphavantage) returned 403 'host not in allowlist'. Data was sourced via WebSearch of SEC filings, company press releases, semiconductor-today, and sell-side notes. Numbers should be confirmed against the latest 10-Q/10-K before acting.",
+    "Exact 52-week low and precise YTD/1-year return not pinned (stock was a sub-$5 microcap before the 2026 AI re-rate); range shown is approximate.",
+    "Post-raise cash balance (~$700M) and net cash (-$0.69B) are estimated from $128.4M YE2025 cash plus ~$605M net offering proceeds less Q2 burn; confirm with the Q2 10-Q.",
+    "FY25 EBITDA and FCF are estimates derived from reported revenue/margin/net-loss; segment-level InP vs GaAs vs Ge revenue splits beyond 'InP >50%' not separately pinned.",
+    "Peer multiples (COHR/LITE/AAOI/FN/POET) are approximate from sector commentary, not point-in-time pulls.",
+    "Forward EPS and beta are estimates; no analyst-consensus model was pulled."
+  ],
+  "business_overview": {
+    "summary": "AXT, Inc. Designs and manufactures high-performance compound and single-element semiconductor substrates; indium phosphide (InP), gallium arsenide (GaAs) and germanium (Ge) wafers, that serve as the base material for optical, photonic, RF, LED and solar devices. Manufacturing is concentrated in China through its majority-owned subsidiary Tongmei. The company has pivoted from a slow-growth telecom/LED substrate supplier into the principal Western merchant source of InP wafers for AI datacenter optics.",
+    "business_model": "AXT sells crystal-grown semiconductor substrate wafers to device makers (optical transceiver/laser, RF, LED, photovoltaic), pricing per wafer by diameter, material and specification. It is vertically integrated through Tongmei across raw-material refining (gallium, indium, germanium), crystal growth, furnace fabrication and recycling, which supports cost and supply security but also concentrates the cost base, and geopolitical exposure, in China.",
+    "segments": [
+      {
+        "name": "Indium Phosphide (InP)",
+        "revenue_share_pct": 50,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "The AI-optical growth engine: substrates for transceiver lasers and photodetectors. Over 50% of Q1 2026 revenue and the source of the >$100M backlog and capacity tripling."
+      },
+      {
+        "name": "Gallium Arsenide (GaAs)",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Legacy substrate for RF, photonics and LED applications; subject to Chinese gallium export controls since August 2023."
+      },
+      {
+        "name": "Germanium (Ge) & raw materials/recycling",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Ge substrates for solar and optics, plus consolidated raw-material processing and recycling joint ventures within Tongmei."
+      }
+    ],
+    "geographic_revenue": [
+      {
+        "region": "Asia (ex-China) / China",
+        "pct": 70
+      },
+      {
+        "region": "North America / Europe",
+        "pct": 30
+      }
+    ],
+    "customers": [
+      {
+        "name": "Optical transceiver & laser module makers (undisclosed)",
+        "revenue_share_pct": null,
+        "importance": "Drive the InP backlog; concentrated set ultimately serving hyperscaler AI buildouts."
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "Compound semiconductor substrates are the foundational layer of the optical and RF device supply chain. The optical-components market reached roughly $25B in 2025 and is growing rapidly on AI datacenter interconnect (800G/1.6T transceivers, emerging co-packaged optics), which has made InP a supply-constrained gating material. Merchant InP supply is highly concentrated across a few Japanese captive sources and Chinese producers, giving AXT scarcity value but also exposing the whole chain to single-country (China) export-control risk.",
+    "tam_usd_bn": 25,
+    "moat": "AXT's edge is scarcity and vertical integration: it is the largest merchant InP source accessible to Western customers diversifying supply, and Tongmei's in-house raw-material refining, crystal growth and recycling lower cost and reduce exposure to the gallium/germanium controls that hit rivals. The moat is real but narrow; substrates are ultimately a commodity, the cost base sits in China, and the same export regime that raises entry barriers also caps shipment freedom.",
+    "competitors": [
+      {
+        "name": "Sumitomo Electric (Japan)",
+        "description": "Major captive/IDM InP and GaAs substrate supplier; primary alternative source for Western customers."
+      },
+      {
+        "name": "JX / other Japanese suppliers",
+        "description": "Established InP crystal and substrate producers serving the optical market."
+      },
+      {
+        "name": "Chinese substrate producers",
+        "description": "Subsidized domestic capacity targeting the same commodity substrate layer, a long-run ASP and share threat."
+      },
+      {
+        "name": "Downstream optics (COHR, LITE, AAOI, POET)",
+        "description": "Customers and value-chain peers capturing the higher-value transceiver/laser integration layer above the substrate."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY22",
+      "revenue_usd_b": 0.141,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 28.0,
+      "ebitda_usd_m": 12,
+      "ebitda_margin_pct": 8.5,
+      "net_income_usd_m": 4,
+      "fcf_usd_m": -5,
+      "eps": 0.09
+    },
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 0.0758,
+      "revenue_growth_yoy_pct": -46.2,
+      "gross_margin_pct": 17.6,
+      "ebitda_usd_m": -8,
+      "ebitda_margin_pct": -10.6,
+      "net_income_usd_m": -18.5,
+      "fcf_usd_m": -25,
+      "eps": -0.43
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 0.0994,
+      "revenue_growth_yoy_pct": 31.1,
+      "gross_margin_pct": 24.0,
+      "ebitda_usd_m": 18,
+      "ebitda_margin_pct": 18.1,
+      "net_income_usd_m": 8.5,
+      "fcf_usd_m": -10,
+      "eps": 0.2
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 0.0883,
+      "revenue_growth_yoy_pct": -11.2,
+      "gross_margin_pct": 12.7,
+      "ebitda_usd_m": -10,
+      "ebitda_margin_pct": -11.3,
+      "net_income_usd_m": -21.3,
+      "fcf_usd_m": -30,
+      "eps": -0.49
+    }
+  ],
+  "management": {
+    "ceo": "Morris Young, co-founder and CEO",
+    "cfo": "Gary Fischer, CFO (longtime)",
+    "insider_ownership_pct": null,
+    "capital_allocation_history": "AXT does not pay a dividend and has not run meaningful buybacks; the business has been cash-consuming through the cycle. Capital allocation has centered on funding Tongmei's vertically integrated China campus and the InP capacity expansion. The April 2026 ~$632.5M equity raise (9.84M shares at $64.25) is the defining recent action, dramatically recapitalizing the balance sheet to fund the capacity tripling, and, on the bear read, opportunistically monetizing an elevated share price.",
+    "recent_insider_activity": []
+  },
+  "key_risks": [
+    {
+      "category": "regulatory",
+      "title": "China export-control regime on InP/Ga/Ge",
+      "description": "InP shipments require Ministry of Commerce permits (~3-month lead time) since Feb 2025; gallium and germanium have faced controls since Aug 2023. Beijing can slow or halt exports unilaterally, making revenue timing politically contingent. Q4 2025 revenue was already constrained by permit delays, a recurring, structural overhang."
+    },
+    {
+      "category": "macro",
+      "title": "US-China decoupling / China asset risk",
+      "description": "All production sits in China via Tongmei. A sharp escalation in the technology conflict could block exports, force localization, impair the asset base, or strand the Tongmei IPO, with US-listed equity holders bearing the loss and no Western fab fallback."
+    },
+    {
+      "category": "structural",
+      "title": "Commodity substrate margin erosion",
+      "description": "Substrates are the lowest-value optical layer. Subsidized Chinese capacity and learning-curve ASP declines threaten the unproven 30%+ gross margin the market is capitalizing; historical gross margins ran 12-24%. Sustained margin is the single biggest swing factor for intrinsic value."
+    },
+    {
+      "category": "cyclical",
+      "title": "AI optical inventory correction",
+      "description": "Demand funnels through a few optical module makers serving hyperscalers. Optical cycles historically whipsaw substrate orders; an inventory correction would cascade upstream, and the $100M backlog could be deferred or cancelled."
+    },
+    {
+      "category": "execution",
+      "title": "Capacity-ramp execution risk",
+      "description": "The thesis requires doubling InP capacity in 2026 and again by end-2027 while holding yield and margin. Crystal-growth ramps are technically demanding; slippage or yield loss would directly miss the revenue/margin path the valuation assumes."
+    },
+    {
+      "category": "customer",
+      "title": "Customer concentration and second-sourcing",
+      "description": "A small set of customers drives the InP backlog. Loss or second-sourcing by any major customer, or a hyperscaler capex pause, would materially dent the forward ramp and break the multiple."
+    },
+    {
+      "category": "structural",
+      "title": "Valuation / momentum-unwind risk",
+      "description": "At ~37x trailing sales with no valuation floor, the stock is acutely exposed to multiple compression. It already fell ~37% from its May 2026 ATH; a sentiment break could compress the multiple toward intrinsic DCF value in the teens-to-twenties."
+    }
+  ],
+  "social_sentiment": {
+    "reddit_mentions": null,
+    "x_mentions": null,
+    "bullish_pct": null,
+    "summary": "Retail and momentum sentiment has been intensely bullish through the 2026 AI-optical run that took AXTI from a sub-$5 microcap to a $143 all-time high, with the substrate-scarcity narrative widely shared. The subsequent ~37% pullback has introduced a sharper bull/bear split between secular-growth believers and valuation/China-risk skeptics. (No quantitative sentiment feed available in this environment.)"
+  }
+}
