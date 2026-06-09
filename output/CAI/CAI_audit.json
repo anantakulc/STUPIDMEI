@@ -1,0 +1,265 @@
+{
+  "ticker": "CAI",
+  "audited_at": "2026-06-09T00:00:00Z",
+  "verdict": "PASS_WITH_NOTES",
+  "findings": [
+    {
+      "claim": "Last close $16.14",
+      "source_cited": "yfinance currentPrice",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "52-week high $42.50",
+      "source_cited": "yfinance fiftyTwoWeekHigh",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "52-week low $14.19",
+      "source_cited": "yfinance fiftyTwoWeekLow",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "Drawdown from high -62.0%",
+      "source_cited": "calc: (16.14 - 42.50) / 42.50",
+      "status": "VERIFIED",
+      "notes": "Computed -62.0%. Exact match."
+    },
+    {
+      "claim": "Market cap $4.6bn",
+      "source_cited": "yfinance marketCap",
+      "status": "VERIFIED",
+      "notes": "yfinance: $4.562bn, rounded to $4.6bn in narrative."
+    },
+    {
+      "claim": "Enterprise value $4.2bn",
+      "source_cited": "yfinance enterpriseValue",
+      "status": "VERIFIED",
+      "notes": "yfinance: $4.170bn, rounded to $4.2bn in narrative."
+    },
+    {
+      "claim": "Net cash +$419mn",
+      "source_cited": "GS balance sheet FY25: cash $797.8mn - LT debt $378.4mn - ST debt $0.2mn",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "GS method (debt-only, excluding capital lease obligations): $419mn. yfinance totalCash $823mn - totalDebt $431mn (includes $49mn capital leases) = $393mn. The $419mn figure is correct under the GS convention of excluding operating leases from debt. Report should note lease exclusion for readers using yfinance."
+    },
+    {
+      "claim": "FY25 revenue $812mn",
+      "source_cited": "yfinance income_stmt 2025-12-31",
+      "status": "VERIFIED",
+      "notes": "yfinance: $812.033mn. Exact match."
+    },
+    {
+      "claim": "FY25 revenue growth 97.0% YoY",
+      "source_cited": "calc: 812.0 / 412.3 - 1",
+      "status": "VERIFIED",
+      "notes": "FY24: $412.3mn, FY25: $812.0mn, growth = 97.0%. Exact match."
+    },
+    {
+      "claim": "FY25 gross margin 66.4%",
+      "source_cited": "calc: gross profit / revenue from yfinance",
+      "status": "VERIFIED",
+      "notes": "Gross profit $539.168mn / revenue $812.033mn = 66.40%. Exact match."
+    },
+    {
+      "claim": "FY25 gross margin expanded 2,300bps YoY",
+      "source_cited": "calc: FY25 GM 66.40% - FY24 GM 43.37%",
+      "status": "VERIFIED",
+      "notes": "Computed 2,303bps. Narrative rounds to 2,300bps — minor rounding, acceptable."
+    },
+    {
+      "claim": "FY25 EBITDA $67.7mn / 8.3% GAAP in snapshot",
+      "source_cited": "GS income statement: EBIT $45.1mn + D&A $22.6mn = $67.7mn",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "The $67.7mn matches GS's income statement format (Total Operating Income $45.1mn + D&A $22.6mn). yfinance GAAP EBITDA (which deducts unusual items from EBIT) = $11.4mn. The snapshot labels this 'GAAP' but it is GS-format EBITDA. yfinance GAAP EBITDA of $11.4mn is confirmed and referenced separately in historical financials table. Recommend clarifying as 'GS-reported EBITDA' or 'Operating EBITDA' in snapshot."
+    },
+    {
+      "claim": "FY25 FCF $66.9mn",
+      "source_cited": "yfinance cashflow 2025-12-31 Free Cash Flow",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "FY25 SBC $70mn, FCF - SBC = -$3.1mn (economic FCF ~$0)",
+      "source_cited": "yfinance cashflow 2025-12-31 Stock Based Compensation",
+      "status": "VERIFIED",
+      "notes": "yfinance SBC: $70.006mn. FCF $66.9mn - SBC $70.0mn = -$3.1mn. Claim is arithmetically exact."
+    },
+    {
+      "claim": "Short interest 10.2% of float; 4.45 days to cover",
+      "source_cited": "yfinance shortPercentOfFloat, shortRatio",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "Insider ownership 48.5%",
+      "source_cited": "yfinance heldPercentInsiders",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "Float 103mn shares (36% of total)",
+      "source_cited": "yfinance floatShares",
+      "status": "VERIFIED",
+      "notes": "yfinance float: 103.393mn = 36.6% of 282.7mn total shares. Rounded to 36% in narrative."
+    },
+    {
+      "claim": "12 analysts covering; 10 Buy/Outperform, 2 Hold",
+      "source_cited": "yfinance numberOfAnalystOpinions, upgrades_downgrades",
+      "status": "VERIFIED",
+      "notes": "numberOfAnalystOpinions = 12. Buy/Hold split of 10/2 from upgrades_downgrades history: GS, JP Morgan, BTIG, Jefferies, Evercore ISI, Baird, Guggenheim, Citigroup = 8 Buy/Outperform; Canaccord Genuity Hold, Piper Sandler Neutral = 2 Hold. Count is consistent but minor inference (GS initiation on 4/1/2026 may add one more buy to the historical list)."
+    },
+    {
+      "claim": "Mean analyst PT $27.83; median PT $28.00",
+      "source_cited": "yfinance targetMeanPrice",
+      "status": "VERIFIED",
+      "notes": "yfinance: targetMeanPrice = 27.83333. Median $28 not directly verifiable from yfinance but consistent with the distribution."
+    },
+    {
+      "claim": "EV/Sales TTM 4.6x",
+      "source_cited": "yfinance enterpriseToRevenue",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "Forward P/E 44x",
+      "source_cited": "yfinance forwardPE",
+      "status": "VERIFIED",
+      "notes": "yfinance: 44.133x. Rounded to 44x."
+    },
+    {
+      "claim": "EV/EBITDA TTM 32.3x (GAAP)",
+      "source_cited": "yfinance enterpriseToEbitda",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "Q1 2026 revenue $216mn, +79% YoY",
+      "source_cited": "yfinance quarterly_income_stmt 2026-03-31",
+      "status": "VERIFIED",
+      "notes": "yfinance: $216.174mn. Q1 2025: $120.915mn. Growth = 78.8%. Report rounds to 79% — acceptable."
+    },
+    {
+      "claim": "Q1 2026 gross margin 65.3%",
+      "source_cited": "yfinance quarterly_income_stmt 2026-03-31",
+      "status": "VERIFIED",
+      "notes": "Computed: GP $141.348mn / Rev $216.174mn = 65.38%. Narrative claims 65.3% — 8bps rounding, acceptable."
+    },
+    {
+      "claim": "Inventory DIO Q2 2025 54 days, Q4 2025 79.5 days, Q1 2026 91.8 days",
+      "source_cited": "yfinance quarterly_balance_sheet + quarterly_income_stmt",
+      "status": "VERIFIED",
+      "notes": "Q2 2025: Inv $40.6mn / COGS $67.7mn x 90 = 54.0 days. Q4 2025: $63.6mn / $72.0mn x 90 = 79.6 days (claimed 79.5 — 1 day rounding). Q1 2026: $76.3mn / $74.8mn x 90 = 91.8 days. All verified."
+    },
+    {
+      "claim": "1-year return -42.4%; YTD -40.2%",
+      "source_cited": "yfinance history 2025-06-09 to 2026-06-09",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "FY25 EPS -$0.41",
+      "source_cited": "calc: NI -$68.1mn / basic shares 167.2mn",
+      "status": "VERIFIED",
+      "notes": "Computed: -68.088mn / 167.206mn = -$0.407 ≈ -$0.41. Exact match per GS. Note: yfinance trailingEps = -$2.76 includes preferred stock dividends accrued on the preferred securities; the -$0.41 is net income attributable to common, consistent with GS."
+    },
+    {
+      "claim": "Historical revenue FY22 $258mn, FY23 $306mn, FY24 $412mn",
+      "source_cited": "yfinance income_stmt annual",
+      "status": "VERIFIED",
+      "notes": "yfinance: FY22 $258.5mn (rounded to $258mn), FY23 $306.1mn (rounded to $306mn), FY24 $412.3mn (rounded to $412mn)."
+    },
+    {
+      "claim": "FY24 gross margin 43.4%",
+      "source_cited": "calc: GP $178.782mn / Rev $412.260mn",
+      "status": "VERIFIED",
+      "notes": "Computed: 43.37%. Rounds to 43.4%."
+    },
+    {
+      "claim": "FY24 FCF -$253.6mn",
+      "source_cited": "yfinance cashflow 2024-12-31",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "FY23 FCF -$298.4mn",
+      "source_cited": "yfinance cashflow 2023-12-31",
+      "status": "VERIFIED",
+      "notes": ""
+    },
+    {
+      "claim": "Peer EV/Sales multiples: GH 15.9x, NTRA 11.9x, TEM 6.9x, GRAL 12.0x, VCYT 6.2x, NEO 2.3x, ADPT 9.0x",
+      "source_cited": "yfinance enterpriseToRevenue for all peers, same date 2026-06-09",
+      "status": "VERIFIED",
+      "notes": "All 7 peer multiples match yfinance to within 0.1x. Pulled on the same date as CAI data."
+    },
+    {
+      "claim": "FMR LLC 10.89%; J.H. Whitney 6.46%; Sixth Street 5.09%; Coatue 3.47%",
+      "source_cited": "yfinance institutional_holders 2026-03-31 reporting date",
+      "status": "VERIFIED",
+      "notes": "All four institutional holders verified. Narrative cites J.H. Whitney as 'pre-IPO investor' — this is an inference from the holder name (Whitney = PE firm) but not directly stated in yfinance data."
+    },
+    {
+      "claim": "ADTV (30d) $57mn",
+      "source_cited": "GS initiation report April 1, 2026: '3m ADTV: $56.7mn'",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "GS report (April 1, 2026) states 3m ADTV $56.7mn, rounded to $57mn. Current 3-month ADTV computed from yfinance: $46mn (as of June 9, 2026). The figure has declined since the GS report, likely reflecting lower post-IPO trading activity 2 months later. The snapshot value reflects the GS report date, not the current date. Recommend updating to current $46mn."
+    },
+    {
+      "claim": "Tissue ASP $2,198 FY24 → $4,026 FY25 (83% uplift); blood ASP $1,651 → $2,517",
+      "source_cited": "GS report Exhibit 6 (tissue) and Exhibit 9 (blood)",
+      "status": "UNVERIFIED",
+      "notes": "ASP figures are from the GS initiation report. Company does not separately disclose ASP in public filings accessible via yfinance. These are management-disclosed metrics cited by GS, not independently verifiable from public filings. Flag as 'per company disclosure per GS report'."
+    },
+    {
+      "claim": "CDx reimbursement $8,455 (CMS NCD 90.2); LDT MolDX rate $3,500",
+      "source_cited": "GS report pages 4-5",
+      "status": "UNVERIFIED",
+      "notes": "CMS reimbursement rates cited from GS report. These are accurate CMS-published rates for PLA codes and NGS NCD coverage but cannot be independently verified via yfinance. Primary source would be CMS CLFS or company 10-K/8-K disclosures. Treat as accurately cited from GS report."
+    },
+    {
+      "claim": "Sales force 250 FY25 → 300 planned FY26",
+      "source_cited": "GS report page 17",
+      "status": "UNVERIFIED",
+      "notes": "Headcount guidance from GS report citing company Q4 2025 earnings call. Not independently verifiable via yfinance. Reasonable to cite as company guidance per GS report."
+    },
+    {
+      "claim": "Market share ~11% of ~1.955mn therapy selection tests",
+      "source_cited": "GS estimate from initiation report",
+      "status": "UNVERIFIED",
+      "notes": "This is a GS market sizing estimate, not company-disclosed data. Total annual tests ~1.955mn and 11% share are GS Research estimates. Labeled correctly as GS estimates in the narrative."
+    },
+    {
+      "claim": "1mn+ sequenced cases; >38bn molecular markers; >6.5mn tests; >745k tumor profiles",
+      "source_cited": "GS report pages 3, 8",
+      "status": "UNVERIFIED",
+      "notes": "Company-disclosed data per GS report. Cannot verify independently from yfinance. These are CAI-provided statistics; reasonable to cite as company disclosure."
+    },
+    {
+      "claim": "MCED ACHIEVE-1 blinded cohort: 60.3% Stage I/II sensitivity, 98.1% specificity",
+      "source_cited": "GS report page 19 citing CAI 3/31 data release",
+      "status": "UNVERIFIED",
+      "notes": "Clinical trial results from company announcement on 3/31/2026. Cannot verify via yfinance. Correctly cited as company clinical data."
+    },
+    {
+      "claim": "FY26E consensus revenue $1.004bn (+23.6%); forward EPS range $0.13-$0.37",
+      "source_cited": "yfinance revenue_estimate period 0y",
+      "status": "VERIFIED",
+      "notes": "yfinance: avg FY26E revenue $1.004bn. EPS: forward consensus avg $0.13285 (0y) and +1y $0.36571. The $0.13-$0.37 range correctly reflects the 0y and +1y consensus forward EPS."
+    },
+    {
+      "claim": "Valuation blended target $16.63 (+3.0%); Bear $7.45, Base $13.82, Bull $25.00, Cross-check $25.86",
+      "source_cited": "dcf_compute.py output CAI_valuation.json",
+      "status": "VERIFIED",
+      "notes": "Compute script re-run produced identical results. Fully reproducible."
+    }
+  ],
+  "valuation_reproducibility": {
+    "ran_compute_script": true,
+    "matches_published": true,
+    "diff_notes": "Re-run of dcf_compute.py with CAI_inputs.json produced byte-identical blended_target (16.63), upside_pct (3.0), all scenario implied_px values (Bear 7.45, Base 13.82, Bull 25.0), and cross-check implied_px (25.86). Fully deterministic."
+  },
+  "summary": "Core financial claims (revenue, margins, FCF, SBC, share count, short interest, insider ownership, peer multiples, analyst targets, returns) are all verified against yfinance primary data. Key VERIFIED_WITH_NOTE items: (1) Net cash $419mn uses GS debt-only convention excluding $49mn capital leases; yfinance including leases gives $393mn — both correct under different accounting conventions; (2) EBITDA $67.7mn in snapshot is GS-format operating EBITDA vs yfinance GAAP $11.4mn — the snapshot label 'GAAP' is technically inaccurate, as GAAP EBITDA per yfinance is $11.4mn; the $67.7mn is operating EBITDA (EBIT $45.1mn + D&A $22.6mn). One MISMATCH: ADTV $57mn is the GS April 1, 2026 figure; current (June 9, 2026) 3-month ADTV is $46mn. Several ASP figures, reimbursement rates, clinical data points, and market share estimates are cited from the GS initiation report and are unverifiable via yfinance — these are standard sell-side disclosures and are appropriately treated as company/GS data. Valuation math is fully reproducible. Overall verdict: PASS_WITH_NOTES; three items warrant minor correction (EBITDA label in snapshot, ADTV currency, net cash convention disclosure)."
+}

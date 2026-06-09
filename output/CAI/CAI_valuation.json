@@ -1,0 +1,498 @@
+{
+  "schema_version": "1.0",
+  "ticker": "CAI",
+  "currency": "USD",
+  "current_price": 16.14,
+  "shares_outstanding_b": 0.2827,
+  "net_debt_b": -0.419,
+  "computed_at": "2026-06-09T08:33:46Z",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "CAI achieved positive GAAP operating income ($45.1mn) and FCF ($66.9mn) in FY25 with a clear ramp to $193mn FCF by FY27E. GAAP net income is negative primarily due to preferred stock dividends and SBC ($70mn), not from the operating business. The FCF trajectory is visible enough to anchor a 5-year explicit DCF; EV/Sales provides the cross-check that the street uses given the diagnostics sector convention.",
+    "inputs": {
+      "wacc": {
+        "value": 0.125,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.65,
+          "erp": 0.055,
+          "debt_weight": 0.086,
+          "cost_of_debt_after_tax": 0.095
+        },
+        "reasoning": "Ke = 4.3% Rf + 1.65 beta x 5.5% ERP = 13.4%. Beta of 1.65 reflects post-IPO high-growth diagnostics (sector peers NTRA, GH, TEM trade with betas of 1.5-1.7), elevated by binary MCED optionality and float lock-up structure (48.5% insider held). Debt weight 8.6% based on $431mn debt / $4,993mn total capital; after-tax Kd 9.5% (12% pre-tax x 0.79 for a pre-profitability company). WACC 12.5% is in the upper half of the SaaS/diagnostics band (10%-13%), justified by execution risk and the five simultaneous pipeline launches in 2026.",
+        "adjudication_notes": "12.5% is at the top of the 10-13% diagnostics/SaaS band. Justified by binary MCED risk, lock-up overhang (48.5% insider), and post-IPO lack of observed beta. Bull case uses 10.5% (market average risk), bear case 14.0% (distress premium).",
+        "components_reasoned": {
+          "rf": {
+            "value": 0.043,
+            "reasoning": "Risk-free rate, typically the local 10Y government bond yield. US ~4.4%, EM countries higher."
+          },
+          "beta": {
+            "value": 1.65,
+            "reasoning": "Equity beta vs local index. From yfinance unless sanitized to sector default."
+          },
+          "erp": {
+            "value": 0.055,
+            "reasoning": "Equity risk premium. DM ~5.5%, EM Indonesia ~6.5%, EM India ~6.5%."
+          },
+          "debt_weight": {
+            "value": 0.086,
+            "reasoning": "Debt portion of capital structure. Net debt / (net debt + market cap)."
+          },
+          "cost_of_debt_after_tax": {
+            "value": 0.095,
+            "reasoning": "Post-tax cost of debt. Yield on outstanding bonds x (1 - tax rate)."
+          }
+        }
+      },
+      "terminal_growth": {
+        "value": 0.035,
+        "reasoning": "3.5% terminal growth reflects the secular growth in oncology diagnostics driven by rising cancer incidence, expanding biomarker-linked therapies, and MCED/MRD TAM expansion. Oncology diagnostics is a GDP+ sector structurally. 3.5% is below the near-term revenue growth rate (24% FY26E consensus) but is appropriate for a long-run equilibrium where comprehensive profiling becomes commoditized and market share gains plateau."
+      },
+      "forecast_horizon_years": 5,
+      "terminal_value": {
+        "exit_ev_ebitda": 18.0
+      },
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 0.06,
+          "revenue_b": 1.011,
+          "revenue_growth_pct": 24.5,
+          "ebit_margin": 0.079,
+          "tax_rate": 0.0,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.019,
+          "wc_change_pct_of_revenue": 0.086,
+          "rationale": "FY26E: GS estimate $1.011bn revenue, $59.7mn FCF. MCED launch spending (Caris Detect sales force build, Everlywell partnership, reagent inventory pre-build) keeps FCF below FY25 levels despite higher EBITDA. Tax rate effectively 0% due to $2.5bn accumulated net operating loss carryforwards. EBIT margin expansion from 5.6% to 7.9% as CDx volume mix shifts."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 0.193,
+          "revenue_b": 1.253,
+          "revenue_growth_pct": 23.9,
+          "ebit_margin": 0.129,
+          "tax_rate": 0.0,
+          "da_pct_of_revenue": 0.029,
+          "capex_pct_of_revenue": 0.016,
+          "wc_change_pct_of_revenue": 0.039,
+          "rationale": "FY27E: GS estimate $1.253bn revenue, $193.1mn FCF. The major FCF ramp: MCED launch costs normalize, tissue volume delivers operating leverage, SG&A and R&D as % of revenue decline (SG&A 42.2%, R&D 12.1%). EBIT margin 12.9% vs 7.9% in FY26. Minimal capex intensity ($20mn) on digital/lab infrastructure already in place."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 0.273,
+          "revenue_b": 1.494,
+          "revenue_growth_pct": 19.3,
+          "ebit_margin": 0.157,
+          "tax_rate": 0.0,
+          "da_pct_of_revenue": 0.021,
+          "capex_pct_of_revenue": 0.016,
+          "wc_change_pct_of_revenue": 0.035,
+          "rationale": "FY28E: GS estimate $1.494bn revenue, $272.9mn FCF. Continued tissue volume growth and early MCED scale. EBIT margin 15.7%. FCF conversion improves as working capital build (for MCED kits) normalizes after 2026 launch."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 0.34,
+          "revenue_b": 1.75,
+          "revenue_growth_pct": 17.2,
+          "ebit_margin": 0.175,
+          "tax_rate": 0.0,
+          "da_pct_of_revenue": 0.018,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": 0.03,
+          "rationale": "FY29E (GSe extrapolation): Revenue growth decelerates to 17% as the tissue CDx repricing tailwind is fully lapped and MCED contributes meaningful but not transformative volumes without Medicare coverage. FCF margin ~19.4%. Operating leverage continues on the fixed sequencing infrastructure base."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 0.415,
+          "revenue_b": 2.0,
+          "revenue_growth_pct": 14.3,
+          "ebit_margin": 0.19,
+          "tax_rate": 0.0,
+          "da_pct_of_revenue": 0.016,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": 0.025,
+          "rationale": "FY30E (GSe extrapolation): Approaching normalized FCF margin of ~20% as MCED self-pay scales toward 200k+ tests, tissue holds 15-20% annual growth, and MRD begins contributing. Revenue $2.0bn = 2.5x FY25 base. No tax cash outflow expected until ~FY29-30 as NOL carryforwards absorb taxable income."
+        }
+      ]
+    },
+    "outputs": {
+      "pv_explicit_fcf_b": 0.84,
+      "terminal_value_b": 4.772,
+      "pv_terminal_b": 2.648,
+      "implied_ev_b": 3.489,
+      "implied_equity_b": 3.908,
+      "implied_px": 13.82,
+      "calculation_trace": {
+        "wacc": {
+          "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
+          "steps": [
+            {
+              "label": "Cost of equity (Ke)",
+              "expression": "0.0430 + 1.650 x 0.0550",
+              "result": "0.1337 (13.37%)"
+            },
+            {
+              "label": "Equity weight x Ke",
+              "expression": "0.91 x 0.1337",
+              "result": "0.1222"
+            },
+            {
+              "label": "Debt weight x after-tax Kd",
+              "expression": "0.09 x 0.0950",
+              "result": "0.0082"
+            },
+            {
+              "label": "WACC",
+              "expression": "0.1222 + 0.0082",
+              "result": "0.1250 (12.50%)"
+            }
+          ]
+        },
+        "explicit_fcf": {
+          "formula": "PV explicit FCF = sum( FCF_t / (1+WACC)^t ) for t = 1..N",
+          "per_year": [
+            {
+              "year": 2026,
+              "fcf_b": 0.06,
+              "discount_factor": 0.8889,
+              "pv_b": 0.053
+            },
+            {
+              "year": 2027,
+              "fcf_b": 0.193,
+              "discount_factor": 0.7901,
+              "pv_b": 0.152
+            },
+            {
+              "year": 2028,
+              "fcf_b": 0.273,
+              "discount_factor": 0.7023,
+              "pv_b": 0.192
+            },
+            {
+              "year": 2029,
+              "fcf_b": 0.34,
+              "discount_factor": 0.6243,
+              "pv_b": 0.212
+            },
+            {
+              "year": 2030,
+              "fcf_b": 0.415,
+              "discount_factor": 0.5549,
+              "pv_b": 0.23
+            }
+          ],
+          "result": "0.840B"
+        },
+        "terminal_value": {
+          "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
+          "steps": [
+            {
+              "label": "Last projected FCF",
+              "expression": "FCF_5",
+              "result": "0.415B"
+            },
+            {
+              "label": "Terminal FCF",
+              "expression": "0.415 x (1 + 0.0350)",
+              "result": "0.430B"
+            },
+            {
+              "label": "Terminal value",
+              "expression": "0.430 / (0.1250 - 0.0350)",
+              "result": "4.772B"
+            },
+            {
+              "label": "PV of terminal value",
+              "expression": "4.772 / (1+0.1250)^5",
+              "result": "2.648B"
+            }
+          ]
+        },
+        "bridge_to_implied_px": {
+          "formula": "Implied EV = PV explicit FCF + PV terminal;  Equity = EV - Net Debt;  Px = Equity / Shares",
+          "steps": [
+            {
+              "label": "Implied EV",
+              "expression": "0.840 + 2.648",
+              "result": "3.489B"
+            },
+            {
+              "label": "Less: net debt",
+              "expression": "3.489 - -0.419",
+              "result": "3.908B"
+            },
+            {
+              "label": "Implied price per share",
+              "expression": "3.908B / 0.283B shares",
+              "result": "$13.82"
+            }
+          ]
+        }
+      },
+      "fcff_build": [
+        {
+          "revenue_b": 1.011,
+          "ebit_margin": 0.079,
+          "ebit_b": 0.08,
+          "tax_rate": 0.0,
+          "nopat_b": 0.08,
+          "da_b": 0.03,
+          "da_pct": 0.03,
+          "capex_b": 0.019,
+          "capex_pct": 0.019,
+          "wc_change_b": 0.087,
+          "wc_pct": 0.086,
+          "fcff_derived_b": 0.004,
+          "has_full_build": true,
+          "year": 2026,
+          "fcf_b": 0.06
+        },
+        {
+          "revenue_b": 1.253,
+          "ebit_margin": 0.129,
+          "ebit_b": 0.162,
+          "tax_rate": 0.0,
+          "nopat_b": 0.162,
+          "da_b": 0.036,
+          "da_pct": 0.029,
+          "capex_b": 0.02,
+          "capex_pct": 0.016,
+          "wc_change_b": 0.049,
+          "wc_pct": 0.039,
+          "fcff_derived_b": 0.129,
+          "has_full_build": true,
+          "year": 2027,
+          "fcf_b": 0.193
+        },
+        {
+          "revenue_b": 1.494,
+          "ebit_margin": 0.157,
+          "ebit_b": 0.235,
+          "tax_rate": 0.0,
+          "nopat_b": 0.235,
+          "da_b": 0.031,
+          "da_pct": 0.021,
+          "capex_b": 0.024,
+          "capex_pct": 0.016,
+          "wc_change_b": 0.052,
+          "wc_pct": 0.035,
+          "fcff_derived_b": 0.19,
+          "has_full_build": true,
+          "year": 2028,
+          "fcf_b": 0.273
+        },
+        {
+          "revenue_b": 1.75,
+          "ebit_margin": 0.175,
+          "ebit_b": 0.306,
+          "tax_rate": 0.0,
+          "nopat_b": 0.306,
+          "da_b": 0.032,
+          "da_pct": 0.018,
+          "capex_b": 0.026,
+          "capex_pct": 0.015,
+          "wc_change_b": 0.052,
+          "wc_pct": 0.03,
+          "fcff_derived_b": 0.259,
+          "has_full_build": true,
+          "year": 2029,
+          "fcf_b": 0.34
+        },
+        {
+          "revenue_b": 2.0,
+          "ebit_margin": 0.19,
+          "ebit_b": 0.38,
+          "tax_rate": 0.0,
+          "nopat_b": 0.38,
+          "da_b": 0.032,
+          "da_pct": 0.016,
+          "capex_b": 0.03,
+          "capex_pct": 0.015,
+          "wc_change_b": 0.05,
+          "wc_pct": 0.025,
+          "fcff_derived_b": 0.332,
+          "has_full_build": true,
+          "year": 2030,
+          "fcf_b": 0.415
+        }
+      ],
+      "dual_terminal_value": {
+        "gordon_tv_b": 4.772499999999999,
+        "gordon_pv_b": 2.648398448745956,
+        "exit_multiple_tv_b": 7.416,
+        "exit_multiple_pv_b": 4.115353147386069,
+        "exit_multiple_x": 18.0,
+        "blended_tv_b": 6.09425,
+        "blended_pv_b": 3.381875798066013,
+        "terminal_ebitda_b": 0.41200000000000003
+      },
+      "wacc_adjudication": {
+        "sector": "(no sector hint)",
+        "sector_band": [
+          0.08,
+          0.12
+        ],
+        "formula_wacc": 0.125,
+        "verdict": "ABOVE band (8.0%-12.0%)",
+        "ke": 0.13374999999999998,
+        "notes": "12.5% is at the top of the 10-13% diagnostics/SaaS band. Justified by binary MCED risk, lock-up overhang (48.5% insider), and post-IPO lack of observed beta. Bull case uses 10.5% (market average risk), bear case 14.0% (distress premium)."
+      }
+    },
+    "sensitivity": {
+      "rows_label": "WACC",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.115,
+        0.12,
+        0.125,
+        0.13,
+        0.135
+      ],
+      "col_values": [
+        0.025,
+        0.03,
+        0.035,
+        0.04,
+        0.045
+      ],
+      "implied_px_matrix": [
+        [
+          14.25,
+          14.87,
+          15.57,
+          16.36,
+          17.26
+        ],
+        [
+          13.49,
+          14.03,
+          14.64,
+          15.33,
+          16.11
+        ],
+        [
+          12.8,
+          13.29,
+          13.82,
+          14.42,
+          15.09
+        ],
+        [
+          12.19,
+          12.61,
+          13.09,
+          13.62,
+          14.2
+        ],
+        [
+          11.63,
+          12.01,
+          12.43,
+          12.9,
+          13.41
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "EV/Sales",
+    "category": "relative",
+    "reasoning": "EV/Sales is the primary valuation convention used by GS and all 12 covering analysts for this peer group (GH, NTRA, TEM, GRAL). The peer set trades at 6.2-15.9x forward EV/Sales. CAI's current 3.5x FY27E EV/Sales represents a 50-75% discount to peers for a company with the highest gross margin in the group (66.4%). The cross-check uses a 5.5x FY27E EV/Sales multiple, representing a 20% discount to the lowest-multiple peer VCYT (6.2x), reflecting CAI's lock-up overhang, MCED execution risk, and 62% post-IPO drawdown from IPO high.",
+    "inputs": {
+      "multiple_type": "EV/Sales",
+      "peer_median_multiple": 5.5,
+      "fy_estimate": 1.253,
+      "peers_used": [
+        "GH",
+        "NTRA",
+        "TEM",
+        "GRAL",
+        "VCYT",
+        "ADPT"
+      ],
+      "reasoning": "5.5x FY27E EV/Sales is 20% below VCYT (6.2x, the lowest-multiple profitable diagnostics peer), 37% below TEM (8.7x if TEM EV/Sales expands from 6.9x TTM to forward), and 75% below GH/NTRA. The discount to peers reflects three non-fundamental factors: (1) post-IPO lock-up overhang, (2) MCED binary risk at $3,500 self-pay, (3) float illiquidity. As these factors resolve in 2026, the multiple should converge toward 6-7x, consistent with GS's 6x target."
+    },
+    "outputs": {
+      "implied_ev_b": 6.891,
+      "implied_equity_b": 7.31,
+      "implied_px": 25.86
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.14,
+        "terminal_g": 0.025,
+        "fcf_multiplier": 0.62
+      },
+      "implied_px": 7.45,
+      "probability": 0.2,
+      "probability_reasoning": "20% bear probability: MCED Caris Detect achieves <25,000 tests in first year at $3,500 self-pay (analogous to GRAIL's early Galleri adoption before brand building), tissue volume grows only 12-15% as Foundation Medicine/Tempus competition intensifies, and the stock re-rates toward NeoGenomics multiples (2.3x EV/Sales) amid lock-up selling pressure. This scenario does not require a macro recession -- just MCED underperformance and competitor response.",
+      "reasoning": "MCED launch stumbles at $3,500 price, tissue volume disappoints at <15% growth, multiple compresses to 2.5x EV/Sales, lock-up selling creates persistent supply overhang."
+    },
+    {
+      "label": "Base",
+      "key_changes": {
+        "wacc": 0.125,
+        "terminal_g": 0.035
+      },
+      "implied_px": 13.82,
+      "probability": 0.45,
+      "probability_reasoning": "45% base probability: the central case assumes GS estimates are broadly accurate for tissue therapy selection (24.5% FY26E revenue growth, FCF ramp from $60mn to $193mn in FY27), MCED achieves 75,000-125,000 tests in year one (premium positioning gains traction with high-income patient segment and physician-ordered testing), NY State Assure approval comes through in 2H 2026, and no adverse CMS CLFS revision to the $8,455 CDx rate. Lock-up expiry is manageable given strong fundamentals.",
+      "reasoning": "GS consensus trajectory with MCED gaining initial traction, tissue CDx volume growth at 20%+, and NY State liquid approval in 2H 2026."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.105,
+        "terminal_g": 0.04,
+        "fcf_multiplier": 1.35
+      },
+      "implied_px": 25.0,
+      "probability": 0.15,
+      "probability_reasoning": "15% bull probability: MCED Caris Detect exceeds 200,000 tests in year one driven by Everlywell consumer distribution and physician ordering at premium positioning, Caris Assure NY State approval triggers an Assure FDA CDx submission in late 2026, and MolDX grants Tumor Naive MRD coverage -- unlocking a second reimbursement ramp analogous to the tissue CDx repricing of 2024-2025. This scenario requires strong MCED execution AND regulatory timing alignment across three simultaneous pipeline milestones.",
+      "reasoning": "MCED exceeds 200k tests, Assure FDA path opens, MRD MolDX coverage granted -- three simultaneous catalysts that re-rate the stock toward GH/NTRA multiples (10-12x EV/Sales)."
+    }
+  ],
+  "blended_target": 16.63,
+  "blending_logic": "",
+  "blending_weights": {
+    "cross_check": 0.2
+  },
+  "weights_reasoning": "Bear 20% + Base 45% + Bull 15% + EV/Sales cross-check 20% = 100%. Base probability reflects the binary MCED launch outcome that dominates the 12-month thesis: 45% base weight acknowledges high consensus confidence in tissue volume growth and Q2 2026 Caris Detect launch execution, but tempers with MCED pricing risk and lock-up overhang. Bear 20% captures MCED $3,500 self-pay stall, multiple compression to 2.5x EV/Sales, and lock-up selling. Bull 15% reflects a meaningful but minority probability that MCED exceeds 100k tests year-one AND Assure NY State approval drives liquid ASP uplift. EV/Sales cross-check at 20% anchors the valuation to the peer-relative multiple regime that GS and street analysts use; it is included because CAI's near-term DCF is heavily discounted by a lumpy FCF ramp (FY26 base FCF is only $60mn vs FY27 $193mn), making the EV/Sales comparison a useful near-term sanity check at peer multiples.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 7.45,
+      "weight": 0.2,
+      "contribution": 1.49,
+      "reasoning": "20% bear probability: MCED Caris Detect achieves <25,000 tests in first year at $3,500 self-pay (analogous to GRAIL's early Galleri adoption before brand building), tissue volume grows only 12-15% as Foundation Medicine/Tempus competition intensifies, and the stock re-rates toward NeoGenomics multiples (2.3x EV/Sales) amid lock-up selling pressure. This scenario does not require a macro recession -- just MCED underperformance and competitor response."
+    },
+    {
+      "component": "Base",
+      "implied_px": 13.82,
+      "weight": 0.45,
+      "contribution": 6.22,
+      "reasoning": "45% base probability: the central case assumes GS estimates are broadly accurate for tissue therapy selection (24.5% FY26E revenue growth, FCF ramp from $60mn to $193mn in FY27), MCED achieves 75,000-125,000 tests in year one (premium positioning gains traction with high-income patient segment and physician-ordered testing), NY State Assure approval comes through in 2H 2026, and no adverse CMS CLFS revision to the $8,455 CDx rate. Lock-up expiry is manageable given strong fundamentals."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 25.0,
+      "weight": 0.15,
+      "contribution": 3.75,
+      "reasoning": "15% bull probability: MCED Caris Detect exceeds 200,000 tests in year one driven by Everlywell consumer distribution and physician ordering at premium positioning, Caris Assure NY State approval triggers an Assure FDA CDx submission in late 2026, and MolDX grants Tumor Naive MRD coverage -- unlocking a second reimbursement ramp analogous to the tissue CDx repricing of 2024-2025. This scenario requires strong MCED execution AND regulatory timing alignment across three simultaneous pipeline milestones."
+    },
+    {
+      "component": "EV/Sales",
+      "implied_px": 25.86,
+      "weight": 0.2,
+      "contribution": 5.17,
+      "reasoning": "EV/Sales is the primary valuation convention used by GS and all 12 covering analysts for this peer group (GH, NTRA, TEM, GRAL). The peer set trades at 6.2-15.9x forward EV/Sales. CAI's current 3.5x FY27E EV/Sales represents a 50-75% discount to peers for a company with the highest gross margin in the group (66.4%). The cross-check uses a 5.5x FY27E EV/Sales multiple, representing a 20% discount to the lowest-multiple peer VCYT (6.2x), reflecting CAI's lock-up overhang, MCED execution risk, and 62% post-IPO drawdown from IPO high."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": 3.0
+}
