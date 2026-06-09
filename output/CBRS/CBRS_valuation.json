@@ -5,11 +5,11 @@
   "current_price": 237.83,
   "shares_outstanding_b": 0.2196,
   "net_debt_b": -0.439,
-  "computed_at": "2026-06-09T06:06:49Z",
+  "computed_at": "2026-06-09T08:09:42Z",
   "primary_method": {
     "name": "DCF",
     "category": "intrinsic",
-    "reasoning": "Cerebras is loss-making today but has a clear revenue ramp, improving gross margin and a fixed R&D base that scales into profit. A long-horizon FCFF DCF captures the path to cash generation better than a trailing multiple; an EV/Sales cross-check anchors the near-term sanity check given the 102x trailing-sales valuation.",
+    "reasoning": "After the UBS initiation surfaced the OpenAI 750MW prepayment deal and the AWS disaggregated-inference program (neither in our prior skills-only model), we rebuild the base on a risk-adjusted OpenAI ramp: ~12 months behind UBS and at ~55-60% of their modeled capacity, reflecting the ~10x supply-chain scale-up required. AWS is excluded from the base and treated as bull-case upside. A long-horizon FCFF DCF captures the path to OpenAI-driven profitability; an EV/Sales cross-check on forward sales anchors it against hardware peers.",
     "inputs": {
       "wacc": {
         "value": 0.115,
@@ -20,8 +20,8 @@
           "debt_weight": 0.01,
           "cost_of_debt_after_tax": 0.045
         },
-        "reasoning": "Ke = 4.4% Rf + 1.30 beta x 5.5% ERP = 11.6%. Beta set above the semi average for single-architecture concentration, ~85% single-customer revenue and post-IPO volatility (49% peak-to-trough in year one). Net cash means debt weight ~1%, so WACC sits near Ke at 11.5%, inside the 9-12% semi band.",
-        "adjudication_notes": "11.5% is mid-to-upper semi band; justified by concentration and float risk.",
+        "reasoning": "Ke = 4.4% Rf + 1.30 beta x 5.5% ERP = 11.6%. Beta above the semi average for OpenAI single-customer concentration (now the anchor, replacing G42), the 10x supply-chain execution risk, and post-IPO volatility. Net cash keeps debt weight ~1%, so WACC ~11.5%, inside the 9-12% semi band.",
+        "adjudication_notes": "11.5% mid-upper semi band; concentration shifts from G42 to OpenAI but remains high.",
         "components_reasoned": {
           "rf": {
             "value": 0.044,
@@ -47,142 +47,152 @@
       },
       "terminal_growth": {
         "value": 0.035,
-        "reasoning": "Inference compute should outgrow GDP for years; 3.5% terminal is defensible for a durable franchise but below the early ramp."
+        "reasoning": "Inference compute outgrows GDP for years; 3.5% terminal for a durable franchise, below the explicit ramp."
       },
       "forecast_horizon_years": 10,
       "terminal_value": {
-        "exit_ev_ebitda": 18.0
+        "exit_ev_ebitda": 16.0
       },
       "fcf_projections": [
         {
           "year": 2026,
-          "fcf_b": -0.1599,
-          "revenue_b": 0.8415,
-          "revenue_growth_pct": 65.0,
-          "ebit_margin": -0.1,
+          "fcf_b": -0.4116,
+          "revenue_b": 0.84,
+          "revenue_growth_pct": null,
+          "ebit_margin": -0.3,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.12,
-          "wc_change_pct_of_revenue": 0.04,
-          "rationale": "FY26E +65%: inference cloud scaling plus Condor Galaxy installs; growth decelerates off the 2025 76% print. Still operating-loss as R&D base dominates."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.25,
+          "wc_change_pct_of_revenue": 0.02,
+          "ubs_ref_revenue_b": 0.832,
+          "rationale": "C2026E ~$0.84B: in line with UBS ($0.83B) and our prior model. Near-term visibility is good; OpenAI contributes little this year as the first 250MW tranche only begins to deploy."
         },
         {
           "year": 2027,
-          "fcf_b": -0.1199,
-          "revenue_b": 1.2622,
-          "revenue_growth_pct": 50.0,
-          "ebit_margin": -0.02,
+          "fcf_b": -0.1949,
+          "revenue_b": 1.9,
+          "revenue_growth_pct": 126.2,
+          "ebit_margin": 0.06,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.11,
-          "wc_change_pct_of_revenue": 0.035,
-          "rationale": "FY27E +50%: enterprise and sovereign pipeline broadens; gross margin lifts on cloud mix; loss narrows toward breakeven."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.2,
+          "wc_change_pct_of_revenue": 0.03,
+          "ubs_ref_revenue_b": 2.695,
+          "rationale": "C2027E +126% to $1.9B vs UBS $2.70B. OpenAI tranche-1 deployment begins but we haircut ~30% for the 10x supply-chain scale-up. AWS excluded from base."
         },
         {
           "year": 2028,
-          "fcf_b": -0.0223,
-          "revenue_b": 1.7671,
-          "revenue_growth_pct": 40.0,
-          "ebit_margin": 0.06,
+          "fcf_b": 0.268,
+          "revenue_b": 4.2,
+          "revenue_growth_pct": 121.1,
+          "ebit_margin": 0.22,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.1,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.16,
           "wc_change_pct_of_revenue": 0.03,
-          "rationale": "FY28E +40%: first year of positive operating margin as revenue laps the fixed R&D base."
+          "ubs_ref_revenue_b": 7.117,
+          "rationale": "C2028E +121% to $4.2B vs UBS $7.12B (~59% of UBS). Peak OpenAI tranche-1 ramp, risk-adjusted for slippage. Still no AWS credit."
         },
         {
           "year": 2029,
-          "fcf_b": 0.1162,
-          "revenue_b": 2.3326,
-          "revenue_growth_pct": 32.0,
-          "ebit_margin": 0.12,
+          "fcf_b": 0.9828,
+          "revenue_b": 6.5,
+          "revenue_growth_pct": 54.8,
+          "ebit_margin": 0.28,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.09,
-          "wc_change_pct_of_revenue": 0.025,
-          "rationale": "FY29E +32%: operating leverage builds; capex intensity easing as the manufacturing base matures."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.13,
+          "wc_change_pct_of_revenue": 0.02,
+          "ubs_ref_revenue_b": 11.158,
+          "rationale": "C2029E +55% to $6.5B vs UBS $11.16B (~58%). Tranches layer in but a year behind UBS schedule; concentration on OpenAI is now the key risk."
         },
         {
           "year": 2030,
-          "fcf_b": 0.3041,
-          "revenue_b": 2.9158,
-          "revenue_growth_pct": 25.0,
-          "ebit_margin": 0.17,
+          "fcf_b": 1.6566,
+          "revenue_b": 8.5,
+          "revenue_growth_pct": 30.8,
+          "ebit_margin": 0.31,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.08,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.11,
           "wc_change_pct_of_revenue": 0.02,
-          "rationale": "FY30E +25%: mid-teens FCF margin as cloud mix and pricing stabilize."
+          "ubs_ref_revenue_b": 15.545,
+          "rationale": "C2030E +31% to $8.5B vs UBS $15.55B (~55%). Mature OpenAI footprint at risk-adjusted utilization."
         },
         {
           "year": 2031,
-          "fcf_b": 0.4829,
-          "revenue_b": 3.499,
+          "fcf_b": 2.2216,
+          "revenue_b": 10.2,
           "revenue_growth_pct": 20.0,
-          "ebit_margin": 0.2,
+          "ebit_margin": 0.32,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.07,
-          "wc_change_pct_of_revenue": 0.02,
-          "rationale": "FY31E +20%: franchise scaling; FCF margin high-teens."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.1,
+          "wc_change_pct_of_revenue": 0.015,
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2031E +20% to $10.2B: deceleration as the 750MW base fills; optional 2GW expansion and AWS sit in the bull case, not here."
         },
         {
           "year": 2032,
-          "fcf_b": 0.7172,
-          "revenue_b": 4.0588,
-          "revenue_growth_pct": 16.0,
-          "ebit_margin": 0.23,
+          "fcf_b": 2.7577,
+          "revenue_b": 11.7,
+          "revenue_growth_pct": 14.7,
+          "ebit_margin": 0.33,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.06,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.09,
           "wc_change_pct_of_revenue": 0.015,
-          "rationale": "FY32E +16%: deceleration continues off a larger base."
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2032E +15% to $11.7B: franchise scaling past the initial OpenAI commitment."
         },
         {
           "year": 2033,
-          "fcf_b": 0.8829,
-          "revenue_b": 4.5864,
-          "revenue_growth_pct": 13.0,
-          "ebit_margin": 0.25,
+          "fcf_b": 3.2842,
+          "revenue_b": 13.1,
+          "revenue_growth_pct": 12.0,
+          "ebit_margin": 0.33,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.06,
-          "wc_change_pct_of_revenue": 0.015,
-          "rationale": "FY33E +13%: maturing growth, low-20s FCF margin."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.08,
+          "wc_change_pct_of_revenue": 0.01,
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2033E +12% to $13.1B: maturing growth."
         },
         {
           "year": 2034,
-          "fcf_b": 1.0966,
-          "revenue_b": 5.0909,
-          "revenue_growth_pct": 11.0,
-          "ebit_margin": 0.26,
+          "fcf_b": 3.698,
+          "revenue_b": 14.3,
+          "revenue_growth_pct": 9.2,
+          "ebit_margin": 0.34,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.05,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.08,
           "wc_change_pct_of_revenue": 0.01,
-          "rationale": "FY34E +11%: approaching steady state."
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2034E +9% to $14.3B: approaching steady state."
         },
         {
           "year": 2035,
-          "fcf_b": 1.2391,
-          "revenue_b": 5.5491,
-          "revenue_growth_pct": 9.0,
-          "ebit_margin": 0.27,
+          "fcf_b": 4.1096,
+          "revenue_b": 15.3,
+          "revenue_growth_pct": 7.0,
+          "ebit_margin": 0.34,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.05,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.07,
           "wc_change_pct_of_revenue": 0.01,
-          "rationale": "FY35E +9%: terminal-approach year, ~25% FCF margin franchise."
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2035E +7% to $15.3B: terminal-approach year, hardware-like ~34% EBIT margin."
         }
       ]
     },
     "outputs": {
-      "pv_explicit_fcf_b": 1.78,
-      "terminal_value_b": 16.031,
-      "pv_terminal_b": 5.398,
-      "implied_ev_b": 7.178,
-      "implied_equity_b": 7.617,
-      "implied_px": 34.69,
+      "pv_explicit_fcf_b": 7.855,
+      "terminal_value_b": 53.168,
+      "pv_terminal_b": 17.902,
+      "implied_ev_b": 25.757,
+      "implied_equity_b": 26.196,
+      "implied_px": 119.29,
       "calculation_trace": {
         "wacc": {
           "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
@@ -214,66 +224,66 @@
           "per_year": [
             {
               "year": 2026,
-              "fcf_b": -0.16,
+              "fcf_b": -0.412,
               "discount_factor": 0.8969,
-              "pv_b": -0.143
+              "pv_b": -0.369
             },
             {
               "year": 2027,
-              "fcf_b": -0.12,
+              "fcf_b": -0.195,
               "discount_factor": 0.8044,
-              "pv_b": -0.096
+              "pv_b": -0.157
             },
             {
               "year": 2028,
-              "fcf_b": -0.022,
+              "fcf_b": 0.268,
               "discount_factor": 0.7214,
-              "pv_b": -0.016
+              "pv_b": 0.193
             },
             {
               "year": 2029,
-              "fcf_b": 0.116,
+              "fcf_b": 0.983,
               "discount_factor": 0.647,
-              "pv_b": 0.075
+              "pv_b": 0.636
             },
             {
               "year": 2030,
-              "fcf_b": 0.304,
+              "fcf_b": 1.657,
               "discount_factor": 0.5803,
-              "pv_b": 0.176
+              "pv_b": 0.961
             },
             {
               "year": 2031,
-              "fcf_b": 0.483,
+              "fcf_b": 2.222,
               "discount_factor": 0.5204,
-              "pv_b": 0.251
+              "pv_b": 1.156
             },
             {
               "year": 2032,
-              "fcf_b": 0.717,
+              "fcf_b": 2.758,
               "discount_factor": 0.4667,
-              "pv_b": 0.335
+              "pv_b": 1.287
             },
             {
               "year": 2033,
-              "fcf_b": 0.883,
+              "fcf_b": 3.284,
               "discount_factor": 0.4186,
-              "pv_b": 0.37
+              "pv_b": 1.375
             },
             {
               "year": 2034,
-              "fcf_b": 1.097,
+              "fcf_b": 3.698,
               "discount_factor": 0.3754,
-              "pv_b": 0.412
+              "pv_b": 1.388
             },
             {
               "year": 2035,
-              "fcf_b": 1.239,
+              "fcf_b": 4.11,
               "discount_factor": 0.3367,
-              "pv_b": 0.417
+              "pv_b": 1.384
             }
           ],
-          "result": "1.780B"
+          "result": "7.855B"
         },
         "terminal_value": {
           "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
@@ -281,22 +291,22 @@
             {
               "label": "Last projected FCF",
               "expression": "FCF_10",
-              "result": "1.239B"
+              "result": "4.110B"
             },
             {
               "label": "Terminal FCF",
-              "expression": "1.239 x (1 + 0.0350)",
-              "result": "1.282B"
+              "expression": "4.110 x (1 + 0.0350)",
+              "result": "4.253B"
             },
             {
               "label": "Terminal value",
-              "expression": "1.282 / (0.1150 - 0.0350)",
-              "result": "16.031B"
+              "expression": "4.253 / (0.1150 - 0.0350)",
+              "result": "53.168B"
             },
             {
               "label": "PV of terminal value",
-              "expression": "16.031 / (1+0.1150)^10",
-              "result": "5.398B"
+              "expression": "53.168 / (1+0.1150)^10",
+              "result": "17.902B"
             }
           ]
         },
@@ -305,203 +315,203 @@
           "steps": [
             {
               "label": "Implied EV",
-              "expression": "1.780 + 5.398",
-              "result": "7.178B"
+              "expression": "7.855 + 17.902",
+              "result": "25.757B"
             },
             {
               "label": "Less: net debt",
-              "expression": "7.178 - -0.439",
-              "result": "7.617B"
+              "expression": "25.757 - -0.439",
+              "result": "26.196B"
             },
             {
               "label": "Implied price per share",
-              "expression": "7.617B / 0.220B shares",
-              "result": "$34.69"
+              "expression": "26.196B / 0.220B shares",
+              "result": "$119.29"
             }
           ]
         }
       },
       "fcff_build": [
         {
-          "revenue_b": 0.842,
-          "ebit_margin": -0.1,
-          "ebit_b": -0.084,
+          "revenue_b": 0.84,
+          "ebit_margin": -0.3,
+          "ebit_b": -0.252,
           "tax_rate": 0.21,
-          "nopat_b": -0.066,
-          "da_b": 0.059,
-          "da_pct": 0.07,
-          "capex_b": 0.101,
-          "capex_pct": 0.12,
-          "wc_change_b": 0.034,
-          "wc_pct": 0.04,
-          "fcff_derived_b": -0.142,
+          "nopat_b": -0.199,
+          "da_b": 0.067,
+          "da_pct": 0.08,
+          "capex_b": 0.21,
+          "capex_pct": 0.25,
+          "wc_change_b": 0.017,
+          "wc_pct": 0.02,
+          "fcff_derived_b": -0.359,
           "has_full_build": true,
           "year": 2026,
-          "fcf_b": -0.1599
+          "fcf_b": -0.4116
         },
         {
-          "revenue_b": 1.262,
-          "ebit_margin": -0.02,
-          "ebit_b": -0.025,
+          "revenue_b": 1.9,
+          "ebit_margin": 0.06,
+          "ebit_b": 0.114,
           "tax_rate": 0.21,
-          "nopat_b": -0.02,
-          "da_b": 0.088,
-          "da_pct": 0.07,
-          "capex_b": 0.139,
-          "capex_pct": 0.11,
-          "wc_change_b": 0.044,
-          "wc_pct": 0.035,
-          "fcff_derived_b": -0.115,
+          "nopat_b": 0.09,
+          "da_b": 0.152,
+          "da_pct": 0.08,
+          "capex_b": 0.38,
+          "capex_pct": 0.2,
+          "wc_change_b": 0.057,
+          "wc_pct": 0.03,
+          "fcff_derived_b": -0.195,
           "has_full_build": true,
           "year": 2027,
-          "fcf_b": -0.1199
+          "fcf_b": -0.1949
         },
         {
-          "revenue_b": 1.767,
-          "ebit_margin": 0.06,
-          "ebit_b": 0.106,
+          "revenue_b": 4.2,
+          "ebit_margin": 0.22,
+          "ebit_b": 0.924,
           "tax_rate": 0.21,
-          "nopat_b": 0.084,
-          "da_b": 0.124,
-          "da_pct": 0.07,
-          "capex_b": 0.177,
-          "capex_pct": 0.1,
-          "wc_change_b": 0.053,
+          "nopat_b": 0.73,
+          "da_b": 0.336,
+          "da_pct": 0.08,
+          "capex_b": 0.672,
+          "capex_pct": 0.16,
+          "wc_change_b": 0.126,
           "wc_pct": 0.03,
-          "fcff_derived_b": -0.022,
+          "fcff_derived_b": 0.268,
           "has_full_build": true,
           "year": 2028,
-          "fcf_b": -0.0223
+          "fcf_b": 0.268
         },
         {
-          "revenue_b": 2.333,
-          "ebit_margin": 0.12,
-          "ebit_b": 0.28,
+          "revenue_b": 6.5,
+          "ebit_margin": 0.28,
+          "ebit_b": 1.82,
           "tax_rate": 0.21,
-          "nopat_b": 0.221,
-          "da_b": 0.163,
-          "da_pct": 0.07,
-          "capex_b": 0.21,
-          "capex_pct": 0.09,
-          "wc_change_b": 0.058,
-          "wc_pct": 0.025,
-          "fcff_derived_b": 0.116,
+          "nopat_b": 1.438,
+          "da_b": 0.52,
+          "da_pct": 0.08,
+          "capex_b": 0.845,
+          "capex_pct": 0.13,
+          "wc_change_b": 0.13,
+          "wc_pct": 0.02,
+          "fcff_derived_b": 0.983,
           "has_full_build": true,
           "year": 2029,
-          "fcf_b": 0.1162
+          "fcf_b": 0.9828
         },
         {
-          "revenue_b": 2.916,
-          "ebit_margin": 0.17,
-          "ebit_b": 0.496,
+          "revenue_b": 8.5,
+          "ebit_margin": 0.31,
+          "ebit_b": 2.635,
           "tax_rate": 0.21,
-          "nopat_b": 0.392,
-          "da_b": 0.204,
-          "da_pct": 0.07,
-          "capex_b": 0.233,
-          "capex_pct": 0.08,
-          "wc_change_b": 0.058,
+          "nopat_b": 2.082,
+          "da_b": 0.68,
+          "da_pct": 0.08,
+          "capex_b": 0.935,
+          "capex_pct": 0.11,
+          "wc_change_b": 0.17,
           "wc_pct": 0.02,
-          "fcff_derived_b": 0.304,
+          "fcff_derived_b": 1.657,
           "has_full_build": true,
           "year": 2030,
-          "fcf_b": 0.3041
+          "fcf_b": 1.6566
         },
         {
-          "revenue_b": 3.499,
-          "ebit_margin": 0.2,
-          "ebit_b": 0.7,
+          "revenue_b": 10.2,
+          "ebit_margin": 0.32,
+          "ebit_b": 3.264,
           "tax_rate": 0.21,
-          "nopat_b": 0.553,
-          "da_b": 0.245,
-          "da_pct": 0.07,
-          "capex_b": 0.245,
-          "capex_pct": 0.07,
-          "wc_change_b": 0.07,
-          "wc_pct": 0.02,
-          "fcff_derived_b": 0.483,
+          "nopat_b": 2.579,
+          "da_b": 0.816,
+          "da_pct": 0.08,
+          "capex_b": 1.02,
+          "capex_pct": 0.1,
+          "wc_change_b": 0.153,
+          "wc_pct": 0.015,
+          "fcff_derived_b": 2.222,
           "has_full_build": true,
           "year": 2031,
-          "fcf_b": 0.4829
+          "fcf_b": 2.2216
         },
         {
-          "revenue_b": 4.059,
-          "ebit_margin": 0.23,
-          "ebit_b": 0.934,
+          "revenue_b": 11.7,
+          "ebit_margin": 0.33,
+          "ebit_b": 3.861,
           "tax_rate": 0.21,
-          "nopat_b": 0.737,
-          "da_b": 0.284,
-          "da_pct": 0.07,
-          "capex_b": 0.244,
-          "capex_pct": 0.06,
-          "wc_change_b": 0.061,
+          "nopat_b": 3.05,
+          "da_b": 0.936,
+          "da_pct": 0.08,
+          "capex_b": 1.053,
+          "capex_pct": 0.09,
+          "wc_change_b": 0.175,
           "wc_pct": 0.015,
-          "fcff_derived_b": 0.717,
+          "fcff_derived_b": 2.758,
           "has_full_build": true,
           "year": 2032,
-          "fcf_b": 0.7172
+          "fcf_b": 2.7577
         },
         {
-          "revenue_b": 4.586,
-          "ebit_margin": 0.25,
-          "ebit_b": 1.147,
+          "revenue_b": 13.1,
+          "ebit_margin": 0.33,
+          "ebit_b": 4.323,
           "tax_rate": 0.21,
-          "nopat_b": 0.906,
-          "da_b": 0.321,
-          "da_pct": 0.07,
-          "capex_b": 0.275,
-          "capex_pct": 0.06,
-          "wc_change_b": 0.069,
-          "wc_pct": 0.015,
-          "fcff_derived_b": 0.883,
+          "nopat_b": 3.415,
+          "da_b": 1.048,
+          "da_pct": 0.08,
+          "capex_b": 1.048,
+          "capex_pct": 0.08,
+          "wc_change_b": 0.131,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 3.284,
           "has_full_build": true,
           "year": 2033,
-          "fcf_b": 0.8829
+          "fcf_b": 3.2842
         },
         {
-          "revenue_b": 5.091,
-          "ebit_margin": 0.26,
-          "ebit_b": 1.324,
+          "revenue_b": 14.3,
+          "ebit_margin": 0.34,
+          "ebit_b": 4.862,
           "tax_rate": 0.21,
-          "nopat_b": 1.046,
-          "da_b": 0.356,
-          "da_pct": 0.07,
-          "capex_b": 0.255,
-          "capex_pct": 0.05,
-          "wc_change_b": 0.051,
+          "nopat_b": 3.841,
+          "da_b": 1.144,
+          "da_pct": 0.08,
+          "capex_b": 1.144,
+          "capex_pct": 0.08,
+          "wc_change_b": 0.143,
           "wc_pct": 0.01,
-          "fcff_derived_b": 1.097,
+          "fcff_derived_b": 3.698,
           "has_full_build": true,
           "year": 2034,
-          "fcf_b": 1.0966
+          "fcf_b": 3.698
         },
         {
-          "revenue_b": 5.549,
-          "ebit_margin": 0.27,
-          "ebit_b": 1.498,
+          "revenue_b": 15.3,
+          "ebit_margin": 0.34,
+          "ebit_b": 5.202,
           "tax_rate": 0.21,
-          "nopat_b": 1.184,
-          "da_b": 0.388,
-          "da_pct": 0.07,
-          "capex_b": 0.277,
-          "capex_pct": 0.05,
-          "wc_change_b": 0.055,
+          "nopat_b": 4.11,
+          "da_b": 1.224,
+          "da_pct": 0.08,
+          "capex_b": 1.071,
+          "capex_pct": 0.07,
+          "wc_change_b": 0.153,
           "wc_pct": 0.01,
-          "fcff_derived_b": 1.239,
+          "fcff_derived_b": 4.11,
           "has_full_build": true,
           "year": 2035,
-          "fcf_b": 1.2391
+          "fcf_b": 4.1096
         }
       ],
       "dual_terminal_value": {
-        "gordon_tv_b": 16.03085625,
-        "gordon_pv_b": 5.397691334717424,
-        "exit_multiple_tv_b": 33.960492,
-        "exit_multiple_pv_b": 11.434713812691099,
-        "exit_multiple_x": 18.0,
-        "blended_tv_b": 24.995674125,
-        "blended_pv_b": 8.416202573704261,
-        "terminal_ebitda_b": 1.886694
+        "gordon_tv_b": 53.16795,
+        "gordon_pv_b": 17.90198717549409,
+        "exit_multiple_tv_b": 102.81600000000002,
+        "exit_multiple_pv_b": 34.6188016170569,
+        "exit_multiple_x": 16.0,
+        "blended_tv_b": 77.99197500000001,
+        "blended_pv_b": 26.260394396275498,
+        "terminal_ebitda_b": 6.426000000000001
       },
       "wacc_adjudication": {
         "sector": "(no sector hint)",
@@ -512,7 +522,7 @@
         "formula_wacc": 0.115,
         "verdict": "within band (8.0%-12.0%)",
         "ke": 0.1155,
-        "notes": "11.5% is mid-to-upper semi band; justified by concentration and float risk."
+        "notes": "11.5% mid-upper semi band; concentration shifts from G42 to OpenAI but remains high."
       }
     },
     "sensitivity": {
@@ -534,39 +544,39 @@
       ],
       "implied_px_matrix": [
         [
-          37.4,
-          39.32,
-          41.5,
-          44.03,
-          46.97
+          128.69,
+          135.03,
+          142.29,
+          150.66,
+          160.43
         ],
         [
-          34.39,
-          36.01,
-          37.85,
-          39.95,
-          42.38
+          118.51,
+          123.88,
+          129.98,
+          136.95,
+          144.99
         ],
         [
-          31.74,
-          33.13,
-          34.69,
-          36.45,
-          38.47
+          109.53,
+          114.12,
+          119.29,
+          125.14,
+          131.83
         ],
         [
-          29.4,
-          30.59,
-          31.92,
-          33.41,
-          35.11
+          101.57,
+          105.51,
+          109.92,
+          114.89,
+          120.51
         ],
         [
-          27.31,
-          28.34,
-          29.48,
-          30.76,
-          32.2
+          94.46,
+          97.87,
+          101.66,
+          105.9,
+          110.67
         ]
       ]
     }
@@ -574,96 +584,96 @@
   "cross_check": {
     "name": "Multiple",
     "category": "relative",
-    "reasoning": "EV/Sales is the standard cross-check for loss-making hypergrowth. Peer set: high-growth AI compute and inference names. A rich 28x FY26E sales is generous versus where most AI hardware trades, and still implies a price far below the current $237.83, underscoring how stretched the trailing 102x multiple is.",
+    "reasoning": "UBS values CBRS at 10x EV/Sales on C2029E sales discounted back. We apply the same compute-peer ~10x multiple but to our risk-adjusted C2028E sales of $4.2B, undiscounted, as a ~18-month forward target proxy. This stays conservative versus UBS (lower year, lower sales) while using the same relative lens the market is using.",
     "inputs": {
       "multiple_type": "EV/Sales",
-      "peer_median_multiple": 28.0,
-      "fy_estimate": 0.842,
+      "peer_median_multiple": 10.0,
+      "fy_estimate": 4.2,
       "peers_used": [
         "NVDA",
         "AMD",
-        "ARM",
-        "ALAB",
-        "SMCI"
+        "AVGO",
+        "MRVL",
+        "ARM"
       ],
-      "reasoning": "28x applied to FY26E revenue of ~$0.842B. Generous for the cohort; chosen to give the bull view its due. Even so it lands near $110, well under spot."
+      "reasoning": "10x compute-peer average (UBS uses the same) on risk-adjusted C2028E revenue $4.2B."
     },
     "outputs": {
-      "implied_ev_b": 23.576,
-      "implied_equity_b": 24.015,
-      "implied_px": 109.36
+      "implied_ev_b": 42.0,
+      "implied_equity_b": 42.439,
+      "implied_px": 193.26
     }
   },
   "scenarios": [
     {
       "label": "Bear",
       "key_changes": {
-        "wacc": 0.125,
+        "wacc": 0.13,
         "terminal_growth": 0.02,
-        "fcf_multiplier": 0.55
+        "fcf_multiplier": 0.45
       },
-      "implied_px": 15.41,
-      "probability": 0.2,
-      "probability_reasoning": "Meaningful odds. The G42 concentration, export-control exposure and the IPO lock-up unlock against a 8.67M-share float are concrete, dateable downside catalysts, not tail risks.",
-      "reasoning": "Growth decelerates hard as Condor Galaxy installs lap, a token price war caps margins, and the unlock floods supply."
+      "implied_px": 39.53,
+      "probability": 0.25,
+      "probability_reasoning": "Real odds. The OpenAI ramp depends on scaling supply ~10x; NVDA folding Groq into its roadmap could take the ultra-fast-inference niche; the deal is concentrated and the lock-up unlock still looms. Any one slips the model badly.",
+      "reasoning": "OpenAI deployment stalls or NVDA/Groq wins the segment; revenue lands far below the risk-adjusted base and the multiple compresses."
     },
     {
       "label": "Base",
       "key_changes": {},
-      "implied_px": 34.69,
+      "implied_px": 119.29,
       "probability": 0.45,
-      "probability_reasoning": "Central case. Revenue keeps compounding fast and the company reaches operating profit around 2028, but the stock is valued far ahead of even this constructive ramp.",
-      "reasoning": "Strong execution on inference and diversification, with FCF margin reaching the mid-20s by the early 2030s."
+      "probability_reasoning": "Central case. OpenAI deploys but a year behind UBS at ~55-60% utilization; AWS stays optional. Most likely path given execution risk on a 10x scale-up.",
+      "reasoning": "Risk-adjusted OpenAI ramp to ~$8.5B revenue by 2030 at hardware-like margins."
     },
     {
       "label": "Bull",
       "key_changes": {
         "wacc": 0.105,
         "terminal_growth": 0.045,
-        "fcf_multiplier": 1.45
+        "fcf_multiplier": 1.6
       },
-      "implied_px": 67.21,
-      "probability": 0.15,
-      "probability_reasoning": "Lower odds. Requires inference demand to reaccelerate revenue, margins to expand faster than modeled, and concentration to resolve cleanly before the unlock.",
-      "reasoning": "Cerebras becomes the default fast-inference layer; revenue and FCF margins beat the base path materially."
+      "implied_px": 255.49,
+      "probability": 0.2,
+      "probability_reasoning": "Plausible. If OpenAI ramps on UBS's schedule and AWS scales into a multi-billion hardware stream, revenue approaches UBS's $11B+ 2029 and margins hit the high-30s.",
+      "reasoning": "OpenAI on schedule plus AWS optionality converting; trajectory approaches the UBS base."
     }
   ],
-  "blended_target": 50.64,
-  "blending_logic": "45% Base DCF + 20% Bear DCF + 15% Bull DCF + 20% EV/Sales cross-check.",
+  "blended_target": 133.99,
+  "blending_logic": "45% Base DCF + 25% Bear DCF + 20% Bull DCF + 10% EV/Sales cross-check.",
   "blending_weights": {
-    "cross_check": 0.2
+    "cross_check": 0.1
   },
-  "weights_reasoning": "Base 45% reflects a constructive but realistic ramp. Bear gets a heavy 20% because the lock-up unlock, G42 concentration and export risk are concrete near-term catalysts, not tail events. Bull 15% for the demand-reacceleration case. The EV/Sales cross-check carries 20% to anchor against intrinsic value with a relative lens; notably even a generous 28x sales multiple lands well below spot, which is the central finding.",
+  "weights_reasoning": "Base 45% on the risk-adjusted OpenAI ramp. Bear gets a heavy 25% because the 10x supply-chain scale-up, OpenAI concentration, NVDA/Groq competitive response, and the IPO lock-up are all live. Bull 20% for the OpenAI-on-schedule-plus-AWS case. Cross-check 10% as a hardware-peer relative anchor. The blend deliberately stays below UBS's $300 by haircutting the deal for execution rather than disputing the technology.",
   "weighted_contributions": [
     {
       "component": "Bear",
-      "implied_px": 15.41,
-      "weight": 0.2,
-      "contribution": 3.08,
-      "reasoning": "Meaningful odds. The G42 concentration, export-control exposure and the IPO lock-up unlock against a 8.67M-share float are concrete, dateable downside catalysts, not tail risks."
+      "implied_px": 39.53,
+      "weight": 0.25,
+      "contribution": 9.88,
+      "reasoning": "Real odds. The OpenAI ramp depends on scaling supply ~10x; NVDA folding Groq into its roadmap could take the ultra-fast-inference niche; the deal is concentrated and the lock-up unlock still looms. Any one slips the model badly."
     },
     {
       "component": "Base",
-      "implied_px": 34.69,
+      "implied_px": 119.29,
       "weight": 0.45,
-      "contribution": 15.61,
-      "reasoning": "Central case. Revenue keeps compounding fast and the company reaches operating profit around 2028, but the stock is valued far ahead of even this constructive ramp."
+      "contribution": 53.68,
+      "reasoning": "Central case. OpenAI deploys but a year behind UBS at ~55-60% utilization; AWS stays optional. Most likely path given execution risk on a 10x scale-up."
     },
     {
       "component": "Bull",
-      "implied_px": 67.21,
-      "weight": 0.15,
-      "contribution": 10.08,
-      "reasoning": "Lower odds. Requires inference demand to reaccelerate revenue, margins to expand faster than modeled, and concentration to resolve cleanly before the unlock."
+      "implied_px": 255.49,
+      "weight": 0.2,
+      "contribution": 51.1,
+      "reasoning": "Plausible. If OpenAI ramps on UBS's schedule and AWS scales into a multi-billion hardware stream, revenue approaches UBS's $11B+ 2029 and margins hit the high-30s."
     },
     {
       "component": "Multiple",
-      "implied_px": 109.36,
-      "weight": 0.2,
-      "contribution": 21.87,
-      "reasoning": "EV/Sales is the standard cross-check for loss-making hypergrowth. Peer set: high-growth AI compute and inference names. A rich 28x FY26E sales is generous versus where most AI hardware trades, and still implies a price far below the current $237.83, underscoring how stretched the trailing 102x multiple is."
+      "implied_px": 193.26,
+      "weight": 0.1,
+      "contribution": 19.33,
+      "reasoning": "UBS values CBRS at 10x EV/Sales on C2029E sales discounted back. We apply the same compute-peer ~10x multiple but to our risk-adjusted C2028E sales of $4.2B, undiscounted, as a ~18-month forward target proxy. This stays conservative versus UBS (lower year, lower sales) while using the same relative lens the market is using."
     }
   ],
   "weight_total_check": 1.0,
-  "upside_pct": -78.7
+  "upside_pct": -43.7
 }

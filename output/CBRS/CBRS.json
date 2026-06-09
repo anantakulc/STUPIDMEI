@@ -4,15 +4,15 @@
   "listings": "NASDAQ",
   "sector": "Technology. Semiconductors (AI accelerators)",
   "date": "2026-06-09",
-  "engine": "yfinance-data, equity-bull-case, equity-bear-case, dcf_compute (DCF + EV/Sales cross-check)",
+  "engine": "yfinance-data, equity-bull-case, equity-bear-case, dcf_compute (DCF + EV/Sales cross-check); UBS initiation (8 Jun 2026) used to source the OpenAI/AWS programs",
   "recommendation": {
     "action": "SELL",
     "tone": "negative",
     "current_price": 237.83,
-    "target_12m": 51,
-    "upside_pct": -78.7,
-    "rationale": "45% × $35 Base DCF + 20% × $15 Bear + 15% × $67 Bull + 20% × $109 EV/Sales cross-check = $51. Even a generous 28x FY26E sales lands near $110, less than half of spot.",
-    "next_earnings": "Est. Q2 FY26 in late July 2026 (no consensus published via available skills)"
+    "target_12m": 134,
+    "upside_pct": -43.7,
+    "rationale": "45% x $119 Base + 25% x $40 Bear + 20% x $255 Bull + 10% x $193 cross-check = $134. Spot already prices the OpenAI deal ramping on UBS's schedule; we haircut it for the 10x supply-chain scale-up.",
+    "next_earnings": "Est. Q2 FY26 in late July 2026 (UBS models 12/26E EPS -$1.65)"
   },
   "snapshot": [
     {
@@ -105,23 +105,23 @@
     },
     {
       "label": "Analyst consensus",
-      "value": "Thin / none returned"
+      "value": "UBS: Buy, $300 PT (8 Jun 2026)"
     },
     {
       "label": "Mean / median PT",
-      "value": "n/a (data gap)"
+      "value": "$300 (UBS, sole initiation seen)"
     },
     {
       "label": "Blended DCF target",
-      "value": "$51 (-78.7%)"
+      "value": "$134 (-43.7%)"
     }
   ],
   "thesis": [
-    "Real technology, wrong price: Cerebras owns the only wafer-scale chip in production and the fastest published inference benchmarks, and revenue compounded from $24.6M (2022) to $510M (2025). None of that justifies 102x trailing sales.",
-    "A long-horizon FCFF DCF on a constructive ramp (revenue to ~$5.5B by 2035, FCF margin to 25%) values the equity near $35 base case; even a generous 28x FY26E sales cross-check lands near $110. Spot is $238.",
-    "The downside catalysts are concrete and dateable: an IPO lock-up unlock against a 8.67M-share float, ~85% single-customer (G42) revenue concentration, and US export-control exposure on Gulf compute."
+    "Real franchise, now with a real anchor: the UBS initiation surfaced an OpenAI 750MW prepayment deal (~$20B+ over its life, expandable to 2GW) plus an AWS disaggregated-inference program. Our prior skills-only model missed both; rebuilt for them, fair value rises from $51 to about $134.",
+    "The gap to spot is execution timing, not technology. Base case risk-adjusts the OpenAI ramp ~12 months behind UBS at ~55-60% utilization (the supply chain must scale roughly 10x) and excludes AWS; that path is worth ~$119. If OpenAI ramps on schedule and AWS converts, the bull case reaches ~$255, near UBS's $300.",
+    "At $238 the market already credits the UBS-style on-schedule outcome. Blended fair value $134 (-43.7%) says pay less or wait for proof of the ramp; the lock-up unlock and OpenAI concentration are the swing risks."
   ],
-  "bear_paragraph": "Strip the wafer-scale romance and Cerebras is a hardware company where one UAE customer was roughly five-sixths of revenue, priced at 102 times sales, with 96% of its shares still locked. Each of those facts is dangerous on its own; together they're a setup. Growth already decelerated from 269% to 76%, and the Condor Galaxy installations that drove the ramp are a finite buildout, not an annuity. The 2025 net income headline is an accounting artifact: operating margin was -29%, and the company still loses money making and selling its product. The catalysts that matter point down. The IPO lock-up expires against an 8.67M-share float, and post-IPO unlocks on hot AI names routinely cut prices 30-50% within weeks of real supply hitting the tape. Export-control scrutiny of advanced compute sold into the Gulf is tightening, and a single 8-K on G42 licensing could erase the revenue base. Meanwhile Nvidia, Groq, SambaNova and every hyperscaler's in-house chip are crowding the same inference dollars while per-token prices fall. A 70% drawdown needs nothing exotic: multiple compression from 102x toward a still-generous 30x, plus one growth disappointment or one unlock. The bear case doesn't require a recession. It requires the float to normalize.",
+  "bear_paragraph": "The bull and bear now hinge on one deal. The OpenAI 750MW agreement is the whole story, and CBRS must scale its supply chain roughly 10x to deliver it. That is the single point of failure UBS itself flags. If deployment slips, or NVDA folds Groq into its roadmap and serves the ultra-fast-inference niche, or the AWS program never sizes, the risk-adjusted ramp we model proves generous and the stock re-rates toward the bear path near $40. Concentration did not go away; it moved from G42 to OpenAI, just at a larger number. Layer in the IPO lock-up against a ~15% float (UBS) and the post-unlock supply that has cut comparable AI IPOs 30-50%, and the downside is concrete. The 2025 net income headline was an accounting artifact: operating margin was -28.5%, and the company still loses money at the operating line. At $238 the market prices the OpenAI deal ramping on UBS's schedule. We think a year of slippage and 55-60% utilization is the more likely path, worth about $134. The bear case does not dispute the wafer-scale technology. It disputes paying today for a 10x execution that has not happened yet.",
   "peers": [
     {
       "ticker": "CBRS",
@@ -174,13 +174,13 @@
     },
     {
       "id": 2,
-      "title": "G42 anchor plus Condor Galaxy buildout",
-      "body": "G42, the UAE AI group, anchored Cerebras with multi-year purchase commitments and the Condor Galaxy supercomputer program. That gave revenue visibility most pre-IPO AI hardware firms never had, and it funded the ramp that pushed 2024 revenue to $290M and 2025 to $510M. The same relationship is the concentration risk, but it is also a backlog that underwrites the next two years of capacity."
+      "title": "OpenAI 750MW prepayment deal as the new anchor",
+      "body": "Per UBS, CBRS is the only supplier shipping to OpenAI under a prepayment: a 750MW agreement sized at roughly $20B+ over its life, structured in three 250MW tranches and expandable to 2GW. There is an OpenAI warrant struck at $100/share vesting on deployment. This dwarfs the prior G42 base and shifts CBRS toward an inference-cloud model. If it ramps on schedule, UBS models revenue of $7.1B in 2028 and $11.2B in 2029; even our risk-adjusted version (a year behind, 55-60% utilization) reaches ~$8.5B by 2030."
     },
     {
       "id": 3,
-      "title": "Customer diversification beyond the anchor",
-      "body": "Named deployments now span Mistral, AlphaSense, GlaxoSmithKline, AstraZeneca, Mayo Clinic, TotalEnergies and US national labs (Argonne, Lawrence Livermore, Sandia). Each new logo lowers the G42 dependence. The 2025 mix is less concentrated than the 2023 S-1 disclosure, and the pipeline of sovereign and enterprise buyers keeps widening."
+      "title": "AWS disaggregated-inference program (upside)",
+      "body": "AWS and CBRS are building a disaggregated solution: Trainium for prefill, Cerebras WSE for decode, AWS's answer to NVDA's GPU-plus-Groq LPX approach. UBS reports 1,000 CBRS systems already in a pilot phase and sizes the opportunity at $4-10B/yr of hardware before the end of the decade if it scales. It is unsized today, so we keep it out of the base and treat it as bull-case optionality."
     },
     {
       "id": 4,
@@ -274,88 +274,88 @@
   "dcf_scenarios": [
     {
       "scenario": "Bear",
-      "wacc": "12.5%",
+      "wacc": "13.0%",
       "terminal_g": "2.0%",
-      "fcf_path": "Base path × 0.55",
-      "implied_px": 15.41
+      "fcf_path": "Base x 0.45 (OpenAI stalls / NVDA-Groq wins niche)",
+      "implied_px": 39.53
     },
     {
       "scenario": "Base",
       "wacc": "11.5%",
       "terminal_g": "3.5%",
-      "fcf_path": "Rev +65/+50/+40/.../+9%, FCF margin to ~25%",
-      "implied_px": 34.69
+      "fcf_path": "Rev $0.84B->$15.3B by 2035; OpenAI ~12mo behind UBS at 55-60%",
+      "implied_px": 119.29
     },
     {
       "scenario": "Bull",
       "wacc": "10.5%",
       "terminal_g": "4.5%",
-      "fcf_path": "Base path × 1.45",
-      "implied_px": 67.21
+      "fcf_path": "Base x 1.6 (OpenAI on schedule + AWS converts)",
+      "implied_px": 255.49
     }
   ],
   "synthesis_paths": [
     {
       "label": "Bull",
-      "prob": 0.15,
-      "outcome_range": "$67 to 110+",
-      "description": "Inference demand reaccelerates revenue, margins beat the base path, and concentration resolves before the unlock. Even here the EV/Sales cross-check (~$110) sits below spot."
+      "prob": 0.2,
+      "outcome_range": "$255-300",
+      "description": "OpenAI ramps on UBS's schedule and AWS scales into a multi-billion hardware stream; revenue approaches UBS's $11B+ by 2029. Our bull lands near UBS's $300 PT."
     },
     {
       "label": "Base",
       "prob": 0.45,
-      "outcome_range": "$35 to 55",
-      "description": "Strong execution on a constructive ramp to ~$5.5B revenue and mid-20s FCF margin by the early 2030s, but the stock is valued far ahead of it."
+      "outcome_range": "$119-150",
+      "description": "Risk-adjusted OpenAI ramp, a year behind UBS at ~55-60% utilization, AWS optional. Revenue ~$8.5B by 2030 at hardware-like margins."
     },
     {
       "label": "Bear",
-      "prob": 0.4,
-      "outcome_range": "$15 to 35",
-      "description": "Lock-up supply, growth deceleration, a token price war, or an export-control shock on G42 forces the 102x multiple to normalize. Combined weight includes the 20% cross-check anchor pulling toward intrinsic value."
+      "prob": 0.35,
+      "outcome_range": "$40-80",
+      "description": "OpenAI deployment stalls on the 10x supply-chain scale-up, or NVDA/Groq takes the ultra-fast-inference niche, or the lock-up floods supply. Includes the 10% cross-check anchor."
     }
   ],
   "recommendation_table": [
     {
       "action": "Direction",
-      "detail": "SELL / avoid. Valuation is the binding constraint, not the technology."
+      "detail": "SELL / trim on valuation. The franchise is real; spot already prices the on-schedule OpenAI outcome."
     },
     {
       "action": "12m target",
-      "detail": "$51 blended (-78.7%); base DCF $35, generous EV/Sales cross-check $109."
+      "detail": "$134 blended (-43.7%). Base DCF $119; bull $255 (near UBS $300); bear $40."
     },
     {
       "action": "Existing longs",
-      "detail": "Trim aggressively into strength, especially ahead of the IPO lock-up expiry. Lock in gains; do not anchor to cost basis above $200."
+      "detail": "Trim into strength, especially ahead of the IPO lock-up. Let a residual position ride the OpenAI ramp proof points."
     },
     {
       "action": "New money",
-      "detail": "None at $238. Revisit only on a major de-rating toward $80 to 110 or a verified drop in G42 concentration."
+      "detail": "Wait for evidence the OpenAI 750MW deploys on schedule, or a pullback toward $120-150, before adding."
     },
     {
       "action": "Hedge",
-      "detail": "For holders who cannot sell, long puts dated past the lock-up unlock; size for a 30-50% gap."
+      "detail": "Long puts dated past the lock-up unlock; the OpenAI-execution binary widens the tails."
     },
     {
       "action": "Position sizing",
-      "detail": "If owned, cap at a small speculative weight (<1-2%) given single-customer and single-architecture risk."
+      "detail": "Small-to-moderate; single-customer (OpenAI) and supply-chain scale-up risk argue against a full-weight position."
     }
   ],
   "catalysts_to_watch": [
-    "IPO lock-up expiration date and the supply that hits the 8.67M-share float",
-    "10-K customer-concentration footnote: G42 as a percent of FY25 revenue",
-    "Any 8-K or news on US export licensing for advanced compute into the UAE / Gulf",
-    "Quarterly revenue growth rate vs the 76% FY25 print (deceleration watch)",
-    "Hardware-vs-inference revenue split and gross-margin trajectory",
-    "Per-token inference pricing trends across Groq, Together, hyperscaler endpoints",
-    "Cash burn and any signal of a follow-on equity raise"
+    "OpenAI 750MW deployment cadence: tranche-1 250MW progress and any move toward the 2GW option",
+    "Supply-chain scale-up evidence (the ~10x ramp UBS flags as the gating factor)",
+    "AWS disaggregated-inference program sizing (1,000 CBRS systems in pilot; Trainium-rack attach rate)",
+    "IPO lock-up expiration date and supply into the ~15% float",
+    "NVDA's Groq integration / LPX roadmap as a competitive response in ultra-fast inference",
+    "Quarterly revenue and EBIT-margin trajectory vs UBS's steep 12/27E-12/29E ramp",
+    "OpenAI warrant vesting ($100 strike, 7-yr) as a deployment milestone signal"
   ],
   "data_gaps": [
-    "No sell-side consensus, mean/median price target, or analyst count returned by yfinance.",
-    "FY25 segment split between hardware (systems/supercomputers) and inference cloud not in the available data; needs the 10-K segment note.",
-    "Exact FY25 G42 revenue concentration (was ~83-87% in the 2023 S-1); needs the latest 10-K footnote.",
-    "Beta not available from yfinance; WACC beta of 1.30 is an analyst estimate reflecting concentration and post-IPO volatility.",
-    "IPO lock-up expiry date not retrievable via available skills; flagged as the key catalyst.",
-    "Reported FY25 free cash flow figure is distorted by customer prepayments; treat operating-CF-near-breakeven with caution."
+    "OpenAI and AWS deal terms are sourced from the UBS initiation (8 Jun 2026), not a primary CBRS filing; our base risk-adjusts UBS's schedule.",
+    "Exact OpenAI tranche timing and pricing not independently verified; modeled at ~55-60% of UBS utilization, ~12 months behind.",
+    "AWS program is unsized (pilot stage); excluded from base, modeled only in the bull scenario.",
+    "FY25 segment split (hardware vs inference cloud) still not in primary data.",
+    "IPO lock-up expiry date not retrievable via available skills; flagged as a key catalyst.",
+    "Beta not available from yfinance; WACC beta 1.30 is an analyst estimate for concentration and post-IPO volatility."
   ],
   "business_overview": {
     "summary": "Cerebras Systems designs and sells wafer-scale AI computers built around the Wafer Scale Engine, the largest chip in production. It sells CS-3 systems and turnkey supercomputers, and runs Cerebras Inference, a cloud service that serves large language models at industry-leading speed.",
@@ -388,24 +388,24 @@
     ],
     "customers": [
       {
+        "name": "OpenAI",
+        "revenue_share_pct": null,
+        "importance": "New anchor per UBS: 750MW prepayment deal (~$20B+ over its life, expandable to 2GW), structured in three 250MW tranches. The dominant future revenue driver."
+      },
+      {
+        "name": "Amazon / AWS",
+        "revenue_share_pct": null,
+        "importance": "Disaggregated-inference collaboration (Trainium prefill + WSE decode); 1,000 CBRS systems in pilot. Upside-only in our base."
+      },
+      {
         "name": "G42",
         "revenue_share_pct": null,
-        "importance": "Anchor customer, UAE AI group, Condor Galaxy program. Majority of 2023 revenue per S-1; the central concentration risk."
+        "importance": "Prior anchor (UAE, Condor Galaxy). Majority of 2023 revenue per S-1; now being overtaken by OpenAI."
       },
       {
-        "name": "Mistral AI",
+        "name": "US national labs & enterprise",
         "revenue_share_pct": null,
-        "importance": "Inference partner for fast model serving"
-      },
-      {
-        "name": "US national labs (Argonne, Lawrence Livermore, Sandia)",
-        "revenue_share_pct": null,
-        "importance": "Scientific computing and large-model training; government validation"
-      },
-      {
-        "name": "Enterprise (AlphaSense, GSK, AstraZeneca, Mayo Clinic, TotalEnergies)",
-        "revenue_share_pct": null,
-        "importance": "Diversifying logos across pharma, finance, healthcare, energy"
+        "importance": "Argonne, Lawrence Livermore, Sandia; Mistral, AlphaSense, GSK, AstraZeneca, Mayo Clinic, TotalEnergies."
       }
     ]
   },
@@ -492,38 +492,38 @@
   "key_risks": [
     {
       "category": "customer",
-      "title": "Single-customer dependence (G42)",
-      "description": "G42 at roughly 83-87% of 2023 revenue per the S-1. Any pause, renegotiation or substitution by this one UAE buyer takes the majority of revenue with it. Diversification is claimed but unverified in available data, and even a diversified mix would be small in absolute terms against the $52B valuation."
+      "title": "OpenAI single-deal dependence",
+      "description": "The OpenAI 750MW agreement is now the dominant revenue driver per UBS. A delay, renegotiation, or pivot by OpenAI would gut the model. Concentration moved from G42 to OpenAI at a far larger absolute number, so the single-customer risk is bigger, not smaller."
+    },
+    {
+      "category": "execution",
+      "title": "10x supply-chain scale-up",
+      "description": "Delivering OpenAI requires scaling CBRS's supply chain roughly 10x from dozens of MW in 2025 to 250MW tranches. UBS calls this the gating factor. Wafer-scale yield, packaging, power and cooling at that volume are unproven, and any stumble slips the whole revenue ramp."
     },
     {
       "category": "structural",
       "title": "Lock-up overhang on a thin float",
-      "description": "About 96% of shares are locked against an 8.67M-share float. The high quoted price is partly a scarcity artifact. The IPO lock-up expiry is a predictable, dateable supply shock that has crushed comparable AI IPOs within weeks of real supply hitting the tape."
-    },
-    {
-      "category": "regulatory",
-      "title": "Export controls on Gulf compute",
-      "description": "US scrutiny of advanced AI compute sold into the UAE and broader Gulf is rising. Cerebras's largest revenue stream flows to a UAE customer. A licensing restriction or denial would directly cut the revenue base. The risk is binary and outside management's control."
-    },
-    {
-      "category": "cyclical",
-      "title": "Growth deceleration into a tough comp",
-      "description": "Revenue growth fell from 269% (2024) to 76% (2025). The Condor Galaxy buildout is a finite installation cycle. As it laps, the hardware line can stall, and a 102x sales multiple offers no cushion for a deceleration the numbers already show."
+      "description": "Float is ~15% (UBS) with the rest locked. The IPO lock-up expiry is a predictable supply shock that has cut comparable AI IPOs 30-50% within weeks. The quoted price is partly a scarcity artifact until real supply clears."
     },
     {
       "category": "execution",
-      "title": "Single-architecture bet vs better-funded rivals",
-      "description": "Everything rides on wafer-scale. Nvidia (CUDA plus Blackwell/Rubin), Groq, SambaNova and hyperscaler in-house silicon chase the same inference dollars with far larger R&D. Cerebras's $243M R&D is a rounding error against Nvidia's. One architecture is one point of failure."
+      "title": "NVDA / Groq competitive response",
+      "description": "NVDA is folding Groq into its roadmap and has announced a disaggregated LPX solution. If NVDA serves the ultra-fast-inference niche effectively, CBRS's differentiated decode advantage narrows and the premium segment it targets shrinks."
+    },
+    {
+      "category": "regulatory",
+      "title": "Export controls and customer geography",
+      "description": "Legacy G42 exposure carries US export-control risk on Gulf compute. Broader AI export policy remains a swing factor for any large compute supplier with international deployments."
     },
     {
       "category": "structural",
-      "title": "Cash burn and financing risk",
-      "description": "Negative book equity (-$579M) and operating losses mean IPO cash gets consumed during the WSE-4 ramp. If equity markets cool, the next raise is dilutive at a lower price, and customer prepayments that flatter today's cash flow reverse as the cycle laps."
+      "title": "Capital intensity and financing",
+      "description": "The OpenAI cloud-heavy early phase is capital-intensive. Customer prepayments fund part of it, but a slip in the ramp pressures cash, and any follow-on raise dilutes. Net income positive in 2025 was driven by non-operating items; the operating line still loses money."
     },
     {
       "category": "macro",
       "title": "AI capex sentiment reversal",
-      "description": "The valuation assumes the AI infrastructure cycle keeps expanding. A broad pullback in AI capex, or a rotation out of unprofitable AI names, would hit a no-earnings, high-multiple stock harder than the profitable incumbents."
+      "description": "A no-earnings, high-multiple stock priced on out-year revenue is highly sensitive to any rotation out of unprofitable AI names or a broad pullback in AI infrastructure spend."
     }
   ],
   "social_sentiment": {

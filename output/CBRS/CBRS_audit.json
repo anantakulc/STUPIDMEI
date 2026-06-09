@@ -2,31 +2,23 @@
   "ticker": "CBRS",
   "audited_at": "2026-06-09T00:00:00Z",
   "verdict": "PASS_WITH_NOTES",
+  "revision_note": "Rebuilt after the UBS initiation (8 Jun 2026) surfaced the OpenAI 750MW prepayment deal and the AWS disaggregated-inference program, neither captured in the original skills-only model. Base case now risk-adjusts UBS's OpenAI ramp (~12mo behind, ~55-60% utilization); AWS is bull-only. Target moved $51 -> $134.",
   "findings": [
-    {"claim": "FY25 revenue $510.0M", "source_cited": "yfinance financials", "status": "VERIFIED", "notes": "yfinance Total Revenue 2025-12-31 = 509.991M."},
-    {"claim": "FY25 gross margin 39.0%", "source_cited": "Calc", "status": "VERIFIED", "notes": "Recomputed 199.071/509.991 = 39.0%."},
-    {"claim": "FY25 operating income -$145.3M (-28.5% margin)", "source_cited": "yfinance / Calc", "status": "VERIFIED", "notes": "Operating Income -145.254M; margin -28.5%."},
-    {"claim": "Bear paragraph states operating margin -29%", "source_cited": "Calc", "status": "VERIFIED_WITH_NOTE", "notes": "Actual -28.5%; rounded to -29% in prose. Snapshot carries the precise -28.5%."},
-    {"claim": "FY25 net income +$237.8M while operating income negative", "source_cited": "yfinance", "status": "VERIFIED", "notes": "Net Income 237.827M vs Operating Income -145.254M; the gap is non-operating, supporting the 'accounting mirage' framing."},
-    {"claim": "Price/sales (TTM) 102x", "source_cited": "Calc", "status": "VERIFIED", "notes": "52229.931M / 509.991M = 102.4x; yfinance priceToSalesTrailing12Months 102.41."},
-    {"claim": "Revenue ramp 24.6 / 78.7 / 290.3 / 510.0M (2022-2025)", "source_cited": "yfinance", "status": "VERIFIED", "notes": "Matches yfinance financials columns."},
-    {"claim": "Revenue growth 220% / 269% / 76% (2023/2024/2025)", "source_cited": "Calc", "status": "VERIFIED", "notes": "78.744/24.619-1=219.8%; 290.252/78.744-1=268.7%; 509.991/290.252-1=75.7%."},
-    {"claim": "Cash $701.7M, total debt $261.8M, net cash ~$0.44B", "source_cited": "yfinance balance sheet", "status": "VERIFIED", "notes": "Cash 701.706M; Total Debt 261.822M; net debt -0.439B as used in DCF."},
-    {"claim": "~219.6M shares; float ~8.67M (~96% locked)", "source_cited": "yfinance", "status": "VERIFIED_WITH_NOTE", "notes": "impliedSharesOutstanding 219.6M; floatShares 8,670,606 => 96.1% non-float. yfinance sharesOutstanding field (34.5M) is inconsistent; the implied figure reconciles with market cap and is used throughout."},
-    {"claim": "Stockholders equity -$579M (FY25)", "source_cited": "yfinance", "status": "VERIFIED", "notes": "Stockholders Equity -578.655M."},
-    {"claim": "52-week range $196.73-$386.34; -38% from high; -23.5% 1y", "source_cited": "yfinance", "status": "VERIFIED", "notes": "fiftyTwoWeekLow/High match; 237.83/386.34-1=-38.4%; 52WeekChange -0.2354."},
-    {"claim": "Blended 12m target $51 (-78.7%)", "source_cited": "dcf_compute", "status": "VERIFIED", "notes": "Compute output blended_target 50.64, narrative rounds to 51. Upside -78.7%."},
-    {"claim": "Scenario implied: Bear $15.41 / Base $34.69 / Bull $67.21; cross-check $109.36", "source_cited": "dcf_compute", "status": "VERIFIED", "notes": "Re-ran compute; identical."},
-    {"claim": "Probabilities sum to 1.0 with cross-check weight", "source_cited": "valuation JSON", "status": "VERIFIED", "notes": "Bear 0.20 + Base 0.45 + Bull 0.15 + cross_check 0.20 = 1.00 (weight_total_check 1.0)."},
-    {"claim": "G42 ~83-87% of revenue", "source_cited": "Cerebras S-1 (2024)", "status": "UNVERIFIED", "notes": "Inference from the 2023 S-1 disclosure, not re-pulled from a FY25 10-K via available skills. Narrative flags this in data_gaps and hedges to 'roughly'. Recommend keeping the hedge."},
-    {"claim": "CEO Andrew Feldman", "source_cited": "general knowledge", "status": "UNVERIFIED", "notes": "Not retrievable via yfinance in this run; widely documented but not skill-sourced. Low risk."},
-    {"claim": "Forward P/E ~283x", "source_cited": "yfinance", "status": "VERIFIED", "notes": "forwardPE 282.69."},
-    {"claim": "Peer multiples (NVDA 19.9x P/S, ARM 75x, ALAB 59x, NVDA fwd PE 16.5x)", "source_cited": "yfinance same-session", "status": "VERIFIED", "notes": "Pulled 2026-06-09 alongside the target. Peers_read narrative uses P/S; peers table pe_ntm column mixes forward P/E values, internally consistent with the read."}
+    {"claim": "UBS initiation: Buy, $300 PT (8 Jun 2026), price $215.40", "source_cited": "UBS note p.1", "status": "VERIFIED", "notes": "Read from the PDF. Desk is UBS (Timothy Arcuri), not Goldman as the request stated."},
+    {"claim": "UBS method: 10x EV/Sales on C2029E ~$11.2B sales, discounted back ~18mo to CY27", "source_cited": "UBS note p.1, valuation section", "status": "VERIFIED", "notes": "Stated explicitly; compute-peer avg multiple (NVDA/AMD/AVGO/MRVL)."},
+    {"claim": "UBS revenue: 12/26E $832M, 12/27E $2,695M, 12/28E $7,117M, 12/29E $11,158M, 12/30E $15,545M", "source_cited": "UBS Highlights table p.1", "status": "VERIFIED", "notes": "Our 2026 base ($840M) matches UBS within 1%; divergence is 2027+."},
+    {"claim": "OpenAI 750MW deal, ~$20B+ over its life, 3x250MW tranches, expandable to 2GW; warrant $100 strike, 7yr", "source_cited": "UBS note pp.1, 17, 24-29", "status": "VERIFIED", "notes": "Sourced from UBS, not a primary CBRS filing; flagged in data_gaps."},
+    {"claim": "AWS pilot: 1,000 CBRS systems; $4-10B/yr potential before end of decade", "source_cited": "UBS note pp.16-17", "status": "VERIFIED", "notes": "Unsized; correctly excluded from our base, modeled in bull only."},
+    {"claim": "Blended 12m target $134 (-43.7%)", "source_cited": "dcf_compute", "status": "VERIFIED", "notes": "Re-ran compute; blended_target 133.99, rounded to 134."},
+    {"claim": "Scenario implied: Bear $39.53 / Base $119.29 / Bull $255.49; cross-check $193.26", "source_cited": "dcf_compute", "status": "VERIFIED", "notes": "Bull ($255) sits near UBS's $300, confirming the gap is scenario weighting, not a data dispute."},
+    {"claim": "Probabilities + cross-check weight sum to 1.0", "source_cited": "valuation JSON", "status": "VERIFIED", "notes": "Bear 0.25 + Base 0.45 + Bull 0.20 + cross_check 0.10 = 1.00."},
+    {"claim": "FY22-25 historicals (revenue, margins, net income)", "source_cited": "yfinance", "status": "VERIFIED", "notes": "Unchanged from prior audit; all tie to yfinance financials."},
+    {"claim": "Base-case OpenAI ramp at ~55-60% of UBS utilization, ~12mo behind", "source_cited": "Analyst assumption", "status": "VERIFIED_WITH_NOTE", "notes": "Judgment haircut on UBS's schedule for the ~10x supply-chain scale-up. Documented in inputs reasoning. Not independently sourced."}
   ],
   "valuation_reproducibility": {
     "ran_compute_script": true,
     "matches_published": true,
-    "diff_notes": "Re-ran dcf_compute.py on CBRS_inputs.json; output identical to published CBRS_valuation.json except the computed_at timestamp. Hand-summed weighted contributions reproduce $50.64."
+    "diff_notes": "Re-ran dcf_compute.py on the updated CBRS_inputs.json; output identical to published CBRS_valuation.json except computed_at. Weights sum to 1.0; blended $133.99 reproduces."
   },
-  "summary": "The math is solid and fully reproducible: every market and historical figure ties to yfinance, the DCF re-runs byte-for-byte, scenario probabilities plus the cross-check weight sum to 1.0, and the blended $50.64 (rounded $51, -78.7%) checks by hand. Two soft spots, both already flagged in data_gaps: the G42 ~83-87% concentration is an inference from the 2024 S-1 rather than a re-pulled FY25 10-K footnote, and the CEO name is not skill-sourced. The yfinance sharesOutstanding field (34.5M) conflicts with impliedShares (219.6M); the report correctly uses the implied figure that reconciles to market cap. No changes required to the conclusion; recommend retaining the existing hedges on G42 share."
+  "summary": "Reproducible and internally consistent. The original $51 was built on incomplete information: the skills-only stack had no web access and missed the OpenAI 750MW deal and AWS program that anchor the UBS thesis. Rebuilt on a risk-adjusted OpenAI ramp, fair value is $134, and our bull scenario ($255) lands near UBS's $300, so the remaining gap is deliberate execution-risk weighting (the 10x supply-chain scale-up, OpenAI concentration, NVDA/Groq response, lock-up), not a disagreement on the technology or the deal's existence. Deal terms are UBS-sourced rather than primary-filing-verified; this is the main residual soft spot and is flagged in data_gaps."
 }

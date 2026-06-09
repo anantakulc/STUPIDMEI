@@ -7,8 +7,8 @@
   "primary_method": {
     "name": "DCF",
     "category": "intrinsic",
-    "reasoning": "Cerebras is loss-making today but has a clear revenue ramp, improving gross margin and a fixed R&D base that scales into profit. A long-horizon FCFF DCF captures the path to cash generation better than a trailing multiple; an EV/Sales cross-check anchors the near-term sanity check given the 102x trailing-sales valuation.",
     "sector_hint": "semiconductors",
+    "reasoning": "After the UBS initiation surfaced the OpenAI 750MW prepayment deal and the AWS disaggregated-inference program (neither in our prior skills-only model), we rebuild the base on a risk-adjusted OpenAI ramp: ~12 months behind UBS and at ~55-60% of their modeled capacity, reflecting the ~10x supply-chain scale-up required. AWS is excluded from the base and treated as bull-case upside. A long-horizon FCFF DCF captures the path to OpenAI-driven profitability; an EV/Sales cross-check on forward sales anchors it against hardware peers.",
     "inputs": {
       "wacc": {
         "value": 0.115,
@@ -19,137 +19,147 @@
           "debt_weight": 0.01,
           "cost_of_debt_after_tax": 0.045
         },
-        "reasoning": "Ke = 4.4% Rf + 1.30 beta x 5.5% ERP = 11.6%. Beta set above the semi average for single-architecture concentration, ~85% single-customer revenue and post-IPO volatility (49% peak-to-trough in year one). Net cash means debt weight ~1%, so WACC sits near Ke at 11.5%, inside the 9-12% semi band.",
-        "adjudication_notes": "11.5% is mid-to-upper semi band; justified by concentration and float risk."
+        "reasoning": "Ke = 4.4% Rf + 1.30 beta x 5.5% ERP = 11.6%. Beta above the semi average for OpenAI single-customer concentration (now the anchor, replacing G42), the 10x supply-chain execution risk, and post-IPO volatility. Net cash keeps debt weight ~1%, so WACC ~11.5%, inside the 9-12% semi band.",
+        "adjudication_notes": "11.5% mid-upper semi band; concentration shifts from G42 to OpenAI but remains high."
       },
       "terminal_growth": {
         "value": 0.035,
-        "reasoning": "Inference compute should outgrow GDP for years; 3.5% terminal is defensible for a durable franchise but below the early ramp."
+        "reasoning": "Inference compute outgrows GDP for years; 3.5% terminal for a durable franchise, below the explicit ramp."
       },
       "forecast_horizon_years": 10,
       "terminal_value": {
-        "exit_ev_ebitda": 18.0
+        "exit_ev_ebitda": 16.0
       },
       "fcf_projections": [
         {
           "year": 2026,
-          "fcf_b": -0.1599,
-          "revenue_b": 0.8415,
-          "revenue_growth_pct": 65.0,
-          "ebit_margin": -0.1,
+          "fcf_b": -0.4116,
+          "revenue_b": 0.84,
+          "revenue_growth_pct": null,
+          "ebit_margin": -0.3,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.12,
-          "wc_change_pct_of_revenue": 0.04,
-          "rationale": "FY26E +65%: inference cloud scaling plus Condor Galaxy installs; growth decelerates off the 2025 76% print. Still operating-loss as R&D base dominates."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.25,
+          "wc_change_pct_of_revenue": 0.02,
+          "ubs_ref_revenue_b": 0.832,
+          "rationale": "C2026E ~$0.84B: in line with UBS ($0.83B) and our prior model. Near-term visibility is good; OpenAI contributes little this year as the first 250MW tranche only begins to deploy."
         },
         {
           "year": 2027,
-          "fcf_b": -0.1199,
-          "revenue_b": 1.2622,
-          "revenue_growth_pct": 50.0,
-          "ebit_margin": -0.02,
+          "fcf_b": -0.1949,
+          "revenue_b": 1.9,
+          "revenue_growth_pct": 126.2,
+          "ebit_margin": 0.06,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.11,
-          "wc_change_pct_of_revenue": 0.035,
-          "rationale": "FY27E +50%: enterprise and sovereign pipeline broadens; gross margin lifts on cloud mix; loss narrows toward breakeven."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.2,
+          "wc_change_pct_of_revenue": 0.03,
+          "ubs_ref_revenue_b": 2.695,
+          "rationale": "C2027E +126% to $1.9B vs UBS $2.70B. OpenAI tranche-1 deployment begins but we haircut ~30% for the 10x supply-chain scale-up. AWS excluded from base."
         },
         {
           "year": 2028,
-          "fcf_b": -0.0223,
-          "revenue_b": 1.7671,
-          "revenue_growth_pct": 40.0,
-          "ebit_margin": 0.06,
+          "fcf_b": 0.268,
+          "revenue_b": 4.2,
+          "revenue_growth_pct": 121.1,
+          "ebit_margin": 0.22,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.1,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.16,
           "wc_change_pct_of_revenue": 0.03,
-          "rationale": "FY28E +40%: first year of positive operating margin as revenue laps the fixed R&D base."
+          "ubs_ref_revenue_b": 7.117,
+          "rationale": "C2028E +121% to $4.2B vs UBS $7.12B (~59% of UBS). Peak OpenAI tranche-1 ramp, risk-adjusted for slippage. Still no AWS credit."
         },
         {
           "year": 2029,
-          "fcf_b": 0.1162,
-          "revenue_b": 2.3326,
-          "revenue_growth_pct": 32.0,
-          "ebit_margin": 0.12,
+          "fcf_b": 0.9828,
+          "revenue_b": 6.5,
+          "revenue_growth_pct": 54.8,
+          "ebit_margin": 0.28,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.09,
-          "wc_change_pct_of_revenue": 0.025,
-          "rationale": "FY29E +32%: operating leverage builds; capex intensity easing as the manufacturing base matures."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.13,
+          "wc_change_pct_of_revenue": 0.02,
+          "ubs_ref_revenue_b": 11.158,
+          "rationale": "C2029E +55% to $6.5B vs UBS $11.16B (~58%). Tranches layer in but a year behind UBS schedule; concentration on OpenAI is now the key risk."
         },
         {
           "year": 2030,
-          "fcf_b": 0.3041,
-          "revenue_b": 2.9158,
-          "revenue_growth_pct": 25.0,
-          "ebit_margin": 0.17,
+          "fcf_b": 1.6566,
+          "revenue_b": 8.5,
+          "revenue_growth_pct": 30.8,
+          "ebit_margin": 0.31,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.08,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.11,
           "wc_change_pct_of_revenue": 0.02,
-          "rationale": "FY30E +25%: mid-teens FCF margin as cloud mix and pricing stabilize."
+          "ubs_ref_revenue_b": 15.545,
+          "rationale": "C2030E +31% to $8.5B vs UBS $15.55B (~55%). Mature OpenAI footprint at risk-adjusted utilization."
         },
         {
           "year": 2031,
-          "fcf_b": 0.4829,
-          "revenue_b": 3.499,
+          "fcf_b": 2.2216,
+          "revenue_b": 10.2,
           "revenue_growth_pct": 20.0,
-          "ebit_margin": 0.2,
+          "ebit_margin": 0.32,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.07,
-          "wc_change_pct_of_revenue": 0.02,
-          "rationale": "FY31E +20%: franchise scaling; FCF margin high-teens."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.1,
+          "wc_change_pct_of_revenue": 0.015,
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2031E +20% to $10.2B: deceleration as the 750MW base fills; optional 2GW expansion and AWS sit in the bull case, not here."
         },
         {
           "year": 2032,
-          "fcf_b": 0.7172,
-          "revenue_b": 4.0588,
-          "revenue_growth_pct": 16.0,
-          "ebit_margin": 0.23,
+          "fcf_b": 2.7577,
+          "revenue_b": 11.7,
+          "revenue_growth_pct": 14.7,
+          "ebit_margin": 0.33,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.06,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.09,
           "wc_change_pct_of_revenue": 0.015,
-          "rationale": "FY32E +16%: deceleration continues off a larger base."
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2032E +15% to $11.7B: franchise scaling past the initial OpenAI commitment."
         },
         {
           "year": 2033,
-          "fcf_b": 0.8829,
-          "revenue_b": 4.5864,
-          "revenue_growth_pct": 13.0,
-          "ebit_margin": 0.25,
+          "fcf_b": 3.2842,
+          "revenue_b": 13.1,
+          "revenue_growth_pct": 12.0,
+          "ebit_margin": 0.33,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.06,
-          "wc_change_pct_of_revenue": 0.015,
-          "rationale": "FY33E +13%: maturing growth, low-20s FCF margin."
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.08,
+          "wc_change_pct_of_revenue": 0.01,
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2033E +12% to $13.1B: maturing growth."
         },
         {
           "year": 2034,
-          "fcf_b": 1.0966,
-          "revenue_b": 5.0909,
-          "revenue_growth_pct": 11.0,
-          "ebit_margin": 0.26,
+          "fcf_b": 3.698,
+          "revenue_b": 14.3,
+          "revenue_growth_pct": 9.2,
+          "ebit_margin": 0.34,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.05,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.08,
           "wc_change_pct_of_revenue": 0.01,
-          "rationale": "FY34E +11%: approaching steady state."
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2034E +9% to $14.3B: approaching steady state."
         },
         {
           "year": 2035,
-          "fcf_b": 1.2391,
-          "revenue_b": 5.5491,
-          "revenue_growth_pct": 9.0,
-          "ebit_margin": 0.27,
+          "fcf_b": 4.1096,
+          "revenue_b": 15.3,
+          "revenue_growth_pct": 7.0,
+          "ebit_margin": 0.34,
           "tax_rate": 0.21,
-          "da_pct_of_revenue": 0.07,
-          "capex_pct_of_revenue": 0.05,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.07,
           "wc_change_pct_of_revenue": 0.01,
-          "rationale": "FY35E +9%: terminal-approach year, ~25% FCF margin franchise."
+          "ubs_ref_revenue_b": null,
+          "rationale": "C2035E +7% to $15.3B: terminal-approach year, hardware-like ~34% EBIT margin."
         }
       ]
     }
@@ -157,55 +167,55 @@
   "cross_check": {
     "name": "Multiple",
     "category": "relative",
-    "reasoning": "EV/Sales is the standard cross-check for loss-making hypergrowth. Peer set: high-growth AI compute and inference names. A rich 28x FY26E sales is generous versus where most AI hardware trades, and still implies a price far below the current $237.83, underscoring how stretched the trailing 102x multiple is.",
+    "reasoning": "UBS values CBRS at 10x EV/Sales on C2029E sales discounted back. We apply the same compute-peer ~10x multiple but to our risk-adjusted C2028E sales of $4.2B, undiscounted, as a ~18-month forward target proxy. This stays conservative versus UBS (lower year, lower sales) while using the same relative lens the market is using.",
     "inputs": {
       "multiple_type": "EV/Sales",
-      "peer_median_multiple": 28.0,
-      "fy_estimate": 0.842,
+      "peer_median_multiple": 10.0,
+      "fy_estimate": 4.2,
       "peers_used": [
         "NVDA",
         "AMD",
-        "ARM",
-        "ALAB",
-        "SMCI"
+        "AVGO",
+        "MRVL",
+        "ARM"
       ],
-      "reasoning": "28x applied to FY26E revenue of ~$0.842B. Generous for the cohort; chosen to give the bull view its due. Even so it lands near $110, well under spot."
+      "reasoning": "10x compute-peer average (UBS uses the same) on risk-adjusted C2028E revenue $4.2B."
     }
   },
   "scenarios": [
     {
       "label": "Bear",
       "key_changes": {
-        "wacc": 0.125,
+        "wacc": 0.13,
         "terminal_growth": 0.02,
-        "fcf_multiplier": 0.55
+        "fcf_multiplier": 0.45
       },
-      "probability": 0.2,
-      "probability_reasoning": "Meaningful odds. The G42 concentration, export-control exposure and the IPO lock-up unlock against a 8.67M-share float are concrete, dateable downside catalysts, not tail risks.",
-      "reasoning": "Growth decelerates hard as Condor Galaxy installs lap, a token price war caps margins, and the unlock floods supply."
+      "probability": 0.25,
+      "probability_reasoning": "Real odds. The OpenAI ramp depends on scaling supply ~10x; NVDA folding Groq into its roadmap could take the ultra-fast-inference niche; the deal is concentrated and the lock-up unlock still looms. Any one slips the model badly.",
+      "reasoning": "OpenAI deployment stalls or NVDA/Groq wins the segment; revenue lands far below the risk-adjusted base and the multiple compresses."
     },
     {
       "label": "Base",
       "key_changes": {},
       "probability": 0.45,
-      "probability_reasoning": "Central case. Revenue keeps compounding fast and the company reaches operating profit around 2028, but the stock is valued far ahead of even this constructive ramp.",
-      "reasoning": "Strong execution on inference and diversification, with FCF margin reaching the mid-20s by the early 2030s."
+      "probability_reasoning": "Central case. OpenAI deploys but a year behind UBS at ~55-60% utilization; AWS stays optional. Most likely path given execution risk on a 10x scale-up.",
+      "reasoning": "Risk-adjusted OpenAI ramp to ~$8.5B revenue by 2030 at hardware-like margins."
     },
     {
       "label": "Bull",
       "key_changes": {
         "wacc": 0.105,
         "terminal_growth": 0.045,
-        "fcf_multiplier": 1.45
+        "fcf_multiplier": 1.6
       },
-      "probability": 0.15,
-      "probability_reasoning": "Lower odds. Requires inference demand to reaccelerate revenue, margins to expand faster than modeled, and concentration to resolve cleanly before the unlock.",
-      "reasoning": "Cerebras becomes the default fast-inference layer; revenue and FCF margins beat the base path materially."
+      "probability": 0.2,
+      "probability_reasoning": "Plausible. If OpenAI ramps on UBS's schedule and AWS scales into a multi-billion hardware stream, revenue approaches UBS's $11B+ 2029 and margins hit the high-30s.",
+      "reasoning": "OpenAI on schedule plus AWS optionality converting; trajectory approaches the UBS base."
     }
   ],
   "blending_weights": {
-    "cross_check": 0.2
+    "cross_check": 0.1
   },
-  "blending_logic": "45% Base DCF + 20% Bear DCF + 15% Bull DCF + 20% EV/Sales cross-check.",
-  "weights_reasoning": "Base 45% reflects a constructive but realistic ramp. Bear gets a heavy 20% because the lock-up unlock, G42 concentration and export risk are concrete near-term catalysts, not tail events. Bull 15% for the demand-reacceleration case. The EV/Sales cross-check carries 20% to anchor against intrinsic value with a relative lens; notably even a generous 28x sales multiple lands well below spot, which is the central finding."
+  "blending_logic": "45% Base DCF + 25% Bear DCF + 20% Bull DCF + 10% EV/Sales cross-check.",
+  "weights_reasoning": "Base 45% on the risk-adjusted OpenAI ramp. Bear gets a heavy 25% because the 10x supply-chain scale-up, OpenAI concentration, NVDA/Groq competitive response, and the IPO lock-up are all live. Bull 20% for the OpenAI-on-schedule-plus-AWS case. Cross-check 10% as a hardware-peer relative anchor. The blend deliberately stays below UBS's $300 by haircutting the deal for execution rather than disputing the technology."
 }
