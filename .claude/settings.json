@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"const fs=require('fs'),cp=require('child_process');const p='.claude/skills/finance-skills';if(fs.existsSync(p))fs.rmSync(p,{recursive:true,force:true});cp.execSync('git clone --depth 1 https://github.com/himself65/finance-skills.git '+p,{stdio:'inherit'});\""
+          }
+        ]
+      }
+    ]
+  }
+}

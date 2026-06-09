@@ -1,0 +1,52 @@
+name: Sync fork from upstream
+
+# Auto-syncs a fork of STUPIDMEI with the upstream srqt2/STUPIDMEI repo.
+# Skips the upstream repo itself (only runs in forks). After forking, enable
+# Actions in your fork's "Actions" tab once; this workflow then keeps your
+# fork up-to-date with no further intervention.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:         # allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    # Only run in forks, not in the upstream STUPIDMEI repo itself
+    if: github.repository != 'srqt2/STUPIDMEI'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream remote
+        run: git remote add upstream https://github.com/srqt2/STUPIDMEI.git
+
+      - name: Fetch upstream
+        run: git fetch upstream main
+
+      - name: Fast-forward merge if possible
+        run: |
+          if git merge-base --is-ancestor HEAD upstream/main; then
+            echo "Fast-forwarding to upstream/main"
+            git merge --ff-only upstream/main
+            git push origin main
+          else
+            echo "Fork has diverged from upstream; attempting merge commit"
+            git merge upstream/main --no-edit -m "Auto-sync from upstream srqt2/STUPIDMEI" || {
+              echo "Merge conflict — manual sync required"
+              exit 1
+            }
+            git push origin main
+          fi
