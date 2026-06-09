@@ -1,0 +1,600 @@
+{
+  "ticker": "CAI",
+  "name": "Caris Life Sciences, Inc.",
+  "listings": "NASDAQ",
+  "sector": "Healthcare. Oncology Diagnostics / TechBio",
+  "date": "2026-06-09",
+  "engine": "yfinance, GS initiation report (April 1, 2026)",
+  "recommendation": {
+    "action": "HOLD with positive bias",
+    "tone": "neutral",
+    "current_price": 16.14,
+    "target_12m": 17,
+    "upside_pct": 5.3,
+    "rationale": "DCF+cross-check blended: 20% Bear ($7.45) + 45% Base ($13.82) + 15% Bull ($25.00) + 20% EV/Sales cross-check ($25.86) = $16.63. Stock is roughly fairly valued at $16.14 on rigorous DCF analysis; the DCF base of $13.82 reflects thin near-term FCF ($60mn FY26E = SBC) with a step-up to $193mn in FY27E that the market already prices. Upside requires MCED Caris Detect traction at $3,500 self-pay, which the pure EV/Sales cross-check ($25.86) prices in but DCF does not until MCED volumes appear in FCF. Risk/reward is asymmetric: catalyst-rich 12-month calendar (MCED launch, NY State Assure, MRD coverage) could revalue to $25+ if execution holds; MCED stumble compresses to $7-8.",
+    "next_earnings": "2026-08 (Q2 FY26 expected; consensus $238mn revenue / $0.04 EPS)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$16.14"
+    },
+    {
+      "label": "52-week range",
+      "value": "$14.19 to $42.50"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-62.0%"
+    },
+    {
+      "label": "1-year return",
+      "value": "-42.4%"
+    },
+    {
+      "label": "YTD return",
+      "value": "-40.2%"
+    },
+    {
+      "label": "Market cap",
+      "value": "$4.6bn"
+    },
+    {
+      "label": "Enterprise value",
+      "value": "$4.2bn"
+    },
+    {
+      "label": "Net cash (FY25)",
+      "value": "+$419mn"
+    },
+    {
+      "label": "FY25 revenue",
+      "value": "$812mn"
+    },
+    {
+      "label": "FY25 EBITDA / margin",
+      "value": "$67.7mn / 8.3% (GAAP); $137.7mn / 17.0% (Adj)"
+    },
+    {
+      "label": "FY25 FCF",
+      "value": "$66.9mn (=SBC $70mn; economic FCF ~$0)"
+    },
+    {
+      "label": "FY26E revenue (consensus)",
+      "value": "$1.004bn (+23.6%)"
+    },
+    {
+      "label": "Forward EPS (FY26E)",
+      "value": "$0.13 to $0.37 (consensus range)"
+    },
+    {
+      "label": "Forward P/E (FY26E)",
+      "value": "44x (diluted)"
+    },
+    {
+      "label": "EV / Revenue (TTM)",
+      "value": "4.6x"
+    },
+    {
+      "label": "EV / EBITDA (TTM)",
+      "value": "32.3x (GAAP); ~10x (Adj)"
+    },
+    {
+      "label": "Beta",
+      "value": "N/A (post-IPO 2025; sector beta ~1.6-2.0x)"
+    },
+    {
+      "label": "ADTV (30d)",
+      "value": "$57mn"
+    },
+    {
+      "label": "Analyst consensus",
+      "value": "12 analysts; 10 Buy/Outperform, 2 Hold"
+    },
+    {
+      "label": "Mean / median PT",
+      "value": "$27.83 / $28.00"
+    },
+    {
+      "label": "Implied PT upside (Street mean)",
+      "value": "+72%"
+    },
+    {
+      "label": "Short interest",
+      "value": "10.2% of float; 4.45 days to cover"
+    },
+    {
+      "label": "Insider ownership",
+      "value": "48.5%"
+    },
+    {
+      "label": "Float",
+      "value": "103mn shares (36% of total)"
+    },
+    {
+      "label": "Dividend yield",
+      "value": "0.0%"
+    }
+  ],
+  "thesis": [
+    "The November 2024 FDA approval of MI Cancer Seek reset tissue reimbursement from $3,500 to $8,455, driving tissue ASP up 83% to $4,026, gross margin up 2,300bps to 66%, and positive FCF in FY25; structural repricing completed in a single year with no cost offset, leaving 66%+ margins as the new floor for the therapy selection business.",
+    "WES/WTS sequencing across 23,000+ coding genes and 61,000+ RNA transcripts on every sample is the only FDA-approved simultaneous CDx platform; this breadth catches rare fusions and gene rearrangements missed by competitors using 324-742 gene panels, and the Look Back Program (4,585 patients rematched since 2023) creates a physician stickiness that grows with every new CDx indication filed.",
+    "At $16.14, CAI trades at 3.5x FY27E EV/Sales against diagnostics peers at 6-16x despite the highest peer gross margin (66.4%), positive FCF, and a 2026 catalyst calendar dense with MCED launch, NY State Assure approval, and MRD coverage decision; even discounting the pipeline heavily, re-rating to a 5.5x multiple implies $25/share."
+  ],
+  "bear_paragraph": "CAI is a reimbursement story, not a technology story. The stock rose to $42.50 on the back of a single FDA approval that reset the tissue CDx rate from $3,500 to $8,455 -- a regulatory event that inflated 2025 revenue 97% and pushed gross margin from 43% to 66%. That repricing is complete. Going forward, tissue growth depends on volume gains against Foundation Medicine (Roche's deep-pocketed competitor with 324 CDx genes and established hospital footprint) and Tempus AI. FCF quality is illusory: $66.9mn in reported FCF equals $70mn in SBC, leaving economic cash generation at zero. The Q2 2026 MCED launch faces a brutal competitive reality -- GRAIL has spent a decade and billions attempting Medicare reimbursement for its $949 test, while CAI enters at $3,500 with a case-controlled trial and no FDA approval. Inventory days expanded from 54 to 92 in nine months, suggesting aggressive MCED kit pre-builds with write-down risk if volumes disappoint. Float overhang is structural: 48.5% of shares are insider-held with only 103mn in the float. Five simultaneous pipeline launches in 12 months leave no room for execution misses. Multiple contraction from 4.2x to 2.5x FY26E EV/Sales implies a stock at $10-12, down 25-35% from current levels.",
+  "peers": [
+    {
+      "ticker": "CAI",
+      "pe_ntm": 44.1,
+      "ev_ebitda": 32.3,
+      "ev_sales": 4.6,
+      "rev_growth_ttm": 78.8,
+      "ytd": -40.2,
+      "y1": -42.4,
+      "highlight": true
+    },
+    {
+      "ticker": "GH",
+      "pe_ntm": null,
+      "ev_ebitda": null,
+      "ev_sales": 15.9,
+      "rev_growth_ttm": 48.3,
+      "ytd": 22.8,
+      "y1": 152.2
+    },
+    {
+      "ticker": "NTRA",
+      "pe_ntm": null,
+      "ev_ebitda": null,
+      "ev_sales": 11.9,
+      "rev_growth_ttm": 38.8,
+      "ytd": -6.7,
+      "y1": 30.0
+    },
+    {
+      "ticker": "TEM",
+      "pe_ntm": null,
+      "ev_ebitda": null,
+      "ev_sales": 6.9,
+      "rev_growth_ttm": 36.1,
+      "ytd": -22.1,
+      "y1": -27.4
+    },
+    {
+      "ticker": "GRAL",
+      "pe_ntm": null,
+      "ev_ebitda": null,
+      "ev_sales": 12.0,
+      "rev_growth_ttm": 28.1,
+      "ytd": -30.8,
+      "y1": 53.7
+    },
+    {
+      "ticker": "VCYT",
+      "pe_ntm": 24.9,
+      "ev_ebitda": 32.4,
+      "ev_sales": 6.2,
+      "rev_growth_ttm": 21.5,
+      "ytd": 11.5,
+      "y1": 69.7
+    },
+    {
+      "ticker": "NEO",
+      "pe_ntm": 30.0,
+      "ev_ebitda": 395.6,
+      "ev_sales": 2.3,
+      "rev_growth_ttm": 11.1,
+      "ytd": -6.9,
+      "y1": 44.8
+    },
+    {
+      "ticker": "ADPT",
+      "pe_ntm": null,
+      "ev_ebitda": null,
+      "ev_sales": 9.0,
+      "rev_growth_ttm": 35.1,
+      "ytd": 5.0,
+      "y1": 59.8
+    }
+  ],
+  "peers_read": "CAI trades at 4.6x EV/Sales (TTM) against a peer group median of approximately 9-12x for pure-play oncology diagnostics names (GH 15.9x, NTRA 11.9x, GRAL 12.0x, ADPT 9.0x), a 50-75% discount for a company with the highest peer gross margin (66.4% vs. GH 64.9%, NTRA 65.1%, TEM 63.4%). Only NEO at 2.3x trades cheaper, but NEO generates 11% revenue growth vs. CAI's 79%. The valuation gap is attributable to three factors: (1) the stock's 62% post-IPO decline from $42.50 has permanently reset the narrative; (2) MCED optionality is valued at zero until Caris Detect volumes are proven; and (3) lock-up overhang (48.5% insider held) suppresses institutional buying. If MCED demonstrates 50,000+ tests in year one and tissue volume continues at 20%+, the peer re-rating from 4.6x to 6-7x EV/Sales is the clearest path to recovering the GS $27 target.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "Caris Detect MCED launch Q2 2026: 121.5mn patient TAM, $3,500 self-pay",
+      "body": "Caris Detect uses WGS to detect 40+ cancer types in a blood sample targeting the 45-75 year-old cohort. ACHIEVE-1 blinded cohort (n=131) showed 60.3% Stage I/II sensitivity and 98.1% benign/high-risk specificity. The company priced at $3,500 per test self-pay, built a strategic partnership with Everlywell for consumer distribution, and expanded field sales ahead of the Q2 launch. Even modest first-year uptake of 100,000 tests adds ~$350mn in incremental revenue against a $1.0bn 2026 base. Long-cycle optionality: if MCED receives Medicare coverage (GRAIL's path suggests 2029+ but CAI's WGS platform may accelerate), each 1% penetration of the 121.5mn patient TAM at $3,500 = $4.25bn in annualized revenue."
+    },
+    {
+      "id": 2,
+      "title": "Tissue therapy selection: 11% share, 2mn eligible tests, 250 to 300 sales force expansion",
+      "body": "GS estimates CAI held ~11% of the ~1.955mn annual therapy selection testing pool in FY25 (roughly 215,000 tissue tests). Sales force expansion from ~250 to ~300 heads (20% increase) in 2026, funded by positive FCF, directly targets volume uplift. Each 1pp of additional share gain equals ~19,550 new tests annually at $4,026 ASP = $78.7mn incremental revenue at 66% gross margin. The therapy selection TAM itself could expand as earlier-stage (Stage I-II) cancer therapies like JNJ Erda-iDRS and Roche Divarasib receive approval, pulling forward testing demand into a broader patient pool beyond current Stage III-IV focus."
+    },
+    {
+      "id": 3,
+      "title": "NY State Assure approval, Q2 2026 submission: opens CAI's largest tissue market for liquid",
+      "body": "CAI cannot sell Caris Assure liquid therapy selection in New York State until it passes clinical validation under NY Department of Health requirements -- a bar unique to NY that blocked liquid sales in what management describes as a top-five oncology market. Submission planned in Q2 2026; approval expected in 2H 2026. At a $2,517 blood ASP and a liquid segment currently at 10% of revenue ($81mn), NY approval opens a market where CAI's tissue franchise is already established and physicians already receive the MI Profile report. The liquid segment gross margin (not separately disclosed) is structurally lower than tissue CDx; GS models liquid ASP expansion as an upside driver rather than a base case."
+    },
+    {
+      "id": 4,
+      "title": "Caris Assure FDA CDx approval: potential $5,000+ reimbursement uplift post-NY",
+      "body": "Following NY State approval, management intends to file Caris Assure for FDA CDx approval. The precedent is direct: tissue CDx approval unlocked NCD 90.2 coverage at $8,455 vs. The prior LDT MolDX rate of $3,500. If Assure receives FDA CDx approval and a comparable national coverage rate, blood ASP could more than double from the current $2,517 LDT level. This is not in GS's model or 2026 guidance -- it is pure upside optionality. Timeline: FDA submission post-NY approval (earliest 2027), CDx coverage determination 1-2 years after submission (realistically 2028-2029)."
+    },
+    {
+      "id": 5,
+      "title": "MRD Tumor Naive platform: 15.5mn test TAM, MolDX TA data submitted Q4 2025",
+      "body": "CAI's Tumor Naive MRD assay uses WES/WTS on the Assure platform with CH subtraction (validated by ABCDai algorithm) for CRC and Stage II-III solid tumors post-curative-intent treatment. Additional MolDX technical assessment data was submitted in Q4 2025; commercial launch follows coverage and pricing determination. GS estimates 15.5mn annual MRD tests (5.5mn patients tested 3x/year over 5 years). Competitors Natera Signatera (tumor-informed LDT) and Tempus xM (tumor-naive LDT) have no simultaneous WES/WTS depth. CAI's germline and CH subtraction methodology is a clinical differentiator that reduces false positives from non-tumor mutations."
+    },
+    {
+      "id": 6,
+      "title": "Q1 2026 results confirm margin durability: $216mn revenue, +79% YoY, GM 65.3%",
+      "body": "Q1 2026 revenue was $216mn, up 79% year-over-year vs. Q1 2025's $121mn, and gross margin was $141.3mn = 65.3%, confirming that the CDx-driven margin expansion persisted beyond Q4 2025's 75% peak (peak was sequentially elevated by mix). Operating income turned positive at $5.3mn. FCF of $22.5mn in Q1 was below the $55mn Q3 2025 peak but still positive. Street consensus for 2026 full-year revenue is $1.004bn; the Q1 run rate of $216mn needs ~3% sequential quarterly growth to hit consensus, which management's sales force expansion and MCED launch should support."
+    },
+    {
+      "id": 7,
+      "title": "Caris Chromoseq: WGS/WTS for hematologic malignancies, MolDX TA response submitted",
+      "body": "Caris Chromoseq targets AML, MDS, MPN, and suspected myeloid malignancies using WGS/WTS, versus the targeted cytogenetic panels that constitute standard of care. CAI responded to MolDX TA comments as of Q4 2025 and awaits coverage/pricing determination. GS estimates 58,000 annual AML/MDS/MPN diagnoses. Therapy selection in hematologic malignancies is an underpenetrated extension of CAI's tissue CDx moat; full WGS/WTS identifies chromosomal rearrangements and rare fusions that targeted panels miss, creating a compelling physician argument for switching from patchwork panel testing."
+    },
+    {
+      "id": 8,
+      "title": "Caris MI Clarity: AI-WES/WTS breast cancer recurrence predictor vs. $500mn+ Oncotype DX",
+      "body": "MI Clarity targets Stage I-II ER+/HER2- lymph node-negative breast cancer recurrence risk prediction using WES/WTS plus AI analysis of H&E staining. GS estimates the TAM at 192,000 annual patients. Oncotype DX (Genomic Health/Exact Sciences) dominates at ~$4,000/test; MI Clarity's WES/WTS + Digital AI approach targets superior performance by analyzing the full genomic landscape rather than a 21-gene RNA panel. Management is pursuing two reimbursement pathways: NGS + Digital AI combined and Digital AI alone first. Even a 10% market capture of 192,000 patients at $3,500/test = $67mn annual revenue."
+    },
+    {
+      "id": 9,
+      "title": "Pharma R&D Services: 100+ biopharma partnerships, $38bn molecular markers, milestone optionality",
+      "body": "CAI's Pharma R&D Services (6% of FY25 revenue, 77% gross margin -- highest in the business) operates through Core Biopharma, Caris Discovery, and Strategic Data. The dataset covers >745,000 tumor profiles and >6.5mn tests generating >38bn molecular markers from >13 quadrillion datapoints. 99 Precision Oncology Alliance members, partnerships with Genentech, Merck, and Xencor for target discovery. Milestone payments and royalties from CDx codevelopment are not in consensus estimates. Strategic Data (66% of Pharma R&D revenue in FY24) scales with minimal incremental cost as more biopharma customers access the same de-identified dataset."
+    },
+    {
+      "id": 10,
+      "title": "Balance sheet: $798mn cash, $431mn debt, net cash $419mn -- no dilution required to profitability",
+      "body": "CAI ended FY25 with $797.8mn in cash and $428.7mn in total debt (net cash ~$419mn) following its $650mn IPO raise in 2025. At the current FCF generation rate ($67mn annualized) and without MCED launch costs, the company has 5+ years of runway before needing equity markets again. The net cash position provides a partial floor on EV contraction: at $16.14, EV is $4.17bn but the net cash cushion is $419mn (9.2% of EV). For a $1.0bn revenue business growing 24%, the EV ex-cash of $3.75bn = 3.75x EV/Sales is priced for meaningful execution failure, not for a company with the highest peer gross margin and an FDA-approved CDx."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "FCF is an accounting artifact: $66.9mn FCF exactly offset by $70mn SBC",
+      "body": "FY25 reported FCF of $66.9mn is almost exactly offset by $70.0mn of stock-based compensation. Economic FCF -- which counts employee equity compensation as a real cost -- is -$3.1mn. SBC has been $64mn annualized in recent quarters and could accelerate as executive grants from March 2026 vest. GS's Adj EBITDA of $137.7mn starts from GAAP EBITDA of $11.4mn with a 12x adjustment. Bulls who cite 'positive FCF' are citing a number that, net of equity compensation, does not exist on an economic basis. Per-share value creation requires total equity value to grow faster than SBC dilution of 1.5-2.8% per year on a $4.6bn market cap."
+    },
+    {
+      "id": 2,
+      "title": "MCED priced 3.7x above GRAIL: $3,500 self-pay vs $949, no Medicare, no FDA approval",
+      "body": "Caris Detect launches at $3,500 self-pay in Q2 2026. GRAIL Galleri has been at $949 since 2021 with no Medicare coverage despite years of advocacy, large NHS trial data, and ~$120mn in annual revenues. Exact Sciences CancerGuard prices at $689. CAI enters at 3.7-5.1x the price of incumbents, with a case-controlled trial (not the prospective population-based screening study Medicare requires), no FDA approval, and no commercial insurance coverage path inside a 12-month window. Physician uptake of a $3,500 out-of-pocket oncology test in a market where $949 tests struggle is not supported by precedent."
+    },
+    {
+      "id": 3,
+      "title": "Tissue ASP ramp is complete; volume growth faces Foundation Medicine and Tempus competition",
+      "body": "The FY24-to-FY25 ASP migration from $2,198 to $4,026 was a one-time event; GS explicitly notes 'much of the growth related to this pricing uplift has played out.' Future tissue revenue growth requires volume. At 11% share, CAI holds roughly 215,000 annual tests against 1.955mn eligible. Foundation Medicine (Roche) has 324-gene FoundationOne CDx with 20+ CDx indications, deep hospital contracting, and unlimited R&D support. Tempus xT CDx has 648 genes, an FDA-approved CDx, and AI capabilities matching CAI's. Growing from 11% to 15% share requires displacing established physician workflows at competitors with significant commercial and reimbursement infrastructure."
+    },
+    {
+      "id": 4,
+      "title": "Inventory days inflating 70% in three quarters: 92 DIO against 90-day quarter",
+      "body": "Inventory days outstanding rose from 54 days in Q2 2025 to 91.8 days in Q1 2026 -- more than one full quarter of COGS sitting on the balance sheet. Absolute inventory increased from $40.6mn to $76.3mn (+88%) while COGS stayed roughly flat at $67-75mn per quarter. The company is likely building MCED reagent and kit inventory ahead of the Caris Detect launch. If MCED volumes come in below expectations at the $3,500 price point, sequencing reagent shelf-life constraints generate inventory write-downs that directly reduce gross profit on the quarters when the write-downs occur."
+    },
+    {
+      "id": 5,
+      "title": "Float overhang: 48.5% insider held, 103mn float vs 283mn shares, financial sponsor lock-ups",
+      "body": "CAI raised $650mn from its 2025 IPO. With 48.5% insider ownership and only 103mn shares in the float (36% of total), the float could more than double when lock-up restrictions expire. Pre-IPO financial investors including J.H. Whitney (6.5% holder, pre-IPO entry), Sixth Street (5.1%, -0.26% trimming last quarter), and Coatue (3.5%) have finite holding periods. The stock already fell 62% from its IPO high; any recovery toward $20-25 creates strong incentive for pre-IPO holders to exit, capping upside regardless of fundamental progress."
+    },
+    {
+      "id": 6,
+      "title": "Five simultaneous pipeline launches in 12 months: multiplicative execution risk",
+      "body": "In 2026, CAI is simultaneously executing: MCED Caris Detect commercial launch (Q2), Assure NY State approval submission (Q2), MRD Tumor Naive MolDX TA response, Chromoseq coverage determination, and MI Clarity launch planning. Each requires regulatory preparation, reimbursement negotiation, salesforce training, physician education, and billing infrastructure. Missing any launch by 2-3 quarters reduces the 2026-2027 growth story and causes multiple compression on a high-multiple stock. The CEO received a 320,112-share grant in March 2026 -- a large equity retention grant in a high-execution period signals management is aware of the delivery risk."
+    },
+    {
+      "id": 7,
+      "title": "Reimbursement concentration: 100% of CDx margin rests on a single NCD at $8,455",
+      "body": "The $8,455 tissue CDx reimbursement rate under NCD 90.2 is the foundation of CAI's gross margin. CMS reviews CLFS rates annually; any downward revision directly compresses gross profit with no cost offset. The prior LDT rate was $3,500 -- a 58% haircut. DSO volatility (ranging from 11.1 days in Q3 2025 to 58.5 days in Q1 2025 to 37.7 days in Q1 2026) indicates lumpy Medicare collection patterns that make quarterly revenue hard to forecast and create earnings risk on any quarter when collection timing shifts."
+    },
+    {
+      "id": 8,
+      "title": "Goldman Sachs IB conflict: the initiating firm managed CAI's IPO",
+      "body": "GS managed CAI's 2025 IPO, received IB compensation, and initiated coverage at Buy with a $27 target on April 1, 2026. This is a structurally conflicted initiation from the underwriter. The two neutral analysts -- Canaccord ($22 target) and Piper Sandler ($21) -- entered coverage without an IB relationship and both rate Hold. The neutral analyst floor of $21-22 represents the unbiased sell-side view. Every analyst who lowered their price target in May 2026 (BTIG $38 to $32, JP Morgan $35 to $30, Citi $35 to $28, Evercore $38 to $30) was moving toward the neutral range post-Q1 results, suggesting consensus estimates were too high at initiation."
+    },
+    {
+      "id": 9,
+      "title": "SBC dilution: 77% spread between basic (167mn) and diluted (296mn) shares",
+      "body": "GS uses 167.2mn basic shares and 296.1mn diluted shares -- a 77% dilution from in-the-money options and convertibles priced between current levels and the IPO high of $42.50. At 296mn fully diluted shares, EV/Sales and equity per share calculations change materially. Annual SBC of $64-70mn on a $4.6bn market cap equals 1.5% dilution per year that must be overcome by equity value creation. March 2026 executive grants (CEO 320k shares, President 83k, CFO 64k) at $0 strike are not yet fully reflected in the SBC run rate, suggesting 2026 SBC will be higher than 2025's $70mn."
+    },
+    {
+      "id": 10,
+      "title": "GRAIL precedent: the MCED category leader spent $2bn+, still no Medicare coverage",
+      "body": "GRAIL is the most direct MCED precedent. It published prospective NHS Galleri trial data from 140,000 participants, ran the test at $949 for five years, and generated $156mn TTM revenue as of Q1 2026 -- all with zero Medicare coverage. GRAIL's stock trades at ~$10-11 from a $20+ IPO price. CAI enters the same market at 3.7x GRAIL's price, with a smaller case-controlled dataset, and no FDA approval. If Caris Detect generates sub-50,000 tests in year one, the MCED narrative collapses and the stock re-rates toward NeoGenomics (2.3x EV/Sales) rather than expanding toward NTRA/GH territory."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "12.5% (EV/Sales: 2.5x FY27E)",
+      "terminal_g": "2.5%",
+      "fcf_path": "MCED <50k tests yr1; tissue vol +15% / +12% / +10%; rev FY27E $1.1bn",
+      "implied_px": 11.0
+    },
+    {
+      "scenario": "Base",
+      "wacc": "10.5% (EV/Sales: 5.5x FY27E)",
+      "terminal_g": "3.5%",
+      "fcf_path": "MCED 100k+ tests yr1; tissue vol +20% / +18% / +15%; rev FY27E $1.2bn",
+      "implied_px": 25.0
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "9.0% (EV/Sales: 7.5x FY27E)",
+      "terminal_g": "4.0%",
+      "fcf_path": "MCED 200k+ tests yr1 + Assure FDA path; tissue vol +25% / +22% / +18%; rev FY27E $1.25bn",
+      "implied_px": 35.0
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bear",
+      "prob": 0.25,
+      "outcome_range": "$9 to 13",
+      "description": "MCED Caris Detect fails to gain volume traction at $3,500 self-pay, tissue volume growth disappoints at 12-15%, and lock-up selling compresses the multiple to 2.5x FY27E EV/Sales. Implied EV ~$2.75bn, equity ~$3.1bn, per share ~$11."
+    },
+    {
+      "label": "Base",
+      "prob": 0.5,
+      "outcome_range": "$22 to 28",
+      "description": "MCED achieves 75,000-125,000 tests in first year, tissue holds 20% volume growth, NY State Assure approval comes through in 2H 2026, and the multiple re-rates to 5.5x FY27E EV/Sales as pipeline execution de-risks. Implied equity ~$7.0bn, per share ~$25."
+    },
+    {
+      "label": "Bull",
+      "prob": 0.25,
+      "outcome_range": "$32 to 40",
+      "description": "MCED exceeds 200,000 tests in first year, Assure FDA CDx approval path opens a second reimbursement ramp, and MRD MolDX coverage is granted, driving a re-rating toward Guardant/Natera multiples (7.5x FY27E EV/Sales). Implied equity ~$9.9bn, per share ~$35."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "BUY with positive bias; isk/reward at $16.14 is favorable; 50% base case implies $25, 72% upside to Street mean target of $27.83"
+    },
+    {
+      "action": "12m target",
+      "detail": "$24 probability-weighted (25% Bear $11 + 50% Base $25 + 25% Bull $35)"
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Hold; next catalyst is Q2 2026 Caris Detect MCED launch data (first published volume figures expected with Q2 earnings ~August 2026)"
+    },
+    {
+      "action": "New money",
+      "detail": "Accumulate at $14-17 range; size to conviction on MCED execution; $14.19 is the 52wk low and a natural technical support"
+    },
+    {
+      "action": "Hedge",
+      "detail": "Monitor NY State Assure approval timeline and MCED initial order rates; if first public volume data shows <25,000 tests by Q2 print, reduce"
+    },
+    {
+      "action": "Position sizing",
+      "detail": "High-conviction 2-4% portfolio position for long/growth mandates; 1-2% for balanced accounts given post-IPO lock-up overhang and binary MCED read"
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q2 2026 Caris Detect (MCED) first commercial order volumes; xpected with Q2 2026 earnings release (~August 2026)",
+    "NY State Department of Health approval of Caris Assure liquid therapy selection (Q2 2026 submission; decision likely 2H 2026)",
+    "MolDX coverage and pricing determination for MRD Tumor Naive assay (no formal timeline; additional TA data submitted Q4 2025)",
+    "Caris Assure FDA CDx submission filing (post-NY State approval; likely 2027 event)",
+    "Q2 2026 earnings (August 2026): tissue volume growth rate, MCED launch color, gross margin trajectory post-Q4 2025 peak",
+    "MolDX Chromoseq coverage determination (no formal timeline; TA response submitted)",
+    "CMS annual CLFS review: monitoring any change to the $8,455 NCD 90.2 CDx reimbursement rate"
+  ],
+  "data_gaps": [
+    "Geographic revenue split (US vs international) not disclosed in public filings",
+    "Exact top-customer concentration (% revenue from top 5-10 clients) not disclosed",
+    "Liquid segment standalone gross margin not separately reported (total molecular profiling 65.8% includes both tissue and liquid)",
+    "First Caris Detect commercial order volume data not yet available (launch in Q2 2026)",
+    "Beta not calculable from yfinance for post-IPO stock; used sector range 1.6-2.0x for reference",
+    "10-K segment revenue breakdowns confirmed from GS initiation report; independent filing verification not completed",
+    "Caris Detect self-pay price $3,500 confirmed from GS report; company has not formally published pricing documentation",
+    "Social sentiment (Adanos, X/Twitter) not fetched; skill not available in current session",
+    "Adanos sentiment score unavailable; FUNDA_API_KEY and ADANOS_API_KEY not configured"
+  ],
+  "business_overview": {
+    "summary": "Caris Life Sciences is an Irving, Texas-based oncology diagnostics and TechBio company founded in 2008. It sequences tumor tissue and blood samples using whole exome sequencing (WES, 23,000+ coding genes) and whole transcriptome sequencing (WTS, 61,000+ RNA transcripts) on every eligible patient, generating a molecular profile that oncologists use to select targeted therapies. The company has sequenced over 1,000,000 cases, launched the first FDA-approved simultaneous WES/WTS companion diagnostic (MI Cancer Seek) in Q1 2025, and is expanding into multi-cancer early detection (MCED), minimal residual disease (MRD), and hematologic malignancies.",
+    "business_model": "Revenue flows primarily from reimbursed molecular profiling: tissue tests at $8,455 per CDx-eligible test (or $3,500 for reflex LDT pathway), blood therapy selection tests at $3,649 MolDX rate, and Pharma R&D Services (clinical trial testing, data licensing, drug target discovery) at 77% gross margin. The MCED Caris Detect launches at $3,500 self-pay. The company's moat is its multi-modal AI/ML-annotated database (>38bn molecular markers from >6.5mn tests), FDA CDx approval, and the Look Back Program that rematches prior patients to newly approved therapies.",
+    "segments": [
+      {
+        "name": "Tissue Therapy Selection (MI Profile / MI Cancer Seek)",
+        "revenue_share_pct": 84,
+        "growth_yoy_pct": null,
+        "margin_pct": 65.8,
+        "description": "full tissue-based molecular profiling including WES/WTS CDx (FDA-approved MI Cancer Seek, $8,455 CMS rate), IHC protein expression, biomarker testing, and AI/ML analysis for 90 cancer types. Tissue ASP rose 83% from FY24 to FY25 following CDx coverage."
+      },
+      {
+        "name": "Liquid Therapy Selection (Caris Assure)",
+        "revenue_share_pct": 10,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Blood-based WES/WTS molecular profiling for advanced/metastatic solid cancers. LDT; MolDX rate $3,649. Blood ASP rose from $1,651 to $2,517 in FY25. NY State approval pending (Q2 2026 submission). Awaiting FDA CDx approval submission."
+      },
+      {
+        "name": "Pharma R&D Services",
+        "revenue_share_pct": 6,
+        "growth_yoy_pct": null,
+        "margin_pct": 77.0,
+        "description": "Core Biopharma (clinical trial testing, CDx development), Caris Discovery (ADAPT platform drug-target identification), and Caris Strategic Data (>6.5mn test database licensing to 100+ commercial biopharma partners). Strategic Data is 66% of Pharma R&D revenue."
+      }
+    ],
+    "geographic_revenue": null,
+    "customers": [
+      {
+        "name": "Oncologists / Hospitals / Institutions (U.S.)",
+        "revenue_share_pct": null,
+        "importance": "Primary ordering physicians for molecular profiling; reimbursed by Medicare at CDx rate $8,455 and MolDX LDT rate $3,649"
+      },
+      {
+        "name": "Biopharmaceutical partners (incl. Genentech, Merck, Xencor)",
+        "revenue_share_pct": 6,
+        "importance": "100+ commercial biopharma partners for data licensing, clinical trial molecular profiling, and drug target discovery; milestone/royalty potential"
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "Oncology diagnostics is shifting structurally from narrow targeted panels (50-100 genes) toward full molecular profiling (WES/WTS, 23,000+ genes). This shift is driven by the proliferation of biomarker-linked targeted therapies (pembrolizumab, alpelisib, encorafenib, etc.) that require broad genomic coverage to identify eligible patients, and by FDA CDx economics where national coverage determinations (NCD) systematically favor FDA-approved full platforms. The therapy selection TAM is ~1.955mn tests/year in the U.S.; MCED adds 121.5mn potential screening-eligible patients (45-75 year-olds); MRD adds 15.5mn annual test occasions. The total addressable market across all CAI platforms exceeds $50bn at current pricing.",
+    "tam_usd_bn": 52,
+    "moat": "WES/WTS sequencing across all 23,000 coding genes and 61,000 RNA transcripts in a single test is CAI's primary moat -- no competitor consistently runs both WES and WTS as standard practice on every sample. The secondary moat is the data flywheel: 1mn+ sequenced cases generating 38bn molecular markers, which compounds as a drug-target discovery asset and trains proprietary AI/ML algorithms (GPSai for tumor origin prediction, FOLFIRSTai for chemotherapy efficacy, ABCDai for MRD). The Look Back Program retrospectively rematches prior patient sequences when new CDx indications are approved, creating physician retention that competitors without matching sequencing depth cannot replicate.",
+    "competitors": [
+      {
+        "name": "Foundation Medicine / Roche (FoundationOne CDx)",
+        "description": "FDA-approved CDx, 324 genes (DNA only), 20+ CDx indications, deep hospital contracting backed by Roche's commercial infrastructure. Primary competitor in tissue therapy selection. Does not use WES/WTS; cannot detect all fusions/rare alterations."
+      },
+      {
+        "name": "Guardant Health (Guardant360 Tissue / CDx)",
+        "description": "Guardant360 Tissue is an LDT (742 DNA genes, no CDx), while Guardant360 CDx is liquid-only FDA-approved (7 indications). GH trades at 15.9x EV/Sales on 64.9% gross margins. Higher liquid market share; weaker tissue position than CAI."
+      },
+      {
+        "name": "Tempus AI (xT CDx)",
+        "description": "FDA-approved CDx with 648 genes, 2 CDx indications for CRC; LDT for broader solid tumors. AI platform overlap with CAI. Trades at 6.9x EV/Sales but grows slower (36% vs CAI's 79%) with lower gross margins (63.4%)."
+      },
+      {
+        "name": "GRAIL (Galleri). MCED competitor",
+        "description": "MCED incumbent at $949 self-pay; $156mn TTM revenue; no Medicare coverage after 5+ years. Direct MCED competitor. Trades at 12x EV/Sales reflecting MCED optionality premium that CAI would earn if Caris Detect gains traction."
+      },
+      {
+        "name": "Natera (Signatera). MRD competitor",
+        "description": "Tumor-informed ctDNA MRD assay; LDT with Breakthrough Device Designation. Multiple cancer indications; rapidly growing ($2.5bn TTM revenue, 38.8% growth). Primary MRD competitor; trades at 11.9x EV/Sales."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY22",
+      "revenue_usd_b": 0.258,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 30.9,
+      "ebitda_usd_m": -245.9,
+      "ebitda_margin_pct": -95.2,
+      "net_income_usd_m": -320.8,
+      "fcf_usd_m": -328.0,
+      "eps": -1.57
+    },
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 0.306,
+      "revenue_growth_yoy_pct": 18.4,
+      "gross_margin_pct": 29.2,
+      "ebitda_usd_m": -260.8,
+      "ebitda_margin_pct": -85.2,
+      "net_income_usd_m": -341.4,
+      "fcf_usd_m": -298.4,
+      "eps": -1.82
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 0.412,
+      "revenue_growth_yoy_pct": 34.7,
+      "gross_margin_pct": 43.4,
+      "ebitda_usd_m": -182.9,
+      "ebitda_margin_pct": -44.4,
+      "net_income_usd_m": -281.9,
+      "fcf_usd_m": -253.6,
+      "eps": -1.36
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 0.812,
+      "revenue_growth_yoy_pct": 97.0,
+      "gross_margin_pct": 66.4,
+      "ebitda_usd_m": 11.4,
+      "ebitda_margin_pct": 1.4,
+      "net_income_usd_m": -68.1,
+      "fcf_usd_m": 66.9,
+      "eps": -0.41
+    },
+    {
+      "fy": "FY26E",
+      "revenue_usd_b": 1.004,
+      "revenue_growth_yoy_pct": 23.6,
+      "gross_margin_pct": 66.3,
+      "ebitda_usd_m": 116.6,
+      "ebitda_margin_pct": 11.6,
+      "net_income_usd_m": 51.9,
+      "fcf_usd_m": 59.7,
+      "eps": 0.18
+    }
+  ],
+  "management": {
+    "ceo": "David D. Halbert, CEO (founder-affiliated; Irving, TX headquartered company since 2008)",
+    "cfo": "Luke Thomas Power, CFO (grant of 63,971 shares at $0 in March 2026)",
+    "insider_ownership_pct": 48.5,
+    "capital_allocation_history": "CAI raised $650mn in its 2025 IPO, its primary external capital raise. The company had negative FCF from FY22 through FY24 ($328mn, $298mn, $254mn cumulative outflows) funded by debt issuance ($192mn FY24, $28mn FY25) and preferred stock ($121mn in FY25). In FY25, preferred securities outside equity reclassified to zero following the IPO restructuring. Management has expressed intent to reinvest FY26 profits in MCED launch and pipeline expansion rather than targeting profitability maximization. No dividends paid; no share buyback history. Capital allocation priority: MCED commercial launch (Caris Detect), Assure FDA approval pathway, and MRD/Chromoseq commercial readiness.",
+    "recent_insider_activity": [
+      {
+        "date": "2026-05-29",
+        "insider": "George H. Poste, Director",
+        "action": "Stock Award (Grant)",
+        "value_usd_m": 0.025
+      },
+      {
+        "date": "2026-05-11",
+        "insider": "Jeff L. Vacirca, Director",
+        "action": "Purchase",
+        "value_usd_m": -0.501
+      },
+      {
+        "date": "2026-03-06",
+        "insider": "David D. Halbert, CEO",
+        "action": "Stock Award (Grant)",
+        "value_usd_m": 0.0
+      },
+      {
+        "date": "2026-03-06",
+        "insider": "David Baxley Spetzler PhD, President",
+        "action": "Stock Award (Grant)",
+        "value_usd_m": 0.0
+      },
+      {
+        "date": "2026-03-06",
+        "insider": "Luke Thomas Power, CFO",
+        "action": "Stock Award (Grant)",
+        "value_usd_m": 0.0
+      }
+    ]
+  },
+  "key_risks": [
+    {
+      "category": "execution",
+      "title": "MCED launch volumes disappoint at $3,500 self-pay",
+      "description": "Caris Detect enters a nascent self-pay MCED market at 3.7x GRAIL's $949 price with no Medicare or commercial insurance coverage. Physician ordering of a $3,500 out-of-pocket test in a market where $949 tests have generated only $156mn in GRAIL's annual revenue is an optimistic assumption. First-year volume data (expected ~Q2 2026 earnings) is the critical read."
+    },
+    {
+      "category": "regulatory",
+      "title": "CMS CLFS annual review could reduce the $8,455 tissue CDx rate",
+      "description": "The tissue CDx reimbursement rate of $8,455 under NCD 90.2 is subject to CMS CLFS annual review. The prior LDT rate was $3,500. A downward revision would directly compress the 66% gross margin with no cost offset. CAI has no geographic or reimbursement diversification outside the U.S. Medicare/commercial payor structure."
+    },
+    {
+      "category": "structural",
+      "title": "Economic FCF near zero after SBC; dilution compounds annually",
+      "description": "FY25 reported FCF of $66.9mn equals FY25 SBC of $70mn. True economic FCF is negative. Annual SBC of $64-70mn on a $4.6bn market cap is 1.5% annual dilution that must be overcome by equity value creation. The basic-to-diluted share count gap (167mn to 296mn, +77%) implies substantial in-the-money options that will further dilute as the stock recovers."
+    },
+    {
+      "category": "structural",
+      "title": "Lock-up expiry and float overhang from 48.5% insider ownership",
+      "description": "With only 103mn shares in the public float (36% of 283mn total), any price recovery creates systematic supply from pre-IPO holders (J.H. Whitney, Sixth Street, Coatue). Lock-up expirations throughout 2026 could structurally cap the upside multiple regardless of fundamental progress on MCED or MRD."
+    },
+    {
+      "category": "cyclical",
+      "title": "Pharma R&D Services is discretionary and could contract in biotech funding downturn",
+      "description": "6% of revenue (~$49mn, 77% gross margin) comes from biopharma data licensing and clinical trial services. In a sector-wide biotech R&D contraction, pharma customers delay or cancel data licensing and CDx development contracts. Caris Discovery (drug target identification) and Strategic Data are the highest-margin but most cyclically sensitive sub-segments."
+    },
+    {
+      "category": "regulatory",
+      "title": "MCED FDA approval is 3+ years away; Medicare coverage requires FDA approval",
+      "description": "Caris Detect launches as an LDT. FDA PMA for MCED requires clinical validity data from a prospective population-based screening study, not just a case-controlled trial. Without FDA approval, CMS cannot issue NCD 90.2 coverage for MCED, and commercial payors will not cover it. MCED reimbursement is realistically a 2029+ event, limiting the MCED option value in the current 12-month horizon."
+    },
+    {
+      "category": "execution",
+      "title": "Five simultaneous pipeline launches create multiplicative execution risk",
+      "description": "CAI is simultaneously executing Caris Detect MCED launch, Assure NY State submission, MRD MolDX TA response, Chromoseq coverage determination, and MI Clarity launch planning in 2026. A 2-3 quarter delay on any single element reduces the growth narrative and causes multiple compression. Management capacity is finite; the March 2026 executive equity retention grants signal awareness of execution pressure."
+    }
+  ],
+  "social_sentiment": {
+    "reddit_mentions": null,
+    "x_mentions": null,
+    "bullish_pct": null,
+    "summary": "Social sentiment data unavailable. Adanos and Twitter reader skills not accessible in this session. Analyst sentiment is strongly bullish (10 Buy/Outperform, 2 Hold, 0 Sell among 12 analysts), with a mean price target of $27.83 representing 72% upside. The neutral-analyst range of $21-22 (Canaccord, Piper Sandler) provides a floor from non-IB-conflicted analysts. Post-Q1 2026 earnings, multiple price target reductions (BTIG $38 to $32, JP Morgan $35 to $30, Citi $35 to $28) suggest the May 2026 print caused modest downward revisions, though all analysts maintained Buy/Outperform ratings."
+  }
+}
