@@ -1,0 +1,32 @@
+{
+  "ticker": "CBRS",
+  "audited_at": "2026-06-09T00:00:00Z",
+  "verdict": "PASS_WITH_NOTES",
+  "findings": [
+    {"claim": "FY25 revenue $510.0M", "source_cited": "yfinance financials", "status": "VERIFIED", "notes": "yfinance Total Revenue 2025-12-31 = 509.991M."},
+    {"claim": "FY25 gross margin 39.0%", "source_cited": "Calc", "status": "VERIFIED", "notes": "Recomputed 199.071/509.991 = 39.0%."},
+    {"claim": "FY25 operating income -$145.3M (-28.5% margin)", "source_cited": "yfinance / Calc", "status": "VERIFIED", "notes": "Operating Income -145.254M; margin -28.5%."},
+    {"claim": "Bear paragraph states operating margin -29%", "source_cited": "Calc", "status": "VERIFIED_WITH_NOTE", "notes": "Actual -28.5%; rounded to -29% in prose. Snapshot carries the precise -28.5%."},
+    {"claim": "FY25 net income +$237.8M while operating income negative", "source_cited": "yfinance", "status": "VERIFIED", "notes": "Net Income 237.827M vs Operating Income -145.254M; the gap is non-operating, supporting the 'accounting mirage' framing."},
+    {"claim": "Price/sales (TTM) 102x", "source_cited": "Calc", "status": "VERIFIED", "notes": "52229.931M / 509.991M = 102.4x; yfinance priceToSalesTrailing12Months 102.41."},
+    {"claim": "Revenue ramp 24.6 / 78.7 / 290.3 / 510.0M (2022-2025)", "source_cited": "yfinance", "status": "VERIFIED", "notes": "Matches yfinance financials columns."},
+    {"claim": "Revenue growth 220% / 269% / 76% (2023/2024/2025)", "source_cited": "Calc", "status": "VERIFIED", "notes": "78.744/24.619-1=219.8%; 290.252/78.744-1=268.7%; 509.991/290.252-1=75.7%."},
+    {"claim": "Cash $701.7M, total debt $261.8M, net cash ~$0.44B", "source_cited": "yfinance balance sheet", "status": "VERIFIED", "notes": "Cash 701.706M; Total Debt 261.822M; net debt -0.439B as used in DCF."},
+    {"claim": "~219.6M shares; float ~8.67M (~96% locked)", "source_cited": "yfinance", "status": "VERIFIED_WITH_NOTE", "notes": "impliedSharesOutstanding 219.6M; floatShares 8,670,606 => 96.1% non-float. yfinance sharesOutstanding field (34.5M) is inconsistent; the implied figure reconciles with market cap and is used throughout."},
+    {"claim": "Stockholders equity -$579M (FY25)", "source_cited": "yfinance", "status": "VERIFIED", "notes": "Stockholders Equity -578.655M."},
+    {"claim": "52-week range $196.73-$386.34; -38% from high; -23.5% 1y", "source_cited": "yfinance", "status": "VERIFIED", "notes": "fiftyTwoWeekLow/High match; 237.83/386.34-1=-38.4%; 52WeekChange -0.2354."},
+    {"claim": "Blended 12m target $51 (-78.7%)", "source_cited": "dcf_compute", "status": "VERIFIED", "notes": "Compute output blended_target 50.64, narrative rounds to 51. Upside -78.7%."},
+    {"claim": "Scenario implied: Bear $15.41 / Base $34.69 / Bull $67.21; cross-check $109.36", "source_cited": "dcf_compute", "status": "VERIFIED", "notes": "Re-ran compute; identical."},
+    {"claim": "Probabilities sum to 1.0 with cross-check weight", "source_cited": "valuation JSON", "status": "VERIFIED", "notes": "Bear 0.20 + Base 0.45 + Bull 0.15 + cross_check 0.20 = 1.00 (weight_total_check 1.0)."},
+    {"claim": "G42 ~83-87% of revenue", "source_cited": "Cerebras S-1 (2024)", "status": "UNVERIFIED", "notes": "Inference from the 2023 S-1 disclosure, not re-pulled from a FY25 10-K via available skills. Narrative flags this in data_gaps and hedges to 'roughly'. Recommend keeping the hedge."},
+    {"claim": "CEO Andrew Feldman", "source_cited": "general knowledge", "status": "UNVERIFIED", "notes": "Not retrievable via yfinance in this run; widely documented but not skill-sourced. Low risk."},
+    {"claim": "Forward P/E ~283x", "source_cited": "yfinance", "status": "VERIFIED", "notes": "forwardPE 282.69."},
+    {"claim": "Peer multiples (NVDA 19.9x P/S, ARM 75x, ALAB 59x, NVDA fwd PE 16.5x)", "source_cited": "yfinance same-session", "status": "VERIFIED", "notes": "Pulled 2026-06-09 alongside the target. Peers_read narrative uses P/S; peers table pe_ntm column mixes forward P/E values, internally consistent with the read."}
+  ],
+  "valuation_reproducibility": {
+    "ran_compute_script": true,
+    "matches_published": true,
+    "diff_notes": "Re-ran dcf_compute.py on CBRS_inputs.json; output identical to published CBRS_valuation.json except the computed_at timestamp. Hand-summed weighted contributions reproduce $50.64."
+  },
+  "summary": "The math is solid and fully reproducible: every market and historical figure ties to yfinance, the DCF re-runs byte-for-byte, scenario probabilities plus the cross-check weight sum to 1.0, and the blended $50.64 (rounded $51, -78.7%) checks by hand. Two soft spots, both already flagged in data_gaps: the G42 ~83-87% concentration is an inference from the 2024 S-1 rather than a re-pulled FY25 10-K footnote, and the CEO name is not skill-sourced. The yfinance sharesOutstanding field (34.5M) conflicts with impliedShares (219.6M); the report correctly uses the implied figure that reconciles to market cap. No changes required to the conclusion; recommend retaining the existing hedges on G42 share."
+}

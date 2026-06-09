@@ -1,0 +1,68 @@
+{
+  "ticker": "CBRS",
+  "company_name": "Cerebras Systems Inc.",
+  "bull_thesis_sentence": "Cerebras sells the only wafer-scale chip in production and turns it into the fastest AI inference cloud on the market, so it sits on the steepest part of the inference demand curve just as reasoning models multiply token consumption.",
+  "bull_thesis_bullets": [
+    "Revenue went from $24.6M in 2022 to $510.0M in 2025, a 175% CAGR, and the WSE-3 plus Cerebras Inference give it a product nobody else can copy on a short timeline.",
+    "Inference is the structural driver: reasoning models burn 10-100x more tokens per query, and Cerebras posts the highest tokens-per-second numbers in published benchmarks, which is exactly what latency-sensitive buyers pay up for.",
+    "At ~$52B market cap the stock already prices hypergrowth, but if revenue compounds past $3B by 2030 at a 25%+ FCF margin, today's price sits below a defensible DCF on the bull ramp."
+  ],
+  "bull_catalysts": [
+    {"id": 1, "title": "Inference cloud scaling on reasoning-model demand", "body": "Cerebras Inference, launched August 2024, runs Llama and other open models at the top of independent speed benchmarks, often several times faster than GPU-based endpoints. The 2025 wave of reasoning models (chain-of-thought, agentic loops) raised tokens generated per query by an order of magnitude. Cerebras monetizes speed: customers who need sub-second responses on large models pay a premium per million tokens. As inference shifts from a cost center to the dominant compute workload, a vendor with a genuine latency edge captures share that GPU clusters can't match on the same power budget."},
+    {"id": 2, "title": "G42 anchor plus Condor Galaxy buildout", "body": "G42, the UAE AI group, anchored Cerebras with multi-year purchase commitments and the Condor Galaxy supercomputer program, a series of CS-3 clusters. This gave Cerebras revenue visibility most pre-IPO AI hardware firms never had, and it funded the manufacturing ramp that pushed 2024 revenue to $290M and 2025 to $510M. The relationship is concentration risk, but it is also a multi-hundred-million-dollar backlog that underwrites the next two years of capacity."},
+    {"id": 3, "title": "Customer diversification beyond the anchor", "body": "Named deployments now span Mistral, AlphaSense, GlaxoSmithKline, AstraZeneca, Mayo Clinic, TotalEnergies and US national labs including Argonne, Lawrence Livermore and Sandia. Each new logo lowers the G42 dependence that the bear case leans on. The 2025 revenue mix is less concentrated than the 2023 S-1 disclosure showed, and the pipeline of sovereign and enterprise buyers keeps widening."},
+    {"id": 4, "title": "Wafer-scale moat: WSE-3 and the WSE-4 roadmap", "body": "The Wafer Scale Engine 3 is a single chip the size of a dinner plate, 4 trillion transistors, 900,000 cores, built to keep an entire large model on one piece of silicon. That removes the networking bottleneck that forces GPU clusters to split models across thousands of devices. Replicating it means solving wafer-scale yield, packaging and power delivery that took Cerebras most of a decade. The WSE-4 roadmap extends the lead, and the architecture is genuinely differentiated rather than a faster version of someone else's part."},
+    {"id": 5, "title": "Sovereign AI spend", "body": "Governments in the Gulf, and increasingly elsewhere, are buying domestic AI compute capacity for strategic reasons rather than pure ROI. Cerebras is already inside that budget through G42 and the Condor Galaxy program. Sovereign deals are large, multi-year and relatively price-insensitive, and Cerebras's turnkey supercomputer model fits a buyer that wants capability without building a GPU networking team from scratch."},
+    {"id": 6, "title": "US national-lab and government contracts", "body": "Argonne, Lawrence Livermore and Sandia run Cerebras systems for scientific computing and large-model training. Government and research buyers validate the technology, carry long procurement cycles that smooth revenue, and open the door to classified and defense workloads where a US-designed wafer-scale part has a sourcing advantage over imported accelerators."},
+    {"id": 7, "title": "Gross margin already at 39% and climbing as mix shifts to cloud", "body": "Gross margin reached 39% in 2025, up from near zero in 2022, as the company moved from one-off system sales toward recurring inference cloud revenue. Cloud and inference carry structurally higher margins than hardware shipments. As that mix grows, gross margin has room toward the 50s, which is the swing factor that turns a loss-making income statement into a cash generator."},
+    {"id": 8, "title": "Path to operating profitability as revenue outgrows fixed R&D", "body": "R&D was $243M in 2025 against $510M of revenue, roughly 48%. That ratio falls fast when revenue doubles and R&D grows at half that pace. Operating loss was $145M in 2025 on $510M revenue; at $1B-plus revenue with the same absolute R&D and a higher gross margin, the model crosses into operating profit. The fixed-cost base is already built."},
+    {"id": 9, "title": "Balance sheet de-risked by the IPO", "body": "Cash stood at $701M at year-end 2025 against $262M of debt, net cash of roughly $440M before the IPO proceeds. That funds the manufacturing ramp and the WSE-4 program without a near-term dilution gun to the head. A clean balance sheet is rare for an AI hardware company still burning cash, and it removes the financing risk that kills most of this cohort."},
+    {"id": 10, "title": "Scarcity value as the only public wafer-scale pure-play", "body": "Public-market investors who want direct exposure to non-GPU AI inference have almost nowhere else to go. Cerebras is the one listed wafer-scale name. That scarcity supports a premium multiple and makes the stock a natural acquisition or partnership target for a hyperscaler or chip incumbent that wants an inference-speed answer to Nvidia."}
+  ],
+  "business_facts": {
+    "summary": "Cerebras Systems designs and sells wafer-scale AI computers built around the Wafer Scale Engine, the largest chip in production. It sells CS-3 systems and turnkey supercomputers, and it runs Cerebras Inference, a cloud service that serves large language models at industry-leading speed.",
+    "business_model": "Revenue comes from two channels: hardware (CS-3 systems and full Condor Galaxy supercomputer installations sold or leased to customers like G42 and national labs) and a growing cloud business where customers pay per million tokens or for dedicated capacity on Cerebras-operated inference infrastructure. The mix is shifting from lumpy system sales toward higher-margin recurring cloud.",
+    "segments": [
+      {"name": "Systems and supercomputers (hardware)", "revenue_share_pct": null, "growth_yoy_pct": null, "margin_pct": null, "description": "CS-3 systems and Condor Galaxy clusters. Historically the majority of revenue, anchored by G42. Lower gross margin than cloud."},
+      {"name": "Cerebras Inference / cloud", "revenue_share_pct": null, "growth_yoy_pct": null, "margin_pct": null, "description": "Per-token and dedicated-capacity cloud service launched August 2024. Faster-growing, higher-margin, the strategic center of the bull case."}
+    ],
+    "customers": [
+      {"name": "G42", "revenue_share_pct": null, "importance": "Anchor customer, UAE AI group, Condor Galaxy program. Majority of 2023 revenue per S-1; share declining as base diversifies."},
+      {"name": "Mistral AI", "revenue_share_pct": null, "importance": "Inference partner for fast model serving"},
+      {"name": "US national labs (Argonne, Lawrence Livermore, Sandia)", "revenue_share_pct": null, "importance": "Scientific computing and large-model training, government validation"},
+      {"name": "Enterprise (AlphaSense, GlaxoSmithKline, AstraZeneca, Mayo Clinic, TotalEnergies)", "revenue_share_pct": null, "importance": "Diversifying enterprise logos across pharma, finance, healthcare, energy"}
+    ],
+    "geographic_revenue": [
+      {"region": "Middle East (UAE, via G42)", "pct": null},
+      {"region": "Americas", "pct": null}
+    ]
+  },
+  "industry_position_bull": {
+    "market_overview": "AI accelerator spend is the largest capital cycle in tech history, and the workload mix is tilting from training toward inference as deployed models proliferate. Inference rewards latency and tokens-per-second, which is the axis Cerebras optimizes for rather than raw training FLOPs. A wafer-scale architecture sidesteps the inter-chip networking that caps GPU inference speed.",
+    "tam_usd_bn": 400,
+    "moat": "Wafer-scale engineering: single-chip yield, packaging, power and cooling that took Cerebras nearly a decade to productize, plus a software stack that maps large models onto one chip without manual sharding. The speed lead in inference is measurable in published benchmarks, not marketing."
+  },
+  "peers_positive_read": "Against Nvidia at roughly 20-30x sales in its hypergrowth phases and other AI-exposed names trading on forward revenue, Cerebras at ~102x trailing sales looks expensive on the trailing line but the denominator is moving fast: revenue grew 76% in 2025 and the inference mix is the part that compounds. Pure-play scarcity and a credible path to a multi-billion revenue base support a premium that a backward-looking multiple understates.",
+  "bull_valuation_lens": {
+    "method_preference": "DCF",
+    "method_reasoning": "Cerebras is loss-making today but has a clear revenue ramp, an improving gross margin, and a fixed R&D base that scales into profit. A long-horizon DCF on revenue, margin and FCF conversion captures that better than a trailing multiple. An EV/Sales cross-check anchors the near-term sanity test given the premium valuation.",
+    "bull_dcf_assumptions": {
+      "wacc": 0.105,
+      "wacc_reasoning": "High beta, single-architecture concentration and customer concentration argue for a cost of capital above the semi-cap average. 10.5% on the bull case reflects a clean balance sheet and a proven demand anchor offsetting some of that risk.",
+      "terminal_growth": 0.040,
+      "terminal_growth_reasoning": "Inference compute should outgrow GDP well past the explicit window, so a 4.0% terminal rate is defensible for the long-run franchise.",
+      "fcf_growth_path": "revenue +60 / +50 / +40 / +32 / +25 / +20 / +16 / +13 / +11 / +9, FCF margin ramping from negative to 25%+ by year 7",
+      "fcf_growth_reasoning": "Revenue doubles roughly every 18 months early, then decelerates as the base grows. Gross margin climbs toward the low 50s on cloud mix; R&D as a percent of revenue falls from 48% toward the high teens; FCF turns positive around year 4 and reaches a mature 25%+ margin as the inference cloud scales."
+    }
+  },
+  "sources_used": [
+    "yfinance-data: live price $237.83, market cap $52.2B, ~219.6M implied shares, 52w range $196.73-$386.34 (2026-06-09)",
+    "yfinance-data financials: revenue 2022 $24.6M / 2023 $78.7M / 2024 $290.3M / 2025 $510.0M; GM 39% 2025; operating income -$145M 2025; R&D $243M 2025; cash $701M; debt $262M",
+    "Cerebras S-1 (filed Sept 2024): G42 customer concentration, WSE-3 specifications, Condor Galaxy program, named customers"
+  ],
+  "open_questions": [
+    "Exact 2025 split between hardware and inference-cloud revenue is not in the yfinance data; need the 10-K segment note.",
+    "G42 revenue share for FY2025 (was ~83-87% in the 2023 S-1 disclosure); diversification claim needs the latest 10-K concentration footnote.",
+    "Sell-side coverage is thin; yfinance returned no mean price target or analyst count, so no consensus anchor is available."
+  ]
+}
