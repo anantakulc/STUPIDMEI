@@ -1,0 +1,596 @@
+{
+  "schema_version": "1.0",
+  "ticker": "NOW",
+  "currency": "USD",
+  "current_price": 106.97,
+  "shares_outstanding_b": 1.031308,
+  "net_debt_b": -6.0,
+  "computed_at": "2026-06-10T04:33:13Z",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "ServiceNow is a high-margin, high-retention enterprise-software compounder with strong free cash flow, so an FCFF DCF on its subscription model is the right primary method. Because GAAP EBIT understates cash earnings (deferred revenue, SBC), the EBIT-margin inputs use a normalized cash-earnings proxy with that reasoning stated. An EV/EBITDA cross-check against SaaS peers anchors the multiple.",
+    "inputs": {
+      "wacc": {
+        "value": 0.1,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.2,
+          "erp": 0.05,
+          "debt_weight": 0.0,
+          "cost_of_debt_after_tax": 0.0
+        },
+        "reasoning": "Ke = 4.3% Rf + 1.20 beta x 5.0% ERP = 10.3%. Beta moderate for a durable subscription model with high recurring revenue. Net-cash balance sheet sets WACC ~ Ke at 10.0%.",
+        "adjudication_notes": "10.0% equals Ke on net cash; low-mid band, fitting a high-quality recurring-revenue platform.",
+        "components_reasoned": {
+          "rf": {
+            "value": 0.043,
+            "reasoning": "Risk-free rate, typically the local 10Y government bond yield. US ~4.4%, EM countries higher."
+          },
+          "beta": {
+            "value": 1.2,
+            "reasoning": "Equity beta vs local index. From yfinance unless sanitized to sector default."
+          },
+          "erp": {
+            "value": 0.05,
+            "reasoning": "Equity risk premium. DM ~5.5%, EM Indonesia ~6.5%, EM India ~6.5%."
+          },
+          "debt_weight": {
+            "value": 0.0,
+            "reasoning": "Debt portion of capital structure. Net debt / (net debt + market cap)."
+          },
+          "cost_of_debt_after_tax": {
+            "value": 0.0,
+            "reasoning": "Post-tax cost of debt. Yield on outstanding bonds x (1 - tax rate)."
+          }
+        }
+      },
+      "terminal_growth": {
+        "value": 0.04,
+        "reasoning": "4.0% terminal: a sticky enterprise platform with 98% renewal and a broadening AI monetization lever supports an above-GDP terminal rate."
+      },
+      "forecast_horizon_years": 8,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 3.179,
+          "revenue_b": 15.6,
+          "revenue_growth_pct": 20.0,
+          "ebit_margin": 0.22,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": -0.02,
+          "rationale": "FY26E +20%: subscription revenue compounds on platform expansion (ITSM, ITOM, security, and AI 'Now Assist' upsell). EBIT margin uses a normalized cash-earnings proxy above GAAP given deferred-revenue and SBC dynamics."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 4.107,
+          "revenue_b": 18.7,
+          "revenue_growth_pct": 20.0,
+          "ebit_margin": 0.24,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": -0.02,
+          "rationale": "+20%: Now Assist (genAI) ACV ramps as a new pricing lever; net revenue retention stays ~115%+."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 5.158,
+          "revenue_b": 22.1,
+          "revenue_growth_pct": 18.0,
+          "ebit_margin": 0.26,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": -0.018,
+          "rationale": "+18%: enterprise platform standardization and AI seats lift ARPU; operating leverage builds."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 6.177,
+          "revenue_b": 25.6,
+          "revenue_growth_pct": 16.0,
+          "ebit_margin": 0.27,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.018,
+          "wc_change_pct_of_revenue": -0.016,
+          "rationale": "+16%: durable mid-teens growth as the install base matures; FCF margin in the low-30s."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 7.218,
+          "revenue_b": 29.2,
+          "revenue_growth_pct": 14.0,
+          "ebit_margin": 0.28,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.018,
+          "wc_change_pct_of_revenue": -0.014,
+          "rationale": "+14%: growth normalizes; platform breadth sustains pricing power."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 8.374,
+          "revenue_b": 32.7,
+          "revenue_growth_pct": 12.0,
+          "ebit_margin": 0.29,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": -0.012,
+          "rationale": "+12%: maturing growth, high-20s EBIT margin."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 9.432,
+          "revenue_b": 36.0,
+          "revenue_growth_pct": 10.0,
+          "ebit_margin": 0.3,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": -0.01,
+          "rationale": "+10%: approaching steady-state SaaS economics."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 10.27,
+          "revenue_b": 39.2,
+          "revenue_growth_pct": 9.0,
+          "ebit_margin": 0.3,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": -0.01,
+          "rationale": "+9%: durable franchise, ~30% normalized margin."
+        }
+      ]
+    },
+    "outputs": {
+      "pv_explicit_fcf_b": 33.218,
+      "terminal_value_b": 178.013,
+      "pv_terminal_b": 83.045,
+      "implied_ev_b": 116.263,
+      "implied_equity_b": 122.263,
+      "implied_px": 118.55,
+      "calculation_trace": {
+        "wacc": {
+          "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
+          "steps": [
+            {
+              "label": "Cost of equity (Ke)",
+              "expression": "0.0430 + 1.200 x 0.0500",
+              "result": "0.1030 (10.30%)"
+            },
+            {
+              "label": "Equity weight x Ke",
+              "expression": "1.00 x 0.1030",
+              "result": "0.1030"
+            },
+            {
+              "label": "Debt weight x after-tax Kd",
+              "expression": "0.00 x 0.0000",
+              "result": "0.0000"
+            },
+            {
+              "label": "WACC",
+              "expression": "0.1030 + 0.0000",
+              "result": "0.1000 (10.00%)"
+            }
+          ]
+        },
+        "explicit_fcf": {
+          "formula": "PV explicit FCF = sum( FCF_t / (1+WACC)^t ) for t = 1..N",
+          "per_year": [
+            {
+              "year": 2026,
+              "fcf_b": 3.179,
+              "discount_factor": 0.9091,
+              "pv_b": 2.89
+            },
+            {
+              "year": 2027,
+              "fcf_b": 4.107,
+              "discount_factor": 0.8264,
+              "pv_b": 3.394
+            },
+            {
+              "year": 2028,
+              "fcf_b": 5.158,
+              "discount_factor": 0.7513,
+              "pv_b": 3.875
+            },
+            {
+              "year": 2029,
+              "fcf_b": 6.177,
+              "discount_factor": 0.683,
+              "pv_b": 4.219
+            },
+            {
+              "year": 2030,
+              "fcf_b": 7.218,
+              "discount_factor": 0.6209,
+              "pv_b": 4.482
+            },
+            {
+              "year": 2031,
+              "fcf_b": 8.374,
+              "discount_factor": 0.5645,
+              "pv_b": 4.727
+            },
+            {
+              "year": 2032,
+              "fcf_b": 9.432,
+              "discount_factor": 0.5132,
+              "pv_b": 4.84
+            },
+            {
+              "year": 2033,
+              "fcf_b": 10.27,
+              "discount_factor": 0.4665,
+              "pv_b": 4.791
+            }
+          ],
+          "result": "33.218B"
+        },
+        "terminal_value": {
+          "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
+          "steps": [
+            {
+              "label": "Last projected FCF",
+              "expression": "FCF_8",
+              "result": "10.270B"
+            },
+            {
+              "label": "Terminal FCF",
+              "expression": "10.270 x (1 + 0.0400)",
+              "result": "10.681B"
+            },
+            {
+              "label": "Terminal value",
+              "expression": "10.681 / (0.1000 - 0.0400)",
+              "result": "178.013B"
+            },
+            {
+              "label": "PV of terminal value",
+              "expression": "178.013 / (1+0.1000)^8",
+              "result": "83.045B"
+            }
+          ]
+        },
+        "bridge_to_implied_px": {
+          "formula": "Implied EV = PV explicit FCF + PV terminal;  Equity = EV - Net Debt;  Px = Equity / Shares",
+          "steps": [
+            {
+              "label": "Implied EV",
+              "expression": "33.218 + 83.045",
+              "result": "116.263B"
+            },
+            {
+              "label": "Less: net debt",
+              "expression": "116.263 - -6.000",
+              "result": "122.263B"
+            },
+            {
+              "label": "Implied price per share",
+              "expression": "122.263B / 1.031B shares",
+              "result": "$118.55"
+            }
+          ]
+        }
+      },
+      "fcff_build": [
+        {
+          "revenue_b": 15.6,
+          "ebit_margin": 0.22,
+          "ebit_b": 3.432,
+          "tax_rate": 0.21,
+          "nopat_b": 2.711,
+          "da_b": 0.468,
+          "da_pct": 0.03,
+          "capex_b": 0.312,
+          "capex_pct": 0.02,
+          "wc_change_b": -0.312,
+          "wc_pct": -0.02,
+          "fcff_derived_b": 3.179,
+          "has_full_build": true,
+          "year": 2026,
+          "fcf_b": 3.179
+        },
+        {
+          "revenue_b": 18.7,
+          "ebit_margin": 0.24,
+          "ebit_b": 4.488,
+          "tax_rate": 0.21,
+          "nopat_b": 3.546,
+          "da_b": 0.561,
+          "da_pct": 0.03,
+          "capex_b": 0.374,
+          "capex_pct": 0.02,
+          "wc_change_b": -0.374,
+          "wc_pct": -0.02,
+          "fcff_derived_b": 4.107,
+          "has_full_build": true,
+          "year": 2027,
+          "fcf_b": 4.107
+        },
+        {
+          "revenue_b": 22.1,
+          "ebit_margin": 0.26,
+          "ebit_b": 5.746,
+          "tax_rate": 0.21,
+          "nopat_b": 4.539,
+          "da_b": 0.663,
+          "da_pct": 0.03,
+          "capex_b": 0.442,
+          "capex_pct": 0.02,
+          "wc_change_b": -0.398,
+          "wc_pct": -0.018,
+          "fcff_derived_b": 5.158,
+          "has_full_build": true,
+          "year": 2028,
+          "fcf_b": 5.158
+        },
+        {
+          "revenue_b": 25.6,
+          "ebit_margin": 0.27,
+          "ebit_b": 6.912,
+          "tax_rate": 0.21,
+          "nopat_b": 5.46,
+          "da_b": 0.768,
+          "da_pct": 0.03,
+          "capex_b": 0.461,
+          "capex_pct": 0.018,
+          "wc_change_b": -0.41,
+          "wc_pct": -0.016,
+          "fcff_derived_b": 6.177,
+          "has_full_build": true,
+          "year": 2029,
+          "fcf_b": 6.177
+        },
+        {
+          "revenue_b": 29.2,
+          "ebit_margin": 0.28,
+          "ebit_b": 8.176,
+          "tax_rate": 0.21,
+          "nopat_b": 6.459,
+          "da_b": 0.876,
+          "da_pct": 0.03,
+          "capex_b": 0.526,
+          "capex_pct": 0.018,
+          "wc_change_b": -0.409,
+          "wc_pct": -0.014,
+          "fcff_derived_b": 7.218,
+          "has_full_build": true,
+          "year": 2030,
+          "fcf_b": 7.218
+        },
+        {
+          "revenue_b": 32.7,
+          "ebit_margin": 0.29,
+          "ebit_b": 9.483,
+          "tax_rate": 0.21,
+          "nopat_b": 7.492,
+          "da_b": 0.981,
+          "da_pct": 0.03,
+          "capex_b": 0.491,
+          "capex_pct": 0.015,
+          "wc_change_b": -0.392,
+          "wc_pct": -0.012,
+          "fcff_derived_b": 8.374,
+          "has_full_build": true,
+          "year": 2031,
+          "fcf_b": 8.374
+        },
+        {
+          "revenue_b": 36.0,
+          "ebit_margin": 0.3,
+          "ebit_b": 10.8,
+          "tax_rate": 0.21,
+          "nopat_b": 8.532,
+          "da_b": 1.08,
+          "da_pct": 0.03,
+          "capex_b": 0.54,
+          "capex_pct": 0.015,
+          "wc_change_b": -0.36,
+          "wc_pct": -0.01,
+          "fcff_derived_b": 9.432,
+          "has_full_build": true,
+          "year": 2032,
+          "fcf_b": 9.432
+        },
+        {
+          "revenue_b": 39.2,
+          "ebit_margin": 0.3,
+          "ebit_b": 11.76,
+          "tax_rate": 0.21,
+          "nopat_b": 9.29,
+          "da_b": 1.176,
+          "da_pct": 0.03,
+          "capex_b": 0.588,
+          "capex_pct": 0.015,
+          "wc_change_b": -0.392,
+          "wc_pct": -0.01,
+          "fcff_derived_b": 10.27,
+          "has_full_build": true,
+          "year": 2033,
+          "fcf_b": 10.27
+        }
+      ],
+      "dual_terminal_value": {
+        "gordon_tv_b": 178.01333333333332,
+        "gordon_pv_b": 83.04453377573527,
+        "exit_multiple_tv_b": null,
+        "exit_multiple_pv_b": null,
+        "exit_multiple_x": null,
+        "blended_tv_b": null,
+        "blended_pv_b": null,
+        "terminal_ebitda_b": 12.936
+      },
+      "wacc_adjudication": {
+        "sector": "(no sector hint)",
+        "sector_band": [
+          0.08,
+          0.12
+        ],
+        "formula_wacc": 0.1,
+        "verdict": "within band (8.0%-12.0%)",
+        "ke": 0.103,
+        "notes": "10.0% equals Ke on net cash; low-mid band, fitting a high-quality recurring-revenue platform."
+      }
+    },
+    "sensitivity": {
+      "rows_label": "WACC",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.09,
+        0.095,
+        0.1,
+        0.105,
+        0.11
+      ],
+      "col_values": [
+        0.03,
+        0.035,
+        0.04,
+        0.045,
+        0.05
+      ],
+      "implied_px_matrix": [
+        [
+          125.29,
+          133.54,
+          143.45,
+          155.55,
+          170.68
+        ],
+        [
+          115.1,
+          121.86,
+          129.85,
+          139.45,
+          151.17
+        ],
+        [
+          106.38,
+          112.0,
+          118.55,
+          126.29,
+          135.59
+        ],
+        [
+          98.85,
+          103.57,
+          109.01,
+          115.36,
+          122.86
+        ],
+        [
+          92.29,
+          96.28,
+          100.85,
+          106.12,
+          112.27
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "EV/FCF (proxied via EV/EBITDA on a normalized basis) cross-check against high-quality enterprise-SaaS compounders, the relevant peer cohort for a 20% grower with 30%+ FCF margins.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 28.0,
+      "fy_estimate": 4.2,
+      "peers_used": [
+        "CRM",
+        "WDAY",
+        "ADBE",
+        "SNOW",
+        "INTU"
+      ],
+      "reasoning": "28x applied to FY26E normalized EBITDA of ~$4.2B. In line with premium SaaS compounders; lands near spot, reflecting that NOW is richly but not absurdly valued versus its growth-plus-margin profile."
+    },
+    "outputs": {
+      "implied_ev_b": 117.6,
+      "implied_equity_b": 123.6,
+      "implied_px": 119.85
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.115,
+        "terminal_growth": 0.03,
+        "fcf_multiplier": 0.78
+      },
+      "implied_px": 68.75,
+      "probability": 0.2,
+      "probability_reasoning": "A fifth-weight. The main risks are a macro-driven enterprise IT-budget slowdown, genAI displacing some workflow seats, and a high multiple that de-rates on any growth deceleration below 18%.",
+      "reasoning": "Seat-based growth slows as AI agents compress headcount-linked licensing, and the premium multiple compresses."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "implied_px": 118.55,
+      "probability": 0.55,
+      "probability_reasoning": "Central case, high conviction. ServiceNow has ~98% renewal, 115%+ net retention and a credible AI-monetization lever; 20% growth with expanding FCF margin is the most likely path.",
+      "reasoning": "Platform expansion and Now Assist upsell sustain ~20% growth with FCF margin grinding into the low-30s."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.095,
+        "terminal_growth": 0.045,
+        "fcf_multiplier": 1.25
+      },
+      "implied_px": 172.85,
+      "probability": 0.05,
+      "probability_reasoning": "Modest odds. Requires Now Assist genAI ACV to become a large, fast-growing second engine and net retention to re-accelerate.",
+      "reasoning": "AI agents become a major new revenue line; growth re-accelerates and the platform compounds above plan."
+    }
+  ],
+  "blended_target": 111.56,
+  "blending_logic": "55% Base + 20% Bear + 5% Bull + 20% EV/EBITDA cross-check.",
+  "blending_weights": {
+    "cross_check": 0.2
+  },
+  "weights_reasoning": "Base gets a high 55% because the subscription model's visibility (98% renewal, 115%+ NRR) makes the central path unusually reliable. Bear 20% for an enterprise-budget/AI-seat-displacement scenario. Bull only 5% because much of the AI optionality is already in the price. Cross-check 20% anchors against premium SaaS multiples.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 68.75,
+      "weight": 0.2,
+      "contribution": 13.75,
+      "reasoning": "A fifth-weight. The main risks are a macro-driven enterprise IT-budget slowdown, genAI displacing some workflow seats, and a high multiple that de-rates on any growth deceleration below 18%."
+    },
+    {
+      "component": "Base",
+      "implied_px": 118.55,
+      "weight": 0.55,
+      "contribution": 65.2,
+      "reasoning": "Central case, high conviction. ServiceNow has ~98% renewal, 115%+ net retention and a credible AI-monetization lever; 20% growth with expanding FCF margin is the most likely path."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 172.85,
+      "weight": 0.05,
+      "contribution": 8.64,
+      "reasoning": "Modest odds. Requires Now Assist genAI ACV to become a large, fast-growing second engine and net retention to re-accelerate."
+    },
+    {
+      "component": "Multiple",
+      "implied_px": 119.85,
+      "weight": 0.2,
+      "contribution": 23.97,
+      "reasoning": "EV/FCF (proxied via EV/EBITDA on a normalized basis) cross-check against high-quality enterprise-SaaS compounders, the relevant peer cohort for a 20% grower with 30%+ FCF margins."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": 4.3
+}

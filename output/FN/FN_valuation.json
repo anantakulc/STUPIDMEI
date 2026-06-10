@@ -1,0 +1,596 @@
+{
+  "schema_version": "1.0",
+  "ticker": "FN",
+  "currency": "USD",
+  "current_price": 586.0,
+  "shares_outstanding_b": 0.03583,
+  "net_debt_b": -0.9,
+  "computed_at": "2026-06-10T04:33:13Z",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "Fabrinet generates steady, positive free cash flow as the contract assembler behind the leading AI optical-module programs, so an FCFF DCF is appropriate. Because it is a thin-margin assembler trading at a rich post-run multiple, an EV/EBITDA cross-check against optical and manufacturing peers disciplines the target.",
+    "inputs": {
+      "wacc": {
+        "value": 0.108,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.3,
+          "erp": 0.05,
+          "debt_weight": 0.0,
+          "cost_of_debt_after_tax": 0.0
+        },
+        "reasoning": "Ke = 4.3% Rf + 1.30 beta x 5.0% ERP = 10.8%. Net-cash balance sheet sets WACC = Ke at 10.8%. Beta reflects customer concentration and datacom cyclicality offset by a debt-free balance sheet.",
+        "adjudication_notes": "10.8% equals Ke on net cash; mid-band for a concentrated, thin-margin assembler.",
+        "components_reasoned": {
+          "rf": {
+            "value": 0.043,
+            "reasoning": "Risk-free rate, typically the local 10Y government bond yield. US ~4.4%, EM countries higher."
+          },
+          "beta": {
+            "value": 1.3,
+            "reasoning": "Equity beta vs local index. From yfinance unless sanitized to sector default."
+          },
+          "erp": {
+            "value": 0.05,
+            "reasoning": "Equity risk premium. DM ~5.5%, EM Indonesia ~6.5%, EM India ~6.5%."
+          },
+          "debt_weight": {
+            "value": 0.0,
+            "reasoning": "Debt portion of capital structure. Net debt / (net debt + market cap)."
+          },
+          "cost_of_debt_after_tax": {
+            "value": 0.0,
+            "reasoning": "Post-tax cost of debt. Yield on outstanding bonds x (1 - tax rate)."
+          }
+        }
+      },
+      "terminal_growth": {
+        "value": 0.03,
+        "reasoning": "3.0% terminal: optical assembly is a GDP-plus business once the AI build matures; thin margins and customer concentration cap the durable growth rate."
+      },
+      "forecast_horizon_years": 8,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 0.315,
+          "revenue_b": 4.0,
+          "revenue_growth_pct": 18.0,
+          "ebit_margin": 0.125,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.02,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": 0.02,
+          "rationale": "FY26E (Jun) +18%: datacom optical-module assembly for AI (800G/1.6T) drives the ramp; Fabrinet is the contract manufacturer behind the leading transceiver and silicon-photonics programs."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 0.387,
+          "revenue_b": 4.66,
+          "revenue_growth_pct": 16.5,
+          "ebit_margin": 0.128,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.02,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": 0.018,
+          "rationale": "+16.5%: 1.6T volume scales and new optical-engine programs onshore; modest margin lift from mix and scale."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 0.475,
+          "revenue_b": 5.31,
+          "revenue_growth_pct": 14.0,
+          "ebit_margin": 0.131,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.02,
+          "capex_pct_of_revenue": 0.018,
+          "wc_change_pct_of_revenue": 0.016,
+          "rationale": "+14%: AI optical content keeps compounding; margins inch up on automation."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 0.558,
+          "revenue_b": 5.95,
+          "revenue_growth_pct": 12.0,
+          "ebit_margin": 0.134,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.02,
+          "capex_pct_of_revenue": 0.018,
+          "wc_change_pct_of_revenue": 0.014,
+          "rationale": "+12%: growth normalizes; FN remains a key Western/Thai assembly node."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 0.651,
+          "revenue_b": 6.55,
+          "revenue_growth_pct": 10.0,
+          "ebit_margin": 0.136,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.02,
+          "capex_pct_of_revenue": 0.016,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+10%: steady compounding on a larger base."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 0.728,
+          "revenue_b": 7.07,
+          "revenue_growth_pct": 8.0,
+          "ebit_margin": 0.138,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.02,
+          "capex_pct_of_revenue": 0.016,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+8%: deceleration continues."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 0.793,
+          "revenue_b": 7.57,
+          "revenue_growth_pct": 7.0,
+          "ebit_margin": 0.139,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.02,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+7%: maturing growth."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 0.861,
+          "revenue_b": 8.0,
+          "revenue_growth_pct": 5.7,
+          "ebit_margin": 0.14,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.02,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": 0.008,
+          "rationale": "+5.7%: approaching steady state, ~14% operating margin franchise."
+        }
+      ]
+    },
+    "outputs": {
+      "pv_explicit_fcf_b": 2.868,
+      "terminal_value_b": 11.37,
+      "pv_terminal_b": 5.005,
+      "implied_ev_b": 7.873,
+      "implied_equity_b": 8.773,
+      "implied_px": 244.86,
+      "calculation_trace": {
+        "wacc": {
+          "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
+          "steps": [
+            {
+              "label": "Cost of equity (Ke)",
+              "expression": "0.0430 + 1.300 x 0.0500",
+              "result": "0.1080 (10.80%)"
+            },
+            {
+              "label": "Equity weight x Ke",
+              "expression": "1.00 x 0.1080",
+              "result": "0.1080"
+            },
+            {
+              "label": "Debt weight x after-tax Kd",
+              "expression": "0.00 x 0.0000",
+              "result": "0.0000"
+            },
+            {
+              "label": "WACC",
+              "expression": "0.1080 + 0.0000",
+              "result": "0.1080 (10.80%)"
+            }
+          ]
+        },
+        "explicit_fcf": {
+          "formula": "PV explicit FCF = sum( FCF_t / (1+WACC)^t ) for t = 1..N",
+          "per_year": [
+            {
+              "year": 2026,
+              "fcf_b": 0.315,
+              "discount_factor": 0.9025,
+              "pv_b": 0.284
+            },
+            {
+              "year": 2027,
+              "fcf_b": 0.387,
+              "discount_factor": 0.8146,
+              "pv_b": 0.315
+            },
+            {
+              "year": 2028,
+              "fcf_b": 0.475,
+              "discount_factor": 0.7352,
+              "pv_b": 0.349
+            },
+            {
+              "year": 2029,
+              "fcf_b": 0.558,
+              "discount_factor": 0.6635,
+              "pv_b": 0.37
+            },
+            {
+              "year": 2030,
+              "fcf_b": 0.651,
+              "discount_factor": 0.5988,
+              "pv_b": 0.39
+            },
+            {
+              "year": 2031,
+              "fcf_b": 0.728,
+              "discount_factor": 0.5405,
+              "pv_b": 0.393
+            },
+            {
+              "year": 2032,
+              "fcf_b": 0.793,
+              "discount_factor": 0.4878,
+              "pv_b": 0.387
+            },
+            {
+              "year": 2033,
+              "fcf_b": 0.861,
+              "discount_factor": 0.4402,
+              "pv_b": 0.379
+            }
+          ],
+          "result": "2.868B"
+        },
+        "terminal_value": {
+          "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
+          "steps": [
+            {
+              "label": "Last projected FCF",
+              "expression": "FCF_8",
+              "result": "0.861B"
+            },
+            {
+              "label": "Terminal FCF",
+              "expression": "0.861 x (1 + 0.0300)",
+              "result": "0.887B"
+            },
+            {
+              "label": "Terminal value",
+              "expression": "0.887 / (0.1080 - 0.0300)",
+              "result": "11.370B"
+            },
+            {
+              "label": "PV of terminal value",
+              "expression": "11.370 / (1+0.1080)^8",
+              "result": "5.005B"
+            }
+          ]
+        },
+        "bridge_to_implied_px": {
+          "formula": "Implied EV = PV explicit FCF + PV terminal;  Equity = EV - Net Debt;  Px = Equity / Shares",
+          "steps": [
+            {
+              "label": "Implied EV",
+              "expression": "2.868 + 5.005",
+              "result": "7.873B"
+            },
+            {
+              "label": "Less: net debt",
+              "expression": "7.873 - -0.900",
+              "result": "8.773B"
+            },
+            {
+              "label": "Implied price per share",
+              "expression": "8.773B / 0.036B shares",
+              "result": "$244.86"
+            }
+          ]
+        }
+      },
+      "fcff_build": [
+        {
+          "revenue_b": 4.0,
+          "ebit_margin": 0.125,
+          "ebit_b": 0.5,
+          "tax_rate": 0.21,
+          "nopat_b": 0.395,
+          "da_b": 0.08,
+          "da_pct": 0.02,
+          "capex_b": 0.08,
+          "capex_pct": 0.02,
+          "wc_change_b": 0.08,
+          "wc_pct": 0.02,
+          "fcff_derived_b": 0.315,
+          "has_full_build": true,
+          "year": 2026,
+          "fcf_b": 0.315
+        },
+        {
+          "revenue_b": 4.66,
+          "ebit_margin": 0.128,
+          "ebit_b": 0.596,
+          "tax_rate": 0.21,
+          "nopat_b": 0.471,
+          "da_b": 0.093,
+          "da_pct": 0.02,
+          "capex_b": 0.093,
+          "capex_pct": 0.02,
+          "wc_change_b": 0.084,
+          "wc_pct": 0.018,
+          "fcff_derived_b": 0.387,
+          "has_full_build": true,
+          "year": 2027,
+          "fcf_b": 0.387
+        },
+        {
+          "revenue_b": 5.31,
+          "ebit_margin": 0.131,
+          "ebit_b": 0.696,
+          "tax_rate": 0.21,
+          "nopat_b": 0.55,
+          "da_b": 0.106,
+          "da_pct": 0.02,
+          "capex_b": 0.096,
+          "capex_pct": 0.018,
+          "wc_change_b": 0.085,
+          "wc_pct": 0.016,
+          "fcff_derived_b": 0.475,
+          "has_full_build": true,
+          "year": 2028,
+          "fcf_b": 0.475
+        },
+        {
+          "revenue_b": 5.95,
+          "ebit_margin": 0.134,
+          "ebit_b": 0.797,
+          "tax_rate": 0.21,
+          "nopat_b": 0.63,
+          "da_b": 0.119,
+          "da_pct": 0.02,
+          "capex_b": 0.107,
+          "capex_pct": 0.018,
+          "wc_change_b": 0.083,
+          "wc_pct": 0.014,
+          "fcff_derived_b": 0.558,
+          "has_full_build": true,
+          "year": 2029,
+          "fcf_b": 0.558
+        },
+        {
+          "revenue_b": 6.55,
+          "ebit_margin": 0.136,
+          "ebit_b": 0.891,
+          "tax_rate": 0.21,
+          "nopat_b": 0.704,
+          "da_b": 0.131,
+          "da_pct": 0.02,
+          "capex_b": 0.105,
+          "capex_pct": 0.016,
+          "wc_change_b": 0.079,
+          "wc_pct": 0.012,
+          "fcff_derived_b": 0.651,
+          "has_full_build": true,
+          "year": 2030,
+          "fcf_b": 0.651
+        },
+        {
+          "revenue_b": 7.07,
+          "ebit_margin": 0.138,
+          "ebit_b": 0.976,
+          "tax_rate": 0.21,
+          "nopat_b": 0.771,
+          "da_b": 0.141,
+          "da_pct": 0.02,
+          "capex_b": 0.113,
+          "capex_pct": 0.016,
+          "wc_change_b": 0.071,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 0.728,
+          "has_full_build": true,
+          "year": 2031,
+          "fcf_b": 0.728
+        },
+        {
+          "revenue_b": 7.57,
+          "ebit_margin": 0.139,
+          "ebit_b": 1.052,
+          "tax_rate": 0.21,
+          "nopat_b": 0.831,
+          "da_b": 0.151,
+          "da_pct": 0.02,
+          "capex_b": 0.114,
+          "capex_pct": 0.015,
+          "wc_change_b": 0.076,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 0.793,
+          "has_full_build": true,
+          "year": 2032,
+          "fcf_b": 0.793
+        },
+        {
+          "revenue_b": 8.0,
+          "ebit_margin": 0.14,
+          "ebit_b": 1.12,
+          "tax_rate": 0.21,
+          "nopat_b": 0.885,
+          "da_b": 0.16,
+          "da_pct": 0.02,
+          "capex_b": 0.12,
+          "capex_pct": 0.015,
+          "wc_change_b": 0.064,
+          "wc_pct": 0.008,
+          "fcff_derived_b": 0.861,
+          "has_full_build": true,
+          "year": 2033,
+          "fcf_b": 0.861
+        }
+      ],
+      "dual_terminal_value": {
+        "gordon_tv_b": 11.369615384615384,
+        "gordon_pv_b": 5.005272082257082,
+        "exit_multiple_tv_b": null,
+        "exit_multiple_pv_b": null,
+        "exit_multiple_x": null,
+        "blended_tv_b": null,
+        "blended_pv_b": null,
+        "terminal_ebitda_b": 1.28
+      },
+      "wacc_adjudication": {
+        "sector": "(no sector hint)",
+        "sector_band": [
+          0.08,
+          0.12
+        ],
+        "formula_wacc": 0.108,
+        "verdict": "within band (8.0%-12.0%)",
+        "ke": 0.108,
+        "notes": "10.8% equals Ke on net cash; mid-band for a concentrated, thin-margin assembler."
+      }
+    },
+    "sensitivity": {
+      "rows_label": "WACC",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.098,
+        0.103,
+        0.108,
+        0.113,
+        0.118
+      ],
+      "col_values": [
+        0.02,
+        0.025,
+        0.03,
+        0.035,
+        0.04
+      ],
+      "implied_px_matrix": [
+        [
+          257.42,
+          268.38,
+          280.96,
+          295.54,
+          312.63
+        ],
+        [
+          241.69,
+          251.03,
+          261.65,
+          273.84,
+          287.96
+        ],
+        [
+          227.78,
+          235.81,
+          244.86,
+          255.15,
+          266.96
+        ],
+        [
+          215.41,
+          222.35,
+          230.13,
+          238.9,
+          248.87
+        ],
+        [
+          204.34,
+          210.38,
+          217.1,
+          224.64,
+          233.14
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "EV/EBITDA cross-check against optical-component and contract-manufacturing peers. Even a generous multiple for an asset-light optical assembler lands below the post-run share price.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 15.0,
+      "fy_estimate": 0.58,
+      "peers_used": [
+        "COHR",
+        "LITE",
+        "SANM",
+        "FLEX",
+        "AAOI"
+      ],
+      "reasoning": "15x applied to FY26E EBITDA of ~$0.58B (≈14.5% margin on $4.0B). Generous for a contract optical assembler; still implies a value below spot."
+    },
+    "outputs": {
+      "implied_ev_b": 8.7,
+      "implied_equity_b": 9.6,
+      "implied_px": 267.93
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.125,
+        "terminal_growth": 0.02,
+        "fcf_multiplier": 0.72
+      },
+      "implied_px": 144.31,
+      "probability": 0.25,
+      "probability_reasoning": "A full quarter-weight. FN is customer-concentrated (a few large transceiver/networking OEMs), margins are thin, and the shares have ~2.5x'd off the low. A single program shift or a move to in-house/CPO assembly hurts.",
+      "reasoning": "Optical-module volumes digest, a key customer in-sources or shifts to co-packaged optics, and the multiple compresses."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "implied_px": 244.86,
+      "probability": 0.45,
+      "probability_reasoning": "Central case. FN keeps winning AI optical assembly and margins inch up, but the valuation already prices a long, smooth datacom ramp.",
+      "reasoning": "Datacom-led growth decelerating from 18% to mid-single-digits, operating margin grinding from 12.5% to ~14%."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.105,
+        "terminal_growth": 0.035,
+        "fcf_multiplier": 1.3
+      },
+      "implied_px": 338.32,
+      "probability": 0.15,
+      "probability_reasoning": "Lower odds. Requires 1.6T and co-packaged-optics assembly to flow to FN at scale and margins to expand above plan.",
+      "reasoning": "Fabrinet becomes the default high-complexity optical-engine assembler; revenue and margins beat the base path."
+    }
+  ],
+  "blended_target": 250.61,
+  "blending_logic": "45% Base + 25% Bear + 15% Bull + 20% EV/EBITDA cross-check.",
+  "blending_weights": {
+    "cross_check": 0.2
+  },
+  "weights_reasoning": "Bear 25% because customer concentration, thin margins and a ~2.5x run leave little room for error, and co-packaged optics is a structural overhang. Base 45% for the continued AI optical ramp. Bull 15% for a CPO/1.6T assembly win. Cross-check 20% anchors against optical/manufacturing multiples.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 144.31,
+      "weight": 0.25,
+      "contribution": 36.08,
+      "reasoning": "A full quarter-weight. FN is customer-concentrated (a few large transceiver/networking OEMs), margins are thin, and the shares have ~2.5x'd off the low. A single program shift or a move to in-house/CPO assembly hurts."
+    },
+    {
+      "component": "Base",
+      "implied_px": 244.86,
+      "weight": 0.45,
+      "contribution": 110.19,
+      "reasoning": "Central case. FN keeps winning AI optical assembly and margins inch up, but the valuation already prices a long, smooth datacom ramp."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 338.32,
+      "weight": 0.15,
+      "contribution": 50.75,
+      "reasoning": "Lower odds. Requires 1.6T and co-packaged-optics assembly to flow to FN at scale and margins to expand above plan."
+    },
+    {
+      "component": "Multiple",
+      "implied_px": 267.93,
+      "weight": 0.2,
+      "contribution": 53.59,
+      "reasoning": "EV/EBITDA cross-check against optical-component and contract-manufacturing peers. Even a generous multiple for an asset-light optical assembler lands below the post-run share price."
+    }
+  ],
+  "weight_total_check": 1.05,
+  "upside_pct": -57.2
+}

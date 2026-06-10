@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "ticker": "COHR",
+  "currency": "USD",
+  "current_price": 355.94,
+  "shares_outstanding_b": 0.195639,
+  "net_debt_b": 4.5,
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "Coherent generates positive and rising free cash flow with a clear AI-datacom revenue ramp and a deleveraging balance sheet, so a long-horizon FCFF DCF captures the path better than a trailing multiple. An EV/EBITDA cross-check anchors the rich post-run valuation.",
+    "sector_hint": "semiconductors-photonics",
+    "inputs": {
+      "wacc": {
+        "value": 0.102,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.45,
+          "erp": 0.05,
+          "debt_weight": 0.2,
+          "cost_of_debt_after_tax": 0.045
+        },
+        "reasoning": "Ke = 4.3% Rf + 1.45 beta x 5.0% ERP = 11.55%. Beta above the semi average for transceiver price-cyclicality and post-merger leverage. A ~20% after-tax debt weight on the remaining II-VI/Coherent debt pulls WACC to ~10.2%, inside the 9-12% semi band.",
+        "adjudication_notes": "10.2% is mid semi band; justified by transceiver cyclicality and residual leverage."
+      },
+      "terminal_growth": {
+        "value": 0.03,
+        "reasoning": "3.0% terminal: optical content should outgrow GDP as clusters scale, but components face perpetual price pressure, so terminal sits at a mature-semis rate."
+      },
+      "forecast_horizon_years": 8,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 0.68,
+          "revenue_b": 6.96,
+          "revenue_growth_pct": 20.0,
+          "ebit_margin": 0.13,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.06,
+          "wc_change_pct_of_revenue": 0.025,
+          "rationale": "FY26E +20%: datacom transceiver (800G/1.6T) ramp for AI clusters is the engine; telecom and industrial-laser segments recover modestly. Margin lifts as datacom mix rises."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 0.985,
+          "revenue_b": 8.18,
+          "revenue_growth_pct": 17.5,
+          "ebit_margin": 0.155,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.06,
+          "wc_change_pct_of_revenue": 0.022,
+          "rationale": "+17.5%: 1.6T ramp and indium-phosphide laser vertical integration lift gross margin; deleveraging cuts interest drag."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 1.348,
+          "revenue_b": 9.41,
+          "revenue_growth_pct": 15.0,
+          "ebit_margin": 0.175,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.055,
+          "wc_change_pct_of_revenue": 0.02,
+          "rationale": "+15%: AI optical content per cluster keeps compounding; operating leverage on the merged II-VI/Coherent cost base."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 1.725,
+          "revenue_b": 10.64,
+          "revenue_growth_pct": 13.0,
+          "ebit_margin": 0.19,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.05,
+          "wc_change_pct_of_revenue": 0.018,
+          "rationale": "+13%: share gains in CPO-adjacent components; margin nears high-teens EBIT."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 1.984,
+          "revenue_b": 11.81,
+          "revenue_growth_pct": 11.0,
+          "ebit_margin": 0.2,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.075,
+          "capex_pct_of_revenue": 0.05,
+          "wc_change_pct_of_revenue": 0.015,
+          "rationale": "+11%: growth moderates off a larger base; materials and networking segments steady."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 2.35,
+          "revenue_b": 12.99,
+          "revenue_growth_pct": 10.0,
+          "ebit_margin": 0.21,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.075,
+          "capex_pct_of_revenue": 0.045,
+          "wc_change_pct_of_revenue": 0.015,
+          "rationale": "+10%: franchise scaling, ~21% EBIT margin."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 2.621,
+          "revenue_b": 14.03,
+          "revenue_growth_pct": 8.0,
+          "ebit_margin": 0.22,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.07,
+          "capex_pct_of_revenue": 0.045,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+8%: deceleration continues."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 2.954,
+          "revenue_b": 14.94,
+          "revenue_growth_pct": 6.5,
+          "ebit_margin": 0.225,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.07,
+          "capex_pct_of_revenue": 0.04,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+6.5%: approaching steady state, low-20s EBIT margin franchise."
+        }
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "EV/EBITDA is the right cross-check for a profitable optical-components maker. Peer set: optical/photonics and AI-networking names. A generous 22x forward EBITDA still anchors well below where the post-run share price sits.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 22.0,
+      "fy_estimate": 1.45,
+      "peers_used": [
+        "LITE",
+        "FN",
+        "AAOI",
+        "MRVL",
+        "APH"
+      ],
+      "reasoning": "22x applied to FY26E EBITDA of ~$1.45B (\u224821% margin on $6.96B). Rich for the cohort, chosen to give the AI-optical bull case its due."
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.118,
+        "terminal_growth": 0.02,
+        "fcf_multiplier": 0.7
+      },
+      "probability": 0.25,
+      "probability_reasoning": "A full quarter-weight. The datacom transceiver market is brutally competitive (InnoLight, Eoptolink), pricing resets each generation, and the stock has 5x'd off its low, leaving no margin for a single soft quarter.",
+      "reasoning": "Transceiver pricing compresses faster than volume grows, CPO disintermediates pluggables sooner than expected, and the debt load amplifies the equity hit."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "probability": 0.45,
+      "probability_reasoning": "Central case. AI optical content keeps compounding and the merged cost base delivers margin, but the share price already discounts a long, smooth ramp.",
+      "reasoning": "Steady datacom-led growth decelerating from 20% to high-single-digits, EBIT margin grinding from 13% to low-20s."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.105,
+        "terminal_growth": 0.04,
+        "fcf_multiplier": 1.35
+      },
+      "probability": 0.15,
+      "probability_reasoning": "Lower odds. Requires 1.6T and co-packaged-optics content to inflect faster than modeled and indium-phosphide vertical integration to lift margins above plan.",
+      "reasoning": "Coherent becomes the preferred Western optical-engine supplier; revenue and margins beat the base path materially."
+    }
+  ],
+  "blending_weights": {
+    "cross_check": 0.2
+  },
+  "blending_logic": "45% Base + 25% Bear + 15% Bull + 20% EV/EBITDA cross-check.",
+  "weights_reasoning": "Bear gets a heavy 25% because transceiver pricing resets and a 5x run leave the stock exposed to any single soft print. Base 45% for the constructive AI-optical ramp. Bull 15% for the CPO/1.6T acceleration. Cross-check 20% anchors intrinsic value against the peer multiple."
+}

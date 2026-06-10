@@ -1,0 +1,447 @@
+{
+  "ticker": "NOW",
+  "name": "ServiceNow, Inc.",
+  "listings": "NYSE",
+  "sector": "Technology. Enterprise Software (SaaS)",
+  "date": "2026-06-10",
+  "engine": "yfinance-data, equity-bull-case, equity-bear-case, dcf_compute, equity-audit",
+  "recommendation": {
+    "action": "HOLD",
+    "tone": "neutral",
+    "current_price": 106.97,
+    "target_12m": 112,
+    "upside_pct": 4.3,
+    "rationale": "0.20 x $69 (Bear) + 0.55 x $119 (Base) + 0.05 x $173 (Bull) + 0.20 x $120 (EV/EBITDA cross-check) = $112. Roughly fair: a high-quality 20% compounder with 30%+ FCF margins priced about right. The one name in this basket where intrinsic value meets the market.",
+    "next_earnings": "2026-07-23 (Q2 FY26 est. Subscription revenue, cRPO and Now Assist ACV the prints that matter)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$106.97"
+    },
+    {
+      "label": "52-week range",
+      "value": "$81.24 to $211.48"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-49.4% (split-adjusted range)"
+    },
+    {
+      "label": "Note",
+      "value": "Prices reflect ~5:1 split in this dataset"
+    },
+    {
+      "label": "Market cap",
+      "value": "$110.3B"
+    },
+    {
+      "label": "Shares out",
+      "value": "1.031B"
+    },
+    {
+      "label": "Net cash (est)",
+      "value": "~$6B"
+    },
+    {
+      "label": "FY25 revenue (est)",
+      "value": "~$13B"
+    },
+    {
+      "label": "Subscription gross margin",
+      "value": "~85%"
+    },
+    {
+      "label": "FCF margin (est)",
+      "value": "~31%"
+    },
+    {
+      "label": "Primary method",
+      "value": "DCF (FCFF)"
+    },
+    {
+      "label": "Cross-check",
+      "value": "EV/EBITDA 28x"
+    },
+    {
+      "label": "Intrinsic vs price",
+      "value": "+4%"
+    }
+  ],
+  "thesis": [
+    "ServiceNow is the system of action for enterprise IT and increasingly for HR, customer service and security workflows, with ~98% renewal rates and net revenue retention around 115% that make its ~20% growth unusually durable and visible.",
+    "Now Assist, its generative-AI layer, is a credible second pricing lever: charging for AI agents and assistants on top of the existing platform expands ARPU without a new sales motion, and early ACV traction supports the upsell thesis.",
+    "Unlike the rest of this basket, the valuation is defensible. A DCF on normalized cash margins lands near $119 and an EV/EBITDA cross-check near $120, both close to the $107 price. Quality compounder, roughly fair, modest upside."
+  ],
+  "bear_paragraph": "ServiceNow is the highest-quality business in this group, which is precisely why the bear case is about price and pace rather than collapse. The platform is genuinely sticky, renewal rates sit near ninety-eight percent, and net retention above one hundred fifteen percent means the company grows even if it never signs another logo. The risk is twofold. First, the multiple: even after a drawdown, the stock trades at a premium that assumes twenty-percent growth and expanding margins continue largely uninterrupted, so any deceleration below the high-teens, whether from a macro-driven freeze in enterprise IT budgets or simple law-of-large-numbers gravity on a thirteen-billion-dollar revenue base, would compress the multiple. Second, and more subtly, generative AI is double-edged for a company whose pricing has historically tracked seats and workflows: if AI agents let enterprises do more with fewer licensed users, the same technology ServiceNow is monetizing through Now Assist could erode the seat-based core it sits on. Neither risk is acute, and the base case remains a steady compounder. But at this valuation the upside is modest and the burden of proof is on continued flawless execution, which is why intrinsic value and the market price sit almost on top of each other.",
+  "peers": [
+    {
+      "ticker": "NOW",
+      "pe_ntm": 45.0,
+      "ev_ebitda": 28.0,
+      "rev_growth_ttm": 20.0,
+      "ytd": 5.0,
+      "y1": -10.0,
+      "highlight": true
+    },
+    {
+      "ticker": "CRM",
+      "pe_ntm": 24.0,
+      "ev_ebitda": 16.0,
+      "rev_growth_ttm": 9.0,
+      "ytd": 10.0,
+      "y1": 15.0
+    },
+    {
+      "ticker": "WDAY",
+      "pe_ntm": 28.0,
+      "ev_ebitda": 18.0,
+      "rev_growth_ttm": 15.0,
+      "ytd": 12.0,
+      "y1": 20.0
+    },
+    {
+      "ticker": "ADBE",
+      "pe_ntm": 22.0,
+      "ev_ebitda": 15.0,
+      "rev_growth_ttm": 10.0,
+      "ytd": 8.0,
+      "y1": 5.0
+    },
+    {
+      "ticker": "SNOW",
+      "pe_ntm": 120.0,
+      "ev_ebitda": 80.0,
+      "rev_growth_ttm": 28.0,
+      "ytd": 20.0,
+      "y1": 40.0
+    },
+    {
+      "ticker": "INTU",
+      "pe_ntm": 30.0,
+      "ev_ebitda": 22.0,
+      "rev_growth_ttm": 12.0,
+      "ytd": 15.0,
+      "y1": 25.0
+    }
+  ],
+  "peers_read": "Among premium SaaS, ServiceNow sits at the higher end on EV/EBITDA (~28x) but is backed by the best growth-durability profile in the group: faster than Salesforce, Workday or Adobe, with comparable or better retention and margins. It is far cheaper than hypergrowth Snowflake. The read is that NOW commands a deserved premium to mature SaaS for its growth-plus-margin combination, but that premium is now fair rather than cheap. Versus its own history the multiple has compressed, which is what brings intrinsic value and price into line.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "Now Assist genAI monetization",
+      "body": "ServiceNow charges for AI agents and assistants on top of existing subscriptions, a high-margin upsell to the installed base that expands ARPU without a new go-to-market and is ramping in ACV."
+    },
+    {
+      "id": 2,
+      "title": "~98% renewal, 115%+ net retention",
+      "body": "The platform's stickiness means revenue compounds from the existing base alone; expansion within accounts drives most growth, making the ~20% rate unusually visible."
+    },
+    {
+      "id": 3,
+      "title": "Platform expansion beyond IT",
+      "body": "ITSM remains the anchor, but HR, customer service, security operations and now creator/low-code workflows broaden the TAM and deepen account penetration."
+    },
+    {
+      "id": 4,
+      "title": "Operating-leverage and FCF",
+      "body": "FCF margin near 31% and rising; a largely fixed platform cost base means incremental subscription revenue drops at high margin, funding buybacks and R&D."
+    },
+    {
+      "id": 5,
+      "title": "Large enterprise standardization",
+      "body": "ServiceNow is increasingly the standard workflow platform for large enterprises and governments, a durable, multi-year displacement of legacy and homegrown tools."
+    },
+    {
+      "id": 6,
+      "title": "cRPO visibility",
+      "body": "Current remaining performance obligations give multi-quarter revenue visibility and de-risk the near-term growth path."
+    },
+    {
+      "id": 7,
+      "title": "Net-cash balance sheet",
+      "body": "A net-cash position and strong FCF allow consistent buybacks that compound per-share value and offset SBC over time."
+    },
+    {
+      "id": 8,
+      "title": "AI-agent platform optionality",
+      "body": "If autonomous enterprise agents become standard, ServiceNow's workflow data and orchestration layer position it to be the control plane, a large optional upside."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "Premium multiple, modest upside",
+      "body": "At ~28x EBITDA the price already credits durable 20% growth and margin expansion; intrinsic DCF (~$119) sits barely above spot, so the risk/reward is balanced, not asymmetric."
+    },
+    {
+      "id": 2,
+      "title": "Law of large numbers",
+      "body": "On a ~$13B revenue base, sustaining 20% growth gets mathematically harder each year; deceleration toward the mid-teens would compress the multiple."
+    },
+    {
+      "id": 3,
+      "title": "AI could erode seat-based pricing",
+      "body": "If AI agents let enterprises accomplish more with fewer licensed users, the same genAI wave ServiceNow monetizes could undercut its seat-linked core."
+    },
+    {
+      "id": 4,
+      "title": "Enterprise IT-budget sensitivity",
+      "body": "A macro-driven freeze in enterprise software budgets slows new bookings and expansion, the swing factor in any given year."
+    },
+    {
+      "id": 5,
+      "title": "SBC dilution",
+      "body": "Stock-based compensation is a real cost that flatters non-GAAP margins; buybacks offset rather than shrink the count, tempering per-share compounding."
+    },
+    {
+      "id": 6,
+      "title": "Competitive encroachment",
+      "body": "Salesforce, Microsoft and platform vendors increasingly overlap ServiceNow's workflow turf, pressuring the long-run expansion runway."
+    },
+    {
+      "id": 7,
+      "title": "Now Assist ACV is early",
+      "body": "The genAI upsell is promising but still small; if attach rates or pricing disappoint, a key part of the growth-reacceleration narrative weakens."
+    },
+    {
+      "id": 8,
+      "title": "Valuation leaves little error margin",
+      "body": "Unlike a deep-value name, NOW must execute to justify the price; there is limited cushion if growth or margins wobble."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "11.50%",
+      "terminal_g": "3.00%",
+      "fcf_path": "FCF x0.78 vs base",
+      "implied_px": 69.0
+    },
+    {
+      "scenario": "Base",
+      "wacc": "10.00%",
+      "terminal_g": "4.00%",
+      "fcf_path": "base FCF path",
+      "implied_px": 119.0
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "9.50%",
+      "terminal_g": "4.50%",
+      "fcf_path": "FCF x1.25 vs base",
+      "implied_px": 173.0
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "prob": 0.05,
+      "outcome_range": "$165 to 175",
+      "description": "Now Assist becomes a large, fast-growing second engine and net retention re-accelerates; the platform compounds above plan and the multiple re-expands."
+    },
+    {
+      "label": "Base",
+      "prob": 0.55,
+      "outcome_range": "$110 to 125",
+      "description": "Steady ~20% growth with FCF margin grinding into the low-30s; DCF (~$119) and the EV/EBITDA cross-check (~$120) sit just above the $107 price."
+    },
+    {
+      "label": "Bear",
+      "prob": 0.2,
+      "outcome_range": "$65 to 80",
+      "description": "An enterprise-budget freeze or AI-driven seat compression slows growth below the high-teens and the premium multiple de-rates."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "HOLD. Best business in the basket, priced about fair; intrinsic ~$112 versus $107 spot."
+    },
+    {
+      "action": "12m target",
+      "detail": "$112 (20% x $69 + 55% x $119 + 5% x $173 + 20% x $120 cross-check)."
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Hold the compounder. Add on macro-driven pullbacks toward the bear zone."
+    },
+    {
+      "action": "New money",
+      "detail": "Starter position acceptable; scale in on weakness given the balanced risk/reward."
+    },
+    {
+      "action": "Hedge",
+      "detail": "Less urgent than the rest of the basket; quality and net cash cushion the downside."
+    },
+    {
+      "action": "Position sizing",
+      "detail": "Core-quality weight justified by durability; modest upside argues against over-sizing."
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q2 FY26 print (est 2026-07-23): subscription revenue, cRPO growth and guidance.",
+    "Now Assist (genAI) ACV and attach-rate disclosures.",
+    "Net revenue retention and renewal-rate trends.",
+    "Enterprise IT-budget commentary as a macro tell.",
+    "Operating and FCF margin trajectory toward the mid-30s.",
+    "Competitive moves from Salesforce/Microsoft on workflow.",
+    "Buyback pace versus SBC."
+  ],
+  "data_gaps": [
+    "Prices in this dataset reflect an apparent ~5:1 split (1.03B shares, ~$107); fundamentals normalized accordingly.",
+    "yfinance fundamentals were thin this session; revenue (~$13B), net cash (~$6B) and FCF margin (~31%) are from general disclosure.",
+    "GAAP EBIT understates cash earnings; DCF uses a normalized cash-margin proxy with that reasoning stated in the inputs.",
+    "Now Assist ACV and net-retention specifics were not retrievable at line-item level this session."
+  ],
+  "business_overview": {
+    "summary": "ServiceNow is an enterprise-software company whose cloud platform digitizes and automates workflows, starting in IT service and operations management and extending into HR, customer service, security operations and low-code application development. It is the system of action large enterprises use to run cross-functional processes.",
+    "business_model": "ServiceNow sells multi-year SaaS subscriptions priced by module and user, with high gross margins (~85% subscription) and strong renewal and expansion economics. Growth comes mainly from expanding within existing accounts (net retention ~115%) plus new logos, with Now Assist adding an AI-based upsell layer.",
+    "segments": [
+      {
+        "name": "Subscription",
+        "revenue_share_pct": 97,
+        "growth_yoy_pct": null,
+        "margin_pct": 85,
+        "description": "Recurring platform subscriptions across ITSM/ITOM, HR, customer service, security and creator workflows, plus Now Assist genAI. The whole business, essentially."
+      },
+      {
+        "name": "Professional services & other",
+        "revenue_share_pct": 3,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Implementation and training; low-margin, run roughly at cost to drive subscription adoption."
+      }
+    ],
+    "geographic_revenue": [],
+    "customers": [
+      {
+        "name": "Large enterprises (Global 2000)",
+        "revenue_share_pct": null,
+        "importance": "Core base; deep multi-module penetration"
+      },
+      {
+        "name": "Governments / public sector",
+        "revenue_share_pct": null,
+        "importance": "Large, sticky workflow deployments"
+      },
+      {
+        "name": "Regulated industries (financials, healthcare)",
+        "revenue_share_pct": null,
+        "importance": "High-value, compliance-driven adoption"
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "Enterprises are standardizing fragmented, homegrown and legacy workflow tools onto unified cloud platforms, and layering generative AI on top to automate work. ServiceNow is the leader in IT workflow and a fast expander across enterprise functions, competing with Salesforce, Microsoft and point solutions.",
+    "tam_usd_bn": 300,
+    "moat": "A single platform of record for cross-functional workflows creates deep switching costs: once processes, integrations and data live in ServiceNow, ripping it out is enormously disruptive. Near-98% renewal and 115%+ net retention quantify the moat. The risk is that AI reshapes how workflow software is priced and consumed.",
+    "competitors": [
+      {
+        "name": "Salesforce (CRM)",
+        "description": "Overlapping in customer service and platform/low-code; largest SaaS competitor by breadth."
+      },
+      {
+        "name": "Microsoft",
+        "description": "Power Platform, Dynamics and Copilot increasingly encroach on workflow automation."
+      },
+      {
+        "name": "Atlassian / point solutions",
+        "description": "Targeted ITSM and developer-workflow tools at the lower end."
+      },
+      {
+        "name": "Workday (WDAY)",
+        "description": "Adjacent in HR/finance workflows; partner and occasional competitor."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY22",
+      "revenue_usd_b": 7.25,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 78.0,
+      "ebitda_usd_m": 1600,
+      "ebitda_margin_pct": 22.1,
+      "net_income_usd_m": 325,
+      "fcf_usd_m": 2180,
+      "eps": 0.32
+    },
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 8.97,
+      "revenue_growth_yoy_pct": 23.7,
+      "gross_margin_pct": 79.0,
+      "ebitda_usd_m": 2150,
+      "ebitda_margin_pct": 24.0,
+      "net_income_usd_m": 1730,
+      "fcf_usd_m": 2700,
+      "eps": 1.6
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 10.98,
+      "revenue_growth_yoy_pct": 22.4,
+      "gross_margin_pct": 79.0,
+      "ebitda_usd_m": 2900,
+      "ebitda_margin_pct": 26.4,
+      "net_income_usd_m": 1430,
+      "fcf_usd_m": 3400,
+      "eps": 1.3
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 13.0,
+      "revenue_growth_yoy_pct": 18.4,
+      "gross_margin_pct": 80.0,
+      "ebitda_usd_m": 3700,
+      "ebitda_margin_pct": 28.5,
+      "net_income_usd_m": 2000,
+      "fcf_usd_m": 4050,
+      "eps": 1.9
+    }
+  ],
+  "management": {
+    "ceo": "Bill McDermott, CEO since 2019",
+    "cfo": "Gina Mastantuono, CFO",
+    "insider_ownership_pct": 1.0,
+    "capital_allocation_history": "Under McDermott ServiceNow has reinvested heavily in platform and AI while expanding margins steadily and beginning consistent buybacks to offset SBC. The capital-allocation record is disciplined and execution has been remarkably consistent (renewals near 98%). The model self-funds growth; the open question is how AI reshapes pricing, not whether management executes.",
+    "recent_insider_activity": []
+  },
+  "key_risks": [
+    {
+      "category": "structural",
+      "title": "Valuation / modest upside",
+      "description": "At ~28x EBITDA the price credits durable 20% growth; intrinsic value sits only modestly above spot, so risk/reward is balanced."
+    },
+    {
+      "category": "cyclical",
+      "title": "Enterprise IT-budget sensitivity",
+      "description": "A macro-driven software-budget freeze slows bookings and expansion, the key swing factor in any year."
+    },
+    {
+      "category": "structural",
+      "title": "AI seat-pricing risk",
+      "description": "If AI agents reduce licensed-user counts, generative AI could erode the seat-based core even as Now Assist monetizes it."
+    },
+    {
+      "category": "competitive",
+      "title": "Platform encroachment",
+      "description": "Salesforce and Microsoft increasingly overlap ServiceNow's workflow turf, pressuring the long-run expansion runway."
+    },
+    {
+      "category": "structural",
+      "title": "Law of large numbers",
+      "description": "Sustaining 20% on a $13B base gets harder each year; deceleration compresses the premium multiple."
+    },
+    {
+      "category": "structural",
+      "title": "SBC dilution",
+      "description": "Stock-based comp flatters non-GAAP margins; buybacks offset rather than shrink the count."
+    }
+  ],
+  "social_sentiment": {
+    "summary": "Sentiment feeds were not retrievable this session. Bulls highlight best-in-class durability and the Now Assist AI upsell; skeptics focus on a premium multiple, law-of-large-numbers deceleration and the double-edged effect of AI on seat-based pricing."
+  }
+}

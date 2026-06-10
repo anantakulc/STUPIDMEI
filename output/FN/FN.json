@@ -1,0 +1,443 @@
+{
+  "ticker": "FN",
+  "name": "Fabrinet",
+  "listings": "NYSE",
+  "sector": "Technology. Optical & Electronic Manufacturing",
+  "date": "2026-06-10",
+  "engine": "yfinance-data, equity-bull-case, equity-bear-case, dcf_compute, equity-audit",
+  "recommendation": {
+    "action": "SELL",
+    "tone": "negative",
+    "current_price": 586.0,
+    "target_12m": 251,
+    "upside_pct": -57.2,
+    "rationale": "0.25 x $144 (Bear) + 0.45 x $245 (Base) + 0.15 x $338 (Bull) + 0.20 x $268 (EV/EBITDA cross-check) = $251. A well-run optical assembler, but ~6x sales for a thin-margin contract manufacturer prices a flawless AI-optical decade; intrinsic value sits ~57% below spot.",
+    "next_earnings": "2026-08-17 (Q4 FY26 est. Datacom revenue and optical-program mix the prints that matter)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$586.00"
+    },
+    {
+      "label": "52-week range",
+      "value": "$236.86 to $748.89"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-21.8%"
+    },
+    {
+      "label": "1-year return",
+      "value": "+140% (approx)"
+    },
+    {
+      "label": "Market cap",
+      "value": "$21.0B"
+    },
+    {
+      "label": "Shares out",
+      "value": "35.8M"
+    },
+    {
+      "label": "Net cash (est)",
+      "value": "~$0.9B"
+    },
+    {
+      "label": "FY25 revenue (est)",
+      "value": "~$3.4B"
+    },
+    {
+      "label": "EV/Sales (fwd, est)",
+      "value": "~5x"
+    },
+    {
+      "label": "Operating margin (est)",
+      "value": "~12.5%"
+    },
+    {
+      "label": "Primary method",
+      "value": "DCF (FCFF)"
+    },
+    {
+      "label": "Cross-check",
+      "value": "EV/EBITDA 15x"
+    },
+    {
+      "label": "Intrinsic vs price",
+      "value": "-57%"
+    }
+  ],
+  "thesis": [
+    "Fabrinet is the trusted contract manufacturer behind the industry's most complex optical modules, assembling the 800G and 1.6T transceivers and silicon-photonics engines that the leading optical and networking vendors design but do not build themselves.",
+    "Its precision optical-packaging expertise, scaled Thai manufacturing base and long relationships with the top transceiver and networking customers make it the default high-complexity optical assembler, riding the same AI-interconnect wave as the component makers.",
+    "But Fabrinet earns a ~12-13% operating margin as an assembler and now trades near 6x sales. Even a DCF that extrapolates the AI-optical ramp lands near $245 against a $586 stock. A great operator, priced like the chip designers it serves."
+  ],
+  "bear_paragraph": "Fabrinet is a superbly run business that the market has decided to value as something it is not. At its core Fabrinet is a contract manufacturer: it assembles and tests optical modules that other companies design, earning a low-teens operating margin for precision and reliability rather than for owning intellectual property. That is a genuinely good version of a structurally modest business, and the AI-optical boom has been a windfall, filling its Thai lines with high-complexity 800G and 1.6T work. None of it justifies six times sales. The customer concentration is real, a handful of large transceiver and networking OEMs drive the bulk of revenue, and any one of them shifting programs, dual-sourcing, or moving toward co-packaged optics that changes the assembly footprint would dent the growth the multiple extrapolates. Co-packaged optics is the structural wildcard: it does not eliminate assembly, but it could move where the value sits and disrupt the pluggable-module volumes Fabrinet rides today. With only thirty-six million shares the stock is thin and moves hard in both directions, and it has roughly tripled off its low. Intrinsic DCF, even on a constructive ramp, says fair value is a little over four hundred dollars below the price. You are paying a designer's multiple for an assembler's economics.",
+  "peers": [
+    {
+      "ticker": "FN",
+      "pe_ntm": 30.0,
+      "ev_ebitda": 24.0,
+      "rev_growth_ttm": 18.0,
+      "ytd": 55.0,
+      "y1": 140.0,
+      "highlight": true
+    },
+    {
+      "ticker": "COHR",
+      "pe_ntm": 48.0,
+      "ev_ebitda": 50.0,
+      "rev_growth_ttm": 24.0,
+      "ytd": 120.0,
+      "y1": 360.0
+    },
+    {
+      "ticker": "LITE",
+      "pe_ntm": 28.0,
+      "ev_ebitda": 22.0,
+      "rev_growth_ttm": 18.0,
+      "ytd": 60.0,
+      "y1": 110.0
+    },
+    {
+      "ticker": "SANM",
+      "pe_ntm": 15.0,
+      "ev_ebitda": 9.0,
+      "rev_growth_ttm": 8.0,
+      "ytd": 40.0,
+      "y1": 70.0
+    },
+    {
+      "ticker": "FLEX",
+      "pe_ntm": 16.0,
+      "ev_ebitda": 11.0,
+      "rev_growth_ttm": 5.0,
+      "ytd": 30.0,
+      "y1": 55.0
+    },
+    {
+      "ticker": "AAOI",
+      "pe_ntm": 40.0,
+      "ev_ebitda": 35.0,
+      "rev_growth_ttm": 30.0,
+      "ytd": 90.0,
+      "y1": 150.0
+    }
+  ],
+  "peers_read": "Fabrinet sits awkwardly between two cohorts. Against optical-component makers Coherent and Lumentum it grows similarly but owns less IP, yet it trades at a comparable or higher multiple. Against its true economic peers, contract manufacturers Sanmina and Flex at 9-11x EV/EBITDA, it trades at more than double on growth that is faster but built on the same thin-margin assembly model. The market is pricing Fabrinet as an optical-technology play; its income statement says contract manufacturer. That gap between perceived and actual business model is the core of the valuation risk.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "1.6T optical assembly ramp",
+      "body": "As the industry moves from 800G to 1.6T, dollar content and assembly complexity per module rise, and Fabrinet is designed into the leading programs as the build partner of choice."
+    },
+    {
+      "id": 2,
+      "title": "Default high-complexity assembler",
+      "body": "Fabrinet's precision optical-packaging and test capability is hard to replicate at scale, making it the trusted partner for the most demanding transceiver and silicon-photonics work."
+    },
+    {
+      "id": 3,
+      "title": "Customer relationships with optical leaders",
+      "body": "Long-standing relationships with the top transceiver and networking vendors give Fabrinet first call on new high-volume optical programs."
+    },
+    {
+      "id": 4,
+      "title": "Scaled, cost-advantaged Thai base",
+      "body": "A large, efficient Thai manufacturing footprint offers cost and capacity advantages and supply-chain resilience outside China."
+    },
+    {
+      "id": 5,
+      "title": "Silicon-photonics and CPO assembly option",
+      "body": "If co-packaged optics and silicon-photonics scale, the complex assembly and test could flow to Fabrinet, turning a perceived threat into a content opportunity."
+    },
+    {
+      "id": 6,
+      "title": "Steady margin and strong FCF",
+      "body": "A consistent low-teens operating margin, disciplined cost control and a net-cash balance sheet produce reliable free cash flow and buybacks."
+    },
+    {
+      "id": 7,
+      "title": "Non-optical diversification",
+      "body": "Automotive, industrial and sensor assembly provide a secondary, less AI-correlated revenue base."
+    },
+    {
+      "id": 8,
+      "title": "Scarcity of optical-assembly exposure",
+      "body": "Fabrinet is the cleanest listed proxy for AI optical-module assembly, attracting thematic flows that support the multiple."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "6x sales for an assembler",
+      "body": "Fabrinet earns a ~12-13% operating margin assembling others' designs, yet trades near 6x sales. Contract manufacturers trade at 1-2x. Intrinsic DCF says ~$245."
+    },
+    {
+      "id": 2,
+      "title": "Customer concentration",
+      "body": "A few large transceiver/networking OEMs drive most revenue. One shifting programs or dual-sourcing steps growth down sharply, and Fabrinet owns none of the IP."
+    },
+    {
+      "id": 3,
+      "title": "Co-packaged optics overhang",
+      "body": "CPO could move the optical engine into the switch package, disrupting the pluggable-module volumes Fabrinet assembles today; even partial adoption caps the extrapolated TAM."
+    },
+    {
+      "id": 4,
+      "title": "No IP, no pricing power",
+      "body": "Fabrinet competes on execution and capacity, not technology ownership; the customer can move the work, capping margins and durability."
+    },
+    {
+      "id": 5,
+      "title": "Thin float, high volatility",
+      "body": "With ~36M shares the stock gaps hard in both directions and is exposed to thematic-flow reversals."
+    },
+    {
+      "id": 6,
+      "title": "AI-optical cycle risk",
+      "body": "The datacom surge driving growth is a capex wave that will digest; an assembler levered to it de-rates fastest when it does."
+    },
+    {
+      "id": 7,
+      "title": "Margins are structurally capped",
+      "body": "Even the bull case reaches only ~14% operating margin; this is not a technology-margin business dressed in an AI multiple."
+    },
+    {
+      "id": 8,
+      "title": "Tripled on momentum",
+      "body": "Up roughly 3x off its low and owned by thematic flows, the stock has more than discounted the AI-optical assembly thesis."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "12.50%",
+      "terminal_g": "2.00%",
+      "fcf_path": "FCF x0.72 vs base",
+      "implied_px": 144.0
+    },
+    {
+      "scenario": "Base",
+      "wacc": "10.80%",
+      "terminal_g": "3.00%",
+      "fcf_path": "base FCF path",
+      "implied_px": 245.0
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "10.50%",
+      "terminal_g": "3.50%",
+      "fcf_path": "FCF x1.30 vs base",
+      "implied_px": 338.0
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "prob": 0.15,
+      "outcome_range": "$320 to 360",
+      "description": "1.6T and CPO assembly flow to Fabrinet at scale and margins expand above plan; even so intrinsic value stays below the current price."
+    },
+    {
+      "label": "Base",
+      "prob": 0.45,
+      "outcome_range": "$230 to 270",
+      "description": "Datacom-led growth decelerates and margins inch toward 14%; DCF (~$245) and the EV/EBITDA cross-check (~$268) frame fair value well under spot."
+    },
+    {
+      "label": "Bear",
+      "prob": 0.25,
+      "outcome_range": "$130 to 160",
+      "description": "A key customer in-sources or shifts to co-packaged optics and the multiple compresses toward contract-manufacturing norms."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "SELL / avoid on valuation. Excellent operator, but ~6x sales for an assembler is unsupportable; intrinsic ~$251."
+    },
+    {
+      "action": "12m target",
+      "detail": "$251 (25% x $144 + 45% x $245 + 15% x $338 + 20% x $268 cross-check)."
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Take profits after a ~3x run; the assembly thesis is more than priced."
+    },
+    {
+      "action": "New money",
+      "detail": "Avoid at ~6x sales. Revisit nearer contract-manufacturing multiples or on a major de-rate."
+    },
+    {
+      "action": "Hedge",
+      "detail": "Thin float makes downside gaps acute; long holders should consider collars."
+    },
+    {
+      "action": "Position sizing",
+      "detail": "If held for the theme, keep small; valuation is the dominant risk."
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q4 FY26 print (est 2026-08-17): datacom revenue and optical-program mix.",
+    "1.6T program ramp and any new optical-assembly wins.",
+    "Customer-concentration commentary and any program shifts.",
+    "Co-packaged-optics roadmap signals from optical and switch vendors.",
+    "Operating-margin trajectory versus the ~14% ceiling.",
+    "Non-optical (automotive/industrial) diversification trends.",
+    "Buyback pace given the net-cash balance sheet."
+  ],
+  "data_gaps": [
+    "yfinance fundamentals were thin this session; revenue (~$3.4B), net cash (~$0.9B) and margins are from general disclosure.",
+    "Per-customer concentration is undisclosed at line-item level; optical-OEM exposure is inferred from industry reporting.",
+    "Forward EBITDA (~$0.58B) used in the cross-check is an estimate.",
+    "Short interest and positioning feeds were not retrievable this session."
+  ],
+  "business_overview": {
+    "summary": "Fabrinet is a precision optical and electronic contract manufacturer based in Thailand. It provides advanced optical packaging, assembly and testing for the world's leading optical-communications and networking companies, building the complex transceivers and photonic modules those firms design but outsource.",
+    "business_model": "Fabrinet earns manufacturing fees to assemble and test customers' optical and electro-mechanical products, concentrated in datacom/telecom optical modules with a secondary base in automotive, industrial, medical and sensor products. It owns the process and manufacturing know-how, not the product IP; margins are low-teens, reflecting the contract-manufacturing model.",
+    "segments": [
+      {
+        "name": "Optical communications",
+        "revenue_share_pct": 80,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Datacom (800G/1.6T transceivers, silicon-photonics engines, the AI growth engine) and telecom transport optics for the leading optical and networking OEMs."
+      },
+      {
+        "name": "Non-optical",
+        "revenue_share_pct": 20,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Automotive, industrial, medical and sensor assembly; steadier, less AI-correlated diversification."
+      }
+    ],
+    "geographic_revenue": [],
+    "customers": [
+      {
+        "name": "Leading transceiver/optical OEMs",
+        "revenue_share_pct": null,
+        "importance": "Core datacom demand; concentrated"
+      },
+      {
+        "name": "Networking equipment vendors",
+        "revenue_share_pct": null,
+        "importance": "Optical content for switches/routers"
+      },
+      {
+        "name": "Automotive & industrial OEMs",
+        "revenue_share_pct": null,
+        "importance": "Non-optical diversification"
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "AI clusters require vast optical interconnect, and the optical-component vendors that design transceivers largely outsource the complex assembly and test to specialists. Fabrinet is the leading high-complexity optical assembler, competing with in-house manufacturing and other contract manufacturers, with co-packaged optics as the key structural wildcard.",
+    "tam_usd_bn": 30,
+    "moat": "Precision optical-packaging and test capability at scale is genuinely hard to replicate and creates real switching friction on complex programs. But it is operational know-how, not product IP; the customer owns the design and can move the work, which caps the moat and the margin.",
+    "competitors": [
+      {
+        "name": "In-house manufacturing (COHR, etc.)",
+        "description": "Vertically integrated optical makers that assemble their own modules, bypassing Fabrinet."
+      },
+      {
+        "name": "Sanmina / Flex",
+        "description": "Large contract manufacturers that can take optical/electro-mechanical assembly work."
+      },
+      {
+        "name": "Asian optical EMS",
+        "description": "Lower-cost regional assemblers competing on price for higher-volume programs."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY22",
+      "revenue_usd_b": 2.26,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 12.4,
+      "ebitda_usd_m": 290,
+      "ebitda_margin_pct": 12.8,
+      "net_income_usd_m": 215,
+      "fcf_usd_m": 180,
+      "eps": 5.9
+    },
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 2.65,
+      "revenue_growth_yoy_pct": 17.3,
+      "gross_margin_pct": 12.6,
+      "ebitda_usd_m": 345,
+      "ebitda_margin_pct": 13.0,
+      "net_income_usd_m": 265,
+      "fcf_usd_m": 210,
+      "eps": 7.2
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 2.93,
+      "revenue_growth_yoy_pct": 10.6,
+      "gross_margin_pct": 12.6,
+      "ebitda_usd_m": 390,
+      "ebitda_margin_pct": 13.3,
+      "net_income_usd_m": 300,
+      "fcf_usd_m": 250,
+      "eps": 8.2
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 3.4,
+      "revenue_growth_yoy_pct": 16.0,
+      "gross_margin_pct": 12.8,
+      "ebitda_usd_m": 460,
+      "ebitda_margin_pct": 13.5,
+      "net_income_usd_m": 360,
+      "fcf_usd_m": 300,
+      "eps": 9.9
+    }
+  ],
+  "management": {
+    "ceo": "Seamus Grady, CEO since 2017",
+    "cfo": "Csaba Sverha, CFO",
+    "insider_ownership_pct": 2.0,
+    "capital_allocation_history": "Fabrinet has been a disciplined operator: steady capacity investment in Thailand, a net-cash balance sheet and consistent buybacks that have shrunk the share count over time. Management has navigated the optical cycle well and avoided overextension. The execution record is strong; the question is the multiple the market now assigns to a contract-manufacturing model.",
+    "recent_insider_activity": []
+  },
+  "key_risks": [
+    {
+      "category": "customer",
+      "title": "Customer concentration",
+      "description": "A few optical OEMs drive most revenue; one shifting programs or dual-sourcing steps growth down sharply."
+    },
+    {
+      "category": "structural",
+      "title": "Co-packaged optics",
+      "description": "CPO could move the optical engine into the switch package, disrupting the pluggable-module volumes Fabrinet assembles."
+    },
+    {
+      "category": "structural",
+      "title": "Valuation",
+      "description": "At ~6x sales for a low-teens-margin assembler, multiple compression toward contract-manufacturing norms is the dominant risk."
+    },
+    {
+      "category": "cyclical",
+      "title": "AI-optical capex digestion",
+      "description": "The datacom surge is a capex wave; an assembler levered to it de-rates fastest when it digests."
+    },
+    {
+      "category": "structural",
+      "title": "Thin float / volatility",
+      "description": "~36M shares make the stock gap hard in both directions on thematic flows."
+    },
+    {
+      "category": "regulatory",
+      "title": "Geographic / trade exposure",
+      "description": "Concentrated Thai manufacturing and global optical supply chains carry trade-policy and concentration risk."
+    }
+  ],
+  "social_sentiment": {
+    "summary": "Sentiment feeds were not retrievable this session. Bulls frame Fabrinet as the indispensable AI optical-module assembler; skeptics focus on contract-manufacturing economics, customer concentration, co-packaged-optics risk and a sales multiple far above its true peers."
+  }
+}
