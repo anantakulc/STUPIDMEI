@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "ticker": "ARM",
+  "currency": "USD",
+  "current_price": 324.86,
+  "shares_outstanding_b": 1.064054,
+  "net_debt_b": -2.7,
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "Arm is a high-margin IP-licensing franchise with strong and growing free cash flow, so an FCFF DCF on its royalty-and-licensing model is appropriate. Because the stock trades at an extreme sales multiple, an EV/EBITDA cross-check against premium IP/EDA peers disciplines the target.",
+    "sector_hint": "semiconductors-ip",
+    "inputs": {
+      "wacc": {
+        "value": 0.11,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.4,
+          "erp": 0.05,
+          "debt_weight": 0.0,
+          "cost_of_debt_after_tax": 0.0
+        },
+        "reasoning": "Ke = 4.3% Rf + 1.40 beta x 5.0% ERP = 11.3%. Net-cash balance sheet means WACC equals Ke at ~11.0%. Beta reflects high-multiple volatility offset by the annuity-like royalty base.",
+        "adjudication_notes": "11.0% equals Ke on a net-cash balance sheet; mid-band for a high-quality IP franchise."
+      },
+      "terminal_growth": {
+        "value": 0.04,
+        "reasoning": "4.0% terminal: Arm's royalty base compounds with the entire compute market and Armv9 lifts royalty per chip, supporting an above-GDP terminal rate for a durable IP monopoly-adjacent franchise."
+      },
+      "forecast_horizon_years": 8,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 1.112,
+          "revenue_b": 4.9,
+          "revenue_growth_pct": 22.0,
+          "ebit_margin": 0.3,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "FY26E (Mar) +22%: royalty inflection as Armv9 (higher royalty rate) and Compute Subsystems (CSS) penetrate smartphone and data-center sockets; licensing strong on AI design starts."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 1.504,
+          "revenue_b": 6.0,
+          "revenue_growth_pct": 22.0,
+          "ebit_margin": 0.33,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+22%: data-center CPU traction (Grace, hyperscaler custom Arm silicon) and CSS royalties compound; operating margin expands on royalty mix."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 2.012,
+          "revenue_b": 7.2,
+          "revenue_growth_pct": 20.0,
+          "ebit_margin": 0.36,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.025,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+20%: Armv9 royalty per chip keeps rising; automotive and IoT add breadth."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 2.526,
+          "revenue_b": 8.5,
+          "revenue_growth_pct": 18.0,
+          "ebit_margin": 0.38,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.025,
+          "wc_change_pct_of_revenue": 0.008,
+          "rationale": "+18%: royalty base broadens across compute; margins toward high-30s."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 3.148,
+          "revenue_b": 9.9,
+          "revenue_growth_pct": 16.0,
+          "ebit_margin": 0.4,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": 0.008,
+          "rationale": "+16%: durable IP-royalty compounding; ~40% operating margin."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 3.761,
+          "revenue_b": 11.2,
+          "revenue_growth_pct": 13.0,
+          "ebit_margin": 0.42,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": 0.006,
+          "rationale": "+13%: growth moderates off a larger royalty base."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 4.262,
+          "revenue_b": 12.4,
+          "revenue_growth_pct": 11.0,
+          "ebit_margin": 0.43,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": 0.006,
+          "rationale": "+11%: maturing, low-40s operating margin."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 4.787,
+          "revenue_b": 13.5,
+          "revenue_growth_pct": 9.0,
+          "ebit_margin": 0.44,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.018,
+          "wc_change_pct_of_revenue": 0.005,
+          "rationale": "+9%: approaching steady-state IP franchise economics."
+        }
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "ARM is an IP-licensing franchise with software-like margins, so an EV/EBITDA (or P/E) cross-check against premium IP and design-software peers is the relevant relative anchor. Even a rich multiple lands below the extreme spot valuation.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 45.0,
+      "fy_estimate": 1.6,
+      "peers_used": [
+        "SNPS",
+        "CDNS",
+        "NVDA",
+        "ADI",
+        "KLAC"
+      ],
+      "reasoning": "45x applied to FY26E EBITDA of ~$1.6B. A premium IP multiple in line with EDA leaders; still implies a value below the ~70x-sales spot."
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.125,
+        "terminal_growth": 0.03,
+        "fcf_multiplier": 0.7
+      },
+      "probability": 0.25,
+      "probability_reasoning": "A real quarter-weight. At ~70x sales the stock prices flawless royalty inflection; RISC-V encroachment, a smartphone-unit air pocket, or licensing lumpiness each puncture the multiple.",
+      "reasoning": "Royalty-rate gains disappoint, RISC-V takes share at the low end, and the IP premium compresses."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "probability": 0.45,
+      "probability_reasoning": "Central case. Armv9 and CSS lift royalty per chip and data-center adoption grows, but even this constructive path sits below the current price.",
+      "reasoning": "Royalty inflection plays out as modeled, ~20% revenue CAGR with operating margin expanding toward 40%."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.105,
+        "terminal_growth": 0.045,
+        "fcf_multiplier": 1.4
+      },
+      "probability": 0.1,
+      "probability_reasoning": "Lower odds. Requires Arm to capture a large data-center CPU share, monetize AI design starts aggressively, and push CSS/royalty rates above plan.",
+      "reasoning": "Arm becomes the default compute-IP platform across mobile, data center and AI edge; royalties and margins beat materially."
+    }
+  ],
+  "blending_weights": {
+    "cross_check": 0.2
+  },
+  "blending_logic": "45% Base + 25% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
+  "weights_reasoning": "Bear 25% because a ~70x-sales valuation is exquisitely sensitive to any royalty or smartphone-unit disappointment and to RISC-V. Base 45% for the royalty inflection playing out. Bull 10% for a data-center share grab. Cross-check 20% anchors against premium IP/EDA multiples."
+}

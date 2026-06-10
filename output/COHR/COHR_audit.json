@@ -1,0 +1,55 @@
+{
+  "ticker": "COHR",
+  "audited_at": "2026-06-10T04:48:16Z",
+  "verdict": "PASS_WITH_NOTES",
+  "findings": [
+    {
+      "claim": "Last close $355.94",
+      "source_cited": "yfinance-data fast_info.last_price (same session)",
+      "status": "VERIFIED",
+      "notes": "Pulled live this session; price field in valuation JSON matches."
+    },
+    {
+      "claim": "Shares out 195.6M, market cap $69.6B",
+      "source_cited": "yfinance-data fast_info.shares / market_cap",
+      "status": "VERIFIED",
+      "notes": "price x shares reconciles to market cap within rounding."
+    },
+    {
+      "claim": "Scenario probabilities + cross-check weight = 1.0",
+      "source_cited": "valuation JSON scenarios + blending_weights",
+      "status": "VERIFIED",
+      "notes": "Recomputed sum = 1.0. Initial draft summed to 1.05 (bull 0.15); corrected to bull 0.10 before final render."
+    },
+    {
+      "claim": "Blended 12m target $114 = probability-weighted scenarios + cross-check",
+      "source_cited": "dcf_compute.py scenarios + cross_check",
+      "status": "VERIFIED",
+      "notes": "Recomputed weighted average = $113.89; matches published $113.9."
+    },
+    {
+      "claim": "Net debt, FY revenue, segment margins, historical financials",
+      "source_cited": "general disclosure / analyst estimate",
+      "status": "UNVERIFIED",
+      "notes": "yfinance fundamentals (history, info, financials) returned thin/NaN this session and FUNDA/ADANOS MCP unauthenticated; these are domain estimates, flagged in the report's data_gaps. Directionally reasonable, not traced to a live filing this session."
+    },
+    {
+      "claim": "Peer multiples (NTM P/E, EV/EBITDA, growth, returns) in peers table",
+      "source_cited": "analyst estimate",
+      "status": "UNVERIFIED",
+      "notes": "Only the six target prices were pulled live this session; peer multiples are illustrative estimates, NOT same-session yfinance pulls. Treat the peer table as context, not audited data."
+    },
+    {
+      "claim": "Method = FCFF DCF, WACC 10.2%, terminal g 3.0%, 8-yr horizon",
+      "source_cited": "inputs JSON",
+      "status": "VERIFIED",
+      "notes": "WACC components (rf 4.3 + 1.45x5.0 ERP = 11.55% Ke, ~20% debt weight) compute to ~10.2%; inside the 9-12% semi band. Terminal g 3.0% is conservative vs the explicit ramp."
+    }
+  ],
+  "valuation_reproducibility": {
+    "ran_compute_script": true,
+    "matches_published": true,
+    "diff_notes": "Re-ran dcf_compute.py to /tmp; identical to published COHR_valuation.json excluding computed_at timestamp. Base implied $121.42, blended $113.9."
+  },
+  "summary": "Math is fully reproducible and the live price/shares/market cap trace to a same-session yfinance pull. Soft and correctly flagged: net debt (~$4.5B), FY25 revenue (~$5.8B), margins, historicals and the peer table are domain estimates, not live-filing extracts (yfinance fundamentals were thin this session). The 1.05 probability error in the first draft was caught and corrected to 1.0 before final render. No fabricated market data; treat fundamentals as estimates per data_gaps."
+}

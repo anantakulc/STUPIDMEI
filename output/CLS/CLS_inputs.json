@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "ticker": "CLS",
+  "currency": "USD",
+  "current_price": 371.86,
+  "shares_outstanding_b": 0.114973,
+  "net_debt_b": 0.4,
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "Celestica produces positive and growing free cash flow with an AI-server-driven revenue ramp, so an FCFF DCF is appropriate. The key tension is that an EMS cost structure caps margins, so an EV/EBITDA cross-check against manufacturing-services peers disciplines the rich post-run multiple.",
+    "sector_hint": "electronics-manufacturing",
+    "inputs": {
+      "wacc": {
+        "value": 0.115,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.6,
+          "erp": 0.05,
+          "debt_weight": 0.1,
+          "cost_of_debt_after_tax": 0.05
+        },
+        "reasoning": "Ke = 4.3% Rf + 1.60 beta x 5.0% ERP = 12.3%. High beta for EMS cyclicality, thin margins and customer concentration. Low net debt keeps WACC near Ke at ~11.5%.",
+        "adjudication_notes": "11.5% is upper-band for the equity risk in a thin-margin, concentrated EMS."
+      },
+      "terminal_growth": {
+        "value": 0.03,
+        "reasoning": "3.0% terminal: contract manufacturing is a GDP-plus business at best once the AI build matures; no durable pricing power to justify more."
+      },
+      "forecast_horizon_years": 8,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 0.554,
+          "revenue_b": 13.2,
+          "revenue_growth_pct": 20.0,
+          "ebit_margin": 0.062,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.025,
+          "capex_pct_of_revenue": 0.012,
+          "wc_change_pct_of_revenue": 0.02,
+          "rationale": "FY26E +20%: CCS (Connectivity & Cloud Solutions) hyperscaler hardware and 800G switching drive the ramp; ATS (Advanced Tech) steadier. Thin EMS margins by nature."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 0.75,
+          "revenue_b": 15.4,
+          "revenue_growth_pct": 16.7,
+          "ebit_margin": 0.068,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.025,
+          "capex_pct_of_revenue": 0.012,
+          "wc_change_pct_of_revenue": 0.018,
+          "rationale": "+16.7%: HPS (hardware platform solutions) and custom AI server programs scale; modest margin lift from mix and scale."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 0.951,
+          "revenue_b": 17.4,
+          "revenue_growth_pct": 13.0,
+          "ebit_margin": 0.073,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.025,
+          "capex_pct_of_revenue": 0.012,
+          "wc_change_pct_of_revenue": 0.016,
+          "rationale": "+13%: design-win-led growth with one to two anchor hyperscalers; operating margin grinds toward 7%."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 1.162,
+          "revenue_b": 19.1,
+          "revenue_growth_pct": 10.0,
+          "ebit_margin": 0.077,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.025,
+          "capex_pct_of_revenue": 0.011,
+          "wc_change_pct_of_revenue": 0.014,
+          "rationale": "+10%: growth normalizes as the AI build matures; margin near 7.5%."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 1.356,
+          "revenue_b": 20.8,
+          "revenue_growth_pct": 9.0,
+          "ebit_margin": 0.08,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.025,
+          "capex_pct_of_revenue": 0.011,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+9%: steady compounding, low-8s operating margin (high for an EMS)."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 1.556,
+          "revenue_b": 22.3,
+          "revenue_growth_pct": 7.0,
+          "ebit_margin": 0.082,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.025,
+          "capex_pct_of_revenue": 0.01,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+7%: deceleration continues."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 1.665,
+          "revenue_b": 23.6,
+          "revenue_growth_pct": 6.0,
+          "ebit_margin": 0.083,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.025,
+          "capex_pct_of_revenue": 0.01,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+6%: approaching mature EMS growth."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 1.819,
+          "revenue_b": 24.8,
+          "revenue_growth_pct": 5.0,
+          "ebit_margin": 0.084,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.025,
+          "capex_pct_of_revenue": 0.01,
+          "wc_change_pct_of_revenue": 0.008,
+          "rationale": "+5%: steady state."
+        }
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "EV/EBIT cross-check against the EMS/ODM peer set. Even a generous re-rate multiple for an electronics-manufacturing-services company sits far below where the AI-fueled run has taken the shares.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 14.0,
+      "fy_estimate": 1.0,
+      "peers_used": [
+        "FLEX",
+        "JBL",
+        "SANM",
+        "FN",
+        "HPE"
+      ],
+      "reasoning": "14x applied to FY26E EBITDA of ~$1.0B. Double the historical EMS multiple, granted for the AI-mix shift; still implies a value well below spot."
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.13,
+        "terminal_growth": 0.02,
+        "fcf_multiplier": 0.7
+      },
+      "probability": 0.3,
+      "probability_reasoning": "A heavy 30%. EMS is a thin-margin, customer-concentrated, cyclical business; CLS trades at ~4x sales versus a historical ~0.4x. A single hyperscaler program loss or capex pause re-rates it violently.",
+      "reasoning": "Hyperscaler hardware orders digest, customer concentration bites, and the multiple collapses back toward EMS norms."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "probability": 0.4,
+      "probability_reasoning": "Central case. CCS keeps winning AI server and networking programs and margins grind up, but the valuation already prices a chip-like trajectory onto an EMS cost structure.",
+      "reasoning": "Steady design-win-led growth decelerating from 20% to mid-single-digits, operating margin grinding from 6% to low-8s."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.115,
+        "terminal_growth": 0.035,
+        "fcf_multiplier": 1.3
+      },
+      "probability": 0.1,
+      "probability_reasoning": "Low odds. Requires CLS to become a structurally higher-margin design partner (HPS/ODM mix) and to add multiple anchor hyperscalers.",
+      "reasoning": "Celestica re-rates as a design-led AI infrastructure partner rather than a contract assembler; margins and growth beat the base path."
+    }
+  ],
+  "blending_weights": {
+    "cross_check": 0.2
+  },
+  "blending_logic": "40% Base + 30% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
+  "weights_reasoning": "Bear gets a full 30% because an EMS at ~4x sales is historically extreme and customer concentration plus capex cyclicality are concrete near-term risks. Base 40% for continued AI program wins. Bull only 10% because a durable margin re-rate is hard for a contract assembler. Cross-check 20% anchors against manufacturing-services norms."
+}

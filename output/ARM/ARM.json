@@ -1,0 +1,448 @@
+{
+  "ticker": "ARM",
+  "name": "Arm Holdings plc",
+  "listings": "NASDAQ (ADS)",
+  "sector": "Technology. Semiconductor IP",
+  "date": "2026-06-10",
+  "engine": "yfinance-data, equity-bull-case, equity-bear-case, dcf_compute, equity-audit",
+  "recommendation": {
+    "action": "SELL",
+    "tone": "negative",
+    "current_price": 324.86,
+    "target_12m": 47,
+    "upside_pct": -85.6,
+    "rationale": "0.25 x $24 (Bear) + 0.45 x $44 (Base) + 0.10 x $70 (Bull) + 0.20 x $70 (EV/EBITDA cross-check) = $47. Arm is a superb IP franchise, but at ~70x sales the price discounts royalty inflection far beyond even an aggressive DCF; intrinsic value sits a fraction of spot.",
+    "next_earnings": "2026-07-29 (Q1 FY27 est. Royalty revenue and v9/CSS mix the prints that matter)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$324.86"
+    },
+    {
+      "label": "52-week range",
+      "value": "$100.02 to $427.99"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-24.1%"
+    },
+    {
+      "label": "1-year return",
+      "value": "+180% (approx)"
+    },
+    {
+      "label": "Market cap",
+      "value": "$345.7B"
+    },
+    {
+      "label": "Shares out",
+      "value": "1.064B"
+    },
+    {
+      "label": "Net cash (est)",
+      "value": "~$2.7B"
+    },
+    {
+      "label": "FY26E revenue (est)",
+      "value": "~$4.9B"
+    },
+    {
+      "label": "EV/Sales (fwd, est)",
+      "value": "~70x"
+    },
+    {
+      "label": "Operating margin (GAAP, est)",
+      "value": "~30%"
+    },
+    {
+      "label": "Primary method",
+      "value": "DCF (FCFF)"
+    },
+    {
+      "label": "Cross-check",
+      "value": "EV/EBITDA 45x"
+    },
+    {
+      "label": "Intrinsic vs price",
+      "value": "-86%"
+    }
+  ],
+  "thesis": [
+    "Arm's instruction-set architecture is the closest thing to a tax on computing: it sits in nearly every smartphone and is expanding into data-center CPUs, automotive and AI edge, earning a royalty on each chip plus upfront license fees.",
+    "Armv9 and Compute Subsystems (CSS) raise the royalty rate per chip, and hyperscaler custom Arm-based silicon (Grace, Graviton-style designs) opens a large new data-center royalty pool, driving a credible 20%+ revenue inflection.",
+    "Yet the stock trades near 70x sales. Even a DCF crediting 15%+ growth for a decade and 40%+ margins lands near $44, and a rich 45x EBITDA cross-check only reaches $70. The franchise is extraordinary; the price discounts perfection several times over."
+  ],
+  "bear_paragraph": "Arm is one of the best businesses in technology and one of the hardest to own at this price. The architecture is genuinely a near-monopoly in mobile and a credible challenger in the data center, the royalty model compounds with the entire compute market, and Armv9 plus CSS legitimately lift the rate Arm earns per chip. The trouble is arithmetic. At roughly seventy times sales and well over a hundred times earnings, the equity already capitalizes the royalty inflection, the data-center share gain, and the AI-edge expansion as if all three are certain and permanent. They are not. Smartphone units, the bulk of royalties, are flat-to-cyclical. RISC-V, an open and free alternative, is improving and aimed squarely at the low end and at customers who resent paying the Arm tax. Licensing revenue is lumpy and can mask quarters. None of these is fatal, but at this multiple Arm does not need a disaster, only a deceleration. A single soft royalty quarter or a high-profile RISC-V design win would puncture a valuation that has no margin of safety. Intrinsic DCF, even on an aggressive ramp, says the equity is worth a fraction of the price. The quality is not in question; the entry is.",
+  "peers": [
+    {
+      "ticker": "ARM",
+      "pe_ntm": 110.0,
+      "ev_ebitda": 150.0,
+      "rev_growth_ttm": 22.0,
+      "ytd": 80.0,
+      "y1": 180.0,
+      "highlight": true
+    },
+    {
+      "ticker": "SNPS",
+      "pe_ntm": 45.0,
+      "ev_ebitda": 35.0,
+      "rev_growth_ttm": 12.0,
+      "ytd": 20.0,
+      "y1": 35.0
+    },
+    {
+      "ticker": "CDNS",
+      "pe_ntm": 48.0,
+      "ev_ebitda": 38.0,
+      "rev_growth_ttm": 13.0,
+      "ytd": 22.0,
+      "y1": 38.0
+    },
+    {
+      "ticker": "NVDA",
+      "pe_ntm": 16.5,
+      "ev_ebitda": 30.3,
+      "rev_growth_ttm": 85.2,
+      "ytd": 10.6,
+      "y1": 46.5
+    },
+    {
+      "ticker": "ADI",
+      "pe_ntm": 30.0,
+      "ev_ebitda": 22.0,
+      "rev_growth_ttm": 10.0,
+      "ytd": 25.0,
+      "y1": 40.0
+    },
+    {
+      "ticker": "KLAC",
+      "pe_ntm": 28.0,
+      "ev_ebitda": 22.0,
+      "rev_growth_ttm": 20.0,
+      "ytd": 35.0,
+      "y1": 55.0
+    }
+  ],
+  "peers_read": "The closest economic comparables are the EDA franchises Synopsys and Cadence: high-margin, sticky IP/tools businesses growing low-to-mid teens, trading at 35-48x earnings and ~35x EBITDA. Arm grows faster (low-20s) and arguably has a wider moat, which justifies a premium, but it trades at roughly three times their multiple. Even NVIDIA, growing 85%, trades at a fraction of Arm's EV/EBITDA. The peer set makes the point starkly: Arm's quality is not in dispute, but its multiple sits in a league of its own that even rapid royalty inflection struggles to justify.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "Armv9 royalty-rate step-up",
+      "body": "Armv9 cores carry a higher royalty rate than v8, so as the installed base transitions, Arm earns more per chip without selling a single additional unit, a structural mix tailwind."
+    },
+    {
+      "id": 2,
+      "title": "Compute Subsystems (CSS)",
+      "body": "CSS delivers pre-integrated, ready-to-implement compute blocks at a higher royalty, pulling Arm up the value chain from instruction set toward finished subsystem and lifting monetization per design."
+    },
+    {
+      "id": 3,
+      "title": "Data-center CPU inflection",
+      "body": "Hyperscaler custom Arm CPUs (Graviton-style, Grace) and Arm-based AI servers open a large, higher-value royalty pool historically dominated by x86, a genuine new growth vector."
+    },
+    {
+      "id": 4,
+      "title": "AI edge and accelerators",
+      "body": "Arm cores anchor the control plane in nearly every AI SoC and edge device; rising AI silicon design starts expand the royalty base across the industry."
+    },
+    {
+      "id": 5,
+      "title": "Licensing strength from AI design starts",
+      "body": "A surge in new chip projects drives upfront license revenue and seeds future royalties as those designs reach production years later."
+    },
+    {
+      "id": 6,
+      "title": "Automotive content growth",
+      "body": "Software-defined vehicles multiply Arm core content per car, a long-duration, high-royalty expansion largely independent of the smartphone cycle."
+    },
+    {
+      "id": 7,
+      "title": "Near-monopoly switching costs",
+      "body": "The entire software and tools ecosystem is built on Arm; migrating an architecture is enormously costly, giving Arm durable pricing power and renewal certainty."
+    },
+    {
+      "id": 8,
+      "title": "Royalty annuity with operating leverage",
+      "body": "Royalties recur on a largely fixed R&D base, so incremental royalty revenue drops at very high margin, supporting 40%+ operating margins over time."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "70x sales prices perfection",
+      "body": "At ~70x revenue and >100x earnings, the equity capitalizes the royalty inflection, data-center share gain and AI-edge expansion as certainties. Intrinsic DCF, even aggressive, lands near $44."
+    },
+    {
+      "id": 2,
+      "title": "RISC-V is the existential overhang",
+      "body": "An open, license-free architecture improving each year targets exactly Arm's royalty model, especially at the low end and among customers who resent the Arm tax. Every RISC-V design win is a permanent royalty loss."
+    },
+    {
+      "id": 3,
+      "title": "Smartphone units are flat-to-cyclical",
+      "body": "The royalty base is still dominated by mobile, where unit growth is anemic. Royalty growth relies on rate (v9/CSS), which is finite, not on volume."
+    },
+    {
+      "id": 4,
+      "title": "Licensing is lumpy",
+      "body": "Upfront license revenue can swing quarters and mask underlying royalty trends; a soft licensing quarter against this multiple gaps the stock."
+    },
+    {
+      "id": 5,
+      "title": "Customer concentration and conflict",
+      "body": "Large licensees (including Qualcomm, with whom Arm has litigated) can push back on pricing or accelerate RISC-V to reduce dependence."
+    },
+    {
+      "id": 6,
+      "title": "Float and ownership distortion",
+      "body": "SoftBank's ~90% ownership leaves a small float that amplifies volatility and arguably inflates the price versus a freely traded equity."
+    },
+    {
+      "id": 7,
+      "title": "China exposure",
+      "body": "A meaningful royalty share runs through Arm China, a separately governed entity with historical control disputes and geopolitical risk."
+    },
+    {
+      "id": 8,
+      "title": "No margin of safety",
+      "body": "Versus EDA peers at 35-48x earnings, Arm at >100x has nothing to cushion a deceleration; the multiple is the risk."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "12.50%",
+      "terminal_g": "3.00%",
+      "fcf_path": "FCF x0.70 vs base",
+      "implied_px": 24.0
+    },
+    {
+      "scenario": "Base",
+      "wacc": "11.00%",
+      "terminal_g": "4.00%",
+      "fcf_path": "base FCF path",
+      "implied_px": 44.0
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "10.50%",
+      "terminal_g": "4.50%",
+      "fcf_path": "FCF x1.40 vs base",
+      "implied_px": 70.0
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "prob": 0.1,
+      "outcome_range": "$65 to 75",
+      "description": "Royalty inflection runs hot, Arm captures large data-center CPU share and monetizes AI design starts aggressively; even this lands well below the current price on intrinsic and a 45x EBITDA cross-check."
+    },
+    {
+      "label": "Base",
+      "prob": 0.45,
+      "outcome_range": "$40 to 50",
+      "description": "v9/CSS lift royalty per chip and data-center adoption grows steadily; DCF (~$44) and a generous cross-check frame fair value far under spot."
+    },
+    {
+      "label": "Bear",
+      "prob": 0.25,
+      "outcome_range": "$20 to 30",
+      "description": "RISC-V takes low-end share, a smartphone air pocket hits royalties, and the IP premium compresses toward EDA-peer multiples."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "SELL / avoid on valuation. Best-in-class IP franchise, but ~70x sales prices several years of perfect inflection. Intrinsic ~$47."
+    },
+    {
+      "action": "12m target",
+      "detail": "$47 (25% x $24 + 45% x $44 + 10% x $70 + 20% x $70 cross-check)."
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Trim aggressively into strength; the quality does not justify the multiple after a ~3x run."
+    },
+    {
+      "action": "New money",
+      "detail": "Avoid. Even a 45x EBITDA cross-check sits ~80% below spot."
+    },
+    {
+      "action": "Hedge",
+      "detail": "Long holders should hedge; thin float and high multiple make downside gaps acute."
+    },
+    {
+      "action": "Position sizing",
+      "detail": "Own only at small size for the franchise optionality; valuation dominates the risk."
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q1 FY27 print (est 2026-07-29): royalty revenue growth and v9/CSS mix.",
+    "Data-center CPU design wins and Arm-server share commentary.",
+    "Any major RISC-V design win at a large customer.",
+    "Smartphone unit trends and the royalty-rate trajectory.",
+    "Licensing pipeline (AI design starts) and its lumpiness.",
+    "Arm China governance and royalty-flow developments.",
+    "SoftBank ownership/float actions."
+  ],
+  "data_gaps": [
+    "yfinance fundamentals were thin this session; revenue (~$4.9B FY26E), net cash (~$2.7B) and margin splits are from general disclosure.",
+    "Royalty-versus-licensing mix and per-customer concentration are not available at line-item level this session.",
+    "Forward EBITDA (~$1.6B) used in the cross-check is an estimate.",
+    "Arm China financial detail and short interest were not retrievable this session."
+  ],
+  "business_overview": {
+    "summary": "Arm Holdings designs and licenses the instruction-set architecture and processor IP that powers nearly all smartphones and a growing share of data-center, automotive and embedded chips. It does not manufacture chips; it earns license fees when customers adopt its designs and royalties on every chip shipped using them.",
+    "business_model": "Two revenue streams: licensing (upfront fees for access to Arm IP and architectures) and royalties (a per-chip fee, often a percentage of chip ASP, paid on every unit shipped). Royalties are a long-duration annuity that compounds with the compute market; Armv9 and CSS raise the rate per chip. R&D is largely fixed, so incremental royalties are high-margin.",
+    "segments": [
+      {
+        "name": "Royalty",
+        "revenue_share_pct": 60,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Per-chip fees across smartphones, data center, automotive, IoT and AI. The recurring annuity; v9/CSS lift the rate."
+      },
+      {
+        "name": "Licensing & other",
+        "revenue_share_pct": 40,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Upfront fees for IP and architecture access, including ATA/flexible-access agreements. Lumpy; leads future royalties."
+      }
+    ],
+    "geographic_revenue": [],
+    "customers": [
+      {
+        "name": "Apple",
+        "revenue_share_pct": null,
+        "importance": "Architecture licensee; high-value mobile and Mac silicon"
+      },
+      {
+        "name": "Qualcomm / MediaTek",
+        "revenue_share_pct": null,
+        "importance": "Major mobile SoC royalty payers"
+      },
+      {
+        "name": "Hyperscalers (AWS, etc.)",
+        "revenue_share_pct": null,
+        "importance": "Custom Arm data-center CPUs, the new growth pool"
+      },
+      {
+        "name": "NVIDIA",
+        "revenue_share_pct": null,
+        "importance": "Grace CPU and Arm-based AI systems"
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "Arm's architecture is the default for mobile and embedded compute and is expanding into the data center and automotive as power efficiency and custom silicon matter more. The competitive frontier is x86 (Intel, AMD) in servers and the open RISC-V architecture across the cost-sensitive and ideologically-motivated edges.",
+    "tam_usd_bn": 250,
+    "moat": "An enormous installed software and tools ecosystem built on Arm creates near-insurmountable switching costs and durable pricing power, the textbook IP-royalty moat. The principal threat is RISC-V, which sidesteps the licensing model entirely and improves each year.",
+    "competitors": [
+      {
+        "name": "RISC-V (open architecture)",
+        "description": "License-free ISA improving rapidly; the structural long-term threat to the royalty model."
+      },
+      {
+        "name": "Intel / AMD (x86)",
+        "description": "Incumbent server architecture Arm is taking share from in the data center."
+      },
+      {
+        "name": "Synopsys / Cadence",
+        "description": "Adjacent IP/EDA franchises; closest economic comparables, not direct ISA rivals."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 2.68,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 95.0,
+      "ebitda_usd_m": 650,
+      "ebitda_margin_pct": 24.3,
+      "net_income_usd_m": 520,
+      "fcf_usd_m": 400,
+      "eps": 0.5
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 3.23,
+      "revenue_growth_yoy_pct": 20.5,
+      "gross_margin_pct": 95.0,
+      "ebitda_usd_m": 850,
+      "ebitda_margin_pct": 26.3,
+      "net_income_usd_m": 300,
+      "fcf_usd_m": 600,
+      "eps": 0.3
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 4.0,
+      "revenue_growth_yoy_pct": 23.8,
+      "gross_margin_pct": 96.0,
+      "ebitda_usd_m": 1200,
+      "ebitda_margin_pct": 30.0,
+      "net_income_usd_m": 800,
+      "fcf_usd_m": 900,
+      "eps": 0.75
+    },
+    {
+      "fy": "FY26E",
+      "revenue_usd_b": 4.9,
+      "revenue_growth_yoy_pct": 22.5,
+      "gross_margin_pct": 96.0,
+      "ebitda_usd_m": 1600,
+      "ebitda_margin_pct": 32.7,
+      "net_income_usd_m": 1100,
+      "fcf_usd_m": 1200,
+      "eps": 1.0
+    }
+  ],
+  "management": {
+    "ceo": "Rene Haas, CEO since 2022",
+    "cfo": "Jason Child, CFO",
+    "insider_ownership_pct": 90.0,
+    "capital_allocation_history": "Arm is ~90% owned by SoftBank, which relisted it in 2023. Capital allocation centers on heavy R&D reinvestment to push into data center and AI; no meaningful dividend or buyback given the small float and growth focus. The strategy of moving up-stack (CSS, subsystems) is sound, but the controlling-shareholder structure and thin float distort the equity's pricing and liquidity.",
+    "recent_insider_activity": []
+  },
+  "key_risks": [
+    {
+      "category": "structural",
+      "title": "RISC-V encroachment",
+      "description": "An open, license-free architecture targeting Arm's royalty model; each design win is a permanent royalty loss, especially at the low end."
+    },
+    {
+      "category": "structural",
+      "title": "Valuation",
+      "description": "At ~70x sales and >100x earnings there is no margin of safety; any deceleration re-rates the stock sharply."
+    },
+    {
+      "category": "cyclical",
+      "title": "Smartphone dependence",
+      "description": "Royalties still lean on flat-to-cyclical mobile units; rate gains (v9/CSS) are finite."
+    },
+    {
+      "category": "customer",
+      "title": "Licensee conflict / concentration",
+      "description": "Large licensees can dispute pricing (e.g., Qualcomm litigation) or accelerate RISC-V to cut dependence."
+    },
+    {
+      "category": "regulatory",
+      "title": "Arm China / geopolitics",
+      "description": "A meaningful royalty share runs through a separately governed Arm China amid US-China tensions and historical control disputes."
+    },
+    {
+      "category": "structural",
+      "title": "Float and control",
+      "description": "~90% SoftBank ownership leaves a thin float that amplifies volatility and may inflate the price."
+    }
+  ],
+  "social_sentiment": {
+    "summary": "Sentiment feeds were not retrievable this session. Bulls frame Arm as a compute-royalty monopoly with a data-center inflection; skeptics focus on RISC-V, smartphone dependence, thin float and a multiple with no margin of safety."
+  }
+}

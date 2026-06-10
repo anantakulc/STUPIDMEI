@@ -1,0 +1,596 @@
+{
+  "schema_version": "1.0",
+  "ticker": "COHR",
+  "currency": "USD",
+  "current_price": 355.94,
+  "shares_outstanding_b": 0.195639,
+  "net_debt_b": 4.5,
+  "computed_at": "2026-06-10T04:46:43Z",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "Coherent generates positive and rising free cash flow with a clear AI-datacom revenue ramp and a deleveraging balance sheet, so a long-horizon FCFF DCF captures the path better than a trailing multiple. An EV/EBITDA cross-check anchors the rich post-run valuation.",
+    "inputs": {
+      "wacc": {
+        "value": 0.102,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.45,
+          "erp": 0.05,
+          "debt_weight": 0.2,
+          "cost_of_debt_after_tax": 0.045
+        },
+        "reasoning": "Ke = 4.3% Rf + 1.45 beta x 5.0% ERP = 11.55%. Beta above the semi average for transceiver price-cyclicality and post-merger leverage. A ~20% after-tax debt weight on the remaining II-VI/Coherent debt pulls WACC to ~10.2%, inside the 9-12% semi band.",
+        "adjudication_notes": "10.2% is mid semi band; justified by transceiver cyclicality and residual leverage.",
+        "components_reasoned": {
+          "rf": {
+            "value": 0.043,
+            "reasoning": "Risk-free rate, typically the local 10Y government bond yield. US ~4.4%, EM countries higher."
+          },
+          "beta": {
+            "value": 1.45,
+            "reasoning": "Equity beta vs local index. From yfinance unless sanitized to sector default."
+          },
+          "erp": {
+            "value": 0.05,
+            "reasoning": "Equity risk premium. DM ~5.5%, EM Indonesia ~6.5%, EM India ~6.5%."
+          },
+          "debt_weight": {
+            "value": 0.2,
+            "reasoning": "Debt portion of capital structure. Net debt / (net debt + market cap)."
+          },
+          "cost_of_debt_after_tax": {
+            "value": 0.045,
+            "reasoning": "Post-tax cost of debt. Yield on outstanding bonds x (1 - tax rate)."
+          }
+        }
+      },
+      "terminal_growth": {
+        "value": 0.03,
+        "reasoning": "3.0% terminal: optical content should outgrow GDP as clusters scale, but components face perpetual price pressure, so terminal sits at a mature-semis rate."
+      },
+      "forecast_horizon_years": 8,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 0.68,
+          "revenue_b": 6.96,
+          "revenue_growth_pct": 20.0,
+          "ebit_margin": 0.13,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.06,
+          "wc_change_pct_of_revenue": 0.025,
+          "rationale": "FY26E +20%: datacom transceiver (800G/1.6T) ramp for AI clusters is the engine; telecom and industrial-laser segments recover modestly. Margin lifts as datacom mix rises."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 0.985,
+          "revenue_b": 8.18,
+          "revenue_growth_pct": 17.5,
+          "ebit_margin": 0.155,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.06,
+          "wc_change_pct_of_revenue": 0.022,
+          "rationale": "+17.5%: 1.6T ramp and indium-phosphide laser vertical integration lift gross margin; deleveraging cuts interest drag."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 1.348,
+          "revenue_b": 9.41,
+          "revenue_growth_pct": 15.0,
+          "ebit_margin": 0.175,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.055,
+          "wc_change_pct_of_revenue": 0.02,
+          "rationale": "+15%: AI optical content per cluster keeps compounding; operating leverage on the merged II-VI/Coherent cost base."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 1.725,
+          "revenue_b": 10.64,
+          "revenue_growth_pct": 13.0,
+          "ebit_margin": 0.19,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.08,
+          "capex_pct_of_revenue": 0.05,
+          "wc_change_pct_of_revenue": 0.018,
+          "rationale": "+13%: share gains in CPO-adjacent components; margin nears high-teens EBIT."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 1.984,
+          "revenue_b": 11.81,
+          "revenue_growth_pct": 11.0,
+          "ebit_margin": 0.2,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.075,
+          "capex_pct_of_revenue": 0.05,
+          "wc_change_pct_of_revenue": 0.015,
+          "rationale": "+11%: growth moderates off a larger base; materials and networking segments steady."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 2.35,
+          "revenue_b": 12.99,
+          "revenue_growth_pct": 10.0,
+          "ebit_margin": 0.21,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.075,
+          "capex_pct_of_revenue": 0.045,
+          "wc_change_pct_of_revenue": 0.015,
+          "rationale": "+10%: franchise scaling, ~21% EBIT margin."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 2.621,
+          "revenue_b": 14.03,
+          "revenue_growth_pct": 8.0,
+          "ebit_margin": 0.22,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.07,
+          "capex_pct_of_revenue": 0.045,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+8%: deceleration continues."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 2.954,
+          "revenue_b": 14.94,
+          "revenue_growth_pct": 6.5,
+          "ebit_margin": 0.225,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.07,
+          "capex_pct_of_revenue": 0.04,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+6.5%: approaching steady state, low-20s EBIT margin franchise."
+        }
+      ]
+    },
+    "outputs": {
+      "pv_explicit_fcf_b": 8.824,
+      "terminal_value_b": 42.259,
+      "pv_terminal_b": 19.43,
+      "implied_ev_b": 28.254,
+      "implied_equity_b": 23.754,
+      "implied_px": 121.42,
+      "calculation_trace": {
+        "wacc": {
+          "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
+          "steps": [
+            {
+              "label": "Cost of equity (Ke)",
+              "expression": "0.0430 + 1.450 x 0.0500",
+              "result": "0.1155 (11.55%)"
+            },
+            {
+              "label": "Equity weight x Ke",
+              "expression": "0.80 x 0.1155",
+              "result": "0.0924"
+            },
+            {
+              "label": "Debt weight x after-tax Kd",
+              "expression": "0.20 x 0.0450",
+              "result": "0.0090"
+            },
+            {
+              "label": "WACC",
+              "expression": "0.0924 + 0.0090",
+              "result": "0.1020 (10.20%)"
+            }
+          ]
+        },
+        "explicit_fcf": {
+          "formula": "PV explicit FCF = sum( FCF_t / (1+WACC)^t ) for t = 1..N",
+          "per_year": [
+            {
+              "year": 2026,
+              "fcf_b": 0.68,
+              "discount_factor": 0.9074,
+              "pv_b": 0.617
+            },
+            {
+              "year": 2027,
+              "fcf_b": 0.985,
+              "discount_factor": 0.8234,
+              "pv_b": 0.811
+            },
+            {
+              "year": 2028,
+              "fcf_b": 1.348,
+              "discount_factor": 0.7472,
+              "pv_b": 1.007
+            },
+            {
+              "year": 2029,
+              "fcf_b": 1.725,
+              "discount_factor": 0.6781,
+              "pv_b": 1.17
+            },
+            {
+              "year": 2030,
+              "fcf_b": 1.984,
+              "discount_factor": 0.6153,
+              "pv_b": 1.221
+            },
+            {
+              "year": 2031,
+              "fcf_b": 2.35,
+              "discount_factor": 0.5584,
+              "pv_b": 1.312
+            },
+            {
+              "year": 2032,
+              "fcf_b": 2.621,
+              "discount_factor": 0.5067,
+              "pv_b": 1.328
+            },
+            {
+              "year": 2033,
+              "fcf_b": 2.954,
+              "discount_factor": 0.4598,
+              "pv_b": 1.358
+            }
+          ],
+          "result": "8.824B"
+        },
+        "terminal_value": {
+          "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
+          "steps": [
+            {
+              "label": "Last projected FCF",
+              "expression": "FCF_8",
+              "result": "2.954B"
+            },
+            {
+              "label": "Terminal FCF",
+              "expression": "2.954 x (1 + 0.0300)",
+              "result": "3.043B"
+            },
+            {
+              "label": "Terminal value",
+              "expression": "3.043 / (0.1020 - 0.0300)",
+              "result": "42.259B"
+            },
+            {
+              "label": "PV of terminal value",
+              "expression": "42.259 / (1+0.1020)^8",
+              "result": "19.430B"
+            }
+          ]
+        },
+        "bridge_to_implied_px": {
+          "formula": "Implied EV = PV explicit FCF + PV terminal;  Equity = EV - Net Debt;  Px = Equity / Shares",
+          "steps": [
+            {
+              "label": "Implied EV",
+              "expression": "8.824 + 19.430",
+              "result": "28.254B"
+            },
+            {
+              "label": "Less: net debt",
+              "expression": "28.254 - 4.500",
+              "result": "23.754B"
+            },
+            {
+              "label": "Implied price per share",
+              "expression": "23.754B / 0.196B shares",
+              "result": "$121.42"
+            }
+          ]
+        }
+      },
+      "fcff_build": [
+        {
+          "revenue_b": 6.96,
+          "ebit_margin": 0.13,
+          "ebit_b": 0.905,
+          "tax_rate": 0.21,
+          "nopat_b": 0.715,
+          "da_b": 0.557,
+          "da_pct": 0.08,
+          "capex_b": 0.418,
+          "capex_pct": 0.06,
+          "wc_change_b": 0.174,
+          "wc_pct": 0.025,
+          "fcff_derived_b": 0.68,
+          "has_full_build": true,
+          "year": 2026,
+          "fcf_b": 0.68
+        },
+        {
+          "revenue_b": 8.18,
+          "ebit_margin": 0.155,
+          "ebit_b": 1.268,
+          "tax_rate": 0.21,
+          "nopat_b": 1.002,
+          "da_b": 0.654,
+          "da_pct": 0.08,
+          "capex_b": 0.491,
+          "capex_pct": 0.06,
+          "wc_change_b": 0.18,
+          "wc_pct": 0.022,
+          "fcff_derived_b": 0.985,
+          "has_full_build": true,
+          "year": 2027,
+          "fcf_b": 0.985
+        },
+        {
+          "revenue_b": 9.41,
+          "ebit_margin": 0.175,
+          "ebit_b": 1.647,
+          "tax_rate": 0.21,
+          "nopat_b": 1.301,
+          "da_b": 0.753,
+          "da_pct": 0.08,
+          "capex_b": 0.518,
+          "capex_pct": 0.055,
+          "wc_change_b": 0.188,
+          "wc_pct": 0.02,
+          "fcff_derived_b": 1.348,
+          "has_full_build": true,
+          "year": 2028,
+          "fcf_b": 1.348
+        },
+        {
+          "revenue_b": 10.64,
+          "ebit_margin": 0.19,
+          "ebit_b": 2.022,
+          "tax_rate": 0.21,
+          "nopat_b": 1.597,
+          "da_b": 0.851,
+          "da_pct": 0.08,
+          "capex_b": 0.532,
+          "capex_pct": 0.05,
+          "wc_change_b": 0.192,
+          "wc_pct": 0.018,
+          "fcff_derived_b": 1.725,
+          "has_full_build": true,
+          "year": 2029,
+          "fcf_b": 1.725
+        },
+        {
+          "revenue_b": 11.81,
+          "ebit_margin": 0.2,
+          "ebit_b": 2.362,
+          "tax_rate": 0.21,
+          "nopat_b": 1.866,
+          "da_b": 0.886,
+          "da_pct": 0.075,
+          "capex_b": 0.591,
+          "capex_pct": 0.05,
+          "wc_change_b": 0.177,
+          "wc_pct": 0.015,
+          "fcff_derived_b": 1.984,
+          "has_full_build": true,
+          "year": 2030,
+          "fcf_b": 1.984
+        },
+        {
+          "revenue_b": 12.99,
+          "ebit_margin": 0.21,
+          "ebit_b": 2.728,
+          "tax_rate": 0.21,
+          "nopat_b": 2.155,
+          "da_b": 0.974,
+          "da_pct": 0.075,
+          "capex_b": 0.585,
+          "capex_pct": 0.045,
+          "wc_change_b": 0.195,
+          "wc_pct": 0.015,
+          "fcff_derived_b": 2.35,
+          "has_full_build": true,
+          "year": 2031,
+          "fcf_b": 2.35
+        },
+        {
+          "revenue_b": 14.03,
+          "ebit_margin": 0.22,
+          "ebit_b": 3.087,
+          "tax_rate": 0.21,
+          "nopat_b": 2.438,
+          "da_b": 0.982,
+          "da_pct": 0.07,
+          "capex_b": 0.631,
+          "capex_pct": 0.045,
+          "wc_change_b": 0.168,
+          "wc_pct": 0.012,
+          "fcff_derived_b": 2.621,
+          "has_full_build": true,
+          "year": 2032,
+          "fcf_b": 2.621
+        },
+        {
+          "revenue_b": 14.94,
+          "ebit_margin": 0.225,
+          "ebit_b": 3.361,
+          "tax_rate": 0.21,
+          "nopat_b": 2.656,
+          "da_b": 1.046,
+          "da_pct": 0.07,
+          "capex_b": 0.598,
+          "capex_pct": 0.04,
+          "wc_change_b": 0.149,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 2.954,
+          "has_full_build": true,
+          "year": 2033,
+          "fcf_b": 2.954
+        }
+      ],
+      "dual_terminal_value": {
+        "gordon_tv_b": 42.25861111111112,
+        "gordon_pv_b": 19.42953751480137,
+        "exit_multiple_tv_b": null,
+        "exit_multiple_pv_b": null,
+        "exit_multiple_x": null,
+        "blended_tv_b": null,
+        "blended_pv_b": null,
+        "terminal_ebitda_b": 4.4073
+      },
+      "wacc_adjudication": {
+        "sector": "(no sector hint)",
+        "sector_band": [
+          0.08,
+          0.12
+        ],
+        "formula_wacc": 0.102,
+        "verdict": "within band (8.0%-12.0%)",
+        "ke": 0.11549999999999999,
+        "notes": "10.2% is mid semi band; justified by transceiver cyclicality and residual leverage."
+      }
+    },
+    "sensitivity": {
+      "rows_label": "WACC",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.092,
+        0.097,
+        0.102,
+        0.107,
+        0.112
+      ],
+      "col_values": [
+        0.02,
+        0.025,
+        0.03,
+        0.035,
+        0.04
+      ],
+      "implied_px_matrix": [
+        [
+          130.0,
+          138.45,
+          148.27,
+          159.81,
+          173.56
+        ],
+        [
+          118.51,
+          125.63,
+          133.82,
+          143.33,
+          154.5
+        ],
+        [
+          108.46,
+          114.52,
+          121.42,
+          129.35,
+          138.55
+        ],
+        [
+          99.59,
+          104.79,
+          110.66,
+          117.34,
+          125.02
+        ],
+        [
+          91.72,
+          96.21,
+          101.24,
+          106.93,
+          113.41
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "EV/EBITDA is the right cross-check for a profitable optical-components maker. Peer set: optical/photonics and AI-networking names. A generous 22x forward EBITDA still anchors well below where the post-run share price sits.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 22.0,
+      "fy_estimate": 1.45,
+      "peers_used": [
+        "LITE",
+        "FN",
+        "AAOI",
+        "MRVL",
+        "APH"
+      ],
+      "reasoning": "22x applied to FY26E EBITDA of ~$1.45B (≈21% margin on $6.96B). Rich for the cohort, chosen to give the AI-optical bull case its due."
+    },
+    "outputs": {
+      "implied_ev_b": 31.9,
+      "implied_equity_b": 27.4,
+      "implied_px": 140.05
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.118,
+        "terminal_growth": 0.02,
+        "fcf_multiplier": 0.7
+      },
+      "implied_px": 51.46,
+      "probability": 0.25,
+      "probability_reasoning": "A full quarter-weight. The datacom transceiver market is brutally competitive (InnoLight, Eoptolink), pricing resets each generation, and the stock has 5x'd off its low, leaving no margin for a single soft quarter.",
+      "reasoning": "Transceiver pricing compresses faster than volume grows, CPO disintermediates pluggables sooner than expected, and the debt load amplifies the equity hit."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "implied_px": 121.42,
+      "probability": 0.45,
+      "probability_reasoning": "Central case. AI optical content keeps compounding and the merged cost base delivers margin, but the share price already discounts a long, smooth ramp.",
+      "reasoning": "Steady datacom-led growth decelerating from 20% to high-single-digits, EBIT margin grinding from 13% to low-20s."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.105,
+        "terminal_growth": 0.04,
+        "fcf_multiplier": 1.35
+      },
+      "implied_px": 183.8,
+      "probability": 0.1,
+      "probability_reasoning": "Lower odds. Requires 1.6T and co-packaged-optics content to inflect faster than modeled and indium-phosphide vertical integration to lift margins above plan.",
+      "reasoning": "Coherent becomes the preferred Western optical-engine supplier; revenue and margins beat the base path materially."
+    }
+  ],
+  "blended_target": 113.9,
+  "blending_logic": "45% Base + 25% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
+  "blending_weights": {
+    "cross_check": 0.2
+  },
+  "weights_reasoning": "Bear gets a heavy 25% because transceiver pricing resets and a 5x run leave the stock exposed to any single soft print. Base 45% for the constructive AI-optical ramp. Bull 10% for the CPO/1.6T acceleration. Cross-check 20% anchors intrinsic value against the peer multiple.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 51.46,
+      "weight": 0.25,
+      "contribution": 12.87,
+      "reasoning": "A full quarter-weight. The datacom transceiver market is brutally competitive (InnoLight, Eoptolink), pricing resets each generation, and the stock has 5x'd off its low, leaving no margin for a single soft quarter."
+    },
+    {
+      "component": "Base",
+      "implied_px": 121.42,
+      "weight": 0.45,
+      "contribution": 54.64,
+      "reasoning": "Central case. AI optical content keeps compounding and the merged cost base delivers margin, but the share price already discounts a long, smooth ramp."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 183.8,
+      "weight": 0.1,
+      "contribution": 18.38,
+      "reasoning": "Lower odds. Requires 1.6T and co-packaged-optics content to inflect faster than modeled and indium-phosphide vertical integration to lift margins above plan."
+    },
+    {
+      "component": "Multiple",
+      "implied_px": 140.05,
+      "weight": 0.2,
+      "contribution": 28.01,
+      "reasoning": "EV/EBITDA is the right cross-check for a profitable optical-components maker. Peer set: optical/photonics and AI-networking names. A generous 22x forward EBITDA still anchors well below where the post-run share price sits."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": -68.0
+}

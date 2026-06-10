@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "ticker": "NOW",
+  "currency": "USD",
+  "current_price": 106.97,
+  "shares_outstanding_b": 1.031308,
+  "net_debt_b": -6.0,
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "ServiceNow is a high-margin, high-retention enterprise-software compounder with strong free cash flow, so an FCFF DCF on its subscription model is the right primary method. Because GAAP EBIT understates cash earnings (deferred revenue, SBC), the EBIT-margin inputs use a normalized cash-earnings proxy with that reasoning stated. An EV/EBITDA cross-check against SaaS peers anchors the multiple.",
+    "sector_hint": "software-saas",
+    "inputs": {
+      "wacc": {
+        "value": 0.1,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.2,
+          "erp": 0.05,
+          "debt_weight": 0.0,
+          "cost_of_debt_after_tax": 0.0
+        },
+        "reasoning": "Ke = 4.3% Rf + 1.20 beta x 5.0% ERP = 10.3%. Beta moderate for a durable subscription model with high recurring revenue. Net-cash balance sheet sets WACC ~ Ke at 10.0%.",
+        "adjudication_notes": "10.0% equals Ke on net cash; low-mid band, fitting a high-quality recurring-revenue platform."
+      },
+      "terminal_growth": {
+        "value": 0.04,
+        "reasoning": "4.0% terminal: a sticky enterprise platform with 98% renewal and a broadening AI monetization lever supports an above-GDP terminal rate."
+      },
+      "forecast_horizon_years": 8,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 3.179,
+          "revenue_b": 15.6,
+          "revenue_growth_pct": 20.0,
+          "ebit_margin": 0.22,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": -0.02,
+          "rationale": "FY26E +20%: subscription revenue compounds on platform expansion (ITSM, ITOM, security, and AI 'Now Assist' upsell). EBIT margin uses a normalized cash-earnings proxy above GAAP given deferred-revenue and SBC dynamics."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 4.107,
+          "revenue_b": 18.7,
+          "revenue_growth_pct": 20.0,
+          "ebit_margin": 0.24,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": -0.02,
+          "rationale": "+20%: Now Assist (genAI) ACV ramps as a new pricing lever; net revenue retention stays ~115%+."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 5.158,
+          "revenue_b": 22.1,
+          "revenue_growth_pct": 18.0,
+          "ebit_margin": 0.26,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": -0.018,
+          "rationale": "+18%: enterprise platform standardization and AI seats lift ARPU; operating leverage builds."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 6.177,
+          "revenue_b": 25.6,
+          "revenue_growth_pct": 16.0,
+          "ebit_margin": 0.27,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.018,
+          "wc_change_pct_of_revenue": -0.016,
+          "rationale": "+16%: durable mid-teens growth as the install base matures; FCF margin in the low-30s."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 7.218,
+          "revenue_b": 29.2,
+          "revenue_growth_pct": 14.0,
+          "ebit_margin": 0.28,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.018,
+          "wc_change_pct_of_revenue": -0.014,
+          "rationale": "+14%: growth normalizes; platform breadth sustains pricing power."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 8.374,
+          "revenue_b": 32.7,
+          "revenue_growth_pct": 12.0,
+          "ebit_margin": 0.29,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": -0.012,
+          "rationale": "+12%: maturing growth, high-20s EBIT margin."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 9.432,
+          "revenue_b": 36.0,
+          "revenue_growth_pct": 10.0,
+          "ebit_margin": 0.3,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": -0.01,
+          "rationale": "+10%: approaching steady-state SaaS economics."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 10.27,
+          "revenue_b": 39.2,
+          "revenue_growth_pct": 9.0,
+          "ebit_margin": 0.3,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.015,
+          "wc_change_pct_of_revenue": -0.01,
+          "rationale": "+9%: durable franchise, ~30% normalized margin."
+        }
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "EV/FCF (proxied via EV/EBITDA on a normalized basis) cross-check against high-quality enterprise-SaaS compounders, the relevant peer cohort for a 20% grower with 30%+ FCF margins.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 28.0,
+      "fy_estimate": 4.2,
+      "peers_used": [
+        "CRM",
+        "WDAY",
+        "ADBE",
+        "SNOW",
+        "INTU"
+      ],
+      "reasoning": "28x applied to FY26E normalized EBITDA of ~$4.2B. In line with premium SaaS compounders; lands near spot, reflecting that NOW is richly but not absurdly valued versus its growth-plus-margin profile."
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.115,
+        "terminal_growth": 0.03,
+        "fcf_multiplier": 0.78
+      },
+      "probability": 0.2,
+      "probability_reasoning": "A fifth-weight. The main risks are a macro-driven enterprise IT-budget slowdown, genAI displacing some workflow seats, and a high multiple that de-rates on any growth deceleration below 18%.",
+      "reasoning": "Seat-based growth slows as AI agents compress headcount-linked licensing, and the premium multiple compresses."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "probability": 0.55,
+      "probability_reasoning": "Central case, high conviction. ServiceNow has ~98% renewal, 115%+ net retention and a credible AI-monetization lever; 20% growth with expanding FCF margin is the most likely path.",
+      "reasoning": "Platform expansion and Now Assist upsell sustain ~20% growth with FCF margin grinding into the low-30s."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.095,
+        "terminal_growth": 0.045,
+        "fcf_multiplier": 1.25
+      },
+      "probability": 0.05,
+      "probability_reasoning": "Modest odds. Requires Now Assist genAI ACV to become a large, fast-growing second engine and net retention to re-accelerate.",
+      "reasoning": "AI agents become a major new revenue line; growth re-accelerates and the platform compounds above plan."
+    }
+  ],
+  "blending_weights": {
+    "cross_check": 0.2
+  },
+  "blending_logic": "55% Base + 20% Bear + 5% Bull + 20% EV/EBITDA cross-check.",
+  "weights_reasoning": "Base gets a high 55% because the subscription model's visibility (98% renewal, 115%+ NRR) makes the central path unusually reliable. Bear 20% for an enterprise-budget/AI-seat-displacement scenario. Bull only 5% because much of the AI optionality is already in the price. Cross-check 20% anchors against premium SaaS multiples."
+}

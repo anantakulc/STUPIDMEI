@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "ticker": "AVGO",
   "currency": "USD",
-  "current_price": 396.6,
-  "shares_outstanding_b": 4.735,
+  "current_price": 392.16,
+  "shares_outstanding_b": 4.7576,
   "net_debt_b": 48.96,
-  "computed_at": "2026-06-09T10:35:42Z",
+  "computed_at": "2026-06-10T04:33:44Z",
   "primary_method": {
     "name": "SOTP",
     "category": "intrinsic",
@@ -157,7 +157,7 @@
             "pv_terminal_b": 1197.046,
             "implied_ev_b": 1477.927,
             "implied_equity_b": 1477.927,
-            "implied_px": 312.13
+            "implied_px": 310.65
           }
         },
         {
@@ -174,7 +174,7 @@
           "outputs": {
             "implied_ev_b": 323.0,
             "implied_equity_b": 323.0,
-            "implied_px": 68.22
+            "implied_px": 67.89
           }
         }
       ],
@@ -182,9 +182,9 @@
         "sum_of_segment_ev_b": 1800.927,
         "net_debt_b": 48.96,
         "implied_equity_b": 1751.967,
-        "implied_px": 370.0
+        "implied_px": 368.25
       },
-      "implied_px": 370.0
+      "implied_px": 368.25
     }
   },
   "cross_check": {
@@ -219,13 +219,13 @@
           }
         }
       ],
-      "implied_px": 195.86,
+      "implied_px": 194.93,
       "reasoning": "AI capex pauses to absorb capacity, one custom-silicon program slips or in-sources, and VMware churn shows up; semi FCF is cut 30%, discounted harder, software re-rates to 13x."
     },
     {
       "label": "Base",
       "key_changes": [],
-      "implied_px": 370.0,
+      "implied_px": 368.25,
       "reasoning": "The AI ramp decays gracefully as modeled, software annuity holds at 17x; the franchise compounds FCF into the high-$70Bs by 2032."
     },
     {
@@ -246,11 +246,11 @@
           }
         }
       ],
-      "implied_px": 566.55,
+      "implied_px": 563.86,
       "reasoning": "Five-plus custom-silicon customers at scale, AI networking content compounds faster than modeled, VMware net retention holds above 100%; semi FCF runs 22% above base and re-rates."
     }
   ],
-  "blended_target": 370.0,
+  "blended_target": 368.25,
   "blending_logic": "SOTP base = sum of segment EVs (Semi DCF + Software 17x EBITDA) less $49B net debt. Narrative 12m target probability-weights Bear/Base/Bull SOTP outcomes plus the forward-multiple cross-check.",
-  "upside_pct": -6.7
+  "upside_pct": -6.1
 }

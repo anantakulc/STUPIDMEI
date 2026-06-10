@@ -1,0 +1,447 @@
+{
+  "ticker": "CLS",
+  "name": "Celestica Inc.",
+  "listings": "NYSE / TSX",
+  "sector": "Technology. Electronics Manufacturing Services",
+  "date": "2026-06-10",
+  "engine": "yfinance-data, equity-bull-case, equity-bear-case, dcf_compute, equity-audit",
+  "recommendation": {
+    "action": "SELL",
+    "tone": "negative",
+    "current_price": 371.86,
+    "target_12m": 112,
+    "upside_pct": -70.0,
+    "rationale": "0.30 x $68 (Bear) + 0.40 x $126 (Base) + 0.10 x $172 (Bull) + 0.20 x $118 (EV/EBITDA cross-check) = $112. An EMS trading at ~4x sales is a category error versus a historical ~0.4x; intrinsic value sits ~70% below spot even crediting a strong AI-server ramp.",
+    "next_earnings": "2026-07-28 (Q2 FY26 est. CCS segment revenue and operating margin the prints that matter)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$371.86"
+    },
+    {
+      "label": "52-week range",
+      "value": "$122.03 to $474.03"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-21.6%"
+    },
+    {
+      "label": "1-year return",
+      "value": "+200% (approx)"
+    },
+    {
+      "label": "Market cap",
+      "value": "$42.8B"
+    },
+    {
+      "label": "Shares out",
+      "value": "115.0M"
+    },
+    {
+      "label": "Net debt (est)",
+      "value": "~$0.4B"
+    },
+    {
+      "label": "FY25 revenue (est)",
+      "value": "~$11B"
+    },
+    {
+      "label": "EV/Sales (fwd, est)",
+      "value": "~3.3x"
+    },
+    {
+      "label": "Operating margin (est)",
+      "value": "~6%"
+    },
+    {
+      "label": "Primary method",
+      "value": "DCF (FCFF)"
+    },
+    {
+      "label": "Cross-check",
+      "value": "EV/EBITDA 14x"
+    },
+    {
+      "label": "Intrinsic vs price",
+      "value": "-70%"
+    }
+  ],
+  "thesis": [
+    "Celestica has transformed from a commodity contract manufacturer into the assembly and design partner behind hyperscaler AI servers, switches and storage, with its CCS segment growing rapidly on 800G networking and custom compute programs.",
+    "The shift toward higher-value hardware-platform and design services has lifted operating margin toward 6-7%, high for an EMS, and management has executed cleanly through the AI capex surge.",
+    "But the market now values an electronics-manufacturing-services business at roughly 4x sales, versus a structural 0.3-0.5x. Even a generous DCF that extrapolates the AI-server ramp lands near $112, about 70% below the price. The business is better; the multiple is the trade."
+  ],
+  "bear_paragraph": "Celestica is an excellent execution story trapped in the wrong valuation. Electronics manufacturing services is, at its core, a thin-margin, capital-cycle business: you assemble other companies' designs for a single-digit operating margin, you carry their inventory, and your revenue concentrates in a handful of large customers who can dual-source or in-source at will. The AI-server boom has been a genuine windfall for the CCS segment, and management deserves credit for moving up the value chain into design and hardware-platform solutions. None of that justifies four times sales. Historically EMS names trade at a fraction of one times sales because the model has no pricing power and no durable moat; the customer owns the IP. The current multiple capitalizes the AI capex surge as if it were permanent and as if Celestica's margins will keep climbing indefinitely, when one hyperscaler reallocating a program or pausing its build would flatten the growth and re-rate the stock toward EMS norms. Intrinsic DCF, even crediting 20% near-term growth and rising margins, lands near $112. At $372 the stock prices a structural transformation that the income statement of a contract assembler cannot support. You do not need a recession; you need the multiple to remember what business this is.",
+  "peers": [
+    {
+      "ticker": "CLS",
+      "pe_ntm": 42.0,
+      "ev_ebitda": 40.0,
+      "rev_growth_ttm": 22.0,
+      "ytd": 95.0,
+      "y1": 200.0,
+      "highlight": true
+    },
+    {
+      "ticker": "FLEX",
+      "pe_ntm": 16.0,
+      "ev_ebitda": 11.0,
+      "rev_growth_ttm": 5.0,
+      "ytd": 30.0,
+      "y1": 55.0
+    },
+    {
+      "ticker": "JBL",
+      "pe_ntm": 18.0,
+      "ev_ebitda": 12.0,
+      "rev_growth_ttm": 7.0,
+      "ytd": 35.0,
+      "y1": 60.0
+    },
+    {
+      "ticker": "SANM",
+      "pe_ntm": 15.0,
+      "ev_ebitda": 9.0,
+      "rev_growth_ttm": 8.0,
+      "ytd": 40.0,
+      "y1": 70.0
+    },
+    {
+      "ticker": "FN",
+      "pe_ntm": 30.0,
+      "ev_ebitda": 24.0,
+      "rev_growth_ttm": 18.0,
+      "ytd": 70.0,
+      "y1": 140.0
+    },
+    {
+      "ticker": "HPE",
+      "pe_ntm": 12.0,
+      "ev_ebitda": 8.0,
+      "rev_growth_ttm": 10.0,
+      "ytd": 20.0,
+      "y1": 30.0
+    }
+  ],
+  "peers_read": "The EMS peer set, Flex, Jabil and Sanmina, trades at 9-12x EV/EBITDA and high-teens P/E, reflecting the structural economics of contract manufacturing. Celestica trades at roughly four times those multiples on growth that is faster but not categorically different in kind. The premium rests entirely on the narrative that Celestica is now an AI-infrastructure design partner rather than an assembler. Even granting some re-rate for the CCS mix shift, the gap to its direct peers is the clearest evidence that the valuation has detached from the business model.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "CCS hyperscaler program wins",
+      "body": "The Connectivity and Cloud Solutions segment is winning custom AI-server, switch and storage programs from multiple hyperscalers, driving 20%+ growth and an improving mix toward higher-value work."
+    },
+    {
+      "id": 2,
+      "title": "800G/1.6T networking ramp",
+      "body": "Celestica builds the 800G switches and is positioned for 1.6T, where dollar content per system rises sharply as AI clusters scale and networking content grows faster than compute."
+    },
+    {
+      "id": 3,
+      "title": "Move up the value chain (HPS)",
+      "body": "Hardware Platform Solutions and design-led engagements carry higher margin than pure assembly, lifting blended operating margin toward 7%, exceptional for an EMS."
+    },
+    {
+      "id": 4,
+      "title": "Operating-margin expansion",
+      "body": "Mix shift plus scale has driven a multi-year margin improvement; each 50bps of operating margin is meaningful on an $11B revenue base."
+    },
+    {
+      "id": 5,
+      "title": "Customer diversification within hyperscale",
+      "body": "Adding anchor hyperscaler relationships reduces single-customer dependence even as overall hyperscaler exposure rises."
+    },
+    {
+      "id": 6,
+      "title": "Strong execution and guidance raises",
+      "body": "Management has repeatedly beaten and raised through the AI surge, building credibility and supporting the re-rating."
+    },
+    {
+      "id": 7,
+      "title": "Low leverage and rising FCF",
+      "body": "A near-net-cash balance sheet and improving free cash flow give flexibility for buybacks and reinvestment."
+    },
+    {
+      "id": 8,
+      "title": "Scarcity of pure AI-hardware EMS exposure",
+      "body": "Celestica is the cleanest listed way to own the AI-server assembly theme, attracting thematic flows that sustain the multiple."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "4x sales for an EMS",
+      "body": "Contract manufacturing trades at a fraction of one times sales for a reason: no IP, no pricing power, single-digit margins. At ~4x sales Celestica is priced like a chip designer. Intrinsic DCF says ~$112."
+    },
+    {
+      "id": 2,
+      "title": "Customer concentration",
+      "body": "A large share of CCS revenue rides a few hyperscalers. One reallocating or in-sourcing a program steps growth down sharply, and the customer owns the design."
+    },
+    {
+      "id": 3,
+      "title": "No durable moat",
+      "body": "The customer owns the IP; switching assemblers is disruptive but doable. Celestica competes on execution and capacity, not on a defensible technology position."
+    },
+    {
+      "id": 4,
+      "title": "Margins are structurally thin",
+      "body": "Even after the mix shift, operating margin is ~6-7%. The bull case needs it to keep climbing; EMS history says margins are capped by the model."
+    },
+    {
+      "id": 5,
+      "title": "AI capex is a cycle",
+      "body": "The hyperscaler hardware orders driving CCS are a capex wave that will digest. When it does, an EMS levered to it de-rates fastest."
+    },
+    {
+      "id": 6,
+      "title": "Inventory and working-capital risk",
+      "body": "EMS carries customer inventory; a demand air pocket leaves Celestica holding components and absorbing write-downs."
+    },
+    {
+      "id": 7,
+      "title": "Multiple is the whole story",
+      "body": "Versus Flex/Jabil at 9-12x EV/EBITDA, Celestica at ~40x has no margin of safety; any growth wobble closes the gap violently."
+    },
+    {
+      "id": 8,
+      "title": "Run on momentum",
+      "body": "Up roughly 3x in a year and owned by thematic flows, the stock is exposed to sentiment reversals independent of fundamentals."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "13.00%",
+      "terminal_g": "2.00%",
+      "fcf_path": "FCF x0.70 vs base",
+      "implied_px": 68.0
+    },
+    {
+      "scenario": "Base",
+      "wacc": "11.50%",
+      "terminal_g": "3.00%",
+      "fcf_path": "base FCF path",
+      "implied_px": 126.0
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "11.50%",
+      "terminal_g": "3.50%",
+      "fcf_path": "FCF x1.30 vs base",
+      "implied_px": 172.0
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "prob": 0.1,
+      "outcome_range": "$160 to 185",
+      "description": "CLS becomes a durable, design-led AI infrastructure partner with structurally higher margins and several anchor hyperscalers; even so intrinsic value stays below spot."
+    },
+    {
+      "label": "Base",
+      "prob": 0.4,
+      "outcome_range": "$110 to 130",
+      "description": "Strong AI-server growth decelerates and margins grind toward low-8s. DCF (~$126) and the EV/EBITDA cross-check (~$118) converge near $112, ~70% under price."
+    },
+    {
+      "label": "Bear",
+      "prob": 0.3,
+      "outcome_range": "$60 to 80",
+      "description": "A hyperscaler program loss or capex pause flattens CCS and the multiple reverts toward EMS norms; the stock falls hard."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "SELL / avoid. Strong execution, but ~4x sales for an EMS is unsupportable; intrinsic ~$112, about 70% below."
+    },
+    {
+      "action": "12m target",
+      "detail": "$112 (30% x $68 + 40% x $126 + 10% x $172 + 20% x $118 cross-check)."
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Take profits. The transformation is real but more than priced after a ~3x run."
+    },
+    {
+      "action": "New money",
+      "detail": "Avoid at ~40x EV/EBITDA. Revisit only near peer multiples."
+    },
+    {
+      "action": "Hedge",
+      "detail": "Consider puts/collars; thematic ownership makes downside gaps the failure mode."
+    },
+    {
+      "action": "Position sizing",
+      "detail": "If held for the theme, keep it small; valuation is the dominant risk."
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q2 FY26 print (est 2026-07-28): CCS revenue growth and segment operating margin.",
+    "Any new or lost hyperscaler program disclosure.",
+    "Operating-margin trajectory versus the ~7% bogey.",
+    "Hyperscaler capex commentary for signs of AI-hardware digestion.",
+    "Mix shift toward Hardware Platform Solutions and design services.",
+    "Working-capital and inventory trends as a demand-health tell.",
+    "Buyback pace given the near-net-cash balance sheet."
+  ],
+  "data_gaps": [
+    "yfinance fundamentals were thin this session; revenue (~$11B), net debt (~$0.4B), and segment mix are from general disclosure.",
+    "Per-customer concentration within CCS is not disclosed at line-item level.",
+    "Forward EBITDA (~$1.0B) used in the cross-check is an estimate.",
+    "Short interest and positioning feeds were not retrievable this session."
+  ],
+  "business_overview": {
+    "summary": "Celestica is a global electronics manufacturing services and supply-chain solutions company. It designs, assembles and tests hardware for hyperscalers, networking and enterprise customers, increasingly focused on AI-server, switching and storage systems through its Connectivity and Cloud Solutions segment.",
+    "business_model": "Celestica earns fees to manufacture and increasingly to co-design customers' hardware. Revenue splits between CCS (hyperscaler compute and networking, the growth engine) and ATS (Advanced Technology Solutions: aerospace, defense, industrial, healthtech). Margins are thin by EMS standards but rising as the mix moves toward design-led, higher-value work.",
+    "segments": [
+      {
+        "name": "CCS (Connectivity & Cloud Solutions)",
+        "revenue_share_pct": 65,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Hyperscaler AI servers, 800G switching, storage and hardware-platform solutions. The fast-growing, mix-improving engine."
+      },
+      {
+        "name": "ATS (Advanced Technology Solutions)",
+        "revenue_share_pct": 35,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Aerospace and defense, industrial, capital equipment and healthtech. Steadier, more diversified, lower-beta."
+      }
+    ],
+    "geographic_revenue": [],
+    "customers": [
+      {
+        "name": "Hyperscalers (multiple)",
+        "revenue_share_pct": null,
+        "importance": "Core CCS demand; concentrated"
+      },
+      {
+        "name": "Networking OEMs",
+        "revenue_share_pct": null,
+        "importance": "Switch and router assembly"
+      },
+      {
+        "name": "Aerospace/defense & industrial",
+        "revenue_share_pct": null,
+        "importance": "ATS diversification"
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "Hyperscalers increasingly outsource AI-server, switch and storage manufacturing and some design to specialist partners. Celestica has won meaningful share of this work, moving from commodity assembly toward higher-value hardware-platform solutions, but it competes in a structurally thin-margin industry.",
+    "tam_usd_bn": 100,
+    "moat": "Execution, capacity, supply-chain depth and growing design capability create switching friction, but the customer owns the IP and can dual-source. The moat is operational, not structural, which is why EMS multiples are historically low.",
+    "competitors": [
+      {
+        "name": "Flex (FLEX)",
+        "description": "Largest diversified EMS; scale leader at a fraction of Celestica's multiple."
+      },
+      {
+        "name": "Jabil (JBL)",
+        "description": "Diversified EMS with strong cloud and capital-equipment exposure."
+      },
+      {
+        "name": "Sanmina (SANM)",
+        "description": "EMS focused on complex, high-reliability systems."
+      },
+      {
+        "name": "Hon Hai / Foxconn",
+        "description": "Massive Asian EMS competing for hyperscaler hardware at scale."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY22",
+      "revenue_usd_b": 7.25,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 9.4,
+      "ebitda_usd_m": 420,
+      "ebitda_margin_pct": 5.8,
+      "net_income_usd_m": 250,
+      "fcf_usd_m": 150,
+      "eps": 2.0
+    },
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 7.96,
+      "revenue_growth_yoy_pct": 9.8,
+      "gross_margin_pct": 10.0,
+      "ebitda_usd_m": 520,
+      "ebitda_margin_pct": 6.5,
+      "net_income_usd_m": 320,
+      "fcf_usd_m": 220,
+      "eps": 2.6
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 9.65,
+      "revenue_growth_yoy_pct": 21.2,
+      "gross_margin_pct": 10.6,
+      "ebitda_usd_m": 700,
+      "ebitda_margin_pct": 7.3,
+      "net_income_usd_m": 430,
+      "fcf_usd_m": 300,
+      "eps": 3.6
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 11.0,
+      "revenue_growth_yoy_pct": 14.0,
+      "gross_margin_pct": 11.0,
+      "ebitda_usd_m": 850,
+      "ebitda_margin_pct": 7.7,
+      "net_income_usd_m": 560,
+      "fcf_usd_m": 350,
+      "eps": 4.7
+    }
+  ],
+  "management": {
+    "ceo": "Rob Mionis, CEO since 2015",
+    "cfo": "Mandeep Chawla, CFO",
+    "insider_ownership_pct": 1.0,
+    "capital_allocation_history": "Management repositioned Celestica from low-margin commodity EMS toward higher-value CCS and ATS work, expanding margins and returning cash via buybacks. The capital-allocation record through the AI surge has been disciplined: reinvest in capacity, buy back stock, keep leverage low. The strategy is sound; the market's valuation of it is the issue.",
+    "recent_insider_activity": []
+  },
+  "key_risks": [
+    {
+      "category": "customer",
+      "title": "Hyperscaler concentration",
+      "description": "A few customers drive CCS; one reallocating or in-sourcing a program steps growth down with little warning."
+    },
+    {
+      "category": "cyclical",
+      "title": "AI capex digestion",
+      "description": "CCS rides a hyperscaler hardware capex wave that will eventually digest, hitting the most AI-levered EMS hardest."
+    },
+    {
+      "category": "structural",
+      "title": "Thin-margin model",
+      "description": "EMS economics cap operating margin in the single digits; the bull case needs ever-rising margins the model rarely delivers."
+    },
+    {
+      "category": "structural",
+      "title": "Valuation",
+      "description": "At ~4x sales and ~40x EV/EBITDA versus peers at 9-12x, multiple compression toward EMS norms is the dominant risk."
+    },
+    {
+      "category": "execution",
+      "title": "Inventory / working capital",
+      "description": "Carrying customer components exposes Celestica to write-downs in a demand air pocket."
+    },
+    {
+      "category": "cyclical",
+      "title": "Macro / IT-budget sensitivity",
+      "description": "Enterprise and industrial demand in ATS is cyclical and tied to broader capital spending."
+    }
+  ],
+  "social_sentiment": {
+    "summary": "Sentiment feeds were not retrievable this session. Bulls cite the CCS transformation and margin expansion; skeptics focus on EMS economics, customer concentration and a sales multiple roughly 10x the peer norm."
+  }
+}

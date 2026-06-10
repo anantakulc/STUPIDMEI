@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "ticker": "AVGO",
   "currency": "USD",
-  "current_price": 396.60,
-  "shares_outstanding_b": 4.735,
+  "current_price": 392.16,
+  "shares_outstanding_b": 4.7576,
   "net_debt_b": 48.96,
   "primary_method": {
     "name": "SOTP",
@@ -19,19 +19,56 @@
           "dcf_inputs": {
             "wacc": {
               "value": 0.0825,
-              "components": {"rf": 0.043, "beta": 1.30, "erp": 0.045, "debt_weight": 0.10, "cost_of_debt_after_tax": 0.038},
+              "components": {
+                "rf": 0.043,
+                "beta": 1.3,
+                "erp": 0.045,
+                "debt_weight": 0.1,
+                "cost_of_debt_after_tax": 0.038
+              },
               "reasoning": "8.25% blends a 4.3% risk-free, a 1.30 beta (below the 1.43 reported because the software annuity lowers cash-flow risk), a 4.5% equity risk premium, and a small after-tax debt weight on the investment-grade balance sheet."
             },
-            "terminal_growth": {"value": 0.0425, "reasoning": "4.25% reflects durable AI-content growth above GDP as accelerator clusters keep scaling, decaying from the explicit ramp but staying above a mature-semis 3%."},
+            "terminal_growth": {
+              "value": 0.0425,
+              "reasoning": "4.25% reflects durable AI-content growth above GDP as accelerator clusters keep scaling, decaying from the explicit ramp but staying above a mature-semis 3%."
+            },
             "forecast_horizon_years": 7,
             "fcf_projections": [
-              {"year": 2026, "fcf_b": 30.0, "rationale": "Forward semiconductor FCF, scaled up from the $27B company TTM as the AI XPU and networking ramp lifts the segment's cash generation against light fabless capex."},
-              {"year": 2027, "fcf_b": 39.0, "rationale": "+30% as the second and third hyperscaler XPU programs ramp into volume and AI networking content per cluster rises."},
-              {"year": 2028, "fcf_b": 49.0, "rationale": "+26% with the lead custom-silicon customers compounding and new programs reaching scale."},
-              {"year": 2029, "fcf_b": 59.0, "rationale": "+20% as AI demand broadens but the law of large numbers starts to bite."},
-              {"year": 2030, "fcf_b": 68.0, "rationale": "+15% mid-cycle; AI growth moderates and non-AI segments contribute a modest recovery."},
-              {"year": 2031, "fcf_b": 75.0, "rationale": "+10% as the franchise matures toward a steadier compounding rate."},
-              {"year": 2032, "fcf_b": 80.0, "rationale": "+7% terminal-approach year; growth settles toward the long-run AI-content tailwind."}
+              {
+                "year": 2026,
+                "fcf_b": 30.0,
+                "rationale": "Forward semiconductor FCF, scaled up from the $27B company TTM as the AI XPU and networking ramp lifts the segment's cash generation against light fabless capex."
+              },
+              {
+                "year": 2027,
+                "fcf_b": 39.0,
+                "rationale": "+30% as the second and third hyperscaler XPU programs ramp into volume and AI networking content per cluster rises."
+              },
+              {
+                "year": 2028,
+                "fcf_b": 49.0,
+                "rationale": "+26% with the lead custom-silicon customers compounding and new programs reaching scale."
+              },
+              {
+                "year": 2029,
+                "fcf_b": 59.0,
+                "rationale": "+20% as AI demand broadens but the law of large numbers starts to bite."
+              },
+              {
+                "year": 2030,
+                "fcf_b": 68.0,
+                "rationale": "+15% mid-cycle; AI growth moderates and non-AI segments contribute a modest recovery."
+              },
+              {
+                "year": 2031,
+                "fcf_b": 75.0,
+                "rationale": "+10% as the franchise matures toward a steadier compounding rate."
+              },
+              {
+                "year": 2032,
+                "fcf_b": 80.0,
+                "rationale": "+7% terminal-approach year; growth settles toward the long-run AI-content tailwind."
+              }
             ]
           }
         },
@@ -55,15 +92,33 @@
     "name": "Multiple",
     "category": "relative",
     "reasoning": "Whole-company forward multiple cross-check against the AI-semiconductor peer set and the Street, anchoring to the market's willingness to pay for forward earnings power.",
-    "inputs": {"multiple_type": "Forward P/E", "multiple_value": 25.5, "fy_estimate_eps": 19.35},
-    "outputs": {"implied_px": 493.43}
+    "inputs": {
+      "multiple_type": "Forward P/E",
+      "multiple_value": 25.5,
+      "fy_estimate_eps": 19.35
+    },
+    "outputs": {
+      "implied_px": 493.43
+    }
   },
   "scenarios": [
     {
       "label": "Bear",
       "segment_changes": [
-        {"name": "Semiconductor Solutions", "dcf_overrides": {"wacc": 0.100, "terminal_g": 0.030, "fcf_multiplier": 0.82}},
-        {"name": "Infrastructure Software (VMware)", "multiple_overrides": {"multiple_value": 14}}
+        {
+          "name": "Semiconductor Solutions",
+          "dcf_overrides": {
+            "wacc": 0.1,
+            "terminal_g": 0.03,
+            "fcf_multiplier": 0.82
+          }
+        },
+        {
+          "name": "Infrastructure Software (VMware)",
+          "multiple_overrides": {
+            "multiple_value": 14
+          }
+        }
       ],
       "probability": 0.25,
       "probability_reasoning": "A quarter-weight: not a tail. Hyperscaler capex digestion plus VMware churn is a credible 12-24 month path given the concentration and the repricing already in place.",
@@ -79,15 +134,29 @@
     {
       "label": "Bull",
       "segment_changes": [
-        {"name": "Semiconductor Solutions", "dcf_overrides": {"wacc": 0.0775, "terminal_g": 0.0475, "fcf_multiplier": 1.22}},
-        {"name": "Infrastructure Software (VMware)", "multiple_overrides": {"multiple_value": 19}}
+        {
+          "name": "Semiconductor Solutions",
+          "dcf_overrides": {
+            "wacc": 0.0775,
+            "terminal_g": 0.0475,
+            "fcf_multiplier": 1.22
+          }
+        },
+        {
+          "name": "Infrastructure Software (VMware)",
+          "multiple_overrides": {
+            "multiple_value": 19
+          }
+        }
       ],
-      "probability": 0.10,
+      "probability": 0.1,
       "probability_reasoning": "10%: the full bull outcome needs the $60-90B AI SAM to land at the top of the range with new customers, which is possible but not the base.",
       "reasoning": "Five-plus custom-silicon customers at scale, AI networking content compounds faster than modeled, VMware net retention holds above 100%; semi FCF runs 22% above base and re-rates."
     }
   ],
-  "blending_weights": {"cross_check": 0.20},
+  "blending_weights": {
+    "cross_check": 0.2
+  },
   "weights_reasoning": "Bear gets a full 25% because the concentration and capex-digestion risks are real and near-term, not tail events. Base 45% is the central AI-holds path. Bull 10% reflects that the top-of-range AI SAM is the less likely upside. The 20% cross-check weight pulls the intrinsic SOTP toward the market's forward-multiple reality, where 45 analysts sit at strong-buy and the forward P/E is only 20.5x. Total = 0.25 + 0.45 + 0.10 + 0.20 = 1.00.",
   "blending_logic": "SOTP base = sum of segment EVs (Semi DCF + Software 17x EBITDA) less $49B net debt. Narrative 12m target probability-weights Bear/Base/Bull SOTP outcomes plus the forward-multiple cross-check."
 }

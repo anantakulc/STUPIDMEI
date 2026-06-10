@@ -1,0 +1,596 @@
+{
+  "schema_version": "1.0",
+  "ticker": "ARM",
+  "currency": "USD",
+  "current_price": 324.86,
+  "shares_outstanding_b": 1.064054,
+  "net_debt_b": -2.7,
+  "computed_at": "2026-06-10T04:33:12Z",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "Arm is a high-margin IP-licensing franchise with strong and growing free cash flow, so an FCFF DCF on its royalty-and-licensing model is appropriate. Because the stock trades at an extreme sales multiple, an EV/EBITDA cross-check against premium IP/EDA peers disciplines the target.",
+    "inputs": {
+      "wacc": {
+        "value": 0.11,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.4,
+          "erp": 0.05,
+          "debt_weight": 0.0,
+          "cost_of_debt_after_tax": 0.0
+        },
+        "reasoning": "Ke = 4.3% Rf + 1.40 beta x 5.0% ERP = 11.3%. Net-cash balance sheet means WACC equals Ke at ~11.0%. Beta reflects high-multiple volatility offset by the annuity-like royalty base.",
+        "adjudication_notes": "11.0% equals Ke on a net-cash balance sheet; mid-band for a high-quality IP franchise.",
+        "components_reasoned": {
+          "rf": {
+            "value": 0.043,
+            "reasoning": "Risk-free rate, typically the local 10Y government bond yield. US ~4.4%, EM countries higher."
+          },
+          "beta": {
+            "value": 1.4,
+            "reasoning": "Equity beta vs local index. From yfinance unless sanitized to sector default."
+          },
+          "erp": {
+            "value": 0.05,
+            "reasoning": "Equity risk premium. DM ~5.5%, EM Indonesia ~6.5%, EM India ~6.5%."
+          },
+          "debt_weight": {
+            "value": 0.0,
+            "reasoning": "Debt portion of capital structure. Net debt / (net debt + market cap)."
+          },
+          "cost_of_debt_after_tax": {
+            "value": 0.0,
+            "reasoning": "Post-tax cost of debt. Yield on outstanding bonds x (1 - tax rate)."
+          }
+        }
+      },
+      "terminal_growth": {
+        "value": 0.04,
+        "reasoning": "4.0% terminal: Arm's royalty base compounds with the entire compute market and Armv9 lifts royalty per chip, supporting an above-GDP terminal rate for a durable IP monopoly-adjacent franchise."
+      },
+      "forecast_horizon_years": 8,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 1.112,
+          "revenue_b": 4.9,
+          "revenue_growth_pct": 22.0,
+          "ebit_margin": 0.3,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "FY26E (Mar) +22%: royalty inflection as Armv9 (higher royalty rate) and Compute Subsystems (CSS) penetrate smartphone and data-center sockets; licensing strong on AI design starts."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 1.504,
+          "revenue_b": 6.0,
+          "revenue_growth_pct": 22.0,
+          "ebit_margin": 0.33,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+22%: data-center CPU traction (Grace, hyperscaler custom Arm silicon) and CSS royalties compound; operating margin expands on royalty mix."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 2.012,
+          "revenue_b": 7.2,
+          "revenue_growth_pct": 20.0,
+          "ebit_margin": 0.36,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.025,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "+20%: Armv9 royalty per chip keeps rising; automotive and IoT add breadth."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 2.526,
+          "revenue_b": 8.5,
+          "revenue_growth_pct": 18.0,
+          "ebit_margin": 0.38,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.025,
+          "wc_change_pct_of_revenue": 0.008,
+          "rationale": "+18%: royalty base broadens across compute; margins toward high-30s."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 3.148,
+          "revenue_b": 9.9,
+          "revenue_growth_pct": 16.0,
+          "ebit_margin": 0.4,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": 0.008,
+          "rationale": "+16%: durable IP-royalty compounding; ~40% operating margin."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 3.761,
+          "revenue_b": 11.2,
+          "revenue_growth_pct": 13.0,
+          "ebit_margin": 0.42,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": 0.006,
+          "rationale": "+13%: growth moderates off a larger royalty base."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 4.262,
+          "revenue_b": 12.4,
+          "revenue_growth_pct": 11.0,
+          "ebit_margin": 0.43,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.02,
+          "wc_change_pct_of_revenue": 0.006,
+          "rationale": "+11%: maturing, low-40s operating margin."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 4.787,
+          "revenue_b": 13.5,
+          "revenue_growth_pct": 9.0,
+          "ebit_margin": 0.44,
+          "tax_rate": 0.21,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.018,
+          "wc_change_pct_of_revenue": 0.005,
+          "rationale": "+9%: approaching steady-state IP franchise economics."
+        }
+      ]
+    },
+    "outputs": {
+      "pv_explicit_fcf_b": 13.367,
+      "terminal_value_b": 71.121,
+      "pv_terminal_b": 30.861,
+      "implied_ev_b": 44.228,
+      "implied_equity_b": 46.928,
+      "implied_px": 44.1,
+      "calculation_trace": {
+        "wacc": {
+          "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
+          "steps": [
+            {
+              "label": "Cost of equity (Ke)",
+              "expression": "0.0430 + 1.400 x 0.0500",
+              "result": "0.1130 (11.30%)"
+            },
+            {
+              "label": "Equity weight x Ke",
+              "expression": "1.00 x 0.1130",
+              "result": "0.1130"
+            },
+            {
+              "label": "Debt weight x after-tax Kd",
+              "expression": "0.00 x 0.0000",
+              "result": "0.0000"
+            },
+            {
+              "label": "WACC",
+              "expression": "0.1130 + 0.0000",
+              "result": "0.1100 (11.00%)"
+            }
+          ]
+        },
+        "explicit_fcf": {
+          "formula": "PV explicit FCF = sum( FCF_t / (1+WACC)^t ) for t = 1..N",
+          "per_year": [
+            {
+              "year": 2026,
+              "fcf_b": 1.112,
+              "discount_factor": 0.9009,
+              "pv_b": 1.002
+            },
+            {
+              "year": 2027,
+              "fcf_b": 1.504,
+              "discount_factor": 0.8116,
+              "pv_b": 1.221
+            },
+            {
+              "year": 2028,
+              "fcf_b": 2.012,
+              "discount_factor": 0.7312,
+              "pv_b": 1.471
+            },
+            {
+              "year": 2029,
+              "fcf_b": 2.526,
+              "discount_factor": 0.6587,
+              "pv_b": 1.664
+            },
+            {
+              "year": 2030,
+              "fcf_b": 3.148,
+              "discount_factor": 0.5935,
+              "pv_b": 1.868
+            },
+            {
+              "year": 2031,
+              "fcf_b": 3.761,
+              "discount_factor": 0.5346,
+              "pv_b": 2.011
+            },
+            {
+              "year": 2032,
+              "fcf_b": 4.262,
+              "discount_factor": 0.4817,
+              "pv_b": 2.053
+            },
+            {
+              "year": 2033,
+              "fcf_b": 4.787,
+              "discount_factor": 0.4339,
+              "pv_b": 2.077
+            }
+          ],
+          "result": "13.367B"
+        },
+        "terminal_value": {
+          "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
+          "steps": [
+            {
+              "label": "Last projected FCF",
+              "expression": "FCF_8",
+              "result": "4.787B"
+            },
+            {
+              "label": "Terminal FCF",
+              "expression": "4.787 x (1 + 0.0400)",
+              "result": "4.978B"
+            },
+            {
+              "label": "Terminal value",
+              "expression": "4.978 / (0.1100 - 0.0400)",
+              "result": "71.121B"
+            },
+            {
+              "label": "PV of terminal value",
+              "expression": "71.121 / (1+0.1100)^8",
+              "result": "30.861B"
+            }
+          ]
+        },
+        "bridge_to_implied_px": {
+          "formula": "Implied EV = PV explicit FCF + PV terminal;  Equity = EV - Net Debt;  Px = Equity / Shares",
+          "steps": [
+            {
+              "label": "Implied EV",
+              "expression": "13.367 + 30.861",
+              "result": "44.228B"
+            },
+            {
+              "label": "Less: net debt",
+              "expression": "44.228 - -2.700",
+              "result": "46.928B"
+            },
+            {
+              "label": "Implied price per share",
+              "expression": "46.928B / 1.064B shares",
+              "result": "$44.10"
+            }
+          ]
+        }
+      },
+      "fcff_build": [
+        {
+          "revenue_b": 4.9,
+          "ebit_margin": 0.3,
+          "ebit_b": 1.47,
+          "tax_rate": 0.21,
+          "nopat_b": 1.161,
+          "da_b": 0.147,
+          "da_pct": 0.03,
+          "capex_b": 0.147,
+          "capex_pct": 0.03,
+          "wc_change_b": 0.049,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 1.112,
+          "has_full_build": true,
+          "year": 2026,
+          "fcf_b": 1.112
+        },
+        {
+          "revenue_b": 6.0,
+          "ebit_margin": 0.33,
+          "ebit_b": 1.98,
+          "tax_rate": 0.21,
+          "nopat_b": 1.564,
+          "da_b": 0.18,
+          "da_pct": 0.03,
+          "capex_b": 0.18,
+          "capex_pct": 0.03,
+          "wc_change_b": 0.06,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 1.504,
+          "has_full_build": true,
+          "year": 2027,
+          "fcf_b": 1.504
+        },
+        {
+          "revenue_b": 7.2,
+          "ebit_margin": 0.36,
+          "ebit_b": 2.592,
+          "tax_rate": 0.21,
+          "nopat_b": 2.048,
+          "da_b": 0.216,
+          "da_pct": 0.03,
+          "capex_b": 0.18,
+          "capex_pct": 0.025,
+          "wc_change_b": 0.072,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 2.012,
+          "has_full_build": true,
+          "year": 2028,
+          "fcf_b": 2.012
+        },
+        {
+          "revenue_b": 8.5,
+          "ebit_margin": 0.38,
+          "ebit_b": 3.23,
+          "tax_rate": 0.21,
+          "nopat_b": 2.552,
+          "da_b": 0.255,
+          "da_pct": 0.03,
+          "capex_b": 0.213,
+          "capex_pct": 0.025,
+          "wc_change_b": 0.068,
+          "wc_pct": 0.008,
+          "fcff_derived_b": 2.526,
+          "has_full_build": true,
+          "year": 2029,
+          "fcf_b": 2.526
+        },
+        {
+          "revenue_b": 9.9,
+          "ebit_margin": 0.4,
+          "ebit_b": 3.96,
+          "tax_rate": 0.21,
+          "nopat_b": 3.128,
+          "da_b": 0.297,
+          "da_pct": 0.03,
+          "capex_b": 0.198,
+          "capex_pct": 0.02,
+          "wc_change_b": 0.079,
+          "wc_pct": 0.008,
+          "fcff_derived_b": 3.148,
+          "has_full_build": true,
+          "year": 2030,
+          "fcf_b": 3.148
+        },
+        {
+          "revenue_b": 11.2,
+          "ebit_margin": 0.42,
+          "ebit_b": 4.704,
+          "tax_rate": 0.21,
+          "nopat_b": 3.716,
+          "da_b": 0.336,
+          "da_pct": 0.03,
+          "capex_b": 0.224,
+          "capex_pct": 0.02,
+          "wc_change_b": 0.067,
+          "wc_pct": 0.006,
+          "fcff_derived_b": 3.761,
+          "has_full_build": true,
+          "year": 2031,
+          "fcf_b": 3.761
+        },
+        {
+          "revenue_b": 12.4,
+          "ebit_margin": 0.43,
+          "ebit_b": 5.332,
+          "tax_rate": 0.21,
+          "nopat_b": 4.212,
+          "da_b": 0.372,
+          "da_pct": 0.03,
+          "capex_b": 0.248,
+          "capex_pct": 0.02,
+          "wc_change_b": 0.074,
+          "wc_pct": 0.006,
+          "fcff_derived_b": 4.262,
+          "has_full_build": true,
+          "year": 2032,
+          "fcf_b": 4.262
+        },
+        {
+          "revenue_b": 13.5,
+          "ebit_margin": 0.44,
+          "ebit_b": 5.94,
+          "tax_rate": 0.21,
+          "nopat_b": 4.693,
+          "da_b": 0.405,
+          "da_pct": 0.03,
+          "capex_b": 0.243,
+          "capex_pct": 0.018,
+          "wc_change_b": 0.068,
+          "wc_pct": 0.005,
+          "fcff_derived_b": 4.787,
+          "has_full_build": true,
+          "year": 2033,
+          "fcf_b": 4.787
+        }
+      ],
+      "dual_terminal_value": {
+        "gordon_tv_b": 71.12114285714286,
+        "gordon_pv_b": 30.861348332711007,
+        "exit_multiple_tv_b": null,
+        "exit_multiple_pv_b": null,
+        "exit_multiple_x": null,
+        "blended_tv_b": null,
+        "blended_pv_b": null,
+        "terminal_ebitda_b": 6.345
+      },
+      "wacc_adjudication": {
+        "sector": "(no sector hint)",
+        "sector_band": [
+          0.08,
+          0.12
+        ],
+        "formula_wacc": 0.11,
+        "verdict": "within band (8.0%-12.0%)",
+        "ke": 0.11299999999999999,
+        "notes": "11.0% equals Ke on a net-cash balance sheet; mid-band for a high-quality IP franchise."
+      }
+    },
+    "sensitivity": {
+      "rows_label": "WACC",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.1,
+        0.105,
+        0.11,
+        0.115,
+        0.12
+      ],
+      "col_values": [
+        0.03,
+        0.035,
+        0.04,
+        0.045,
+        0.05
+      ],
+      "implied_px_matrix": [
+        [
+          46.57,
+          49.1,
+          52.06,
+          55.56,
+          59.76
+        ],
+        [
+          43.18,
+          45.31,
+          47.77,
+          50.64,
+          54.03
+        ],
+        [
+          40.23,
+          42.04,
+          44.1,
+          46.48,
+          49.26
+        ],
+        [
+          37.64,
+          39.18,
+          40.93,
+          42.93,
+          45.24
+        ],
+        [
+          35.34,
+          36.67,
+          38.17,
+          39.87,
+          41.81
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "ARM is an IP-licensing franchise with software-like margins, so an EV/EBITDA (or P/E) cross-check against premium IP and design-software peers is the relevant relative anchor. Even a rich multiple lands below the extreme spot valuation.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 45.0,
+      "fy_estimate": 1.6,
+      "peers_used": [
+        "SNPS",
+        "CDNS",
+        "NVDA",
+        "ADI",
+        "KLAC"
+      ],
+      "reasoning": "45x applied to FY26E EBITDA of ~$1.6B. A premium IP multiple in line with EDA leaders; still implies a value below the ~70x-sales spot."
+    },
+    "outputs": {
+      "implied_ev_b": 72.0,
+      "implied_equity_b": 74.7,
+      "implied_px": 70.2
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.125,
+        "terminal_growth": 0.03,
+        "fcf_multiplier": 0.7
+      },
+      "implied_px": 24.07,
+      "probability": 0.25,
+      "probability_reasoning": "A real quarter-weight. At ~70x sales the stock prices flawless royalty inflection; RISC-V encroachment, a smartphone-unit air pocket, or licensing lumpiness each puncture the multiple.",
+      "reasoning": "Royalty-rate gains disappoint, RISC-V takes share at the low end, and the IP premium compresses."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "implied_px": 44.1,
+      "probability": 0.45,
+      "probability_reasoning": "Central case. Armv9 and CSS lift royalty per chip and data-center adoption grows, but even this constructive path sits below the current price.",
+      "reasoning": "Royalty inflection plays out as modeled, ~20% revenue CAGR with operating margin expanding toward 40%."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.105,
+        "terminal_growth": 0.045,
+        "fcf_multiplier": 1.4
+      },
+      "implied_px": 69.88,
+      "probability": 0.1,
+      "probability_reasoning": "Lower odds. Requires Arm to capture a large data-center CPU share, monetize AI design starts aggressively, and push CSS/royalty rates above plan.",
+      "reasoning": "Arm becomes the default compute-IP platform across mobile, data center and AI edge; royalties and margins beat materially."
+    }
+  ],
+  "blended_target": 46.9,
+  "blending_logic": "45% Base + 25% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
+  "blending_weights": {
+    "cross_check": 0.2
+  },
+  "weights_reasoning": "Bear 25% because a ~70x-sales valuation is exquisitely sensitive to any royalty or smartphone-unit disappointment and to RISC-V. Base 45% for the royalty inflection playing out. Bull 10% for a data-center share grab. Cross-check 20% anchors against premium IP/EDA multiples.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 24.07,
+      "weight": 0.25,
+      "contribution": 6.02,
+      "reasoning": "A real quarter-weight. At ~70x sales the stock prices flawless royalty inflection; RISC-V encroachment, a smartphone-unit air pocket, or licensing lumpiness each puncture the multiple."
+    },
+    {
+      "component": "Base",
+      "implied_px": 44.1,
+      "weight": 0.45,
+      "contribution": 19.85,
+      "reasoning": "Central case. Armv9 and CSS lift royalty per chip and data-center adoption grows, but even this constructive path sits below the current price."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 69.88,
+      "weight": 0.1,
+      "contribution": 6.99,
+      "reasoning": "Lower odds. Requires Arm to capture a large data-center CPU share, monetize AI design starts aggressively, and push CSS/royalty rates above plan."
+    },
+    {
+      "component": "Multiple",
+      "implied_px": 70.2,
+      "weight": 0.2,
+      "contribution": 14.04,
+      "reasoning": "ARM is an IP-licensing franchise with software-like margins, so an EV/EBITDA (or P/E) cross-check against premium IP and design-software peers is the relevant relative anchor. Even a rich multiple lands below the extreme spot valuation."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": -85.6
+}
