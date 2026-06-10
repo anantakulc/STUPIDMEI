@@ -5,7 +5,7 @@
   "current_price": 355.94,
   "shares_outstanding_b": 0.195639,
   "net_debt_b": 4.5,
-  "computed_at": "2026-06-10T04:33:12Z",
+  "computed_at": "2026-06-10T04:46:43Z",
   "primary_method": {
     "name": "DCF",
     "category": "intrinsic",
@@ -550,17 +550,17 @@
         "fcf_multiplier": 1.35
       },
       "implied_px": 183.8,
-      "probability": 0.15,
+      "probability": 0.1,
       "probability_reasoning": "Lower odds. Requires 1.6T and co-packaged-optics content to inflect faster than modeled and indium-phosphide vertical integration to lift margins above plan.",
       "reasoning": "Coherent becomes the preferred Western optical-engine supplier; revenue and margins beat the base path materially."
     }
   ],
-  "blended_target": 123.09,
-  "blending_logic": "45% Base + 25% Bear + 15% Bull + 20% EV/EBITDA cross-check.",
+  "blended_target": 113.9,
+  "blending_logic": "45% Base + 25% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
   "blending_weights": {
     "cross_check": 0.2
   },
-  "weights_reasoning": "Bear gets a heavy 25% because transceiver pricing resets and a 5x run leave the stock exposed to any single soft print. Base 45% for the constructive AI-optical ramp. Bull 15% for the CPO/1.6T acceleration. Cross-check 20% anchors intrinsic value against the peer multiple.",
+  "weights_reasoning": "Bear gets a heavy 25% because transceiver pricing resets and a 5x run leave the stock exposed to any single soft print. Base 45% for the constructive AI-optical ramp. Bull 10% for the CPO/1.6T acceleration. Cross-check 20% anchors intrinsic value against the peer multiple.",
   "weighted_contributions": [
     {
       "component": "Bear",
@@ -579,8 +579,8 @@
     {
       "component": "Bull",
       "implied_px": 183.8,
-      "weight": 0.15,
-      "contribution": 27.57,
+      "weight": 0.1,
+      "contribution": 18.38,
       "reasoning": "Lower odds. Requires 1.6T and co-packaged-optics content to inflect faster than modeled and indium-phosphide vertical integration to lift margins above plan."
     },
     {
@@ -591,6 +591,6 @@
       "reasoning": "EV/EBITDA is the right cross-check for a profitable optical-components maker. Peer set: optical/photonics and AI-networking names. A generous 22x forward EBITDA still anchors well below where the post-run share price sits."
     }
   ],
-  "weight_total_check": 1.05,
-  "upside_pct": -65.4
+  "weight_total_check": 1.0,
+  "upside_pct": -68.0
 }

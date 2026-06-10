@@ -9,9 +9,9 @@
     "action": "HOLD with negative bias",
     "tone": "neutral",
     "current_price": 392.16,
-    "target_12m": 368,
-    "upside_pct": -6.1,
-    "rationale": "0.25 × $196 (Bear SOTP) + 0.45 × $370 (Base SOTP) + 0.10 × $567 (Bull SOTP) + 0.20 × $493 (forward-multiple cross-check) = $371. The intrinsic SOTP says fairly valued to slightly rich; the Street is more generous. Net: a great franchise at a full price.",
+    "target_12m": 370,
+    "upside_pct": -5.8,
+    "rationale": "0.25 x $195 (Bear SOTP) + 0.45 x $368 (Base SOTP) + 0.10 x $564 (Bull SOTP) + 0.20 x $493 (forward-multiple cross-check) = $370 (probability-weighted). The base SOTP aggregate is $368; intrinsic says fairly valued to slightly rich while the Street is more generous. A great franchise at a full price.",
     "next_earnings": "2026-09-04 (Q3 FY26, est · AI semiconductor run-rate and VMware net retention the two prints that matter)"
   },
   "snapshot": [
@@ -325,11 +325,11 @@
   "recommendation_table": [
     {
       "action": "Direction",
-      "detail": "HOLD with negative bias. Quality franchise, full price. Intrinsic SOTP ($370) sits below the $396 market."
+      "detail": "HOLD with negative bias. Quality franchise, full price. Base SOTP ($368) sits just below the $392.16 market."
     },
     {
       "action": "12m target",
-      "detail": "$371 (probability-weighted: 25% × $196 + 45% × $370 + 10% × $567 + 20% × $493 cross-check)."
+      "detail": "$370 (probability-weighted: 25% x $195 + 45% x $368 + 10% x $564 + 20% x $493 cross-check; base SOTP aggregate $368)."
     },
     {
       "action": "Existing longs",

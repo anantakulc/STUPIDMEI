@@ -172,7 +172,7 @@
         "terminal_growth": 0.04,
         "fcf_multiplier": 1.35
       },
-      "probability": 0.15,
+      "probability": 0.1,
       "probability_reasoning": "Lower odds. Requires 1.6T and co-packaged-optics content to inflect faster than modeled and indium-phosphide vertical integration to lift margins above plan.",
       "reasoning": "Coherent becomes the preferred Western optical-engine supplier; revenue and margins beat the base path materially."
     }
@@ -180,6 +180,6 @@
   "blending_weights": {
     "cross_check": 0.2
   },
-  "blending_logic": "45% Base + 25% Bear + 15% Bull + 20% EV/EBITDA cross-check.",
-  "weights_reasoning": "Bear gets a heavy 25% because transceiver pricing resets and a 5x run leave the stock exposed to any single soft print. Base 45% for the constructive AI-optical ramp. Bull 15% for the CPO/1.6T acceleration. Cross-check 20% anchors intrinsic value against the peer multiple."
+  "blending_logic": "45% Base + 25% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
+  "weights_reasoning": "Bear gets a heavy 25% because transceiver pricing resets and a 5x run leave the stock exposed to any single soft print. Base 45% for the constructive AI-optical ramp. Bull 10% for the CPO/1.6T acceleration. Cross-check 20% anchors intrinsic value against the peer multiple."
 }

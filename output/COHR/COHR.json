@@ -9,9 +9,9 @@
     "action": "SELL",
     "tone": "negative",
     "current_price": 355.94,
-    "target_12m": 123,
-    "upside_pct": -65.4,
-    "rationale": "0.25 x $51 (Bear) + 0.45 x $121 (Base) + 0.15 x $184 (Bull) + 0.20 x $140 (EV/EBITDA cross-check) = $123. Intrinsic DCF lands ~65% below a share that has roughly 5x'd off its 52-week low. A real AI-optical franchise, priced for a decade of flawless 1.6T execution.",
+    "target_12m": 114,
+    "upside_pct": -68.0,
+    "rationale": "0.25 x $51 (Bear) + 0.45 x $121 (Base) + 0.10 x $184 (Bull) + 0.20 x $140 (EV/EBITDA cross-check) = $114. Intrinsic DCF lands ~68% below a share that has roughly 5x'd off its 52-week low. A real AI-optical franchise, priced for a decade of flawless 1.6T execution.",
     "next_earnings": "2026-08-12 (Q4 FY26 est. Datacom transceiver run-rate and indium-phosphide margin the prints that matter)"
   },
   "snapshot": [
@@ -65,13 +65,13 @@
     },
     {
       "label": "Intrinsic vs price",
-      "value": "-65%"
+      "value": "-68%"
     }
   ],
   "thesis": [
     "Coherent is a genuine winner of the AI-optical buildout: it supplies the 800G and 1.6T datacom transceivers and the indium-phosphide lasers inside them that connect accelerators across the data center, a market growing faster than compute itself.",
     "The II-VI merger gave it vertical integration from laser chip to finished module plus a recovering industrial-laser and telecom base, and deleveraging steadily lifts equity value as interest expense falls.",
-    "The problem is price. At roughly 12x sales for a components maker whose datacom margins are perpetually reset each generation, an intrinsic DCF lands near $123 against a $356 stock. The franchise is real; the multiple prices a flawless decade."
+    "The problem is price. At roughly 12x sales for a components maker whose datacom margins are perpetually reset each generation, an intrinsic DCF lands near $114 against a $356 stock. The franchise is real; the multiple prices a flawless decade."
   ],
   "bear_paragraph": "Coherent is a good company wearing a valuation built for a different kind of business. Optical transceivers are a volume game where every generation, 400G to 800G to 1.6T, resets unit pricing downward, and Chinese competitors InnoLight and Eoptolink win share on cost. The bull case extrapolates the current AI-datacom surge into a smooth decade, but components demand is lumpy and tied to a handful of hyperscaler build schedules. The deeper threat is architectural: co-packaged optics aims to move the optical engine inside the switch package, which over time disintermediates the pluggable transceiver that drives Coherent's growth. Stack on roughly $4.5B of net debt inherited from the II-VI deal, a beta near 1.45, and a stock that has risen fivefold off its low, and you have an instrument that gaps on any soft quarter. You do not need a recession. You need one transceiver price war or one hyperscaler pausing its optical orders, and a 12x-sales multiple has nowhere to hide. Intrinsic DCF says the equity is worth a third of the price even on a constructive ramp. That gap is the thesis.",
   "peers": [
@@ -237,7 +237,7 @@
   "synthesis_paths": [
     {
       "label": "Bull",
-      "prob": 0.15,
+      "prob": 0.1,
       "outcome_range": "$170 to 200",
       "description": "1.6T and CPO content inflect faster than modeled, indium-phosphide integration lifts margins above plan, and the Western-supply premium holds. Even so, intrinsic value sits well below the current price."
     },
@@ -257,11 +257,11 @@
   "recommendation_table": [
     {
       "action": "Direction",
-      "detail": "SELL / avoid. Excellent AI-optical franchise, but intrinsic DCF (~$123) sits ~65% below the $356 price."
+      "detail": "SELL / avoid. Excellent AI-optical franchise, but intrinsic DCF (~$114) sits ~68% below the $356 price."
     },
     {
       "action": "12m target",
-      "detail": "$123 (25% x $51 + 45% x $121 + 15% x $184 + 20% x $140 cross-check)."
+      "detail": "$114 (25% x $51 + 45% x $121 + 10% x $184 + 20% x $140 cross-check)."
     },
     {
       "action": "Existing longs",

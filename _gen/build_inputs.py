@@ -60,7 +60,7 @@ sc=[
  scen("Base",{},0.45,
    "Central case. AI optical content keeps compounding and the merged cost base delivers margin, but the share price already discounts a long, smooth ramp.",
    "Steady datacom-led growth decelerating from 20% to high-single-digits, EBIT margin grinding from 13% to low-20s."),
- scen("Bull",{"wacc":0.105,"terminal_growth":0.04,"fcf_multiplier":1.35},0.15,
+ scen("Bull",{"wacc":0.105,"terminal_growth":0.04,"fcf_multiplier":1.35},0.10,
    "Lower odds. Requires 1.6T and co-packaged-optics content to inflect faster than modeled and indium-phosphide vertical integration to lift margins above plan.",
    "Coherent becomes the preferred Western optical-engine supplier; revenue and margins beat the base path materially."),
 ]
@@ -71,8 +71,8 @@ OUT["COHR"]=dcf_inputs("COHR",355.94,0.195639,4.5,
   "Ke = 4.3% Rf + 1.45 beta x 5.0% ERP = 11.55%. Beta above the semi average for transceiver price-cyclicality and post-merger leverage. A ~20% after-tax debt weight on the remaining II-VI/Coherent debt pulls WACC to ~10.2%, inside the 9-12% semi band.",
   0.03,"3.0% terminal: optical content should outgrow GDP as clusters scale, but components face perpetual price pressure, so terminal sits at a mature-semis rate.",
   rows,cc,sc,
-  "45% Base + 25% Bear + 15% Bull + 20% EV/EBITDA cross-check.",
-  "Bear gets a heavy 25% because transceiver pricing resets and a 5x run leave the stock exposed to any single soft print. Base 45% for the constructive AI-optical ramp. Bull 15% for the CPO/1.6T acceleration. Cross-check 20% anchors intrinsic value against the peer multiple.",
+  "45% Base + 25% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
+  "Bear gets a heavy 25% because transceiver pricing resets and a 5x run leave the stock exposed to any single soft print. Base 45% for the constructive AI-optical ramp. Bull 10% for the CPO/1.6T acceleration. Cross-check 20% anchors intrinsic value against the peer multiple.",
   "10.2% is mid semi band; justified by transceiver cyclicality and residual leverage.")
 
 # ============================== CLS ==============================
@@ -212,7 +212,7 @@ sc=[
  scen("Base",{},0.45,
    "Central case. FN keeps winning AI optical assembly and margins inch up, but the valuation already prices a long, smooth datacom ramp.",
    "Datacom-led growth decelerating from 18% to mid-single-digits, operating margin grinding from 12.5% to ~14%."),
- scen("Bull",{"wacc":0.105,"terminal_growth":0.035,"fcf_multiplier":1.3},0.15,
+ scen("Bull",{"wacc":0.105,"terminal_growth":0.035,"fcf_multiplier":1.3},0.10,
    "Lower odds. Requires 1.6T and co-packaged-optics assembly to flow to FN at scale and margins to expand above plan.",
    "Fabrinet becomes the default high-complexity optical-engine assembler; revenue and margins beat the base path."),
 ]
@@ -223,8 +223,8 @@ OUT["FN"]=dcf_inputs("FN",586.00,0.035830,-0.9,
   "Ke = 4.3% Rf + 1.30 beta x 5.0% ERP = 10.8%. Net-cash balance sheet sets WACC = Ke at 10.8%. Beta reflects customer concentration and datacom cyclicality offset by a debt-free balance sheet.",
   0.03,"3.0% terminal: optical assembly is a GDP-plus business once the AI build matures; thin margins and customer concentration cap the durable growth rate.",
   rows,cc,sc,
-  "45% Base + 25% Bear + 15% Bull + 20% EV/EBITDA cross-check.",
-  "Bear 25% because customer concentration, thin margins and a ~2.5x run leave little room for error, and co-packaged optics is a structural overhang. Base 45% for the continued AI optical ramp. Bull 15% for a CPO/1.6T assembly win. Cross-check 20% anchors against optical/manufacturing multiples.",
+  "45% Base + 25% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
+  "Bear 25% because customer concentration, thin margins and a ~2.5x run leave little room for error, and co-packaged optics is a structural overhang. Base 45% for the continued AI optical ramp. Bull 10% for a CPO/1.6T assembly win. Cross-check 20% anchors against optical/manufacturing multiples.",
   "10.8% equals Ke on net cash; mid-band for a concentrated, thin-margin assembler.")
 
 for t,d in OUT.items():

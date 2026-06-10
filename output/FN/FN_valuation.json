@@ -5,7 +5,7 @@
   "current_price": 586.0,
   "shares_outstanding_b": 0.03583,
   "net_debt_b": -0.9,
-  "computed_at": "2026-06-10T04:33:13Z",
+  "computed_at": "2026-06-10T04:46:43Z",
   "primary_method": {
     "name": "DCF",
     "category": "intrinsic",
@@ -550,17 +550,17 @@
         "fcf_multiplier": 1.3
       },
       "implied_px": 338.32,
-      "probability": 0.15,
+      "probability": 0.1,
       "probability_reasoning": "Lower odds. Requires 1.6T and co-packaged-optics assembly to flow to FN at scale and margins to expand above plan.",
       "reasoning": "Fabrinet becomes the default high-complexity optical-engine assembler; revenue and margins beat the base path."
     }
   ],
-  "blended_target": 250.61,
-  "blending_logic": "45% Base + 25% Bear + 15% Bull + 20% EV/EBITDA cross-check.",
+  "blended_target": 233.69,
+  "blending_logic": "45% Base + 25% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
   "blending_weights": {
     "cross_check": 0.2
   },
-  "weights_reasoning": "Bear 25% because customer concentration, thin margins and a ~2.5x run leave little room for error, and co-packaged optics is a structural overhang. Base 45% for the continued AI optical ramp. Bull 15% for a CPO/1.6T assembly win. Cross-check 20% anchors against optical/manufacturing multiples.",
+  "weights_reasoning": "Bear 25% because customer concentration, thin margins and a ~2.5x run leave little room for error, and co-packaged optics is a structural overhang. Base 45% for the continued AI optical ramp. Bull 10% for a CPO/1.6T assembly win. Cross-check 20% anchors against optical/manufacturing multiples.",
   "weighted_contributions": [
     {
       "component": "Bear",
@@ -579,8 +579,8 @@
     {
       "component": "Bull",
       "implied_px": 338.32,
-      "weight": 0.15,
-      "contribution": 50.75,
+      "weight": 0.1,
+      "contribution": 33.83,
       "reasoning": "Lower odds. Requires 1.6T and co-packaged-optics assembly to flow to FN at scale and margins to expand above plan."
     },
     {
@@ -591,6 +591,6 @@
       "reasoning": "EV/EBITDA cross-check against optical-component and contract-manufacturing peers. Even a generous multiple for an asset-light optical assembler lands below the post-run share price."
     }
   ],
-  "weight_total_check": 1.05,
-  "upside_pct": -57.2
+  "weight_total_check": 1.0,
+  "upside_pct": -60.1
 }

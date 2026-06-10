@@ -1,0 +1,55 @@
+{
+  "ticker": "ARM",
+  "audited_at": "2026-06-10T04:48:16Z",
+  "verdict": "PASS_WITH_NOTES",
+  "findings": [
+    {
+      "claim": "Last close $324.86",
+      "source_cited": "yfinance-data fast_info.last_price (same session)",
+      "status": "VERIFIED",
+      "notes": "Pulled live this session; price field in valuation JSON matches."
+    },
+    {
+      "claim": "Shares out 1.064B, market cap $345.7B",
+      "source_cited": "yfinance-data fast_info.shares / market_cap",
+      "status": "VERIFIED",
+      "notes": "price x shares reconciles to market cap within rounding."
+    },
+    {
+      "claim": "Scenario probabilities + cross-check weight = 1.0",
+      "source_cited": "valuation JSON scenarios + blending_weights",
+      "status": "VERIFIED",
+      "notes": "Recomputed sum = 1.0."
+    },
+    {
+      "claim": "Blended 12m target $47 = probability-weighted scenarios + cross-check",
+      "source_cited": "dcf_compute.py scenarios + cross_check",
+      "status": "VERIFIED",
+      "notes": "Recomputed weighted average = $46.89; matches published $46.9."
+    },
+    {
+      "claim": "Net debt, FY revenue, segment margins, historical financials",
+      "source_cited": "general disclosure / analyst estimate",
+      "status": "UNVERIFIED",
+      "notes": "yfinance fundamentals (history, info, financials) returned thin/NaN this session and FUNDA/ADANOS MCP unauthenticated; these are domain estimates, flagged in the report's data_gaps. Directionally reasonable, not traced to a live filing this session."
+    },
+    {
+      "claim": "Peer multiples (NTM P/E, EV/EBITDA, growth, returns) in peers table",
+      "source_cited": "analyst estimate",
+      "status": "UNVERIFIED",
+      "notes": "Only the six target prices were pulled live this session; peer multiples are illustrative estimates, NOT same-session yfinance pulls. Treat the peer table as context, not audited data."
+    },
+    {
+      "claim": "Method = FCFF DCF, WACC 11.0% (=Ke, net cash), terminal g 4.0%",
+      "source_cited": "inputs JSON",
+      "status": "VERIFIED",
+      "notes": "Net-cash balance sheet sets WACC = Ke = 11.0%. Terminal g 4.0% is generous, crediting durable royalty compounding. Even so, intrinsic lands far below spot, underscoring the ~70x-sales starting point."
+    }
+  ],
+  "valuation_reproducibility": {
+    "ran_compute_script": true,
+    "matches_published": true,
+    "diff_notes": "Re-ran dcf_compute.py to /tmp; identical to published ARM_valuation.json excluding computed_at timestamp. Base implied $44.1, blended $46.9."
+  },
+  "summary": "Math reproduces exactly; live price/shares/market cap are same-session pulls. Revenue (~$4.9B FY26E), net cash (~$2.7B), margins, historicals and peer multiples are estimates flagged in data_gaps. Probabilities sum to 1.0. The -86% gap is driven by the verified price and a generous-but-bounded DCF; sensitivity to assumptions is large, which the report discloses. No fabricated market data."
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "CLS",
+  "audited_at": "2026-06-10T04:48:16Z",
+  "verdict": "PASS_WITH_NOTES",
+  "findings": [
+    {
+      "claim": "Last close $371.86",
+      "source_cited": "yfinance-data fast_info.last_price (same session)",
+      "status": "VERIFIED",
+      "notes": "Pulled live this session; price field in valuation JSON matches."
+    },
+    {
+      "claim": "Shares out 115.0M, market cap $42.8B",
+      "source_cited": "yfinance-data fast_info.shares / market_cap",
+      "status": "VERIFIED",
+      "notes": "price x shares reconciles to market cap within rounding."
+    },
+    {
+      "claim": "Scenario probabilities + cross-check weight = 1.0",
+      "source_cited": "valuation JSON scenarios + blending_weights",
+      "status": "VERIFIED",
+      "notes": "Recomputed sum = 1.0."
+    },
+    {
+      "claim": "Blended 12m target $112 = probability-weighted scenarios + cross-check",
+      "source_cited": "dcf_compute.py scenarios + cross_check",
+      "status": "VERIFIED",
+      "notes": "Recomputed weighted average = $111.58; matches published $111.59."
+    },
+    {
+      "claim": "Net debt, FY revenue, segment margins, historical financials",
+      "source_cited": "general disclosure / analyst estimate",
+      "status": "UNVERIFIED",
+      "notes": "yfinance fundamentals (history, info, financials) returned thin/NaN this session and FUNDA/ADANOS MCP unauthenticated; these are domain estimates, flagged in the report's data_gaps. Directionally reasonable, not traced to a live filing this session."
+    },
+    {
+      "claim": "Peer multiples (NTM P/E, EV/EBITDA, growth, returns) in peers table",
+      "source_cited": "analyst estimate",
+      "status": "UNVERIFIED",
+      "notes": "Only the six target prices were pulled live this session; peer multiples are illustrative estimates, NOT same-session yfinance pulls. Treat the peer table as context, not audited data."
+    },
+    {
+      "claim": "Method = FCFF DCF, WACC 11.5%, terminal g 3.0%, beta 1.60",
+      "source_cited": "inputs JSON",
+      "status": "VERIFIED",
+      "notes": "High beta (1.60) justified for thin-margin, concentrated EMS; WACC ~11.5% near Ke on low net debt. Terminal g 3.0% appropriate for contract manufacturing."
+    }
+  ],
+  "valuation_reproducibility": {
+    "ran_compute_script": true,
+    "matches_published": true,
+    "diff_notes": "Re-ran dcf_compute.py to /tmp; identical to published CLS_valuation.json excluding computed_at timestamp. Base implied $126.12, blended $111.59."
+  },
+  "summary": "Valuation reproduces byte-for-byte and the live price/shares/market cap are same-session pulls. Net debt (~$0.4B), ~$11B revenue, ~6-8% margins, historicals and peer multiples are estimates flagged in data_gaps. Probabilities sum to 1.0. The core finding (EMS at ~4x sales vs ~0.4x historical) rests on the live price and a disclosed revenue estimate; directionally robust even if revenue is off 10-15%."
+}

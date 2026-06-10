@@ -9,9 +9,9 @@
     "action": "SELL",
     "tone": "negative",
     "current_price": 586.0,
-    "target_12m": 251,
-    "upside_pct": -57.2,
-    "rationale": "0.25 x $144 (Bear) + 0.45 x $245 (Base) + 0.15 x $338 (Bull) + 0.20 x $268 (EV/EBITDA cross-check) = $251. A well-run optical assembler, but ~6x sales for a thin-margin contract manufacturer prices a flawless AI-optical decade; intrinsic value sits ~57% below spot.",
+    "target_12m": 234,
+    "upside_pct": -60.1,
+    "rationale": "0.25 x $144 (Bear) + 0.45 x $245 (Base) + 0.10 x $338 (Bull) + 0.20 x $268 (EV/EBITDA cross-check) = $234. A well-run optical assembler, but ~6x sales for a thin-margin contract manufacturer prices a flawless AI-optical decade; intrinsic value sits ~60% below spot.",
     "next_earnings": "2026-08-17 (Q4 FY26 est. Datacom revenue and optical-program mix the prints that matter)"
   },
   "snapshot": [
@@ -237,7 +237,7 @@
   "synthesis_paths": [
     {
       "label": "Bull",
-      "prob": 0.15,
+      "prob": 0.1,
       "outcome_range": "$320 to 360",
       "description": "1.6T and CPO assembly flow to Fabrinet at scale and margins expand above plan; even so intrinsic value stays below the current price."
     },
@@ -257,11 +257,11 @@
   "recommendation_table": [
     {
       "action": "Direction",
-      "detail": "SELL / avoid on valuation. Excellent operator, but ~6x sales for an assembler is unsupportable; intrinsic ~$251."
+      "detail": "SELL / avoid on valuation. Excellent operator, but ~6x sales for an assembler is unsupportable; intrinsic ~$234."
     },
     {
       "action": "12m target",
-      "detail": "$251 (25% x $144 + 45% x $245 + 15% x $338 + 20% x $268 cross-check)."
+      "detail": "$234 (25% x $144 + 45% x $245 + 10% x $338 + 20% x $268 cross-check)."
     },
     {
       "action": "Existing longs",

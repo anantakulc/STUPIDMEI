@@ -172,7 +172,7 @@
         "terminal_growth": 0.035,
         "fcf_multiplier": 1.3
       },
-      "probability": 0.15,
+      "probability": 0.1,
       "probability_reasoning": "Lower odds. Requires 1.6T and co-packaged-optics assembly to flow to FN at scale and margins to expand above plan.",
       "reasoning": "Fabrinet becomes the default high-complexity optical-engine assembler; revenue and margins beat the base path."
     }
@@ -180,6 +180,6 @@
   "blending_weights": {
     "cross_check": 0.2
   },
-  "blending_logic": "45% Base + 25% Bear + 15% Bull + 20% EV/EBITDA cross-check.",
-  "weights_reasoning": "Bear 25% because customer concentration, thin margins and a ~2.5x run leave little room for error, and co-packaged optics is a structural overhang. Base 45% for the continued AI optical ramp. Bull 15% for a CPO/1.6T assembly win. Cross-check 20% anchors against optical/manufacturing multiples."
+  "blending_logic": "45% Base + 25% Bear + 10% Bull + 20% EV/EBITDA cross-check.",
+  "weights_reasoning": "Bear 25% because customer concentration, thin margins and a ~2.5x run leave little room for error, and co-packaged optics is a structural overhang. Base 45% for the continued AI optical ramp. Bull 10% for a CPO/1.6T assembly win. Cross-check 20% anchors against optical/manufacturing multiples."
 }

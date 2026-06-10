@@ -1,0 +1,55 @@
+{
+  "ticker": "NOW",
+  "audited_at": "2026-06-10T04:48:16Z",
+  "verdict": "PASS_WITH_NOTES",
+  "findings": [
+    {
+      "claim": "Last close $106.97",
+      "source_cited": "yfinance-data fast_info.last_price (same session)",
+      "status": "VERIFIED",
+      "notes": "Pulled live this session; price field in valuation JSON matches."
+    },
+    {
+      "claim": "Shares out 1.031B, market cap $110.3B",
+      "source_cited": "yfinance-data fast_info.shares / market_cap",
+      "status": "VERIFIED",
+      "notes": "price x shares reconciles to market cap within rounding."
+    },
+    {
+      "claim": "Scenario probabilities + cross-check weight = 1.0",
+      "source_cited": "valuation JSON scenarios + blending_weights",
+      "status": "VERIFIED",
+      "notes": "Recomputed sum = 1.0."
+    },
+    {
+      "claim": "Blended 12m target $112 = probability-weighted scenarios + cross-check",
+      "source_cited": "dcf_compute.py scenarios + cross_check",
+      "status": "VERIFIED",
+      "notes": "Recomputed weighted average = $111.56; matches published $111.56."
+    },
+    {
+      "claim": "Net debt, FY revenue, segment margins, historical financials",
+      "source_cited": "general disclosure / analyst estimate",
+      "status": "UNVERIFIED",
+      "notes": "yfinance fundamentals (history, info, financials) returned thin/NaN this session and FUNDA/ADANOS MCP unauthenticated; these are domain estimates, flagged in the report's data_gaps. Directionally reasonable, not traced to a live filing this session."
+    },
+    {
+      "claim": "Peer multiples (NTM P/E, EV/EBITDA, growth, returns) in peers table",
+      "source_cited": "analyst estimate",
+      "status": "UNVERIFIED",
+      "notes": "Only the six target prices were pulled live this session; peer multiples are illustrative estimates, NOT same-session yfinance pulls. Treat the peer table as context, not audited data."
+    },
+    {
+      "claim": "Method = FCFF DCF on normalized cash margins, WACC 10.0%, terminal g 4.0%",
+      "source_cited": "inputs JSON",
+      "status": "VERIFIED",
+      "notes": "GAAP EBIT understates cash earnings (deferred revenue, SBC); inputs use a normalized cash-margin proxy with that reasoning stated. WACC 10.0% = Ke on net cash. This is the one name where intrinsic ~ price."
+    }
+  ],
+  "valuation_reproducibility": {
+    "ran_compute_script": true,
+    "matches_published": true,
+    "diff_notes": "Re-ran dcf_compute.py to /tmp; identical to published NOW_valuation.json excluding computed_at timestamp. Base implied $118.55, blended $111.56."
+  },
+  "summary": "Reproduces byte-for-byte; live price/shares/market cap (post ~5:1 split in this dataset) are same-session pulls and internally consistent. Revenue (~$13B), net cash (~$6B), FCF margin (~31%), historicals and peer multiples are estimates flagged in data_gaps. Probabilities sum to 1.0. The +4% near-fair conclusion is the least assumption-sensitive in the basket. No fabricated market data."
+}

@@ -1,27 +1,55 @@
 {
   "ticker": "AVGO",
-  "audited_at": "2026-06-09T00:00:00Z",
+  "audited_at": "2026-06-10T04:49:28Z",
   "verdict": "PASS_WITH_NOTES",
   "findings": [
-    {"claim": "Last close $396.60", "source_cited": "yfinance-data fast_info.last_price", "status": "VERIFIED", "notes": ""},
-    {"claim": "Market cap $1.878T, EV $1.928T, net debt $48.96B", "source_cited": "yfinance-data info + FY25 balance sheet", "status": "VERIFIED", "notes": "Net debt from FY25 BS (total debt 65.14 less cash 16.18 ≈ 48.96)."},
-    {"claim": "Forward EPS $19.35, forward P/E 20.5x", "source_cited": "yfinance-data info", "status": "VERIFIED", "notes": "396.60 / 19.35 = 20.5. Consistent."},
-    {"claim": "Trailing P/E 65.8x, EV/EBITDA 46.0x", "source_cited": "yfinance-data info", "status": "VERIFIED", "notes": "EV/EBITDA is on GAAP EBITDA depressed by VMware amortization; narrative flags this."},
-    {"claim": "1y +63.7%, YTD +14.3%, -19.9% from $495 high, 30d vol 61.4%, ADTV $10.8B", "source_cited": "yfinance-data history", "status": "VERIFIED", "notes": "Recomputed from 1y daily closes."},
-    {"claim": "Mean PT $517.6 / median $525, 45 analysts strong_buy, implied +30.5%", "source_cited": "yfinance-data info", "status": "VERIFIED", "notes": "517.6 / 396.60 - 1 = +30.5%."},
-    {"claim": "FY25 revenue $63.89B, EBITDA $34.71B (54.3%), NI $23.13B, FCF $26.91B, SBC $7.57B, goodwill $97.8B, equity $81.29B", "source_cited": "yfinance-data FY2025 financials/BS/CF", "status": "VERIFIED", "notes": "All from the 2025-10-31 annual columns."},
-    {"claim": "FY25 revenue $63.89B used in snapshot", "source_cited": "yfinance annual", "status": "VERIFIED_WITH_NOTE", "notes": "yfinance TTM revenue is $75.5B, above the annual figure; this gap is a known yfinance consolidation artifact and is disclosed in data_gaps. Valuation uses forward FCF/EBITDA estimates, not the TTM print."},
-    {"claim": "Segment split 56% Semi / 44% Software; software margin ~70%", "source_cited": "general disclosure", "status": "UNVERIFIED", "notes": "Not pulled from a live 10-Q this session (Funda MCP unauthenticated). Flagged in data_gaps and open_questions. Inference from prior filings."},
-    {"claim": "AI semiconductor run-rate ~$5B+/qtr; FY27 AI SAM $60-90B; custom XPU customers Google/Meta/ByteDance", "source_cited": "management earnings-call framing", "status": "UNVERIFIED", "notes": "Management commentary, not a yfinance field. Labeled as estimate/framing in bull file and data_gaps. Recommend keeping the 'management framing' qualifier."},
-    {"claim": "Apple historically ~20% of revenue and designing Broadcom parts out", "source_cited": "industry/prior disclosure", "status": "UNVERIFIED", "notes": "Inference, not a current line-item disclosure. Set to null in customer concentration; framed as historical. Acceptable as written."},
-    {"claim": "EPS FY22 $2.61 / FY23 $3.06 / FY24 $1.25 / FY25 $4.89", "source_cited": "Calc (NI / split-adjusted shares ~4.7B)", "status": "VERIFIED_WITH_NOTE", "notes": "GAAP, computed from net income over post-10:1-split share count. Approximate; trailing yfinance EPS ($6.03 TTM) differs because TTM includes the most recent quarter. Labeled GAAP in table."},
-    {"claim": "Peer multiples (NVDA 16.5x fpe, AMD 37.5x, MRVL 46.8x, QCOM 20.4x, TXN 30.9x)", "source_cited": "yfinance-data info, same session", "status": "VERIFIED", "notes": "All pulled in the same session as the target. Peer set (AI-silicon + mature-semi anchors) is reasonable."},
-    {"claim": "12m target $371 = 0.25×$196 + 0.45×$370 + 0.10×$567 + 0.20×$493", "source_cited": "sotp_compute scenarios + cross_check", "status": "VERIFIED", "notes": "Recomputed weighted average = $370.81, rounds to $371. Scenario prices match published valuation JSON."}
+    {
+      "claim": "Last close $392.16",
+      "source_cited": "yfinance-data fast_info.last_price (same session)",
+      "status": "VERIFIED",
+      "notes": "Refreshed from the prior $396.60; valuation and narrative updated to $392.16."
+    },
+    {
+      "claim": "Shares 4.758B, market cap ~$1.866T, net debt $48.96B",
+      "source_cited": "yfinance-data + FY25 balance sheet",
+      "status": "VERIFIED",
+      "notes": "Net debt verified in prior-session audit (total debt 65.14 less cash 16.18). Shares refreshed to 4.7576B."
+    },
+    {
+      "claim": "Scenario probabilities + cross-check weight = 1.0",
+      "source_cited": "inputs scenarios + blending_weights",
+      "status": "VERIFIED",
+      "notes": "Bear 0.25 + Base 0.45 + Bull 0.10 + cross-check 0.20 = 1.0."
+    },
+    {
+      "claim": "12m target $370 (probability-weighted); base SOTP aggregate $368",
+      "source_cited": "sotp_compute + narrative blend",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "sotp_compute.blended_target reports the BASE SOTP aggregate ($368.25), not a probability-weighted blend. The narrative target ($370) is the probability-weighted figure (0.25xBear+0.45xBase+0.10xBull+0.20xcross-check = $369.52). Both are disclosed; they differ by ~$2."
+    },
+    {
+      "claim": "FY25 financials (revenue $63.89B, EBITDA $34.71B, FCF $26.91B, SBC $7.57B, goodwill $97.8B, equity $81.29B)",
+      "source_cited": "yfinance FY2025 statements",
+      "status": "VERIFIED",
+      "notes": "Verified line-by-line in the prior-session audit from the 2025-10-31 annual columns."
+    },
+    {
+      "claim": "56/44 Semi/Software split, ~70% software margin, AI SAM $60-90B",
+      "source_cited": "management framing / prior filings",
+      "status": "UNVERIFIED",
+      "notes": "Management commentary and prior-filing inference, not a live 10-Q extract (Funda MCP unauthenticated). Flagged in data_gaps; 'framing' qualifiers retained."
+    },
+    {
+      "claim": "Peer multiples (NVDA/AMD/MRVL/QCOM/TXN)",
+      "source_cited": "yfinance-data info, prior session",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "Pulled in the prior session, not re-pulled today; peer set reasonable. Treat as same-week, not same-session."
+    }
   ],
   "valuation_reproducibility": {
     "ran_compute_script": true,
     "matches_published": true,
-    "diff_notes": "Re-ran sotp_compute.py to /tmp/audit_valuation.json; identical to published AVGO_valuation.json byte-for-byte excluding the computed_at timestamp. Base SOTP $370.00, Bear $195.86, Base $370.00, Bull $566.55, cross-check $493.43."
+    "diff_notes": "Re-ran sotp_compute.py to /tmp; identical to published AVGO_valuation.json excluding computed_at. Segment EVs: Semi DCF $1,477.9B, Software 17x EBITDA $323.0B; base aggregate px $368.25."
   },
-  "summary": "Solid: every market-data and FY25 financial-statement number traces to a same-session yfinance pull and reconciles (multiples, returns, net debt, balance-sheet items). The valuation is fully reproducible. Soft, and correctly flagged: the 56/44 segment split, ~70% software margin, AI quarterly run-rate, and FY27 SAM are management framings or prior-filing inferences rather than live 10-Q extracts, because Funda MCP was unauthenticated. The yfinance TTM-vs-annual revenue gap is disclosed and the model sensibly uses forward estimates. Recommend keeping all 'management framing' and 'historical' qualifiers in place. No fabricated figures found."
+  "summary": "Fully reproducible SOTP. Market data refreshed to the live $392.16 and reconciles; FY25 statement items were verified in detail in the prior-session audit. One reconciliation note: sotp_compute reports the base SOTP aggregate ($368) as blended_target, while the narrative target ($370) is the probability-weighted blend; both are now disclosed. Segment splits and AI SAM remain management framings, correctly flagged. No fabricated figures."
 }
