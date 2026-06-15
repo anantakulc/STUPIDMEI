@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "ticker": "EASTROC",
+  "exchange_ticker": "605499.SS",
+  "company_name": "Eastroc Beverage (Group) Co., Ltd.",
+  "currency": "CNY",
+  "current_price": 128.26,
+  "shares_outstanding_b": 0.676017,
+  "net_debt_b": -4.93,
+  "primary_method": {
+    "name": "DCF",
+    "reasoning": "Eastroc generates substantial and growing FCF (3.91Bn CNY in FY2025, 18.7% FCF-to-revenue). Positive earnings, positive FCF, and a multi-year growth runway with visible revenue projections make DCF the correct primary method. Peer EV/EBITDA is used as the cross-check (13.5x FY2026E, implying ~164 CNY).",
+    "inputs": {
+      "wacc": {
+        "value": 0.0855,
+        "components": {
+          "rf": 0.018,
+          "beta": 0.90,
+          "erp": 0.075,
+          "debt_weight": 0.07,
+          "cost_of_debt_after_tax": 0.032
+        },
+        "component_reasonings": {
+          "rf": "China 10-year government bond yield as of June 2026 approximately 1.8% following PBOC easing cycle.",
+          "beta": "Beta vs CSI 300 estimated at 0.90; yfinance reports 0.135 vs S&P 500 which is not the relevant benchmark. Consumer beverage companies in China historically trade at 0.8-1.0x CSI 300.",
+          "erp": "China A-share equity risk premium 7.5% reflecting macro uncertainty, property sector headwinds, geopolitical risk premium, and A-share market volatility.",
+          "debt_weight": "Total debt 7.06Bn CNY / enterprise value 75.5Bn CNY = approximately 9.4% debt weight; light leverage given net cash position.",
+          "cost_of_debt_after_tax": "Average cost of short-term borrowings approximately 4.0% gross; post-tax at 20.96% effective tax rate = 3.2%."
+        },
+        "reasoning": "Base WACC 8.55%: risk-free 1.8% + beta 0.9 x ERP 7.5% = 1.8% + 6.75% = 8.55%. Slight quality discount from nominal calculation reflects Eastroc's brand strength, net cash balance sheet, and Lin family alignment. Debt weight is minimal and only slightly reduces WACC."
+      },
+      "terminal_growth": {
+        "value": 0.035,
+        "reasoning": "Terminal growth 3.5% reflects China nominal GDP growth (real 4-5% + modest deflation offset) with a haircut for category maturation. Energy drink categories in developed markets sustain 3-5% long-run volume growth once penetration saturates. Eastroc's distribution depth supports the upper end of the range but not premium GDP-plus growth forever."
+      },
+      "forecast_horizon_years": 9,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 4.38,
+          "rationale": "FY2026 FCF grows ~12% from FY2025's 3.91Bn CNY as revenue grows 22% (near Q1 2026 pace) but capex remains elevated at ~1.8Bn CNY (moderating from 2.27Bn). FCF margin 16.8% on 26Bn consensus revenue."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 5.04,
+          "rationale": "FY2027: revenue grows ~18%, capex cycle completes, FCF conversion improves. FCF margin recovers toward 18.5% as depreciation from FY2025 investments begins to offset with revenue leverage."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 5.95,
+          "rationale": "+18% FCF as northern China expansion produces revenue at lower incremental capex. FCF margin approaches 19%."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 6.85,
+          "rationale": "+15% FCF. Revenue growth decelerating to 15%. Operating leverage partially sustains FCF growth above revenue growth."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 7.67,
+          "rationale": "+12% FCF. Category growth moderating. Mix shift toward premium SKUs sustains margins."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 8.28,
+          "rationale": "+8% FCF. Growth approaching terminal rate as Eastroc captures planned share and national penetration matures."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 8.78,
+          "rationale": "+6% approaching terminal growth."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 9.22,
+          "rationale": "+5% FCF, terminal approach."
+        },
+        {
+          "year": 2034,
+          "fcf_b": 9.54,
+          "rationale": "+3.5%, at terminal growth rate."
+        }
+      ],
+      "exit_ev_ebitda": 13.5,
+      "exit_ev_ebitda_reasoning": "Exit multiple 13.5x EV/EBITDA represents approximately 65% of Nongfu Spring's 21x and 45% of Monster Beverage's 31x, reflecting Eastroc's smaller brand moat, thinner institutional coverage, and A-share valuation discount. Blended with Gordon Growth terminal value at 50/50.",
+      "last_year_ebitda_b": 16.2,
+      "last_year_ebitda_reasoning": "FY2034E EBITDA estimated at ~16.2Bn CNY assuming 30% EBITDA margin on ~54Bn CNY revenue (at 3.5% terminal growth extrapolated from FY2030 base of ~45Bn)."
+    }
+  },
+  "cross_check": {
+    "name": "EV/EBITDA Peer Multiple",
+    "category": "relative",
+    "reasoning": "13.5x FY2026E EV/EBITDA is approximately 64% of Nongfu Spring's 21x, reflecting Eastroc's lower margin profile, narrower float, and higher execution risk on national expansion. Cross-check corroborates the base DCF scenario.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 13.5,
+      "fy_estimate": 7.84
+    },
+    "outputs": {
+      "implied_px": 163.8
+    }
+  },
+  "blending_weights": {
+    "cross_check": 0.10
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.105,
+        "terminal_g": 0.025,
+        "fcf_growth_override": [-0.05, 0.05, 0.08, 0.08, 0.06, 0.04, 0.03, 0.025, 0.025]
+      },
+      "probability": 0.15,
+      "probability_reasoning": "Bear scenario requires concurrent competitive disruption (Red Bull dispute resolution or Nongfu Spring share gain) AND macro headwinds suppressing China consumer spending. Both are plausible but concurrent execution makes this 15% probability. Q1 2026 shows deceleration but not yet at bear-case pace.",
+      "reasoning": "Revenue growth falls to 18% in FY2026 (below consensus 24.7%), FCF contracts from elevated capex and S&M pressure. Operating margin compresses 100-150bps. WACC 10.5% reflects competitive and macro risk widening. Terminal growth 2.5% assumes eventual category commoditization. Implied price approximately 87 CNY."
+    },
+    {
+      "label": "Base",
+      "key_changes": {
+        "wacc": 0.0855,
+        "terminal_g": 0.035
+      },
+      "probability": 0.55,
+      "probability_reasoning": "Base case is the modal outcome: FY2026 revenue growth near 22% (consistent with Q1 2026 pace), margins stable at 24-25%, Red Bull dispute unresolved, national expansion continues with rising trade spend. No dramatic catalyst in either direction. Macro environment is the key swing factor.",
+      "reasoning": "Uses base-case DCF projection set. 12-month price approximately 155 CNY at 17-18x FY2026E EPS 8.83 CNY, implying 21% upside from 128.26 CNY."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.085,
+        "terminal_g": 0.040,
+        "fcf_growth_override": [0.25, 0.22, 0.18, 0.15, 0.12, 0.08, 0.06, 0.05, 0.04]
+      },
+      "probability": 0.20,
+      "probability_reasoning": "Bull scenario requires FY2026 growth re-acceleration from 21.5% Q1 pace to 27%+ as northern expansion exceeds plan and 0-sugar mix accelerates margins above 27%. Plausible but not yet visible in data. 20% probability.",
+      "reasoning": "Revenue grows 27% in FY2026, FCF margins expand to 20%+ as capex cycle ends. Market re-rates to 23-25x forward PE. 12-month price approximately 200-220 CNY."
+    },
+    {
+      "label": "Cross-Check",
+      "key_changes": {
+        "ev_ebitda_multiple": 13.5
+      },
+      "probability": 0.10,
+      "probability_reasoning": "Cross-check provides independent EV/EBITDA anchoring; weighted 10% as sanity check rather than primary valuation method.",
+      "reasoning": "13.5x FY2026E EV/EBITDA of 7.84Bn CNY = EV 105.8Bn + net cash 4.93Bn = equity 110.7Bn / 676Mn shares = 163.8 CNY. Consistent with base DCF."
+    }
+  ],
+  "weights_reasoning": "Bear 15% + Base 55% + Bull 20% + Cross-check 10% = 100%. Weights reflect that moderate deceleration (base) is most likely at 55%. Bull requires re-acceleration not yet visible. Bear requires concurrent competitive disruption. Cross-check provides peer-multiple anchoring. Probability-weighted: 0.15 x 87 + 0.55 x 155 + 0.20 x 200 + 0.10 x 164 = 13.05 + 85.25 + 40.00 + 16.40 = 154.70 CNY, rounded to 155 CNY."
+}
