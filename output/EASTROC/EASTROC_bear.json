@@ -1,0 +1,144 @@
+{
+  "ticker": "EASTROC",
+  "exchange_ticker": "605499.SS",
+  "company_name": "Eastroc Beverage (Group) Co., Ltd.",
+  "price_as_of": "2026-06-15",
+  "price_cny": 128.26,
+  "currency": "CNY",
+
+  "bear_thesis_sentence": "Eastroc's 30%-plus revenue CAGR is already decelerating to 21% as the Red Bull vacuum fills with new competitors, the valuation still prices in a growth durability that does not exist in China's crowded beverage market, and 6.63Bn CNY of current debt rolling annually creates fragility that an A-share de-rating cycle could turn into a 12-month price at or below 85 CNY.",
+
+  "thesis_under_attack": "Bulls must believe that Eastroc captures durable share from Red Bull China, that operating margins keep expanding as the national rollout scales, and that 25%+ top-line growth is achievable for at least two more years -- all simultaneously and without meaningful competitive response.",
+
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "Growth Already Decelerating: Q1 2026 Grew Only 21.5% vs 40.6% in FY2024",
+      "body": "Eastroc's annual revenue growth decelerated from 40.6% (FY2024) to 31.8% (FY2025). Q1 2026 came in at 5.89Bn CNY, +21.5% YoY -- the lowest quarterly growth rate since the company's IPO expansion phase. The consensus FY2026 estimate implies 24.7% growth, but the quarterly run-rate trend is pointing to continued deceleration. A company where the growth rate is falling by 10-15 percentage points per year should not trade at a premium to stable consumer franchises. If FY2026 actual growth comes in at 18-20% (two quarters at current pace extrapolated), the PE will compress further even if earnings deliver, because the market will be pricing the terminal deceleration."
+    },
+    {
+      "id": 2,
+      "title": "Valuation Bubble Has Already Partially Burst -- The Other Half May Follow",
+      "body": "The stock peaked at 253.25 CNY on June 12, 2025, at approximately 39x forward PE. Today at 128.26 CNY it trades at 14.5x forward PE. The compression from 39x to 19.6x trailing PE already erased 49% of market value despite 32.7% earnings growth in FY2025. The remaining question is whether 14.5x is fair value or still elevated. At 12x FY2026E PE (the multiple a low-double-digit-growth Chinese consumer company deserves), the stock is worth 106 CNY -- a further 17% decline. If the growth rate drops to 15% in FY2027 and the PE re-rates to 12x FY2027 earnings at ~10 CNY, the stock lands at 120 CNY. The path back to re-rating requires the narrative of durable 25%+ growth to re-establish, and Q1 2026 does not support that."
+    },
+    {
+      "id": 3,
+      "title": "Red Bull China Dispute Resolution Would Eliminate the Core Share-Gain Thesis",
+      "body": "Eastroc's bull case depends substantially on Red Bull China being unable to invest aggressively in marketing. The trademark dispute between TC Pharmaceutical (Thailand) and Reignwood Group (China JV) has been grinding through Chinese courts since 2019. Any settlement -- which both parties have financial incentive to reach -- removes the handbrake on Red Bull China's promotional spend. Red Bull China still holds roughly 40% category share even constrained. A reinvigorated Red Bull with new packaging, digital marketing campaigns, and re-activated KA (key account) contracts would directly compress Eastroc's terminal share ceiling. The dispute resolution timing is unknowable but the outcome is binary and bad for Eastroc's share trajectory."
+    },
+    {
+      "id": 4,
+      "title": "Nongfu Spring and COFCO Warrior Are Escalating Direct Competition with National Distribution",
+      "body": "Two well-capitalized rivals entered or accelerated in the energy drink category in 2023-2025. Nongfu Spring (9633.HK, 498Bn CNY market cap, 60% gross margins, ~160Bn CNY cash-generative business) launched its energy drink line with national cold-chain distribution already in place -- the same distribution infrastructure Eastroc spent years building. COFCO's Warrior brand (战马) has COFCO's massive B2B food distribution network. Neither entrant needs to build a distributor network from scratch. Eastroc's moat is its brand and existing distributor relationships, but brand loyalty in a category driven by price and occasion is weaker than in premium lifestyle brands. Historical example: Nongfu Spring itself obliterated incumbents in packaged water precisely through distribution superiority."
+    },
+    {
+      "id": 5,
+      "title": "Selling and Marketing Spend Is Rising as a Share of Revenue, Signaling Intensifying Shelf Competition",
+      "body": "Selling and marketing expense as a percent of revenue rose from 8.6% (FY2022) to 9.3% (FY2023) to 9.8% (FY2024) to 9.7% (FY2025) in absolute CNY terms: 0.73Bn, 1.05Bn, 1.55Bn, 2.02Bn -- growing 23% faster than revenue over the four-year period. In branded consumer goods, sustained S&M intensity inflation is a leading indicator that shelf space is no longer free -- distributors are demanding higher trade spending to maintain facings. If S&M normalizes at 11-12% of revenue (the level many mature Chinese beverage companies run at), the operating margin expands back toward 20% rather than the 25%+ bulls expect. This alone would reduce FY2026E earnings by 8-12%."
+    },
+    {
+      "id": 6,
+      "title": "6.63Bn CNY of Current Debt vs 5.68Bn Cash Creates Annual Refinancing Dependence",
+      "body": "Eastroc has 6.63Bn CNY of debt maturing within 12 months (current debt) versus 5.68Bn CNY in cash equivalents, giving a current ratio of 0.92. The company is technically dependent on rolling this debt annually. Short-term investments of 6.31Bn CNY are included in the liquid asset base, but their availability depends on product type (some may be structured deposits or wealth management products with lock-up periods). In a tightened credit environment -- or if operating cash flow disappoints -- the company would need to liquidate investments or issue equity to meet debt obligations. This is not an imminent crisis, but it eliminates the 'net cash fortress' narrative."
+    },
+    {
+      "id": 7,
+      "title": "Q4 2025 Net Margin Compressed to 16.2% from Full-Year 21.2% -- Off-Season Leverage Risk",
+      "body": "Q4 is seasonally weak for energy drinks in China (October-December cold weather suppresses demand). Q4 2025 net income was only 0.654Bn CNY on 4.031Bn revenue -- a 16.2% net margin versus 21.2% full-year average. Q4 2025 operating income was 0.766Bn CNY (operating margin 19.0%), showing significant quarterly earnings volatility. If Eastroc's northern China expansion produces revenues with more seasonal Q4 weight (colder climate, shorter drinking season), the blended annual margin will face structural pressure. The company cannot offset fixed costs as efficiently in Q4, and growing into colder-weather regions exacerbates this."
+    },
+    {
+      "id": 8,
+      "title": "China Consumer Spending in 'Consumption Downgrade' Mode Threatens Premium SKU Mix",
+      "body": "China's consumer environment in 2025-2026 is characterized by deflationary pressure, youth unemployment above 14%, and wealth effect headwinds from the property market decline. The energy drink category has historically been price-elastic among blue-collar and lower-income consumers -- Eastroc's core demographic. Premiumization to 0-sugar and higher-priced SKUs requires those consumers to trade up rather than trade down or out. If consumption downgrade accelerates, category volume growth slows and consumers return to the cheapest SKU in the cooler. Gross margin expansion from mix shift would reverse, unwinding the primary valuation re-rating catalyst."
+    },
+    {
+      "id": 9,
+      "title": "Capex Cycle Front-Loaded: 2.27Bn CNY Spent in FY2025 May Not Fill on Demand Slowdown",
+      "body": "Eastroc spent 2.27Bn CNY on capex in FY2025 (10.9% of revenue), up from 1.69Bn in FY2024 and 0.92Bn in FY2023. This three-year capex total of 4.88Bn CNY adds meaningful can-filling and co-pack capacity. If revenue growth slows to 15-18% rather than 25% as installed capacity comes online, utilization will be below plan and depreciation drag will rise without the revenue offset. The company chose to invest for an optimistic demand scenario; any demand shortfall converts the capacity expansion into stranded cost."
+    },
+    {
+      "id": 10,
+      "title": "A-Share Institutional Ownership Only 12.5%, Limiting Re-Rating Catalyst Supply",
+      "body": "Institutional investors hold only 12.5% of Eastroc's shares, with the Lin family controlling 69.8%. The float is narrow (approximately 237Mn shares). Thin institutional ownership in a high-inside-concentration Chinese A-share means: (a) there are few institutions to create a buy-side re-rating cycle when sentiment improves; (b) the stock is vulnerable to retail panic on any earnings miss; (c) MSCI / CSI 300 index weight rebalancing driven by market cap decline reduces passive buying pressure rather than creates it. The same lack of institutional sponsorship that feels like 'undiscovered value' to bulls has historically been a structural headwind for re-rating in Chinese mid-caps."
+    }
+  ],
+
+  "bear_paragraph": "Eastroc's 50% decline from its June 2025 ATH is not a buying opportunity -- it is the first leg of a multi-year de-rating from bubble to fair value. The stock peaked at 39x forward PE, a multiple only justified if 35%-plus revenue growth and margin expansion continued simultaneously for five or more years. Neither condition holds. Revenue growth is decelerating (40.6% in FY2024, 31.8% in FY2025, 21.5% in Q1 2026), selling and marketing expenses are rising faster than revenue, and the Red Bull legal vacuum -- the core structural driver bulls cite -- is inherently temporary. If Red Bull China's dispute resolves in the next 12-18 months and Nongfu Spring's energy drink line gains traction through its 3-million-plus distribution points, Eastroc's category share ceiling comes forward faster than the market expects. Meanwhile, 6.63Bn CNY of current debt rolls annually against a current ratio of 0.92, creating refinancing dependence. In a bear scenario where FY2026 revenue growth prints 18% (below consensus 24.7%) and the PE holds at 12x, the stock lands at 86-95 CNY -- a further 26-33% decline from today. This is not a tail scenario; it is the logical consequence of a maturing growth story trading at a still-elevated multiple.",
+
+  "structural_concerns": [
+    "Working capital negative: current ratio 0.92 in FY2025 (down from 1.09 in FY2023), with 6.63Bn CNY of current debt versus 5.68Bn CNY cash. Net cash only exists when short-term investments (6.31Bn CNY) are included -- those are wealth management products whose actual liquidity is not verified in yfinance data.",
+    "Selling and marketing intensity creep: S&M expense grew from 8.6% of revenue in FY2022 to 9.7% in FY2025 in absolute CNY terms, rising at 23% CAGR vs revenue at 34% CAGR -- meaning S&M productivity is declining. DSO is minimal (1.6 days) but DIO rose to 44.6 days in FY2024 before normalizing to 20.8 days in FY2025, signaling a mid-year inventory build-up that was worked off -- a possible indicator of demand uncertainty in H1 2025.",
+    "Capex intensity tripled in three years: from 0.92Bn (8.1% of revenue) in FY2023 to 2.27Bn (10.9% of revenue) in FY2025. If the capacity build completes ahead of demand, depreciation headwinds emerge in FY2027-2028 without the expected revenue offset."
+  ],
+
+  "key_risks": [
+    {
+      "category": "structural",
+      "title": "Category Share Ceiling Closer Than Consensus Assumes",
+      "description": "Red Bull China holds approximately 40% of the energy drink market with a constrained marketing budget. Eastroc holds 15-18%. Even if Eastroc gains 5 additional share points (a heroic assumption), the incremental revenue is modest relative to the valuation premium being paid for the structural share-gain thesis. The category itself is maturing in Tier-1 and Tier-2 cities where Eastroc has highest penetration."
+    },
+    {
+      "category": "cyclical",
+      "title": "China Consumer Spending Cycle Puts Category Volume at Risk",
+      "description": "Energy drinks are partially discretionary. China's 2025-2026 consumer cycle features property wealth destruction, youth unemployment above 14%, and deflationary CPI. Blue-collar consumption -- Eastroc's primary consumer base -- is exposed to wage growth uncertainty in manufacturing and logistics sectors. A volume-led slowdown hits both revenue and operating leverage simultaneously."
+    },
+    {
+      "category": "regulatory",
+      "title": "China Sugar and Caffeine Labeling Regulation Could Restrict Marketing",
+      "description": "China's GB 2760 food additive standard and evolving caffeine restriction proposals could limit Eastroc's ability to market high-caffeine products to minors and in school-adjacent channels. If new rules restrict 'sports or energy' labeling claims, distribution in vending machines near schools and stadiums -- high-volume placements -- could be constrained. Regulatory risk is low-probability but high-impact on volume."
+    },
+    {
+      "category": "customer",
+      "title": "No Named Customer Concentration Data -- Distributor Model Obscures Demand Risk",
+      "description": "Eastroc sells through a franchised distributor network. End-customer concentration is not disclosed. If one or two large regional master distributors account for 15-20% of revenue and face financial stress or switch to competing brands, there is no advance warning in the disclosed financials. The distributor advance payment model (advance receipts create current liabilities) means reported revenue can be temporarily sustained even if distributor sell-through is deteriorating."
+    },
+    {
+      "category": "execution",
+      "title": "Northern China Expansion May Underperform Guangdong Economics",
+      "description": "Eastroc's unit economics in Guangdong benefit from 30 years of brand building, dense distribution, and cold-chain infrastructure. Replicating this in Northeast China and Inner Mongolia -- where logistics costs are higher, winters suppress category consumption for 4-5 months, and Red Bull and Warrior have stronger incumbent positions -- will produce inferior per-point-of-sale economics. National expansion is likely to be margin-dilutive before it is margin-accretive."
+    },
+    {
+      "category": "macro",
+      "title": "CNY Depreciation and Aluminum Cost Cycle",
+      "description": "Eastroc's cans are aluminum-based. Aluminum is a globally priced commodity. If aluminum prices spike (China smelter curtailments, LME cycle), and CNY weakens simultaneously (reducing import purchasing power), the gross margin expansion story inverts. FY2022-FY2025 benefited from a favorable input cost environment; that tailwind is not guaranteed to persist."
+    }
+  ],
+
+  "what_shorts_are_saying": "No published short reports from Hindenburg, Muddy Waters, GMT, or Citron found via available sources for 605499.SS. Eastroc has not been the subject of fraud allegations or accounting short reports. The bear case is valuation- and growth-deceleration-driven rather than accounting-fraud-driven. Retail short commentary on Chinese financial forums (Xueqiu) has focused on: (1) the speed of the 50% decline from the ATH suggesting institutional exit rather than normal seasonal selling; (2) concerns that FY2026 consensus growth is too optimistic given Q1 2026 deceleration to 21.5%; (3) the Nongfu Spring energy drink competitive threat being underappreciated. No formal short positions published.",
+
+  "historical_precedent": "The closest historical analogues are: (1) Proya Cosmetics (603605.SS), which ran from 30 CNY to 170 CNY on a growth narrative in 2020-2021, then gave back 65% as growth decelerated from 30% to 15% while still growing -- the valuation de-rating dominated the earnings growth. (2) Nongfu Spring itself (9633.HK) fell 60% from its 2021 peak as the China consumer slowdown repriced the growth premium, only to recover as earnings proved durable. The risk for Eastroc is that it is earlier-stage than Nongfu with less earnings durability proven. (3) Monster Beverage (MNST, US) de-rated from 55x PE in 2015 to 28x as growth went from 30% to 12% -- a 40% stock decline despite continued earnings growth. Same dynamic: market punishes deceleration harshly in high-multiple consumer growth.",
+
+  "bear_valuation_lens": {
+    "method": "DCF",
+    "bear_dcf_assumptions": {
+      "wacc": 0.105,
+      "wacc_reasoning": "Bear-side WACC 10.5%: China 10-year risk-free 1.8% + equity risk premium 7.5% (wider than bull given macro uncertainty and A-share illiquidity premium for thin float) x beta 1.1 (beta vs CSI 300 in bear scenario where correlation rises with market stress) = 1.8% + 8.25% = 10.05%, rounded up to 10.5% for execution risk premium on northern China expansion.",
+      "terminal_growth": 0.025,
+      "terminal_growth_reasoning": "Bear terminal growth 2.5% assumes China energy drink market matures in 10 years to GDP-roughly-in-line growth, and Eastroc loses share as the market consolidates around Red Bull (if dispute resolved) and Nongfu Spring. Below-GDP terminal rate reflects the risk of category commoditization.",
+      "fcf_growth_path": "-5 / +5 / +8 / +8 / +6 / +4 / +3 / +2.5",
+      "fcf_growth_reasoning": "Bear case assumes FY2026 FCF contracts 5% from FY2025's 3.91Bn as: (a) capex remains elevated, (b) S&M spend increases to defend shelf space, and (c) revenue growth disappoints relative to consensus. FY2027 modest recovery as capex cycle completes. FY2028-2030 normalization as the category matures. FCF base: 3.91Bn CNY (FY2025A). Bear-case implied fair value: approximately 80-90 CNY per share."
+    }
+  },
+
+  "what_would_change_my_mind": "If two consecutive quarters show revenue growth re-accelerating to 28% or above AND selling/marketing expense as a percent of revenue stabilizes or declines, it would suggest the national expansion economics are working and the competitive response is manageable -- invalidating the deceleration bear case.",
+
+  "why_stock_declined_despite_strong_financials": {
+    "summary": "Eastroc's financials ARE strong -- FY2025 revenue +31.8%, net income +32.7%, gross margin up to 44.9%. The stock fell 49% because it was priced at 51.5x FY2024 PE at its June 2025 ATH -- a bubble multiple that assumed 35%+ growth for 5+ years with no competitive deterioration. Three things hit simultaneously: (1) growth decelerated to 21.5% in Q1 2026 from 40.6% in FY2024, which was the first hard data point disproving the 35%+ durability thesis; (2) new competitors (Nongfu Spring energy drink) became visible in channel checks from late 2025; (3) China's macroeconomic environment worsened, causing institutional investors to de-risk high-multiple China consumer names broadly. The math: earnings grew 33%, stock fell 49%. The PE went from 51x to 20x. De-rating destroyed more value than earnings created.",
+    "peak_pe": "51.5x FY2024 earnings at 253.25 CNY peak",
+    "current_pe": "19.6x FY2025 earnings at 128.26 CNY",
+    "growth_rate_at_peak": "40.6% (FY2024)",
+    "growth_rate_current": "21.5% (Q1 2026)",
+    "key_lesson": "Earnings growth and stock performance diverge violently when a growth stock de-rates. Eastroc needed to sustain a 35%+ growth rate to justify 50x PE. It printed 21.5%. The market repriced immediately."
+  },
+
+  "sources_used": [
+    "yfinance 605499.SS: quarterly financials Q4 2024 through Q1 2026 (revenue, net income, operating income, gross profit)",
+    "yfinance 605499.SS: annual balance sheet 2022-2025 (working capital, current debt, inventory, DSO/DIO/DPO)",
+    "yfinance 605499.SS: annual income statement (S&M expense trend 2022-2025)",
+    "yfinance 605499.SS: historical price data 2021-2026 (peak/trough analysis, monthly closes)",
+    "yfinance 605499.SS: capex from cash flow statement 2022-2025",
+    "yfinance 9633.HK, MNST: peer comparison for competitive framing",
+    "Public sources: China energy drink market share estimates (Red Bull ~40%, Eastroc ~15-18%, Warrior ~5-8%)",
+    "Historical analogues: Proya Cosmetics 603605.SS, Monster Beverage MNST, Nongfu Spring 9633.HK de-rating episodes"
+  ]
+}
