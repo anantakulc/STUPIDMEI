@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0",
+  "ticker": "TCB.VN",
+  "currency": "VND",
+  "current_price": 31650,
+  "shares_outstanding_b": 7.086240414,
+  "net_debt_b": 0,
+  "computed_at": "2026-06-16T06:43:05Z",
+  "primary_method": {
+    "name": "DDM",
+    "category": "intrinsic",
+    "reasoning": "TCB is a bank. DCF is not appropriate because retained earnings fund the loan book, which is the core business, not a capital expenditure. DDM with an Excess Returns overlay and Justified P/B cross-check is the standard framework. TCB has begun paying cash dividends (VND 1,500/share first payment in FY24, VND 700/share most recently) with a TTM payout ratio of 27.2%. The bank has 7.086Bn shares, VND 24,963 book value per share, and 15.8% ROE. The multi-stage DDM captures dividend compounding as the payout normalizes upward, while Excess Returns captures the value of earning above Ke on a growing book.",
+    "inputs": {
+      "rf": 0.058,
+      "rf_reasoning": "Vietnam 10Y government bond yield at approximately 5.8% as of mid-2026. The SBV has tightened monetary conditions in response to VND depreciation pressure from elevated US rates and the oil price spike following the Middle East conflict. Vietnam's 10Y yield has drifted up from 5.4% in early 2026; 5.8% reflects current market levels.",
+      "erp": 0.065,
+      "erp_reasoning": "Vietnam equity risk premium of 6.5%. Composed of a base developed-market ERP of 5.5% (Damodaran 2025) plus a country risk premium of approximately 1.0% for Vietnam — a BB-rated sovereign (S&P) with an improving but still developing capital market, limited foreign investor hedging tools, and sector concentration in real estate and manufacturing.",
+      "beta": 0.9,
+      "beta_reasoning": "Base-case beta of 0.90, slightly above the yfinance trailing beta of 0.821 but below the sector default of 1.0. TCB's superior asset quality (NPL 1.13%), lowest-in-sector leverage ratio (6.6x vs peer average 12x), and AA+ domestic credit rating justify a below-peer-average beta. The 0.90 haircut from sector default reflects TCB's CASA franchise providing countercyclical stability in deposit funding.",
+      "beta_warning": null,
+      "d0": 999.0,
+      "d0_method": "user override",
+      "d0_reasoning": "VND 999 per share sustainable base dividend. Derived from trailing EPS of VND 3,671 (yfinance) multiplied by the declared payout ratio of 27.24% = VND 999. The actual last cash dividend paid was VND 700/share, which was a reduction from VND 1,000/share in FY24. The VND 999 normalizes for the fact that TCB's payout includes both cash dividends and stock dividends; on a total-distribution basis (cash + stock value), the 27.24% payout ratio is more representative of the sustainable level than the reduced VND 700 cash-only payment.",
+      "book_value_per_share": 24963.26,
+      "book_value_reasoning": "VND 24,963 per share as reported by yfinance for TCB.VN, sourced from the latest available balance sheet. TCB's FY2025 investor presentation states USD 6.8Bn equity book at FY25, which at VND 25,700/USD equates to approximately VND 174.8Tn consolidated. The yfinance figure may reflect bank-only equity of ~VND 154Tn (per 1Q26 earnings slide) divided by 7.086Bn shares = VND 21,735; the higher VND 24,963 appears to reflect a more recent consolidated or partially accrued equity figure. Using yfinance as reported.",
+      "roe": 0.1579,
+      "roe_reasoning": "15.79% ROE as reported by yfinance (TTM). Cross-checked against FY2025 PAT of VND 26.0Tn divided by approximate average equity of approximately VND 165-170Tn = ~15.3-15.8%. The yfinance figure of 15.79% is consistent with FY2025 ROA of 2.4% x leverage of 6.6x = 15.84%.",
+      "g_high": 0.14,
+      "g_high_reasoning": "14% high-growth dividend growth for years 1-5. Anchored to 1Q26 PBT growth of 22.6% YoY and FY26 PBT guidance of VND 37.5Tn (+15.4%). The 14% sits between bull (16%) and bear (8%) scenarios. Credit quota is the key variable; base case assumes normalization of quota to 16-18% in 2H26 as the SBV provides additional headroom, consistent with historical patterns. Techcom Life fee income, TCBS margin lending growth, and NIM stabilization from 2Q26 onward support double-digit earnings growth.",
+      "g_terminal": 0.065,
+      "g_terminal_reasoning": "6.5% terminal growth. Vietnam's nominal GDP growth target is 10% for the decade; base case discounts this to 6.5% real, incorporating: 5-6% real GDP (government 7% target, bear-adjusted) plus 2% inflation minus 0.5% productivity drag as capital markets deepen and NIM structurally compresses. At Vietnam's current GDP/capita of USD 4,500-5,000, financial deepening (credit/GDP) typically accelerates for 10-15 years, making 6.5% terminal growth defensible for a sector leader.",
+      "g_book": 0.115,
+      "g_book_reasoning": "11.5% book value growth. Derived from ROE x retention = 15.79% x (1 - 0.272) = 11.5%. TCB pays approximately 27% of earnings in total dividends (cash + stock). The book value growth rate is lower than the high-growth dividend rate because the bank's ROE is rising through the cycle; as capital matures and IRB approval in 2028 releases excess capital, the payout ratio is expected to step up to 30-35%, which would slow book growth but increase cash dividends.",
+      "years_high": 5,
+      "years_decline": 5,
+      "horizon_excess_returns": 10,
+      "max_payout_cap": 0.7,
+      "reasoning": "TCB is a bank. DCF is not appropriate because retained earnings fund the loan book, which is the core business, not a capital expenditure. DDM with an Excess Returns overlay and Justified P/B cross-check is the standard framework. TCB has begun paying cash dividends (VND 1,500/share first payment in FY24, VND 700/share most recently) with a TTM payout ratio of 27.2%. The bank has 7.086Bn shares, VND 24,963 book value per share, and 15.8% ROE. The multi-stage DDM captures dividend compounding as the payout normalizes upward, while Excess Returns captures the value of earning above Ke on a growing book."
+    },
+    "outputs": {
+      "cost_of_equity_pct": 11.65,
+      "ddm": {
+        "implied_value": 31477.86,
+        "pv_explicit": 10694.88,
+        "pv_terminal": 20782.98,
+        "explicit_dividends": [
+          1138.86,
+          1298.3,
+          1480.06,
+          1687.27,
+          1923.49,
+          2163.93,
+          2401.96,
+          2630.14,
+          2840.55,
+          3025.19
+        ]
+      },
+      "excess_returns": {
+        "implied_value": 34161.7,
+        "book_value": 24963.26,
+        "pv_excess": 9198.43
+      },
+      "justified_pb": {
+        "ratio": 1.804,
+        "implied_value": 45025.97
+      },
+      "blended_implied_value": 35261.02,
+      "implied_px": 35261.02
+    },
+    "calculation_trace": {
+      "ke": {
+        "formula": "Ke = Rf + Beta x ERP  (CAPM)",
+        "steps": [
+          {
+            "label": "Rf",
+            "expression": "input",
+            "result": "0.0580 (5.80%)"
+          },
+          {
+            "label": "Beta",
+            "expression": "input",
+            "result": "0.900"
+          },
+          {
+            "label": "ERP",
+            "expression": "input",
+            "result": "0.0650 (6.50%)"
+          },
+          {
+            "label": "Beta x ERP",
+            "expression": "0.900 x 0.0650",
+            "result": "0.0585"
+          },
+          {
+            "label": "Ke",
+            "expression": "0.0580 + 0.0585",
+            "result": "0.1165 (11.65%)"
+          }
+        ]
+      },
+      "ddm": {
+        "formula": "DDM value = sum(D_t / (1+Ke)^t) + (D_N x (1+g_term) / (Ke - g_term)) / (1+Ke)^N",
+        "steps": [
+          {
+            "label": "Years high growth",
+            "expression": "input",
+            "result": "5"
+          },
+          {
+            "label": "Years declining",
+            "expression": "input",
+            "result": "5"
+          },
+          {
+            "label": "PV of explicit dividends",
+            "expression": "sum over 10 years",
+            "result": "10694.88"
+          },
+          {
+            "label": "Terminal dividend",
+            "expression": "3025.19 x (1 + 0.0650)",
+            "result": "3221.83"
+          },
+          {
+            "label": "Terminal value",
+            "expression": "3221.83 / (0.1165 - 0.0650)",
+            "result": "62559.76"
+          },
+          {
+            "label": "PV of terminal value",
+            "expression": "62559.76 / (1+0.1165)^10",
+            "result": "20782.98"
+          },
+          {
+            "label": "DDM value",
+            "expression": "10694.88 + 20782.98",
+            "result": "31477.86"
+          }
+        ]
+      },
+      "excess_returns": {
+        "formula": "Excess Returns value = BV_0 + sum( (ROE - Ke) x BV_t / (1+Ke)^t )",
+        "steps": [
+          {
+            "label": "Book value 0",
+            "expression": "input",
+            "result": "24963.26"
+          },
+          {
+            "label": "ROE - Ke (annual spread)",
+            "expression": "0.1579 - 0.1165",
+            "result": "0.0414"
+          },
+          {
+            "label": "PV of excess returns (over horizon)",
+            "expression": "sum over 10 years",
+            "result": "9198.43"
+          },
+          {
+            "label": "Implied value",
+            "expression": "24963.26 + 9198.43",
+            "result": "34161.70"
+          }
+        ]
+      },
+      "justified_pb": {
+        "formula": "Justified P/B = (ROE - g) / (Ke - g);  Implied value = Justified P/B x Book value",
+        "steps": [
+          {
+            "label": "ROE - g_term",
+            "expression": "0.1579 - 0.0650",
+            "result": "0.0929"
+          },
+          {
+            "label": "Ke - g_term",
+            "expression": "0.1165 - 0.0650",
+            "result": "0.0515"
+          },
+          {
+            "label": "Justified P/B ratio",
+            "expression": "0.0929 / 0.0515",
+            "result": "1.804x"
+          },
+          {
+            "label": "Implied value",
+            "expression": "1.804 x 24963.26",
+            "result": "45025.97"
+          }
+        ]
+      },
+      "blended": {
+        "formula": "Blended value = (0.40 x DDM) + (0.40 x ER) + (0.20 x Justified P/B)",
+        "steps": [
+          {
+            "label": "DDM x 40%",
+            "expression": "0.40 x 31477.86",
+            "result": "12591.14"
+          },
+          {
+            "label": "ER x 40%",
+            "expression": "0.40 x 34161.70",
+            "result": "13664.68"
+          },
+          {
+            "label": "Justified P/B x 20%",
+            "expression": "0.20 x 45025.97",
+            "result": "9005.19"
+          },
+          {
+            "label": "Blended",
+            "expression": "sum of contributions",
+            "result": "35261.02"
+          }
+        ]
+      }
+    },
+    "sensitivity": {
+      "rows_label": "Ke",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.0965,
+        0.1065,
+        0.1165,
+        0.1265,
+        0.1365
+      ],
+      "col_values": [
+        0.045,
+        0.055,
+        0.065,
+        0.075,
+        0.085
+      ],
+      "implied_px_matrix": [
+        [
+          27005.1,
+          33995.59,
+          45435.5,
+          67533.85,
+          128096.33
+        ],
+        [
+          22457.63,
+          27199.58,
+          34234.73,
+          45747.45,
+          67986.04
+        ],
+        [
+          19188.9,
+          22621.84,
+          27394.04,
+          34473.89,
+          46059.5
+        ],
+        [
+          16727.83,
+          19331.2,
+          22786.02,
+          27588.5,
+          34713.08
+        ],
+        [
+          14809.31,
+          16853.5,
+          19473.45,
+          22950.17,
+          27782.95
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Peer P/B multiple cross-check",
+    "category": "relative",
+    "reasoning": "Cross-check TCB's intrinsic value against the peer group P/B multiple. Vietnamese private bank peers (MBB, VPB, ACB, HDB) trade at approximately 1.0-1.4x P/B with ROEs of 12-18%. A peer median P/B of 1.2x applied to TCB's FY2026F estimated book value of approximately VND 28,500/share (VND 24,963 x 1.141 for book growth) implies a cross-check value of approximately VND 34,200/share. This is slightly above the current price of VND 31,650, supporting the view that TCB is fairly to modestly cheaply valued on a relative basis.",
+    "inputs": {
+      "implied_px": 34200
+    },
+    "outputs": {
+      "implied_px": 34200
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "ke": 0.135,
+        "roe": 0.12,
+        "g_high": 0.08,
+        "g_terminal": 0.055,
+        "g_book": 0.09,
+        "d0": 800
+      },
+      "implied_px": 17755.89,
+      "probability": 0.25,
+      "probability_reasoning": "25% probability. The pessimistic scenario requires: (1) CASA erosion to 36-37% adding 40-50 bps to COF and holding NIM below 3.6%; (2) SBV credit quota cut reducing loan growth to 12-13%; (3) property market headwinds pushing credit costs to 0.9-1.0%; and (4) Techcom Life facing bancassurance regulatory headwinds that delay fee income scaling. This scenario is plausible given the structural CASA outflow drivers identified by management, the uncertain SBV policy path, and historical precedent (2023 when PBT fell 10% YoY amid the bond market crackdown). However, TCB's well-capitalized balance sheet and CASA franchise make a scenario where all four headwinds materialize simultaneously unlikely in a single 12-month window.",
+      "reasoning": "CASA structurally erodes, SBV cuts credit quota, property cycle turns, NIM stays compressed below 3.6% through 2027; ROE declines to 12% and the stock re-rates to below book value.",
+      "ddm_implied_value": 12053.76,
+      "excess_returns_implied_value": 22194.65,
+      "justified_pb_ratio": 0.812,
+      "justified_pb_implied_value": 20282.65,
+      "cost_of_equity_pct": 13.5
+    },
+    {
+      "label": "Base",
+      "key_changes": {
+        "ke": 0.117,
+        "roe": 0.1579,
+        "g_high": 0.14,
+        "g_terminal": 0.065,
+        "g_book": 0.115,
+        "d0": 999
+      },
+      "implied_px": 34995.66,
+      "probability": 0.55,
+      "probability_reasoning": "55% probability. Base case assumes FY26 PBT guidance of VND 37.5Tn is delivered (15.4% YoY growth), NIM stabilizes from 2Q26 as management guided, credit quota is maintained at 16-18% for 2H26, and Techcom Life continues to scale. CASA holds at 39-40% as Auto-Earning 2.0 and transaction banking expansion partially offsets deposit competition. Credit costs remain below 0.8%. This is the scenario management presented as 'most likely' at the April 2026 earnings call, and is consistent with Vietcap's view from their June 2026 analyst meeting note.",
+      "reasoning": "FY26 guidance delivered, NIM stabilizes at 3.7-3.9%, Techcom Life scales to 9%+ APE market share, TCBS margin lending reaches VND 60Tn target; ROE holds at 15-16%.",
+      "ddm_implied_value": 31159.74,
+      "excess_returns_implied_value": 34030.5,
+      "justified_pb_ratio": 1.787,
+      "justified_pb_implied_value": 44597.83,
+      "cost_of_equity_pct": 11.7
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "ke": 0.105,
+        "roe": 0.17,
+        "g_high": 0.16,
+        "g_terminal": 0.07,
+        "g_book": 0.13,
+        "d0": 1100
+      },
+      "implied_px": 53418.29,
+      "probability": 0.15,
+      "probability_reasoning": "15% probability. Bull case requires: NIM recovery above 4.0% as CASA holds and higher-yield unsecured/insurance cross-sell lifts asset yields; FY26 PBT outperforms at VND 39-40Tn; Techcom Life achieves 15%+ APE market share driving VND 3-4Tn incremental fee income by FY28; IRB approval accelerates to late 2027, releasing capital earlier than expected; TCBS completes IPO process at USD 4-5Bn valuation, crystallizing value for TCB shareholders. The infrastructure quota-exempt mechanism materializes for Gia Binh Airport, adding VND 15-20Tn off-quota credit growth.",
+      "reasoning": "IRB approval accelerates, CASA holds above 40%, Techcom Life exceeds market share targets, TCBS IPO catalyzes value, NIM recovers to 4.0%+; ROE expands to 17% and the stock re-rates to 1.8x justified P/B.",
+      "ddm_implied_value": 56647.52,
+      "excess_returns_implied_value": 41236.41,
+      "justified_pb_ratio": 2.857,
+      "justified_pb_implied_value": 71323.61,
+      "cost_of_equity_pct": 10.5
+    }
+  ],
+  "blended_target": 33409.32,
+  "blending_logic": "Σ(scenario.probability × scenario.implied_px) + cross_check_weight × cross_check.implied_px",
+  "blending_weights": {
+    "cross_check": 0.05
+  },
+  "weights_reasoning": "Bear 25% + Base 55% + Bull 15% + Cross-check 5% = 100%. The scenario weights reflect: a high base-case probability given that TCB has delivered at or above guidance for the past three years; a meaningful bear weight (25%) acknowledging the structural CASA erosion risk and credit quota uncertainty that Vietcap itself flagged in January 2026 and the June 2026 analyst meeting; a modest bull weight (15%) because the upside catalysts (IRB approval, TCBS IPO, Techcom Life at scale) require a 2-3 year execution horizon that extends beyond the 12-month target window; and a small cross-check weight (5%) as a reality anchor to peer multiples, which are themselves depressed by Vietnam macro uncertainty.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 17755.89,
+      "weight": 0.25,
+      "contribution": 4438.97,
+      "reasoning": "25% probability. The pessimistic scenario requires: (1) CASA erosion to 36-37% adding 40-50 bps to COF and holding NIM below 3.6%; (2) SBV credit quota cut reducing loan growth to 12-13%; (3) property market headwinds pushing credit costs to 0.9-1.0%; and (4) Techcom Life facing bancassurance regulatory headwinds that delay fee income scaling. This scenario is plausible given the structural CASA outflow drivers identified by management, the uncertain SBV policy path, and historical precedent (2023 when PBT fell 10% YoY amid the bond market crackdown). However, TCB's well-capitalized balance sheet and CASA franchise make a scenario where all four headwinds materialize simultaneously unlikely in a single 12-month window."
+    },
+    {
+      "component": "Base",
+      "implied_px": 34995.66,
+      "weight": 0.55,
+      "contribution": 19247.61,
+      "reasoning": "55% probability. Base case assumes FY26 PBT guidance of VND 37.5Tn is delivered (15.4% YoY growth), NIM stabilizes from 2Q26 as management guided, credit quota is maintained at 16-18% for 2H26, and Techcom Life continues to scale. CASA holds at 39-40% as Auto-Earning 2.0 and transaction banking expansion partially offsets deposit competition. Credit costs remain below 0.8%. This is the scenario management presented as 'most likely' at the April 2026 earnings call, and is consistent with Vietcap's view from their June 2026 analyst meeting note."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 53418.29,
+      "weight": 0.15,
+      "contribution": 8012.74,
+      "reasoning": "15% probability. Bull case requires: NIM recovery above 4.0% as CASA holds and higher-yield unsecured/insurance cross-sell lifts asset yields; FY26 PBT outperforms at VND 39-40Tn; Techcom Life achieves 15%+ APE market share driving VND 3-4Tn incremental fee income by FY28; IRB approval accelerates to late 2027, releasing capital earlier than expected; TCBS completes IPO process at USD 4-5Bn valuation, crystallizing value for TCB shareholders. The infrastructure quota-exempt mechanism materializes for Gia Binh Airport, adding VND 15-20Tn off-quota credit growth."
+    },
+    {
+      "component": "Peer P/B multiple cross-check",
+      "implied_px": 34200,
+      "weight": 0.05,
+      "contribution": 1710.0,
+      "reasoning": "Cross-check TCB's intrinsic value against the peer group P/B multiple. Vietnamese private bank peers (MBB, VPB, ACB, HDB) trade at approximately 1.0-1.4x P/B with ROEs of 12-18%. A peer median P/B of 1.2x applied to TCB's FY2026F estimated book value of approximately VND 28,500/share (VND 24,963 x 1.141 for book growth) implies a cross-check value of approximately VND 34,200/share. This is slightly above the current price of VND 31,650, supporting the view that TCB is fairly to modestly cheaply valued on a relative basis."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": 5.6
+}

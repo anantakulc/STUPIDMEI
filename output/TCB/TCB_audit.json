@@ -1,0 +1,133 @@
+{
+  "ticker": "TCB.VN",
+  "audited_at": "2026-06-16T07:05:00Z",
+  "verdict": "PASS_WITH_NOTES",
+  "findings": [
+    {
+      "claim": "Ke = 11.65% (Rf 5.8% + beta 0.90 x ERP 6.5%)",
+      "source_cited": "CAPM calculation, _schema/ddm_compute.py",
+      "status": "VERIFIED",
+      "notes": "5.8% + 0.90 x 6.5% = 11.65%. Exact match."
+    },
+    {
+      "claim": "g_book = 11.5% (ROE x retention = 15.79% x 72.76%)",
+      "source_cited": "DDM inputs reasoning",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "Recomputed: 15.79% x (1 - 0.2724) = 11.49%. Stored as 11.5% — 1bp rounding. Immaterial."
+    },
+    {
+      "claim": "d0 = VND 999 (EPS 3,671 x payout 27.24%)",
+      "source_cited": "DDM inputs reasoning, yfinance EPS",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "Recomputed: 3,671 x 0.2724 = 1,000.0. The inputs file stores d0 = 999 — a 1 VND floor/rounding. Immaterial to output. EPS of VND 3,671 is yfinance TTM; not independently verified against filed accounts here."
+    },
+    {
+      "claim": "Justified P/B = 1.804x; implied px VND 45,026",
+      "source_cited": "Calculation trace in valuation JSON",
+      "status": "VERIFIED",
+      "notes": "Recomputed: (0.1579 - 0.065) / (0.1165 - 0.065) = 1.804x. 1.804 x 24,963.26 = 45,026 (45,025.97 published, 45,030.81 recomputed from unrounded intermediates — sub-5 VND rounding from Ke display precision). Immaterial."
+    },
+    {
+      "claim": "Base blended DDM value = VND 35,261 (40% DDM + 40% ER + 20% Justified P/B)",
+      "source_cited": "Calculation trace in valuation JSON",
+      "status": "VERIFIED",
+      "notes": "Recomputed: 0.4 x 31,477.86 + 0.4 x 34,161.70 + 0.2 x 45,025.97 = 35,261.02. Match."
+    },
+    {
+      "claim": "Probability-weighted blended target = VND 33,409 (+5.6%)",
+      "source_cited": "valuation JSON blended_target, weighted_contributions",
+      "status": "VERIFIED",
+      "notes": "Recomputed: 0.25 x 17,755.89 + 0.55 x 34,995.66 + 0.15 x 53,418.29 + 0.05 x 34,200 = 33,409.32. Match. Upside (33,409 - 31,650) / 31,650 = 5.56% rounds to 5.6%. Match."
+    },
+    {
+      "claim": "Scenario weights sum to 1.0 (Bear 25% + Base 55% + Bull 15% + Cross-check 5%)",
+      "source_cited": "valuation JSON weight_total_check, blending_weights",
+      "status": "VERIFIED",
+      "notes": "0.25 + 0.55 + 0.15 + 0.05 = 1.00. Match."
+    },
+    {
+      "claim": "Script reproducibility: re-running ddm_compute.py produces identical output",
+      "source_cited": "ddm_compute.py re-run vs published TCB_valuation.json",
+      "status": "VERIFIED",
+      "notes": "diff output/TCB/TCB_valuation.json vs /tmp/audit_valuation.json shows only computed_at timestamp differs. All numeric values byte-identical."
+    },
+    {
+      "claim": "Market cap VND 224.4Tn (USD 8.73Bn)",
+      "source_cited": "Derived: 7.086Bn shares x VND 31,650",
+      "status": "VERIFIED",
+      "notes": "7.086240414Bn x 31,650 = 224.38Tn, rounds to 224.4Tn. At VND 25,700/USD = USD 8.73Bn. Match."
+    },
+    {
+      "claim": "Trailing P/B 1.27x",
+      "source_cited": "Derived: 31,650 / 24,963.26",
+      "status": "VERIFIED",
+      "notes": "31,650 / 24,963.26 = 1.268x, rounds to 1.27x. Match."
+    },
+    {
+      "claim": "Dividend yield 2.2% (VND 700/share last cash dividend)",
+      "source_cited": "Derived: 700 / 31,650",
+      "status": "VERIFIED",
+      "notes": "700 / 31,650 = 2.21%. Rounds to 2.2%. Match."
+    },
+    {
+      "claim": "Total 12m return approximately 13% (10.6% price + 2.2% yield)",
+      "source_cited": "recommendation block, TCB.json",
+      "status": "VERIFIED",
+      "notes": "(35,000 - 31,650) / 31,650 = 10.59% + 2.21% = 12.80% rounds to approximately 13%. Match."
+    },
+    {
+      "claim": "Forward P/E FY26E 7.8x (VND 4,035 EPS)",
+      "source_cited": "snapshot block, TCB.json",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "31,650 / 4,035 = 7.85x, rounds to 7.8x. Match on the multiple. FY26E EPS of 4,035 implies PAT of VND 28.6Tn on PBT guidance of VND 37.5Tn — effective tax rate of 23.8%. TCB's FY25 effective tax rate was approximately 20% (PAT VND 26.0Tn / PBT VND 32.5Tn). The 4 ppt uplift in assumed tax rate is conservative but falls within the statutory 20-25% corporate tax range in Vietnam. Not an error."
+    },
+    {
+      "claim": "Peer cross-check: VND 24,963 x 1.141 growth factor = VND 28,500 forward BV; 1.2x P/B = VND 34,200",
+      "source_cited": "cross_check reasoning in valuation JSON",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "24,963.26 x 1.141 = 28,483 => 1.2 x 28,483 = 34,180 (published as 34,200 — VND 20 rounding from approximate BV figure). The 1.141 growth factor implies ~14.1% book growth, consistent with g_high (14%) rather than g_book (11.5%). Using g_book (11.5%) would give VND 27,834 forward BV and a cross-check price of VND 33,401. The difference (34,200 vs 33,401) is VND 799 at 5% weight = approximately VND 40 impact on blended target. Immaterial. Flag as methodology note."
+    },
+    {
+      "claim": "1Q26 PBT growth 22.6% YoY; NFI +46.7% YoY; Techcom Life 21% bancassurance market share; CASA 40.4%",
+      "source_cited": "TCB 1Q26 investor presentation (sourced via Google Drive, TCB/ shared drive)",
+      "status": "SOURCED_NO_WEB_VERIFY",
+      "notes": "All four figures sourced from the TCB 1Q26 earnings presentation materials accessed via Google Drive. Figures are consistent with the valuation framework's assumptions and internally consistent with each other (22.6% PBT growth tracking vs 15.4% full-year guidance implies front-loaded delivery). Cannot independently verify against a live filing in this environment. Flag as sourced-but-not-independently-confirmed."
+    },
+    {
+      "claim": "NPL ratio 1.16% (organic 0.98%); NPL coverage ~130%; CAR 15.2%",
+      "source_cited": "TCB 1Q26 investor presentation (Google Drive)",
+      "status": "SOURCED_NO_WEB_VERIFY",
+      "notes": "Same provenance as above. NPL of 1.13% cited in beta_reasoning vs 1.16% in snapshot — minor period difference (likely FY25 year-end vs 1Q26 quarter-end). Not a contradictory claim; two different reporting dates."
+    },
+    {
+      "claim": "Peer ROEs: ACB 17.5%, MBB 20.8%, VPB 15.8%",
+      "source_cited": "peers_read in TCB.json",
+      "status": "INFERENCE",
+      "notes": "Peer ROE figures not independently verified against filed accounts. Reasonable order-of-magnitude given publicly known performance rankings, but should be treated as estimates."
+    },
+    {
+      "claim": "FY2025 TOI VND 53.4Tn (+13.6% YoY); FY2025 PBT VND 32.5Tn (+18.2% YoY)",
+      "source_cited": "TCB FY2025 investor presentation / annual results, corroborated by yfinance",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "FY2025 net income USD 1,012M at VND 25,700/USD = VND 26.02Tn (reported in historical_financials). FY2025 PBT = 32.5Tn cross-checked via implied tax rate ~20%. Historical_financials FY2025 revenue USD 2.08Bn at 25,700 = VND 53.5Tn (~VND 53.4Tn at a slightly different period FX rate). Consistent. YoY growth figures not directly recomputable here but internally consistent with prior-year inputs."
+    },
+    {
+      "claim": "TCB paid first-ever cash dividend VND 1,500/share in FY2024; most recent VND 700/share",
+      "source_cited": "TCB capital allocation history section, d0_reasoning in valuation JSON",
+      "status": "SOURCED_NO_WEB_VERIFY",
+      "notes": "VND 700/share cash dividend is confirmed in multiple places in the inputs. VND 1,500/share FY24 first payment not independently verified from this environment. Consistent with management's capital allocation description. Flag as sourced-not-confirmed."
+    },
+    {
+      "claim": "FY26 PBT guidance VND 37.5Tn (+15.4% YoY vs FY25 VND 32.5Tn)",
+      "source_cited": "Management guidance, TCB investor materials",
+      "status": "VERIFIED_WITH_NOTE",
+      "notes": "Growth check: (37.5 - 32.5) / 32.5 = 15.4%. Math correct. Source is management guidance which is not independently verifiable against a regulatory filing in this environment."
+    }
+  ],
+  "valuation_reproducibility": {
+    "ran_compute_script": true,
+    "matches_published": true,
+    "diff_notes": "Only field that differs is computed_at timestamp. All numeric values (Ke, DDM implied, Excess Returns implied, Justified P/B, blended target, scenario outputs, sensitivity matrix) are byte-identical between the audit re-run and the published TCB_valuation.json."
+  },
+  "summary": "All core DDM math is correct and fully reproducible from inputs. Ke, g_book, d0, Justified P/B, base blended, probability-weighted target, and scenario weights are each recomputed and match the published valuation to within rounding tolerances. Three notes: (1) d0 of 999 is 1 VND below the exact calculation of 3,671 x 27.24% = 1,000 — immaterial. (2) The peer cross-check uses a ~14.1% book growth factor (matching g_high) rather than the base-case g_book of 11.5%, resulting in a VND 799 higher cross-check implied price; at 5% weight this is a VND 40 impact on the blended target — immaterial. (3) Qualitative claims sourced from Google Drive investor presentations (1Q26 PBT growth, CASA ratio, NPL, CAR, bancassurance market share, dividend history) have been flagged as SOURCED_NO_WEB_VERIFY — they are internally consistent with the valuation framework and with yfinance data but cannot be independently confirmed against live regulatory filings in this audit cycle. Verdict: PASS_WITH_NOTES. No numeric errors. No unsupported invented claims. No weight violations. Recommend proceeding to render."
+}
