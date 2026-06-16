@@ -1,0 +1,164 @@
+{
+  "ticker": "TCB",
+  "company_name": "Techcombank (Vietnam Technological and Commercial Joint Stock Bank)",
+  "bull_thesis_sentence": "Techcombank is Vietnam's highest-quality private bank — industry-leading CASA, best-in-class ROA, and a fee income flywheel that structurally breaks its dependence on NIM — trading at just 1.27x P/B despite a 15.8% ROE and accelerating earnings that are poised to re-rate as the credit quota constraint eases and the insurance subsidiary matures.",
+  "bull_thesis_bullets": [
+    "Franchise moat is widest in class: 40.4% CASA ratio (2x industry median), #1 transaction banking market share at 16.3%, and #1 mortgage book among private sector banks, giving TCB a cost-of-funds advantage of ~70 bps over peers that mechanically converts to 150-200 bps of NIM premium over time.",
+    "Fee income is the structural re-rating catalyst: NFI surged 46.7% YoY in 1Q26 driven by Techcom Life's 2.2x APE growth, FX and LC recovery, and TCBS's growing capital markets franchise — with insurance and investment banking revenues having near-zero correlation to credit cycles, this diversification should compress the discount the market applies to a 'real estate bank' narrative.",
+    "At VND 31,650 the stock trades at 1.27x P/B, a ~30% discount to its justified P/B of ~1.8x implied by a 15.8% ROE and a 12% cost of equity — that gap closes as FY26 PBT guidance of VND 37.5Tn is delivered and the IRB approval in 2028 releases capital, enabling a step-up in dividends and buybacks."
+  ],
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "NIM recovery underway from 2Q26 — structural not cyclical compression",
+      "body": "FY2025 NIM of 3.73% (down 47 bps YoY) reflected a one-time COF spike driven by deposit rate competition and tight SBV liquidity policy. By 4Q25, NIM had already inflected to 3.93% (+10 bps QoQ, +9 bps YoY). Management guided NIM stabilization from 2Q26 as the bank shifts the asset mix toward higher-yield retail and unsecured lending (unsecured grew 3.5x in FY25 from a low base) and the CASA ratio benefits from the Auto-Earning 2.0 product rollout. A 20 bps NIM recovery from the 2025 trough would add approximately VND 2.4Tn to annualized NII on the current VND 1,192Tn asset base — a 6-7% uplift to group PBT."
+    },
+    {
+      "id": 2,
+      "title": "Techcom Life: bancassurance market share at 21% in year one, product pipeline expanding",
+      "body": "Techcom Life, launched in FY2025, captured 21% bancassurance market share and 9% total APE market share (banca + agency) by 1Q26, making it the #1 banca distributor in Vietnam. APE grew 2.2x YoY in 1Q26. Fee income from insurance more than doubled YoY in 1Q26. The business runs on cloud-native, AI-first infrastructure with 95% paperless processes and is 100% integrated into TCB's branch network. Vietnam's life insurance penetration sits at ~2% of GDP vs 5-7% for Thailand and Malaysia — the structural runway is 10-15 years. At maturity, Techcom Life could contribute VND 4-6Tn of annual PBT (equivalent to 10-15% of FY26 group guidance), a contribution not currently in buy-side models."
+    },
+    {
+      "id": 3,
+      "title": "Infrastructure financing: Gia Binh Airport and quota-exempt pipeline is a multi-year credit growth unlock",
+      "body": "Vietnamese regulators have reportedly approved select infrastructure projects — including Gia Binh Airport developed by Masterise Group (a TCB ecosystem anchor) — to be exempt from the SBV credit quota mechanism, meaning these loans do not count against the bank's annual credit ceiling. TCB's originate-to-distribute strategy for infrastructure means the bank originates, earns arranger fees, and then distributes to insurance funds and pension vehicles, preserving its balance sheet capacity. The 2026-2030 GFCF plan calls for USD 1.12 quadrillion in total fixed capital formation with bank loans funding the largest tranche. TCB is the lead arranger of choice for blue-chip infrastructure names, and credit quota exemption structurally relieves the bank's binding constraint — annual credit quota — without pressuring CAR."
+    },
+    {
+      "id": 4,
+      "title": "IRB model approval in H1 2028 releases VND 30-40Tn of excess capital",
+      "body": "Management disclosed that the transition to an Internal Ratings-Based (IRB) approach for risk-weighted assets is expected to be approved by SBV in H1 2028. Under IRB, TCB's CAR is expected to rise from ~15% to 17-18%, releasing material excess capital relative to the regulatory minimum. This capital can be deployed for accelerated dividends, share buybacks, or growth lending — all of which are ROE-accretive. For context, TCB's 1Q26 CAR was 15.2% (Basel II). A 200-300 bps CAR improvement implies approximately VND 24-36Tn of capital freed at current RWA levels. Management's 20% ROE target by 2028 is partly predicated on this capital release."
+    },
+    {
+      "id": 5,
+      "title": "FY26 PBT guidance of VND 37.5Tn implies 15% YoY growth — conservative given 1Q26 run rate",
+      "body": "1Q26 PBT grew 22.6% YoY, already tracking ahead of the FY26 guidance of VND 37.5Tn (+15% YoY vs FY25 VND 32.5Tn). NFI at +46.7% YoY in 1Q26 is the strongest quarterly performance on record. Credit growth of 20% YoY is sustained by a strong quota (bank-only 2.9% QoQ in 1Q26). Management has historically delivered guidance conservatively — in FY25 the bank beat guidance of VND 31.5Tn with a final VND 32.5Tn (+3%). If 1Q26 momentum holds, full-year PBT could reach VND 38-40Tn — 1-7% above formal guidance — which would push FY26 EPS to approximately VND 5,300-5,600/share vs the guided VND 5,290."
+    },
+    {
+      "id": 6,
+      "title": "Credit diversification milestone — RE exposure below 30% for the first time",
+      "body": "In 1Q26, TCB reduced real estate developer exposure to below 30% of total credit — a milestone that the bank has been working toward since 2023 when RE developer loans exceeded 33% of the portfolio. This de-risking reduces the 'real estate bank' discount that the market applies to TCB vs. peers with more balanced books. Retail and SME credit outgrew corporate credit in 1Q26 with mortgage disbursement of VND 30.6Tn (+52.7% YoY) and unsecured lending at +24.2% QoQ. Average LTV on secured loans remained at 46.6%, and organic NPL (before CIC reclassification impacts) was just 0.98% in 1Q26 — well inside the 1.5% guidance ceiling."
+    },
+    {
+      "id": 7,
+      "title": "TCBS: Vietnam's leading investment bank with margin lending targeting VND 60Tn by year-end",
+      "body": "Techcom Securities (TCBS) is Vietnam's top corporate bond arranger, distributing VND 50Tn of bonds in 5M26 (+30% fee income YoY). Margin lending grew from VND 43Tn at start of 2026 to VND 49Tn by end-May and management targets VND 60Tn by December. LTV on the entire margin book is 44-45% (33% for Vingroup names), reflecting disciplined risk management. TCBS also holds equity brokerage market shares of 8.9% on HSX and 9.5% on HNX (1Q26). An eventual TCBS IPO — previously targeted at a USD 5Bn market cap — would surface significant value not captured in TCB's current consolidated P/B of 1.27x. The IPO timeline remains open; however, TCBS is now the distributor of record for DMX's IPO and is building an ECM pipeline that includes Techcom Life, One Mount, and Masterise."
+    },
+    {
+      "id": 8,
+      "title": "AI productivity multiplier: 50% developer efficiency gain, targeting 100% by year-end",
+      "body": "CEO Jens Lottner disclosed at the June 2026 analyst meeting that AI coding tools have increased developer productivity by approximately 50% over the past three months across TCB's 500-600 person engineering team, with a target to double productivity by year-end. TCB's key architectural advantage — a centralized data layer that makes every system 'stupid' by design — allows AI agentic tools, knowledge graphs, and vector databases to be layered on top without deep system re-engineering. AI is also being tested for RM support (30-40% early productivity improvements), hyper-personalization of digital messaging, and end-to-end operational automation. Lower long-run headcount growth rates translate directly to lower OPEX growth, supporting the bank's sub-30% CIR target (CIR was 28.3% in 1Q26)."
+    },
+    {
+      "id": 9,
+      "title": "Vietnam's macro tailwinds are structural — 2026-2030 GFCF of USD 1.12 quadrillion",
+      "body": "Vietnam's government has committed to a 10%+ annual GDP growth target for the next decade, backed by four Politburo resolutions (57, 59, 66, 68) covering digital transformation, global integration, lawmaking reform, and private sector development. The 2026-2030 five-year plan targets USD 1.12 quadrillion in gross fixed capital formation, up from USD 710Bn in the prior cycle. TCB's base-case GDP forecast for FY26 is 7%, and management flagged that government fiscal stimulus (public investment disbursements planned up 42% YoY to VND 1.12 quadrillion) will be deployed in H2 to support growth. FDI disbursement in 1Q26 was USD 5.4Bn (+6.3% YoY). With Vietnam at GDP/capita of ~USD 4,500-5,000, the wealth management penetration (private banking personal financial assets/capita) is at the inflection point where Thailand and Malaysia saw 4-6x growth."
+    },
+    {
+      "id": 10,
+      "title": "Foreign room is available — USD 39Mn remaining creates institutional access",
+      "body": "As of June 2026, TCB had 33.4 million shares of foreign room remaining, equivalent to approximately USD 39Mn at VND 31,650/share. This is a non-trivial amount for foreign institutional investors seeking Vietnam bank exposure. TCB's S&P credit rating was upgraded to BB in 2025, and Fitch assigned an initial BB- with Positive Outlook — the first major international rating upgrades for a Vietnamese private bank. These ratings open TCB to a wider universe of global fixed income and equity investors who require investment-grade or near-investment-grade country exposure. As Vietnam prepares for FTSE Emerging Market inclusion (a process that has been under review since 2023), TCB's strong corporate governance, management quality, and disclosure standards position it as the first choice for foreign allocations."
+    }
+  ],
+  "business_facts": {
+    "summary": "Techcombank (ticker: TCB.VN) is Vietnam's largest private-sector joint-stock commercial bank by total operating income, profit before tax, and wealth management AUM. Founded in 1993 and listed on HOSE in June 2018, it serves 18 million retail and corporate customers through 302 branches across 29 of Vietnam's 34 cities, and digital banking platforms handling 86% of retail transactions. As of FY2025, total assets were VND 1,192Tn (+21.8% YoY), the loan book was USD 29.2Bn, and equity book value was USD 6.8Bn. The bank holds the #1 industry position in transaction banking, CASA ratio, card payment volume, net fee income share, wealth management AUM, and profit before tax among private banks.",
+    "business_model": "TCB earns revenue from three streams: (1) net interest income (NII), driven by a ~70 bps cost-of-funds advantage from its 40.4% CASA ratio and channeled into mortgages, corporate credit, and unsecured lending; (2) net fee income (NFI) from bancassurance (Techcom Life), investment banking (TCBS bond and equity capital markets), FX sales, card services, and cash management; and (3) other income including bad debt recoveries. The bank operates through four customer-facing business units: Retail Banking Group (RBG), Corporate and Institutional Banking Group (CIBG), the Wealth Bank (Techcom Securities and AUM platform), and the Digital Bank (mass market, embedded finance). Its differentiated model targets the top end of the income distribution — affluent, upper mass-affluent, and blue-chip corporates — maintaining a leverage ratio of 6.6x vs. the industry average of 12x.",
+    "segments": [
+      {
+        "name": "Retail Banking Group (RBG)",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Vietnam's #1 mortgage lender among private banks with VND 260Tn mortgage book (FY25). Also #1 in card payment volume (~28% market share). 1Q26 mortgage disbursement was VND 30.6Tn (+52.7% YoY). Unsecured lending grew 3.5x YoY in FY25 from a low base. Retail credit drove 30.8% of total credit growth in FY25 vs. 13.4% for corporate. 86% of retail transactions are digital."
+      },
+      {
+        "name": "Wealth Bank (TCBS + AUM)",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": 51,
+        "description": "Vietnam's #1 wealth management platform with AUM of VND 645Tn (FY25) and ~1.2M customers. PBT of VND 7.1Tn (FY25) with ~51% PAT margin. Bond advisory market share 8.9% on HSX and 9.5% on HNX in 1Q26. Margin lending balance VND 49Tn (May 2026), targeting VND 60Tn by year-end at 44-45% average LTV."
+      },
+      {
+        "name": "Digital Bank",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Mass market and embedded finance segment. 16.4% transaction banking market share by NAPAS volume (1Q26, #1). 1.4Bn quarterly transactions. 35% of new-to-bank retail customers chose TCB as Main Transaction Bank in 1Q26. CIR for the segment is well below the group average due to digital operating leverage."
+      },
+      {
+        "name": "Corporate and Institutional Banking (CIBG)",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": 13.4,
+        "margin_pct": null,
+        "description": "Bank of choice for blue-chip Vietnamese corporates. Corporate credit CAGR of 19% over the prior six-year period. Real estate developer exposure reduced to below 30% of total credit in 1Q26 (from 33.2% at end-FY24). Infrastructure project financing pipeline growing with originate-to-distribute model for long-duration assets."
+      },
+      {
+        "name": "Techcom Life (Insurance)",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": 120,
+        "margin_pct": null,
+        "description": "New life insurance subsidiary launched in FY2025. Captured 21% bancassurance market share and 9% total APE market share (agency + banca) by 1Q26. APE grew 2.2x YoY in 1Q26. Cloud-native, AI-first, 95% paperless. Insurance fees more than doubled YoY in 1Q26 and are the fastest-growing NFI component. Provides recurring fee income with low sensitivity to credit cycles."
+      }
+    ],
+    "customers": [
+      {
+        "name": "Masterise Group",
+        "revenue_share_pct": null,
+        "importance": "Vietnam's largest residential real estate developer and TCB ecosystem anchor. Developer of Gia Binh Airport project (reportedly approved for credit quota exemption). Masterise is part of TCB's three-pillar ecosystem (TCB, One Mount, Masterise) that provides integrated banking, tech, and real estate services."
+      },
+      {
+        "name": "One Mount Group",
+        "revenue_share_pct": null,
+        "importance": "Technology and data platform co-owned with TCB, providing digital infrastructure for merchant solutions, retail media, and embedded finance. Serves 2.2M+ merchants on the Techcombank merchant platform."
+      },
+      {
+        "name": "Vingroup / Vinhomes",
+        "revenue_share_pct": null,
+        "importance": "Key mortgage and margin lending relationship. TCBS holds margin lending at LTV of approximately 33% for Vingroup-related securities — a more conservative limit than the 44-45% book average."
+      }
+    ],
+    "geographic_revenue": [
+      {
+        "region": "Vietnam (domestic only)",
+        "pct": 100
+      }
+    ]
+  },
+  "industry_position_bull": {
+    "market_overview": "Vietnam's banking sector is at the early stages of a multi-decade expansion driven by urbanization, rising household income, and financial deepening. At ~USD 4,500-5,000 GDP per capita, Vietnam sits at the same inflection point where Thailand and Malaysia saw 4-6x growth in private banking financial assets per capita. Total banking system credit grew 19% in FY2025, and the SBV has signaled a 2026 credit growth target of 16%. Four Politburo resolutions (57, 59, 66, 68) underpin the government's commitment to digital transformation, private sector development, and global economic integration — all of which directly expand the addressable market for TCB's core products. The 2026-2030 GFCF plan allocates USD 1.12 quadrillion, with bank loans as the largest funding source. Insurance penetration at ~2% of GDP is one-third of regional peers, creating a 10-year runway for Techcom Life. Vietnam is also progressing toward FTSE Emerging Market inclusion, which would materially increase foreign capital flows into TCB as one of the top-three liquid private bank names.",
+    "tam_usd_bn": null,
+    "moat": "TCB's moat rests on four reinforcing pillars that have taken 15 years to build and would take a competitor 10+ years to replicate: (1) the lowest cost of funds in the Vietnamese banking system (cost of funds 3.57% at FY25 vs. 4.2% industry median) driven by its 40.4% CASA ratio, built on transaction banking dominance and the Auto-Earning product; (2) a wealth management ecosystem with VND 645Tn AUM and 1.2M affluent clients that generates sticky, cycle-resistant fee income; (3) TCBS's leading position in corporate bond issuance and equity capital markets, which creates proprietary deal flow and cross-selling to corporate treasurers; and (4) the TCB-One Mount-Masterise ecosystem, which co-creates customer journeys across banking, real estate, and digital commerce, making TCB the default financial provider for the most economically active segment of the Vietnamese population."
+  },
+  "peers_positive_read": "Among the Vietnamese private bank cohort — VCB (state-owned), MBB, VPB, ACB, HDB — TCB is the only bank that has sustained an ROA above 2% for six consecutive years, a feat no peer has matched. At 1.27x P/B (as of June 2026), TCB trades at a modest premium to ACB (approximately 1.1-1.2x) and below MBB (~1.4x) despite a significantly higher ROA and more diversified fee income mix. On P/B vs. ROE, the justified P/B for a 15.8% ROE bank at a 12% cost of equity is ~1.75-1.90x — TCB's current market price of VND 31,650 implies the market is pricing in a permanent ROE compression to approximately 12-13%, a view that is at odds with the bank's FY26 PBT guidance of VND 37.5Tn and the trajectory of its fee income business. Regionally, Thai banks KBANK and BBL trade at 1.0-1.1x P/B with 8-10% ROE, implying Vietnam private banking at 1.27x/15.8% ROE is actually cheap on a risk-adjusted basis for the growth being offered.",
+  "bull_valuation_lens": {
+    "method_preference": "DDM",
+    "method_reasoning": "Banks should not be valued with DCF since free cash flow from a bank balance sheet is not meaningful — retained earnings fund loan growth, which is the core business activity, not a capital expenditure. DDM with an Excess Returns overlay and a Justified P/B cross-check is the standard framework for banks. For TCB, the DDM captures the compounding of dividends as the payout ratio rises from ~20% today toward 30-35% as the capital position matures. The Excess Returns model captures the value of earning above the cost of equity on a growing book value. The Justified P/B provides a market-comparable anchor.",
+    "bull_ddm_assumptions": {
+      "ke": 0.105,
+      "ke_reasoning": "Cost of equity at 10.5% in the bull case. Risk-free rate of 5.5% (Vietnam 10Y government bond) plus beta of 0.90 times ERP of 5.5% = 10.45%, rounded to 10.5%. Bull case applies a below-sector beta of 0.90 given TCB's superior asset quality (organic NPL 0.98%), lowest-in-sector leverage ratio (6.6x), and AA+ domestic credit rating. The market should re-rate the risk premium as the narrative shifts from 'RE bank' to 'wealth and fee income bank'.",
+      "roe": 0.17,
+      "roe_reasoning": "Bull case assumes ROE expands to 17% by FY28 from 15.8% today, driven by: (1) operating leverage on fixed-cost digital infrastructure (CIR trending from 30.8% toward 28%); (2) higher-yield unsecured lending and insurance cross-sell lifting NFI/TOI from 21.5% toward 28%; (3) IRB capital release in H1 2028 reducing excess capital drag on the denominator. 17% ROE is consistent with TCB's own 20% ROE ambition and management guidance; the bull case applies a conservative discount to that target.",
+      "g_high": 0.16,
+      "g_high_reasoning": "16% earnings growth in years 1-5. FY26 PBT guidance of VND 37.5Tn implies 15.4% growth; 1Q26 was 22.6% YoY. Bull assumes credit quota eases in 2H26 (as historically has happened) and infrastructure projects (quota-exempt) contribute incrementally. NFI growth from Techcom Life, TCBS margin lending, and equity capital markets adds a non-interest income buffer. 16% is below the 1Q26 run rate but slightly above formal guidance — a conservative bull case.",
+      "g_terminal": 0.07,
+      "g_terminal_reasoning": "7% terminal growth reflecting Vietnam's long-run nominal GDP target (government's stated 10% growth ambition discounted by 3 ppts for conservatism, or alternatively 5-6% real GDP + 2-3% inflation). At GDP/capita of USD 4,500, Vietnam is at the stage where financial deepening accelerates rapidly — Thailand at equivalent GDP stage saw credit/GDP expand from 80% to 150% over 15 years. 7% is a higher terminal growth than the DDM default, appropriate for an economy with Vietnam's structural characteristics.",
+      "g_book": 0.13,
+      "g_book_reasoning": "Book value growth of 13% in the bull case. Formula: ROE × (1 - payout) = 17% × (1 - 0.23) = 13.1%. With IRB approval in 2028 releasing capital, the bank can sustainably pay out 25-30% of earnings while still growing book at double-digit rates."
+    }
+  },
+  "sources_used": [
+    "yfinance TCB.VN — price VND 31,650, BV VND 24,963, ROE 15.79%, shares 7.086Bn (as of 2026-06-16)",
+    "Techcombank January 2026 Investor Presentation (2026-01-tcb-investor-presentation-vf.pdf) — FY25 financials, strategic pillars, segment overview",
+    "Techcombank 1Q26 Earnings Call Presentation (1q26-tcb-earnings-presentation.pdf, dated 2026-04-22) — 1Q26 P&L, credit quality, FY26 outlook and guidance",
+    "Vietcap Securities Analyst Meeting Note dated 2026-06-15 (20260615_TCB_Vietcap.pdf) — management commentary on macro, NIM, infrastructure, AI, ROE path, TCX performance",
+    "Vietcap Securities FY2025 Earnings Flash dated 2026-01-20 — FY25 detailed P&L, NIM trajectory, credit segmentation",
+    "Techcombank Annual Report 2025 (eng-tcb-ar25-full-260416.pdf) — strategy, digital transformation, awards",
+    "Techcombank Morning Session CEO Presentation (presentation-document-morning-session-tcb.pdf) — CEO Jens Lottner on Vietnam macro and ecosystem strategy"
+  ],
+  "open_questions": [
+    "Segment-level revenue split (NII vs NFI by RBG/CIBG/Wealth/Digital) not publicly disclosed in the investor presentations reviewed; only TOI by segment is available in some slides but without precise VND amounts for each business unit.",
+    "Techcom Life standalone P&L not yet disclosed publicly (too early; launched FY2025); APE market share and fee income contribution disclosed but full insurance P&L pending.",
+    "TCBS IPO timeline: no specific date provided at June 2026 analyst meeting. Previously targeted 2025 USD 5Bn market cap but no formal roadmap disclosed.",
+    "TCB's S&P BB rating and Fitch BB- with Positive Outlook could support offshore bond issuance at competitive rates; exact pricing and timeline of next offshore bond issuance not disclosed at the analyst meeting.",
+    "Shares outstanding as of latest quarter: yfinance shows 7,086,240,414; confirm whether any additional share issuances related to ESOP are pending."
+  ]
+}
