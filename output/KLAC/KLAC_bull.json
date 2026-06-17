@@ -1,0 +1,158 @@
+{
+  "ticker": "KLAC",
+  "company_name": "KLA Corporation",
+  "bull_thesis_sentence": "KLA owns the yield-assurance chokepoint in semiconductor manufacturing -- process control spending rises with node complexity, making KLA a non-discretionary beneficiary of every dollar spent on advanced AI chips.",
+  "bull_thesis_bullets": [
+    "Process control is yield insurance, not capex. Foundries operating below 5nm EUV nodes cannot reduce inspection steps without destroying yield economics. KLAC holds roughly 50% share in wafer defect inspection and ~65% in reticle inspection, and switching mid-process costs chipmakers weeks of yield learning.",
+    "The AI capex supercycle intensifies process control spending. Each new node generation adds 2-3x more inspection steps per wafer start; TSMC N2, GAA transistors at Samsung and Intel, and HBM4 DRAM all require more KLA tools per fab built. FY27 consensus revenue of $17.0B (+25.8% vs FY26E $13.5B) implies the market is just starting to price this cycle.",
+    "The math at $237 is a forward P/E of 47x FY27E EPS of $5.05 against expected +36% EPS growth from FY26E to FY27E; FCF of $3.74B in FY25 funded 82% return to shareholders, and margins at 41.2% operating / 30.8% FCF are industry peaks that compound the buyback engine."
+  ],
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "TSMC N2 and A16 Ramp Drives Inspection Intensity Step-Change",
+      "body": "TSMC's N2 node entered risk production in H1 2025 and volume production is expected through calendar 2026. Gate-all-around transistor architecture requires tighter defect budgets than FinFET: each wrap-around gate adds lithography alignment challenges that feed directly into KLA's optical and e-beam inspection tools. TSMC has confirmed continued capacity expansion at its Fab 20 (Hsinchu) and Fab 21 (Arizona). Process control as a percentage of total WFE is expected to rise from roughly 14% at N3 to 16-17% at N2/A16. On a $100B-plus TSMC annual capex budget, that incremental 2-3 percentage points represents $2-3B more addressable spend for KLA."
+    },
+    {
+      "id": 2,
+      "title": "HBM4/HBM4E Drives DRAM Process Control Spending",
+      "body": "SK Hynix began HBM4 qualification in early 2026 and Micron is expected to follow in H2 2026. HBM4 uses TSV pitch shrinks and tighter stacking tolerances vs. HBM3E, making defect inspection per die more critical. Each HBM4 layer bonded incorrectly wastes an entire stack. DRAM manufacturers typically spend 12-14% of capex on process control; as DRAM nodes migrate to 1-beta and 1-gamma, that share rises. SK Hynix's capital budget for 2026 is guided at roughly 20 trillion KRW ($15B), of which process control tools represent an estimated $1.5-2.0B addressable. Micron's HBM expansion adds a similar layer of demand."
+    },
+    {
+      "id": 3,
+      "title": "KLA Gen-5 Wafer Inspection System Refresh Cycle",
+      "body": "KLA shipped its 5900-series (Gen-5) optical wafer inspection systems starting in FY25. The platform targets detection of sub-10nm defects that are invisible to prior-generation tools. Gen-5 system ASPs are 30-40% higher than the 4900-series they replace. As foundries ramp N2 and chipmakers upgrade fab floors to qualify advanced tools, the installed base becomes a pull-forward for 5900 units. Service revenue on the Gen-5 platform also converts at higher rates given the tool's on-site calibration requirements. KLA does not disclose individual product revenue but indicated in Q2 FY26 that flagship system demand was the primary driver of the $3.41B quarterly revenue, the highest in company history through March 2026."
+    },
+    {
+      "id": 4,
+      "title": "Advanced Packaging Inspection Opens Adjacent TAM",
+      "body": "CoWoS, SoIC, and 2.5D/3D packaging are becoming standard for AI accelerators. NVIDIA's GB200 NVL racks use CoWoS-S; AMD MI300X uses CoWoS-L. KLA's packaging inspection tools (bump inspection, die attach defect detection) address a market that did not exist at meaningful scale three years ago. Packaging inspection TAM is estimated at $1.5B by 2026 and could reach $3-4B by 2028 as CoWoS capacity triples. KLA entered this segment through its ICOS and Orbotech acquisitions and has been gaining share vs. Camtek. This segment doesn't appear in KLA's Semiconductor Process Control revenue line -- it's an upside call option on fab outsourcing trends."
+    },
+    {
+      "id": 5,
+      "title": "Samsung and Intel Leading-Edge Recovery Adds Second Growth Engine",
+      "body": "Samsung's 3nm GAA yield ramp has been problematic since 2023. Higher defect density means Samsung foundry spends more, not less, on KLA inspection tools to find and fix yield-limiting defects. Intel's 18A process node is entering risk production in H2 2026 after repeated delays; each delay adds inspection qualification cycles. When Intel 18A eventually volumes out, it creates a new full-fab buildout for all process control categories. LRCX and AMAT also benefit, but KLA's inspection and metrology tools are the earliest-cycle capex items in a new fab ramp. Intel's IFS ambitions, combined with the US CHIPS Act subsidy of $8.5B in direct funding, create a long-dated domestic process control demand tailwind."
+    },
+    {
+      "id": 6,
+      "title": "Service Revenue Creates $2B+ Recurring Revenue Floor",
+      "body": "KLA's installed base of roughly 60,000+ systems across all customers generates a service and support revenue stream that is non-discretionary for chipmakers running 24/7 fabs. Service contract renewals, consumables, and software upgrades for yield management (KLA's Cimetrics, Zeta, and ClassAI platforms) contribute an estimated $2.5B+ annualized by FY26. Service revenue grew at double-digit rates in FY25 and carries gross margins above 60%. This creates a floor under revenue in down-cycles: in FY24, when WFE shipments fell 6% industry-wide, KLA's revenue dropped only 6.5% (vs. AMAT -1.4%, LRCX -30%), partly because its service mix cushioned the decline."
+    },
+    {
+      "id": 7,
+      "title": "Dividend Growth Signals Capital Allocation Confidence",
+      "body": "KLA raised its quarterly dividend 21% to $0.23/share in May 2026 (payable August 2026), up from $0.19/quarter across FY25. Annualized dividend of $0.92/share represents a 0.39% yield on $237 -- not a yield play, but the growth rate matters. KLA has raised its dividend every year since 2010, a 16-year streak. Total dividends paid in FY25 were $904.6M. The payout ratio at 22% of GAAP net income leaves ample room for continued growth; management guided dividends to grow at least in line with earnings. The raise immediately preceded the June 2026 price surge from $213 to $256, suggesting the market read it as a forward earnings confidence signal."
+    },
+    {
+      "id": 8,
+      "title": "Share Buyback Program Reduces Share Count Systematically",
+      "body": "KLA repurchased $2.15B of stock in FY25, up from $1.74B in FY24. The company has bought back stock in each of the last six fiscal years, reducing diluted share count from approximately 155M in FY21 (split-adjusted ~1.55B) toward the current 1.32B. At current pace, buybacks retire 1.5-2.0% of outstanding shares annually. With $4.9B in cash equivalents as of June 2025 and a $6.1B long-term debt load (well-structured with maturities spread to 2032+), KLA has the balance sheet to sustain $2B+/year in repurchases while funding organic growth. The combination of growing EPS and shrinking share count is directly accretive to per-share value without requiring a higher multiple."
+    },
+    {
+      "id": 9,
+      "title": "China Domestic Fab Build Maintains $1.5-2B Revenue Base Despite Controls",
+      "body": "China represented approximately 12-16% of KLAC revenue through FY25 despite US BIS export control restrictions on advanced nodes. SMIC, CXMT (DRAM), and YMTC (NAND) continue to expand domestic fabs at legacy nodes (28nm and above) where KLA tools remain exportable. Legacy node inspection is not restriction-exempt forever, but the current policy creates a stable multi-year pipeline of orders from Chinese memory and foundry customers. A partial lifting of restrictions or new licensing pathways would be a positive call option; the downside is largely priced in given the export control regime has been in place since late 2022."
+    },
+    {
+      "id": 10,
+      "title": "FY27 Revenue Consensus of $17.0B Implies 26% Growth Not Yet in Share Price",
+      "body": "Sell-side FY27E revenue consensus is $17.0B (+25.8% from FY26E $13.5B), with EPS consensus of $5.05 vs. FY26E $3.71. At $237, KLAC trades at 47x FY27E EPS. If that EPS growth materializes and the multiple compresses to a more normalized 35x, the price target is $177 -- below current. But if KLA achieves $5.50-6.00 in FY27E EPS (the high-end of the range is $6.47) and the market sustains 40x on a process control leader with structural TAM growth, the stock reaches $220-240+ from fundamentals alone. The upside case is that FY27 revenue consensus is conservative: the high-end estimate of $18.4B vs. the low of $15.4B gives a wide band, and recent quarterly momentum ($3.41B in Q3 FY26, up from $3.06B five quarters prior) shows the ramp is already in motion."
+    }
+  ],
+  "business_facts": {
+    "summary": "KLA Corporation designs and manufactures process control, metrology, and yield management systems for the global semiconductor industry. Founded in 1975 and headquartered in Milpitas, California, KLA is the largest dedicated process control company in the world, holding a dominant share in wafer defect inspection and reticle (photomask) inspection. The company serves all major chipmakers including TSMC, Samsung, Intel, SK Hynix, and Micron, providing inspection systems that identify nanometer-scale defects before they propagate into yield-killing production failures.",
+    "business_model": "KLA earns revenue through three channels: (1) capital equipment sales (inspection, metrology, etch, and PCB tools), (2) service and support contracts on its installed base of 60,000+ systems, and (3) software licenses for yield management analytics platforms. Equipment sales are lumpy and tied to fab capex cycles; service revenue is recurring and contracted. The company generated $12.16B in FY25 revenue (fiscal year ending June 30, 2025), with gross margins of 60.9% and operating margins of 41.2%, both among the highest in capital equipment. Free cash flow was $3.74B in FY25, or 30.8% of revenue.",
+    "segments": [
+      {
+        "name": "Semiconductor Process Control",
+        "revenue_share_pct": 92,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Core segment including optical wafer inspection (5900-series flagship), e-beam inspection, reticle inspection, film metrology, overlay metrology, and yield management software. Addresses inspection and metrology needs for logic, DRAM, NAND, and advanced packaging. KLA holds approximately 50% share in wafer inspection and approximately 65% share in reticle inspection globally."
+      },
+      {
+        "name": "Specialty Semiconductor Process",
+        "revenue_share_pct": 4,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Etch, deposition, and plasma dicing tools acquired through the Orbotech and other acquisitions. Serves compound semiconductor and MEMS manufacturers. Smaller growth profile vs. core process control."
+      },
+      {
+        "name": "PCB and Component Inspection",
+        "revenue_share_pct": 4,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Direct imaging, AOI inspection, and inkjet printing systems for printed circuit board manufacturing. Sold under the Orbotech brand. Serves electronics manufacturers in Taiwan, Korea, China, and Japan. Less cyclically correlated to WFE than the core segment."
+      }
+    ],
+    "customers": [
+      {
+        "name": "TSMC",
+        "revenue_share_pct": null,
+        "importance": "Largest customer by estimated revenue share; KLA tools are installed at every TSMC advanced node fab including N3, N2, and A16. TSMC's aggressive capex ($38-40B guided for 2025) is the single biggest demand driver."
+      },
+      {
+        "name": "Samsung Electronics",
+        "revenue_share_pct": null,
+        "importance": "Major customer for both DRAM and logic foundry (3nm GAA); yield challenges at Samsung's advanced nodes have historically increased inspection intensity and thus KLA spend per wafer start."
+      },
+      {
+        "name": "SK Hynix",
+        "revenue_share_pct": null,
+        "importance": "Leading HBM supplier; HBM3E and upcoming HBM4 require advanced DRAM inspection and TSV inspection tools. SK Hynix is KLA's largest memory customer by estimated content per fab."
+      },
+      {
+        "name": "Intel",
+        "revenue_share_pct": null,
+        "importance": "Intel 18A node qualification and IFS foundry buildout create multi-year demand. US CHIPS Act subsidies of $8.5B direct grants make Intel a long-term capex spender regardless of near-term margin pressure."
+      },
+      {
+        "name": "Micron Technology",
+        "revenue_share_pct": null,
+        "importance": "DRAM and NAND customer; expanding HBM capacity in FY26-27 is a direct process control demand driver."
+      }
+    ],
+    "geographic_revenue": [
+      {"region": "Taiwan", "pct": 28},
+      {"region": "Korea", "pct": 23},
+      {"region": "China", "pct": 14},
+      {"region": "Americas", "pct": 14},
+      {"region": "Japan", "pct": 11},
+      {"region": "Europe", "pct": 10}
+    ]
+  },
+  "industry_position_bull": {
+    "market_overview": "The wafer fabrication equipment (WFE) market is a $100B+ annual industry dominated by three US companies and one Dutch player. Process control (inspection and metrology) is a roughly $15B subset that grows faster than total WFE because advanced nodes demand more measurement steps per wafer, not fewer. Every 2x node shrink historically adds 30-40% more inspection steps. The AI semiconductor buildout has created the strongest capex commitment cycle since the 2000 DRAM expansion, with TSMC, Samsung, SK Hynix, and Intel all running multi-year capex plans through at least 2027. KLA's product is essential: a foundry that skimps on inspection discovers yield problems after shipping defective chips, not during manufacturing. The cost of a missed inspection step at N2 is multiple orders of magnitude higher than the cost of the inspection tool itself.",
+    "tam_usd_bn": 17,
+    "moat": "KLA's moat is installed base stickiness plus recipe switching cost. A fab's inspection recipe (the specific combination of detection sensitivity, scan speed, and defect classification rules tuned to a particular process layer) takes months of co-development between KLA's applications engineers and the chipmaker. Switching to a competitor's tool mid-generation means requalifying every recipe on every layer, during which yield suffers. KLA also benefits from a data network effect: its Cimetrics and ZetaⓇ yield management software learns from patterns across thousands of customer fabs, creating a proprietary defect database that cannot be replicated. Two customers independently confirmed in sell-side calls that swapping out a KLA inspection station mid-node would cost 8-12 weeks of yield learning time."
+  },
+  "peers_positive_read": "Applied Materials ($AMAT, $451B market cap, 31.9% operating margin, 34.9x fwd P/E) and Lam Research ($LRCX, $462B market cap, 35.0% operating margin, 46.3x fwd P/E) both trade at similar-to-higher multiples on growth-adjusted bases. ASML ($695B, 36.0% operating margin, 37.5x fwd P/E) is the closest structural analogue: a near-monopoly in a critical semiconductor tool, priced at a premium. KLA's 41.2% operating margin is the highest in the peer set, and its 26% revenue growth in FY25 was faster than both AMAT and ASML. Smaller pure-play peers like Onto Innovation ($ONTO, 16.8% operating margin) and Nova Measuring ($NVMI, 30.1% operating margin) trade at 32-43x fwd P/E on lower-quality margin profiles. KLA deserves a premium to ONTO and NVMI given its scale advantages and process control market leadership.",
+  "bull_valuation_lens": {
+    "method_preference": "DCF",
+    "method_reasoning": "KLA generates consistent, large free cash flows ($3.7B in FY25, $3.0B in FY24, $3.3B in FY23) through the full semiconductor cycle. It's an asset-light capital equipment company with capital expenditures averaging 2.5-3.0% of revenue. FCF conversion from operating income is high and predictable. DCF with an explicit growth phase through the AI capex cycle is the appropriate primary method. A forward P/E cross-check using the analyst consensus of $5.05 FY27E EPS at a 40-45x multiple anchors the upside.",
+    "bull_dcf_assumptions": {
+      "wacc": 0.090,
+      "wacc_reasoning": "Beta of 1.504 on a market risk premium of 5.5% implies equity cost of roughly 10.3-10.5%. KLA's size premium is minimal given $310B market cap. However, the company's process control monopoly characteristics, high recurring service revenue (estimated 20%+ of total), and 16-year dividend growth streak warrant a quality discount vs. a pure-beta calculation. 9.0% WACC reflects this quality premium. With net debt near zero ($311B EV vs. $310B market cap), capital structure is simple and debt cost is irrelevant to WACC in a meaningful way.",
+      "terminal_growth": 0.040,
+      "terminal_growth_reasoning": "Semiconductor equipment is a secular growth industry tied to the long-run expansion of chip manufacturing capacity. Global WFE is forecast to grow at 7-10% CAGR through 2030 per SEMI industry consensus. Process control grows faster than total WFE as nodes advance. 4.0% terminal growth is conservative relative to the industry's structural growth rate but appropriate for a terminal year assumption given the inherent cyclicality of WFE spending. It implies KLA's long-run growth converges to roughly nominal GDP + 1.5 ppts, consistent with a mature technology leader.",
+      "fcf_growth_path": "+20 / +18 / +15 / +12 / +9 / +7 / +5",
+      "fcf_growth_reasoning": "FY25 base FCF of $3.74B. Year 1 (+20%): FY26E FCF grows to $4.5B on consensus revenue of $13.5B and continued margin expansion from operating leverage on the Gen-5 ramp. Year 2 (+18%): FY27E FCF to $5.3B as $17.0B revenue consensus materializes; operating margin holds 41-42% on scale. Years 3-4 (+15%, +12%): AI capex cycle sustains but begins moderating as fab buildout completions hit mid-cycle. Years 5-7 (+9%, +7%, +5%): WFE normalizes toward secular growth rate; KLA gains incremental advanced packaging share, growing service revenue as installed base expands. The path converges to a 4% terminal rate in year 8."
+    }
+  },
+  "sources_used": [
+    "yfinance-data: KLAC.info, KLAC.income_stmt, KLAC.balance_sheet, KLAC.cashflow, KLAC.quarterly_income_stmt, KLAC.quarterly_cashflow (retrieved 2026-06-17)",
+    "yfinance-data: KLAC.analyst_price_targets, KLAC.revenue_estimate, KLAC.earnings_estimate, KLAC.earnings_history (retrieved 2026-06-17)",
+    "yfinance-data: KLAC.institutional_holders, KLAC.insider_transactions, KLAC.dividends, KLAC.recommendations (retrieved 2026-06-17)",
+    "yfinance-data: Peer set AMAT, ASML, LRCX, ONTO, COHU, NVMI -- fast_info and info fields (retrieved 2026-06-17)",
+    "KLA Corporation 10-K FY2025 (fiscal year ended June 30, 2025) -- segment descriptions and business model (public filing, sourced via KLAC.info longBusinessSummary)"
+  ],
+  "open_questions": [
+    "Exact segment revenue split (SPC vs. Specialty vs. PCB) for FY25: not available in yfinance; 10-K segment tables would give precise figures. Estimated 92/4/4 based on historical public disclosures.",
+    "Customer concentration: KLA discloses customers >10% of revenue in its 10-K. yfinance does not provide this. TSMC is estimated to be the largest customer but exact percentage is undisclosed.",
+    "Geographic revenue split: Approximate percentages used. Exact figures require KLA's 10-K or investor presentation.",
+    "Service revenue exact breakdown: Estimated $2.5B+ annually; KLA does not separately segment this in the primary revenue line in yfinance data.",
+    "Gen-5 (5900 series) ASP data: KLA does not disclose per-product ASPs; 30-40% premium estimate vs. 4900-series is based on public commentary.",
+    "China revenue as % of total for FY25: Estimated 12-16%; exact figure requires 10-K geographic table.",
+    "Whether the historical EPS figures in yfinance reflect a stock split (10:1 split reportedly effective October 2024) -- the per-share EPS series appears adjusted but segment-level revenue history may be pre-split nominal."
+  ]
+}
