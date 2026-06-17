@@ -1,55 +1,181 @@
 {
   "ticker": "AVGO",
-  "audited_at": "2026-06-10T04:49:28Z",
+  "audited_at": "2026-06-17T03:40:07Z",
   "verdict": "PASS_WITH_NOTES",
   "findings": [
     {
-      "claim": "Last close $392.16",
-      "source_cited": "yfinance-data fast_info.last_price (same session)",
+      "claim": "Q2-FY26 total revenue $22.2bn",
+      "source_cited": "Q2-FY26 8-K (SEC)",
       "status": "VERIFIED",
-      "notes": "Refreshed from the prior $396.60; valuation and narrative updated to $392.16."
+      "notes": "yfinance quarterly income stmt: Total Revenue 2026-04-30 = $22,187,000,000. Rounds to $22.2bn."
     },
     {
-      "claim": "Shares 4.758B, market cap ~$1.866T, net debt $48.96B",
-      "source_cited": "yfinance-data + FY25 balance sheet",
+      "claim": "Q4-FY25 revenue $18.0bn",
+      "source_cited": "Broadcom 8-K filings (SEC)",
       "status": "VERIFIED",
-      "notes": "Net debt verified in prior-session audit (total debt 65.14 less cash 16.18). Shares refreshed to 4.7576B."
+      "notes": "yfinance: Total Revenue 2025-10-31 = $18,015,000,000. Correct."
     },
     {
-      "claim": "Scenario probabilities + cross-check weight = 1.0",
-      "source_cited": "inputs scenarios + blending_weights",
+      "claim": "Revenue grew 23.2% from Q4-FY25 to Q2-FY26",
+      "source_cited": "Calc from yfinance",
       "status": "VERIFIED",
-      "notes": "Bear 0.25 + Base 0.45 + Bull 0.10 + cross-check 0.20 = 1.0."
+      "notes": "($22,187 - $18,015) / $18,015 = 23.15%. Rounded to 23.2% in research. Acceptable."
     },
     {
-      "claim": "12m target $370 (probability-weighted); base SOTP aggregate $368",
-      "source_cited": "sotp_compute + narrative blend",
+      "claim": "Accounts receivable Q4-FY25: $7.15bn; Q2-FY26: $10.83bn; growth +51.6%",
+      "source_cited": "yfinance quarterly balance sheet",
+      "status": "VERIFIED",
+      "notes": "yfinance: AR 2025-10-31 = $7,145,000,000; AR 2026-04-30 = $10,830,000,000. Growth = ($10,830 - $7,145) / $7,145 = 51.57%. Research rounds to 51.6%. Confirmed."
+    },
+    {
+      "claim": "DSO expanded from 36.1 days (Q4-FY25) to 44.4 days (Q2-FY26), +8.3 days",
+      "source_cited": "Calc from yfinance quarterly data",
       "status": "VERIFIED_WITH_NOTE",
-      "notes": "sotp_compute.blended_target reports the BASE SOTP aggregate ($368.25), not a probability-weighted blend. The narrative target ($370) is the probability-weighted figure (0.25xBear+0.45xBase+0.10xBull+0.20xcross-check = $369.52). Both are disclosed; they differ by ~$2."
+      "notes": "Recomputed using AR / (quarterly revenue / 90): Q4-FY25 DSO = $7,145M / ($18,015M/90) = 35.70 days; Q2-FY26 DSO = $10,830M / ($22,187M/90) = 43.93 days; delta = +8.24 days. Research states 36.1, 44.4, and +8.3 days — minor rounding (0.4-0.5 day discrepancy). Directionally correct and material."
     },
     {
-      "claim": "FY25 financials (revenue $63.89B, EBITDA $34.71B, FCF $26.91B, SBC $7.57B, goodwill $97.8B, equity $81.29B)",
-      "source_cited": "yfinance FY2025 statements",
+      "claim": "Receivables growing 2.2x faster than revenue",
+      "source_cited": "Calc",
       "status": "VERIFIED",
-      "notes": "Verified line-by-line in the prior-session audit from the 2025-10-31 annual columns."
+      "notes": "AR growth 51.6% / revenue growth 23.2% = 2.22x. Confirmed."
     },
     {
-      "claim": "56/44 Semi/Software split, ~70% software margin, AI SAM $60-90B",
-      "source_cited": "management framing / prior filings",
+      "claim": "Inventory Q4-FY25: $2.27bn; Q2-FY26: $4.33bn; growth +90.7%",
+      "source_cited": "yfinance quarterly balance sheet",
+      "status": "VERIFIED",
+      "notes": "yfinance: Inventory 2025-10-31 = $2,270,000,000; Inventory 2026-04-30 = $4,328,000,000. Growth = ($4,328 - $2,270) / $2,270 = 90.66%. Research states 90.7%. Confirmed."
+    },
+    {
+      "claim": "Inventory-to-quarterly-revenue: 12.6% (Q4-FY25) and 19.5% (Q2-FY26)",
+      "source_cited": "Calc from yfinance",
+      "status": "VERIFIED",
+      "notes": "Q4-FY25: $2,270M / $18,015M = 12.60%. Q2-FY26: $4,328M / $22,187M = 19.51%. Both match research exactly."
+    },
+    {
+      "claim": "Net debt Q2-FY26: $45.3bn",
+      "source_cited": "yfinance quarterly balance sheet",
+      "status": "VERIFIED",
+      "notes": "Long Term Debt $62,655M + Current Debt $2,252M - Cash $19,628M = $45,279M = $45.279bn. Research states $45.3bn. Confirmed."
+    },
+    {
+      "claim": "FY25 FCF: $26.9bn (42% of $63.9bn revenue)",
+      "source_cited": "yfinance annual cashflow / FY2025 10-K",
+      "status": "VERIFIED",
+      "notes": "yfinance: Free Cash Flow 2025-10-31 = $26,914,000,000. Rounds to $26.9bn. FCF margin = $26.9bn / $63.9bn = 42.1%. Confirmed."
+    },
+    {
+      "claim": "FY25 SBC: $7.57bn (11.8% of revenue, 28.1% of FCF)",
+      "source_cited": "yfinance annual cashflow",
+      "status": "VERIFIED",
+      "notes": "yfinance: Stock Based Compensation 2025-10-31 = $7,568,000,000. SBC/revenue = $7.568B / $63.9B = 11.84%. SBC/FCF = $7.568B / $26.914B = 28.12%. All match research claims."
+    },
+    {
+      "claim": "Economic FCF (FCF minus SBC) = $19.3bn; economic FCF yield = 1.08%",
+      "source_cited": "Calc from yfinance",
+      "status": "VERIFIED",
+      "notes": "Economic FCF = $26,914M - $7,568M = $19,346M = $19.3bn. Market cap = $376.71 x 4,757,580,198 = $1.7918tn. Yield = $19.346bn / $1.7918tn = 1.080%. Confirmed."
+    },
+    {
+      "claim": "Forward P/E: 19.5x on $19.35 forward EPS",
+      "source_cited": "yfinance info",
+      "status": "VERIFIED",
+      "notes": "yfinance: forwardPE = 19.467754; forwardEps = 19.35046. Research uses 19.5x / $19.35. Confirmed."
+    },
+    {
+      "claim": "Trailing GAAP P/E: 65x",
+      "source_cited": "yfinance info",
+      "status": "VERIFIED",
+      "notes": "yfinance: trailingPE = 65.40104. Research states 65x. Confirmed."
+    },
+    {
+      "claim": "Beta: 1.43 (reported)",
+      "source_cited": "yfinance info",
+      "status": "VERIFIED",
+      "notes": "yfinance: beta = 1.433. Research states 1.43. Confirmed."
+    },
+    {
+      "claim": "Short % of float: 1.25% (~58.5M shares)",
+      "source_cited": "yfinance info",
+      "status": "VERIFIED",
+      "notes": "yfinance: shortPercentOfFloat = 0.0125; sharesShort = 58,477,285. Research states 1.25% / ~58.5M. Confirmed."
+    },
+    {
+      "claim": "Current price $376.71",
+      "source_cited": "yfinance info",
+      "status": "VERIFIED",
+      "notes": "yfinance: regularMarketPrice = 376.71. Confirmed."
+    },
+    {
+      "claim": "Shares outstanding: 4.7576bn",
+      "source_cited": "yfinance info",
+      "status": "VERIFIED",
+      "notes": "yfinance: sharesOutstanding = 4,757,580,198 = 4.7576bn. Confirmed."
+    },
+    {
+      "claim": "52-week range: $241.40 to $495.00",
+      "source_cited": "yfinance info",
+      "status": "FLAGGED",
+      "notes": "yfinance (17 Jun 2026): fiftyTwoWeekLow = 244.17; fiftyTwoWeekHigh = 495.00. The 52-week high ($495) is correct. The 52-week low is $244.17, NOT $241.40 as stated in the narrative snapshot. The $241.40 figure is a stale carry-over from the prior session. Recommend updating the snapshot to '$244.17 to $495.00'."
+    },
+    {
+      "claim": "WACC = 8.25% (components: Rf 4.3%, beta 1.30, ERP 4.5%, debt weight 10%, Kd_at 3.8%)",
+      "source_cited": "inputs.json analyst assumption",
+      "status": "FLAGGED",
+      "notes": "Recomputed from components: Ke = 4.3% + 1.30 x 4.5% = 10.15%; WACC = 10.15% x 0.90 + 3.8% x 0.10 = 9.52%. The stated components imply 9.52%, not 8.25% — a 127bps gap. The compute script reads the direct 'value' field (8.25%) rather than deriving from components, so the SOTP output correctly reflects 8.25%. However, the components listed in reasoning are inconsistent with the stated value: to produce 8.25% WACC with these inputs, ERP would need to be ~3.4% (not 4.5%) or beta would need to be ~0.95 (not 1.30). Additionally, 8.25% sits below the Damodaran semiconductor sector WACC band (9.0-12.0%). The software-annuity dampening argument is sound in principle but weakens when the semiconductor segment is valued in isolation within SOTP. Recommend aligning components to produce the stated WACC or adjusting the value to 9.5% with a note explaining the departure."
+    },
+    {
+      "claim": "Non-GAAP gross margin 77.1% Q2-FY26; adjusted EBITDA margin 67.3%",
+      "source_cited": "Q2-FY26 8-K (SEC)",
       "status": "UNVERIFIED",
-      "notes": "Management commentary and prior-filing inference, not a live 10-Q extract (Funda MCP unauthenticated). Flagged in data_gaps; 'framing' qualifiers retained."
+      "notes": "Cannot pull from yfinance (non-GAAP). yfinance GAAP gross margin: $15,415M / $22,187M = 69.5% — meaningfully below the 77.1% non-GAAP. Non-GAAP figures per management 8-K press release exclude ~$1.6-1.7bn/quarter of VMware amortization. Figures are labeled 'non-GAAP' consistently in research, which is appropriate. Recommend adding 'non-GAAP' qualifier in any comparison with peer GAAP margins."
     },
     {
-      "claim": "Peer multiples (NVDA/AMD/MRVL/QCOM/TXN)",
-      "source_cited": "yfinance-data info, prior session",
-      "status": "VERIFIED_WITH_NOTE",
-      "notes": "Pulled in the prior session, not re-pulled today; peer set reasonable. Treat as same-week, not same-session."
+      "claim": "AI semiconductor revenue Q2-FY26: $10.8bn (+143% YoY)",
+      "source_cited": "Q2-FY26 8-K (SEC)",
+      "status": "UNVERIFIED",
+      "notes": "yfinance does not provide sub-segment AI vs. non-AI breakdown. Sourced from management 8-K press release; consistent with GS and UBS Drive reports. Cannot independently re-pull in this session. Accepted as from primary disclosure."
+    },
+    {
+      "claim": "Q3-FY26 guidance: total revenue $29.4bn, AI semiconductors ~$16bn, adjusted EBITDA margin ~68%",
+      "source_cited": "Q2-FY26 8-K (SEC)",
+      "status": "UNVERIFIED",
+      "notes": "Management guidance — not verifiable from yfinance historical data. Consistent across all Drive research papers (GS 3 Jun 2026, UBS 3 Jun 2026). Accepted as sourced from primary disclosure."
+    },
+    {
+      "claim": "Google + Anthropic combined ~70% of FY27-28 AI XPU revenues ($64.5-75.7bn)",
+      "source_cited": "GS 7 Apr 2026 (Drive)",
+      "status": "INFERRED",
+      "notes": "Goldman Sachs estimate from Drive research file, not an SEC-disclosed figure. Broadcom 10-K does not name individual customer revenue concentration by segment. Labeled as 'GS estimates' in research text — correct attribution. Cannot independently verify the $64.5-75.7bn range. Any use should carry the 'per GS' qualifier."
+    },
+    {
+      "claim": "GS published bear case price target: $228",
+      "source_cited": "GS 3 Jun 2026 (Drive)",
+      "status": "UNVERIFIED",
+      "notes": "Sourced from GS Drive research file. Not independently verifiable via yfinance or SEC. Accepted as sourced from identified Drive document."
+    },
+    {
+      "claim": "Probability-weighted 12m target: $450",
+      "source_cited": "Calc from scenario prices",
+      "status": "VERIFIED",
+      "notes": "0.25 x $251.39 + 0.45 x $477.12 + 0.10 x $732.71 + 0.20 x $493.43 = $62.85 + $214.70 + $73.27 + $98.69 = $449.51. Rounds to $450. Probabilities sum to 1.00. Confirmed."
+    },
+    {
+      "claim": "Forward P/E cross-check: 25.5x x $19.35 = $493.43",
+      "source_cited": "inputs.json / Calc",
+      "status": "VERIFIED",
+      "notes": "25.5 x $19.35046 = $493.44. Rounded to $493.43. Confirmed."
+    },
+    {
+      "claim": "Bear SOTP $251.39, Base SOTP $477.12, Bull SOTP $732.71",
+      "source_cited": "sotp_compute.py",
+      "status": "VERIFIED",
+      "notes": "Re-ran sotp_compute.py against AVGO_inputs.json; output matched AVGO_valuation.json exactly (only timestamp differs). All three scenario prices reproduced identically."
     }
   ],
   "valuation_reproducibility": {
     "ran_compute_script": true,
     "matches_published": true,
-    "diff_notes": "Re-ran sotp_compute.py to /tmp; identical to published AVGO_valuation.json excluding computed_at. Segment EVs: Semi DCF $1,477.9B, Software 17x EBITDA $323.0B; base aggregate px $368.25."
+    "diff_notes": "Only difference between audit re-run and published valuation.json is the 'computed_at' timestamp. All numeric outputs (segment EVs, implied prices, scenario prices) are byte-identical."
   },
-  "summary": "Fully reproducible SOTP. Market data refreshed to the live $392.16 and reconciles; FY25 statement items were verified in detail in the prior-session audit. One reconciliation note: sotp_compute reports the base SOTP aggregate ($368) as blended_target, while the narrative target ($370) is the probability-weighted blend; both are now disclosed. Segment splits and AI SAM remain management framings, correctly flagged. No fabricated figures."
+  "summary": "Key bear-case metrics — accounts receivable growth (+51.6%), inventory surge (+90.7%), DSO expansion (+8.2 days), net debt ($45.3bn), FY25 FCF ($26.9bn), SBC burden ($7.57bn), economic FCF yield (1.08%) — all verified from yfinance quarterly data with only minor rounding differences. Valuation math reproduces exactly. Two structural flags: (1) WACC components in inputs.json (Rf 4.3%, beta 1.30, ERP 4.5%) imply 9.52%, not the stated 8.25% — a 127bps gap that systematically inflates the semiconductor segment DCF; the ERP figure needs adjustment to ~3.4% or beta to ~0.95 to match the claimed 8.25%; (2) the 52-week low in the narrative snapshot is $241.40 (stale from prior session) vs. $244.17 from current yfinance. Non-GAAP gross margin figures and AI segment revenue are accepted as sourced from 8-K but not re-pulled directly. GS customer concentration estimates ($64.5-75.7bn for Google + Anthropic) are sell-side projections correctly labeled in text."
 }
