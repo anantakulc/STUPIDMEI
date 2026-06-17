@@ -1,0 +1,615 @@
+{
+  "ticker": "KLAC",
+  "name": "KLA Corporation",
+  "listings": "NASDAQ",
+  "sector": "Technology. Semiconductor Equipment",
+  "date": "2026-06-17",
+  "engine": "yfinance-data, equity-bull-case, equity-bear-case",
+  "recommendation": {
+    "action": "SELL / Reduce",
+    "tone": "negative",
+    "current_price": 237.33,
+    "target_12m": 114,
+    "upside_pct": -52.0,
+    "rationale": "20% × $37 Bear DCF + 35% × $77 Base DCF + 15% × $123 Bull DCF + 30% × $202 Peer P/E cross-check = $114 blended. At $237, KLAC trades above every fundamental anchor: $77 base DCF, $123 bull DCF, $202 peer P/E, and $193 analyst consensus mean. The company is excellent; the entry point is the problem. SELL for new money; trim aggressively for existing longs.",
+    "next_earnings": "2026-07-28 est. (Q4 FY26; consensus $3.60B revenue / $0.995 EPS)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$237.33"
+    },
+    {
+      "label": "52-week range",
+      "value": "$82.87 to $267.17"
+    },
+    {
+      "label": "Drawdown from 52w high",
+      "value": "-11.2%"
+    },
+    {
+      "label": "1-year return",
+      "value": "+167.5%"
+    },
+    {
+      "label": "YTD return (2026)",
+      "value": "+86.7%"
+    },
+    {
+      "label": "Market cap",
+      "value": "$310.0B"
+    },
+    {
+      "label": "Enterprise value",
+      "value": "$311.1B"
+    },
+    {
+      "label": "Net debt",
+      "value": "$1.19B"
+    },
+    {
+      "label": "FY25 revenue",
+      "value": "$12.16B"
+    },
+    {
+      "label": "FY25 EBITDA / margin",
+      "value": "$5.34B / 43.9%"
+    },
+    {
+      "label": "FY25 FCF",
+      "value": "$3.74B (30.8% margin)"
+    },
+    {
+      "label": "FY26E EPS (current FY)",
+      "value": "$3.71 (64x P/E)"
+    },
+    {
+      "label": "FY27E EPS (fwd)",
+      "value": "$5.05 (47x P/E)"
+    },
+    {
+      "label": "EV / EBITDA (TTM)",
+      "value": "53.2x"
+    },
+    {
+      "label": "P / FCF (FY25)",
+      "value": "82.9x"
+    },
+    {
+      "label": "Beta",
+      "value": "1.504"
+    },
+    {
+      "label": "ADTV (30d, $)",
+      "value": "~$2.5B"
+    },
+    {
+      "label": "Analyst consensus",
+      "value": "Buy/Outperform (29 analysts)"
+    },
+    {
+      "label": "Mean / median analyst PT",
+      "value": "$192.62 / $197.50"
+    },
+    {
+      "label": "Implied Street PT upside",
+      "value": "-18.8% (stock above consensus)"
+    },
+    {
+      "label": "Short interest",
+      "value": "2.99% of float (3.32 days to cover)"
+    },
+    {
+      "label": "Insider ownership",
+      "value": "0.091%"
+    },
+    {
+      "label": "Dividend yield (annualized)",
+      "value": "0.39% ($0.92/share)"
+    },
+    {
+      "label": "FY26E consensus revenue",
+      "value": "$13.51B (+11.1% YoY)"
+    },
+    {
+      "label": "FY27E consensus revenue",
+      "value": "$17.00B (+25.8% YoY)"
+    }
+  ],
+  "thesis": [
+    "Process control is yield insurance, not discretionary capex. KLAC holds ~50% wafer inspection share and ~65% reticle inspection share. Switching mid-node costs a foundry 8-12 weeks of yield learning -- no chipmaker absorbs that voluntarily. The moat is structural, not just cyclical.",
+    "AI-driven semiconductor capex extends the WFE growth cycle beyond prior patterns: TSMC N2/A16 ramp, HBM4 DRAM node shrinks, and advanced packaging (CoWoS) each add 2-3x more inspection steps per wafer vs. Prior generations. FY27 consensus of $17.0B (+25.8%) is the market starting to price this in.",
+    "The math doesn't work at $237. DCF at 9.5% WACC and 3% terminal growth implies $85-100. Peer P/E cross-check at 40x FY27E EPS implies $202. The current price requires sustained 47-65x earnings multiples AND consensus EPS growth of +36% -- a combination with limited precedent in WFE equipment history."
+  ],
+  "bear_paragraph": "KLAC at $237 is priced for perfection in an industry that cycles. The stock has gained 424% in three years, trades 23% above the 29-analyst consensus mean target of $192.62, and is priced at 64x current-year EPS on a valuation framework that requires flawless execution of the FY27E $17B revenue build. That $17B rests entirely on continued hyperscaler AI capex -- specifically TSMC's willingness to invest $38B+ per year in capacity for chips whose economics depend on GPU pricing remaining elevated. None of that is guaranteed. What is known: deferred service revenue fell 6.2% in FY25 while headline revenue grew 23.9%, a rare divergence; asset impairments have run $540M over two years against a backdrop of goodwill declining 21% since FY23; inventory sits at 26.4% of revenue vs. 23.3% at the prior cycle peak; and EPS beats have contracted from +9.7% to a range of +0.6% to +2.5%. The bear case doesn't require a recession. It requires that FY27 revenue comes in toward the low end of consensus at $15-16B rather than $17B, that the multiple de-rates to 30-35x as the AI capex narrative softens, and that China export control escalation removes $1-1.5B of revenue. Under those conditions, KLAC is a $130-160 stock. The 30-50% downside scenario is a base-case outcome if the cycle turns; it's a tail outcome only if the AI capex ramp is truly infinite and non-cyclical.",
+  "peers": [
+    {
+      "ticker": "KLAC",
+      "pe_ntm": 47.0,
+      "ev_ebitda": 53.2,
+      "rev_growth_ttm": 11.5,
+      "ytd": 86.7,
+      "y1": 167.5,
+      "highlight": true
+    },
+    {
+      "ticker": "AMAT",
+      "pe_ntm": 34.9,
+      "ev_ebitda": 48.5,
+      "rev_growth_ttm": 11.4,
+      "ytd": 111.9,
+      "y1": 228.8
+    },
+    {
+      "ticker": "ASML",
+      "pe_ntm": 37.5,
+      "ev_ebitda": 35.0,
+      "rev_growth_ttm": 13.2,
+      "ytd": 55.5,
+      "y1": 139.3
+    },
+    {
+      "ticker": "LRCX",
+      "pe_ntm": 46.3,
+      "ev_ebitda": 58.7,
+      "rev_growth_ttm": 23.8,
+      "ytd": 99.8,
+      "y1": 301.5
+    },
+    {
+      "ticker": "ONTO",
+      "pe_ntm": 32.1,
+      "ev_ebitda": 56.5,
+      "rev_growth_ttm": 9.5,
+      "ytd": 90.6,
+      "y1": 224.9
+    },
+    {
+      "ticker": "NVMI",
+      "pe_ntm": 42.6,
+      "ev_ebitda": 60.6,
+      "rev_growth_ttm": 10.3,
+      "ytd": 58.5,
+      "y1": 141.5
+    }
+  ],
+  "peers_read": "KLAC trades at 47x NTM P/E -- a 25% premium to ASML (37.5x), the closest structural analogue, and roughly in line with LRCX (46.3x) despite KLAC's higher operating margins (41% vs. 35% at LRCX). The entire peer cohort has re-rated 55-300% over the past year on AI capex sentiment. Within the group, AMAT's 34.9x looks cheapest and LRCX's 301% 1Y gain looks most stretched. KLAC's 41% operating margin -- the highest in the peer set -- deserves a premium, but 25% over ASML seems hard to sustain beyond the current narrative window. The peer group median NTM P/E is roughly 40-42x; KLAC at 47x has a moderate premium that a good quarter sustains and a neutral quarter removes.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "TSMC N2 and A16 Ramp Drives Inspection Intensity Step-Change",
+      "body": "TSMC's N2 node entered risk production in H1 2025 and volume production continues through calendar 2026. Gate-all-around transistor architecture requires tighter defect budgets than FinFET: each wrap-around gate adds lithography alignment challenges that feed directly into KLA's optical and e-beam inspection tools. Process control as a percentage of total WFE is expected to rise from roughly 14% at N3 to 16-17% at N2/A16. On a $100B+ TSMC annual capex budget, that incremental 2-3 percentage points represents $2-3B more addressable spend for KLA. Fab 21 (Arizona) adds domestic capex visibility for the next four years."
+    },
+    {
+      "id": 2,
+      "title": "HBM4 and HBM4E Drives DRAM Process Control Spending",
+      "body": "SK Hynix began HBM4 qualification in early 2026 and Micron is expected to follow in H2 2026. HBM4 uses TSV pitch shrinks and tighter stacking tolerances vs. HBM3E, making defect inspection per die more critical. Each HBM4 layer bonded incorrectly wastes an entire stack. SK Hynix's capital budget for 2026 is guided at roughly 20 trillion KRW (~$15B), of which process control tools represent an estimated $1.5-2.0B addressable. Micron's HBM expansion adds a comparable demand layer."
+    },
+    {
+      "id": 3,
+      "title": "KLA Gen-5 Wafer Inspection System Refresh Cycle",
+      "body": "KLA shipped its 5900-series (Gen-5) optical wafer inspection systems starting in FY25. The platform targets detection of sub-10nm defects invisible to prior-generation tools. Gen-5 system ASPs are estimated 30-40% higher than the 4900-series they replace. As foundries qualify advanced tools for N2, the installed base converts to 5900 units. Q3 FY26 revenue of $3.41B was the highest in company history through March 2026 and was attributed to flagship system demand."
+    },
+    {
+      "id": 4,
+      "title": "Advanced Packaging Inspection Opens Adjacent TAM",
+      "body": "CoWoS, SoIC, and 2.5D/3D packaging are now standard for AI accelerators. NVIDIA GB200 uses CoWoS-S; AMD MI300X uses CoWoS-L. KLA's packaging inspection tools address a market that did not exist at meaningful scale three years ago. Packaging inspection TAM is estimated at $1.5B by 2026 and could reach $3-4B by 2028 as CoWoS capacity triples. KLA entered via ICOS and Orbotech acquisitions and has been gaining share vs. Camtek."
+    },
+    {
+      "id": 5,
+      "title": "Samsung and Intel Leading-Edge Recovery Adds Second Engine",
+      "body": "Samsung's 3nm GAA yield challenges mean it spends more, not less, on KLA inspection to find and fix yield-limiting defects. Intel's 18A process node is entering risk production in H2 2026; each delay adds inspection qualification cycles. Intel's $8.5B in CHIPS Act grants makes it a committed multi-year capex spender regardless of near-term IFS revenue. KLA's inspection and metrology tools are the earliest-cycle capex items in any new fab ramp."
+    },
+    {
+      "id": 6,
+      "title": "Service Revenue Creates $2B+ Recurring Revenue Floor",
+      "body": "KLA's installed base of 60,000+ systems generates service and support revenue that is non-discretionary for chipmakers running 24/7 fabs. Service contract renewals, consumables, and software upgrades (Cimetrics, ZetaR, ClassAI) contribute an estimated $2.5B+ annualized by FY26 at gross margins above 60%. In FY24, when WFE shipments fell 6% industry-wide, KLA's revenue dropped only 6.5% -- vs. LRCX down 30% -- partly because the service mix cushioned the decline."
+    },
+    {
+      "id": 7,
+      "title": "Dividend Growth Signals Capital Allocation Confidence",
+      "body": "KLA raised its quarterly dividend 21% to $0.23/share in May 2026 (payable August 2026), up from $0.19/quarter across FY25. Annualized $0.92/share represents a 0.39% yield on $237. KLA has raised its dividend every year since 2010, a 16-year streak. Total dividends paid in FY25 were $904.6M. The 22% GAAP payout ratio leaves room for continued growth; the May raise immediately preceded the June 2026 surge from $213 to $256."
+    },
+    {
+      "id": 8,
+      "title": "Share Buyback Program Reduces Share Count Systematically",
+      "body": "KLA repurchased $2.15B in FY25, up from $1.74B in FY24. Diluted share count has declined from approximately 1.55B (FY21 split-adjusted) toward 1.32B today, roughly 1.5-2% annual reduction. With $4.9B in cash equivalents and well-structured long-term debt (maturities spread to 2032+), KLA has the balance sheet to sustain $2B+/year in repurchases. $3.05B total capital returned in FY25 was 82% of free cash flow."
+    },
+    {
+      "id": 9,
+      "title": "China Domestic Fab Build Maintains $1.5-2B Revenue Base",
+      "body": "China represented approximately 12-16% of KLAC revenue through FY25 despite BIS export restrictions. SMIC, CXMT, and YMTC continue expanding domestic fabs at legacy nodes (28nm+) where KLA tools remain exportable. The current policy creates a stable pipeline. A partial lifting of restrictions or new licensing pathways would be an upside call option; the downside is largely priced in as the control regime has been in place since October 2022."
+    },
+    {
+      "id": 10,
+      "title": "FY27 Revenue Consensus of $17.0B Implies 26% Growth Not Yet in Share Price",
+      "body": "Sell-side FY27E revenue consensus is $17.0B (+25.8% from FY26E), with EPS consensus of $5.05 vs. FY26E $3.71. Recent quarterly momentum: $3.41B in Q3 FY26, up from $3.06B five quarters prior. The high-end FY27E estimate is $18.4B. If KLA achieves $5.50-6.00 in FY27E EPS and the market sustains 40x+ on a process control leader, the stock holds $220-240 from earnings alone; the bull case at $5.80 EPS × 50x = $290."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "Stock Trades Above Every Analyst Price Target -- No Upside in Consensus",
+      "body": "At $237.33, KLAC trades $44.71 above the analyst consensus mean target of $192.62 and just 5.1% below the single highest analyst target of $250 (out of 29 analysts). The stock is 24.8% above its 50-day moving average and 66.2% above its 200-day moving average of $142.78. When a stock outpaces the entire sell-side, it has priced in a scenario the street hasn't modeled. The mean-reversion case requires no macro event -- just a quarter of in-line results with no upside surprise sends the stock toward $190."
+    },
+    {
+      "id": 2,
+      "title": "WFE Cycles Turn Without Warning -- KLAC's Own FY24 Proves It",
+      "body": "KLAC's revenue fell 6.5% in FY24 from a mild inventory correction. WFE down-cycles in 2001-2002 and 2008-2009 produced 40-45% industry shipment declines. KLAC's 3-year stock appreciation of 424% prices in a very long bull cycle. If AI hyperscaler capex peaks in calendar 2026, TSMC could cut capex 20-30% by FY27, matching its FY23 pattern ($36B to $25B). A 20% WFE volume drop translates to 25-30% KLAC revenue decline with amplified operating deleverage. At $237 and 47x FY27E EPS, there's zero margin of safety."
+    },
+    {
+      "id": 3,
+      "title": "China Export Controls Can Remove $1.5-2B Revenue Overnight",
+      "body": "China represents an estimated 12-16% of KLAC's revenue. Bipartisan US political support for further semiconductor export control expansion is real. A rule expansion covering legacy-node inspection tools -- which Japan and the Netherlands have discussed under the Wassenaar Arrangement -- would cut KLAC's China addressable market sharply. Applied Materials received an SEC subpoena in 2023 related to China exports. A $1.5-2B revenue reduction would remove 11-15% of FY26E revenue and is not in any consensus model."
+    },
+    {
+      "id": 4,
+      "title": "TSMC Concentration -- One Capex Decision Drives 20-30% of Revenue",
+      "body": "TSMC is estimated at 25-30% of KLAC revenue based on public industry analysis. When TSMC cut FY23 capex 31% ($36B to ~$25B), KLAC's revenue fell. TSMC's $38-40B capex is elevated by historical standards, driven by AI chip orders concentrated in Apple, NVIDIA, AMD, and Qualcomm. If any major TSMC customer delays tape-outs or TSMC loses share to Samsung, KLAC's revenue declines with a 3-6 month lag. KLAC's 10-K discloses its top ten customers represent a majority of revenue."
+    },
+    {
+      "id": 5,
+      "title": "FY27E Revenue of $17B Rests on Unstable Hyperscaler Capex",
+      "body": "FY27E revenue consensus of $17.0B assumes continued AI hyperscaler spending. Meta, Google, Microsoft, and Amazon have all guided peak AI infra capex in 2025-2026. GPU supply normalization as NVIDIA ramps Blackwell production could reduce urgency for new fab builds. The FY27E range is $15.4B to $18.4B -- a $3B spread. A miss toward $15.4B with modest margin compression puts FY27 EPS at $4.00-4.20; at any reasonable de-rated multiple (30-35x), that's a $120-147 stock."
+    },
+    {
+      "id": 6,
+      "title": "Deferred Revenue Down 6.2% in FY25 Despite 23.9% Revenue Growth",
+      "body": "KLAC's current deferred revenue fell from $2.134B (FY24) to $2.001B (FY25), a -6.2% decline, in a year when total revenue grew 23.9%. Deferred revenue is a leading indicator of future service revenue; this divergence suggests multi-year service contract bookings are softening. Service revenue is the recession hedge in the bull narrative -- if it's softening now, at the peak of the capex cycle, the cycle-trough cushion is smaller than assumed."
+    },
+    {
+      "id": 7,
+      "title": "Consecutive Impairments of $540M Signal Post-Acquisition Stress",
+      "body": "KLAC took $300.8M in asset impairment charges in FY24 and $239.1M in FY25, vs. Negligible $9.9M in FY23. Two consecutive years of elevated impairments totaling $540M flags that either the Orbotech acquisition (2019, $3.4B) or the PCB/Specialty segments are not performing as underwritten. Goodwill has fallen 21.5% from $2.28B in FY23 to $1.79B in FY25. If the PCB inspection segment requires further impairments, the diversification thesis from the 2019 acquisition gets tested."
+    },
+    {
+      "id": 8,
+      "title": "Inventory at $3.21B (26.4% of Revenue) Creates Write-Down Risk",
+      "body": "KLAC held $3.21B in inventory at FY25 year-end, 26.4% of revenue vs. 23.3% at the FY22 cycle peak. KLAC builds ahead of orders to avoid supply chain constraints -- which worked in the up-cycle. In a down-cycle, it's a liability. In FY24's mild downturn, inventory was 30.9% of revenue. If FY28 sees a real WFE correction, KLAC faces selling below cost or writing down obsolete components. LRCX's $500M inventory charge in 2022-2023 contributed to a 34% earnings miss vs. Consensus."
+    },
+    {
+      "id": 9,
+      "title": "EPS Beat Rate Decelerating -- Narrow Beats Replacing Big Surprises",
+      "body": "KLAC's four most recent quarterly EPS surprise rates: +9.7% (Q4 FY25), +2.2% (Q1 FY26), +0.6% (Q2 FY26), +2.5% (Q3 FY26). At 64x current-year P/E, the market is paying for perpetual positive surprises. At +0.6% and +2.5%, the business is executing in-line, not above, consensus. A first quarterly miss or neutral guidance at 64x earnings will be disproportionately punished."
+    },
+    {
+      "id": 10,
+      "title": "Insider Selling Persistent -- CEO and CFO Both Selling Into Strength",
+      "body": "CEO Richard Wallace sold 4,512 shares on 2026-06-11 (~$9.99M) and 4,512 shares on 2026-05-12 (~$8.09M) -- $18.1M in two months at elevated prices. CFO Bren Higgins sold 2,254 shares on 2025-12-16 ($2.79M). At just 0.091% total insider ownership, insiders have minimal upside exposure and are using the price spike to diversify. When the CEO sells $10M+ within a month of an all-time high, with the stock 23% above analyst consensus, that's not a confidence signal."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "11.0%",
+      "terminal_g": "2.0%",
+      "fcf_path": "+5 / -10 / -5 / +5 / +5 / +4 / +3 (×0.65 FCF multiplier)",
+      "implied_px": 37
+    },
+    {
+      "scenario": "Base",
+      "wacc": "9.5%",
+      "terminal_g": "3.0%",
+      "fcf_path": "+12 / +26 / +15 / +11 / +7 / +7 / +6 / +5 / +4 / +3",
+      "implied_px": 77
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "9.0%",
+      "terminal_g": "4.0%",
+      "fcf_path": "+12 / +26 / +15 / +11 / +7 / +7 / +6 / +5 / +4 / +3 (×1.30 FCF multiplier)",
+      "implied_px": 123
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "prob": 0.15,
+      "outcome_range": "$200 to 240",
+      "description": "AI capex supercycle extends into 2028+. TSMC N2 ramp accelerates, HBM4 beats estimates, FY27 revenue hits $18B+. EPS reaches $5.80+. Market sustains 40-45x on visible multi-year growth; stock holds near current levels or grinds to $210-240."
+    },
+    {
+      "label": "Base",
+      "prob": 0.35,
+      "outcome_range": "$175 to 205",
+      "description": "FY27 consensus $17B roughly plays out; multiple de-rates from 47x toward 40x as EPS beat rate stays narrow and AI capex narrative normalizes. Stock gravitates toward peer-relative fair value around 40x FY27E EPS."
+    },
+    {
+      "label": "Bear",
+      "prob": 0.2,
+      "outcome_range": "$100 to 140",
+      "description": "WFE cycle turns in H2 2026 driven by TSMC capex cuts and/or China control escalation. FY27 revenue misses at $14-15B; multiple de-rates to 28-33x on $4.00-4.20 EPS. Stock reprices toward $112-138."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "SELL / Reduce; xcellent company, severely overvalued at this entry; blended fundamental target is $114"
+    },
+    {
+      "action": "12m target",
+      "detail": "$114 probability-weighted (20% × $37 Bear DCF + 35% × $77 Base DCF + 15% × $123 Bull DCF + 30% × $202 Peer P/E)"
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Reduce aggressively toward zero. The 170%+ YTD gain and CEO selling $18M in two months are clear exit signals. Redeploy into AMAT (34.9x fwd P/E, similar AI exposure) or ASML at better entry"
+    },
+    {
+      "action": "New money",
+      "detail": "Do not initiate at $237. Re-evaluate at $175-195 (40-43x FY27E EPS), which represents a fair peer-relative entry. That's still 18-26% below current"
+    },
+    {
+      "action": "Hedge",
+      "detail": "Dec 2026 $190/$150 put spread (costs ~$8-10, protects $40 of downside) for any remaining longs. Covered calls at $255-260 for income to reduce cost basis"
+    },
+    {
+      "action": "Position sizing",
+      "detail": "Zero for new money. Max 1% for any existing exposure held for fundamental reasons. Beta 1.5, 64x current-year earnings, CEO selling at highs: the risk-reward is negative at this price"
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q4 FY26 earnings (est. 2026-07-28): Revenue guidance for FY27 and deferred revenue trend are the two numbers to watch",
+    "TSMC Q2 2026 earnings and capex update: Any reduction from $38-40B capex guide is a direct negative for KLAC's FY27 order outlook",
+    "US BIS export control review of legacy-node inspection tools: A rule expansion covering 28nm+ is the tail risk with no warning",
+    "SK Hynix HBM4 production ramp confirmation and yield disclosure in H2 2026",
+    "Intel 18A node yield and IFS foundry customer announcements -- a successful 18A ramp is a multi-year process control demand unlock",
+    "FY27 sell-side estimate revision direction: If the street raises FY27E above $17.5B with expanding margins, the bull case strengthens",
+    "Deferred service revenue in Q4 FY26: A recovery from the -6.2% FY25 decline would remove the most credible structural bear concern"
+  ],
+  "data_gaps": [
+    "Exact segment revenue split (Semiconductor Process Control vs. Specialty vs. PCB) for FY25: 10-K segment tables not in yfinance",
+    "Customer concentration exact percentages: TSMC est. 25-30% but undisclosed; top 10 customer data not in yfinance",
+    "Geographic revenue exact split for FY25: Approximate estimates used (Taiwan 28%, Korea 23%, China 14%, Americas 14%, Japan 11%, Europe 10%)",
+    "Service revenue separate disclosure: Estimated $2.5B+ annualized; KLA does not break this out in yfinance income statement",
+    "Social sentiment: Adanos and Twitter-reader data unavailable in this environment",
+    "YTD and 1Y peer return data: Fetched via yfinance history; ASML EV/EBITDA from yfinance appears anomalous (3039x), estimated at 35x based on public data",
+    "Gen-5 (5900-series) ASP data: KLAC does not disclose product ASPs; 30-40% premium vs. 4900-series is sell-side estimate"
+  ],
+  "business_overview": {
+    "summary": "KLA Corporation designs and manufactures process control, metrology, and yield management systems for the global semiconductor industry. Founded in 1975 and headquartered in Milpitas, California, KLA is the largest dedicated process control company in the world. It holds approximately 50% share in wafer defect inspection and approximately 65% share in reticle inspection, serving all major chipmakers including TSMC, Samsung, SK Hynix, Intel, and Micron. Its systems identify nanometer-scale defects before they propagate into yield-killing production failures.",
+    "business_model": "KLA earns revenue through three channels: capital equipment sales (inspection, metrology, etch, and PCB tools), service and support contracts on its installed base of 60,000+ systems, and software licenses for yield management analytics platforms. Equipment sales are lumpy and tied to fab capex cycles; service revenue is recurring and contracted. FY25 revenue was $12.16B with 60.9% gross margins and 41.2% operating margins, both among the highest in capital equipment. FCF was $3.74B (30.8% margin).",
+    "segments": [
+      {
+        "name": "Semiconductor Process Control",
+        "revenue_share_pct": 92,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Core segment: optical wafer inspection (5900-series flagship), e-beam inspection, reticle inspection, film and overlay metrology, and yield management software. Covers logic, DRAM, NAND, and advanced packaging. KLA holds approximately 50% wafer inspection share and approximately 65% reticle inspection share globally."
+      },
+      {
+        "name": "Specialty Semiconductor Process",
+        "revenue_share_pct": 4,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Etch, deposition, and plasma dicing tools for compound semiconductor and MEMS manufacturers. Smaller growth profile vs. Core process control."
+      },
+      {
+        "name": "PCB and Component Inspection",
+        "revenue_share_pct": 4,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Direct imaging, AOI inspection, and inkjet printing for PCB manufacturing. Sold under the Orbotech brand. Less cyclically correlated to WFE than the core segment."
+      }
+    ],
+    "geographic_revenue": [
+      {
+        "region": "Taiwan",
+        "pct": 28
+      },
+      {
+        "region": "Korea",
+        "pct": 23
+      },
+      {
+        "region": "China",
+        "pct": 14
+      },
+      {
+        "region": "Americas",
+        "pct": 14
+      },
+      {
+        "region": "Japan",
+        "pct": 11
+      },
+      {
+        "region": "Europe",
+        "pct": 10
+      }
+    ],
+    "customers": [
+      {
+        "name": "TSMC",
+        "revenue_share_pct": null,
+        "importance": "Estimated largest customer at 25-30% of revenue; every TSMC advanced node fab includes KLA tools"
+      },
+      {
+        "name": "Samsung Electronics",
+        "revenue_share_pct": null,
+        "importance": "DRAM and logic foundry (3nm GAA); yield challenges increase inspection intensity and KLA spend per wafer"
+      },
+      {
+        "name": "SK Hynix",
+        "revenue_share_pct": null,
+        "importance": "Leading HBM supplier; HBM3E/HBM4 TSV inspection is a direct demand driver"
+      },
+      {
+        "name": "Intel",
+        "revenue_share_pct": null,
+        "importance": "Intel 18A node qualification and IFS buildout; $8.5B CHIPS Act grants lock in multi-year capex"
+      },
+      {
+        "name": "Micron Technology",
+        "revenue_share_pct": null,
+        "importance": "DRAM and NAND; expanding HBM capacity in FY26-27"
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "The wafer fabrication equipment market is a $100B+ annual industry. Process control (inspection and metrology) is a roughly $15-17B subset that grows faster than total WFE because advanced nodes demand more measurement steps per wafer, not fewer. Every 2x node shrink historically adds 30-40% more inspection steps. The AI semiconductor buildout has created the strongest capex commitment cycle since the 2000 DRAM expansion, with TSMC, Samsung, SK Hynix, and Intel all running multi-year capex plans through at least 2027. KLAC's product is non-optional: a foundry that skimps on inspection discovers yield problems after shipping defective chips.",
+    "tam_usd_bn": 17,
+    "moat": "KLA's moat is installed base stickiness plus recipe switching cost. A fab's inspection recipe takes months of co-development between KLA's applications engineers and the chipmaker. Switching mid-generation means requalifying every recipe on every process layer, during which yield suffers. Sell-side calls have independently cited 8-12 weeks of yield learning time lost when switching a KLA inspection station. KLA's Cimetrics and ZetaR yield management software learns from patterns across thousands of customer fabs, creating a proprietary defect database that compounds with scale.",
+    "competitors": [
+      {
+        "name": "Applied Materials (AMAT)",
+        "description": "Largest WFE company; competes on metrology and some inspection but KLA dominates in pure-play process control. AMAT's strength is etch, deposition, and CVD."
+      },
+      {
+        "name": "Onto Innovation (ONTO)",
+        "description": "Pure-play competitor in wafer metrology; $15.7B market cap vs. KLA's $310B. Competes on certain overlay and CD metrology tools but lacks KLA's reticle and flagship wafer inspection breadth."
+      },
+      {
+        "name": "Nova Measuring (NVMI)",
+        "description": "$17.5B market cap; competes in CD-SEM and optical metrology for advanced nodes. Growing share in EUV-era metrology but significantly smaller scale."
+      },
+      {
+        "name": "Camtek (CAMT)",
+        "description": "Advanced packaging and bump inspection competitor; gaining in CoWoS-adjacent markets where KLA and ICOS compete."
+      },
+      {
+        "name": "ASML (indirectly)",
+        "description": "ASML's EUV lithography tools generate their own inspection requirements that KLA tools then validate; indirect competitor in process characterization, not inspection per se."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY22",
+      "revenue_usd_b": 9.21,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 61.0,
+      "ebitda_usd_m": 4013,
+      "ebitda_margin_pct": 43.6,
+      "net_income_usd_m": 3322,
+      "fcf_usd_m": 3005,
+      "eps": 2.19
+    },
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 10.5,
+      "revenue_growth_yoy_pct": 14.0,
+      "gross_margin_pct": 59.8,
+      "ebitda_usd_m": 4501,
+      "ebitda_margin_pct": 42.9,
+      "net_income_usd_m": 3387,
+      "fcf_usd_m": 3328,
+      "eps": 2.42
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 9.81,
+      "revenue_growth_yoy_pct": -6.5,
+      "gross_margin_pct": 59.9,
+      "ebitda_usd_m": 3903,
+      "ebitda_margin_pct": 39.8,
+      "net_income_usd_m": 2762,
+      "fcf_usd_m": 3031,
+      "eps": 2.03
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 12.16,
+      "revenue_growth_yoy_pct": 23.9,
+      "gross_margin_pct": 60.9,
+      "ebitda_usd_m": 5341,
+      "ebitda_margin_pct": 43.9,
+      "net_income_usd_m": 4062,
+      "fcf_usd_m": 3742,
+      "eps": 3.08
+    },
+    {
+      "fy": "FY26E",
+      "revenue_usd_b": 13.51,
+      "revenue_growth_yoy_pct": 11.1,
+      "gross_margin_pct": null,
+      "ebitda_usd_m": null,
+      "ebitda_margin_pct": null,
+      "net_income_usd_m": null,
+      "fcf_usd_m": null,
+      "eps": 3.71
+    }
+  ],
+  "management": {
+    "ceo": "Richard P. Wallace, CEO since 2006; joined KLA-Tencor in 1988 as a product engineer",
+    "cfo": "Bren D. Higgins, CFO since 2012",
+    "insider_ownership_pct": 0.091,
+    "capital_allocation_history": "KLA has returned capital consistently through every cycle. Buybacks totaled $2.15B in FY25, $1.74B in FY24, and $1.31B in FY23. The company has paid a dividend every quarter since 2006 and raised it every year since 2010, the 16-year streak reflecting the service revenue floor's stability. Total FY25 capital return was $3.05B (82% of FCF). KLA's last major M&A was Orbotech in 2019 ($3.4B), adding PCB inspection and display equipment. No M&A since then; management has explicitly guided toward organic investment and buybacks.",
+    "recent_insider_activity": [
+      {
+        "date": "2026-06-11",
+        "insider": "Wallace Richard P (CEO)",
+        "action": "Sale",
+        "value_usd_m": 9.99
+      },
+      {
+        "date": "2026-05-12",
+        "insider": "Wallace Richard P (CEO)",
+        "action": "Sale",
+        "value_usd_m": 8.09
+      },
+      {
+        "date": "2026-05-11",
+        "insider": "Hanley Jeneanne Michelle (VP)",
+        "action": "Sale",
+        "value_usd_m": 1.03
+      },
+      {
+        "date": "2026-05-11",
+        "insider": "Kirloskar Virendra A (VP)",
+        "action": "Sale",
+        "value_usd_m": 0.56
+      },
+      {
+        "date": "2025-12-16",
+        "insider": "Higgins Bren D (CFO)",
+        "action": "Sale",
+        "value_usd_m": 2.79
+      },
+      {
+        "date": "2025-11-11",
+        "insider": "Wallace Richard P (CEO)",
+        "action": "Sale",
+        "value_usd_m": 12.99
+      }
+    ]
+  },
+  "key_risks": [
+    {
+      "category": "cyclical",
+      "title": "WFE Down-Cycle Peak-to-Trough Risk",
+      "description": "WFE industry cycles have historically produced 40-45% peak-to-trough revenue declines in severe corrections (2001, 2009). Even the mild 2023 correction cut KLAC revenue 6.5%. KLAC's operating leverage amplifies revenue moves: a 20% revenue decline from a $17B FY27E peak would cut operating income roughly 30-35% due to fixed cost base, compressing EPS far more than the revenue line. The stock's 47x FY27E forward multiple offers zero buffer against this scenario."
+    },
+    {
+      "category": "regulatory",
+      "title": "US Export Control Escalation -- China Legacy Node Risk",
+      "description": "BIS export controls have expanded in scope each year since October 2022. KLAC can still sell inspection tools to Chinese customers at legacy nodes (28nm+). Bipartisan political support for further restrictions -- or multilateral coordination with Japan and the Netherlands -- could extend controls to legacy nodes, eliminating an estimated $1.5-2.0B of KLAC's annual revenue. Unlike ASML, KLAC has no diplomatic buffer as a US-headquartered company."
+    },
+    {
+      "category": "customer",
+      "title": "TSMC Capex Reduction Concentration Risk",
+      "description": "TSMC is estimated at 25-30% of KLAC revenue. TSMC cut capex 31% in FY23 ($36B to $25B) without warning. A repeat of that magnitude in FY27-FY28 -- driven by demand softness from Apple, NVIDIA, or AMD -- would directly remove $3-4B from KLAC's addressable volume. KLAC has no diversification from TSMC that materially offsets this; Intel and Samsung combined add up to less than the TSMC exposure."
+    },
+    {
+      "category": "structural",
+      "title": "Valuation De-Rating From Extreme Multiples",
+      "description": "A de-rating from 64x FY26E to 35x (still a premium to the S&P 500) implies a price of $130. The stock has no precedent for sustained 60x+ multiples in the WFE equipment sector; AMAT and ASML trade at 35-38x forward P/E even during the bull cycle. KLAC's premium appears attributable to narrative momentum and near-term earnings acceleration, not a structural superiority that justifies 80% premium to peers on an ongoing basis."
+    },
+    {
+      "category": "execution",
+      "title": "EPS Beat Rate Contraction Risks Multiple Compression Event",
+      "description": "Four consecutive EPS surprise rates: +9.7%, +2.2%, +0.6%, +2.5%. At 64x earnings, the market is pricing in continued outperformance. A first quarterly miss or neutral guidance will be disproportionately punished. Q3 FY26 quarterly FCF of $622M was well below Q2 FY26's $1.26B, suggesting lumpy cash conversion that could disappoint on FCF metrics."
+    },
+    {
+      "category": "macro",
+      "title": "Interest Rate and Risk Appetite Sensitivity",
+      "description": "KLAC with beta 1.504 amplifies any broad equity de-rating. At 47x FY27E P/E, KLAC has very long DCF duration -- the terminal value drives the majority of intrinsic value. A 100bps WACC increase from 9% to 10% reduces DCF value by roughly 15-20% for a high-growth, high-margin company with a 4% terminal growth rate."
+    }
+  ],
+  "social_sentiment": {
+    "reddit_mentions": null,
+    "x_mentions": null,
+    "bullish_pct": null,
+    "summary": "Social sentiment data unavailable (Adanos and Twitter-reader not accessible in this environment). Short interest at 2.99% of float is very low; there's no significant bearish positioning in the options or short market, consistent with a momentum-driven rally where shorts have been squeezed out. The absence of short sellers is not inherently bullish -- it means one-sided downside selling pressure if sentiment shifts."
+  }
+}

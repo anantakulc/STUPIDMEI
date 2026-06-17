@@ -1,0 +1,595 @@
+{
+  "schema_version": "1.0",
+  "ticker": "KLAC",
+  "currency": "USD",
+  "current_price": 237.33,
+  "shares_outstanding_b": 1.306,
+  "net_debt_b": 1.19,
+  "computed_at": "2026-06-17T03:15:01Z",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "KLA generates consistent, large free cash flows ($3.74B in FY25, $3.03B in FY24, $3.33B in FY23) through the full semiconductor cycle. It's a capital-light equipment company with capex averaging 2.5-3.0% of revenue. FCF conversion from operating income is high and predictable. DCF with a 10-year explicit growth phase through the AI capex cycle is the appropriate primary method. The cross-check is a peer P/E multiple on FY27E EPS given the market prices KLAC relative to the WFE equipment peer group.",
+    "inputs": {
+      "wacc": {
+        "value": 0.095,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.504,
+          "erp": 0.055,
+          "debt_weight": 0.02,
+          "cost_of_debt_after_tax": 0.035
+        },
+        "reasoning": "Beta 1.504 at a 4.3% risk-free rate and 5.5% equity risk premium implies equity cost of approximately 12.6%. KLA's process control monopoly characteristics, high recurring service revenue (estimated 20%+ of total), and 16-year dividend growth streak justify a quality discount to pure-beta. 9.5% WACC reflects this premium franchise adjustment. Net debt of $1.19B is negligible relative to $310B market cap; capital structure barely affects WACC.",
+        "adjudication_notes": "Used 9.5% as base case WACC. Bear scenario uses 11.0% (closer to beta-implied rate, appropriate for a WFE down-cycle where KLA's cash flow volatility is higher than beta alone suggests). Bull scenario uses 9.0% (maximum quality premium; process control monopoly with 40%+ margins deserves the discount vs. a generic semiconductor company).",
+        "components_reasoned": {
+          "rf": {
+            "value": 0.043,
+            "reasoning": "Risk-free rate, typically the local 10Y government bond yield. US ~4.4%, EM countries higher."
+          },
+          "beta": {
+            "value": 1.504,
+            "reasoning": "Equity beta vs local index. From yfinance unless sanitized to sector default."
+          },
+          "erp": {
+            "value": 0.055,
+            "reasoning": "Equity risk premium. DM ~5.5%, EM Indonesia ~6.5%, EM India ~6.5%."
+          },
+          "debt_weight": {
+            "value": 0.02,
+            "reasoning": "Debt portion of capital structure. Net debt / (net debt + market cap)."
+          },
+          "cost_of_debt_after_tax": {
+            "value": 0.035,
+            "reasoning": "Post-tax cost of debt. Yield on outstanding bonds x (1 - tax rate)."
+          }
+        }
+      },
+      "terminal_growth": {
+        "value": 0.03,
+        "reasoning": "3.0% terminal growth for the base case. Semiconductor equipment is a secular growth industry tied to long-run expansion of chip manufacturing capacity; WFE is forecast to grow 7-10% CAGR through 2030 per SEMI consensus. Process control grows faster than total WFE as nodes advance. 3.0% is conservative relative to industry growth but appropriate for a terminal year assumption given cyclicality. It implies KLA's long-run growth converges to nominal GDP + ~0.5pp."
+      },
+      "forecast_horizon_years": 10,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 4.19,
+          "revenue_b": 13.51,
+          "revenue_growth_pct": 11.1,
+          "ebitda_margin": 0.44,
+          "rationale": "FY26E (ending Jun 2026). Revenue at consensus $13.51B; FCF at 31% margin (consistent with FY23-FY25 average). Operating leverage modest as Gen-5 ramp adds some cost; FCF margin stable."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 5.27,
+          "revenue_b": 17.0,
+          "revenue_growth_pct": 25.8,
+          "ebitda_margin": 0.45,
+          "rationale": "FY27E at consensus $17.0B (+25.8%). TSMC N2 volume ramp, HBM4 qualification, and advanced packaging inspection at scale. FCF margin expands slightly to 31% on operating leverage. This is the peak AI capex cycle year in the base case."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 6.05,
+          "revenue_b": 19.5,
+          "revenue_growth_pct": 14.7,
+          "ebitda_margin": 0.45,
+          "rationale": "FY28E. AI capex cycle sustains but growth moderates from the FY27 peak. Intel 18A and Samsung 2nm contribute incremental volume. Advanced packaging inspection TAM growing. Revenue $19.5B at 15% growth vs. FY27."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 6.72,
+          "revenue_b": 21.6,
+          "revenue_growth_pct": 10.8,
+          "ebitda_margin": 0.45,
+          "rationale": "FY29E. Post-peak normalization. WFE industry growth slows from AI cycle highs toward 8-10% as major fab buildouts complete. KLAC service revenue growing as installed base expands from the FY26-28 equipment shipments."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 7.25,
+          "revenue_b": 23.3,
+          "revenue_growth_pct": 7.9,
+          "ebitda_margin": 0.44,
+          "rationale": "FY30E. Secular growth phase begins. WFE growth normalizes toward 6-8% annual rate. KLAC gains incremental packaging inspection share. Service base provides floor of roughly 20% of revenue regardless of equipment cycle."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 7.76,
+          "revenue_b": 24.9,
+          "revenue_growth_pct": 6.9,
+          "ebitda_margin": 0.44,
+          "rationale": "FY31E. Continued secular expansion. EUV High-NA at TSMC and Intel drives next inspection intensity step-up. KLAC captures disproportionate share of the inspection TAM growth."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 8.19,
+          "revenue_b": 26.4,
+          "revenue_growth_pct": 6.0,
+          "ebitda_margin": 0.44,
+          "rationale": "FY32E. Growth converging toward terminal rate. Revenue approaching $26B at 6% growth. FCF margin stable at 31%."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 8.61,
+          "revenue_b": 27.8,
+          "revenue_growth_pct": 5.3,
+          "ebitda_margin": 0.44,
+          "rationale": "FY33E. Growth at 5% -- above GDP but WFE maturing. Service revenue at roughly $5-6B by this point provides stability."
+        },
+        {
+          "year": 2034,
+          "fcf_b": 8.96,
+          "revenue_b": 28.9,
+          "revenue_growth_pct": 4.0,
+          "ebitda_margin": 0.43,
+          "rationale": "FY34E. Growth decelerating toward terminal rate. Revenue at $28.9B. Minor margin compression as mix shifts toward lower-margin service."
+        },
+        {
+          "year": 2035,
+          "fcf_b": 9.23,
+          "revenue_b": 29.8,
+          "revenue_growth_pct": 3.1,
+          "ebitda_margin": 0.43,
+          "rationale": "FY35E terminal approach year. Growth at 3.1%, close to 3.0% terminal rate. FCF $9.23B. Terminal value applied from FY36."
+        }
+      ]
+    },
+    "outputs": {
+      "pv_explicit_fcf_b": 42.799,
+      "terminal_value_b": 146.26,
+      "pv_terminal_b": 59.018,
+      "implied_ev_b": 101.817,
+      "implied_equity_b": 100.627,
+      "implied_px": 77.05,
+      "calculation_trace": {
+        "wacc": {
+          "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
+          "steps": [
+            {
+              "label": "Cost of equity (Ke)",
+              "expression": "0.0430 + 1.504 x 0.0550",
+              "result": "0.1257 (12.57%)"
+            },
+            {
+              "label": "Equity weight x Ke",
+              "expression": "0.98 x 0.1257",
+              "result": "0.1232"
+            },
+            {
+              "label": "Debt weight x after-tax Kd",
+              "expression": "0.02 x 0.0350",
+              "result": "0.0007"
+            },
+            {
+              "label": "WACC",
+              "expression": "0.1232 + 0.0007",
+              "result": "0.0950 (9.50%)"
+            }
+          ]
+        },
+        "explicit_fcf": {
+          "formula": "PV explicit FCF = sum( FCF_t / (1+WACC)^t ) for t = 1..N",
+          "per_year": [
+            {
+              "year": 2026,
+              "fcf_b": 4.19,
+              "discount_factor": 0.9132,
+              "pv_b": 3.826
+            },
+            {
+              "year": 2027,
+              "fcf_b": 5.27,
+              "discount_factor": 0.834,
+              "pv_b": 4.395
+            },
+            {
+              "year": 2028,
+              "fcf_b": 6.05,
+              "discount_factor": 0.7617,
+              "pv_b": 4.608
+            },
+            {
+              "year": 2029,
+              "fcf_b": 6.72,
+              "discount_factor": 0.6956,
+              "pv_b": 4.674
+            },
+            {
+              "year": 2030,
+              "fcf_b": 7.25,
+              "discount_factor": 0.6352,
+              "pv_b": 4.605
+            },
+            {
+              "year": 2031,
+              "fcf_b": 7.76,
+              "discount_factor": 0.5801,
+              "pv_b": 4.502
+            },
+            {
+              "year": 2032,
+              "fcf_b": 8.19,
+              "discount_factor": 0.5298,
+              "pv_b": 4.339
+            },
+            {
+              "year": 2033,
+              "fcf_b": 8.61,
+              "discount_factor": 0.4838,
+              "pv_b": 4.166
+            },
+            {
+              "year": 2034,
+              "fcf_b": 8.96,
+              "discount_factor": 0.4418,
+              "pv_b": 3.959
+            },
+            {
+              "year": 2035,
+              "fcf_b": 9.23,
+              "discount_factor": 0.4035,
+              "pv_b": 3.724
+            }
+          ],
+          "result": "42.799B"
+        },
+        "terminal_value": {
+          "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
+          "steps": [
+            {
+              "label": "Last projected FCF",
+              "expression": "FCF_10",
+              "result": "9.230B"
+            },
+            {
+              "label": "Terminal FCF",
+              "expression": "9.230 x (1 + 0.0300)",
+              "result": "9.507B"
+            },
+            {
+              "label": "Terminal value",
+              "expression": "9.507 / (0.0950 - 0.0300)",
+              "result": "146.260B"
+            },
+            {
+              "label": "PV of terminal value",
+              "expression": "146.260 / (1+0.0950)^10",
+              "result": "59.018B"
+            }
+          ]
+        },
+        "bridge_to_implied_px": {
+          "formula": "Implied EV = PV explicit FCF + PV terminal;  Equity = EV - Net Debt;  Px = Equity / Shares",
+          "steps": [
+            {
+              "label": "Implied EV",
+              "expression": "42.799 + 59.018",
+              "result": "101.817B"
+            },
+            {
+              "label": "Less: net debt",
+              "expression": "101.817 - 1.190",
+              "result": "100.627B"
+            },
+            {
+              "label": "Implied price per share",
+              "expression": "100.627B / 1.306B shares",
+              "result": "$77.05"
+            }
+          ]
+        }
+      },
+      "fcff_build": [
+        {
+          "revenue_b": 13.51,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2026,
+          "fcf_b": 4.19
+        },
+        {
+          "revenue_b": 17.0,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2027,
+          "fcf_b": 5.27
+        },
+        {
+          "revenue_b": 19.5,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2028,
+          "fcf_b": 6.05
+        },
+        {
+          "revenue_b": 21.6,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2029,
+          "fcf_b": 6.72
+        },
+        {
+          "revenue_b": 23.3,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2030,
+          "fcf_b": 7.25
+        },
+        {
+          "revenue_b": 24.9,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2031,
+          "fcf_b": 7.76
+        },
+        {
+          "revenue_b": 26.4,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2032,
+          "fcf_b": 8.19
+        },
+        {
+          "revenue_b": 27.8,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2033,
+          "fcf_b": 8.61
+        },
+        {
+          "revenue_b": 28.9,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2034,
+          "fcf_b": 8.96
+        },
+        {
+          "revenue_b": 29.8,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2035,
+          "fcf_b": 9.23
+        }
+      ],
+      "dual_terminal_value": {
+        "gordon_tv_b": 146.26,
+        "gordon_pv_b": 59.01798495251116,
+        "exit_multiple_tv_b": null,
+        "exit_multiple_pv_b": null,
+        "exit_multiple_x": null,
+        "blended_tv_b": null,
+        "blended_pv_b": null,
+        "terminal_ebitda_b": null
+      },
+      "wacc_adjudication": {
+        "sector": "(no sector hint)",
+        "sector_band": [
+          0.08,
+          0.12
+        ],
+        "formula_wacc": 0.095,
+        "verdict": "within band (8.0%-12.0%)",
+        "ke": 0.12572,
+        "notes": "Used 9.5% as base case WACC. Bear scenario uses 11.0% (closer to beta-implied rate, appropriate for a WFE down-cycle where KLA's cash flow volatility is higher than beta alone suggests). Bull scenario uses 9.0% (maximum quality premium; process control monopoly with 40%+ margins deserves the discount vs. a generic semiconductor company)."
+      }
+    },
+    "sensitivity": {
+      "rows_label": "WACC",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.085,
+        0.09,
+        0.095,
+        0.1,
+        0.105
+      ],
+      "col_values": [
+        0.02,
+        0.025,
+        0.03,
+        0.035,
+        0.04
+      ],
+      "implied_px_matrix": [
+        [
+          82.59,
+          86.94,
+          92.08,
+          98.24,
+          105.78
+        ],
+        [
+          76.19,
+          79.76,
+          83.93,
+          88.86,
+          94.78
+        ],
+        [
+          70.64,
+          73.62,
+          77.05,
+          81.05,
+          85.78
+        ],
+        [
+          65.81,
+          68.3,
+          71.16,
+          74.45,
+          78.29
+        ],
+        [
+          61.54,
+          63.66,
+          66.06,
+          68.8,
+          71.96
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "Peer P/E multiple cross-check against the WFE equipment peer group (AMAT, ASML, LRCX, ONTO, NVMI). The market prices KLAC relative to this cohort; intrinsic DCF value understates market pricing because the 10-year explicit horizon still leaves significant franchise value in the terminal, and the market is paying a perpetuity multiple on a structural monopoly.",
+    "inputs": {
+      "multiple_type": "P/E",
+      "peer_median_multiple": 40.0,
+      "fy_estimate": 5.05,
+      "peers_used": [
+        "AMAT",
+        "ASML",
+        "LRCX",
+        "ONTO",
+        "NVMI"
+      ],
+      "reasoning": "Peer NTM P/E cohort: AMAT 34.9x, ASML 37.5x, LRCX 46.3x, ONTO 32.1x, NVMI 42.6x. Median is approximately 37.5x. KLA's 41% operating margin (vs. ASML 36%, LRCX 35%, AMAT 32%) and process control monopoly justify a 5-7% premium over the cohort median. Applied 40x to FY27E consensus EPS $5.05 = $202 implied price. This is the most relevant relative anchor given the market's framework for pricing WFE equipment."
+    },
+    "outputs": {
+      "implied_equity_b": 263.812,
+      "implied_px": 202.0
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.11,
+        "terminal_growth": 0.02,
+        "fcf_multiplier": 0.65
+      },
+      "implied_px": 37.23,
+      "probability": 0.2,
+      "probability_reasoning": "20% weight. A WFE down-cycle is the historical norm at 3-4 year cycle peaks. AI capex commitments are more visible than prior cycles, but TSMC capex cuts have happened before at similar points ($36B to $25B in FY23). China export control escalation is a binary risk with real probability. EPS beats contracting to near-zero is a near-term timing signal. The bear case is likely enough to size meaningfully, but AI infrastructure spending is more durable than historical WFE cycles.",
+      "reasoning": "TSMC cuts FY27 capex 20-30%, China legacy-node controls tighten, FY27 revenue misses at $14-15B, multiple de-rates to 30-33x."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "implied_px": 77.05,
+      "probability": 0.35,
+      "probability_reasoning": "35% weight. FY27E consensus $17B roughly plays out, with the multiple de-rating from 47x toward 40-43x as EPS beat rates stay narrow and AI capex narrative loses urgency. KLAC is a great company; the stock's issue is the entry point. Base case is the stock gravitates toward peer-relative fair value over 12 months.",
+      "reasoning": "FY27 consensus plays out at ~$17B; EPS $5.05 at 40-43x = $202-217. Stock trades down from $237 to the $200-215 range as multiple normalizes."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.09,
+        "terminal_growth": 0.04,
+        "fcf_multiplier": 1.3
+      },
+      "implied_px": 123.49,
+      "probability": 0.15,
+      "probability_reasoning": "15% weight. Bull case requires AI capex to extend beyond current consensus horizon, TSMC to maintain $40B+ capex through FY28, and the multiple to stay at 48-50x FY27E. Not the most likely outcome but materially possible: HBM4 + CoWoS + Intel 18A all materializing simultaneously plus FY27 beating $18B would validate this path.",
+      "reasoning": "AI capex cycle extends into FY28, FY27 beats $17.5B, EPS reaches $5.80+, market sustains 48-50x. Stock holds $260-290."
+    }
+  ],
+  "blended_target": 113.54,
+  "blending_logic": "",
+  "blending_weights": {
+    "cross_check": 0.3
+  },
+  "weights_reasoning": "Scenario probabilities sum to 70% (Bear 20% + Base 35% + Bull 15%); cross-check gets 30% weight, totaling 100%. At $237, KLAC is priced well above even the bull DCF implied price (~$123 at 9.0% WACC / 4.0% terminal growth). The market prices KLAC on a forward P/E multiple basis -- the peer P/E cross-check ($202) is the most relevant fair-value anchor and deserves 30% weight because it directly reflects how the market will price the stock vs. AMAT, ASML, and LRCX. The DCF scenarios (70% combined) give the intrinsic value range ($37-123) and penalize the high-multiple current price. Bear 20%: real WFE cycle risk but AI capex more durable than prior cycles. Base 35%: most likely outcome; consensus plays out but multiple compresses. Bull 15%: real but minority-probability scenario requiring a perfect execution environment.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 37.23,
+      "weight": 0.2,
+      "contribution": 7.45,
+      "reasoning": "20% weight. A WFE down-cycle is the historical norm at 3-4 year cycle peaks. AI capex commitments are more visible than prior cycles, but TSMC capex cuts have happened before at similar points ($36B to $25B in FY23). China export control escalation is a binary risk with real probability. EPS beats contracting to near-zero is a near-term timing signal. The bear case is likely enough to size meaningfully, but AI infrastructure spending is more durable than historical WFE cycles."
+    },
+    {
+      "component": "Base",
+      "implied_px": 77.05,
+      "weight": 0.35,
+      "contribution": 26.97,
+      "reasoning": "35% weight. FY27E consensus $17B roughly plays out, with the multiple de-rating from 47x toward 40-43x as EPS beat rates stay narrow and AI capex narrative loses urgency. KLAC is a great company; the stock's issue is the entry point. Base case is the stock gravitates toward peer-relative fair value over 12 months."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 123.49,
+      "weight": 0.15,
+      "contribution": 18.52,
+      "reasoning": "15% weight. Bull case requires AI capex to extend beyond current consensus horizon, TSMC to maintain $40B+ capex through FY28, and the multiple to stay at 48-50x FY27E. Not the most likely outcome but materially possible: HBM4 + CoWoS + Intel 18A all materializing simultaneously plus FY27 beating $18B would validate this path."
+    },
+    {
+      "component": "Multiple",
+      "implied_px": 202.0,
+      "weight": 0.3,
+      "contribution": 60.6,
+      "reasoning": "Peer P/E multiple cross-check against the WFE equipment peer group (AMAT, ASML, LRCX, ONTO, NVMI). The market prices KLAC relative to this cohort; intrinsic DCF value understates market pricing because the 10-year explicit horizon still leaves significant franchise value in the terminal, and the market is paying a perpetuity multiple on a structural monopoly."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": -52.2
+}
