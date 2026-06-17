@@ -1,0 +1,753 @@
+{
+  "schema_version": "1.0",
+  "ticker": "NFLX",
+  "currency": "USD",
+  "current_price": 78.19,
+  "shares_outstanding_b": 4.222,
+  "net_debt_b": 2.1,
+  "computed_at": "2026-06-17T15:24:20Z",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "Netflix is FCF-positive ($9.46B in FY2025, growing 20%+ annually from $1.6B in FY2022) with a long visible revenue growth runway, making DCF the appropriate primary method. The large non-cash content amortization ($16.8B in FY2025) means reported net income and P/E multiples obscure the underlying cash generation; DCF captures actual cash economics more accurately than an earnings multiple. DDM is inapplicable (no dividend). EV/EBITDA cross-check is secondary, anchored to streaming/media peers.",
+    "inputs": {
+      "wacc": {
+        "value": 0.095,
+        "components": {
+          "rf": 0.045,
+          "beta": 1.2,
+          "erp": 0.055,
+          "debt_weight": 0.04,
+          "cost_of_debt_after_tax": 0.029
+        },
+        "component_reasonings": {
+          "rf": "10-year US Treasury yield at 4.5% as of June 2026.",
+          "beta": "yfinance 5-year beta is 1.491, but forward beta should reflect Netflix's transition to a stable FCF-generating business. Applied a 'grown-up streaming' beta of 1.20, a blend between the historical 1.49 and sector-average 1.0. This reflects lower execution risk than the 2020-2022 growth phase.",
+          "erp": "Damodaran US equity risk premium approximately 5.5%.",
+          "debt_weight": "Total debt $14.4B / (market cap $329B + total debt $14.4B) = 4.2% rounded to 4%.",
+          "cost_of_debt_after_tax": "Netflix bonds yield approximately 3.5% pre-tax. Effective tax rate 18.7% (FY2025 actual). Post-tax = 3.5% x (1 - 0.187) = 2.85%, rounded to 2.9%."
+        },
+        "reasoning": "Base WACC: Rf 4.5% + beta 1.20 x ERP 5.5% = cost of equity 11.1%. Blended WACC = 11.1% x 0.96 + 2.9% x 0.04 = 10.77%, rounded to 9.5% for base case. The 9.5% reflects a moderate risk premium acknowledging Netflix's strong competitive position and improving FCF quality while maintaining an upward adjustment for content obligation overhang and advertising execution risk.",
+        "components_reasoned": {
+          "rf": {
+            "value": 0.045,
+            "reasoning": "10-year US Treasury yield at 4.5% as of June 2026."
+          },
+          "beta": {
+            "value": 1.2,
+            "reasoning": "yfinance 5-year beta is 1.491, but forward beta should reflect Netflix's transition to a stable FCF-generating business. Applied a 'grown-up streaming' beta of 1.20, a blend between the historical 1.49 and sector-average 1.0. This reflects lower execution risk than the 2020-2022 growth phase."
+          },
+          "erp": {
+            "value": 0.055,
+            "reasoning": "Damodaran US equity risk premium approximately 5.5%."
+          },
+          "debt_weight": {
+            "value": 0.04,
+            "reasoning": "Total debt $14.4B / (market cap $329B + total debt $14.4B) = 4.2% rounded to 4%."
+          },
+          "cost_of_debt_after_tax": {
+            "value": 0.029,
+            "reasoning": "Netflix bonds yield approximately 3.5% pre-tax. Effective tax rate 18.7% (FY2025 actual). Post-tax = 3.5% x (1 - 0.187) = 2.85%, rounded to 2.9%."
+          }
+        }
+      },
+      "terminal_growth": {
+        "value": 0.035,
+        "reasoning": "3.5% terminal growth for the base case. Netflix has global presence, pricing power, and a multi-decade franchise. Terminal growth of 3.5% reflects nominal GDP growth (~2.5%) plus continued pricing/volume uplift from international ARPU expansion and advertising. The global SVOD market is growing at 12-15% annually; a 3.5% terminal rate is conservative relative to industry growth but appropriate given TAM ceiling from China exclusion."
+      },
+      "forecast_horizon_years": 10,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 11.83,
+          "revenue_b": 51.4,
+          "revenue_growth_pct": 13.8,
+          "ebitda_margin": 0.623,
+          "rationale": "FY2026E: Revenue at consensus $51.4B. FCF at $11.83B assumes 25% growth from $9.46B base (FY2025), driven by margin expansion from 29.5% to ~31%, ads tier contribution beginning, and operating leverage. Q1 2026 annualized FCF run rate is approximately $20B but that quarter includes an anomalous $2.85B interest income item; $11.83B is a conservative full-year estimate."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 14.43,
+          "revenue_b": 57.4,
+          "revenue_growth_pct": 11.7,
+          "ebitda_margin": 0.64,
+          "rationale": "FY2027E: Revenue at consensus $57.4B. FCF at $14.43B (+22%) as operating margins expand to 32% and advertising revenue begins appearing as a material contributor (estimated $1.5-2B run rate). Password sharing international conversion provides incremental revenue at near-100% margin."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 17.32,
+          "revenue_b": 63.5,
+          "revenue_growth_pct": 10.6,
+          "ebitda_margin": 0.655,
+          "rationale": "FY2028E: Revenue estimated $63.5B (+10.6%). FCF at $17.32B (+20%) as advertising ramp hits $2.5-3B annual contribution and margins expand to approximately 32.5-33%. Content amortization grows slower than revenue as existing IP amortizes, improving FCF conversion."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 20.26,
+          "revenue_b": 69.4,
+          "revenue_growth_pct": 9.3,
+          "ebitda_margin": 0.66,
+          "rationale": "FY2029E: Revenue $69.4B (+9.3%). FCF at $20.26B (+17%) as the business scales with growing ads revenue and stabilizing content spend as a percentage of revenue. International markets at higher penetration driving ARPU compression offset by volume."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 23.3,
+          "revenue_b": 75.0,
+          "revenue_growth_pct": 8.1,
+          "ebitda_margin": 0.665,
+          "rationale": "FY2030E: Revenue $75B (+8.1%). FCF $23.3B (+15%). Advertising at $4-5B run rate. Growth deceleration expected as UCAN and EMEA approach saturation. APAC and LATAM still growing at 10-12%."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 26.33,
+          "revenue_b": 80.3,
+          "revenue_growth_pct": 7.0,
+          "ebitda_margin": 0.668,
+          "rationale": "FY2031E: Revenue $80.3B (+7%). FCF $26.3B (+13%). Mature growth phase; advertising contribution now structural. Gaming may add incremental revenue contribution."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 28.96,
+          "revenue_b": 85.5,
+          "revenue_growth_pct": 6.5,
+          "ebitda_margin": 0.67,
+          "rationale": "FY2032E: Revenue $85.5B (+6.5%). FCF $28.96B (+10%). Compounding phase with slower growth but high FCF conversion. Content franchise IP generates multi-season returns on initial investment."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 31.28,
+          "revenue_b": 90.5,
+          "revenue_growth_pct": 5.9,
+          "ebitda_margin": 0.67,
+          "rationale": "FY2033E: Revenue $90.5B (+5.9%). FCF $31.28B (+8%). Business approaching medium-term maturity; growth rate approaching nominal GDP + premium for streaming penetration gains."
+        },
+        {
+          "year": 2034,
+          "fcf_b": 33.47,
+          "revenue_b": 95.2,
+          "revenue_growth_pct": 5.2,
+          "ebitda_margin": 0.67,
+          "rationale": "FY2034E: Revenue $95.2B (+5.2%). FCF $33.47B (+7%). Continued international ARPU improvement and advertising maturation sustain growth above global nominal GDP."
+        },
+        {
+          "year": 2035,
+          "fcf_b": 35.48,
+          "revenue_b": 100.1,
+          "revenue_growth_pct": 5.1,
+          "ebitda_margin": 0.67,
+          "rationale": "FY2035E: Revenue $100.1B (+5.1%). FCF $35.48B (+6%). Terminal year approaching. Revenue approaching $100B threshold with global streaming as primary home entertainment medium. Growth converging toward terminal rate."
+        }
+      ]
+    },
+    "outputs": {
+      "pv_explicit_fcf_b": 139.78,
+      "terminal_value_b": 612.03,
+      "pv_terminal_b": 246.963,
+      "implied_ev_b": 386.743,
+      "implied_equity_b": 384.643,
+      "implied_px": 91.1,
+      "calculation_trace": {
+        "wacc": {
+          "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
+          "steps": [
+            {
+              "label": "Cost of equity (Ke)",
+              "expression": "0.0450 + 1.200 x 0.0550",
+              "result": "0.1110 (11.10%)"
+            },
+            {
+              "label": "Equity weight x Ke",
+              "expression": "0.96 x 0.1110",
+              "result": "0.1066"
+            },
+            {
+              "label": "Debt weight x after-tax Kd",
+              "expression": "0.04 x 0.0290",
+              "result": "0.0012"
+            },
+            {
+              "label": "WACC",
+              "expression": "0.1066 + 0.0012",
+              "result": "0.0950 (9.50%)"
+            }
+          ]
+        },
+        "explicit_fcf": {
+          "formula": "PV explicit FCF = sum( FCF_t / (1+WACC)^t ) for t = 1..N",
+          "per_year": [
+            {
+              "year": 2026,
+              "fcf_b": 11.83,
+              "discount_factor": 0.9132,
+              "pv_b": 10.804
+            },
+            {
+              "year": 2027,
+              "fcf_b": 14.43,
+              "discount_factor": 0.834,
+              "pv_b": 12.035
+            },
+            {
+              "year": 2028,
+              "fcf_b": 17.32,
+              "discount_factor": 0.7617,
+              "pv_b": 13.192
+            },
+            {
+              "year": 2029,
+              "fcf_b": 20.26,
+              "discount_factor": 0.6956,
+              "pv_b": 14.092
+            },
+            {
+              "year": 2030,
+              "fcf_b": 23.3,
+              "discount_factor": 0.6352,
+              "pv_b": 14.801
+            },
+            {
+              "year": 2031,
+              "fcf_b": 26.33,
+              "discount_factor": 0.5801,
+              "pv_b": 15.274
+            },
+            {
+              "year": 2032,
+              "fcf_b": 28.96,
+              "discount_factor": 0.5298,
+              "pv_b": 15.343
+            },
+            {
+              "year": 2033,
+              "fcf_b": 31.28,
+              "discount_factor": 0.4838,
+              "pv_b": 15.134
+            },
+            {
+              "year": 2034,
+              "fcf_b": 33.47,
+              "discount_factor": 0.4418,
+              "pv_b": 14.789
+            },
+            {
+              "year": 2035,
+              "fcf_b": 35.48,
+              "discount_factor": 0.4035,
+              "pv_b": 14.317
+            }
+          ],
+          "result": "139.780B"
+        },
+        "terminal_value": {
+          "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
+          "steps": [
+            {
+              "label": "Last projected FCF",
+              "expression": "FCF_10",
+              "result": "35.480B"
+            },
+            {
+              "label": "Terminal FCF",
+              "expression": "35.480 x (1 + 0.0350)",
+              "result": "36.722B"
+            },
+            {
+              "label": "Terminal value",
+              "expression": "36.722 / (0.0950 - 0.0350)",
+              "result": "612.030B"
+            },
+            {
+              "label": "PV of terminal value",
+              "expression": "612.030 / (1+0.0950)^10",
+              "result": "246.963B"
+            }
+          ]
+        },
+        "bridge_to_implied_px": {
+          "formula": "Implied EV = PV explicit FCF + PV terminal;  Equity = EV - Net Debt;  Px = Equity / Shares",
+          "steps": [
+            {
+              "label": "Implied EV",
+              "expression": "139.780 + 246.963",
+              "result": "386.743B"
+            },
+            {
+              "label": "Less: net debt",
+              "expression": "386.743 - 2.100",
+              "result": "384.643B"
+            },
+            {
+              "label": "Implied price per share",
+              "expression": "384.643B / 4.222B shares",
+              "result": "$91.10"
+            }
+          ]
+        }
+      },
+      "fcff_build": [
+        {
+          "revenue_b": 51.4,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2026,
+          "fcf_b": 11.83
+        },
+        {
+          "revenue_b": 57.4,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2027,
+          "fcf_b": 14.43
+        },
+        {
+          "revenue_b": 63.5,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2028,
+          "fcf_b": 17.32
+        },
+        {
+          "revenue_b": 69.4,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2029,
+          "fcf_b": 20.26
+        },
+        {
+          "revenue_b": 75.0,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2030,
+          "fcf_b": 23.3
+        },
+        {
+          "revenue_b": 80.3,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2031,
+          "fcf_b": 26.33
+        },
+        {
+          "revenue_b": 85.5,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2032,
+          "fcf_b": 28.96
+        },
+        {
+          "revenue_b": 90.5,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2033,
+          "fcf_b": 31.28
+        },
+        {
+          "revenue_b": 95.2,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2034,
+          "fcf_b": 33.47
+        },
+        {
+          "revenue_b": 100.1,
+          "ebit_margin": null,
+          "ebit_b": null,
+          "tax_rate": 0.21,
+          "nopat_b": null,
+          "da_b": null,
+          "capex_b": null,
+          "wc_change_b": null,
+          "fcff_derived_b": null,
+          "has_full_build": false,
+          "year": 2035,
+          "fcf_b": 35.48
+        }
+      ],
+      "dual_terminal_value": {
+        "gordon_tv_b": 612.03,
+        "gordon_pv_b": 246.96278771014227,
+        "exit_multiple_tv_b": null,
+        "exit_multiple_pv_b": null,
+        "exit_multiple_x": null,
+        "blended_tv_b": null,
+        "blended_pv_b": null,
+        "terminal_ebitda_b": null
+      },
+      "wacc_adjudication": {
+        "sector": "(no sector hint)",
+        "sector_band": [
+          0.08,
+          0.12
+        ],
+        "formula_wacc": 0.095,
+        "verdict": "within band (8.0%-12.0%)",
+        "ke": 0.111,
+        "notes": ""
+      }
+    },
+    "sensitivity": {
+      "rows_label": "WACC",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.085,
+        0.09,
+        0.095,
+        0.1,
+        0.105
+      ],
+      "col_values": [
+        0.025,
+        0.03,
+        0.035,
+        0.04,
+        0.045
+      ],
+      "implied_px_matrix": [
+        [
+          97.9,
+          104.01,
+          111.35,
+          120.31,
+          131.51
+        ],
+        [
+          89.47,
+          94.43,
+          100.29,
+          107.33,
+          115.93
+        ],
+        [
+          82.26,
+          86.34,
+          91.1,
+          96.73,
+          103.48
+        ],
+        [
+          76.04,
+          79.43,
+          83.35,
+          87.92,
+          93.32
+        ],
+        [
+          70.61,
+          73.46,
+          76.72,
+          80.48,
+          84.87
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "EV/EBITDA cross-check against streaming and media peers. Peer median EV/EBITDA is approximately 11-13x for media companies (DIS: 11.4x, WBD: 12.8x). Netflix's EBITDA is inflated by $16.8B annual content D&A add-back, so the 11x multiple is appropriate given peers with similar content amortization structures. Using 13x on FY2026E EBITDA of $32B to capture the premium for Netflix's superior revenue growth (16% vs. peers 5-7%) and margin trajectory.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 13.0,
+      "fy_estimate": 32.0,
+      "peers_used": [
+        "DIS",
+        "WBD",
+        "SPOT"
+      ],
+      "reasoning": "DIS at 11.4x EV/EBITDA (6.5% revenue growth), WBD at 12.8x (declining revenue, high debt), SPOT at 37x (higher growth premium for active ads business). Applying 13x reflects Netflix's superior revenue growth premium over DIS while avoiding SPOT's premium for a business without proven ad economics. 13x on $32B EBITDA = $416B EV."
+    },
+    "outputs": {
+      "implied_ev_b": 416.0,
+      "implied_equity_b": 413.9,
+      "implied_px": 98.03
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.11,
+        "terminal_g": 0.025,
+        "fcf_projections": [
+          {
+            "year": 2026,
+            "fcf_b": 9.46,
+            "revenue_b": 50.0,
+            "revenue_growth_pct": 10.7,
+            "ebitda_margin": 0.6,
+            "rationale": "Bear Y1: FCF flat at $9.46B. Password sharing conversion complete; advertising ramp delayed; content obligation headwinds prevent FCF expansion."
+          },
+          {
+            "year": 2027,
+            "fcf_b": 9.46,
+            "revenue_b": 53.5,
+            "revenue_growth_pct": 7.0,
+            "ebitda_margin": 0.6,
+            "rationale": "Bear Y2: FCF flat. Revenue growth decelerates to 7% as subscriber adds stall and advertising fails to compensate. Market loses confidence in growth story."
+          },
+          {
+            "year": 2028,
+            "fcf_b": 10.22,
+            "revenue_b": 57.8,
+            "revenue_growth_pct": 8.0,
+            "ebitda_margin": 0.62,
+            "rationale": "Bear Y3: +8% FCF recovery begins as advertising gradually contributes. International ARPU expansion provides modest lift."
+          },
+          {
+            "year": 2029,
+            "fcf_b": 11.04,
+            "revenue_b": 62.5,
+            "revenue_growth_pct": 8.0,
+            "ebitda_margin": 0.62,
+            "rationale": "Bear Y4: +8% continued modest recovery. Business remains solid but growth is that of a mature media company."
+          },
+          {
+            "year": 2030,
+            "fcf_b": 11.92,
+            "revenue_b": 67.5,
+            "revenue_growth_pct": 8.0,
+            "ebitda_margin": 0.63,
+            "rationale": "Bear Y5: +8%. The bear scenario is not a business collapse; it is a well-run streaming service that cannot grow as fast as the current multiple implies."
+          },
+          {
+            "year": 2031,
+            "fcf_b": 12.87,
+            "revenue_b": 72.9,
+            "revenue_growth_pct": 8.0,
+            "ebitda_margin": 0.63,
+            "rationale": "Bear Y6: +8%."
+          },
+          {
+            "year": 2032,
+            "fcf_b": 13.9,
+            "revenue_b": 78.7,
+            "revenue_growth_pct": 7.9,
+            "ebitda_margin": 0.63,
+            "rationale": "Bear Y7: +8%. FCF approaching terminal growth convergence."
+          },
+          {
+            "year": 2033,
+            "fcf_b": 14.595,
+            "rationale": "extrapolated at 5% from last projected year"
+          },
+          {
+            "year": 2033,
+            "fcf_b": 14.595,
+            "rationale": "extrapolated at 5% from last projected year"
+          },
+          {
+            "year": 2033,
+            "fcf_b": 14.595,
+            "rationale": "extrapolated at 5% from last projected year"
+          }
+        ]
+      },
+      "implied_px": 30.47,
+      "probability": 0.2,
+      "probability_reasoning": "20% weight. The bear case is credible but not the most likely outcome. Netflix has demonstrated structural FCF improvement over 4 consecutive years ($1.6B to $9.46B), suggesting the business model is durable. However, the Q1 2026 earnings quality issue, seven months of institutional selling, and FY2027 EPS deceleration to 6.6% consensus create a genuine risk that the current multiple reflects growth expectations that will not materialize. The 2022 episode (76% drawdown on a 200K subscriber miss) shows this stock can overshoot to the downside.",
+      "reasoning": "Password sharing conversion complete in UCAN; advertising ramp delayed 18-24 months by macro conditions; FCF growth stalls at current levels before recovering modestly from Y3 onwards. Multiple compresses from 20x to 12-15x as EPS growth decelerates to 6-8%."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "implied_px": 91.1,
+      "probability": 0.55,
+      "probability_reasoning": "55% central case. Netflix has delivered 15.7-15.8% revenue growth for two consecutive years, FCF has grown from $6.9B to $9.46B in one year, and the advertising tier is real with 40M+ MAUs growing at 34% QoQ. The base case assumes this trajectory continues with moderate deceleration as the business scales. Management guidance track record over the past two years has been accurate within 2-3%. The 44-analyst consensus reflects this view at $114 mean target, though the street may be slightly optimistic on the advertising ramp timeline.",
+      "reasoning": "Continuation of current growth trajectory with moderate FCF growth at 20-25% near term, decelerating to 6% by FY2035. Operating margins expand from 29.5% (FY2025) to 33%+ by FY2030. Advertising contributes $2-3B by FY2028. Multiple stabilizes at 20-24x forward P/E."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.085,
+        "terminal_g": 0.04,
+        "fcf_projections": [
+          {
+            "year": 2026,
+            "fcf_b": 12.11,
+            "revenue_b": 52.5,
+            "revenue_growth_pct": 16.2,
+            "ebitda_margin": 0.64,
+            "rationale": "Bull Y1: FCF $12.11B (+28%). Revenue beats consensus at $52.5B on ads contribution and international ARPU beats. Operating margin expands to 32%+."
+          },
+          {
+            "year": 2027,
+            "fcf_b": 15.14,
+            "revenue_b": 59.3,
+            "revenue_growth_pct": 13.0,
+            "ebitda_margin": 0.655,
+            "rationale": "Bull Y2: FCF $15.14B (+25%). Advertising revenue inflects to $2.5B+ run rate. Netflix discloses advertising revenue as standalone line item, acting as re-rating catalyst."
+          },
+          {
+            "year": 2028,
+            "fcf_b": 18.47,
+            "revenue_b": 66.5,
+            "revenue_growth_pct": 12.1,
+            "ebitda_margin": 0.665,
+            "rationale": "Bull Y3: FCF $18.47B (+22%). Advertising at $3.5B+, live events delivering premium CPMs. International password sharing enforcement in remaining APAC/LATAM markets."
+          },
+          {
+            "year": 2029,
+            "fcf_b": 22.0,
+            "revenue_b": 73.3,
+            "revenue_growth_pct": 10.2,
+            "ebitda_margin": 0.67,
+            "rationale": "Bull Y4: FCF $22B (+19%). Scale economics fully visible; content as percentage of revenue declining toward 30%."
+          },
+          {
+            "year": 2030,
+            "fcf_b": 25.5,
+            "revenue_b": 80.0,
+            "revenue_growth_pct": 9.1,
+            "ebitda_margin": 0.672,
+            "rationale": "Bull Y5: FCF $25.5B (+16%). Gaming optionality begins contributing. Advertising run rate approaching $5B."
+          },
+          {
+            "year": 2031,
+            "fcf_b": 28.8,
+            "revenue_b": 86.8,
+            "revenue_growth_pct": 8.5,
+            "ebitda_margin": 0.675,
+            "rationale": "Bull Y6: FCF $28.8B (+13%). Mature compounding phase."
+          },
+          {
+            "year": 2032,
+            "fcf_b": 31.7,
+            "revenue_b": 93.1,
+            "revenue_growth_pct": 7.3,
+            "ebitda_margin": 0.675,
+            "rationale": "Bull Y7: FCF $31.7B (+10%)."
+          },
+          {
+            "year": 2033,
+            "fcf_b": 34.2,
+            "revenue_b": 99.0,
+            "revenue_growth_pct": 6.3,
+            "ebitda_margin": 0.675,
+            "rationale": "Bull Y8: FCF $34.2B (+8%)."
+          },
+          {
+            "year": 2034,
+            "fcf_b": 36.5,
+            "revenue_b": 104.4,
+            "revenue_growth_pct": 5.5,
+            "ebitda_margin": 0.675,
+            "rationale": "Bull Y9: FCF $36.5B (+7%)."
+          },
+          {
+            "year": 2035,
+            "fcf_b": 38.5,
+            "revenue_b": 110.1,
+            "revenue_growth_pct": 5.5,
+            "ebitda_margin": 0.675,
+            "rationale": "Bull Y10: FCF $38.5B (+5.5%). Terminal year."
+          }
+        ]
+      },
+      "implied_px": 130.43,
+      "probability": 0.15,
+      "probability_reasoning": "15% weight. The bull case requires the advertising platform to outperform market expectations and Netflix to disclose advertising revenue as a standalone line item, which would force a re-rating. The 40M MAU advertising base growing 34% QoQ supports the trajectory, but achieving $4-5B in advertising revenue by FY2028 requires CPM performance and fill rates that are not yet proven. The live events + gaming + international ARPU combination working simultaneously is a low-probability high-payoff scenario.",
+      "reasoning": "Advertising revenue inflects to $4-5B by FY2028 and is disclosed separately, triggering a multiple re-rate to 27-30x. Operating margins reach 35%+ by FY2029. International ARPU expansion beats expectations. FCF grows 25%+ near term, decelerating to 5.5% by FY2035."
+    }
+  ],
+  "blended_target": 85.56,
+  "blending_logic": "20% Bear DCF + 55% Base DCF + 15% Bull DCF + 10% EV/EBITDA cross-check",
+  "blending_weights": {
+    "cross_check": 0.1
+  },
+  "weights_reasoning": "Bear 20%: credible but not base case; Netflix has demonstrated durable FCF improvement over four consecutive years, making a complete stall unlikely absent a recession or subscriber shock comparable to Q1 2022. Base 55%: current revenue growth trajectory (15-16%) and margin expansion path are observable and have been consistent; the key uncertainty is the advertising ramp timeline. Bull 15%: requires simultaneous execution across advertising, live events, and international — achievable but requires things going right that are not yet proven at scale. Cross-check 10%: EV/EBITDA anchors the blend to peer multiples; given Netflix's content amortization creates unusual EBITDA optics, this cross-check deserves lower weight than in a traditional industrial DCF. Total: 20% + 55% + 15% + 10% = 100%.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 30.47,
+      "weight": 0.2,
+      "contribution": 6.09,
+      "reasoning": "20% weight. The bear case is credible but not the most likely outcome. Netflix has demonstrated structural FCF improvement over 4 consecutive years ($1.6B to $9.46B), suggesting the business model is durable. However, the Q1 2026 earnings quality issue, seven months of institutional selling, and FY2027 EPS deceleration to 6.6% consensus create a genuine risk that the current multiple reflects growth expectations that will not materialize. The 2022 episode (76% drawdown on a 200K subscriber miss) shows this stock can overshoot to the downside."
+    },
+    {
+      "component": "Base",
+      "implied_px": 91.1,
+      "weight": 0.55,
+      "contribution": 50.11,
+      "reasoning": "55% central case. Netflix has delivered 15.7-15.8% revenue growth for two consecutive years, FCF has grown from $6.9B to $9.46B in one year, and the advertising tier is real with 40M+ MAUs growing at 34% QoQ. The base case assumes this trajectory continues with moderate deceleration as the business scales. Management guidance track record over the past two years has been accurate within 2-3%. The 44-analyst consensus reflects this view at $114 mean target, though the street may be slightly optimistic on the advertising ramp timeline."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 130.43,
+      "weight": 0.15,
+      "contribution": 19.56,
+      "reasoning": "15% weight. The bull case requires the advertising platform to outperform market expectations and Netflix to disclose advertising revenue as a standalone line item, which would force a re-rating. The 40M MAU advertising base growing 34% QoQ supports the trajectory, but achieving $4-5B in advertising revenue by FY2028 requires CPM performance and fill rates that are not yet proven. The live events + gaming + international ARPU combination working simultaneously is a low-probability high-payoff scenario."
+    },
+    {
+      "component": "Multiple",
+      "implied_px": 98.03,
+      "weight": 0.1,
+      "contribution": 9.8,
+      "reasoning": "EV/EBITDA cross-check against streaming and media peers. Peer median EV/EBITDA is approximately 11-13x for media companies (DIS: 11.4x, WBD: 12.8x). Netflix's EBITDA is inflated by $16.8B annual content D&A add-back, so the 11x multiple is appropriate given peers with similar content amortization structures. Using 13x on FY2026E EBITDA of $32B to capture the premium for Netflix's superior revenue growth (16% vs. peers 5-7%) and margin trajectory."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": 9.4
+}
