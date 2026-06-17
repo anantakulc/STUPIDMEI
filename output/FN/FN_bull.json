@@ -1,0 +1,165 @@
+{
+  "ticker": "FN",
+  "company_name": "Fabrinet",
+  "bull_thesis_sentence": "Fabrinet is the world's only scaled, precision optical assembler capable of building the 800G-and-above transceiver and DCI modules that AI data centers cannot function without, and the three revenue vectors now ramping simultaneously -- DCI, Datacom, and High-Performance Compute -- make it a rare case of secular growth exceeding what a 4x forward-revenue multiple prices in.",
+  "bull_thesis_bullets": [
+    "DCI revenue grew 90% year-over-year in Q3 FY2026 to $197M in a single quarter, 800G ZR modules are not yet in volume, and every major coherent-telecom-module maker is a Fabrinet customer -- multiple generations of density increase lie ahead.",
+    "Supply constraints depressed Datacom revenue to $260M in Q3 FY2026 despite demand 'far exceeding' shipments (CEO May 2026); as laser, memory, and ASIC shortages clear in H2 calendar 2026, Datacom alone could add $150-200M quarterly versus the constrained level.",
+    "FY2026 non-GAAP EPS of roughly $15 on a $587 stock is 39x trailing non-GAAP; the FY2027 EPS path to $18-22 on new-program ramps compresses the multiple to 27-33x for a company compounding revenue above 20% -- cheap relative to its own growth rate."
+  ],
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "DCI secular ramp: +90% YoY, 800G ZR inflection not yet in volume",
+      "body": "Data Center Interconnect revenue reached $197M in Q3 FY2026 (quarter ended March 27, 2026), up 90% from a year ago and 38% sequentially. Fabrinet holds relationships with every major DCI OEM and builds both 400G ZR and 800G ZR coherent modules plus embedded line-card variants. Management noted 800G ZR ramping but not yet at high volume as of May 2026. Next-generation 800G ZR+ and 1.6T coherent modules are in development across the customer base. Each generation increase raises dollar content per port, and Fabrinet captures assembly complexity as a percentage of that content. The $197M quarterly rate is likely a floor if DCI demand follows hyperscaler capex guidance through 2027."
+    },
+    {
+      "id": 2,
+      "title": "Datacom pent-up demand: supply constraints masking record order book",
+      "body": "Datacom revenue was $260M in Q3 FY2026 (March 2026 quarter), up only 4% year-over-year and down 6% sequentially. CEO Seamus Grady stated explicitly on May 4, 2026: 'demand during the quarter far exceeded what we were able to ship.' The bottlenecks are lasers, memory (where a global shortage persists), and certain ASICs. Without these constraints, management said Datacom 'would have been a new record by a wide margin.' As the laser and memory supply chain catches up with demand over the next two to three quarters, Datacom revenue should revert sharply toward actual demand levels -- management believes the constraint is timing, not structural demand loss."
+    },
+    {
+      "id": 3,
+      "title": "High-Performance Compute: $150M quarterly run rate within one quarter",
+      "body": "Non-Optical Communications revenue reached $326M in Q3 FY2026, +52% year-over-year and +8% sequentially, driven primarily by HPC assembly (GPU infrastructure for a major hyperscaler, named as AWS in February 2026 call context). The fully ramped target for the current HPC program is 'north of $150 million per quarter' per management (May 4, 2026). A technology transition from first- to second-generation product pushed the milestone out by approximately one quarter, but management expects to hit it in Q4 FY2026 or Q1 FY2027. Beyond the current program, Fabrinet has been awarded follow-on business for additional HPC products and is pursuing multiple additional hyperscaler relationships."
+    },
+    {
+      "id": 4,
+      "title": "New Datacom program wins: hyperscale direct + merchant vendor diversification",
+      "body": "Fabrinet's legacy Datacom exposure was concentrated on one large OEM (Nvidia supply chain). The company announced on May 4, 2026 that it has completed qualification and begun shipping two new Datacom programs directly for hyperscalers -- both 800G scale-out products. Management also disclosed multiple merchant vendor program wins. CEO Grady described 'sizable progress' with contracts in place, purchase orders received, and products already shipping in early qualification quantities. Both channels are expected to contribute 'more meaningfully to FY2027 than Q4.' These add genuine revenue diversification without cannibalizing the existing customer relationship."
+    },
+    {
+      "id": 5,
+      "title": "Co-Packaged Optics: $32M Raytek stake secures a seat at the next-generation table",
+      "body": "Fabrinet completed a $32M private placement in Raytek Semiconductor in April 2026 for approximately 14% of outstanding shares. Raytek is developing semiconductor packaging technology for co-packaged optics. Management described CPO as 'a lot more real now than it has ever been' and stated Fabrinet is 'well ahead of competitors in making this technology a reality.' Three separate CPO programs are in development. Unlike a scenario where CPO disrupts pluggable-module assembly, Fabrinet is positioning to be the assembler of CPO units themselves -- capturing high-complexity packaging and test at potentially higher ASP per unit than the pluggable modules CPO would replace. Revenue is 'largely in front of us' as of May 2026."
+    },
+    {
+      "id": 6,
+      "title": "Capacity expansion: $8.5B revenue potential by FY2027 from current build-out",
+      "body": "Current manufacturing footprint supports roughly $4.8B in annual revenue. Building 10 (Chonburi campus, 2 million sq ft) adds approximately $3B of capacity at a total CapEx of $130-132M and is scheduled to be fully commissioned by January 2026 (opening ceremony expected Q1 FY2027). The Navanakorn factory, acquired for $11M (8 acres) in early Q4 FY2026, adds $250M initially with room for an additional $250M factory on-site. Pinehurst campus conversion adds $200M. Total capacity post-Building 10 and Navanakorn: approximately $8.5B annually. Buildings 11 and 12 (1.5B each) remain as future options. Management described the downside of an underutilized Building 10 as 'about 50 basis points gross margin headwind' -- a negligible cost for $3B of revenue optionality."
+    },
+    {
+      "id": 7,
+      "title": "Optical Circuit Switching: another material opportunity unpriced in current estimates",
+      "body": "Optical circuit switches (OCS) are emerging as a key enabling technology for large-scale AI cluster interconnects, with major hyperscalers exploring OCS to replace electrical switching fabrics for intra-cluster traffic. CEO Grady stated in both Q2 and Q3 FY2026 calls: 'We are engaged on a number of fronts' and 'OCS opportunities are incremental to' the new merchant Datacom programs. The technology is described as 'very similar to products we already make,' meaning Fabrinet could enter at premium economics. Revenue is 'largely in front of us' as of May 2026, but the TAM for OCS assembly is potentially large."
+    },
+    {
+      "id": 8,
+      "title": "FX tailwind from baht appreciation now becoming a margin tailwind",
+      "body": "Fabrinet manufactures in Thailand, where costs are predominantly baht-denominated, while revenues are reported in USD. The baht appreciated approximately 10% versus the dollar in the 12 months to March 2026, creating a gross margin headwind of roughly 30-50 basis points per quarter. Management's hedging program has provided partial offset. CFO Sverha noted (May 2026) that FX dynamics were 'similar in Q4 as Q3' but as hedges roll and if the baht stabilizes or weakens modestly, the headwind reverses. Every 10 basis points of gross margin at current quarterly revenue ($1.25B+) translates to approximately $5M in incremental quarterly gross profit."
+    },
+    {
+      "id": 9,
+      "title": "Operating leverage: 10-year EPS CAGR of 22% at a 12% revenue CAGR",
+      "body": "Over the 10 years to FY2025, Fabrinet compounded revenue at approximately 16% annually and EPS at 22% annually (CEO, May 2026). This EPS leverage comes from stable-to-rising gross margins as mix shifts toward higher-complexity programs, combined with operating expenses held at approximately 1.4% of revenue. Q3 FY2026 non-GAAP operating margin reached 10.7%, a 50 basis point improvement year-over-year. As FY2027 revenue scales toward $5.5-6B and Building 10 ramp costs digest, operating margin has a credible path toward 11-12%, which at higher revenue bases implies EPS of $18-22+ on a non-GAAP basis -- versus approximately $15 in FY2026."
+    },
+    {
+      "id": 10,
+      "title": "Balance sheet strength: $946M net cash funds growth and buybacks",
+      "body": "Fabrinet ended Q3 FY2026 with $946M in cash and short-term investments against minimal long-term debt, representing approximately 4.5% of market cap. The company has an active share repurchase program and has used buybacks to compound per-share EPS growth beyond revenue growth over the past decade. The Building 10 investment ($130M total CapEx) is funded from operating cash flow without requiring external financing. A clean balance sheet also positions the company for strategic minority investments in enabling technologies (see Raytek) or potential small acquisitions to add capability at the front-end of the optical value chain."
+    }
+  ],
+  "business_facts": {
+    "summary": "Fabrinet is a Thailand-based precision optical and electronic contract manufacturer. It provides advanced optical packaging, assembly, and test for the world's leading optical-communications, networking, and high-performance compute companies -- building the complex transceivers, photonic modules, and electronic assemblies those firms design but choose not to manufacture in-house.",
+    "business_model": "Fabrinet earns manufacturing service fees to assemble and test customers' products at its facilities in Chonburi (primary) and Pinehurst (secondary). Revenue is concentrated in optical communications (roughly 73% in Q3 FY2026: Datacom transceivers, DCI coherent modules, telecom components) and non-optical communications (roughly 27%: high-performance compute, automotive, industrial, medical, sensors). Customers own the product IP and bill of materials designs; Fabrinet owns the process know-how, equipment, and manufacturing real estate. Margins are low-teens gross and 10-11% operating, reflecting the contract-manufacturing model, offset by high asset turnover and compounding EPS from operating leverage and buybacks.",
+    "segments": [
+      {
+        "name": "Optical Communications - Datacom",
+        "revenue_share_pct": 21,
+        "growth_yoy_pct": 4,
+        "margin_pct": null,
+        "description": "800G and 1.6T transceiver assembly (primarily 200Gb/lane products) for AI/HPC cluster interconnects. Supply-constrained in Q3 FY2026; underlying demand described as 'far exceeding' shipments. Revenue $260M in Q3 FY2026. Expanding to hyperscale-direct and merchant-vendor programs in FY2027."
+      },
+      {
+        "name": "Optical Communications - DCI (Data Center Interconnect)",
+        "revenue_share_pct": 16,
+        "growth_yoy_pct": 90,
+        "margin_pct": null,
+        "description": "Coherent telecom modules (400G ZR, 800G ZR, embedded line-card variants) for metro and long-haul data center interconnect. Revenue $197M in Q3 FY2026, +90% YoY and +38% QoQ. All major DCI OEMs are customers. 800G ZR ramping; next-gen products in development."
+      },
+      {
+        "name": "Optical Communications - Other Telecom",
+        "revenue_share_pct": 36,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Telecom transport, satellite communications, and optical line systems components for OEM customers. Contributed approximately $432M in Q3 FY2026 (derived). Satellite comms growing steadily as a contributor."
+      },
+      {
+        "name": "Non-Optical Communications",
+        "revenue_share_pct": 27,
+        "growth_yoy_pct": 52,
+        "margin_pct": null,
+        "description": "High-performance compute assembly (GPU infrastructure, primarily for one major hyperscaler), automotive electronics, industrial, medical, and sensor assembly. Revenue $326M in Q3 FY2026, +52% YoY. HPC is the dominant driver; automotive moderated in Q3 as anticipated."
+      }
+    ],
+    "customers": [
+      {
+        "name": "Leading coherent-module OEMs (DCI)",
+        "revenue_share_pct": null,
+        "importance": "All major DCI module makers disclosed as customers; individual share not disclosed at the 10-K level"
+      },
+      {
+        "name": "Nvidia supply chain (primary Datacom customer)",
+        "revenue_share_pct": null,
+        "importance": "Dominant Datacom revenue source for 800G/1.6T transceivers for AI cluster interconnect; supply-constrained demand"
+      },
+      {
+        "name": "Major hyperscaler (HPC assembly)",
+        "revenue_share_pct": null,
+        "importance": "AWS named in Q2 FY2026 context; HPC program ramping toward $150M+ quarterly; follow-on programs awarded"
+      },
+      {
+        "name": "New hyperscale Datacom customers",
+        "revenue_share_pct": null,
+        "importance": "Two new direct hyperscaler Datacom programs qualified and shipping as of May 2026; expected to contribute meaningfully in FY2027"
+      },
+      {
+        "name": "Merchant Datacom vendors",
+        "revenue_share_pct": null,
+        "importance": "Multiple merchant vendor relationships won; contracts in place, products shipping in early ramp as of May 2026"
+      }
+    ],
+    "geographic_revenue": [
+      {
+        "region": "Thailand (manufacturing)",
+        "pct": null
+      },
+      {
+        "region": "Americas / Global (revenue billed)",
+        "pct": null
+      }
+    ]
+  },
+  "industry_position_bull": {
+    "market_overview": "AI infrastructure buildout is forcing a once-in-a-decade upgrade of data center optical interconnect. Hyperscalers are installing 800G transceivers at scale and planning 1.6T deployments for FY2027-FY2028 cluster builds. Data Center Interconnect demand is growing because AI training clusters are splitting across geographies and campuses, driving coherent-module demand independently of intra-cluster switching. Co-packaged optics is real but is a mid-decade ramp; pluggable modules will dominate through at least 2027 and likely 2028-2029 for most scale-out applications. Fabrinet sits at the center of this intersection, with relationships across every major optical and networking OEM and the manufacturing scale that the newer, smaller optical companies cannot match.",
+    "tam_usd_bn": 40,
+    "moat": "Precision optical packaging and test at the 800G-and-above node is genuinely difficult. Yield management for multi-element photonic assemblies with single-mode fiber coupling requires proprietary tooling, calibration expertise built over decades, and real-scale manufacturing -- the learning curve compounds with each new program. Fabrinet's Thailand cost base (USD-billed, baht-cost) creates a structural cost advantage relative to US or European assemblers. Customers do not want their assembler to have competing products, which is a positive selection factor for Fabrinet as a pure-play contract manufacturer. The combination of scale, process expertise, Thailand cost base, and 'no competing product' positioning creates meaningful switching friction for complex programs that take 12-18 months to qualify."
+  },
+  "peers_positive_read": "Coherent (COHR) and Lumentum (LITE) trade at 48x and 28x forward earnings, respectively, for revenue growing in the low-to-mid 20% range on optical-component exposure to the same AI interconnect wave. Fabrinet's FY2026 revenue is growing 34-35% -- faster than both -- and on an EV/EBITDA basis it trades at roughly 35-40x forward EBITDA versus Coherent's 50x. The contract-manufacturer peers (Sanmina, Flex) are structurally different: they do not do precision optical packaging at scale, grow at mid-single digits, and trade at 9-11x EBITDA. Fabrinet is earning a premium over generic EMS peers because of the optical complexity premium and secular growth, and that premium appears well-earned. At a 35x forward EBITDA and 34% revenue growth, the bull case is that Fabrinet deserves the optical-technology-company multiple because its process know-how and customer lock-in are the functional equivalent of IP in a capital-intensive, technically demanding market.",
+  "bull_valuation_lens": {
+    "method_preference": "DCF",
+    "method_reasoning": "Fabrinet generates positive and growing free cash flow. CapEx is temporarily elevated in FY2026 due to Building 10 construction ($130-132M total, largely expensed in FY2026), which distorts near-term FCF. A FCFF DCF best captures the normalized FCF power once Building 10 is complete and the new-program ramps mature, particularly since the terminal value depends critically on whether the company sustains high-teens revenue growth for 3-5 years. A peer multiple cross-check using EV/EBITDA against optical-company peers is the right sanity check.",
+    "bull_dcf_assumptions": {
+      "wacc": 0.090,
+      "wacc_reasoning": "Beta approximately 1.3 for a Thailand-based optical EMS company; risk-free rate 4.5%; equity risk premium 5.5%. No meaningful financial leverage. WACC = 9.0% reflects the growth premium offset by manufacturing geographic concentration and modest customer-concentration risk.",
+      "terminal_growth": 0.040,
+      "terminal_growth_reasoning": "Secular AI optical interconnect demand plus CPO/OCS optionality supports a terminal growth rate above the 2.5-3.0% range appropriate for generic EMS. 4.0% assumes Fabrinet maintains its position at the premium end of optical assembly and captures at least partial CPO/OCS transition. Conservative relative to a technology company but above generic industrial.",
+      "fcf_growth_path": "+35 / +28 / +22 / +15 / +10 / +8 / +6",
+      "fcf_growth_reasoning": "Year 1 (FY2027): 35% FCF growth as Building 10 CapEx concludes, supply constraints ease, and new programs ramp. Year 2 (FY2028): 28% as hyperscale Datacom and merchant programs mature. Year 3 (FY2029): 22% as HPC and CPO add to base. Year 4-5 (FY2030-2031): 15% then 10% as market share gains stabilize. Year 6-7 (FY2032-2033): 8% then 6% as growth decelerates toward terminal. FY2026 normalized FCFF estimated at $320M (OCF of $450M less maintenance CapEx of $130M), used as anchor."
+    }
+  },
+  "sources_used": [
+    "yfinance Ticker('FN') fast_info and info as of 2026-06-17: price $587.41, mkt cap $21.0B, shares 35.83M, EPS TTM $11.64",
+    "Quartr MCP: Fabrinet Q3 FY2026 earnings call transcript (event 550433, 2026-05-04) -- CEO Seamus Grady and CFO Csaba Sverha prepared remarks and Q&A",
+    "Quartr MCP: Fabrinet Q2 FY2026 earnings call transcript (event 408761, 2026-02-02) -- selected Q&A segments",
+    "Quartr MCP: Fabrinet annual financial statements (companyId 13452) FY2021-FY2025 income statement",
+    "Quartr MCP: Fabrinet event list showing Q4 FY2026 earnings scheduled 2026-08-17"
+  ],
+  "open_questions": [
+    "Exact customer concentration at 10-K level not parsed from filings -- Nvidia, AWS and coherent OEMs inferred from transcript language but specific revenue percentages not disclosed below 10% threshold",
+    "FY2025 annual revenue: approximately $3.43B derived from CEO statement of 19% YoY growth over FY2024 $2.883B; not read directly from a 10-K filing this session",
+    "HPC customer revenue breakdown within the $326M Non-Optical line not separately disclosed; $120-130M HPC estimate is inferred from the $150M fully-ramped target minus technology-transition push-out context",
+    "Q1 and Q2 FY2026 exact revenue figures were not directly retrieved; FY2026 total of approximately $4.65B is derived from CEO guidance statement of 34% YoY growth over FY2025",
+    "Gross margin by segment not disclosed; 12.1% blended GM in Q3 FY2026 from CFO remark"
+  ]
+}

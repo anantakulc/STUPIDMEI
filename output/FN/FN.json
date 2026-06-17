@@ -2,353 +2,436 @@
   "ticker": "FN",
   "name": "Fabrinet",
   "listings": "NYSE",
-  "sector": "Technology. Optical & Electronic Manufacturing",
-  "date": "2026-06-10",
-  "engine": "yfinance-data, equity-bull-case, equity-bear-case, dcf_compute, equity-audit",
+  "sector": "Technology. Optical and Electronic Manufacturing Services",
+  "date": "2026-06-17",
+  "engine": "Quartr MCP (transcripts, financials), yfinance-data, equity-bull-case, equity-bear-case, dcf_compute",
   "recommendation": {
     "action": "SELL",
     "tone": "negative",
-    "current_price": 586.0,
-    "target_12m": 234,
-    "upside_pct": -60.1,
-    "rationale": "0.25 x $144 (Bear) + 0.45 x $245 (Base) + 0.10 x $338 (Bull) + 0.20 x $268 (EV/EBITDA cross-check) = $234. A well-run optical assembler, but ~6x sales for a thin-margin contract manufacturer prices a flawless AI-optical decade; intrinsic value sits ~60% below spot.",
-    "next_earnings": "2026-08-17 (Q4 FY26 est. Datacom revenue and optical-program mix the prints that matter)"
+    "current_price": 587.41,
+    "target_12m": 282,
+    "upside_pct": -51.9,
+    "rationale": "20% x $149 (Bear) + 50% x $262 (Base) + 15% x $473 (Bull) + 15% x $338 (EV/EBITDA 20x cross-check) = $282. A genuinely excellent operator in AI optical assembly, but 42x trailing EBITDA and negative trailing FCF price in a decade of uninterrupted growth for a 12% gross-margin contract assembler with 0.24% insider ownership.",
+    "next_earnings": "2026-08-17 (Q4 FY26 est. -- Datacom supply-constraint resolution, hyperscale Datacom ramp color, and HPC $150M+ milestone are the prints that matter)"
   },
   "snapshot": [
     {
       "label": "Last close",
-      "value": "$586.00"
+      "value": "$587.41"
     },
     {
       "label": "52-week range",
-      "value": "$236.86 to $748.89"
+      "value": "$258.10 to $748.89"
     },
     {
-      "label": "Drawdown from high",
-      "value": "-21.8%"
+      "label": "Drawdown from 52w high",
+      "value": "-21.5%"
     },
     {
       "label": "1-year return",
-      "value": "+140% (approx)"
+      "value": "~+128% (from 52w low $258)"
     },
     {
       "label": "Market cap",
       "value": "$21.0B"
     },
     {
-      "label": "Shares out",
-      "value": "35.8M"
+      "label": "Enterprise value",
+      "value": "~$20.1B"
     },
     {
-      "label": "Net cash (est)",
-      "value": "~$0.9B"
+      "label": "Net cash",
+      "value": "+$941M (total cash $945M, total debt $4M)"
     },
     {
       "label": "FY25 revenue (est)",
-      "value": "~$3.4B"
+      "value": "~$3.43B (+19% YoY)"
     },
     {
-      "label": "EV/Sales (fwd, est)",
-      "value": "~5x"
+      "label": "FY25 EBITDA / margin (est)",
+      "value": "~$395M / 11.5%"
     },
     {
-      "label": "Operating margin (est)",
-      "value": "~12.5%"
+      "label": "FY25 FCF (est)",
+      "value": "~$200M (CapEx elevated vs norm)"
     },
     {
-      "label": "Primary method",
-      "value": "DCF (FCFF)"
+      "label": "TTM revenue",
+      "value": "$4.24B"
     },
     {
-      "label": "Cross-check",
-      "value": "EV/EBITDA 15x"
+      "label": "TTM EBITDA",
+      "value": "$480M"
     },
     {
-      "label": "Intrinsic vs price",
-      "value": "-57%"
+      "label": "TTM FCF",
+      "value": "-$79M (Building 10 CapEx peak)"
+    },
+    {
+      "label": "FY26E non-GAAP EPS (run rate)",
+      "value": "~$14-15 (Q3 $3.72 x 4 adj)"
+    },
+    {
+      "label": "Forward P/E (Street est)",
+      "value": "34.1x"
+    },
+    {
+      "label": "EV / EBITDA (TTM)",
+      "value": "42.0x"
+    },
+    {
+      "label": "Price / Book",
+      "value": "9.1x (book value $64/share)"
+    },
+    {
+      "label": "Gross margin (TTM)",
+      "value": "12.0%"
+    },
+    {
+      "label": "Operating margin (TTM)",
+      "value": "9.9%"
+    },
+    {
+      "label": "Beta",
+      "value": "~1.3"
+    },
+    {
+      "label": "Insider ownership",
+      "value": "0.24%"
+    },
+    {
+      "label": "Dividend yield",
+      "value": "None"
     }
   ],
   "thesis": [
-    "Fabrinet is the trusted contract manufacturer behind the industry's most complex optical modules, assembling the 800G and 1.6T transceivers and silicon-photonics engines that the leading optical and networking vendors design but do not build themselves.",
-    "Its precision optical-packaging expertise, scaled Thai manufacturing base and long relationships with the top transceiver and networking customers make it the default high-complexity optical assembler, riding the same AI-interconnect wave as the component makers.",
-    "But Fabrinet earns a ~12-13% operating margin as an assembler and now trades near 6x sales. Even a DCF that extrapolates the AI-optical ramp lands near $245 against a $586 stock. A great operator, priced like the chip designers it serves."
+    "Fabrinet is the world's only scaled precision optical assembler capable of building 800G and 1.6T transceivers, DCI coherent modules, and high-performance compute assemblies at the volumes the leading OEMs require -- a position cemented by 20+ years of tooling, process know-how, and a Thai manufacturing base that no competitor has replicated.",
+    "DCI revenue grew 90% year-over-year to $197M in Q3 FY2026, supply constraints depressed Datacom by $150-200M versus actual demand, and the HPC ramp targets $150M+ quarterly -- three simultaneous inflections mean FY2027 FCF will be materially higher than today's negative trailing-twelve-month figure once Building 10 CapEx is absorbed.",
+    "At 42x trailing EBITDA and 9x book value with negative trailing FCF and 0.24% insider ownership, the stock prices in a decade of frictionless growth for a 12% gross-margin contract assembler; the base-case DCF at 10.5% WACC returns $262, the blended target is $282, and the stock needs to fall 52% before the math works."
   ],
-  "bear_paragraph": "Fabrinet is a superbly run business that the market has decided to value as something it is not. At its core Fabrinet is a contract manufacturer: it assembles and tests optical modules that other companies design, earning a low-teens operating margin for precision and reliability rather than for owning intellectual property. That is a genuinely good version of a structurally modest business, and the AI-optical boom has been a windfall, filling its Thai lines with high-complexity 800G and 1.6T work. None of it justifies six times sales. The customer concentration is real, a handful of large transceiver and networking OEMs drive the bulk of revenue, and any one of them shifting programs, dual-sourcing, or moving toward co-packaged optics that changes the assembly footprint would dent the growth the multiple extrapolates. Co-packaged optics is the structural wildcard: it does not eliminate assembly, but it could move where the value sits and disrupt the pluggable-module volumes Fabrinet rides today. With only thirty-six million shares the stock is thin and moves hard in both directions, and it has roughly tripled off its low. Intrinsic DCF, even on a constructive ramp, says fair value is a little over four hundred dollars below the price. You are paying a designer's multiple for an assembler's economics.",
+  "bear_paragraph": "Fabrinet has executed exceptionally through the AI optical ramp, but the stock's $20B enterprise value prices in a business the company does not quite own. At 42x trailing EBITDA and 4.75x trailing revenue, with negative trailing free cash flow, the market is paying a semiconductor-IP-company multiple for a contract manufacturer whose gross margin has not exceeded 12.7% in five years and whose revenue depends on a small number of undisclosed customers who could redirect assembly programs, in-source production, or wait for co-packaged optics to change the economics. The bear case does not require a recession or a geopolitical crisis. It requires only that hyperscaler AI capex growth normalizes from 50%+ to the 15-20% range -- still a record spending pace -- which causes Datacom and DCI revenue growth to decelerate toward 10-15% annually. At 15% revenue growth, fair value for a 12% gross-margin contract assembler is 20-25x EBITDA or 2.0-2.5x sales, implying a stock price of $200-280. That is a 50-65% decline from $587. The Thai manufacturing concentration, the 0.24% insider ownership, and the nine-month Building 10 investment commitment all represent optionality on a growth rate that is already baked into the price at levels that leave no room for normal cyclical error.",
   "peers": [
     {
       "ticker": "FN",
-      "pe_ntm": 30.0,
-      "ev_ebitda": 24.0,
-      "rev_growth_ttm": 18.0,
-      "ytd": 55.0,
-      "y1": 140.0,
+      "pe_ntm": 34.1,
+      "ev_ebitda": 42.0,
+      "rev_growth_ttm": 35.6,
+      "ytd": 0.0,
+      "y1": 128.0,
       "highlight": true
     },
     {
       "ticker": "COHR",
-      "pe_ntm": 48.0,
-      "ev_ebitda": 50.0,
-      "rev_growth_ttm": 24.0,
-      "ytd": 120.0,
-      "y1": 360.0
+      "pe_ntm": 47.1,
+      "ev_ebitda": 58.0,
+      "rev_growth_ttm": 20.5,
+      "ytd": 0.0,
+      "y1": 383.0
     },
     {
       "ticker": "LITE",
-      "pe_ntm": 28.0,
-      "ev_ebitda": 22.0,
-      "rev_growth_ttm": 18.0,
-      "ytd": 60.0,
-      "y1": 110.0
+      "pe_ntm": 48.0,
+      "ev_ebitda": 124.0,
+      "rev_growth_ttm": 90.1,
+      "ytd": 0.0,
+      "y1": 907.0
     },
     {
       "ticker": "SANM",
-      "pe_ntm": 15.0,
-      "ev_ebitda": 9.0,
-      "rev_growth_ttm": 8.0,
-      "ytd": 40.0,
-      "y1": 70.0
+      "pe_ntm": 18.8,
+      "ev_ebitda": 19.0,
+      "rev_growth_ttm": 102.3,
+      "ytd": 0.0,
+      "y1": 175.0
     },
     {
       "ticker": "FLEX",
-      "pe_ntm": 16.0,
-      "ev_ebitda": 11.0,
-      "rev_growth_ttm": 5.0,
-      "ytd": 30.0,
-      "y1": 55.0
+      "pe_ntm": 20.6,
+      "ev_ebitda": 27.1,
+      "rev_growth_ttm": 16.9,
+      "ytd": 0.0,
+      "y1": 217.0
     },
     {
-      "ticker": "AAOI",
-      "pe_ntm": 40.0,
-      "ev_ebitda": 35.0,
-      "rev_growth_ttm": 30.0,
-      "ytd": 90.0,
-      "y1": 150.0
+      "ticker": "CLS",
+      "pe_ntm": 25.5,
+      "ev_ebitda": 32.2,
+      "rev_growth_ttm": 52.8,
+      "ytd": 0.0,
+      "y1": 189.0
     }
   ],
-  "peers_read": "Fabrinet sits awkwardly between two cohorts. Against optical-component makers Coherent and Lumentum it grows similarly but owns less IP, yet it trades at a comparable or higher multiple. Against its true economic peers, contract manufacturers Sanmina and Flex at 9-11x EV/EBITDA, it trades at more than double on growth that is faster but built on the same thin-margin assembly model. The market is pricing Fabrinet as an optical-technology play; its income statement says contract manufacturer. That gap between perceived and actual business model is the core of the valuation risk.",
+  "peers_read": "The peer set is uniformly expensive. Coherent at 58x EBITDA and Lumentum at 124x are pricing in optical-IP-company economics that Fabrinet's contract-assembly model doesn't share. Sanmina's 19x and Flex's 27x are the true EMS comps, and FN at 42x EBITDA sits 50-100% above them. Celestica at 32x is the closest structural analog: a complex-EMS company with significant AI infrastructure exposure. At 34x forward P/E, Fabrinet is cheaper than COHR and LITE on that metric, which bears watching. But the core issue is not how Fabrinet ranks within an expensive sector -- it's that the entire optical-AI EMS sector is pricing in sustained 30-50% growth indefinitely, and Fabrinet's contract-manufacturer economics cap the upside in any return-to-normalcy scenario.",
   "bull_catalysts": [
     {
       "id": 1,
-      "title": "1.6T optical assembly ramp",
-      "body": "As the industry moves from 800G to 1.6T, dollar content and assembly complexity per module rise, and Fabrinet is designed into the leading programs as the build partner of choice."
+      "title": "DCI +90% YoY: every major coherent OEM is a customer, 800G ZR not yet in volume",
+      "body": "Data Center Interconnect revenue hit $197M in Q3 FY2026 (quarter ended March 27, 2026), up 90% year-over-year and 38% sequentially. Fabrinet builds both 400G ZR and 800G ZR modules plus embedded coherent line cards for all major DCI OEMs. CEO Seamus Grady noted on May 4, 2026 that 800G ZR 'is ramping' but not yet at high volume. Next-generation 800G ZR+ and 1.6T coherent modules remain in development across the customer base. Each generation increases dollar content per port and assembly complexity. The $197M quarterly rate looks like a floor if DCI demand tracks hyperscaler campus-interconnect capex through FY2027."
     },
     {
       "id": 2,
-      "title": "Default high-complexity assembler",
-      "body": "Fabrinet's precision optical-packaging and test capability is hard to replicate at scale, making it the trusted partner for the most demanding transceiver and silicon-photonics work."
+      "title": "Datacom supply constraint: demand 'far exceeded shipments' -- the unlock is quarters away",
+      "body": "Datacom revenue was $260M in Q3 FY2026, up only 4% year-over-year and down 6% sequentially despite demand 'far exceeding' shipments per CEO Grady (May 4, 2026). The bottlenecks: lasers, memory (global shortage), and certain ASICs. Without constraints, Grady said Datacom 'would have been a new record by a wide margin.' As the supply ecosystem catches up over the next two to three quarters, Datacom should revert toward actual demand, which management believes exceeds $350-400M per quarter at peak. That unlock represents $90-140M of incremental quarterly revenue from today's constrained baseline."
     },
     {
       "id": 3,
-      "title": "Customer relationships with optical leaders",
-      "body": "Long-standing relationships with the top transceiver and networking vendors give Fabrinet first call on new high-volume optical programs."
+      "title": "HPC: $150M+ quarterly run rate is one quarter away, follow-on programs awarded",
+      "body": "Non-Optical Communications reached $326M in Q3 FY2026, +52% year-over-year, driven primarily by high-performance compute assembly for a major hyperscaler (AWS in Q2 FY2026 context). The fully ramped target for the current HPC program is 'north of $150M per quarter' per management. A technology transition from first- to second-generation product pushed the milestone out by one quarter (May 4, 2026). Beyond the current program, Fabrinet has been awarded follow-on business for additional HPC products. Management said they're 'very optimistic about the long-term outlook for High-Performance Compute overall.'"
     },
     {
       "id": 4,
-      "title": "Scaled, cost-advantaged Thai base",
-      "body": "A large, efficient Thai manufacturing footprint offers cost and capacity advantages and supply-chain resilience outside China."
+      "title": "Two new hyperscale Datacom programs: qualified and shipping as of May 2026",
+      "body": "Fabrinet announced on May 4, 2026 that it has completed qualification and begun shipping two new Datacom programs directly for hyperscalers -- both 800G scale-out products. Previously, Datacom revenue was concentrated in one large OEM (Nvidia supply chain). The new direct-hyperscaler channel and multiple merchant vendor wins diversify the revenue base. CEO Grady described contracts in place, purchase orders received, and product already shipping in early qualification quantities. Both are expected to contribute 'more meaningfully to FY2027 than Q4.'"
     },
     {
       "id": 5,
-      "title": "Silicon-photonics and CPO assembly option",
-      "body": "If co-packaged optics and silicon-photonics scale, the complex assembly and test could flow to Fabrinet, turning a perceived threat into a content opportunity."
+      "title": "Co-Packaged Optics: Raytek investment + 3 programs underway",
+      "body": "Fabrinet completed a $32M private placement in Raytek Semiconductor in April 2026 for approximately 14% of the company. Raytek is developing semiconductor packaging technology for co-packaged optics. Three separate CPO programs are in development with customers. CEO Grady stated on May 4, 2026: 'CPO is a lot more real now than it has ever been. We feel we're well ahead of our competitors.' Rather than CPO being a threat, Fabrinet is positioning to be the assembler of the CPO units themselves -- high-complexity packaging and test at potentially higher ASP per unit than the pluggable modules CPO would replace. Revenue is 'largely in front of us.'"
     },
     {
       "id": 6,
-      "title": "Steady margin and strong FCF",
-      "body": "A consistent low-teens operating margin, disciplined cost control and a net-cash balance sheet produce reliable free cash flow and buybacks."
+      "title": "Building 10: $3B revenue capacity at $130M CapEx, opening ceremony January 2027",
+      "body": "Building 10 at the Chonburi campus (2 million sq ft) adds approximately $3B of annual revenue capacity at a total CapEx of $130-132M. Management expects an additional floor to be commissioned by September 2026, with the full building complete by January 2027. The Navanakorn factory (8 acres, $11M acquisition Q4 FY2026) adds $250M initially with room for a second factory. Total capacity after these additions: approximately $8.5B annually. CEO Grady noted on May 4, 2026 that Building 10 downside is 'about 50 basis points of gross margin headwind' if demand does not fill it -- a negligible downside for $3B of revenue optionality."
     },
     {
       "id": 7,
-      "title": "Non-optical diversification",
-      "body": "Automotive, industrial and sensor assembly provide a secondary, less AI-correlated revenue base."
+      "title": "Optical Circuit Switching: another unpriced optionality stream",
+      "body": "Optical circuit switches are emerging as a key architecture for large AI cluster interconnects, with hyperscalers exploring OCS to replace electrical switching fabrics. CEO Grady stated in Q2 and Q3 FY2026 that Fabrinet is 'engaged on a number of fronts' with OCS and that 'the technology is very similar to products we already make.' OCS opportunities are 'incremental to' the new merchant Datacom programs. Revenue is 'largely in front of us' as of May 2026. The technology adjacency creates a potential pull-forward into production without a new learning curve."
     },
     {
       "id": 8,
-      "title": "Scarcity of optical-assembly exposure",
-      "body": "Fabrinet is the cleanest listed proxy for AI optical-module assembly, attracting thematic flows that support the multiple."
+      "title": "10-year track record: 16% revenue CAGR, 22% EPS CAGR through the full optical cycle",
+      "body": "CEO Grady disclosed on May 4, 2026: over the 10 years to FY2025, Fabrinet compounded revenue at approximately 16% and EPS at approximately 22% annually. FY2025 grew 19% versus FY2024. FY2026 is tracking to 34-35% versus FY2025. The EPS compounding above revenue growth reflects operating leverage from holding SG&A at 1.4% of revenue and steady gross margin management. A company that has compounded EPS at 22% for a decade without a balance sheet blow-up is not a typical cyclical EMS bet."
+    },
+    {
+      "id": 9,
+      "title": "$946M net cash enables strategic investments and buybacks without issuing equity",
+      "body": "Fabrinet ended Q3 FY2026 with $946M in cash and short-term investments against $4.4M of total debt -- a structurally net-cash balance sheet that funds the $130M Building 10 CapEx, the $32M Raytek investment, and the $11M Navanakorn acquisition entirely from existing resources. The share repurchase program is active; management noted it was 'not meaningful' in Q3 but expects to be active again. The clean balance sheet means no equity dilution and no debt-service drag, compounding EPS per-share growth as the business scales."
+    },
+    {
+      "id": 10,
+      "title": "FX and margin tailwind: 50bps gross margin headwind from baht is reversible",
+      "body": "Fabrinet manufactures in Thai baht and bills in USD. The baht appreciated roughly 10% versus the USD in the twelve months to March 2026, creating approximately 30-50 basis points of quarterly gross margin headwind. CFO Csaba Sverha noted on May 4, 2026 that the hedging program partially offsets this. At the current $1.25B quarterly revenue rate, every 10 basis points of gross margin improvement is worth approximately $5M per quarter. If the baht stabilizes or weakens modestly from multi-year highs, the FX headwind reverses and gross margin recovers toward 12.5-12.7% without any operating improvement required."
     }
   ],
   "bear_breakers": [
     {
       "id": 1,
-      "title": "6x sales for an assembler",
-      "body": "Fabrinet earns a ~12-13% operating margin assembling others' designs, yet trades near 6x sales. Contract manufacturers trade at 1-2x. Intrinsic DCF says ~$245."
+      "title": "42x trailing EBITDA for a 12% gross-margin assembler: no safety margin",
+      "body": "Fabrinet trades at 42x trailing EBITDA ($480M) on an EV of $20.1B. Contract-manufacturer peers Flex and Sanmina trade at 19-27x EBITDA. To justify 42x, Fabrinet must roughly triple its EBITDA over five to six years -- from $480M to $1.4B -- while maintaining a premium terminal multiple. That requires sustained revenue growth of 18-22% annually and margin expansion from 11% to 14-15%. Either leg failing cuts implied value 30-40% instantly. There is zero safety margin at 42x EBITDA for a business earning 12 cents per revenue dollar."
     },
     {
       "id": 2,
-      "title": "Customer concentration",
-      "body": "A few large transceiver/networking OEMs drive most revenue. One shifting programs or dual-sourcing steps growth down sharply, and Fabrinet owns none of the IP."
+      "title": "Negative trailing FCF of -$79M despite 10% net margins: the earnings-to-cash gap is $500M",
+      "body": "Trailing twelve-month FCF is negative $79M (yfinance, June 2026) against TTM OCF of $257M, implying approximately $336M of trailing CapEx. TTM net income is approximately $421M (9.9% margin on $4.24B revenue). The gap between reported earnings and cash flow is $500M. Building 10 explains it, but investors pay $21B for a business currently burning cash. At $21B market cap, FCF yield is -0.4%. The forward FCF story requires both revenue growth and CapEx normalization to happen simultaneously -- a two-variable bet that has not yet materialized."
     },
     {
       "id": 3,
-      "title": "Co-packaged optics overhang",
-      "body": "CPO could move the optical engine into the switch package, disrupting the pluggable-module volumes Fabrinet assembles today; even partial adoption caps the extrapolated TAM."
+      "title": "Datacom 'supply constraint' could be inventory digestion, not deferred demand",
+      "body": "Optical supply chains have a 40-year history of bullwhip cycles. The alternative to the supply-constraint narrative: customers built Datacom transceiver inventory aggressively in H2 calendar 2025 ahead of tariff concerns and are now digesting it while signaling demand to Fabrinet. If the Q3 FY2026 Datacom plateau is inventory normalization rather than component shortage, the 'pent-up demand' bulls expect in FY2027 does not arrive. Revenue stays flat or declines, and investors at 4.75x sales discover the growth rate is low single digits -- triggering multiple compression from 42x EBITDA toward 20x, cutting market cap in half."
     },
     {
       "id": 4,
-      "title": "No IP, no pricing power",
-      "body": "Fabrinet competes on execution and capacity, not technology ownership; the customer can move the work, capping margins and durability."
+      "title": "HPC: one customer, $120-130M quarterly, no public take-or-pay contract",
+      "body": "Non-Optical Communications at $326M quarterly (+52% YoY) is dominated by one HPC hyperscaler. The fully ramped target ($150M+ quarterly) was already pushed out one quarter due to a technology transition (May 2026). Fabrinet has not disclosed a long-term take-or-pay manufacturing agreement. If this customer shifts HPC assembly in-house, accelerates to a different supplier, or reduces rack orders due to AI capex rationalization, Non-Optical Communications could fall 40-50% with no warning. At 27% of quarterly revenue, an HPC miss costs 10-15 points of overall growth rate."
     },
     {
       "id": 5,
-      "title": "Thin float, high volatility",
-      "body": "With ~36M shares the stock gaps hard in both directions and is exposed to thematic-flow reversals."
+      "title": "CPO is existential for pluggable volumes if it reaches 20-30% of switch ports by 2028-2030",
+      "body": "Co-packaged optics integrates the optical engine directly into the switch package, eliminating the pluggable transceiver that Fabrinet assembles today. Fabrinet's $32M Raytek stake (14% of Raytek) is a hedge, not a guarantee of CPO assembly revenue. If CPO takes 20-30% of scale-up switch ports by 2028-2030 -- plausible given NVIDIA Quantum-X and Broadcom Tomahawk roadmaps -- and the CPO assembly migrates to ASIC packaging houses rather than EMS firms, Fabrinet loses both Datacom volume and a portion of DCI coherent-module content. Management's 'we will be the assembler of the CPO unit' thesis has no public customer program confirmation."
     },
     {
       "id": 6,
-      "title": "AI-optical cycle risk",
-      "body": "The datacom surge driving growth is a capex wave that will digest; an assembler levered to it de-rates fastest when it does."
+      "title": "0.24% insider ownership: management has minimal financial exposure to downside",
+      "body": "CEO Grady and CFO Sverha hold only 0.24% of outstanding shares (yfinance, June 2026) -- approximately $50M at current prices, modest relative to compensation over the AI-optics bull run. The buyback program was 'not meaningful' in Q3 FY2026 despite $946M in cash and a share count of only 35.8M. When executives with 0.24% ownership sit on a billion dollars of cash and do not repurchase stock at scale, either they don't view the stock as cheap or they're prioritizing growth optionality. Neither framing is bullish for investors paying $587."
     },
     {
       "id": 7,
-      "title": "Margins are structurally capped",
-      "body": "Even the bull case reaches only ~14% operating margin; this is not a technology-margin business dressed in an AI multiple."
+      "title": "Thailand single-country manufacturing: 2011 floods wiped out 14% of global hard-drive output",
+      "body": "Essentially 100% of Fabrinet's manufacturing is in Thailand -- Chonburi campus (primary) and Pinehurst (secondary). The 2011 Thailand floods devastated hard-drive manufacturing in the same Chonburi and Ayutthaya provinces over six months. At a $20B market cap dependent on one country's manufacturing output, a climate event, political disruption, or US trade-policy reclassification of Thai goods could halt production for months. Fabrinet has not made a public commitment to geographic manufacturing diversification beyond its existing Thailand footprint."
     },
     {
       "id": 8,
-      "title": "Tripled on momentum",
-      "body": "Up roughly 3x off its low and owned by thematic flows, the stock has more than discounted the AI-optical assembly thesis."
+      "title": "Gross margin capped at 12-14%: FX headwinds compound, no IP to drive pricing power",
+      "body": "Five-year gross margin range: 11.8-12.7%. The Thai baht appreciated roughly 10% versus the USD in the twelve months to March 2026, costing approximately 30-50 basis points of quarterly gross margin. The ceiling on EBIT margin is approximately 11-12% in any scenario management has guided to. Fabrinet owns no product IP; the customer can move the work. Each 5% baht appreciation costs approximately 15-20 basis points of gross margin, and hedging costs are rising. At the current quarterly revenue rate of $1.25B+, cumulative FX headwinds have already cost $50-60M annually in gross profit versus the FY2023 margin peak."
+    },
+    {
+      "id": 9,
+      "title": "AI optical capex cycle: hyperscalers guide $300B+ in annual AI infra spending but execution follows S-curves with sharp digestion phases",
+      "body": "Meta, Microsoft, Google, and Amazon have collectively guided to $300B+ annually in AI infrastructure investment. But optical transceiver buyers are intermediaries: Nvidia, Arista, Coherent. When hyperscaler capex enters digestion -- as it did in H1 2023 after the COVID-era build -- optical transceiver demand fell 20-40% over four quarters. A second digestion phase in H2 2026 or H1 2027, triggered by slower AI monetization or GPU supply normalization, would cut Fabrinet's growth rate toward 10-15% for two to four quarters. At 10-15% growth, a 42x-to-20x EBITDA re-rate cuts the stock by 50% independent of earnings."
+    },
+    {
+      "id": 10,
+      "title": "Price/Book 9.1x for a capital-intensive factory business: equity is priced as IP, not steel and clean rooms",
+      "body": "Fabrinet trades at 9.1x book value (yfinance, June 2026) versus tangible book of $64.33/share. Contract manufacturers -- including Flex, Sanmina, and Celestica -- trade at 1.5-3x book because their assets are real estate, equipment, and receivables, not intellectual property. At 9.1x book, the entire equity value rests on future earnings expectations, not asset protection. If those expectations disappoint -- by even one year's delay in the Datacom recovery or HPC ramp -- the book value floor at $64 offers no support against a multiple compression that starts at $587."
     }
   ],
   "industry_type": "non-bank",
   "dcf_scenarios": [
     {
       "scenario": "Bear",
-      "wacc": "12.50%",
-      "terminal_g": "2.00%",
-      "fcf_path": "FCF x0.72 vs base",
-      "implied_px": 144.0
+      "wacc": "12.5%",
+      "terminal_g": "2.0%",
+      "fcf_path": "Base x0.72",
+      "implied_px": 149.0
     },
     {
       "scenario": "Base",
-      "wacc": "10.80%",
-      "terminal_g": "3.00%",
-      "fcf_path": "base FCF path",
-      "implied_px": 245.0
+      "wacc": "10.5%",
+      "terminal_g": "3.0%",
+      "fcf_path": "+35 / +18 / +11 / +9 / +8 / +6 / +5 / +4%",
+      "implied_px": 262.0
     },
     {
       "scenario": "Bull",
-      "wacc": "10.50%",
-      "terminal_g": "3.50%",
-      "fcf_path": "FCF x1.30 vs base",
-      "implied_px": 338.0
+      "wacc": "9.0%",
+      "terminal_g": "4.0%",
+      "fcf_path": "Base x1.30",
+      "implied_px": 473.0
     }
   ],
   "synthesis_paths": [
     {
-      "label": "Bull",
-      "prob": 0.1,
-      "outcome_range": "$320 to 360",
-      "description": "1.6T and CPO assembly flow to Fabrinet at scale and margins expand above plan; even so intrinsic value stays below the current price."
+      "label": "Bear",
+      "prob": 0.2,
+      "outcome_range": "$130 to $165",
+      "description": "Hyperscaler capex digestion slows Datacom and DCI growth; customer concentration event or CPO architectural shift compresses the multiple from 42x to 15-20x EBITDA without a fundamental collapse in the business."
     },
     {
       "label": "Base",
-      "prob": 0.45,
-      "outcome_range": "$230 to 270",
-      "description": "Datacom-led growth decelerates and margins inch toward 14%; DCF (~$245) and the EV/EBITDA cross-check (~$268) frame fair value well under spot."
+      "prob": 0.5,
+      "outcome_range": "$245 to $280",
+      "description": "Supply constraints ease, new Datacom programs ramp in FY2027, HPC stabilizes at $150M+ quarterly; revenue growth decelerates from 35% to 18% to 10% range and margins tick to 11.5%; DCF implies $262 at 10.5% WACC."
     },
     {
-      "label": "Bear",
-      "prob": 0.25,
-      "outcome_range": "$130 to 160",
-      "description": "A key customer in-sources or shifts to co-packaged optics and the multiple compresses toward contract-manufacturing norms."
+      "label": "Bull",
+      "prob": 0.15,
+      "outcome_range": "$450 to $510",
+      "description": "CPO/OCS program wins materialize with named customers, supply constraints release explosively, Building 10 fills faster than modeled; FCF margin expands to 10%+ but intrinsic value even here ($473) is below the current price."
     }
   ],
   "recommendation_table": [
     {
       "action": "Direction",
-      "detail": "SELL / avoid on valuation. Excellent operator, but ~6x sales for an assembler is unsupportable; intrinsic ~$234."
+      "detail": "SELL / avoid on valuation. Outstanding operator in AI optical assembly, but 42x trailing EBITDA and negative trailing FCF prices in a decade of frictionless growth for a 12% gross-margin assembler. Blended intrinsic value $282 vs $587 stock."
     },
     {
       "action": "12m target",
-      "detail": "$234 (25% x $144 + 45% x $245 + 10% x $338 + 20% x $268 cross-check)."
+      "detail": "$282 (20% x $149 Bear + 50% x $262 Base + 15% x $473 Bull + 15% x $338 EV/EBITDA 20x cross-check). All four methods say below spot."
     },
     {
       "action": "Existing longs",
-      "detail": "Take profits after a ~3x run; the assembly thesis is more than priced."
+      "detail": "Take profits on the 128% 52-week run. The multiple has expanded faster than the business. Trim ahead of Q4 FY2026 print (est 2026-08-17) and use any supply-constraint-resolution pop to exit further."
     },
     {
       "action": "New money",
-      "detail": "Avoid at ~6x sales. Revisit nearer contract-manufacturing multiples or on a major de-rate."
+      "detail": "Avoid at 4.75x trailing revenue and 42x EBITDA with negative FCF. Revisit near $300-320 (closer to base DCF) or on a confirmed HPC + CPO double-win that changes the earnings power."
     },
     {
       "action": "Hedge",
-      "detail": "Thin float makes downside gaps acute; long holders should consider collars."
+      "detail": "Thin float (35.8M shares) makes downside gaps acute. Long holders should consider collars or protective puts ahead of Q4 earnings. The stock has already corrected 22% from its $748 high."
     },
     {
       "action": "Position sizing",
-      "detail": "If held for the theme, keep small; valuation is the dominant risk."
+      "detail": "If held for the optical-AI theme, keep small and size to tolerate the stock re-testing $260-300 range, which the DCF supports even on optimistic assumptions."
     }
   ],
   "catalysts_to_watch": [
-    "Q4 FY26 print (est 2026-08-17): datacom revenue and optical-program mix.",
-    "1.6T program ramp and any new optical-assembly wins.",
-    "Customer-concentration commentary and any program shifts.",
-    "Co-packaged-optics roadmap signals from optical and switch vendors.",
-    "Operating-margin trajectory versus the ~14% ceiling.",
-    "Non-optical (automotive/industrial) diversification trends.",
-    "Buyback pace given the net-cash balance sheet."
+    "Q4 FY2026 print (est 2026-08-17): Datacom supply-constraint resolution and whether revenue reverts toward actual demand; HPC hitting $150M milestone; gross margin trajectory.",
+    "HPC program technology transition completion: management expects $150M quarterly run rate 'one quarter away' as of May 2026 -- Q4 print confirms or extends.",
+    "New hyperscale Datacom and merchant vendor programs: any meaningful ramp from the two 800G hyperscale programs and the multiple merchant wins.",
+    "CPO and OCS program announcements: first named customer CPO or OCS volume-manufacturing win would change the bull case materially.",
+    "Gross margin and FX trend: Thai baht move versus USD; any sign of margin recovery toward 12.5-12.7% range would support operating leverage thesis.",
+    "Building 10 commissioning pace: additional floor by September 2026, full building January 2027; any acceleration or delay signals demand confidence.",
+    "Share repurchase activity: management said buyback 'active but not meaningful' in Q3 FY2026 -- a step-up in repurchases at $600+ would be a credibility test."
   ],
   "data_gaps": [
-    "yfinance fundamentals were thin this session; revenue (~$3.4B), net cash (~$0.9B) and margins are from general disclosure.",
-    "Per-customer concentration is undisclosed at line-item level; optical-OEM exposure is inferred from industry reporting.",
-    "Forward EBITDA (~$0.58B) used in the cross-check is an estimate.",
-    "Short interest and positioning feeds were not retrievable this session."
+    "YTD return not retrieved -- would require Jan 1 2026 price from a price history endpoint.",
+    "Analyst consensus PT (mean/median) not retrieved -- Bloomberg or Reuters consensus not available via current tools.",
+    "Short interest detail beyond 8.1% float percentage not retrieved.",
+    "Per-customer revenue concentration not disclosed below the 10% threshold in FN 10-K filings; Nvidia, AWS, and coherent OEM exposure estimated from transcript language.",
+    "FY2025 full year revenue is derived from CEO statement of 19% YoY growth over FY2024 $2.883B ($3.43B); direct 10-K filing not read this session.",
+    "FY2025 EBITDA and FCF are estimates based on margin rates from Q4 FY2025 annual income statement data; segment-level margins not disclosed.",
+    "ADTV and 30-day realized volatility not retrieved.",
+    "Insider transaction dates and dollar values not retrieved from yfinance for recent filings."
   ],
   "business_overview": {
-    "summary": "Fabrinet is a precision optical and electronic contract manufacturer based in Thailand. It provides advanced optical packaging, assembly and testing for the world's leading optical-communications and networking companies, building the complex transceivers and photonic modules those firms design but outsource.",
-    "business_model": "Fabrinet earns manufacturing fees to assemble and test customers' optical and electro-mechanical products, concentrated in datacom/telecom optical modules with a secondary base in automotive, industrial, medical and sensor products. It owns the process and manufacturing know-how, not the product IP; margins are low-teens, reflecting the contract-manufacturing model.",
+    "summary": "Fabrinet is a Thailand-based precision optical and electronic contract manufacturer. It provides advanced optical packaging, assembly, and test for the world's leading optical-communications, networking, and high-performance compute companies, building the complex transceivers, photonic modules, and electronic assemblies those firms design but choose not to manufacture in-house. Founded in 2000, listed on NYSE, headquartered in San Jose with primary manufacturing at the Chonburi campus (Thailand) and secondary facilities at Pinehurst (Thailand).",
+    "business_model": "Fabrinet earns manufacturing service fees to assemble and test customers' products. Revenue is concentrated in optical communications (DCI coherent modules, Datacom 800G/1.6T transceivers, and other telecom-optical components) and non-optical communications (high-performance compute assembly, automotive, industrial, medical, sensors). Customers own the product IP and bill-of-materials designs; Fabrinet owns the process know-how, equipment, and manufacturing real estate. Gross margins are 12%, operating margins 10%, reflecting the contract-manufacturing model, offset by high asset turnover and compounding per-share EPS growth from operating leverage and buybacks.",
     "segments": [
       {
-        "name": "Optical communications",
-        "revenue_share_pct": 80,
-        "growth_yoy_pct": null,
+        "name": "Optical Communications -- Datacom",
+        "revenue_share_pct": 21,
+        "growth_yoy_pct": 4,
         "margin_pct": null,
-        "description": "Datacom (800G/1.6T transceivers, silicon-photonics engines, the AI growth engine) and telecom transport optics for the leading optical and networking OEMs."
+        "description": "800G and 1.6T transceiver assembly (primarily 200Gb/lane) for AI/HPC cluster interconnects. Supply-constrained in Q3 FY2026 -- demand 'far exceeded' shipments per CEO May 2026. Expanding to hyperscale-direct and merchant-vendor programs in FY2027."
       },
       {
-        "name": "Non-optical",
-        "revenue_share_pct": 20,
+        "name": "Optical Communications -- DCI (Data Center Interconnect)",
+        "revenue_share_pct": 16,
+        "growth_yoy_pct": 90,
+        "margin_pct": null,
+        "description": "Coherent telecom modules (400G ZR, 800G ZR) for metro and long-haul data center interconnect. $197M in Q3 FY2026, +90% YoY, +38% QoQ. All major DCI OEMs are customers. 800G ZR ramping; next-gen products in development."
+      },
+      {
+        "name": "Optical Communications -- Other Telecom",
+        "revenue_share_pct": 36,
         "growth_yoy_pct": null,
         "margin_pct": null,
-        "description": "Automotive, industrial, medical and sensor assembly; steadier, less AI-correlated diversification."
+        "description": "Telecom transport, satellite communications, and optical line systems components. Approximately $432M in Q3 FY2026 (derived). Satellite comms growing steadily as a contributor."
+      },
+      {
+        "name": "Non-Optical Communications",
+        "revenue_share_pct": 27,
+        "growth_yoy_pct": 52,
+        "margin_pct": null,
+        "description": "High-performance compute assembly (GPU infrastructure for one major hyperscaler), automotive electronics, industrial, medical, and sensor assembly. $326M in Q3 FY2026, +52% YoY. HPC is the dominant driver."
       }
     ],
     "geographic_revenue": [],
     "customers": [
       {
-        "name": "Leading transceiver/optical OEMs",
+        "name": "Nvidia supply chain (primary Datacom OEM)",
         "revenue_share_pct": null,
-        "importance": "Core datacom demand; concentrated"
+        "importance": "Dominant Datacom customer for 800G/1.6T transceivers; supply-constrained in Q3 FY2026; concentration risk"
       },
       {
-        "name": "Networking equipment vendors",
+        "name": "HPC hyperscaler (AWS context, Q2 FY2026)",
         "revenue_share_pct": null,
-        "importance": "Optical content for switches/routers"
+        "importance": "Primary Non-Optical Communications driver; targeting $150M+ quarterly run rate"
       },
       {
-        "name": "Automotive & industrial OEMs",
+        "name": "New hyperscale Datacom customers (2 programs)",
         "revenue_share_pct": null,
-        "importance": "Non-optical diversification"
+        "importance": "Newly qualified 800G scale-out programs; ramping from small quantities to volume in FY2027"
+      },
+      {
+        "name": "DCI module OEMs (all major coherent vendors)",
+        "revenue_share_pct": null,
+        "importance": "All major DCI OEMs are customers per CEO; undisclosed individual shares"
       }
     ]
   },
   "industry_position": {
-    "market_overview": "AI clusters require vast optical interconnect, and the optical-component vendors that design transceivers largely outsource the complex assembly and test to specialists. Fabrinet is the leading high-complexity optical assembler, competing with in-house manufacturing and other contract manufacturers, with co-packaged optics as the key structural wildcard.",
-    "tam_usd_bn": 30,
-    "moat": "Precision optical-packaging and test capability at scale is genuinely hard to replicate and creates real switching friction on complex programs. But it is operational know-how, not product IP; the customer owns the design and can move the work, which caps the moat and the margin.",
+    "market_overview": "AI infrastructure buildout is forcing a once-in-a-decade upgrade of data center optical interconnect. Hyperscalers are installing 800G transceivers at scale and planning 1.6T deployments for FY2027-2028 cluster builds. DCI demand grows independently as AI training clusters split across geographies. Co-packaged optics is real but is a mid-decade ramp; pluggable modules will dominate through at least 2027-2028 for most scale-out applications. Fabrinet sits at the center of this, with relationships across every major optical and networking OEM and the manufacturing scale that newer, smaller optical companies cannot match.",
+    "tam_usd_bn": 40,
+    "moat": "Precision optical packaging and test at the 800G-and-above node requires proprietary tooling, yield management expertise for multi-element photonic assemblies, and real manufacturing scale -- a learning curve compounding over 20+ years. Fabrinet's Thailand cost base (USD-billed, baht-cost) creates a structural cost advantage. Customers specifically want an assembler with no competing products, which is a positive selection factor for a pure-play contract manufacturer. The combination of scale, process expertise, and 'no competing product' positioning creates meaningful switching friction on complex programs that take 12-18 months to qualify. The moat is operational know-how, not product IP; the customer owns the design and can move the work, capping margins and durability.",
     "competitors": [
       {
-        "name": "In-house manufacturing (COHR, etc.)",
-        "description": "Vertically integrated optical makers that assemble their own modules, bypassing Fabrinet."
+        "name": "In-house manufacturing (COHR, LITE, Sumitomo)",
+        "description": "Vertically integrated optical component makers that assemble their own modules, bypassing Fabrinet for a subset of their volume"
       },
       {
-        "name": "Sanmina / Flex",
-        "description": "Large contract manufacturers that can take optical/electro-mechanical assembly work."
+        "name": "Sanmina / Flex / Celestica",
+        "description": "Large contract manufacturers that can take optical and electro-mechanical assembly work; lower optical expertise, trade at 19-32x EBITDA"
       },
       {
-        "name": "Asian optical EMS",
-        "description": "Lower-cost regional assemblers competing on price for higher-volume programs."
+        "name": "Asian optical EMS (unrated)",
+        "description": "Lower-cost regional assemblers in China, Vietnam, Malaysia competing on price for higher-volume, lower-complexity programs"
+      },
+      {
+        "name": "ASIC packaging houses (if CPO takes share)",
+        "description": "If co-packaged optics migrates optical assembly inside the ASIC package, OSAT firms could capture assembly economics Fabrinet currently holds"
       }
     ]
   },
@@ -356,88 +439,88 @@
     {
       "fy": "FY22",
       "revenue_usd_b": 2.26,
-      "revenue_growth_yoy_pct": null,
-      "gross_margin_pct": 12.4,
-      "ebitda_usd_m": 290,
-      "ebitda_margin_pct": 12.8,
-      "net_income_usd_m": 215,
-      "fcf_usd_m": 180,
-      "eps": 5.9
+      "revenue_growth_yoy_pct": 20.4,
+      "gross_margin_pct": 12.3,
+      "ebitda_usd_m": 249,
+      "ebitda_margin_pct": 11.0,
+      "net_income_usd_m": 200,
+      "fcf_usd_m": 165,
+      "eps": 5.43
     },
     {
       "fy": "FY23",
       "revenue_usd_b": 2.65,
-      "revenue_growth_yoy_pct": 17.3,
-      "gross_margin_pct": 12.6,
-      "ebitda_usd_m": 345,
-      "ebitda_margin_pct": 13.0,
-      "net_income_usd_m": 265,
-      "fcf_usd_m": 210,
-      "eps": 7.2
+      "revenue_growth_yoy_pct": 16.9,
+      "gross_margin_pct": 12.7,
+      "ebitda_usd_m": 304,
+      "ebitda_margin_pct": 11.5,
+      "net_income_usd_m": 248,
+      "fcf_usd_m": 215,
+      "eps": 6.79
     },
     {
       "fy": "FY24",
-      "revenue_usd_b": 2.93,
-      "revenue_growth_yoy_pct": 10.6,
-      "gross_margin_pct": 12.6,
-      "ebitda_usd_m": 390,
-      "ebitda_margin_pct": 13.3,
-      "net_income_usd_m": 300,
-      "fcf_usd_m": 250,
-      "eps": 8.2
+      "revenue_usd_b": 2.88,
+      "revenue_growth_yoy_pct": 9.0,
+      "gross_margin_pct": 12.4,
+      "ebitda_usd_m": 334,
+      "ebitda_margin_pct": 11.6,
+      "net_income_usd_m": 296,
+      "fcf_usd_m": 240,
+      "eps": 8.17
     },
     {
       "fy": "FY25",
-      "revenue_usd_b": 3.4,
-      "revenue_growth_yoy_pct": 16.0,
-      "gross_margin_pct": 12.8,
-      "ebitda_usd_m": 460,
-      "ebitda_margin_pct": 13.5,
-      "net_income_usd_m": 360,
-      "fcf_usd_m": 300,
-      "eps": 9.9
+      "revenue_usd_b": 3.43,
+      "revenue_growth_yoy_pct": 19.0,
+      "gross_margin_pct": 12.1,
+      "ebitda_usd_m": 395,
+      "ebitda_margin_pct": 11.5,
+      "net_income_usd_m": 348,
+      "fcf_usd_m": 200,
+      "eps": 9.23
     }
   ],
   "management": {
     "ceo": "Seamus Grady, CEO since 2017",
     "cfo": "Csaba Sverha, CFO",
-    "insider_ownership_pct": 2.0,
-    "capital_allocation_history": "Fabrinet has been a disciplined operator: steady capacity investment in Thailand, a net-cash balance sheet and consistent buybacks that have shrunk the share count over time. Management has navigated the optical cycle well and avoided overextension. The execution record is strong; the question is the multiple the market now assigns to a contract-manufacturing model.",
+    "insider_ownership_pct": 0.24,
+    "capital_allocation_history": "Fabrinet has been a disciplined capital allocator: steady capacity investment in Thailand (Building 10 $130M, Navanakorn $11M in FY2026), a net-cash balance sheet maintained across economic cycles, and consistent buybacks that have reduced share count over time. The 10-year EPS CAGR of 22% against 16% revenue CAGR reflects the EPS compounding from per-share buybacks. FY2026 CapEx is peak due to Building 10 construction; Q3 FY2026 buyback was 'not meaningful' per CFO. The $32M Raytek minority investment in April 2026 represents the first time Fabrinet has deployed capital into technology optionality rather than pure manufacturing capacity.",
     "recent_insider_activity": []
   },
   "key_risks": [
     {
-      "category": "customer",
-      "title": "Customer concentration",
-      "description": "A few optical OEMs drive most revenue; one shifting programs or dual-sourcing steps growth down sharply."
-    },
-    {
       "category": "structural",
-      "title": "Co-packaged optics",
-      "description": "CPO could move the optical engine into the switch package, disrupting the pluggable-module volumes Fabrinet assembles."
-    },
-    {
-      "category": "structural",
-      "title": "Valuation",
-      "description": "At ~6x sales for a low-teens-margin assembler, multiple compression toward contract-manufacturing norms is the dominant risk."
+      "title": "Contract-manufacturer multiple compression",
+      "description": "At 42x trailing EBITDA, FN is priced at 1.5-2x the multiple of CLS (32x) and 2-4x Flex and Sanmina (19-27x). If revenue growth decelerates below 15% annually -- possible if hyperscaler capex normalizes or CPO changes the assembly mix -- the stock de-rates toward EMS-peer multiples, removing 40-60% of market cap with no change in business fundamentals required."
     },
     {
       "category": "cyclical",
-      "title": "AI-optical capex digestion",
-      "description": "The datacom surge is a capex wave; an assembler levered to it de-rates fastest when it digests."
+      "title": "AI optical capex digestion and bullwhip inventory risk",
+      "description": "Optical transceiver demand has historically over-corrected after capex cycles. The 2022-2023 correction cut revenues 20-40% at optical suppliers over four quarters. If a second correction starts in H2 2026, triggered by slower AI monetization or optical inventory overhang (the alternative read on Datacom supply constraints), Fabrinet's growth rate decelerates toward single digits for two to four quarters, triggering multiple compression from 42x to 15-20x EBITDA."
     },
     {
       "category": "structural",
-      "title": "Thin float / volatility",
-      "description": "~36M shares make the stock gap hard in both directions on thematic flows."
+      "title": "Co-packaged optics architectural shift",
+      "description": "CPO integrates the optical transceiver inside the switch ASIC package, potentially eliminating pluggable module volumes. If 20-30% of scale-up switch ports move to CPO by 2028-2030 and CPO assembly goes to ASIC packaging houses rather than EMS firms, Fabrinet loses Datacom pluggable volume. The $32M Raytek investment hedges but does not guarantee a CPO assembly role."
+    },
+    {
+      "category": "customer",
+      "title": "HPC single-customer concentration",
+      "description": "The HPC program (targeting $150M+ quarterly) is concentrated in one hyperscaler with no disclosed long-term take-or-pay contract. Technology transitions (Q3 FY2026 pushed out one quarter) show program risk. If this customer shifts assembly in-house or reduces HPC deployment, Non-Optical Communications revenue could fall 40-50% from current levels -- a 10-15 percentage point drag on overall growth rate."
+    },
+    {
+      "category": "execution",
+      "title": "Building 10 utilization timing",
+      "description": "Building 10 adds $3B of annual revenue capacity at $130-132M CapEx. Management's downside is '50 basis points gross margin headwind' on underutilization. But if FY2027 revenue growth is 10-15% rather than 18-20% modeled, the new capacity sits idle for 12-24 months while depreciation runs. The investment thesis requires the capacity to fill within two to three years of January 2027 commissioning."
     },
     {
       "category": "regulatory",
-      "title": "Geographic / trade exposure",
-      "description": "Concentrated Thai manufacturing and global optical supply chains carry trade-policy and concentration risk."
+      "title": "Thailand geographic concentration and trade policy risk",
+      "description": "Essentially 100% of Fabrinet's manufacturing is in Thailand. A climate event comparable to the 2011 floods, political disruption, or US tariff policy changes affecting Thai goods could interrupt revenue with no alternative supply source and no disclosed secondary manufacturing geography outside Thailand."
     }
   ],
   "social_sentiment": {
-    "summary": "Sentiment feeds were not retrievable this session. Bulls frame Fabrinet as the indispensable AI optical-module assembler; skeptics focus on contract-manufacturing economics, customer concentration, co-packaged-optics risk and a sales multiple far above its true peers."
+    "summary": "Sentiment feeds were not retrieved this session. Bulls frame Fabrinet as the indispensable AI optical-module assembler riding every AI infrastructure cycle simultaneously; skeptics focus on 42x EBITDA for a 12% gross-margin assembler, negative trailing FCF, 0.24% insider ownership, and the CPO structural overhang. The 22% pullback from the $748 52-week high to $587 suggests some institutional profit-taking after the 128% 52-week run."
   }
 }
