@@ -1,0 +1,543 @@
+{
+  "ticker": "CAMT",
+  "name": "Camtek Ltd.",
+  "listings": "NASDAQ",
+  "sector": "Technology. Semiconductor Equipment & Materials",
+  "date": "2026-06-17",
+  "engine": "yfinance-data, equity-bull-case, equity-bear-case",
+  "recommendation": {
+    "action": "SELL",
+    "tone": "negative",
+    "current_price": 182.24,
+    "target_12m": 88,
+    "upside_pct": -51.7,
+    "rationale": "10-year DCF (WACC 9.5%, tg 3.5%): 20% Bear × $32 + 55% Base × $89 + 20% Bull × $127 + 5% P/E cross × $151 = $88 blended. At $182.24, CAMT trades at a 104% premium to the intrinsic DCF base case. The peer P/E cross-check at $151 (33.5x FY2027E $4.52 EPS) is 17% below current price and itself reflects elevated market multiples. The stock is priced for the bull case alone. Catalyst to re-rate down: Q2 2026 revenue below $145M or operating margin below 24%.",
+    "next_earnings": "~2026-08-12 (Q2 FY26E · cons $148.8M rev / $0.93 EPS)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$182.24"
+    },
+    {
+      "label": "52-week range",
+      "value": "$72.54 to $215.99"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-15.6%"
+    },
+    {
+      "label": "YTD return",
+      "value": "+57.8%"
+    },
+    {
+      "label": "1-year return",
+      "value": "+145.3%"
+    },
+    {
+      "label": "Market cap",
+      "value": "$8.4B"
+    },
+    {
+      "label": "Enterprise value",
+      "value": "$8.2B"
+    },
+    {
+      "label": "Net debt",
+      "value": "$342M"
+    },
+    {
+      "label": "FY2025 revenue",
+      "value": "$496M"
+    },
+    {
+      "label": "FY2025 EBITDA / margin",
+      "value": "$140M / 28.2%"
+    },
+    {
+      "label": "FY2025 FCF",
+      "value": "$127M"
+    },
+    {
+      "label": "FY2026E revenue (consensus)",
+      "value": "$571M (+15.2% YoY)"
+    },
+    {
+      "label": "Forward EPS (FY27E, yfinance)",
+      "value": "$4.52"
+    },
+    {
+      "label": "Forward P/E (FY27E)",
+      "value": "40.3x"
+    },
+    {
+      "label": "Forward P/E (FY26E, $3.50)",
+      "value": "52.1x"
+    },
+    {
+      "label": "EV / EBITDA (TTM)",
+      "value": "58.6x"
+    },
+    {
+      "label": "EV / FY26E revenue",
+      "value": "14.4x"
+    },
+    {
+      "label": "P / trailing FCF",
+      "value": "66.1x"
+    },
+    {
+      "label": "Beta",
+      "value": "1.56"
+    },
+    {
+      "label": "Short % of float",
+      "value": "10.6% (6.1 days to cover)"
+    },
+    {
+      "label": "Analyst consensus",
+      "value": "7 Buy / 5 Hold / 0 Sell (12 analysts)"
+    },
+    {
+      "label": "Mean / median PT",
+      "value": "$187.25 / $187.50"
+    },
+    {
+      "label": "PT upside (Street mean)",
+      "value": "+2.7%"
+    },
+    {
+      "label": "Dividend yield",
+      "value": "N/A"
+    }
+  ],
+  "thesis": [
+    "Hawk platform is the tool-of-record at SK Hynix and Micron for HBM3e inspection; ualification lock-in creates a 6-12 month switching barrier and a 25-30% ASP premium over the prior Eagle G5 generation.",
+    "FCF compounded at 37% CAGR from $49.5M (FY2022) to $127.1M (FY2025) on capex intensity below 3% of revenue; the business is asset-light and structurally cash-generative regardless of short-cycle demand swings.",
+    "At $182.24 CAMT trades at 14.4x FY2026E EV/revenue, at parity with slower-growth peer ONTO (14.6x) and a 39% discount to KLAC (23.8x); the discount is only justified if Q2 2026 misses the 22% sequential snap-back consensus."
+  ],
+  "bear_paragraph": "CAMT has re-rated 58% year-to-date on the back of HBM cycle optimism, but the operating evidence does not support the premium. Q1 2026 YoY revenue growth was 2.5%. Operating margin fell 520bps year-over-year to 22.4%. The consensus requires a Q2 2026 revenue snap-back of 22% sequentially to $148.8M; that number is unconfirmed. The stock trades at 52x FY2026E EPS and 66x trailing FCF, pricing in a decade of uninterrupted 15-20% FCF growth. Semicap equipment never delivers that without a downcycle; CAMT's own 2025 experience (peak $216 to trough $72.54, a 66% drawdown) is the most recent example. Customer concentration in HBM (estimated SK Hynix and Micron at 40-55% of revenue) means the next capex deferral cycle hits Camtek first and hardest. The $500M convertible note narrows the net cash cushion to $148M. China export control expansion is an unpriced tail event. The bear case does not require a macro shock: a single quarter of revenue shortfall in Q2 or Q3 2026 below the consensus step-up would break the growth narrative and force a re-rating to 30-35x forward earnings, implying a price of $105-140, a 23-42% decline from current levels.",
+  "peers": [
+    {
+      "ticker": "CAMT",
+      "pe_ntm": 40.3,
+      "ev_ebitda": 58.6,
+      "rev_growth_ttm": 2.5,
+      "ytd": 57.8,
+      "y1": 145.3,
+      "highlight": true
+    },
+    {
+      "ticker": "KLAC",
+      "pe_ntm": 47.0,
+      "ev_ebitda": 53.2,
+      "rev_growth_ttm": 11.5,
+      "ytd": 86.7,
+      "y1": 167.5
+    },
+    {
+      "ticker": "ONTO",
+      "pe_ntm": 32.1,
+      "ev_ebitda": 56.5,
+      "rev_growth_ttm": 9.5,
+      "ytd": 90.6,
+      "y1": 224.9
+    },
+    {
+      "ticker": "AMAT",
+      "pe_ntm": 34.9,
+      "ev_ebitda": 48.5,
+      "rev_growth_ttm": 11.4,
+      "ytd": 111.9,
+      "y1": 228.8
+    },
+    {
+      "ticker": "ACMR",
+      "pe_ntm": 40.5,
+      "ev_ebitda": 40.5,
+      "rev_growth_ttm": 34.2,
+      "ytd": 103.2,
+      "y1": 261.8
+    },
+    {
+      "ticker": "COHU",
+      "pe_ntm": 42.2,
+      "ev_ebitda": null,
+      "rev_growth_ttm": 29.3,
+      "ytd": 153.6,
+      "y1": 242.7
+    }
+  ],
+  "peers_read": "CAMT posted the weakest 1-year return in the peer group (+145% vs ONTO +225%, AMAT +229%, ACMR +262%) despite a 58% YTD recovery. This relative underperformance reflects the HBM deferral cycle in H1 2025 that hit CAMT disproportionately. At 14.4x EV/FY2026E revenue, CAMT is at parity with ONTO (14.6x) but a 39% discount to KLAC (23.8x). CAMT's premium over ACMR (5.8x EV/rev) reflects its higher gross margins and qualification moat. The peer set confirms advanced packaging inspection tools deserve a 14-20x EV/revenue range; CAMT sits at the low end of that range right now, which is the bull case's valuation entry point. The bear reads the same data differently: CAMT's TTM revenue growth of 2.5% is the slowest in the group, and the EV/EBITDA of 58.6x already prices in a cycle that hasn't yet delivered.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "HBM4 ramp drives back-end inspection spend into 2027",
+      "body": "NVIDIA's Blackwell Ultra (H200, B300) and AMD's MI400 series require HBM4, which stacks 12 DRAM layers versus HBM3e's 8. Each additional stack layer adds inspection steps, and Camtek's Hawk system is the tool of record at SK Hynix and Micron for HBM interconnect inspection. SK Hynix has guided to doubling HBM capacity by end of 2026; Micron aims to ship HBM3e at scale through 2026 before transitioning to HBM4 in 2027. Consensus models $571M FY2026E revenue for Camtek (+15.2% YoY) and $698M FY2027E (+22.2%), reflecting this multi-year HBM cycle. Hawk ASPs are roughly 25-30% above the prior Eagle G5 generation, which drives incremental revenue per customer site."
+    },
+    {
+      "id": 2,
+      "title": "CoWoS and advanced packaging TAM expansion beyond memory",
+      "body": "TSMC's CoWoS (Chip-on-Wafer-on-Substrate) capacity is the production bottleneck for AI accelerator packaging. TSMC has guided to tripling CoWoS capacity between 2024 and 2026 to meet demand from NVIDIA, AMD, and custom ASIC customers (Google TPU, Amazon Trainium). Each CoWoS production line requires Camtek inspection tools at the RDL (redistribution layer), bump, and substrate bonding steps. The advanced packaging inspection market (2.5D/3D, CoWoS, FOPLP, HBM stacking) was approximately $1.2B in 2024 and is tracking toward $2.5B by 2027 per SEMI data. Camtek's 2024-2025 CoWoS-related bookings contributed a meaningful share of the FY2024 +36% revenue surge to $429M."
+    },
+    {
+      "id": 3,
+      "title": "Gross margin expansion toward 52-54% as Hawk mix rises",
+      "body": "Gross margin moved from 46.8% (FY2023) to 48.9% (FY2024) to 50.4% (FY2025) as Hawk (advanced packaging) revenue displaced older Eagle G5 units in the mix. The Hawk carries a structurally higher ASP and gross margin than the Eagle G5 because customers have no alternative platform at the same throughput and sensitivity specification. With FY2026 advanced packaging revenue expected to grow faster than the overall product line, the path to 52%+ gross margin is plausible within two years. Each 100bps of gross margin at $571M FY2026E revenue translates to roughly $5.7M of incremental operating profit."
+    },
+    {
+      "id": 4,
+      "title": "Q2 2026 revenue inflection expected: +22% QoQ at midpoint",
+      "body": "Q1 2026 revenue was $121.7M, a modest sequential softness from Q4 2025's $128.1M. Analyst consensus for Q2 2026 is $148.8M, representing +22.3% sequential growth and +20.6% YoY. This inflection is driven by a scheduled seasonal booking pickup in Korean memory customers (SK Hynix fiscal Q2 procurement) and TSMC CoWoS capacity expansion deliveries. Camtek beat the Q1 2026 EPS estimate ($0.70 actual vs $0.685 consensus, a +2.2% beat). If Q2 2026 prints at $148-152M, it would put FY2026 on track for $565-580M, in-line-to-above consensus."
+    },
+    {
+      "id": 5,
+      "title": "FCF compounder with near-zero capex intensity",
+      "body": "Camtek spent $14.8M on capex in FY2025 against $496M in revenue, a 3.0% intensity ratio. This compares to KLAC at roughly 4-5% and AMAT at 4-6%. The business is software and precision optics; there's no foundry or fab. Operating cash flow grew from $57.8M (FY2022) to $141.9M (FY2025). FCF (after capex) grew from $49.5M to $127.1M over the same period, a 37% CAGR over three years. At consensus FY2027 revenue of $698M with stable 25-26% FCF margins, FCF should approach $175-182M. The $500M convertible note issued in FY2025 adds financial flexibility without diluting the operating model."
+    },
+    {
+      "id": 6,
+      "title": "$500M convertible note: strategic war chest for M&A and capacity",
+      "body": "In FY2025, Camtek raised $500M through a convertible note issuance, taking gross cash and short-term investments to $668M. The company has $530M in total debt, leaving a net debt position of approximately $342M. Management has historically been acquisitive (acquired FRT, a German metrology company, in FY2023 for ~$102M, adding $74M in goodwill and expanding the MicroProf product line into panel-level packaging). The FRT acquisition added 3D wafer metrology capabilities that compete directly with KLA Instruments. Additional acquisitions targeting process control software or FOPLP inspection would be consistent with the stated strategy of expanding addressable steps in the advanced packaging workflow."
+    },
+    {
+      "id": 7,
+      "title": "Analyst consensus is buy with 12-month target of $187, upside to $220",
+      "body": "Of 12 analysts covering CAMT as of June 2026, 7 are Buy/Strong Buy, 5 are Hold, and none are Sell. The consensus 12-month price target is $187.25, with a high target of $220.00 and a low of $160.00. Upside from the high target ($220) represents +20.7% from the June 16 close of $182.24. Estimate revisions have been modestly upward: the FY2026 consensus EPS moved from $3.43 (90 days ago) to $3.50 (current). The stock trades at 52x FY2026E EPS of $3.50 and 40.3x FY2027E EPS of $4.52, a premium that reflects the structural growth thesis rather than current-year earnings power."
+    },
+    {
+      "id": 8,
+      "title": "ONTO semiconductor peer trades at similar valuation with slower growth",
+      "body": "Onto Innovation (ONTO) is the closest listed analog: advanced packaging and process control inspection, roughly $800M revenue, $15.7B market cap. ONTO trades at 14.6x EV/revenue (FY2026E) and 32x forward PE. CAMT trades at 14.4x EV/FY2026E revenue. On price-to-sales, the two are at parity, yet Camtek's FY2027 revenue growth consensus is +22.2% versus ONTO's roughly +14-16% (based on analyst estimates). If CAMT were re-rated to ONTO's 32x forward PE on FY2027E EPS of $4.52, the implied price would be $144; but if assigned 40-45x on FY2027E EPS (justified by faster growth), the target is $181-203. The bull case is that Camtek's HBM concentration accelerates growth above the peer set."
+    },
+    {
+      "id": 9,
+      "title": "Israel R&D ecosystem and 38-year operational history provide technical moat",
+      "body": "Camtek was incorporated in 1987 in Migdal HaEmek, Israel, where it maintains its R&D center and manufacturing operations. Israel's semiconductor cluster includes major Intel, TSMC, and Applied Materials design and engineering hubs, giving Camtek access to specialized optics and process control engineers. The company employs 709 full-time employees with a disproportionately high share in R&D (estimated 40-45% of headcount). None of the major Western or Japanese inspection equipment peers (KLA, Onto, Cohu) has replicable proximity to this talent pool. The FRT acquisition in Germany added another embedded R&D site, reinforcing the R&D-driven product cycle."
+    },
+    {
+      "id": 10,
+      "title": "YTD +57.8% reflects re-rating from HBM trough, not overextension",
+      "body": "CAMT opened 2026 at $115.50 and reached $182.24 by June 16, a +57.8% YTD return. The stock hit a 52-week low of $72.54, nearly 60% below the current price, in mid-2025 when HBM order deferrals triggered a downcycle fear. The stock's 52-week high is $215.99. At $182, the stock remains 15.6% below the prior high despite Q1 2026 results showing return to operational health (EPS beat, FY2026 guidance intact). The current forward PE of 52x FY2026E/$3.50 is elevated, but FY2027E/$4.52 drops it to 40.3x, which is reasonable for a company with 20-22% revenue growth and 25%+ FCF margins."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "Q1 2026 YoY growth was +2.5%. Revenue deceleration is already happening.",
+      "body": "Q1 2026 revenue was $121.7M, up just 2.5% from Q1 2025's $118.6M. Sequential revenue actually fell 5% from Q4 2025's $128.1M. The consensus for Q2 2026 is $148.8M, which implies a +22% sequential snap-back. That's an aggressive assumption. If Q2 2026 prints closer to $130-135M (flat-to-modest recovery), the FY2026 consensus of $571M becomes unreachable, and the stock de-rates on an EPS miss. The deceleration pattern since Q1 2025 (GM: 51.0% to 50.1%) and operating margin (Q1 2025: 27.6% to Q1 2026: 22.4%) shows the operating leverage is running in reverse as fixed costs grow faster than revenue."
+    },
+    {
+      "id": 2,
+      "title": "Operating margin declined 520bps YoY. Cost inflation is eating the bull case.",
+      "body": "Q1 2025 operating margin was 27.6%. Q1 2026 was 22.4%. That 520bps compression reflects faster headcount and R&D growth than revenue growth. R&D spend grew from $10.4M (Q1 2025) to $14.3M (Q1 2026), up 38% YoY while revenue grew 2.5%. SG&A grew from $17.5M to $19.3M, up 10%. The company is hiring ahead of an assumed revenue acceleration. If that acceleration doesn't arrive in H2 2026, operating income at $496M annualized revenue would be $110-115M versus consensus assumptions of $140M+. That's a 20-25% earnings miss embedded in the current trajectory."
+    },
+    {
+      "id": 3,
+      "title": "$8.4B market cap on $127M of FCF. 66x trailing FCF prices in a decade of 20%+ growth.",
+      "body": "At $182.24 and a $8.4B market cap, CAMT trades at 66x trailing FCF of $127M. For this valuation to hold at a 10% discount rate with 4% terminal growth, FCF must reach approximately $380-420M by 2032 (roughly 3x today's level). That requires ~15-17% annual FCF growth for seven consecutive years. Semiconductor equipment is cyclical; CAMT itself showed this by losing 66% peak-to-trough ($216 to $72.54) within twelve months. The FY2025 net income was distorted to $50.7M by a -$100.9M non-operating charge in Q3, meaning GAAP reported earnings are unreliable. The equity is priced for a growth trajectory that semicap history has never delivered without a multi-year drawdown."
+    },
+    {
+      "id": 4,
+      "title": "SK Hynix and Micron customer concentration creates binary revenue risk.",
+      "body": "Camtek does not disclose customer-level revenue in its 20-F filings. Based on public commentary and management conference calls, SK Hynix and Micron are the primary HBM inspection customers, collectively estimated by analysts at 40-55% of FY2025 revenue. SK Hynix guides its own capex annually; a pause or reduction triggers Camtek order deferrals immediately. In H1 2025, HBM order deferrals from memory customers caused the stock to fall from $216 to $72, a 66% drawdown. That risk has not structurally changed. The 2025 deferral cycle was the most recent instance. The next HBM capex pause could arrive in H2 2026 if AI accelerator demand softens or NVIDIA shifts purchase timing."
+    },
+    {
+      "id": 5,
+      "title": "China export control expansion: Camtek is not exempt.",
+      "body": "Camtek is an Israeli company, but its products contain U.S. Technology components and it sells directly into China (named explicitly in the 10-K alongside Korea and Asia Pacific). The U.S. Bureau of Industry and Security has progressively expanded export control scope for advanced semiconductor equipment to China. In October 2023, AMAT and KLAC received restriction expansions. CAMT is smaller and currently below the regulatory radar, but any expansion of EAR controls to include advanced packaging inspection tools at sub-20nm bump pitch would directly hit CAMT's Chinese OSAT and IDM customers. ACM Research (ACMR) saw its stock fall 40-60% on China export control expansion fears in 2024. CAMT's China revenue share is not disclosed but is estimated at 15-25%."
+    },
+    {
+      "id": 6,
+      "title": "Short interest at 10.6% of float is elevated for a $8.4B cap stock.",
+      "body": "10.6% of CAMT's float is sold short, with 6.1 days to cover. For a $8.4B market cap semi equipment company with no published short reports, this level of short positioning is notable. The shorts are either hedging the HBM cycle (sector-wide trade) or expressing a specific concern about the pace of re-rating versus fundamentals. Days-to-cover of 6 days means a short squeeze is possible on any positive catalyst (Q2 beat, HBM order announcement), but it also means there's sustained institutional conviction on the downside. In the prior drawdown cycle, the stock fell 66% with a similarly elevated short base."
+    },
+    {
+      "id": 7,
+      "title": "$500M convertible note introduces debt service risk and potential dilution.",
+      "body": "Camtek raised $500M through a convertible note in FY2025. At FY2025 FCF of $127M, the interest coverage on a 2-3% coupon ($10-15M annual interest) is comfortable, but the note introduces a conversion overhang. If the stock trades above the conversion price, existing shareholders face dilution; at $182 per share, $500M converts to roughly 2.75M additional shares, a 6% dilution on the basic share count of 46M. The company simultaneously repaid $281M of debt in FY2025, suggesting the net proceeds went partly to refinance. More materially, $519.8M in long-term debt against $668M in cash/investments means the net cash position is only $148M, not $668M."
+    },
+    {
+      "id": 8,
+      "title": "KLA's ICOS and process control tools are expanding into advanced packaging.",
+      "body": "KLA Corporation ($310B market cap) is not a pure advanced packaging play today, but its ICOS division and Surfscan/WaferSight platforms are qualifying at TSMC and Samsung for CoWoS-adjacent steps. KLA has 15x Camtek's R&D budget and a 40-year customer relationship with every advanced fab globally. Onto Innovation is also pushing its Dragonfly platform into heterogeneous integration metrology. The sole-source window Camtek currently occupies in HBM inspection depends on KLA not prioritizing re-qualification at SK Hynix. Any credible KLA HBM qualification announcement would trigger an immediate re-rating of Camtek's premium."
+    },
+    {
+      "id": 9,
+      "title": "Inventory days of 167 and post-FRT goodwill create write-down risk.",
+      "body": "Inventory of $112.2M at FY2025 year-end sits at 167 days of supply (based on COGS). That's elevated versus the pre-advanced-packaging period (149 days in FY2022), though it improved from 185 days (FY2024). The FRT acquisition added $74.3M of goodwill and $10.1M of intangibles to the balance sheet in FY2023, acquired for roughly $102M. MicroProf panel metrology competes against KLA and Onto; if the technology proves unable to win market share outside niche applications, an impairment charge is possible. The Q3 FY2025 -$100.9M non-operating charge remains unexplained in available public filings."
+    },
+    {
+      "id": 10,
+      "title": "Annualized Q1 2026 run rate of $487M. Consensus $571M discounts re-acceleration.",
+      "body": "Q1 2026 revenue of $121.7M annualizes to $487M, below FY2025's actual $496M. The consensus FY2026 forecast of $571M requires Q2-Q4 2026 to average $150M per quarter, a 23% step-up from Q1's run rate. If the step-up is delayed one quarter (to Q3 instead of Q2), the FY2026 number falls to $535-545M, an 8% miss versus consensus. At 14.4x EV/FY2026E revenue on a $535M miss scenario, EV falls to $7.7B and equity to approximately $7.4B, implying a price of $161, down 12% from current. A full bear scenario (revenue flat at $490-500M) puts EV at $6.9-7.2B, implying $143-150, down 18-22%."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "11.5%",
+      "terminal_g": "2.5%",
+      "fcf_path": "+1/+4/+5/+6/+7/+9/+7/+7/+5/+5% (10yr)",
+      "implied_px": 32
+    },
+    {
+      "scenario": "Base",
+      "wacc": "9.5%",
+      "terminal_g": "3.5%",
+      "fcf_path": "+24/+24/+18/+14/+10/+9/+7/+6/+5/+4% (10yr)",
+      "implied_px": 89
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "8.5%",
+      "terminal_g": "4.0%",
+      "fcf_path": "+35/+27/+22/+15/+12/+10/+7/+6/+5/+4% (10yr)",
+      "implied_px": 127
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bear",
+      "prob": 0.2,
+      "outcome_range": "$30-65",
+      "description": "Q2 2026 revenue shortfall ($130-135M vs $148.8M consensus). HBM deferral cycle repeats, multiple compresses to 25-30x forward earnings. DCF intrinsic value $32 at 11.5% WACC with flat-to-modest 10-year growth; market price converges toward DCF as growth narrative breaks."
+    },
+    {
+      "label": "Base",
+      "prob": 0.55,
+      "outcome_range": "$85-130",
+      "description": "Q2 2026 near consensus, HBM cycle delivers 15% FY2026 and 22% FY2027 revenue growth. But market re-rates toward DCF intrinsic value as growth rate normalizes post-2027. 10-year DCF base at $89; P/E cross-check at $151 provides an upper bound. Over 12 months, stock gravitates toward $105-120 as valuation premium compresses."
+    },
+    {
+      "label": "Bull",
+      "prob": 0.2,
+      "outcome_range": "$125-155",
+      "description": "Q2 2026 beats at $155M+, HBM4 qualification announced, FY2026 trends toward $590M. Bull DCF at 8.5% WACC gives $127; P/E cross-check at $151 serves as ceiling. The AI narrative premium sustains a 35-40x multiple on forward earnings."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "SELL. Stock trades at 104% premium to DCF intrinsic value ($89 base) and 20% premium to peer P/E cross-check ($151). All three valuation scenarios (DCF bear $32, base $89, bull $127) show negative 12m returns from $182.24."
+    },
+    {
+      "action": "12m target",
+      "detail": "$88 (10-year DCF blended: 20% Bear × $32 + 55% Base × $89 + 20% Bull × $127 + 5% P/E × $151). Peer P/E cross-check alone: $151 (-17%). Analyst consensus: $187.25 (+2.7%)."
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Trim on any Q2 beat-driven rally toward $190-210 (prior high range). Do not average up at current levels."
+    },
+    {
+      "action": "New money",
+      "detail": "Do not initiate. Re-entry attractive at $105-115 (1.2x FY2027E EPS $4.52 × 23-25 price-to-earnings, or a 30% FCF yield compression from today's 66x P/FCF)."
+    },
+    {
+      "action": "Hedge",
+      "detail": "Long Aug 2026 put spread ($165/$140) captures Q2 miss scenario. 10.6% short interest means any long position needs a catalyst (Q2 beat at $155M+) to avoid being squeezed and then faded."
+    },
+    {
+      "action": "Position sizing",
+      "detail": "If holding: no more than 2-3% of portfolio. The 64.7% annualized volatility and -63.2% max 2Y drawdown mean position sizing should reflect the tail risk, not just the expected value."
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q2 2026 earnings (~Aug 2026): revenue vs $148.8M consensus and operating margin vs 22-25% range are the two numbers that decide the next leg.",
+    "SK Hynix and Micron HBM capacity updates: any public guidance on 2027 HBM4 capex directly drives Hawk order book.",
+    "TSMC CoWoS expansion announcements: each new CoWoS line = Camtek tool orders at RDL and bump inspection steps.",
+    "BIS export control rule updates targeting advanced packaging inspection: a rule change including sub-20nm bump pitch tools would remove 15-25% of estimated revenue.",
+    "KLA ICOS or Onto Dragonfly HBM qualification announcements: either would compress Camtek's sole-source premium and trigger a re-rating.",
+    "FY2025 20-F filing detail on the Q3 2025 -$100.9M non-operating charge: clarifies whether it's a one-time event or signals an impairment.",
+    "Convertible note conversion price disclosure: determines the dilution cliff if CAMT trades toward and above the conversion trigger."
+  ],
+  "data_gaps": [
+    "Segment revenue breakdown (Hawk vs Eagle vs FRT MicroProf) not disclosed in 20-F; estimates based on analyst commentary.",
+    "Customer-level revenue concentration not disclosed; SK Hynix/Micron/TSMC identification based on conference call commentary, not 10-K.",
+    "Geographic revenue split (Korea/China/Taiwan/US/Europe) not extractable from yfinance; requires 20-F Item 4.",
+    "Q3 FY2025 -$100.9M non-operating charge unexplained in available data; likely convertible note accounting or investment writedown.",
+    "Convertible note conversion price not disclosed; required to size dilution risk.",
+    "Short interest detail (which institutions, sector-wide hedge vs company-specific) not available.",
+    "Insider transaction data returned empty from yfinance; insider ownership estimated at 38% from major holders data.",
+    "Social sentiment data unavailable (Adanos/twitter-reader not used per ZERO WebFetch rule)."
+  ],
+  "business_overview": {
+    "summary": "Camtek Ltd. Develops, manufactures, and sells inspection and metrology equipment for the semiconductor industry. Founded in 1987 and headquartered in Migdal HaEmek, Israel, the company serves semiconductor manufacturers, OSATs, IDMs, and wafer-level packaging subcontractors across the United States, China, Korea, Europe, and Asia Pacific. Its systems inspect and measure wafers and packages at advanced process steps including bump inspection, RDL metrology, and HBM stack interconnect verification.",
+    "business_model": "Revenue is generated from capital equipment sales (systems, recognized at customer acceptance) and aftermarket (services, parts, and upgrades). There are no long-term supply agreements disclosed. Camtek designs inspection systems, sources optical and precision mechanical components externally, and assembles at its Israeli facilities. The aftermarket base grows with the installed system count, providing a recurring revenue tail on each equipment cycle.",
+    "segments": [
+      {
+        "name": "Advanced Packaging (Hawk platform)",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Hawk addresses HBM, CoWoS, SoIC, and FOWLP inspection. Fastest-growing product line with ASPs ~25-30% above the legacy Eagle G5. Estimated at 55-65% of FY2025 revenue by analysts; not disclosed in filings."
+      },
+      {
+        "name": "Standard Wafer Inspection (Eagle G5, Eagle-i/Plus, Eagle-AP/Plus)",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Eagle family covers mainstream CMOS logic, power semis, and standard packaging. Mature product line; growth tracks the broader wafer start cycle. Estimated at 25-35% of FY2025 revenue."
+      },
+      {
+        "name": "FRT Metrology (MicroProf series)",
+        "revenue_share_pct": null,
+        "growth_yoy_pct": null,
+        "margin_pct": null,
+        "description": "Acquired from FRT GmbH in FY2023 for ~$102M. Adds 3D surface metrology for panel-level packaging and heterogeneous integration. Estimated at 10-15% of FY2025 revenue."
+      }
+    ],
+    "customers": [
+      {
+        "name": "SK Hynix",
+        "revenue_share_pct": null,
+        "importance": "Primary HBM customer; Hawk is the tool of record for HBM3e and expected HBM4 inspection. SK Hynix is NVIDIA's leading HBM supplier."
+      },
+      {
+        "name": "Micron Technology",
+        "revenue_share_pct": null,
+        "importance": "HBM3e ramp customer; qualified Hawk for Idaho fabs and Hiroshima facility."
+      },
+      {
+        "name": "TSMC",
+        "revenue_share_pct": null,
+        "importance": "CoWoS and SoIC packaging capacity expansion customer."
+      },
+      {
+        "name": "ASE Group / SPIL",
+        "revenue_share_pct": null,
+        "importance": "Leading OSAT using Camtek systems for flip-chip and advanced packaging lines."
+      }
+    ],
+    "geographic_revenue": []
+  },
+  "industry_position": {
+    "market_overview": "Advanced semiconductor packaging is the critical scaling vector as node shrinks slow below 3nm. Chipmakers stack DRAM (HBM), tile chiplets (CoWoS, Foveros), and build fan-out structures (FOWLP, SoIC) to deliver the bandwidth and compute density AI accelerators require. Each new architecture adds inspection steps. The advanced packaging inspection market was approximately $1.2B in 2024 and is tracking toward $2.5B by 2027, a 27% CAGR driven almost entirely by AI capex. Camtek and KLA's ICOS unit are the two companies with complete high-throughput solutions at HBM and CoWoS inspection steps.",
+    "tam_usd_bn": 2.5,
+    "moat": "Qualification lock-in is the primary moat. The Hawk platform is qualified at SK Hynix and Micron for specific HBM process steps where no alternative has an equivalent certification. Switching an inspection tool mid-ramp requires a full re-qualification cycle lasting 6-12 months, creating a high switching cost during time-sensitive volume production. Camtek's 38-year history in wafer inspection translates to application-specific algorithms and optical designs that take years to replicate. The FRT acquisition added 3D metrology capability (MicroProf series) that differentiates the portfolio for panel-level packaging.",
+    "competitors": [
+      {
+        "name": "KLA Corporation (KLAC)",
+        "description": "Global leader in process control at $310B market cap. ICOS division expanding into advanced packaging inspection; 15x Camtek's R&D budget. Not yet fully qualified for HBM but the primary threat to sole-source status."
+      },
+      {
+        "name": "Onto Innovation (ONTO)",
+        "description": "Closest structural analog at $15.7B market cap. Dragonfly platform competes for heterogeneous integration metrology. Slower revenue growth than CAMT consensus but similar EV/revenue valuation."
+      },
+      {
+        "name": "Applied Materials (AMAT)",
+        "description": "Scale operator at $451B market cap. Primarily a deposition and etch equipment company; limited direct competition in advanced packaging inspection but expanding into process control via partnerships."
+      },
+      {
+        "name": "Cohu (COHU)",
+        "description": "Test handler and contactor equipment; overlaps in OSAT customers but not in inspection. Lower-margin, higher-cyclicality business at $2.9B market cap."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY2022",
+      "revenue_usd_b": 0.321,
+      "revenue_growth_yoy_pct": null,
+      "gross_margin_pct": 49.8,
+      "ebitda_usd_m": 93.4,
+      "ebitda_margin_pct": 29.1,
+      "net_income_usd_m": 79.9,
+      "fcf_usd_m": 49.5,
+      "eps": 1.81
+    },
+    {
+      "fy": "FY2023",
+      "revenue_usd_b": 0.315,
+      "revenue_growth_yoy_pct": -1.7,
+      "gross_margin_pct": 46.8,
+      "ebitda_usd_m": 94.5,
+      "ebitda_margin_pct": 30.0,
+      "net_income_usd_m": 78.6,
+      "fcf_usd_m": 71.1,
+      "eps": 1.76
+    },
+    {
+      "fy": "FY2024",
+      "revenue_usd_b": 0.429,
+      "revenue_growth_yoy_pct": 36.1,
+      "gross_margin_pct": 48.9,
+      "ebitda_usd_m": 143.0,
+      "ebitda_margin_pct": 33.3,
+      "net_income_usd_m": 118.5,
+      "fcf_usd_m": 111.9,
+      "eps": 2.62
+    },
+    {
+      "fy": "FY2025",
+      "revenue_usd_b": 0.496,
+      "revenue_growth_yoy_pct": 15.6,
+      "gross_margin_pct": 50.4,
+      "ebitda_usd_m": 140.0,
+      "ebitda_margin_pct": 28.2,
+      "net_income_usd_m": 50.7,
+      "fcf_usd_m": 127.1,
+      "eps": 1.11
+    },
+    {
+      "fy": "FY2026E",
+      "revenue_usd_b": 0.571,
+      "revenue_growth_yoy_pct": 15.2,
+      "gross_margin_pct": null,
+      "ebitda_usd_m": null,
+      "ebitda_margin_pct": null,
+      "net_income_usd_m": null,
+      "fcf_usd_m": null,
+      "eps": 3.5
+    }
+  ],
+  "management": {
+    "ceo": "Rafi Amit, co-founder and CEO since 1987. One of the longest-tenured semiconductor equipment CEOs; maintains significant personal equity stake.",
+    "cfo": "Moshe Eisenberg, CFO",
+    "insider_ownership_pct": 38.0,
+    "capital_allocation_history": "Camtek has historically prioritized R&D investment and strategic M&A over dividends or buybacks. The FRT GmbH acquisition in FY2023 (~$102M) was the most significant capital deployment event of the last five years, adding the MicroProf panel metrology platform. In FY2024, the company paid $60M in dividends (its first dividend payment). In FY2025, the $500M convertible note issuance was the dominant capital event, accompanied by $281M in debt repayment. No share buyback program has been announced; diluted shares outstanding grew from 48.2M (FY2022) to 50.0M (FY2025) due to SBC of $13-17M annually.",
+    "recent_insider_activity": []
+  },
+  "key_risks": [
+    {
+      "category": "cyclical",
+      "title": "HBM capex cycle pause in H2 2026",
+      "description": "HBM customers tie procurement to NVIDIA and AMD order visibility. If AI accelerator demand softens or GPU supply normalizes in H2 2026, HBM capacity expansion orders pause. CAMT's Q1 2025-Q1 2026 operating margin decline already signals the cost base is outpacing the revenue cycle. A two-quarter demand pause could result in sequential revenue declines of 10-20% and an EPS miss of 20-30%."
+    },
+    {
+      "category": "structural",
+      "title": "Valuation priced for perfection at 52x FY26E P/E",
+      "description": "At $182.24, CAMT trades at 52x FY2026E consensus EPS of $3.50 and 66x trailing FCF. Any growth disappointment triggers multiple compression. Historical semicap equipment multiples during upcycles have peaked at 25-35x forward earnings; re-rating to 30x FY2026E EPS implies a price of $105, a 42% decline."
+    },
+    {
+      "category": "regulatory",
+      "title": "U.S. Export control expansion targeting advanced packaging inspection",
+      "description": "The BIS export control framework has expanded three times since 2022. CAMT's tools are not currently on the controlled list, but advanced packaging inspection for sub-10-micron bump pitch is adjacent to controlled categories. An expansion capturing the Hawk platform for Chinese customers would remove an estimated 15-25% of revenue."
+    },
+    {
+      "category": "customer",
+      "title": "SK Hynix sole-source qualification loss to KLA",
+      "description": "KLA's ICOS division has been developing HBM-compatible inspection for several years. If KLA achieves production qualification at SK Hynix for even one process step currently served by Hawk, Camtek's ASP premium and volume concentration compress. Any public announcement of KLA HBM qualification would be a direct re-rating catalyst."
+    },
+    {
+      "category": "execution",
+      "title": "FRT integration and MicroProf adoption risk",
+      "description": "The FRT acquisition (FY2023, ~$102M) added $74.3M in goodwill. Panel-level packaging metrology is a nascent market; if TSMC/Samsung do not standardize on MicroProf, Camtek's growth model beyond HBM weakens. A goodwill impairment would add a non-cash charge on top of any operating weakness."
+    },
+    {
+      "category": "macro",
+      "title": "Israel geopolitical risk premium",
+      "description": "Camtek manufactures in Migdal HaEmek, Israel. The company's FY2023 operations were disrupted during the October 2023 conflict. Any escalation affecting manufacturing or employee safety adds a risk premium to the equity that peers in Taiwan, Korea, or the U.S. Do not carry."
+    },
+    {
+      "category": "structural",
+      "title": "Operating margin compression as R&D outpaces revenue growth",
+      "description": "R&D spending grew 38% YoY in Q1 2026 while revenue grew 2.5%. SG&A grew 10%. If investments don't convert to incremental revenue in H2 2026, the semi-fixed cost structure compresses operating margin toward 22-24% versus the 25-26% in consensus models, reducing FY2026E EPS by $0.30-0.50 per share."
+    }
+  ],
+  "social_sentiment": {
+    "summary": "Social sentiment data not available (Adanos/twitter-reader not accessed per no-WebFetch rule). Short interest of 10.6% of float and 6.1 days to cover is the available proxy for sentiment divergence; this level of short positioning suggests institutional skepticism about the pace of re-rating versus the 2.5% Q1 2026 YoY revenue print."
+  }
+}

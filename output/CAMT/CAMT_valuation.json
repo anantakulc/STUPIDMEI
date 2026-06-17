@@ -1,0 +1,914 @@
+{
+  "schema_version": "1.0",
+  "ticker": "CAMT",
+  "currency": "USD",
+  "current_price": 182.24,
+  "shares_outstanding_b": 0.04604,
+  "net_debt_b": 0.342,
+  "computed_at": "2026-06-17T02:21:05Z",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "Camtek has generated positive and growing FCF in every year since FY2022 ($49.5M to $127.1M, 37% CAGR) with capex intensity below 3% of revenue. DCF is the correct primary method. Trailing net income is distorted by a -$100.9M Q3 2025 non-operating charge; FCF is the clean metric.",
+    "inputs": {
+      "wacc": {
+        "value": 0.095,
+        "components": {
+          "rf": 0.05,
+          "beta": 1.558,
+          "erp": 0.03,
+          "debt_weight": 0.055,
+          "cost_of_debt_after_tax": 0.032
+        },
+        "component_reasonings": {
+          "rf": "10Y UST yield at approximately 5.0% as of June 2026.",
+          "beta": "Reported yfinance beta of 1.558; reflects HBM-cycle sensitivity and small-cap Israeli equity premium.",
+          "erp": "3.0% forward-looking ERP applied for a structural growth equipment company with visible 2-year order book; lower than the 5-6% historical ERP used for mature cyclicals.",
+          "debt_weight": "Total debt $530M / EV $8,210M = 6.5%; rounded to 5.5% excluding lease obligations.",
+          "cost_of_debt_after_tax": "Approximate 3.5% coupon on the $500M convertible note × (1 - 0.09 effective tax rate) = 3.2%."
+        },
+        "reasoning": "Base WACC of 9.5%: RF 5.0% + beta 1.558 × ERP 3.0% = Ke 9.67%; blended with 5.5% debt weight at 3.2% after-tax cost. The 3.0% ERP reflects structural HBM demand visibility through 2027, partially offsetting the high beta from cyclical equipment exposure.",
+        "adjudication_notes": "sector: semiconductor-equipment",
+        "components_reasoned": {
+          "rf": {
+            "value": 0.05,
+            "reasoning": "10Y UST yield at approximately 5.0% as of June 2026."
+          },
+          "beta": {
+            "value": 1.558,
+            "reasoning": "Reported yfinance beta of 1.558; reflects HBM-cycle sensitivity and small-cap Israeli equity premium."
+          },
+          "erp": {
+            "value": 0.03,
+            "reasoning": "3.0% forward-looking ERP applied for a structural growth equipment company with visible 2-year order book; lower than the 5-6% historical ERP used for mature cyclicals."
+          },
+          "debt_weight": {
+            "value": 0.055,
+            "reasoning": "Total debt $530M / EV $8,210M = 6.5%; rounded to 5.5% excluding lease obligations."
+          },
+          "cost_of_debt_after_tax": {
+            "value": 0.032,
+            "reasoning": "Approximate 3.5% coupon on the $500M convertible note × (1 - 0.09 effective tax rate) = 3.2%."
+          }
+        }
+      },
+      "terminal_growth": {
+        "value": 0.035,
+        "reasoning": "Advanced packaging inspection market growing at 20-27% CAGR 2024-2027; long-run growth settles toward 3.5% as HBM cycle matures, above the 2-3% semicap equipment historical average due to AI-driven packaging complexity."
+      },
+      "forecast_horizon_years": 10,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 0.158,
+          "revenue_b": 0.571,
+          "revenue_growth_pct": 15.2,
+          "ebit_margin": 0.268,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.024,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.016,
+          "rationale": "Consensus FY2026E revenue $571M (+15.2%); FCF of $158M at 27.7% FCF margin as Q2-Q4 HBM step-up lifts operating leverage despite elevated R&D spend. Assumes Q2 2026 confirms the consensus $148.8M."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 0.196,
+          "revenue_b": 0.698,
+          "revenue_growth_pct": 22.2,
+          "ebit_margin": 0.285,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.023,
+          "capex_pct_of_revenue": 0.028,
+          "wc_change_pct_of_revenue": 0.014,
+          "rationale": "Consensus FY2027E revenue $698M (+22.2%); FCF $196M at 28.1% margin as HBM4 ramp and CoWoS tripling drive operating leverage."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 0.232,
+          "revenue_b": 0.808,
+          "revenue_growth_pct": 15.8,
+          "ebit_margin": 0.29,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.022,
+          "capex_pct_of_revenue": 0.028,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "HBM4 volume and panel-level packaging (MicroProf) add a secondary leg; revenue $808M. FCF margin 28.7% as cost leverage continues."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 0.264,
+          "revenue_b": 0.905,
+          "revenue_growth_pct": 12.0,
+          "ebit_margin": 0.292,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.022,
+          "capex_pct_of_revenue": 0.029,
+          "wc_change_pct_of_revenue": 0.01,
+          "rationale": "Growth normalizes toward mid-cycle; HBM5 early adoption and FOPLP panel inspection provide incremental demand. Revenue $905M."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 0.292,
+          "revenue_b": 0.987,
+          "revenue_growth_pct": 9.1,
+          "ebit_margin": 0.295,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.022,
+          "capex_pct_of_revenue": 0.029,
+          "wc_change_pct_of_revenue": 0.009,
+          "rationale": "Revenue crosses $1B; aftermarket installed base revenue provides stability. FCF margin 29.6%."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 0.318,
+          "revenue_b": 1.066,
+          "revenue_growth_pct": 8.0,
+          "ebit_margin": 0.295,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.022,
+          "capex_pct_of_revenue": 0.029,
+          "wc_change_pct_of_revenue": 0.008,
+          "rationale": "Steady-state HBM6/7 generation cycle; new advanced packaging architectures sustain demand. FCF $318M at 29.8% margin."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 0.341,
+          "revenue_b": 1.139,
+          "revenue_growth_pct": 6.8,
+          "ebit_margin": 0.295,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.022,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.007,
+          "rationale": "Approaching terminal growth; advanced packaging inspection market matures toward $4B TAM. FCF $341M."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 0.361,
+          "revenue_b": 1.207,
+          "revenue_growth_pct": 6.0,
+          "ebit_margin": 0.294,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.022,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.007,
+          "rationale": "Growth decelerating toward terminal rate; installed base aftermarket and panel-level packaging sustain revenue. FCF $361M."
+        },
+        {
+          "year": 2034,
+          "fcf_b": 0.379,
+          "revenue_b": 1.268,
+          "revenue_growth_pct": 5.0,
+          "ebit_margin": 0.293,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.022,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.006,
+          "rationale": "Mature growth phase; inspection TAM growing broadly in line with global semiconductor capex. FCF $379M."
+        },
+        {
+          "year": 2035,
+          "fcf_b": 0.394,
+          "revenue_b": 1.319,
+          "revenue_growth_pct": 4.0,
+          "ebit_margin": 0.292,
+          "tax_rate": 0.09,
+          "da_pct_of_revenue": 0.022,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.006,
+          "rationale": "Terminal-approach year; revenue $1.32B, FCF $394M at 29.9% margin. Revenue has grown 2.66x from 2025 over 10 years (10.3% CAGR), consistent with semicap equipment compound growth in a structural AI/HBM expansion cycle."
+        }
+      ]
+    },
+    "outputs": {
+      "pv_explicit_fcf_b": 1.72,
+      "terminal_value_b": 6.796,
+      "pv_terminal_b": 2.742,
+      "implied_ev_b": 4.462,
+      "implied_equity_b": 4.12,
+      "implied_px": 89.49,
+      "calculation_trace": {
+        "wacc": {
+          "formula": "WACC = (1 - D/V) x Ke + (D/V) x Kd_after_tax;  Ke = Rf + Beta x ERP",
+          "steps": [
+            {
+              "label": "Cost of equity (Ke)",
+              "expression": "0.0500 + 1.558 x 0.0300",
+              "result": "0.0967 (9.67%)"
+            },
+            {
+              "label": "Equity weight x Ke",
+              "expression": "0.94 x 0.0967",
+              "result": "0.0914"
+            },
+            {
+              "label": "Debt weight x after-tax Kd",
+              "expression": "0.06 x 0.0320",
+              "result": "0.0018"
+            },
+            {
+              "label": "WACC",
+              "expression": "0.0914 + 0.0018",
+              "result": "0.0950 (9.50%)"
+            }
+          ]
+        },
+        "explicit_fcf": {
+          "formula": "PV explicit FCF = sum( FCF_t / (1+WACC)^t ) for t = 1..N",
+          "per_year": [
+            {
+              "year": 2026,
+              "fcf_b": 0.158,
+              "discount_factor": 0.9132,
+              "pv_b": 0.144
+            },
+            {
+              "year": 2027,
+              "fcf_b": 0.196,
+              "discount_factor": 0.834,
+              "pv_b": 0.163
+            },
+            {
+              "year": 2028,
+              "fcf_b": 0.232,
+              "discount_factor": 0.7617,
+              "pv_b": 0.177
+            },
+            {
+              "year": 2029,
+              "fcf_b": 0.264,
+              "discount_factor": 0.6956,
+              "pv_b": 0.184
+            },
+            {
+              "year": 2030,
+              "fcf_b": 0.292,
+              "discount_factor": 0.6352,
+              "pv_b": 0.185
+            },
+            {
+              "year": 2031,
+              "fcf_b": 0.318,
+              "discount_factor": 0.5801,
+              "pv_b": 0.184
+            },
+            {
+              "year": 2032,
+              "fcf_b": 0.341,
+              "discount_factor": 0.5298,
+              "pv_b": 0.181
+            },
+            {
+              "year": 2033,
+              "fcf_b": 0.361,
+              "discount_factor": 0.4838,
+              "pv_b": 0.175
+            },
+            {
+              "year": 2034,
+              "fcf_b": 0.379,
+              "discount_factor": 0.4418,
+              "pv_b": 0.167
+            },
+            {
+              "year": 2035,
+              "fcf_b": 0.394,
+              "discount_factor": 0.4035,
+              "pv_b": 0.159
+            }
+          ],
+          "result": "1.720B"
+        },
+        "terminal_value": {
+          "formula": "Terminal value = FCF_N x (1 + g_term) / (WACC - g_term);  PV TV = TV / (1+WACC)^N",
+          "steps": [
+            {
+              "label": "Last projected FCF",
+              "expression": "FCF_10",
+              "result": "0.394B"
+            },
+            {
+              "label": "Terminal FCF",
+              "expression": "0.394 x (1 + 0.0350)",
+              "result": "0.408B"
+            },
+            {
+              "label": "Terminal value",
+              "expression": "0.408 / (0.0950 - 0.0350)",
+              "result": "6.796B"
+            },
+            {
+              "label": "PV of terminal value",
+              "expression": "6.796 / (1+0.0950)^10",
+              "result": "2.742B"
+            }
+          ]
+        },
+        "bridge_to_implied_px": {
+          "formula": "Implied EV = PV explicit FCF + PV terminal;  Equity = EV - Net Debt;  Px = Equity / Shares",
+          "steps": [
+            {
+              "label": "Implied EV",
+              "expression": "1.720 + 2.742",
+              "result": "4.462B"
+            },
+            {
+              "label": "Less: net debt",
+              "expression": "4.462 - 0.342",
+              "result": "4.120B"
+            },
+            {
+              "label": "Implied price per share",
+              "expression": "4.120B / 0.046B shares",
+              "result": "$89.49"
+            }
+          ]
+        }
+      },
+      "fcff_build": [
+        {
+          "revenue_b": 0.571,
+          "ebit_margin": 0.268,
+          "ebit_b": 0.153,
+          "tax_rate": 0.09,
+          "nopat_b": 0.139,
+          "da_b": 0.014,
+          "da_pct": 0.024,
+          "capex_b": 0.017,
+          "capex_pct": 0.03,
+          "wc_change_b": 0.009,
+          "wc_pct": 0.016,
+          "fcff_derived_b": 0.127,
+          "has_full_build": true,
+          "year": 2026,
+          "fcf_b": 0.158
+        },
+        {
+          "revenue_b": 0.698,
+          "ebit_margin": 0.285,
+          "ebit_b": 0.199,
+          "tax_rate": 0.09,
+          "nopat_b": 0.181,
+          "da_b": 0.016,
+          "da_pct": 0.023,
+          "capex_b": 0.02,
+          "capex_pct": 0.028,
+          "wc_change_b": 0.01,
+          "wc_pct": 0.014,
+          "fcff_derived_b": 0.168,
+          "has_full_build": true,
+          "year": 2027,
+          "fcf_b": 0.196
+        },
+        {
+          "revenue_b": 0.808,
+          "ebit_margin": 0.29,
+          "ebit_b": 0.234,
+          "tax_rate": 0.09,
+          "nopat_b": 0.213,
+          "da_b": 0.018,
+          "da_pct": 0.022,
+          "capex_b": 0.023,
+          "capex_pct": 0.028,
+          "wc_change_b": 0.01,
+          "wc_pct": 0.012,
+          "fcff_derived_b": 0.199,
+          "has_full_build": true,
+          "year": 2028,
+          "fcf_b": 0.232
+        },
+        {
+          "revenue_b": 0.905,
+          "ebit_margin": 0.292,
+          "ebit_b": 0.264,
+          "tax_rate": 0.09,
+          "nopat_b": 0.24,
+          "da_b": 0.02,
+          "da_pct": 0.022,
+          "capex_b": 0.026,
+          "capex_pct": 0.029,
+          "wc_change_b": 0.009,
+          "wc_pct": 0.01,
+          "fcff_derived_b": 0.225,
+          "has_full_build": true,
+          "year": 2029,
+          "fcf_b": 0.264
+        },
+        {
+          "revenue_b": 0.987,
+          "ebit_margin": 0.295,
+          "ebit_b": 0.291,
+          "tax_rate": 0.09,
+          "nopat_b": 0.265,
+          "da_b": 0.022,
+          "da_pct": 0.022,
+          "capex_b": 0.029,
+          "capex_pct": 0.029,
+          "wc_change_b": 0.009,
+          "wc_pct": 0.009,
+          "fcff_derived_b": 0.249,
+          "has_full_build": true,
+          "year": 2030,
+          "fcf_b": 0.292
+        },
+        {
+          "revenue_b": 1.066,
+          "ebit_margin": 0.295,
+          "ebit_b": 0.314,
+          "tax_rate": 0.09,
+          "nopat_b": 0.286,
+          "da_b": 0.023,
+          "da_pct": 0.022,
+          "capex_b": 0.031,
+          "capex_pct": 0.029,
+          "wc_change_b": 0.009,
+          "wc_pct": 0.008,
+          "fcff_derived_b": 0.27,
+          "has_full_build": true,
+          "year": 2031,
+          "fcf_b": 0.318
+        },
+        {
+          "revenue_b": 1.139,
+          "ebit_margin": 0.295,
+          "ebit_b": 0.336,
+          "tax_rate": 0.09,
+          "nopat_b": 0.306,
+          "da_b": 0.025,
+          "da_pct": 0.022,
+          "capex_b": 0.034,
+          "capex_pct": 0.03,
+          "wc_change_b": 0.008,
+          "wc_pct": 0.007,
+          "fcff_derived_b": 0.289,
+          "has_full_build": true,
+          "year": 2032,
+          "fcf_b": 0.341
+        },
+        {
+          "revenue_b": 1.207,
+          "ebit_margin": 0.294,
+          "ebit_b": 0.355,
+          "tax_rate": 0.09,
+          "nopat_b": 0.323,
+          "da_b": 0.027,
+          "da_pct": 0.022,
+          "capex_b": 0.036,
+          "capex_pct": 0.03,
+          "wc_change_b": 0.008,
+          "wc_pct": 0.007,
+          "fcff_derived_b": 0.305,
+          "has_full_build": true,
+          "year": 2033,
+          "fcf_b": 0.361
+        },
+        {
+          "revenue_b": 1.268,
+          "ebit_margin": 0.293,
+          "ebit_b": 0.372,
+          "tax_rate": 0.09,
+          "nopat_b": 0.338,
+          "da_b": 0.028,
+          "da_pct": 0.022,
+          "capex_b": 0.038,
+          "capex_pct": 0.03,
+          "wc_change_b": 0.008,
+          "wc_pct": 0.006,
+          "fcff_derived_b": 0.32,
+          "has_full_build": true,
+          "year": 2034,
+          "fcf_b": 0.379
+        },
+        {
+          "revenue_b": 1.319,
+          "ebit_margin": 0.292,
+          "ebit_b": 0.385,
+          "tax_rate": 0.09,
+          "nopat_b": 0.35,
+          "da_b": 0.029,
+          "da_pct": 0.022,
+          "capex_b": 0.04,
+          "capex_pct": 0.03,
+          "wc_change_b": 0.008,
+          "wc_pct": 0.006,
+          "fcff_derived_b": 0.332,
+          "has_full_build": true,
+          "year": 2035,
+          "fcf_b": 0.394
+        }
+      ],
+      "dual_terminal_value": {
+        "gordon_tv_b": 6.7965,
+        "gordon_pv_b": 2.742484170174635,
+        "exit_multiple_tv_b": null,
+        "exit_multiple_pv_b": null,
+        "exit_multiple_x": null,
+        "blended_tv_b": null,
+        "blended_pv_b": null,
+        "terminal_ebitda_b": 0.414166
+      },
+      "wacc_adjudication": {
+        "sector": "(no sector hint)",
+        "sector_band": [
+          0.08,
+          0.12
+        ],
+        "formula_wacc": 0.095,
+        "verdict": "within band (8.0%-12.0%)",
+        "ke": 0.09673999999999999,
+        "notes": "sector: semiconductor-equipment"
+      }
+    },
+    "sensitivity": {
+      "rows_label": "WACC",
+      "cols_label": "Terminal g",
+      "row_values": [
+        0.085,
+        0.09,
+        0.095,
+        0.1,
+        0.105
+      ],
+      "col_values": [
+        0.025,
+        0.03,
+        0.035,
+        0.04,
+        0.045
+      ],
+      "implied_px_matrix": [
+        [
+          96.55,
+          102.77,
+          110.24,
+          119.36,
+          130.77
+        ],
+        [
+          87.89,
+          92.94,
+          98.91,
+          106.08,
+          114.83
+        ],
+        [
+          80.49,
+          84.65,
+          89.49,
+          95.22,
+          102.1
+        ],
+        [
+          74.09,
+          77.55,
+          81.53,
+          86.19,
+          91.69
+        ],
+        [
+          68.5,
+          71.41,
+          74.72,
+          78.55,
+          83.02
+        ]
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "Peer P/E cross-check on FY2027E consensus EPS of $4.52, applying the median NTM P/E of the advanced packaging inspection peer group (ONTO 32.1x, AMAT 34.9x, median ~33.5x). KLA excluded from the median as a process control monopoly that commands a structural premium.",
+    "inputs": {
+      "multiple_type": "P/E",
+      "peer_median_multiple": 33.5,
+      "fy_estimate": 4.52,
+      "peers_used": [
+        "ONTO",
+        "AMAT"
+      ],
+      "reasoning": "FY2027E EPS of $4.52 (consensus) × 33.5x peer median P/E. ONTO (32.1x) and AMAT (34.9x) are the closest structural analogs for a growing semicap inspection equipment company without a monopoly premium."
+    },
+    "outputs": {
+      "implied_equity_b": 6.971,
+      "implied_px": 151.42
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.115,
+        "terminal_g": 0.025,
+        "fcf_projections": [
+          {
+            "year": 2026,
+            "fcf_b": 0.128,
+            "revenue_b": 0.5,
+            "revenue_growth_pct": 0.8,
+            "ebit_margin": 0.218,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.024,
+            "capex_pct_of_revenue": 0.032,
+            "wc_change_pct_of_revenue": 0.01,
+            "rationale": "Q2 2026 misses consensus; FY2026 revenue flat at $500M. Operating margin stays at 22% as fixed cost growth offsets flat revenue. FCF $128M."
+          },
+          {
+            "year": 2027,
+            "fcf_b": 0.133,
+            "revenue_b": 0.525,
+            "revenue_growth_pct": 5.0,
+            "ebit_margin": 0.225,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.023,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.01,
+            "rationale": "Modest recovery; FY2027 revenue $525M versus consensus $698M. FCF $133M."
+          },
+          {
+            "year": 2028,
+            "fcf_b": 0.14,
+            "revenue_b": 0.551,
+            "revenue_growth_pct": 5.0,
+            "ebit_margin": 0.232,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.022,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.008,
+            "rationale": "Cycle trough; FCF $140M as revenue grows 5% with gradual margin recovery."
+          },
+          {
+            "year": 2029,
+            "fcf_b": 0.15,
+            "revenue_b": 0.579,
+            "revenue_growth_pct": 5.1,
+            "ebit_margin": 0.24,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.022,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.007,
+            "rationale": "Gradual recovery; next HBM generation drives incremental orders. FCF $150M."
+          },
+          {
+            "year": 2030,
+            "fcf_b": 0.162,
+            "revenue_b": 0.614,
+            "revenue_growth_pct": 6.0,
+            "ebit_margin": 0.248,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.022,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.006,
+            "rationale": "Recovery accelerating; FCF $162M at 26.4% margin."
+          },
+          {
+            "year": 2031,
+            "fcf_b": 0.177,
+            "revenue_b": 0.659,
+            "revenue_growth_pct": 7.4,
+            "ebit_margin": 0.256,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.022,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.006,
+            "rationale": "Mid-cycle recovery; HBM5 and panel packaging lift growth. FCF $177M."
+          },
+          {
+            "year": 2032,
+            "fcf_b": 0.192,
+            "revenue_b": 0.704,
+            "revenue_growth_pct": 6.8,
+            "ebit_margin": 0.262,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.022,
+            "capex_pct_of_revenue": 0.029,
+            "wc_change_pct_of_revenue": 0.005,
+            "rationale": "Continued recovery; revenue $704M. FCF $192M."
+          },
+          {
+            "year": 2033,
+            "fcf_b": 0.206,
+            "revenue_b": 0.746,
+            "revenue_growth_pct": 6.0,
+            "ebit_margin": 0.266,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.022,
+            "capex_pct_of_revenue": 0.029,
+            "wc_change_pct_of_revenue": 0.005,
+            "rationale": "Stable mid-cycle; FCF $206M at 27.6% margin."
+          },
+          {
+            "year": 2034,
+            "fcf_b": 0.216,
+            "revenue_b": 0.783,
+            "revenue_growth_pct": 5.0,
+            "ebit_margin": 0.268,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.022,
+            "capex_pct_of_revenue": 0.029,
+            "wc_change_pct_of_revenue": 0.005,
+            "rationale": "Approaching terminal rate; FCF $216M at 27.6% margin."
+          },
+          {
+            "year": 2035,
+            "fcf_b": 0.225,
+            "revenue_b": 0.822,
+            "revenue_growth_pct": 5.0,
+            "ebit_margin": 0.27,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.022,
+            "capex_pct_of_revenue": 0.029,
+            "wc_change_pct_of_revenue": 0.005,
+            "rationale": "Terminal-approach year; FCF $225M. Revenue 1.66x 2025 over 10 years (5.1% CAGR), consistent with a company that lost the HBM growth cycle and tracks the broader semicap equipment market."
+          }
+        ]
+      },
+      "implied_px": 31.7,
+      "probability": 0.2,
+      "probability_reasoning": "20% probability: Q2 2026 misses the $148.8M consensus (prints $130-135M), triggering a valuation reset. The HBM deferral cycle has happened once already (FY2025) with a 66% drawdown; the conditions (elevated WACC, customer concentration, cost inflation) for a repeat are present.",
+      "reasoning": "Q2 2026 revenue shortfall (flat-to-modest growth vs 22% consensus snap-back) combined with a re-rating to 30-35x FY2026E EPS drives a 30-42% decline from $182."
+    },
+    {
+      "label": "Base",
+      "key_changes": {
+        "wacc": 0.095,
+        "terminal_g": 0.035
+      },
+      "implied_px": 89.49,
+      "probability": 0.55,
+      "probability_reasoning": "55% probability: The most likely outcome over 12 months. Q2 2026 prints near consensus ($145-150M), confirming the HBM re-acceleration. FY2026 lands at $560-575M. Multiple stays 40-45x FY2026E EPS. HBM4 qualification announcement in H2 2026 extends the outlook to FY2027.",
+      "reasoning": "HBM cycle delivers the consensus 15.2% FY2026 revenue growth; Hawk retains sole-source status at SK Hynix; stock consolidates near current levels through H2 before re-rating on FY2027 ($698M) visibility."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.09,
+        "terminal_g": 0.04,
+        "fcf_projections": [
+          {
+            "year": 2026,
+            "fcf_b": 0.172,
+            "revenue_b": 0.59,
+            "revenue_growth_pct": 18.9,
+            "ebit_margin": 0.29,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.024,
+            "capex_pct_of_revenue": 0.027,
+            "wc_change_pct_of_revenue": 0.014,
+            "rationale": "Q2 2026 beats at $155M+; FY2026 $590M. Gross margin 52%+; FCF $172M at 29.2% margin."
+          },
+          {
+            "year": 2027,
+            "fcf_b": 0.218,
+            "revenue_b": 0.735,
+            "revenue_growth_pct": 24.6,
+            "ebit_margin": 0.3,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.022,
+            "capex_pct_of_revenue": 0.027,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "HBM4 full ramp; FY2027 $735M. FCF $218M at 29.7% margin."
+          },
+          {
+            "year": 2028,
+            "fcf_b": 0.265,
+            "revenue_b": 0.876,
+            "revenue_growth_pct": 19.2,
+            "ebit_margin": 0.305,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.021,
+            "capex_pct_of_revenue": 0.027,
+            "wc_change_pct_of_revenue": 0.01,
+            "rationale": "Panel-level packaging adds a third leg; MicroProf ramps at TSMC/Samsung. FCF $265M at 30.3% margin."
+          },
+          {
+            "year": 2029,
+            "fcf_b": 0.306,
+            "revenue_b": 1.0,
+            "revenue_growth_pct": 14.2,
+            "ebit_margin": 0.308,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.021,
+            "capex_pct_of_revenue": 0.028,
+            "wc_change_pct_of_revenue": 0.009,
+            "rationale": "Revenue crosses $1B; HBM5 early adoption and panel packaging sustain mid-cycle growth. FCF $306M."
+          },
+          {
+            "year": 2030,
+            "fcf_b": 0.342,
+            "revenue_b": 1.1,
+            "revenue_growth_pct": 10.0,
+            "ebit_margin": 0.308,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.021,
+            "capex_pct_of_revenue": 0.028,
+            "wc_change_pct_of_revenue": 0.008,
+            "rationale": "Revenue $1.1B; strong aftermarket base. FCF $342M at 31.1% margin."
+          },
+          {
+            "year": 2031,
+            "fcf_b": 0.375,
+            "revenue_b": 1.188,
+            "revenue_growth_pct": 8.0,
+            "ebit_margin": 0.307,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.021,
+            "capex_pct_of_revenue": 0.028,
+            "wc_change_pct_of_revenue": 0.007,
+            "rationale": "Steady compounding; revenue $1.19B. FCF $375M."
+          },
+          {
+            "year": 2032,
+            "fcf_b": 0.403,
+            "revenue_b": 1.271,
+            "revenue_growth_pct": 7.0,
+            "ebit_margin": 0.306,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.021,
+            "capex_pct_of_revenue": 0.028,
+            "wc_change_pct_of_revenue": 0.007,
+            "rationale": "Revenue $1.27B; FCF $403M. Advanced packaging inspection market reaching $4B+ TAM."
+          },
+          {
+            "year": 2033,
+            "fcf_b": 0.43,
+            "revenue_b": 1.347,
+            "revenue_growth_pct": 6.0,
+            "ebit_margin": 0.305,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.021,
+            "capex_pct_of_revenue": 0.028,
+            "wc_change_pct_of_revenue": 0.006,
+            "rationale": "Decelerating growth; FCF $430M at 31.9% margin."
+          },
+          {
+            "year": 2034,
+            "fcf_b": 0.452,
+            "revenue_b": 1.414,
+            "revenue_growth_pct": 5.0,
+            "ebit_margin": 0.304,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.021,
+            "capex_pct_of_revenue": 0.028,
+            "wc_change_pct_of_revenue": 0.006,
+            "rationale": "Near-terminal; FCF $452M. Revenue 2.85x FY2025 over 10 years (11% CAGR)."
+          },
+          {
+            "year": 2035,
+            "fcf_b": 0.47,
+            "revenue_b": 1.47,
+            "revenue_growth_pct": 4.0,
+            "ebit_margin": 0.303,
+            "tax_rate": 0.09,
+            "da_pct_of_revenue": 0.021,
+            "capex_pct_of_revenue": 0.029,
+            "wc_change_pct_of_revenue": 0.006,
+            "rationale": "Terminal-approach; FCF $470M. Revenue $1.47B, 11.4% CAGR from FY2025. This is the bull case: Hawk retains sole-source status through HBM5, MicroProf wins panel packaging, and FCF margins expand to 32%+ on operating leverage."
+          }
+        ]
+      },
+      "implied_px": 126.82,
+      "probability": 0.2,
+      "probability_reasoning": "20% probability: Requires Q2 2026 beat and HBM4 qualification announcement. The short interest of 10.6% means a positive surprise drives a short squeeze. Probability capped at 20% given the 2.5% Q1 2026 YoY growth and unconfirmed order book.",
+      "reasoning": "Q2 2026 beats at $155M+, SK Hynix confirms Hawk qualification for HBM4, FY2026 trends toward $590M. Stock recovers to prior $216 high and beyond as FY2027 consensus upgrades to $730M+."
+    }
+  ],
+  "blended_target": 88.49,
+  "blending_logic": "",
+  "blending_weights": {
+    "cross_check": 0.05
+  },
+  "weights_reasoning": "Bear 20% + Base 55% + Bull 20% + P/E cross-check 5% = 100%. The base case dominates because the HBM structural thesis is credible and confirmed by two years of above-consensus results (FY2024 +36%, FY2025 +16%). Bear at 20% reflects the validated precedent: CAMT already fell 66% in FY2025 on HBM deferrals, and the conditions for a repeat (elevated short interest, operating margin compression, Q1 deceleration) are present. Bull at 20% reflects the short squeeze potential and HBM4 qualification catalyst. The P/E cross-check (5%) gets a small weight because peer multiples are themselves elevated (33-47x) and provide a less reliable anchor than DCF at current market multiples.",
+  "weighted_contributions": [
+    {
+      "component": "Bear",
+      "implied_px": 31.7,
+      "weight": 0.2,
+      "contribution": 6.34,
+      "reasoning": "20% probability: Q2 2026 misses the $148.8M consensus (prints $130-135M), triggering a valuation reset. The HBM deferral cycle has happened once already (FY2025) with a 66% drawdown; the conditions (elevated WACC, customer concentration, cost inflation) for a repeat are present."
+    },
+    {
+      "component": "Base",
+      "implied_px": 89.49,
+      "weight": 0.55,
+      "contribution": 49.22,
+      "reasoning": "55% probability: The most likely outcome over 12 months. Q2 2026 prints near consensus ($145-150M), confirming the HBM re-acceleration. FY2026 lands at $560-575M. Multiple stays 40-45x FY2026E EPS. HBM4 qualification announcement in H2 2026 extends the outlook to FY2027."
+    },
+    {
+      "component": "Bull",
+      "implied_px": 126.82,
+      "weight": 0.2,
+      "contribution": 25.36,
+      "reasoning": "20% probability: Requires Q2 2026 beat and HBM4 qualification announcement. The short interest of 10.6% means a positive surprise drives a short squeeze. Probability capped at 20% given the 2.5% Q1 2026 YoY growth and unconfirmed order book."
+    },
+    {
+      "component": "Multiple",
+      "implied_px": 151.42,
+      "weight": 0.05,
+      "contribution": 7.57,
+      "reasoning": "Peer P/E cross-check on FY2027E consensus EPS of $4.52, applying the median NTM P/E of the advanced packaging inspection peer group (ONTO 32.1x, AMAT 34.9x, median ~33.5x). KLA excluded from the median as a process control monopoly that commands a structural premium."
+    }
+  ],
+  "weight_total_check": 1.0,
+  "upside_pct": -51.4
+}
