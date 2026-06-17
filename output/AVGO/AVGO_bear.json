@@ -1,50 +1,135 @@
 {
   "ticker": "AVGO",
-  "bear_thesis_sentence": "Broadcom is a concentrated bet on three hyperscalers continuing to overpay for custom silicon while a price-gouged VMware base quietly churns, and at 65x trailing earnings and 46x EV/EBITDA the stock has priced in a flawless decade, so any capex digestion or a single design loss takes it down 30-50%.",
-  "thesis_under_attack": "Longs believe AI custom-silicon and networking content compounds for years across an expanding hyperscaler base while VMware's annuity holds, justifying a premium multiple on rising FCF per share.",
+  "bear_thesis_sentence": "Broadcom's $1.79tn market cap prices in perpetual 60-70% custom-silicon share and >$100bn FY27 AI delivery, but Google is already multi-sourcing to MediaTek and Marvell, management failed to raise guidance twice in six months triggering two separate selloffs, receivables grew 51.6% while revenue grew only 23.2%, gross margin is guided structurally lower every quarter from a 77% peak, and the VMware harvest is extracting the last cycle of switching-cost revenue before the 2026-27 renewal cliff -- the stock falls 30-45% as the durability discount becomes the market's dominant frame.",
+  "thesis_under_attack": "Bulls believe Broadcom's ~60-70% custom-silicon market share and the >$100bn FY27 AI revenue commitment are durable across multiple silicon generations, justifying 19-30x non-GAAP forward earnings on a company whose economic FCF (after $7.6bn of annual SBC) is $19.3bn -- a 1.1% yield on the current market cap.",
   "bear_breakers": [
-    {"id": 1, "title": "Three customers, and they design their own chips", "body": "Custom XPU revenue concentrates in Google, Meta, and ByteDance. These are not loyal customers; they are vertically integrating companies that hire silicon teams specifically to reduce dependence on suppliers like Broadcom. Google has shifted TPU generations between partners before. The day one of them decides the next generation goes in-house or to a second source, a multi-billion-dollar revenue line steps down with little warning. You see it coming in hiring data and conference-paper authorship, not in the income statement, which means by the time it prints, the multiple has already compressed."},
-    {"id": 2, "title": "Custom-silicon revenue is lumpy and front-loaded", "body": "XPU programs ramp hard on a single customer's build schedule and then digest. Unlike a catalog part sold to thousands of buyers, a custom accelerator's revenue is a step function tied to one hyperscaler's capex calendar. When that customer pauses to absorb installed capacity, Broadcom's AI semiconductor line goes flat or down for several quarters. The Street is extrapolating a straight line off a few strong prints. The history of custom ASIC at Broadcom (and at Marvell) is that these programs are far choppier than the run-rate math implies."},
-    {"id": 3, "title": "VMware price hikes are seeding their own churn", "body": "Broadcom tripled or more the cost of VMware for many customers and forced multi-year subscription bundles. That juiced near-term ARR and margin. It also handed every CIO a budget line item with a target on it and a reason to evaluate Nutanix, Proxmox, OpenShift, or public cloud. Migration off a hypervisor takes 18-36 months, which is exactly the window in front of us. The reported software strength is partly a one-time repricing that pulls revenue forward; the back half of that trade is elevated churn that the current ARR does not yet show."},
-    {"id": 4, "title": "Priced for perfection at 65x trailing, 46x EV/EBITDA", "body": "Trailing P/E is 65.8 and EV/EBITDA on GAAP EBITDA is 46x. Even the forward 20.5x P/E rests on a $19.35 forward EPS estimate that bakes in continued AI acceleration and zero VMware churn. At this valuation the stock needs everything to go right just to hold flat. Any guide-down, any soft hyperscaler capex commentary, any single lost socket re-rates the multiple. High-multiple semis do not de-rate gently; they gap."},
-    {"id": 5, "title": "Goodwill exceeds equity; the balance sheet is an M&A stack", "body": "Goodwill is $97.8B against stockholders' equity of $81.3B. Broadcom is a serial acquirer whose value is carried as intangibles from CA, Symantec, and VMware. If VMware's cash generation disappoints the deal model, the impairment risk is real and the equity cushion is thin. Net debt is $49B on $65B gross debt. This is not a fortress balance sheet; it is a leveraged roll-up that depends on each acquisition's cash flow holding up."},
-    {"id": 6, "title": "Stock comp is $7.6B and dilution is real", "body": "FY25 stock-based compensation was $7.57B, roughly 28% of the $26.9B free cash flow and about 10% of revenue. Reported FCF flatters the economics because SBC is a real cost paid in shares. The buyback (-$6.3B in FY25) barely offsets the dilution rather than shrinking the count meaningfully. Per-share compounding is weaker than the headline FCF suggests once you charge SBC properly."},
-    {"id": 7, "title": "Non-AI semis are in a prolonged trough", "body": "Broadband, wireless, server storage, and industrial chips, the segments that are not AI, have been weak and remain cyclically depressed. The AI line is carrying the entire growth narrative. If AI capex digests at the same time the non-AI segments fail to recover, blended semiconductor growth turns negative and the conglomerate's growth story collapses to the VMware annuity alone, which does not support a 20x-plus forward multiple."},
-    {"id": 8, "title": "Hyperscaler capex digestion is the obvious 2026-2027 risk", "body": "The four megacap buyers funding the AI buildout have guided enormous capex, but capex cycles digest. GPU supply is normalizing and utilization questions on existing clusters are rising. If even one quarter of hyperscaler commentary flags slower build pace or a pause to absorb capacity, the entire AI-infrastructure complex re-rates, and Broadcom, as a high-beta (1.43) name up 64% in a year, leads the move down."},
-    {"id": 9, "title": "Apple keeps designing Broadcom out", "body": "Apple, historically around a fifth of revenue, has publicly worked to replace Broadcom's wireless connectivity and other components with in-house silicon. Each design-out is a permanent revenue loss in the legacy semiconductor base. This is a slow bleed that the AI story masks, but it removes a high-margin annuity that used to anchor the non-AI segment."},
-    {"id": 10, "title": "Concentration risk runs both ways at 61% realized vol", "body": "30-day realized volatility is 61% and beta is 1.43. The stock already fell 19.9% from its $495 high on no fundamental deterioration. That tells you the market's hands are weak and the positioning is crowded. In a risk-off tape or an AI-sentiment wobble, a name this owned by momentum and AI-thematic flows can give back 30%+ fast, independent of the fundamentals."}
+    {
+      "id": 1,
+      "title": "Google COT accelerates -- MediaTek wins inference tier, Marvell wins networking socket",
+      "body": "Google has told TSMC it wants to be a 'direct major customer' (the Apple/COT model), is hiring chip designers in Taiwan including ex-TSMC engineers, has already engaged MediaTek for cost-optimized inference 'e' TPU variants (~20-30% cheaper), and is in talks with Marvell for inference/networking sockets. Counterpoint projects Broadcom's custom-accelerator share declining from ~70% to ~60% by 2027. GS estimates Google and Anthropic combined represent ~70% of FY27-28 AI XPU revenues ($64.5-75.7bn). A confirmed MediaTek win on the high-volume inference tier or a Marvell socket award at Google networking breaks the terminal-value story even without moving FY26-27 numbers -- the market would re-rate the durability of the entire >$100bn franchise, not just one line. Watch for: TSMC investor day announcement of a new 'direct COT' customer, Marvell design-win disclosures, or Broadcom guidance that Google AI revenue growth is decelerating below 30% YoY while total AI doubles. Sources: CW Taiwan Apr 2026; TheNextWeb 2026; GS 7 Apr 2026 (Drive)."
+    },
+    {
+      "id": 2,
+      "title": "Gross margin structural floor breaks below 72% -- full-rack pass-through mix shift",
+      "body": "Management guided Q3-FY26 non-GAAP gross margin down ~310bps to ~74%, driven by full-rack AI solutions (power, storage, rack assembly) for Anthropic and OpenAI where Broadcom passes through components at lower margin than pure silicon. GS models gross margin (excl. SBC) declining from ~75% (FY26) to ~72-71% (FY28). Every 100bps of margin compression on $187bn GS FY27 revenue = ~$1.9bn EBITDA, ~$0.30 EPS -- material at 30x. The threshold: if cash gross margin prints below ~72% while AI revenue is still growing, the 'premium-margin franchise' framing breaks and EV/EBITDA multiples compress. At the Q3 guidance trajectory of -310bps per quarter of mix shift, 72% is two-to-three quarters away on the downside. Source: Q2-FY26 8-K (SEC, 3 Jun 2026); GS 3 Jun 2026 (Drive)."
+    },
+    {
+      "id": 3,
+      "title": "The 'no guide-up' pattern -- estimates have reached the ceiling of credible raises",
+      "body": "Q4-FY25 earnings (December 2025): stock fell after management did not raise the FY26 AI revenue outlook against elevated buy-side expectations. Q2-FY26 (June 3, 2026): stock fell 12.6% in one day -- the largest single-day decline in two years -- after management again did not raise the FY27 >$100bn framework, instead delivering the exact same guidance. Both times, absolute AI growth was exceptional (+106% and +143% YoY). Management itself signaled 'modest delay in ramp of new customers' in Q2, trimming GS's FY26 AI estimate by 6.2%. The bear reading: >$100bn FY27 is now a ceiling the stock is marked against, not a base it can beat. Two negative earnings reactions in six months is an unusual pattern for a consensus Buy and signals that buy-side positioning is at the forward-guidance limit. Source: GS 3 Jun 2026; GS 11 Dec 2025 (Drive)."
+    },
+    {
+      "id": 4,
+      "title": "Receivables explosion and inventory surge signal demand concentration risk",
+      "body": "Accounts receivable grew from $7.15bn (Q4-FY25) to $10.83bn (Q2-FY26) -- +51.6% in two quarters while revenue grew 23.2%. Days Sales Outstanding expanded from 36.1 days to 44.4 days, a deterioration of 8.3 days. Receivables are growing 2.2x faster than revenue. Inventory surged 90.7% (from $2.27bn to $4.33bn) in the same period; inventory/quarterly-revenue expanded from 12.6% to 19.5%. These dynamics are consistent with a demand-driven AI ramp pre-build, but also consistent with the early stages of a demand air-pocket -- extended payment terms, customer pushouts, or speculative builds ahead of delivery. If Q3-FY26 AI revenue misses the $16bn guide or slows materially, a working-capital reversal compounds the earnings miss with balance-sheet pressure at a company carrying $45.3bn of net debt. Source: yfinance quarterly balance sheet; Q2-FY26 8-K (SEC)."
+    },
+    {
+      "id": 5,
+      "title": "AI-capex air-pocket and circular financing unwind -- $35bn off-balance-sheet vehicle",
+      "body": "Broadcom's AI order book rests on hyperscalers whose AI ROI remains unproven and cash-burning model-builders (OpenAI losses ~$5bn/year; Anthropic not profitable). The $35bn Apollo/Blackstone AI XPV off-balance-sheet vehicle (announced June 9, 2026) is a late-cycle financing structure -- it moves AI-infrastructure capital formation off customer balance sheets into structured vehicles, a hallmark of buildouts approaching their funding limits. If one large customer's financing stalls or a hyperscaler trims 2027 capex -- already signaled by 'Google AI project delay' headlines from June 12, 2026 -- orders that look like 'backlog' can be deferred without penalty. ASIC demand is cyclical and concentrated; a single customer deferral cascades across the entire AI revenue line because there is no long-tail to absorb the gap. Source: Bloomberg/Reuters Jun 2026; Drive AVGO_03_bear_case.md."
+    },
+    {
+      "id": 6,
+      "title": "VMware 2026-27 renewal cliff -- footprint shrinkage behind the logo retention number",
+      "body": "Broadcom reports 87% of its top-10,000 VMware customers renew with VCF. The other half: ~87% of those renewing customers reduce their VMware footprint, and the average renewer keeps only ~25% of its prior environment. Broadcom covers the math gap with aggressive per-core repricing (2-3x or more, 72-core VCF minimums). The three-year post-acquisition bridge contracts expire in 2026-27, the first true test of price tolerance. AWS, Azure, and Google are actively subsidizing exits; Nutanix, Red Hat, and Proxmox offer credible alternatives. Net revenue retention could flip from 'price-up beats footprint-down' to flat/negative as the initial repricing cycle completes, compressing the 42%-of-revenue annuity that anchors the software multiple. Source: CloudBolt/NAND Research May 2026; Trefis May 2026; Q2-FY26 8-K."
+    },
+    {
+      "id": 7,
+      "title": "Stock-based compensation consumes 28% of reported FCF -- economic FCF yield is 1.1%",
+      "body": "FY25 SBC was $7.57bn (11.8% of revenue), consuming 28.1% of reported FCF of $26.9bn. Economic FCF -- FCF minus SBC -- was ~$19.3bn in FY25. At the $1.79tn market cap, the economic FCF yield is 1.08%. Q2-FY26 quarterly SBC was $2.09bn ($8.4bn annualized) on $22.2bn quarterly revenue. The 19.5x forward non-GAAP P/E anchors to $19.35 EPS that excludes this SBC burden. Trailing GAAP P/E is 65x. GS's own published bear case ($228) is 20x on $11.38 normalized GAAP-adjusted EPS -- not on non-GAAP. The gap between reported and economic metrics is one reason the stock looks 'cheap' on consensus but expensive on a full-cost basis. Sources: yfinance annual cashflow; Q2-FY26 8-K."
+    },
+    {
+      "id": 8,
+      "title": "Marvell legitimization -- Nvidia-backed, Google TPU win, optical DSP overlap",
+      "body": "Marvell won a slice of Google's next-generation TPU program -- directly breaking Broadcom's perceived monopoly. Nvidia took a multi-billion-dollar strategic position in Marvell for NVLink-compatible interconnect and optical DSPs, providing the world's most credible AI brand endorsement and a networking roadmap that overlaps Broadcom's Jericho/SerDes franchise. Counterpoint projects Marvell custom-accelerator share rising from ~15-20% to ~25% by 2027 as Broadcom's falls ~70% to ~60%. Marvell's threat is structural, not cyclical: it is backed by a Tier-1 strategic investor and already has a confirmed Google design win. A second Google program or Meta inference networking socket for Marvell re-prices Broadcom's semiconductor segment terminal value. Source: TheNextWeb 2026; GS 7 Apr 2026 (Drive); AVGO_02_fundamentals.md (Drive)."
+    },
+    {
+      "id": 9,
+      "title": "TSMC single-foundry geopolitical concentration",
+      "body": "100% of Broadcom's AI silicon is fabricated at TSMC (2nm/3nm) and packaged via CoWoS in Taiwan. Any Taiwan Strait escalation, TSMC facility disruption, or export control expansion materially constrains Broadcom's ability to fulfill its >$100bn FY27 AI revenue commitment; there is no credible 12-18 month alternative fabrication path at advanced nodes. Supply constraints were already cited as the Q2-FY26 revenue limiter ('mostly supply, back-end') with certain components secured only through FY27. Geopolitical risk is not a tail event in 2026 -- it is a single-foundry, Taiwan-concentrated position that cannot be hedged. Source: Q2-FY26 8-K; UBS 3 Jun 2026 (Drive)."
+    },
+    {
+      "id": 10,
+      "title": "Multiple requires simultaneous durability of three converging headwinds",
+      "body": "The current 19.5x forward non-GAAP P/E requires: (a) AI semiconductor revenue above $100bn in FY27, (b) stable VMware software EBITDA margins through the renewal cliff, and (c) gross margins not falling below 72%. All three are simultaneously at risk. In Q3-FY26 alone management already guided gross margins 310bps lower. GS compressed its applied multiple from 38x (Dec 2025) to 30x (Jun 2026) even while raising the PT -- an explicit acknowledgment that durability is already discounting. Morningstar rates AVGO at 'large premium to fair value' on its intrinsic model. A scenario where FY27 AI revenue lands at $85bn instead of >$100bn and VMware growth is flat -- neither extreme -- still requires ~24-25% EPS reduction from Street; the stock re-rates to ~15x at that level, implying ~$280-300. Source: GS 3 Jun 2026 (Drive); Morningstar; yfinance."
+    }
   ],
-  "bear_paragraph": "Broadcom's bull case rests on a straight line drawn through a few strong AI prints, and straight lines are exactly what custom silicon doesn't do. Three hyperscalers drive the XPU business, and all three employ silicon teams whose explicit mandate is to need Broadcom less. A single design loss or a generational hand-off steps a multi-billion-dollar line down with no warning in the financials. Stack on a VMware base that Broadcom repriced so aggressively it handed every CIO a reason to migrate; that churn lands in 2026-2027, right when the current pulled-forward ARR rolls. Now add a hyperscaler capex cycle that, like every capex cycle, eventually digests. You don't need all of this to happen. You need one of them, because at 65x trailing earnings, 46x EV/EBITDA, and a $1.9T enterprise value carried on $98B of goodwill that exceeds book equity, the stock prices a decade of flawless execution. SBC of $7.6B quietly dilutes the per-share math the bulls celebrate. The honest version of the bear case admits the timing is hard and the AI demand is real today. But a 1.43-beta name up 64% in a year, already down 20% from its high, does not need a recession to lose a third of its value. It just needs one hyperscaler to say 'we're pausing to absorb capacity,' and the multiple does the rest.",
+  "bear_paragraph": "The coherent path to a 30-45% decline from $376.71 does not require an AI demand collapse. It requires only two sequential events: first, a credible Google COT signal -- MediaTek winning the high-volume inference 'e' TPU tier and Marvell securing a networking socket -- breaks the terminal-value story that justifies paying 30x or more for normalized earnings. Neither event moves FY26 numbers materially, but both compress the multiple from ~20x toward 15x, and at 15x non-GAAP $19.35 FY26 EPS, the stock is $290. Second, a Q3-FY26 AI revenue print that misses the $16bn guide or shows gross margin below 74% confirms the structural dilution from full-rack pass-through that management already telegraphed. Add the VMware renewal cliff arriving in 2026-27 as bridge contracts expire into a market where ~87% of customers shrink their footprint and hyperscalers subsidize exits, and the 42%-of-revenue annuity de-rates from 17x to 12x EBITDA. The $35bn Apollo/Blackstone AI XPV vehicle announced June 9, 2026 is the late-cycle tell: capital formation is moving off customer balance sheets into structured vehicles, a hallmark of a buildout approaching its funding limits. Receivables growing 51.6% against 23.2% revenue growth and inventory surging 90.7% are the working-capital leading indicators. GS's own published bear case is $228, a 40% decline. A more probable bear -- multiple compression on durability concern alone, without a demand collapse -- lands at $280-300, ~25% downside.",
   "structural_concerns": [
-    "Goodwill of $97.8B exceeds total stockholders' equity of $81.3B (FY25 balance sheet); the equity base is intangible-heavy M&A carry with real impairment risk if VMware cash flow disappoints.",
-    "Net debt of $49.0B on $65.1B gross debt; this is a leveraged roll-up, not a net-cash franchise, and debt service competes with the buyback that is barely offsetting dilution.",
-    "Receivables jumped to $12.15B from $6.33B year-over-year (~92%) while reported revenue growth was VMware-inflated; DSO and collection quality warrant scrutiny against the segment mix shift."
+    "Customer concentration -- AI semiconductor revenue (58% of total) is concentrated in 3-4 hyperscalers; GS estimates Google + Anthropic alone represent ~70% of FY27-28 AI XPU revenues ($64.5-75.7bn); the 10-K does not name a customer with >20% concentration by segment, so investors cannot size the risk.",
+    "Receivables deterioration -- Accounts receivable grew 51.6% ($7.15bn to $10.83bn) between Q4-FY25 and Q2-FY26 while revenue grew only 23.2%; DSO expanded from 36.1 to 44.4 days in two quarters; receivables are growing 2.2x faster than revenue.",
+    "Inventory overextension -- Inventory surged 90.7% (from $2.27bn to $4.33bn) in two quarters; inventory-to-quarterly-revenue expanded from 12.6% to 19.5%; a demand air-pocket after this pre-build would swing working capital sharply negative at a company carrying $45.3bn net debt."
   ],
   "key_risks": [
-    {"category": "customer", "title": "Hyperscaler in-sourcing or design loss", "description": "Google, Meta, and ByteDance each build internal silicon capability. Any one moving a generation in-house or to a second source removes a concentrated, multi-billion-dollar revenue line. Concentration is undisclosed at line-item level, which itself is a risk because investors can't size it."},
-    {"category": "cyclical", "title": "AI capex digestion", "description": "Hyperscaler capex is at record levels and record levels mean-revert. A pause to absorb installed compute, or GPU supply normalization, flattens the AI semiconductor line for multiple quarters and re-rates the whole AI-infrastructure complex."},
-    {"category": "structural", "title": "VMware repricing churn", "description": "Aggressive price increases and forced bundling lifted ARR now but accelerated evaluation of Nutanix, Proxmox, and public-cloud alternatives. Migration cycles of 18-36 months land the churn in 2026-2027, undermining the software annuity thesis."},
-    {"category": "execution", "title": "Goodwill impairment and leverage", "description": "$97.8B goodwill on $81.3B equity and $49B net debt make this a roll-up dependent on each deal's cash flow. A VMware shortfall triggers impairment and pressures the credit, all while a 0.7% dividend and large buyback compete for the same cash."},
-    {"category": "regulatory", "title": "China and export controls", "description": "Material Asia-Pacific exposure and a ByteDance custom-silicon relationship sit in the crosshairs of US-China export policy. Tighter controls on advanced AI silicon to Chinese customers could strand a custom program mid-ramp."},
-    {"category": "structural", "title": "Stock-based compensation dilution", "description": "$7.6B SBC equals ~28% of free cash flow and ~10% of revenue. Reported FCF overstates economic per-share returns; the buyback offsets dilution rather than compounding the count down."},
-    {"category": "cyclical", "title": "Non-AI semiconductor trough", "description": "Broadband, wireless, storage, and industrial remain depressed. If they fail to recover as AI digests, blended semiconductor growth turns negative and the multiple loses its growth justification."}
+    {
+      "category": "customer",
+      "title": "Google disintermediation and custom-silicon share erosion from ~70% to ~60%",
+      "description": "Google designs the TPU core, has added MediaTek (inference 'e' variants), is in talks with Marvell, and has told TSMC it wants to be a direct customer. GS estimates Google + Anthropic = ~70% of FY27-28 AI XPU revenues. A 10 percentage-point share loss at Google alone removes ~$10bn from the FY27 guide without any market-level demand contraction."
+    },
+    {
+      "category": "structural",
+      "title": "Gross margin compression from full-rack pass-through mix",
+      "description": "Q3-FY26 gross margin guided down ~310bps to ~74%. GS models 71-72% by FY28. Each 100bps of compression on $187bn FY27 revenue = ~$1.9bn EBITDA. The floor is unknown; Anthropic and OpenAI full-rack solutions are structurally lower margin than pure silicon design."
+    },
+    {
+      "category": "cyclical",
+      "title": "AI-capex air-pocket and circular financing unwind",
+      "description": "ASIC demand is cyclical and concentrated. The $35bn Apollo/Blackstone AI XPV off-balance-sheet vehicle (June 2026) is a late-cycle financing structure. Cash-burning model-builders (OpenAI, Anthropic) depend on continuous external funding. A program deferral by one customer collapses concentrated AI revenue with no long-tail buffer."
+    },
+    {
+      "category": "execution",
+      "title": "VMware harvest seeds its own competition -- renewal cliff 2026-27",
+      "description": "Bridge contracts from the 2023 VMware acquisition expire in 2026-27. With ~87% of customers reducing footprint to ~25% of prior environment, hyperscalers subsidizing exits, and Nutanix/Red Hat/Proxmox as credible alternatives, net revenue retention could flip from positive to flat/negative, compressing the 42%-of-revenue software annuity."
+    },
+    {
+      "category": "regulatory",
+      "title": "US-China export controls and TSMC single-foundry geopolitical exposure",
+      "description": "All AI silicon is fabricated at TSMC in Taiwan. Further US-China export control tightening or Taiwan Strait escalation represents a single-foundry, single-geography supply disruption with no 12-18 month remedy. Prior China end-demand restrictions have already constrained some segments."
+    },
+    {
+      "category": "structural",
+      "title": "SBC inflates reported FCF -- economic FCF yield is only 1.1%",
+      "description": "FY25 SBC of $7.57bn (11.8% of revenue) consumes 28.1% of reported FCF. Economic FCF = ~$19.3bn at a $1.79tn market cap = 1.08% yield. Non-GAAP EPS of $19.35 excludes SBC. Trailing GAAP P/E is 65x. GS's bear case ($228) uses $11.38 GAAP-adjusted normalized EPS."
+    },
+    {
+      "category": "customer",
+      "title": "Marvell + Nvidia legitimize a credible custom-silicon duopoly",
+      "description": "Nvidia's strategic investment in Marvell and Marvell's confirmed Google TPU design win structurally legitimize a second supplier. Custom-silicon is trending from a Broadcom near-monopoly toward a duopoly. Share erosion from ~70% to ~60% re-prices terminal value even if absolute revenue grows."
+    }
   ],
-  "what_shorts_are_saying": "No published activist short reports (Hindenburg, Muddy Waters, etc.) were found via available skills this session. The skeptical-side commentary that circulates centers on three points: custom-silicon revenue is lumpier and more single-customer-dependent than the smooth run-rate narrative implies; VMware's price hikes are pulling ARR forward at the cost of future churn; and the valuation leaves no room for a hyperscaler capex pause. Bond-versus-equity divergence and short interest were not retrievable via the connected skills this session and are flagged as gaps.",
-  "historical_precedent": "Cisco in 2000 is the template: a networking franchise priced as if hyperscale-equivalent buildout would compound forever, trading at a premium multiple, that fell roughly 80% from its peak when enterprise capex digested, and never reclaimed the high. Closer in kind, Marvell's custom-ASIC business has repeatedly shown how choppy single-customer silicon programs are quarter to quarter. Intel's data-center franchise shows how fast a 'durable' semiconductor moat erodes when a key customer (here the hyperscalers) decides to design its own parts. Each was a quality company; each de-rated violently when the concentration or the cycle turned.",
+  "what_shorts_are_saying": "Short interest in AVGO is only 1.25% of float (~58.5mn shares) -- very low conviction from dedicated short-sellers. No published activist short reports (Hindenburg, Muddy Waters, Spruce Point) are on record against Broadcom. The bear case is expressed primarily by sell-side analysts in their own published downside scenarios (GS bear $228, Morningstar 'large premium to fair value') and by independent industry research (Counterpoint on share erosion, CloudBolt/NAND Research on VMware footprint, CW Taiwan / TheNextWeb on Google COT strategy). The low short interest cuts two ways: either shorts are wrong and the AI franchise is as durable as bulls argue, or the stock is too large and too consensus-loved for shorts to build meaningful positions -- which creates asymmetric downside risk if the narrative turns.",
+  "historical_precedent": "The closest analog is Qualcomm 2014-2015: a dominant semiconductor IP franchise with one mega-customer (Apple, ~67% of QCT licensing) whose strategic incentive was to reduce dependence. QCOM fell ~45% from peak to trough as Apple multi-sourced modems to Intel and a Chinese regulatory action made revenue durability visible. The second analog is Cisco 2000-2001: dominant enterprise networking at ~80x forward P/E during an infrastructure buildout cycle, fell 89% from peak as the cycle turned. Broadcom is not priced at 80x, but the structural framework -- infrastructure buildout leader, concentrated in a small number of mega-customers, priced for perpetuity -- is recognizable. A third analog is Intel 2018-2023: a semiconductor franchise that lost its manufacturing advantage to TSMC and saw its dominant market position erode as customers (Apple, AMD-TSMC) internalized what Intel supplied. Each required only a shift in one mega-customer's procurement strategy, not a recession.",
   "bear_valuation_lens": {
+    "method_preference": "SOTP",
     "bear_dcf_assumptions": {
-      "wacc": 0.105,
-      "wacc_reasoning": "Bear takes WACC to 10.5%: beta of 1.43 against a wider 5% equity risk premium, plus a higher risk-free assumption and a premium for customer-concentration and refinancing risk on $65B of debt.",
+      "wacc": 0.102,
+      "wacc_reasoning": "10.2% for the semiconductor segment in the bear case: 4.3% risk-free, 1.50 beta (higher under customer-concentration stress), 4.5% ERP, plus 100bps customer-concentration risk premium above the bull case. Software segment discounted at 11.0% to capture VMware renewal-cliff risk.",
       "terminal_growth": 0.025,
-      "terminal_growth_reasoning": "2.5% terminal, roughly GDP, assuming AI content normalizes and VMware settles into a slow-growth annuity with churn offsetting price.",
-      "fcf_growth_path": "-8 / +0 / +4 / +4 / +3 / +3 / +3",
-      "fcf_growth_reasoning": "Front-end decline reflects an AI capex digestion year and VMware churn, recovering only to a software-paced mid-single-digit grind."
+      "terminal_growth_reasoning": "2.5% for the semiconductor segment in the bear case, reflecting share erosion from ~70% to ~50-55% and margin compression from 77% toward 71-72% gross margin. If COT accelerates at Google, terminal growth approaches GDP or below.",
+      "fcf_growth_path": "+5 / +8 / +5 / +3 / +2 / +1 / +1",
+      "fcf_growth_reasoning": "Bear path: AI revenue ramps ~50% to FY27 (not >100% as guided) as Google share erodes and new customers ramp slowly; FY27-28 growth decelerates as VMware renewal-cliff headwind bites; FCF growth settles near GDP by FY31-32. Software re-rates to 12x EBITDA (vs bull 17-18x). Bear SOTP output: ~$228-300 per share.",
+      "bear_price_targets": {
+        "gs_published_bear": 228,
+        "milder_bear_22x_on_13_eps": 286,
+        "current_price": 376.71,
+        "downside_to_gs_bear_pct": -39.5,
+        "downside_to_milder_bear_pct": -24.1
+      }
     }
   },
-  "what_would_change_my_mind": "A fourth and fifth named custom-silicon customer at scale plus VMware net-retention holding above 100% through 2026 would show the concentration and churn fears are wrong, and would justify the multiple.",
+  "what_would_change_my_mind": "If Q3-FY26 AI semiconductor revenue prints materially above $16bn with gross margin at or above 74%, and management simultaneously raises the FY27 AI guide beyond >$100bn with a named new hyperscaler customer confirmed at scale, the 'no guide-up ceiling' and 'margin dilution' legs of the bear case are invalidated and I would revisit the multiple.",
   "sources_used": [
-    "yfinance-data: trailing P/E 65.8, EV/EBITDA 46x, fwd P/E 20.5x, fwd EPS $19.35, beta 1.43, 30d realized vol 61.4%, 1y +63.7%, -19.9% from $495 high",
-    "yfinance-data FY25 balance sheet: goodwill $97.8B, stockholders' equity $81.29B, total debt $65.14B, net debt $48.96B, receivables $12.15B vs $6.33B prior, inventory $2.27B",
-    "yfinance-data FY25 cash flow: SBC $7.57B, FCF $26.91B, net income $23.13B, buyback -$6.31B; shares outstanding 4.735B"
+    "yfinance AVGO quarterly_balance_sheet: AR Q2-FY26 $10.83bn, Q4-FY25 $7.15bn; Inventory Q2-FY26 $4.33bn, Q4-FY25 $2.27bn; Net Debt Q2-FY26 $45.3bn (17 Jun 2026)",
+    "yfinance AVGO annual cashflow: FY25 SBC $7.57bn, FCF $26.9bn",
+    "yfinance AVGO info: forward P/E 19.47x, trailing P/E 65.4x, beta 1.433, short pct float 1.25%, sharesShort 58.5mn, 52wk high $495",
+    "Broadcom Q2-FY26 8-K (SEC EDGAR CIK 0001730168, filed 3 Jun 2026)",
+    "Broadcom FY2025 10-K (SEC EDGAR CIK 0001730168)",
+    "Goldman Sachs 'Strong AI revenue momentum' 3 Jun 2026 (Drive: GS bear case $228, PT $525)",
+    "Goldman Sachs 'Partnerships with Google and Anthropic' 7 Apr 2026 (Drive)",
+    "Drive research stages: AVGO_03_bear_case.md, AVGO_05_macro_risk.md, AVGO_06_moat_audit.md (Drive, uploaded 15 Jun 2026)",
+    "TheNextWeb 'Google Marvell AI chips inference TPU Broadcom' 2026",
+    "CloudBolt / NAND Research VMware retention data May 2026",
+    "Trefis 'Broadcoms Hidden Risk VMware Under Pressure' May 2026",
+    "Counterpoint custom AI accelerator market share projections 2026"
   ]
 }

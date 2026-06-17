@@ -376,7 +376,7 @@ def add_business_overview(story, narrative, styles):
         story.append(Spacer(1, 0.15 * cm))
         story.append(Paragraph("GEOGRAPHIC REVENUE", styles["h3"]))
         chips = "  ".join([
-            f"<b>{g.get('region', '')}</b> <font color='{C_MUTED.hexval()}'>{g.get('pct', 0):.0f}%</font>"
+            f"<b>{g.get('region', '')}</b> <font color='{C_MUTED.hexval()}'>{g.get('pct', 0) or 0:.0f}%</font>"
             for g in bo["geographic_revenue"]
         ])
         story.append(Paragraph(chips, styles["body"]))

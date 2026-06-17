@@ -2,21 +2,21 @@
   "schema_version": "1.0",
   "ticker": "AVGO",
   "currency": "USD",
-  "current_price": 392.16,
+  "current_price": 376.71,
   "shares_outstanding_b": 4.7576,
-  "net_debt_b": 48.96,
-  "computed_at": "2026-06-10T04:33:44Z",
+  "net_debt_b": 45.3,
+  "computed_at": "2026-06-17T03:30:29Z",
   "primary_method": {
     "name": "SOTP",
     "category": "intrinsic",
-    "reasoning": "Broadcom is two businesses with different economics: an AI-led semiconductor franchise that deserves a growth DCF, and a VMware-anchored software annuity that the market pays an EV/EBITDA multiple for. A single blended multiple misprices both halves.",
+    "reasoning": "Broadcom is two businesses with different economics: an AI-led semiconductor franchise that deserves a growth DCF capturing the steep but decaying FCF ramp, and a VMware-anchored software annuity that the market pays an EV/EBITDA multiple for. A single blended multiple misprices both halves. SOTP is consistent with how GS and UBS model the stock internally.",
     "inputs": {
       "segments": [
         {
           "name": "Semiconductor Solutions",
           "method": "DCF",
           "weight_pct": 65,
-          "reasoning": "Custom AI XPUs (Google TPU, Meta, ByteDance) plus AI networking (Tomahawk, Jericho) drive a steep but decaying FCF ramp off a fabless, asset-light base. Non-AI segments (broadband, wireless, storage) are a cyclical drag inside this number.",
+          "reasoning": "Custom AI XPUs (Google TPU, Meta MTIA, Anthropic, OpenAI + 2 unnamed) plus AI networking (Tomahawk 6/7, Jericho, SerDes) drive a steep FCF ramp off a fabless, asset-light base. Non-AI segments (broadband, wireless, server storage, industrial) are a cyclical drag inside this number. AI semi Q2-FY26 $10.8bn (+143% YoY); Q3-FY26 guided ~$16bn; FY27 AI guide >$100bn drives the ramp.",
           "net_debt_allocation_b": 0.0,
           "dcf_inputs": {
             "wacc": {
@@ -28,48 +28,48 @@
                 "debt_weight": 0.1,
                 "cost_of_debt_after_tax": 0.038
               },
-              "reasoning": "8.25% blends a 4.3% risk-free, a 1.30 beta (below the 1.43 reported because the software annuity lowers cash-flow risk), a 4.5% equity risk premium, and a small after-tax debt weight on the investment-grade balance sheet."
+              "reasoning": "8.25% blends a 4.3% risk-free rate, a 1.30 beta (below the 1.43 reported because the software annuity lowers aggregate cash-flow volatility), a 4.5% equity risk premium, and a small after-tax debt weight on an investment-grade balance sheet de-levering toward net cash by FY27."
             },
             "terminal_growth": {
               "value": 0.0425,
-              "reasoning": "4.25% reflects durable AI-content growth above GDP as accelerator clusters keep scaling, decaying from the explicit ramp but staying above a mature-semis 3%."
+              "reasoning": "4.25% reflects durable AI-content growth above nominal GDP as accelerator clusters keep scaling; decays from the explicit ramp but stays above a mature-semis 3% terminal rate. Google + Anthropic signed supply agreements through 2031 support above-GDP terminal growth."
             },
             "forecast_horizon_years": 7,
             "fcf_projections": [
               {
                 "year": 2026,
-                "fcf_b": 30.0,
-                "rationale": "Forward semiconductor FCF, scaled up from the $27B company TTM as the AI XPU and networking ramp lifts the segment's cash generation against light fabless capex."
+                "fcf_b": 32.0,
+                "rationale": "FY26 semiconductor segment FCF, reflecting Q1-Q2 actuals ($5.5bn + $6.4bn quarterly) and Q3-FY26 guide of ~$29.4bn total revenue with ~$16bn AI semis; H2 acceleration drives the full-year semi FCF to ~$32bn. Fabless model keeps capex at ~1% of revenue."
               },
               {
                 "year": 2027,
-                "fcf_b": 39.0,
-                "rationale": "+30% as the second and third hyperscaler XPU programs ramp into volume and AI networking content per cluster rises."
+                "fcf_b": 55.0,
+                "rationale": "+72% as the >$100bn AI revenue guide lands in FY27 -- Google + Anthropic at $64.5-75.7bn, Meta 3GW commitment, OpenAI 1.3GW, plus networking (Tomahawk 7, SerDes 1.6Tb/s) at ~40% of AI semi revenue. Six XPU programs at scale simultaneously drive the highest single-year FCF jump."
               },
               {
                 "year": 2028,
-                "fcf_b": 49.0,
-                "rationale": "+26% with the lead custom-silicon customers compounding and new programs reaching scale."
+                "fcf_b": 68.0,
+                "rationale": "+24% with the XPU franchise maturing toward next-gen designs. Law of large numbers begins to moderate growth. Google COT risk partially materializes, shaving ~10% from the bear tail but not the base."
               },
               {
                 "year": 2029,
-                "fcf_b": 59.0,
-                "rationale": "+20% as AI demand broadens but the law of large numbers starts to bite."
+                "fcf_b": 80.0,
+                "rationale": "+18% as AI demand broadens to new model-builder customers and networking content per cluster rises with model scale. Non-AI semi recovery (broadband, wireless) adds a modest layer."
               },
               {
                 "year": 2030,
-                "fcf_b": 68.0,
-                "rationale": "+15% mid-cycle; AI growth moderates and non-AI segments contribute a modest recovery."
+                "fcf_b": 90.0,
+                "rationale": "+13% mid-cycle; custom silicon market expands from current 6 customers toward 10+, offsetting maturation in early programs. Tomahawk 7 volume ramp at peak."
               },
               {
                 "year": 2031,
-                "fcf_b": 75.0,
-                "rationale": "+10% as the franchise matures toward a steadier compounding rate."
+                "fcf_b": 98.0,
+                "rationale": "+9% as the franchise approaches steady-state compounding. Multi-year supply agreements through 2029-2031 anchor the floor."
               },
               {
                 "year": 2032,
-                "fcf_b": 80.0,
-                "rationale": "+7% terminal-approach year; growth settles toward the long-run AI-content tailwind."
+                "fcf_b": 105.0,
+                "rationale": "+7% terminal-approach year; growth settles toward the long-run AI-content tailwind above nominal GDP, consistent with the 4.25% terminal growth assumption."
               }
             ]
           }
@@ -78,13 +78,13 @@
           "name": "Infrastructure Software (VMware)",
           "method": "Multiple",
           "weight_pct": 35,
-          "reasoning": "Recurring, subscription VMware revenue at 70s operating margin is valued on EV/EBITDA like an enterprise-software annuity, not a growth DCF.",
+          "reasoning": "Recurring, subscription VMware revenue at 70s EBITDA margin is valued on EV/EBITDA like an enterprise-software annuity. Q3-FY26 software guided +31% YoY driven by VCF 9.1 and bridge contract renewals. 17x reflects a premium to legacy enterprise software for the durable recurring margin but a discount to high-growth SaaS because organic volume growth is limited by the 2026-27 renewal cliff and footprint shrinkage.",
           "net_debt_allocation_b": 0.0,
           "multiple_inputs": {
             "multiple_type": "EV/EBITDA",
             "multiple_value": 17,
-            "fy_estimate": 19.0,
-            "reasoning": "17x forward EBITDA of ~$19B for the software segment. A premium to legacy enterprise software for the 70s-margin recurring base, a discount to high-growth SaaS because organic growth is low and churn risk is rising after the repricing."
+            "fy_estimate": 22.0,
+            "reasoning": "17x NTM EV/EBITDA on ~$22bn forward software EBITDA. NTM software revenue ~$35-37bn at 70% EBITDA margin = $24.5-26bn; using $22bn conservatively to account for footprint-down offset against price-up. VCF 9.1 cycle beginning Q3-FY26 is the first material upside catalyst, supporting the 17x vs the 15x a pure legacy-software name would command."
           }
         }
       ]
@@ -95,7 +95,7 @@
           "name": "Semiconductor Solutions",
           "method": "DCF",
           "weight_pct": 65,
-          "reasoning": "Custom AI XPUs (Google TPU, Meta, ByteDance) plus AI networking (Tomahawk, Jericho) drive a steep but decaying FCF ramp off a fabless, asset-light base. Non-AI segments (broadband, wireless, storage) are a cyclical drag inside this number.",
+          "reasoning": "Custom AI XPUs (Google TPU, Meta MTIA, Anthropic, OpenAI + 2 unnamed) plus AI networking (Tomahawk 6/7, Jericho, SerDes) drive a steep FCF ramp off a fabless, asset-light base. Non-AI segments (broadband, wireless, server storage, industrial) are a cyclical drag inside this number. AI semi Q2-FY26 $10.8bn (+143% YoY); Q3-FY26 guided ~$16bn; FY27 AI guide >$100bn drives the ramp.",
           "inputs": {
             "wacc": {
               "value": 0.0825,
@@ -106,91 +106,91 @@
                 "debt_weight": 0.1,
                 "cost_of_debt_after_tax": 0.038
               },
-              "reasoning": "8.25% blends a 4.3% risk-free, a 1.30 beta (below the 1.43 reported because the software annuity lowers cash-flow risk), a 4.5% equity risk premium, and a small after-tax debt weight on the investment-grade balance sheet."
+              "reasoning": "8.25% blends a 4.3% risk-free rate, a 1.30 beta (below the 1.43 reported because the software annuity lowers aggregate cash-flow volatility), a 4.5% equity risk premium, and a small after-tax debt weight on an investment-grade balance sheet de-levering toward net cash by FY27."
             },
             "terminal_growth": {
               "value": 0.0425,
-              "reasoning": "4.25% reflects durable AI-content growth above GDP as accelerator clusters keep scaling, decaying from the explicit ramp but staying above a mature-semis 3%."
+              "reasoning": "4.25% reflects durable AI-content growth above nominal GDP as accelerator clusters keep scaling; decays from the explicit ramp but stays above a mature-semis 3% terminal rate. Google + Anthropic signed supply agreements through 2031 support above-GDP terminal growth."
             },
             "forecast_horizon_years": 7,
             "fcf_projections": [
               {
                 "year": 2026,
-                "fcf_b": 30.0,
-                "rationale": "Forward semiconductor FCF, scaled up from the $27B company TTM as the AI XPU and networking ramp lifts the segment's cash generation against light fabless capex."
+                "fcf_b": 32.0,
+                "rationale": "FY26 semiconductor segment FCF, reflecting Q1-Q2 actuals ($5.5bn + $6.4bn quarterly) and Q3-FY26 guide of ~$29.4bn total revenue with ~$16bn AI semis; H2 acceleration drives the full-year semi FCF to ~$32bn. Fabless model keeps capex at ~1% of revenue."
               },
               {
                 "year": 2027,
-                "fcf_b": 39.0,
-                "rationale": "+30% as the second and third hyperscaler XPU programs ramp into volume and AI networking content per cluster rises."
+                "fcf_b": 55.0,
+                "rationale": "+72% as the >$100bn AI revenue guide lands in FY27 -- Google + Anthropic at $64.5-75.7bn, Meta 3GW commitment, OpenAI 1.3GW, plus networking (Tomahawk 7, SerDes 1.6Tb/s) at ~40% of AI semi revenue. Six XPU programs at scale simultaneously drive the highest single-year FCF jump."
               },
               {
                 "year": 2028,
-                "fcf_b": 49.0,
-                "rationale": "+26% with the lead custom-silicon customers compounding and new programs reaching scale."
+                "fcf_b": 68.0,
+                "rationale": "+24% with the XPU franchise maturing toward next-gen designs. Law of large numbers begins to moderate growth. Google COT risk partially materializes, shaving ~10% from the bear tail but not the base."
               },
               {
                 "year": 2029,
-                "fcf_b": 59.0,
-                "rationale": "+20% as AI demand broadens but the law of large numbers starts to bite."
+                "fcf_b": 80.0,
+                "rationale": "+18% as AI demand broadens to new model-builder customers and networking content per cluster rises with model scale. Non-AI semi recovery (broadband, wireless) adds a modest layer."
               },
               {
                 "year": 2030,
-                "fcf_b": 68.0,
-                "rationale": "+15% mid-cycle; AI growth moderates and non-AI segments contribute a modest recovery."
+                "fcf_b": 90.0,
+                "rationale": "+13% mid-cycle; custom silicon market expands from current 6 customers toward 10+, offsetting maturation in early programs. Tomahawk 7 volume ramp at peak."
               },
               {
                 "year": 2031,
-                "fcf_b": 75.0,
-                "rationale": "+10% as the franchise matures toward a steadier compounding rate."
+                "fcf_b": 98.0,
+                "rationale": "+9% as the franchise approaches steady-state compounding. Multi-year supply agreements through 2029-2031 anchor the floor."
               },
               {
                 "year": 2032,
-                "fcf_b": 80.0,
-                "rationale": "+7% terminal-approach year; growth settles toward the long-run AI-content tailwind."
+                "fcf_b": 105.0,
+                "rationale": "+7% terminal-approach year; growth settles toward the long-run AI-content tailwind above nominal GDP, consistent with the 4.25% terminal growth assumption."
               }
             ]
           },
           "outputs": {
-            "pv_explicit_fcf_b": 280.881,
-            "terminal_value_b": 2085.0,
-            "pv_terminal_b": 1197.046,
-            "implied_ev_b": 1477.927,
-            "implied_equity_b": 1477.927,
-            "implied_px": 310.65
+            "pv_explicit_fcf_b": 370.103,
+            "terminal_value_b": 2736.562,
+            "pv_terminal_b": 1571.122,
+            "implied_ev_b": 1941.225,
+            "implied_equity_b": 1941.225,
+            "implied_px": 408.03
           }
         },
         {
           "name": "Infrastructure Software (VMware)",
           "method": "Multiple",
           "weight_pct": 35,
-          "reasoning": "Recurring, subscription VMware revenue at 70s operating margin is valued on EV/EBITDA like an enterprise-software annuity, not a growth DCF.",
+          "reasoning": "Recurring, subscription VMware revenue at 70s EBITDA margin is valued on EV/EBITDA like an enterprise-software annuity. Q3-FY26 software guided +31% YoY driven by VCF 9.1 and bridge contract renewals. 17x reflects a premium to legacy enterprise software for the durable recurring margin but a discount to high-growth SaaS because organic volume growth is limited by the 2026-27 renewal cliff and footprint shrinkage.",
           "inputs": {
             "multiple_type": "EV/EBITDA",
             "multiple_value": 17,
-            "fy_estimate": 19.0,
-            "reasoning": "17x forward EBITDA of ~$19B for the software segment. A premium to legacy enterprise software for the 70s-margin recurring base, a discount to high-growth SaaS because organic growth is low and churn risk is rising after the repricing."
+            "fy_estimate": 22.0,
+            "reasoning": "17x NTM EV/EBITDA on ~$22bn forward software EBITDA. NTM software revenue ~$35-37bn at 70% EBITDA margin = $24.5-26bn; using $22bn conservatively to account for footprint-down offset against price-up. VCF 9.1 cycle beginning Q3-FY26 is the first material upside catalyst, supporting the 17x vs the 15x a pure legacy-software name would command."
           },
           "outputs": {
-            "implied_ev_b": 323.0,
-            "implied_equity_b": 323.0,
-            "implied_px": 67.89
+            "implied_ev_b": 374.0,
+            "implied_equity_b": 374.0,
+            "implied_px": 78.61
           }
         }
       ],
       "aggregate": {
-        "sum_of_segment_ev_b": 1800.927,
-        "net_debt_b": 48.96,
-        "implied_equity_b": 1751.967,
-        "implied_px": 368.25
+        "sum_of_segment_ev_b": 2315.225,
+        "net_debt_b": 45.3,
+        "implied_equity_b": 2269.925,
+        "implied_px": 477.12
       },
-      "implied_px": 368.25
+      "implied_px": 477.12
     }
   },
   "cross_check": {
     "name": "Multiple",
     "category": "relative",
-    "reasoning": "Whole-company forward multiple cross-check against the AI-semiconductor peer set and the Street, anchoring to the market's willingness to pay for forward earnings power.",
+    "reasoning": "Whole-company forward multiple cross-check against the AI-semiconductor peer set and the Street. 45 analysts at $522 mean target on ~25.5x consensus forward P/E. Anchors the intrinsic SOTP toward market-clearing reality where the franchise is broadly owned.",
     "inputs": {
       "multiple_type": "Forward P/E",
       "multiple_value": 25.5,
@@ -219,14 +219,14 @@
           }
         }
       ],
-      "implied_px": 194.93,
-      "reasoning": "AI capex pauses to absorb capacity, one custom-silicon program slips or in-sources, and VMware churn shows up; semi FCF is cut 30%, discounted harder, software re-rates to 13x."
+      "implied_px": 251.39,
+      "reasoning": "Google COT accelerates to inference tier (MediaTek win confirmed), Marvell takes a networking socket, and VMware net retention turns flat/negative as bridge contracts expire. Semi FCF is cut 18% (fcf_multiplier 0.82), discounted at 10% WACC with 3% terminal growth. Software re-rates to 14x on renewal-cliff risk. Bear SOTP produces ~$230-270; GS published bear case is $228."
     },
     {
       "label": "Base",
       "key_changes": [],
-      "implied_px": 368.25,
-      "reasoning": "The AI ramp decays gracefully as modeled, software annuity holds at 17x; the franchise compounds FCF into the high-$70Bs by 2032."
+      "implied_px": 477.12,
+      "reasoning": "AI ramp decays gracefully as modeled. Software annuity holds at 17x on $22bn EBITDA. Franchise compounds semiconductor FCF from $32bn (FY26) toward $105bn (FY32) as the XPU and networking franchise scales. No Google COT escalation beyond disclosed MediaTek inference 'e' variants."
     },
     {
       "label": "Bull",
@@ -246,11 +246,11 @@
           }
         }
       ],
-      "implied_px": 563.86,
-      "reasoning": "Five-plus custom-silicon customers at scale, AI networking content compounds faster than modeled, VMware net retention holds above 100%; semi FCF runs 22% above base and re-rates."
+      "implied_px": 732.71,
+      "reasoning": "Five-plus custom-silicon customers at full scale simultaneously, AI networking content compounds faster than modeled (scale-up clusters grow larger), VMware net retention holds above 100% as VCF 9.1 drives genuine footprint expansion. Semi FCF runs 22% above base; software re-rates to 19x on sustained growth. Bull SOTP: $600+."
     }
   ],
-  "blended_target": 368.25,
-  "blending_logic": "SOTP base = sum of segment EVs (Semi DCF + Software 17x EBITDA) less $49B net debt. Narrative 12m target probability-weights Bear/Base/Bull SOTP outcomes plus the forward-multiple cross-check.",
-  "upside_pct": -6.1
+  "blended_target": 477.12,
+  "blending_logic": "SOTP base = sum of segment EVs (Semi DCF + Software 17x EBITDA on $22bn NTM) less $45.3bn net debt, divided by 4.7576bn shares. Probability-weighted 12m target: Bear 25% x SOTP_bear + Base 45% x SOTP_base + Bull 10% x SOTP_bull + Cross-check 20% x $493.",
+  "upside_pct": 26.7
 }
