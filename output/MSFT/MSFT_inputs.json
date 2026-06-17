@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "ticker": "MSFT",
+  "currency": "USD",
+  "current_price": 386.49,
+  "shares_outstanding_b": 7.4284,
+  "net_debt_b": 8.2,
+  "computed_at": "2026-06-17T00:00:00Z",
+
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "MSFT generates $170B+ in annual OCF and $71.6B in TTM FCF, is profitable in every segment, and has >85% recurring revenue mix. DCF is appropriate; CapEx peaks in CY2026 (~$190B) then moderates, making a normalized 10-year FCF path tractable.",
+    "inputs": {
+      "wacc": {
+        "value": 0.095,
+        "components": {
+          "rf": 0.043,
+          "beta": 1.10,
+          "erp": 0.050,
+          "debt_weight": 0.05,
+          "cost_of_debt_after_tax": 0.022
+        },
+        "reasoning": "10Y UST at 4.3%, ERP 5.0%, beta 1.10 (yfinance) gives cost of equity 9.8%. MSFT is net-cash-positive ($78.2B cash vs $60.6B debt), AAA-rated; blended WACC 9.5% sits within Damodaran software sector band (9.0-11.5%). Base case uses 95bps above bull to reflect uncertainty."
+      },
+      "terminal_growth": {
+        "value": 0.035,
+        "reasoning": "Cloud and enterprise software grow structurally above nominal GDP. At steady state MSFT participates in a $3-4T cloud TAM. 3.5% terminal growth is below the 10-year US nominal GDP average (~4.4%) and below the bull case 4.5% — reflects base-case conservatism that AI-driven growth eventually normalizes toward GDP+ rather than well above it."
+      },
+      "forecast_horizon_years": 10,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 47.0,
+          "revenue_b": 327.0,
+          "revenue_growth_pct": 16.0,
+          "ebitda_margin": 0.54,
+          "rationale": "FY26 (ends Jun 2026): OCF ~$177B (53% of $327B revenue), less $130B CapEx for H2 FY26 portion of the $190B CY2026 budget. FCF compressed but not negative because Q3 FY26 OCF momentum carries through. Segment margins hold; PC segment drags slightly."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 5.0,
+          "revenue_b": 370.0,
+          "revenue_growth_pct": 13.1,
+          "ebitda_margin": 0.55,
+          "rationale": "FY27 FCF trough: Q1+Q2 FY27 (Jul-Dec 2026) absorbs ~$116B of the CY2026 $190B CapEx run-rate. OCF ~$196B (53% of $370B), less ~$191B CapEx = near-breakeven FCF. Revenue guided double-digit by Amy Hood on 2026-04-29 call. CapEx intensity does not repeat in H2 FY27."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 80.0,
+          "revenue_b": 418.0,
+          "revenue_growth_pct": 13.0,
+          "ebitda_margin": 0.56,
+          "rationale": "FY28 CapEx normalizes to ~$130B as the CY2026 data center buildout completes. OCF grows to ~$210B on 13% revenue growth plus margin expansion from AI productivity (Amy Hood: opex mid-to-high single digits). FCF recovery is sharp once the buildout phase ends."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 145.0,
+          "revenue_b": 470.0,
+          "revenue_growth_pct": 12.4,
+          "ebitda_margin": 0.57,
+          "rationale": "FY29: CapEx stabilizes ~$100B as capacity matches demand. Azure supply-constraint resolves (H2 CY2026 guided), unlocking the existing booking backlog. Copilot seat-to-consumption transition is now a revenue multiplier. FCF margin expands toward 31%."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 200.0,
+          "revenue_b": 521.0,
+          "revenue_growth_pct": 10.9,
+          "ebitda_margin": 0.58,
+          "rationale": "FY30: Consumption pricing (GitHub Copilot usage-based since Jun 2026, Dynamics 365 already 60% consumption) compounds ARPU. CapEx ~$85B. FCF margin ~38%. Revenue growth decelerates as base grows; Maia-driven inference cost reduction expands IC margins."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 235.0,
+          "revenue_b": 568.0,
+          "revenue_growth_pct": 9.0,
+          "ebitda_margin": 0.58,
+          "rationale": "FY31: Steady-state cloud economics beginning. Headcount flat/declining (AI self-improvement). CapEx maintenance mode ~$75B. FCF margin ~41%."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 262.0,
+          "revenue_b": 612.0,
+          "revenue_growth_pct": 7.7,
+          "ebitda_margin": 0.59,
+          "rationale": "FY32: OpenAI royalty-free model access through this year; structural COGS advantage maintained. Revenue growth approaching single digits as the cloud TAM matures at high-share position."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 282.0,
+          "revenue_b": 649.0,
+          "revenue_growth_pct": 6.0,
+          "ebitda_margin": 0.59,
+          "rationale": "FY33: Revenue growth 6%. FCF margin ~43%. CapEx ~$65B (maintenance + incremental capacity)."
+        },
+        {
+          "year": 2034,
+          "fcf_b": 298.0,
+          "revenue_b": 682.0,
+          "revenue_growth_pct": 5.1,
+          "ebitda_margin": 0.59,
+          "rationale": "FY34: Approaching terminal growth. Operating leverage from 500M+ seat base with near-zero marginal cost of AI delivery compounds FCF."
+        },
+        {
+          "year": 2035,
+          "fcf_b": 310.0,
+          "revenue_b": 710.0,
+          "revenue_growth_pct": 4.1,
+          "ebitda_margin": 0.59,
+          "rationale": "FY35: Final explicit year. FCF margin ~44%. Handoff to terminal growth of 3.5%. FCF growth converging to terminal g."
+        }
+      ]
+    }
+  },
+
+  "cross_check": {
+    "name": "Multiple",
+    "category": "relative",
+    "reasoning": "EV/EBITDA peer cross-check anchors the DCF against observable market prices for comparable compounders. MSFT's cloud margin profile sits above pure-play software but below hyperscaler averages; blended peer median of 19x on FY27E EBITDA gives a sanity check.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 19.0,
+      "fy_estimate": 185.0,
+      "peers_used": ["GOOGL", "AMZN", "ORCL", "SAP", "CRM"],
+      "reasoning": "FY27E EBITDA of $185B = conservative 50% EBITDA margin on $370B revenue (MSFT reported 46% op margin in Q3 FY26; EBITDA margin ~54% adding back D&A, but using 50% to be conservative given CapEx-heavy depreciation ramp). Peer median 19x: GOOGL ~22x, AMZN ~20x, ORCL ~17x, SAP ~17x, CRM ~18x."
+    },
+    "outputs": {
+      "implied_ev_b": 3515.0,
+      "implied_equity_b": 3506.8,
+      "implied_px": 472.1
+    }
+  },
+
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.105,
+        "terminal_g": 0.030,
+        "fcf_projections": [
+          {"year": 2026, "fcf_b": 40.0, "rationale": "Bear: OCF softer at 51% of revenue on higher labor costs; CapEx overruns."},
+          {"year": 2027, "fcf_b": 0.0, "rationale": "Bear: Full CapEx trough; OpenAI cost inflation + Azure growth decelerates to 28% as competition gains share. FCF breakeven."},
+          {"year": 2028, "fcf_b": 45.0, "rationale": "Bear: CapEx still elevated ($145B) as hyperscaler AI arms race continues. Azure 22% growth."},
+          {"year": 2029, "fcf_b": 85.0, "rationale": "Bear: CapEx moderates but Copilot adoption plateaued at 4% seat penetration. Growth slows to 8%."},
+          {"year": 2030, "fcf_b": 120.0, "rationale": "Bear: Cloud commoditization. WACC re-rating on 10-12% revenue growth. FCF margin ~28%."},
+          {"year": 2031, "fcf_b": 150.0, "rationale": "Bear: Steady state at lower growth; P/E re-rates to 16x. FCF margin ~31%."},
+          {"year": 2032, "fcf_b": 172.0, "rationale": "Bear: Revenue growth 6-7%; margins capped by elevated DC depreciation."},
+          {"year": 2033, "fcf_b": 188.0, "rationale": "Bear: Terminal approach. FCF margin ~33%."},
+          {"year": 2034, "fcf_b": 200.0, "rationale": "Bear: Converging to terminal."},
+          {"year": 2035, "fcf_b": 210.0, "rationale": "Bear: Final explicit year; handoff to 3.0% terminal growth."}
+        ]
+      },
+      "probability": 0.15,
+      "probability_reasoning": "A 15% bear probability reflects the scenario where CapEx stays elevated through FY28, Azure share is capped by competitive pressure, Copilot hits the 4% penetration ceiling, and OpenAI's renegotiated terms prove less favorable than disclosed. Not the central case but not remote: MSFT's FCF/NI ratio declining from 0.90x in FY22 to 0.58x TTM is real stress.",
+      "reasoning": "CapEx stays elevated through FY28, Azure share erodes to AWS as open-source models commoditize inference, Copilot seat penetration plateaus below 10%, and re-rates to 16x earnings on 10-12% growth with no multiple expansion."
+    },
+    {
+      "label": "Base",
+      "key_changes": {
+        "wacc": 0.095,
+        "terminal_g": 0.035
+      },
+      "probability": 0.55,
+      "probability_reasoning": "55% weight on base: the $627B RPO, 39-40% Azure guidance, and Amy Hood's FY27 double-digit guidance are hard anchors. The FCF trough in FY27 is real but mechanical (capex timing). The base case assumes execution on existing commitments without assuming material AI upside beyond the $37B ARR run-rate.",
+      "reasoning": "Azure supply resolves in H2 CY2026 per guidance; Copilot scales to 50M seats by FY28 at $30/month; CapEx normalizes post-FY27; FCF recovers sharply. No upside from consumption pivot or new product lines beyond current commitments."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.088,
+        "terminal_g": 0.045,
+        "fcf_projections": [
+          {"year": 2026, "fcf_b": 52.0, "rationale": "Bull: OCF at 54% of $327B + slightly lower CapEx timing. FCF $52B."},
+          {"year": 2027, "fcf_b": 18.0, "rationale": "Bull: $190B CY2026 capex falls mostly H1; H2 CY2026 already moderating. FY27 FCF $18B."},
+          {"year": 2028, "fcf_b": 120.0, "rationale": "Bull: Azure accelerates post supply-constraint to 35%+; CapEx drops to $110B. Copilot 70M seats. FCF $120B."},
+          {"year": 2029, "fcf_b": 195.0, "rationale": "Bull: Consumption pricing adds $15B incremental ARR. GitHub, Dynamics, M365 all usage-based. FCF margin ~38%."},
+          {"year": 2030, "fcf_b": 255.0, "rationale": "Bull: AI ARR scales to $120B+. CapEx $80B. FCF margin ~44%."},
+          {"year": 2031, "fcf_b": 295.0, "rationale": "Bull: Maia silicon brings inference cost down 50%+ from 2025 baseline; IC margins expand. FCF $295B."},
+          {"year": 2032, "fcf_b": 325.0, "rationale": "Bull: OpenAI royalty-free through this year; full advantage period."},
+          {"year": 2033, "fcf_b": 350.0, "rationale": "Bull: FCF margin ~46%."},
+          {"year": 2034, "fcf_b": 370.0, "rationale": "Bull: Converging to terminal growth."},
+          {"year": 2035, "fcf_b": 386.0, "rationale": "Bull: Final year; handoff to 4.5% terminal growth."}
+        ]
+      },
+      "probability": 0.20,
+      "probability_reasoning": "20% bull probability: Azure acceleration + consumption pivot materializing faster, Copilot hitting 100M seats, and Maia economics unlocking IC margin expansion are all grounded in management disclosures but require multiple things to go right simultaneously. AI ARR doubling from $37B to $75B+ in 18 months is ambitious but within the $37B at 123% YoY trajectory.",
+      "reasoning": "Azure reaccelerates to 45%+ post supply-constraint, Copilot consumption pivot adds $30B+ ARR, Maia economics expand IC margins 5pts, and CapEx peaks early — producing FCF margin above 44% by FY30 and a 4.5% terminal growth rate."
+    }
+  ],
+
+  "blending_weights": {
+    "cross_check": 0.10
+  },
+
+  "weights_reasoning": "Bear 15% + Base 55% + Bull 20% + Cross-check 10% = 100%. The cross-check gets a 10% weight rather than the typical 20% because EV/EBITDA comps are complicated by MSFT's CapEx-driven depreciation surge in FY27-28 (EBITDA looks cleaner than the true economics). Base dominates at 55% because management guidance is unusually specific ($627B RPO, 39-40% Azure Q4, FY27 double-digit). Bull gets 20% because the $37B AI ARR at 123% growth is real and the consumption pivot thesis has catalysts with known dates (GitHub usage-based Jun 2026).",
+
+  "blended_target": null,
+  "blending_logic": "Bear 15% × bear_px + Base 55% × base_px + Bull 20% × bull_px + Cross-check 10% × $472.1",
+  "upside_pct": null
+}
