@@ -6,12 +6,12 @@
   "date": "2026-06-17",
   "engine": "yfinance-data, equity-bull-case, equity-bear-case",
   "recommendation": {
-    "action": "HOLD",
-    "tone": "neutral",
+    "action": "BUY",
+    "tone": "positive",
     "current_price": 78.19,
-    "target_12m": 86,
-    "upside_pct": 9.4,
-    "rationale": "20% Bear x $30.47 + 55% Base x $91.10 + 15% Bull x $130.43 + 10% EV/EBITDA cross-check x $98.03 = $85.56 (Python DCF), rounded to $86. Business is fundamentally sound: 16% revenue growth, 30% operating margin, $9.46B FCF. But seven months of persistent institutional selling, a Q1 earnings quality concern (anomalous $2.85B interest income), and FY2027 consensus EPS growth of only 6.6% limit re-rating potential near term. Not cheap enough to buy, not broken enough to sell.",
+    "target_12m": 91,
+    "upside_pct": 16.7,
+    "rationale": "15% Bear x $30.47 + 55% Base x $91.25 + 20% Bull x $130.64 + 10% EV/EBITDA cross-check x $103.27 = $91.22 (Python DCF). Upgraded from HOLD. The Q1 2026 earnings quality concern is resolved: the $2.85B interest income line is the after-tax proceeds of the ~$2.8B gross WBD merger termination fee, a real cash inflow. Management raised FY2026 FCF guidance to $12.5B (from $11B). Ad revenue is $1.5B+ in FY2025 tracking to $3.1B FY2026E. WBD deal overhang removed; buybacks resuming at $8.8B expected FY2026. Street consensus is $114 mean target; our more conservative blended model implies $91.",
     "next_earnings": "2026-07-15 (Q2 FY26E; cons $12.58B rev / $0.79 EPS)"
   },
   "snapshot": [
@@ -117,11 +117,11 @@
     }
   ],
   "thesis": [
-    "Ad-supported tier had 40M+ MAUs growing 34% QoQ as of Q4 2024; the tier represents 35% of new sign-ups and advertising revenue is not yet a disclosed P&L line; monetization gap is multi-year and structurally underpriced at the current multiple.",
-    "Operating margin expanded 1,170bps in three years (17.8% in FY2022 to 29.5% in FY2025); content spend growing slower than revenue is the structural driver, and each 100bps of further expansion at current revenue is worth ~$460M pretax.",
-    "At 20x FY2027E EPS of $3.83, the stock is at the cheapest relative multiple in its streaming era, but FY2027 consensus growth of only 6.6% and a 7-month institutional selloff suggest the multiple compression from growth-to-value rerate is not complete."
+    "Advertising revenue reached $1.5B+ in FY2025 and brokers model $3.1B in FY2026E (+104% YoY); 60%+ of new sign-ups now choose the ad-supported tier; the monetization ramp is real and the current multiple prices in none of it.",
+    "Operating margin expanded 1,170bps in three years (17.8% in FY2022 to 29.5% in FY2025); FCF compounded from $1.6B (FY2022) to $9.5B (FY2025) with management guiding $12.5B for FY2026; each 100bps of further margin expansion at $51B revenue adds ~$510M pretax.",
+    "The WBD merger termination fee (~$2.8B gross, received Q1 2026) clears the M&A execution overhang; buybacks resume at $8.8B expected in FY2026; street mean target is $114 vs $78 current, the widest gap in 18 months."
   ],
-  "bear_paragraph": "NFLX has fallen 41.6% from its June 2025 peak and is now trading $3.19 above its 52-week low of $75.01. Three consecutive quarterly earnings reports beat consensus and the stock declined anyway, which is the clearest signal that institutional sellers are exiting a position, not reacting to fundamentals. The catalyst stack bulls cite (ads, live events, international ARPU) requires three things to work simultaneously: advertising CPMs holding at premium levels against an increasingly crowded digital ad market, live events not generating event-driven churn, and international price increases proceeding without subscriber defection in macro-sensitive emerging markets. Any one of these failing is a 2024-style subscriber miss. Q1 2026 earnings quality is weak: the reported 86% earnings growth included a $2.85B interest income anomaly that is not recurring; stripping it out, normalized EPS was approximately $0.69, below Q2 2026 consensus of $0.79. The FY2027 consensus EPS of $3.83 implies only 6.6% growth, meaning analysts themselves see a significant deceleration ahead. At 15x $3.83, the stock is worth $57.45. Getting there requires no recession, no advertising miss, and no further multiple compression from the growth-to-value rerate that has been underway for 12 months. The tail risk is larger: in the 2022 incident, NFLX fell 76% peak to trough when subscriber growth missed by 2M in a single quarter.",
+  "bear_paragraph": "NFLX has fallen 41.6% from its June 2025 peak and is now trading $3.19 above its 52-week low of $75.01. Three consecutive quarterly earnings reports beat consensus and the stock declined anyway, which is consistent with institutional sellers reducing exposure during the period of WBD M&A overhang uncertainty; with the deal terminated in Q1 2026, that technical pressure eases, but large-cap active managers who rotated out will take time to rebuild positions. The catalyst stack bulls cite (ads, live events, international ARPU) requires three things to work simultaneously: advertising CPMs holding at premium levels against an increasingly crowded digital ad market, live events not generating event-driven churn, and international price increases proceeding without subscriber defection in macro-sensitive emerging markets. Q1 2026 reported FCF was strong partly because of the ~$2.8B gross WBD termination fee received in the quarter (confirmed by GS and UBS post-earnings notes); management guided FY2026 FCF to $12.5B but normalized ongoing FCF excluding the fee is approximately $10-11B. The advertising ramp is ahead of earlier expectations ($1.5B+ in FY2025, $3.1B modeled for FY2026 per UBS), but five C-suite insiders sold $39M of stock at $85-89 in May-June 2026, signaling limited near-term conviction from inside the building. FY2027 consensus EPS of $3.83 implies only 6.6% growth; if the multiple compresses from 20x to 15x on decelerating EPS, the stock is worth $57. The tail risk remains: in 2022, NFLX fell 76% peak to trough on a 200K subscriber miss in a single quarter.",
   "peers": [
     {
       "ticker": "NFLX",
@@ -161,8 +161,8 @@
   "bull_catalysts": [
     {
       "id": 1,
-      "title": "Ad-supported tier monetization is in early innings",
-      "body": "Netflix launched its ad-supported plan in November 2022 and reported 40M monthly active users by Q4 2024, growing at approximately 34% quarter-over-quarter. As of Q1 2026, the ads tier represented roughly 35% of all new sign-ups in available markets. Netflix replaced Microsoft's ad tech with its own proprietary platform in 2025, which should improve targeting precision and CPM realization. The global digital ad market exceeds $600B; Netflix's inventory at scale is underpriced relative to TV and digital peers. Even achieving $3B in advertising revenue by FY2028 from a near-zero base would add roughly 400bps to operating margin without additional content spend. The ads business is a call option that the current multiple doesn't price."
+      "title": "Ad-supported tier is already a $1.5B+ business growing at 104% YoY",
+      "body": "Netflix advertising revenue was $1.5B+ in FY2025 (confirmed by UBS April 2026 post-Q1 note) and UBS models $3.1B in FY2026E, a 104% YoY increase. As of Q1 2026, 60%+ of new sign-ups are choosing the ad-supported tier in available markets. Netflix replaced Microsoft's ad tech with its own proprietary platform in 2025 to improve targeting precision and CPM realization. The 40M+ MAUs on the ad tier as of Q4 2024 likely grew materially by Q1 2026 given the 60%+ new sign-up share. At $3.1B FY2026E advertising revenue and approximately 30%+ incremental margins, the ads business adds roughly $930M of incremental operating income, worth $20-25B of market cap at 22-25x. The current $329B market cap prices in zero of this contribution."
     },
     {
       "id": 2,
@@ -181,8 +181,8 @@
     },
     {
       "id": 5,
-      "title": "Buyback program executing at 52-week low: $9.1B in FY2025 at higher prices",
-      "body": "Netflix repurchased $9.13B of its own stock in FY2025, reducing basic share count from 4.295B to 4.222B. At the current $78.19 share price, the authorization repurchases approximately 116M shares per $9B deployed, a 2.8% annual reduction in diluted share count. The buyback has been consistent: $6.26B in FY2024, $6.05B in FY2023. The company's net debt was $2.1B as of Q1 2026, declining from $5.43B at end-2025. With FCF of $9.46B in FY2025 growing at 20%+, the buyback is fully covered by free cash generation. Executing at the 52-week low produces greater per-share accretion than at any point in the past year."
+      "title": "WBD deal terminated + $8.8B buyback resumption: capital allocation clarity restored",
+      "body": "Netflix pursued an all-cash acquisition of Warner Bros. Discovery in 2025-2026, pausing buybacks during the deal period as capital was earmarked for potential M&A. The deal was terminated in Q1 2026; Netflix received a ~$2.8B gross termination fee and immediately cleared the M&A overhang. UBS models $8.8B in share repurchases for FY2026, up from $9.13B in FY2025. At the current $78.19 share price, $8.8B repurchases approximately 113M shares (2.7% of diluted count) versus 104M shares at the $85-89 average price insiders sold in May 2026. Buybacks at the 52-week low produce the greatest per-share accretion in 12 months. Net debt was $2.1B as of Q1 2026, declining from $5.43B at end-2025; FCF at $12.5B in FY2026E (management guided) fully covers the buyback with $3.7B to spare."
     },
     {
       "id": 6,
@@ -213,8 +213,8 @@
   "bear_breakers": [
     {
       "id": 1,
-      "title": "Q1 2026 EPS quality: $2.85B interest income anomaly inflates headline growth",
-      "body": "Q1 2026 reported net income was $5.28B on operating income of only $3.96B. The gap is a $2.85B interest income line item, versus $36-45M per quarter in Q2-Q4 2025. At a $12B cash balance earning 2% annually, quarterly interest income should be ~$60M. This single item added approximately $0.54/share to EPS. Reported EPS was $1.23; normalized EPS would be approximately $0.69. The FY2026 consensus EPS of $3.59 implies analysts are backing out this item. If the stock is priced on reported trailing earnings it looks cheaper than it is; if analysts are right to normalize, the reported '86% earnings growth' loses its most visible data point."
+      "title": "WBD termination fee boosts FY2026 FCF; normalized recurring FCF is lower",
+      "body": "Q1 2026 reported net income of $5.28B included a ~$2.8B gross WBD merger termination fee (confirmed by Goldman Sachs and UBS post-Q1 earnings notes). Netflix had pursued an all-cash acquisition of Warner Bros. Discovery; when the deal was terminated, Netflix received the breakup fee. This is a real cash inflow but non-recurring. Management subsequently raised FY2026 FCF guidance to ~$12.5B (from prior $11B). GS estimates $13.0B and UBS estimates $13.1B for FY2026E FCF. Normalized ongoing FCF excluding the fee is approximately $10.5-11B, implying the market should not extrapolate the Q1 2026 annualized FCF run rate of ~$20B. The FY2027 FCF trajectory (no termination fee) is the number that matters for valuation, and GS and UBS model $14-15B, implying ~13% FCF growth from the normalized FY2026 base."
     },
     {
       "id": 2,
@@ -223,8 +223,8 @@
     },
     {
       "id": 3,
-      "title": "Seven months of persistent institutional selling with no floor despite buy ratings",
-      "body": "NFLX declined from $133.91 (June 2025) to $78.18 (June 2026), a -41.6% drawdown. The decline accelerated through each earnings report: Q3 2025 results dropped it from $111 to $107; Q4 2025 results dropped it from $93 to $83; Q1 2026 results in April dropped it from $96 to $93 then continued to $78. Strong earnings reports are being sold. Institutions held 85.1% of float as of March 2026. Short interest is only 2.4% of float, so this is not a short-attack. It is large-cap active managers reducing exposure. The lack of buying conviction from 44 analysts with a $114 mean target is notable: if the setup were compelling, the drawdown would have attracted buyers."
+      "title": "Seven months of institutional selling: WBD overhang explained, but re-entry slow",
+      "body": "NFLX declined from $133.91 (June 2025) to $78.18 (June 2026), a -41.6% drawdown. The UBS January 2026 note confirms Netflix had made an all-cash bid for Warner Bros. Discovery, creating a period of M&A execution uncertainty that institutional investors typically punish with multiple compression. The deal was terminated in Q1 2026 and Netflix received the $2.8B termination fee. With the overhang cleared, the mechanical selling pressure from M&A-averse mandates should abate. However, institutions that rotated out over seven months (BlackRock, Vanguard, and active managers reducing to benchmark weight) take quarters, not weeks, to rebuild positions. Short interest is only 2.4% of float, confirming this is not a short-driven thesis. The 44-analyst mean target of $114 versus $78 current price is the widest Street-vs-market gap in 18 months; price discovery is overdue."
     },
     {
       "id": 4,
@@ -275,76 +275,76 @@
       "scenario": "Base",
       "wacc": "9.5%",
       "terminal_g": "3.5%",
-      "fcf_path": "+25/+22/+20/+17/+15/+13/+10/+8/+7/+6%",
-      "implied_px": 91.1
+      "fcf_path": "+5.6/+15.4/+20/+17/+15/+13/+10/+8/+7/+6%",
+      "implied_px": 91.25
     },
     {
       "scenario": "Bull",
       "wacc": "8.5%",
       "terminal_g": "4.0%",
-      "fcf_path": "+28/+25/+22/+19/+16/+13/+10/+8/+7/+5.5%",
-      "implied_px": 130.43
+      "fcf_path": "+4.8/+15.6/+22/+19/+16/+13/+10/+8/+7/+5.5%",
+      "implied_px": 130.64
     }
   ],
   "synthesis_paths": [
     {
       "label": "Bear",
-      "prob": 0.2,
+      "prob": 0.15,
       "outcome_range": "$28-45",
-      "description": "Password sharing conversion complete, advertising ramp delayed by macro, subscriber count miss triggers multiple compression to 12-15x P/E on decelerating EPS. Historical precedent: NFLX fell 76% in 2022 on a 200K subscriber miss."
+      "description": "Password sharing conversion exhausted, advertising ramp delayed 18-24 months by macro conditions, FCF reverts to $9-10B normalized. Multiple compresses to 12-15x P/E on 6-8% EPS growth. Historical precedent: NFLX fell 76% in 2022 on a 200K subscriber miss."
     },
     {
       "label": "Base",
       "prob": 0.55,
       "outcome_range": "$85-100",
-      "description": "Revenue grows 13-16% annually, operating margin expands to 31-32% by FY2027, advertising contributes $1-2B by FY2028. Stock re-rates from 20x to 22-24x forward P/E as ads visibility improves."
+      "description": "Revenue grows 13-16% annually, operating margin expands to 31-32% by FY2027, advertising contribution reaches $3.1B in FY2026E and $4-5B by FY2028. WBD deal cleared, buybacks resume at $8.8B. Stock re-rates from 20x to 22-24x forward P/E."
     },
     {
       "label": "Bull",
-      "prob": 0.15,
+      "prob": 0.2,
       "outcome_range": "$110-130",
-      "description": "Advertising ramp accelerates to $3B+ by FY2028, international ARPU expansion beats expectations, content franchises drive above-consensus subscriber adds. Stock re-rates to 27-30x forward P/E with explicit ads revenue disclosure acting as catalyst."
+      "description": "Advertising revenue at $3.1B FY2026E inflects to $5B+ by FY2028, Netflix discloses ads as standalone P&L line, international ARPU expansion beats. Multiple re-rates to 27-30x with ads visibility (GS PT $120, UBS PT $130 anchoring the range)."
     }
   ],
   "recommendation_table": [
     {
       "action": "Direction",
-      "detail": "HOLD; fundamentally intact but technically broken; not a buy until institutional selling abates or a specific re-rating catalyst appears"
+      "detail": "BUY; WBD deal terminated, buybacks resuming, advertising revenue confirmed at $1.5B+ FY2025 growing 104% YoY. Street consensus at $114 vs $78 current is the widest gap in 18 months."
     },
     {
       "action": "12m target",
-      "detail": "$86 probability-weighted (20% Bear $30.47 + 55% Base $91.10 + 15% Bull $130.43 + 10% cross-check $98.03 = $85.56 Python DCF)"
+      "detail": "$91 probability-weighted (15% Bear $30.47 + 55% Base $91.25 + 20% Bull $130.64 + 10% cross-check $103.27 = $91.22 Python DCF)"
     },
     {
       "action": "Existing longs",
-      "detail": "Hold through Q2 2026 earnings (July 2026); watch for advertising revenue disclosure or subscriber count normalization signal. Stop-loss below $72 (7.9% below current)."
+      "detail": "Add on weakness toward $75. Hold through Q2 2026 earnings (July 2026); watch for advertising revenue disclosure as standalone P&L line. No stop-loss below $72 unless Q2 2026 guidance is cut."
     },
     {
       "action": "New money",
-      "detail": "Wait for technical stabilization: two consecutive weeks closing above $83 with declining volume, OR a Q2 2026 earnings report that reveals an explicit advertising revenue contribution above $400M quarterly."
+      "detail": "Enter at current levels ($75-80 zone); the WBD overhang removal and FCF guidance raise to $12.5B are the triggers. A Q2 2026 earnings beat with explicit advertising revenue disclosure would accelerate re-rating to $105-115."
     },
     {
       "action": "Hedge",
-      "detail": "Downside risk to $49 in a recession scenario; a put spread at $70/$55 strike expiring December 2026 costs approximately 3.5% of notional and covers the tail risk."
+      "detail": "Downside risk to $49 in a recession scenario (Beta 1.49 on S&P -25%). A put spread at $65/$50 strike expiring December 2026 costs approximately 2.5% of notional for tail coverage."
     },
     {
       "action": "Position sizing",
-      "detail": "Max 3-5% portfolio weight at current prices given beta 1.49 and 23.7% realized vol; 41.6% drawdown from highs already absorbed most of the re-rating, but FY2027 EPS deceleration risk warrants below-benchmark sizing."
+      "detail": "3-5% portfolio weight; beta 1.49 and 23.7% realized vol remain. The risk/reward has improved materially: 16% upside to $91 base case, 67% to $130 bull case, -61% to $30 bear case at 15% probability. Asymmetric enough for benchmark-weight or slight overweight in a growth-oriented mandate."
     }
   ],
   "catalysts_to_watch": [
-    "Q2 2026 earnings (July 2026); advertising revenue disclosure (if first explicit segment breakout), subscriber engagement metrics, guidance raise or cut for FY2026",
-    "Netflix Upfront advertising event (May/June 2026 cycle). CPM pricing commitments, ad tier MAU disclosure, any specific revenue target",
-    "Q1 2026 10-Q filing; explanation of $2.85B interest income anomaly, off-balance-sheet content obligation update",
-    "Analyst consensus revision direction post-Q2 2026; if 5+ firms lower FY2027 targets below $3.60, multiple compression scenario accelerates",
-    "Institutional 13F filings (August 2026 for Q2 2026 period); whether BlackRock and Vanguard are reducing or adding",
-    "Sports rights announcements; any NBA, F1, or new NFL deal would signal cost escalation risk or content moat expansion"
+    "Q2 2026 earnings (July 2026); first clean quarter without WBD deal overhang; advertising revenue disclosure as potential standalone P&L line; FY2026 guidance confirmation or raise above $12.5B FCF",
+    "Netflix advertising upfront commitments (Q2/Q3 2026 cycle); CPM pricing vs. Prior year, ad tier MAU update, whether $3.1B FY2026E UBS estimate is confirmed or exceeded",
+    "Buyback execution pace in Q2-Q3 2026; $8.8B expected FY2026 (UBS); pace of execution at $75-80 will signal board's conviction on intrinsic value vs current price",
+    "Analyst consensus revision direction post-Q2 2026; GS at $120 and UBS at $130; if 5+ firms raise FY2027 targets above $4.00 EPS, multiple re-rating scenario activates",
+    "Institutional 13F filings (August 2026 for Q2 2026 period); whether BlackRock and Vanguard begin rebuilding positions post-WBD deal clearing",
+    "Sports rights announcements; any NBA, F1, or expanded NFL deal would signal cost escalation risk or content moat expansion; rights cost trajectory matters for FY2027 FCF"
   ],
   "data_gaps": [
-    "Advertising revenue not disclosed separately; Netflix does not report ad tier revenue as a line item. Estimated at sub-$2B annualized based on CPM/MAU math.",
+    "Advertising revenue confirmed at $1.5B+ in FY2025 (UBS Apr 2026 post-Q1 note) but still not separately disclosed as a P&L line item by Netflix; $3.1B FY2026E estimate per UBS analyst model.",
     "Subscriber count no longer disclosed from FY2025 onwards; regional net adds unavailable from public filings.",
     "Exact geographic revenue split (UCAN/EMEA/LATAM/APAC) not available in yfinance; estimated from public disclosures.",
-    "Q1 2026 interest income of $2.85B is anomalous and source is unidentified in available data; needs 10-Q verification.",
+    "WBD merger termination fee details: exact after-tax cash received and any contingent payment provisions not available in public filings; $2.8B gross per GS/UBS research notes.",
     "Live events (NFL, WWE) contract economics not publicly disclosed; cost estimates based on public media reporting.",
     "Content obligations off-balance-sheet total as of Q1 2026 not available; FY2024 figure of $22-25B used as approximation.",
     "Gaming MAU and title economics not disclosed.",
@@ -466,21 +466,21 @@
     },
     {
       "fy": "FY26E",
-      "revenue_usd_b": 51.4,
-      "revenue_growth_yoy_pct": 13.8,
+      "revenue_usd_b": 51.5,
+      "revenue_growth_yoy_pct": 14.0,
       "gross_margin_pct": null,
-      "ebitda_usd_m": 32000,
-      "ebitda_margin_pct": 62.3,
-      "net_income_usd_m": 15149,
-      "fcf_usd_m": 11350,
-      "eps": 3.59
+      "ebitda_usd_m": 33700,
+      "ebitda_margin_pct": 65.4,
+      "net_income_usd_m": 15435,
+      "fcf_usd_m": 12500,
+      "eps": 3.63
     }
   ],
   "management": {
     "ceo": "Greg Peters, Co-CEO since January 2023 (formerly Chief Product Officer); Ted Sarandos, Co-CEO since 2020 (content strategy)",
     "cfo": "Spencer Adam Neumann, CFO since 2019",
     "insider_ownership_pct": 0.57,
-    "capital_allocation_history": "Netflix returned $9.13B via share buybacks in FY2025, $6.26B in FY2024, and $6.05B in FY2023. There is no dividend. Net debt has declined from $9.2B (FY2022) to $2.1B (Q1 2026) as FCF generation accelerated. The company holds $12.3B in cash as of Q1 2026. Capital allocation is entirely discretionary buybacks; no M&A of note since the gaming studio acquisitions (Night School Studio, Next Games) completed 2021-2022.",
+    "capital_allocation_history": "Netflix returned $9.13B via share buybacks in FY2025, $6.26B in FY2024, and $6.05B in FY2023. In 2025-2026 the company pursued an all-cash acquisition of Warner Bros. Discovery (confirmed in the UBS January 2026 research note), pausing buybacks during the deal process. The deal was terminated in Q1 2026; Netflix received a ~$2.8B gross termination fee and immediately resumed buyback activity. UBS models $8.8B in repurchases for FY2026. There is no dividend. Net debt has declined from $9.2B (FY2022) to $2.1B (Q1 2026) as FCF generation accelerated. The company holds $12.3B in cash as of Q1 2026.",
     "recent_insider_activity": [
       {
         "date": "2026-06-01",

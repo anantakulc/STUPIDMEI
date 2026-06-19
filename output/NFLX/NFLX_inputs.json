@@ -36,11 +36,11 @@
       "fcf_projections": [
         {
           "year": 2026,
-          "fcf_b": 11.83,
+          "fcf_b": 12.50,
           "revenue_b": 51.40,
           "revenue_growth_pct": 13.8,
           "ebitda_margin": 0.623,
-          "rationale": "FY2026E: Revenue at consensus $51.4B. FCF at $11.83B assumes 25% growth from $9.46B base (FY2025), driven by margin expansion from 29.5% to ~31%, ads tier contribution beginning, and operating leverage. Q1 2026 annualized FCF run rate is approximately $20B but that quarter includes an anomalous $2.85B interest income item; $11.83B is a conservative full-year estimate."
+          "rationale": "FY2026E: Revenue at consensus $51.4B. FCF at $12.5B per management guidance (raised post-Q1 2026 from prior $11B; includes after-tax proceeds of approximately $1.5B from the ~$2.8B gross WBD merger termination fee received in Q1 2026). GS estimates $13.0B and UBS estimates $13.1B for FY2026E FCF; $12.5B is the management-guided floor. Operating FCF (ex-termination fee) is approximately $10.5-11B, consistent with 29.5% operating margin expanding to ~31% and beginning ads contribution."
         },
         {
           "year": 2027,
@@ -125,9 +125,9 @@
     "inputs": {
       "multiple_type": "EV/EBITDA",
       "peer_median_multiple": 13.0,
-      "fy_estimate": 32.0,
+      "fy_estimate": 33.7,
       "peers_used": ["DIS", "WBD", "SPOT"],
-      "reasoning": "DIS at 11.4x EV/EBITDA (6.5% revenue growth), WBD at 12.8x (declining revenue, high debt), SPOT at 37x (higher growth premium for active ads business). Applying 13x reflects Netflix's superior revenue growth premium over DIS while avoiding SPOT's premium for a business without proven ad economics. 13x on $32B EBITDA = $416B EV."
+      "reasoning": "DIS at 11.4x EV/EBITDA (6.5% revenue growth), WBD at 12.8x (declining revenue, high debt), SPOT at 37x (higher growth premium for active ads business). Applying 13x reflects Netflix's superior revenue growth premium over DIS while avoiding SPOT's premium for a business without proven ad economics. FY2026E EBITDA updated to $33.7B: GS models FY2026E EBIT at $16.27B (31.5% margin on $51.7B revenue) + ~$17.4B D&A = $33.7B EBITDA. 13x on $33.7B EBITDA = $438B EV."
     },
     "outputs": {
       "implied_px": 101
@@ -150,8 +150,8 @@
           {"year": 2032, "fcf_b": 13.90, "revenue_b": 78.7, "revenue_growth_pct": 7.9, "ebitda_margin": 0.63, "rationale": "Bear Y7: +8%. FCF approaching terminal growth convergence."}
         ]
       },
-      "probability": 0.20,
-      "probability_reasoning": "20% weight. The bear case is credible but not the most likely outcome. Netflix has demonstrated structural FCF improvement over 4 consecutive years ($1.6B to $9.46B), suggesting the business model is durable. However, the Q1 2026 earnings quality issue, seven months of institutional selling, and FY2027 EPS deceleration to 6.6% consensus create a genuine risk that the current multiple reflects growth expectations that will not materialize. The 2022 episode (76% drawdown on a 200K subscriber miss) shows this stock can overshoot to the downside.",
+      "probability": 0.15,
+      "probability_reasoning": "15% weight, reduced from prior 20%. The bear case loses one key pillar: the Q1 2026 'earnings quality' concern was driven by the ~$2.8B gross WBD merger termination fee received in Q1 2026 (a real cash inflow, not accounting manipulation). Additionally, the 7-month institutional selloff was partly driven by M&A overhang uncertainty from the WBD deal; with the deal terminated and buybacks resuming, that technical pressure is removed. The bear case remains credible on advertising ramp risk and password sharing exhaustion, but the setup is cleaner than it appeared. The 2022 episode (76% drawdown on a subscriber miss) remains the historical tail risk.",
       "reasoning": "Password sharing conversion complete in UCAN; advertising ramp delayed 18-24 months by macro conditions; FCF growth stalls at current levels before recovering modestly from Y3 onwards. Multiple compresses from 20x to 12-15x as EPS growth decelerates to 6-8%."
     },
     {
@@ -167,7 +167,7 @@
         "wacc": 0.085,
         "terminal_g": 0.040,
         "fcf_projections": [
-          {"year": 2026, "fcf_b": 12.11, "revenue_b": 52.5, "revenue_growth_pct": 16.2, "ebitda_margin": 0.64, "rationale": "Bull Y1: FCF $12.11B (+28%). Revenue beats consensus at $52.5B on ads contribution and international ARPU beats. Operating margin expands to 32%+."},
+          {"year": 2026, "fcf_b": 13.10, "revenue_b": 52.5, "revenue_growth_pct": 16.2, "ebitda_margin": 0.64, "rationale": "Bull Y1: FCF $13.10B, above management guidance of $12.5B. Revenue beats consensus at $52.5B on strong ads contribution ($1.5B+ FY2025 actual growing 104% YoY to $3.1B FY2026E per UBS) and international ARPU beats. Includes ~$1.5B after-tax WBD termination fee already received Q1 2026. GS/UBS both model $13.0B+ FY2026 FCF. Operating margin expands to 32%+."},
           {"year": 2027, "fcf_b": 15.14, "revenue_b": 59.3, "revenue_growth_pct": 13.0, "ebitda_margin": 0.655, "rationale": "Bull Y2: FCF $15.14B (+25%). Advertising revenue inflects to $2.5B+ run rate. Netflix discloses advertising revenue as standalone line item, acting as re-rating catalyst."},
           {"year": 2028, "fcf_b": 18.47, "revenue_b": 66.5, "revenue_growth_pct": 12.1, "ebitda_margin": 0.665, "rationale": "Bull Y3: FCF $18.47B (+22%). Advertising at $3.5B+, live events delivering premium CPMs. International password sharing enforcement in remaining APAC/LATAM markets."},
           {"year": 2029, "fcf_b": 22.0, "revenue_b": 73.3, "revenue_growth_pct": 10.2, "ebitda_margin": 0.670, "rationale": "Bull Y4: FCF $22B (+19%). Scale economics fully visible; content as percentage of revenue declining toward 30%."},
@@ -179,8 +179,8 @@
           {"year": 2035, "fcf_b": 38.5, "revenue_b": 110.1, "revenue_growth_pct": 5.5, "ebitda_margin": 0.675, "rationale": "Bull Y10: FCF $38.5B (+5.5%). Terminal year."}
         ]
       },
-      "probability": 0.15,
-      "probability_reasoning": "15% weight. The bull case requires the advertising platform to outperform market expectations and Netflix to disclose advertising revenue as a standalone line item, which would force a re-rating. The 40M MAU advertising base growing 34% QoQ supports the trajectory, but achieving $4-5B in advertising revenue by FY2028 requires CPM performance and fill rates that are not yet proven. The live events + gaming + international ARPU combination working simultaneously is a low-probability high-payoff scenario.",
+      "probability": 0.20,
+      "probability_reasoning": "20% weight, raised from prior 15%. Broker research (GS Apr 2026, UBS Apr 2026) confirms advertising revenue was $1.5B+ in FY2025 (not near-zero as previously modeled) and is tracking to $3.1B in FY2026E (+104% YoY). The advertising thesis is no longer speculative. 60%+ of new sign-ups are now on the ad-supported tier. With the WBD deal terminated and buybacks resuming at $8.8B expected FY2026, capital allocation is clean. GS PT $120, UBS PT $130 both imply the bull case is an achievable central scenario, not a tail. The bull case still requires sequential execution across ads, live events, and international ARPU.",
       "reasoning": "Advertising revenue inflects to $4-5B by FY2028 and is disclosed separately, triggering a multiple re-rate to 27-30x. Operating margins reach 35%+ by FY2029. International ARPU expansion beats expectations. FCF grows 25%+ near term, decelerating to 5.5% by FY2035."
     }
   ],
@@ -189,7 +189,7 @@
     "cross_check": 0.10
   },
 
-  "weights_reasoning": "Bear 20%: credible but not base case; Netflix has demonstrated durable FCF improvement over four consecutive years, making a complete stall unlikely absent a recession or subscriber shock comparable to Q1 2022. Base 55%: current revenue growth trajectory (15-16%) and margin expansion path are observable and have been consistent; the key uncertainty is the advertising ramp timeline. Bull 15%: requires simultaneous execution across advertising, live events, and international — achievable but requires things going right that are not yet proven at scale. Cross-check 10%: EV/EBITDA anchors the blend to peer multiples; given Netflix's content amortization creates unusual EBITDA optics, this cross-check deserves lower weight than in a traditional industrial DCF. Total: 20% + 55% + 15% + 10% = 100%.",
+  "weights_reasoning": "Bear 15%: reduced from 20%. The Q1 2026 earnings quality concern (previously cited as a bear pillar) has been resolved: the $2.85B interest income line is the after-tax proceeds of the ~$2.8B gross WBD merger termination fee, not an accounting anomaly. The institutional selling overhang was partly M&A-deal uncertainty; with WBD deal terminated, that technical pressure eases. Bear risk remains on ads ramp and subscriber growth deceleration, but the setup is materially cleaner. Base 55%: unchanged; the 15-16% revenue growth trajectory and FCF improvement from $1.6B (FY2022) to $9.5B (FY2025) are the observable central case. Bull 20%: raised from 15% after broker data confirms ads revenue was $1.5B+ in FY2025 and GS/UBS model $3.1B in FY2026E (+104% YoY). The bull case is no longer speculative; it is increasingly the base scenario for sell-side analysts (GS PT $120, UBS PT $130). Cross-check 10%: EV/EBITDA peer anchoring; Netflix's content amortization creates unusual EBITDA optics, warranting lower cross-check weight. Total: 15% + 55% + 20% + 10% = 100%.",
 
   "blending_logic": "20% Bear DCF + 55% Base DCF + 15% Bull DCF + 10% EV/EBITDA cross-check"
 }
